@@ -1,0 +1,8 @@
+advancement revoke @s only elements:small-heal-potion
+
+execute as @s[scores={elements_custom-items_shop_small-heal-potion_cooldown=0}] run title @s title "Test"
+#execute as @s[scores={elements_custom-items_shop_small-heal-potion_cooldown=0}] run scoreboard players set @s elements_custom-items_shop_small-heal-potion_cooldown 10
+scoreboard players set @s elements_custom-items_shop_small-heal-potion_cooldown 10
+
+#/give @p potion[max_stack_size=64,can_break={predicates:[{blocks:"cauldron"}],show_in_tooltip:false},custom_name='{"color":"yellow","italic":false,"text":"Kleiner Heiltrank"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Heilt um "},{"color":"green","italic":false,"text":"4 Herzen"}]','" "','{"bold":true,"color":"blue","italic":false,"text":"Rare"}'],hide_additional_tooltip={},custom_model_data=10,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:1000000},potion_contents={custom_color:16711680}] 1
+

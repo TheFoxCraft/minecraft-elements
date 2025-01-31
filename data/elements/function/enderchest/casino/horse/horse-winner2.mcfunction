@@ -1,0 +1,1 @@
+$function elements:enderchest/casino/horse/horse-winner with storage elements_casino_horse_$(ID)

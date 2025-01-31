@@ -1,0 +1,1 @@
+$xp set @s $(elements_death_levelgive) levels

@@ -1,0 +1,1 @@
+$execute as @a[nbt={UUID:$(UUID)}] run say test

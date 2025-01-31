@@ -1,0 +1,23 @@
+{
+    "criteria": {
+      "using-item": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:rabbit_stew",
+            "components": {
+              "minecraft:custom_model_data": 1
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "using-item"
+      ]
+    ],
+    "rewards": {
+      "function": "elements:custom-items/mana-items/magische-schale"
+    }
+  }

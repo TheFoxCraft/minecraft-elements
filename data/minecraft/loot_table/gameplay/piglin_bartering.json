@@ -1,0 +1,30 @@
+{
+    "type": "barter",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:cobblestone",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Pustekuchen"
+                  }
+                ],
+                "target": "item_name"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

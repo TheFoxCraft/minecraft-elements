@@ -1,0 +1,1 @@
+$execute as @a[scores={elements_enderchest_level_enderchest=1,elements_enderchest_interface_number=4}] unless entity @s[nbt={EnderItems:[{id:"minecraft:magenta_glazed_terracotta",Slot:26b,components:{"minecraft:custom_model_data":3}}]}] run data modify storage elements_enderchest_$(ID) enderchest set from entity @s EnderItems

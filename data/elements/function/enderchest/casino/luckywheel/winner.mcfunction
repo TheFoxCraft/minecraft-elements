@@ -1,0 +1,2 @@
+$item replace entity @s[scores={elements_casino_game_luckywheel_win=1}] enderchest.13 with totem_of_undying[custom_name='{"color":"green","text":"Gewonnen!","italic": false}',lore=['{"color":"gray","text":"+$(Price) Level","italic": false}'],custom_model_data=1] 1
+$item replace entity @s[scores={elements_casino_game_luckywheel_win=0}] enderchest.13 with totem_of_undying[custom_name='{"color":"red","text":"Verloren!","italic": false}',lore=['{"color":"gray","text":"-$(Einsatz) Level","italic": false}'],custom_model_data=1] 1

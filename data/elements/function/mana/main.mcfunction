@@ -1,0 +1,7 @@
+execute as @a[nbt={SelectedItem:{id:"minecraft:stick",components:{"minecraft:custom_model_data":1}}}] run title @s actionbar ["",{"text": "Mana: ","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-count"},"color": "dark_purple"},{"text": "/","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-max"},"color": "dark_purple"}]
+execute as @a[nbt={Inventory:[{id:"minecraft:stick",Slot:-106b,components:{"minecraft:custom_model_data":1}}]}] run title @s actionbar ["",{"text": "Mana: ","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-count"},"color": "dark_purple"},{"text": "/","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-max"},"color": "dark_purple"}]
+
+execute as @a[nbt={SelectedItem:{id:"minecraft:rabbit_stew",components:{"minecraft:custom_model_data":1}}}] run title @s actionbar ["",{"text": "Mana: ","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-count"},"color": "dark_purple"},{"text": "/","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-max"},"color": "dark_purple"}]
+execute as @a[nbt={Inventory:[{id:"minecraft:rabbit_stew",Slot:-106b,components:{"minecraft:custom_model_data":1}}]}] run title @s actionbar ["",{"text": "Mana: ","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-count"},"color": "dark_purple"},{"text": "/","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-max"},"color": "dark_purple"}]
+
+

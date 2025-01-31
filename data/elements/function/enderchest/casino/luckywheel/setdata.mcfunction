@@ -1,0 +1,2 @@
+$execute as @a[scores={elements_casino_game_luckywheel_load=1}] store result storage elements_casino_luckywheel_$(ID) Einsatz int 1 run scoreboard players get @s elements_casino_game_einsatz
+$execute as @a[scores={elements_casino_game_luckywheel_load=1}] store result storage elements_casino_luckywheel_$(ID) Price int 10 run scoreboard players get @s elements_casino_game_einsatz

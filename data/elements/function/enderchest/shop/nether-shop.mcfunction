@@ -1,0 +1,135 @@
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_back run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_back=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_back=1}] run scoreboard players set @s elements_enderchest_interface_number 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_back=1}] run function elements:enderchest/enderchest-clear
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_back=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_nether_back 0
+kill @e[type=item,nbt={Item:{id:"minecraft:magenta_glazed_terracotta",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","text":"Zurück","italic": false}',custom_model_data=2] 1
+
+
+
+
+
+kill @e[type=item,nbt={Item:{id:"minecraft:blue_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":1}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.0 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.1 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.2 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.3 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.5 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.6 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.7 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.8 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.18 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.19 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.20 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.21 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.22 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.23 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.24 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.25 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+
+
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_nether-wart run clear @s minecraft:nether_wart[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=..199}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=..199}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=200..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=200..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=200..}] run give @s nether_wart 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=200..}] run xp add @s -200 levels
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_nether_nether-wart 0
+kill @e[type=item,nbt={Item:{id:"minecraft:nether_wart",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.9 with nether_wart[custom_name='{"color":"yellow","text":"Netherwarze [200 Level]","italic": false}',custom_model_data=2] 1
+
+
+
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_quartz run clear @s minecraft:quartz[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_quartz=1,elements_mainlevel=..4}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_quartz=1,elements_mainlevel=..4}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_quartz=1,elements_mainlevel=5..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_quartz=1,elements_mainlevel=5..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_quartz=1,elements_mainlevel=5..}] run give @s quartz 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_quartz=1,elements_mainlevel=5..}] run xp add @s -5 levels
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_quartz=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_nether_quartz 0
+kill @e[type=item,nbt={Item:{id:"minecraft:quartz",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.10 with quartz[custom_name='{"color":"yellow","text":"Quartz [5 Level]","italic": false}',custom_model_data=2] 1
+
+
+
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_blaze-rod run clear @s minecraft:blaze_rod[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_blaze-rod=1,elements_mainlevel=..49}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_blaze-rod=1,elements_mainlevel=..49}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_blaze-rod=1,elements_mainlevel=50..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_blaze-rod=1,elements_mainlevel=50..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_blaze-rod=1,elements_mainlevel=50..}] run give @s blaze_rod 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_blaze-rod=1,elements_mainlevel=50..}] run xp add @s -50 levels
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_blaze-rod=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_nether_blaze-rod 0
+kill @e[type=item,nbt={Item:{id:"minecraft:blaze_rod",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.11 with blaze_rod[custom_name='{"color":"yellow","text":"Lohenrute [50 Level]","italic": false}',custom_model_data=2] 1
+
+
+
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_enderpearl run clear @s minecraft:ender_pearl[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_enderpearl=1,elements_mainlevel=..49}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_enderpearl=1,elements_mainlevel=..49}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_enderpearl=1,elements_mainlevel=50..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_enderpearl=1,elements_mainlevel=50..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_enderpearl=1,elements_mainlevel=50..}] run give @s ender_pearl 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_enderpearl=1,elements_mainlevel=50..}] run xp add @s -50 levels
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_enderpearl=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_nether_enderpearl 0
+kill @e[type=item,nbt={Item:{id:"minecraft:ender_pearl",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.12 with ender_pearl[custom_name='{"color":"yellow","text":"Enderperle [50 Level]","italic": false}',custom_model_data=2] 1
+
+
+
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_witherskeleton-skull run clear @s minecraft:wither_skeleton_skull[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_witherskeleton-skull=1,elements_mainlevel=..999}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_witherskeleton-skull=1,elements_mainlevel=..999}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_witherskeleton-skull=1,elements_mainlevel=1000..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_witherskeleton-skull=1,elements_mainlevel=1000..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_witherskeleton-skull=1,elements_mainlevel=1000..}] run give @s wither_skeleton_skull 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_witherskeleton-skull=1,elements_mainlevel=1000..}] run xp add @s -1000 levels
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_witherskeleton-skull=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_nether_witherskeleton-skull 0
+kill @e[type=item,nbt={Item:{id:"minecraft:wither_skeleton_skull",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.13 with wither_skeleton_skull[custom_name='{"color":"yellow","text":"Wither-Skelettschädel [1.000 Level]","italic": false}',custom_model_data=2] 1
+
+
+
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_nether-wart run clear @s minecraft:nether_wart[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=..199}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=..199}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=200..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=200..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=200..}] run give @s nether_wart 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=200..}] run xp add @s -200 levels
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_nether_nether-wart 0
+kill @e[type=item,nbt={Item:{id:"minecraft:nether_wart",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.14 with potion[custom_name='{"color":"yellow","text":"Kleiner Heiltrank [10 Level]","italic": false}',custom_model_data=2] 1
+
+
+
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_ancient-debris run clear @s minecraft:ancient_debris[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_ancient-debris=1,elements_mainlevel=..249}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_ancient-debris=1,elements_mainlevel=..249}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_ancient-debris=1,elements_mainlevel=250..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_ancient-debris=1,elements_mainlevel=250..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_ancient-debris=1,elements_mainlevel=250..}] run give @s ancient_debris 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_ancient-debris=1,elements_mainlevel=250..}] run xp add @s -250 levels
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_ancient-debris=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_nether_ancient-debris 0
+kill @e[type=item,nbt={Item:{id:"minecraft:ancient_debris",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.16 with ancient_debris[custom_name='{"color":"yellow","text":"Antiker Schrott [250 Level]","italic": false}',custom_model_data=2] 1
+
+
+
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_upgrade-template run clear @s minecraft:netherite_upgrade_smithing_template[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_upgrade-template=1,elements_mainlevel=..1999}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_upgrade-template=1,elements_mainlevel=..1999}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_upgrade-template=1,elements_mainlevel=2000..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_upgrade-template=1,elements_mainlevel=2000..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_upgrade-template=1,elements_mainlevel=2000..}] run give @s netherite_upgrade_smithing_template 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_upgrade-template=1,elements_mainlevel=2000..}] run xp add @s -2000 levels
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_upgrade-template=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_nether_upgrade-template 0
+kill @e[type=item,nbt={Item:{id:"minecraft:netherite_upgrade_smithing_template",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.17 with netherite_upgrade_smithing_template[custom_name='{"color":"yellow","text":"Upgrade Template [2.000 Level]","italic": false}',custom_model_data=2,hide_additional_tooltip={}] 1
+
+
+

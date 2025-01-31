@@ -1,0 +1,1 @@
+$function elements:enderchest/casino/luckywheel/winner with storage elements_casino_luckywheel_$(ID)

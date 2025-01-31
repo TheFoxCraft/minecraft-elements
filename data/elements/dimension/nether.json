@@ -1,0 +1,18 @@
+{
+  "type": "elements:nether",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:nether_wastes",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "block": "minecraft:lava",
+          "height": 100
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}

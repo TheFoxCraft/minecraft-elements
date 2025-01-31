@@ -1,0 +1,103 @@
+execute as @a[scores={elements_playtime=18}] run scoreboard players set @s elements_playerid 0
+
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_homedimension 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_techniker_level 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_level_stats 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_start 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_clementius_level 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_interface_number 1
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_autocompactor_stone 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_autocompactor_wood 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_level_enderchest 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_level_autocompact 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_level_tp 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_level_upgradeschmiede 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_level_collections 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_level_settings 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_level_stats 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_level_casino 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_eq 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_miningxp_foresting_level 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_harvestinglevel 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_maxlevel 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_miningxp_mining_level 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_playtime_h 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_playtime_min 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_playtime_sec 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_titus_level 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_lootbox 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_casino_stats_lvlinvestiert 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_casino_stats_lvlgewonnen 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_casino_stats_lvlverloren 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_casino_stats_lvlumsatz 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_casino_stats_game_horse 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_casino_game_horse_timer 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_casino_game 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_casino_config_einsatz 1
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_casino_stats_game_luckywheel 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_casino_interface 1
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_collections_stone_collect 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_spawn_energiekern_particle_settings 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_settings_tp-mode 1
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_is-assigned-to-dimension 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_collections_interface 1
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_settings_dimension 1
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_settings_gruppengoal_show 1
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_level_shop 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_shop_interface 1
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_shop_count 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_shop_ocean 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_shop_stone 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_shop_sky 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_shop_nether 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_mining-frucht_counter 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_mining-frucht_enable 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_mining-frucht_timer_h 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_mining-frucht_timer_min 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_mining-frucht_timer_sec 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_mining-frucht_timer_tick 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_mining-frucht_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_rettungs-plattform_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_rettungs-plattform_cooldown_show 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_foraging-frucht_counter 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_foraging-frucht_enable 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_foraging-frucht_timer_h 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_foraging-frucht_timer_min 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_foraging-frucht_timer_sec 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_foraging-frucht_timer_tick 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_foraging-frucht_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_farming-frucht_counter 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_farming-frucht_enable 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_farming-frucht_timer_h 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_farming-frucht_timer_min 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_farming-frucht_timer_sec 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_farming-frucht_timer_tick 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_farming-frucht_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_fishing-frucht_counter 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_fishing-frucht_enable 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_fishing-frucht_timer_h 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_fishing-frucht_timer_min 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_fishing-frucht_timer_sec 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_fishing-frucht_timer_tick 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_fishing-frucht_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_levellost 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_villager_stage-2_mana_level 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stage-2_mana_activate_timer_sec 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stage-2_mana_activate_timer_tick 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_mana_regeneration-per-sec 1
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_mana_mana-max 10
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_mana_mana-count 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_mana_regeneration_timer 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_mana_item_messstab_cooldown 0
+
+
+execute as @a[scores={elements_playtime=20}] run scoreboard players add #server elements_abgabe_general_goal 100
+execute as @a[scores={elements_playtime=20}] if score #server elements_setup matches 1.. in elements:hub run tp @s 0 101 0
+
+execute as @a[scores={elements_playerid=0},limit=1] run scoreboard players add #server elements_playerid 1
+execute as @a[scores={elements_playerid=0},limit=1] run scoreboard players operation @s elements_playerid = #server elements_playerid
+
+execute as @a[scores={elements_playtime=20}] run tellraw @s {"text": "Willkommen in Minecraft Elements!","color":"gold"}
+execute as @a[scores={elements_playtime=20}] run title @s title {"text": "Minecraft Elements","color": "dark_purple"}
+
+

@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_model_data": 1,
+            "minecraft:can_break": {
+              "predicates": [
+                {
+                  "blocks": "minecraft:stone_pressure_plate"
+                }
+              ],
+              "show_in_tooltip": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "elements:custom-items/rettungs-plattform/rettungs-plattform"
+  }
+}

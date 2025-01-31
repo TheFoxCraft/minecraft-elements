@@ -1,0 +1,1 @@
+$data remove storage elements_enderchest_$(ID) enderchest
