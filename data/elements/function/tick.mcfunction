@@ -74,7 +74,7 @@ execute as @e[tag=spawner_leaderboard_id-4] at @s run function elements:spawn/le
 execute as @e[tag=spawner_leaderboard_id-5] at @s run function elements:spawn/leaderboards/5_farming-level/spawning
 execute as @e[tag=spawner_leaderboard_id-6] at @s run function elements:spawn/leaderboards/6_fishing-level/spawning
 
-#das ist ein wunderschöner test
+
 
 
 ##needs to be at the end!
