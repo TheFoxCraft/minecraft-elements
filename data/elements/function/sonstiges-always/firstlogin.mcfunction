@@ -18,6 +18,7 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_level_casino 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_eq 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_miningxp_foresting_level 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_miningxp_fishing_level 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_harvestinglevel 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_maxlevel 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_miningxp_mining_level 0

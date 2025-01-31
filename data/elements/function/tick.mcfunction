@@ -8,6 +8,8 @@ function elements:sonstiges-always/autocompactor
 function elements:sonstiges-always/special-items
 function elements:miningxp/miningxp
 function elements:miningxp/forestingxp
+function elements:miningxp/fishingxp
+function elements:miningxp/get_fishing/get_fishing
 function elements:villager/titus
 function elements:villager/mystery
 function elements:villager/stage-2_mana
@@ -27,7 +29,7 @@ function elements:mana/regernation
 function elements:mana/main
 function elements:mana/cooldown
 function elements:spawn/community-hub
-function elements:miningxp/get_fishing/get_fishing
+
 
 #enderchest
 execute as @a[scores={elements_rank_admin=1}] run function elements:enderchest/admin-settings/main
