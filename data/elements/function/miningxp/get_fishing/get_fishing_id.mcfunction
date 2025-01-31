@@ -1,1 +1,1 @@
-$execute as @a[nbt={UUID:$(UUID)}] run say test
+$execute as @a[nbt={UUID:$(UUID)}] run scoreboard players add @s elements_miningxp_fishing_xp 4

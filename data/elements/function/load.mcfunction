@@ -177,6 +177,10 @@ scoreboard objectives add elements_miningxp_farming_xp dummy
 scoreboard objectives add elements_miningxp_farming_level dummy
 scoreboard objectives add elements_miningxp_farming_nextlevel dummy
 scoreboard objectives add elements_miningxp_farming_loot dummy
+scoreboard objectives add elements_miningxp_fishing_xp dummy
+scoreboard objectives add elements_miningxp_fishing_level dummy
+scoreboard objectives add elements_miningxp_fishing_nextlevel dummy
+scoreboard objectives add elements_miningxp_fishing_loot dummy
 
 scoreboard objectives add elements_config_death_level dummy
 scoreboard objectives add elements_death_level dummy
