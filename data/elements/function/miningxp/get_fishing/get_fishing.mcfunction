@@ -13,7 +13,8 @@ execute as @e[type=marker,tag=elements_fishing_bobber] at @s as @e[type=item,nbt
 
 execute as @e[type=marker,tag=elements_fishing_bobber] at @s unless entity @e[type=fishing_bobber,distance=..0.5] run kill @s
 
-
+execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",components:{"minecraft:custom_model_data":1}}]}] run function elements:miningxp/get_fishing/get_fishing_id with entity @s
+execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",components:{"minecraft:custom_model_data":1}}]}] run clear @s minecraft:structure_void[custom_model_data=1] 1
 
 #debug
 execute as @e[type=marker,tag=elements_fishing_bobber] at @s run particle minecraft:flame
