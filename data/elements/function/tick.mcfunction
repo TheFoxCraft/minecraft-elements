@@ -31,6 +31,7 @@ function elements:mana/cooldown
 function elements:spawn/community-hub
 
 
+
 #enderchest
 execute as @a[scores={elements_rank_admin=1}] run function elements:enderchest/admin-settings/main
 execute as @a[scores={elements_enderchest_interface_number=1}] run function elements:enderchest/main

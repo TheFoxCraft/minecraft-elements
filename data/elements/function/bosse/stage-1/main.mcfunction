@@ -32,7 +32,7 @@ execute if score #server elements_stage_1_boss_status matches 1 unless entity @e
 execute in elements:stage-1_bossroom as @a[distance=0..] if entity @e[tag=stage-1_boss] run bossbar set elements:stage-1_boss players @s
 
 execute in elements:stage-1_bossroom store result bossbar elements:stage-1_boss value run data get entity @n[tag=stage-1_boss] Health
-execute in elements:stage-1_bossroom store result bossbar elements:stage-1_boss max run attribute @n[tag=stage-1_boss] generic.max_health get 1
+execute in elements:stage-1_bossroom store result bossbar elements:stage-1_boss max run attribute @n[tag=stage-1_boss] max_health get 1
 
 
 
