@@ -1,5 +1,6 @@
 1:
     structure_void: detection für fishing
+    fishing_rod: Element Fishing Rod | Common
 2:
 3:
 4:
