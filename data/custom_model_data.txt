@@ -2,7 +2,15 @@
     structure_void: detection für fishing
     fishing_rod: Element Fishing Rod | Common
 2:
+    Diamond_pickaxe: Element Pickaxe | Rare
+    Netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
+    Diamond_axe: Element Axe | Rare
+    netherite_axe: Elemen Axe | Rare (Upgraded)
 3:
+    Diamond_Pickade: Element Pickaxe | Epic
+    Netherite_Pickaxe: Element Pickaxe | Epic (Upgraded)
 4:
+    Netherite_Pickaxe: Element Pickaxe | Legendary
 5:
+    Netherite_Pickaxe: Element Pickaxe | Mythic
 6:
