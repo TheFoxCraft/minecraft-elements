@@ -1,0 +1,1 @@
+give @s blue_ice[item_name='{"color":"yellow","italic":false,"text":"Vereistes Fossil"}',lore=['{"color":"gray","text":" "}','{"color":"gray","italic":false,"text":"Was darin wohl verborgen ist?"}','" "','{"bold":true,"color":"blue","italic":false,"text":"Rare"}'],damage_resistant={types:"#minecraft:is_fire"},custom_model_data=1] 1

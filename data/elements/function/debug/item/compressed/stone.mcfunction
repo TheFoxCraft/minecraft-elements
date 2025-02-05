@@ -1,0 +1,1 @@
+give @s cobbled_deepslate[custom_name='{"bold":true,"color":"blue","italic":false,"text":"Compressed Cobblestone"}',lore=['{"color":"blue","italic":false,"text":"Komprimierter Bruchstein"}','" "','{"bold":true,"color":"blue","italic":false,"text":"Rare"}'],custom_model_data=1] 1

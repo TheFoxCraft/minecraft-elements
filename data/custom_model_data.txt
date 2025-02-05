@@ -1,16 +1,23 @@
 1:
     structure_void: detection für fishing
     fishing_rod: Element Fishing Rod | Common
+    cobbled_deepslate: Compressed Cobblestone 
+    iron_pickaxe: Element Pickaxe | Common
+    blue_ice: Stage 1 Boss Spawn-Item
 2:
-    Diamond_pickaxe: Element Pickaxe | Rare
-    Netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
-    Diamond_axe: Element Axe | Rare
+    diamond_pickaxe: Element Pickaxe | Rare
+    netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
+    diamond_axe: Element Axe | Rare
     netherite_axe: Elemen Axe | Rare (Upgraded)
 3:
-    Diamond_Pickade: Element Pickaxe | Epic
-    Netherite_Pickaxe: Element Pickaxe | Epic (Upgraded)
+    diamond_pickaxe: Element Pickaxe | Epic
+    netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
+    diamond_axe: Element Axe | Epic
+    netherite_axe: Element Axe | Epic (Upgraded)
 4:
-    Netherite_Pickaxe: Element Pickaxe | Legendary
+    netherite_pickaxe: Element Pickaxe | Legendary
+    netherite_axe: Element Axe | Legendary
 5:
-    Netherite_Pickaxe: Element Pickaxe | Mythic
+    netherite_pickaxe: Element Pickaxe | Mythic
+    netherite_axe: Element Axe | Mythic
 6:
