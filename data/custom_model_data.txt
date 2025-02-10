@@ -4,6 +4,7 @@
     cobbled_deepslate: Compressed Cobblestone 
     iron_pickaxe: Element Pickaxe | Common
     blue_ice: Stage 1 Boss Spawn-Item
+    dark_oak_sapling: Bos Spawning Stage 2 (Rätsel)
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)

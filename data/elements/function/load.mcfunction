@@ -68,6 +68,17 @@ execute in elements:stage-1_bossroom run gamerule doTraderSpawning false
 execute in elements:stage-1_bossroom run gamerule doPatrolSpawning false
 execute in elements:stage-1_bossroom run gamerule disableRaids true
 
+execute in elements:stage-2_bossroom run gamerule keepInventory true
+execute in elements:stage-2_bossroom run gamerule lavaSourceConversion true
+execute in elements:stage-2_bossroom run gamerule spawnRadius 0
+execute in elements:stage-2_bossroom run gamerule universalAnger true
+execute in elements:stage-2_bossroom run gamerule doFireTick false
+execute in elements:stage-2_bossroom run difficulty hard
+execute in elements:stage-2_bossroom run forceload add 0 0 -1 -1
+execute in elements:stage-2_bossroom run gamerule doTraderSpawning false
+execute in elements:stage-2_bossroom run gamerule doPatrolSpawning false
+execute in elements:stage-2_bossroom run gamerule disableRaids true
+
 
 team add elements_ocean {"text": "[OCEAN] ","color": "dark_blue"}
 team add elements_stone {"text": "[STONE] ","color": "gray"}
