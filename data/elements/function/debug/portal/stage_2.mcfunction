@@ -1,7 +1,7 @@
-execute if score #server elements_stage_1_portal_enable matches 1 run tellraw @s ["",{"text":"Das Portal für Stage 1 wurde wieder geschlossen!","color":"green"}]
-execute if score #server elements_stage_1_portal_enable matches 1 in elements:hub run setblock -12 100 -15 quartz_slab[type=top]
-execute if score #server elements_stage_1_portal_enable matches 1 in elements:hub run kill @e[type=interaction,tag=stage-1_portal]
-execute if score #server elements_stage_1_portal_enable matches 1 in elements:hub run setblock 12 100 15 quartz_slab[type=top]
+execute if score #server elements_stage_2_portal_enable matches 1 run tellraw @s ["",{"text":"Das Portal für Stage 2 wurde wieder geschlossen!","color":"green"}]
+execute if score #server elements_stage_2_portal_enable matches 1 in elements:hub run setblock -12 100 -15 quartz_slab[type=top]
+execute if score #server elements_stage_2_portal_enable matches 1 in elements:hub run kill @e[type=interaction,tag=stage-1_portal]
+execute if score #server elements_stage_2_portal_enable matches 1 in elements:hub run setblock 12 100 15 quartz_slab[type=top]
 
 
 execute if score #server elements_stage_1_portal_enable matches 0 run tellraw @s ["",{"text":"Das Portal für Stage 1 wurde künstlich geöffnet!","color":"green"}]
