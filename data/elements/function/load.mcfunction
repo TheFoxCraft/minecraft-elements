@@ -533,6 +533,12 @@ scoreboard objectives add elements_stage_1_boss_status dummy
 scoreboard objectives add elements_stage_1_boss_loot_count dummy
 scoreboard objectives add elements_stage_1_boss_melee_timer dummy
 scoreboard objectives add elements_stage_1_boss_spawn-player dummy
+scoreboard objectives add elements_stage_2_portal_enable dummy
+scoreboard objectives add elements_stage_2_boss_status dummy
+scoreboard objectives add elements_stage_2_boss_loot_count dummy
+scoreboard objectives add elements_stage_2_boss_melee_timer dummy
+scoreboard objectives add elements_stage_2_boss_spawn-player dummy
+
 scoreboard objectives add elements_spawn_vaults_refresh dummy
 scoreboard objectives add elements_leaderboards_refresh-timer dummy
 scoreboard objectives add elements_get-name_status dummy
