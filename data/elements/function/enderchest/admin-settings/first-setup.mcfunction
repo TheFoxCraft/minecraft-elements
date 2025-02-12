@@ -68,6 +68,9 @@ execute as @s run scoreboard players set #server elements_enderchest_shop_nether
 execute as @s run scoreboard players set #server elements_stage_1_portal_enable 0
 execute as @s run scoreboard players set #server elements_stage_1_boss_status 0
 execute as @s run scoreboard players set #server elements_stage_1_boss_melee_timer 0
+execute as @s run scoreboard players set #server elements_stage_2_portal_enable 0
+execute as @s run scoreboard players set #server elements_stage_2_boss_status 0
+execute as @s run scoreboard players set #server elements_stage_2_boss_melee_timer 0
 execute as @s run scoreboard players set #server elements_custom-items_shop_boss-frucht_remain 0
 execute as @s run scoreboard players set #server elements_get-name_status 1
 execute as @s run scoreboard players set #server elements_leaderboards_id-1_rang_enable 0
@@ -105,6 +108,13 @@ execute as @s run data modify storage elements_leaderboard_id-5 name_3 set value
 execute as @s run data modify storage elements_leaderboard_id-5 name_4 set value "#empty"
 execute as @s run data modify storage elements_leaderboard_id-5 name_5 set value "#empty"
 execute as @s run data modify storage elements_leaderboard_id-5 name_temp set value "#empty"
+execute as @s run scoreboard players set #server elements_leaderboards_id-6_rang_enable 0
+execute as @s run data modify storage elements_leaderboard_id-6 name_1 set value "#empty"
+execute as @s run data modify storage elements_leaderboard_id-6 name_2 set value "#empty"
+execute as @s run data modify storage elements_leaderboard_id-6 name_3 set value "#empty"
+execute as @s run data modify storage elements_leaderboard_id-6 name_4 set value "#empty"
+execute as @s run data modify storage elements_leaderboard_id-6 name_5 set value "#empty"
+execute as @s run data modify storage elements_leaderboard_id-6 name_temp set value "#empty"
 
 execute as @s run tellraw @a {"text": "22/x Spawne Techniker","color": "yellow"}
 execute as @s in elements:hub run summon villager 0.5 100.00 -16.5 {Invulnerable:1b,Tags:["start_steinmetz","follow"],HandItems:[{id:"minecraft:stone",count:1},{}],CustomName:'{"color":"gray","text":"Steinmetz"}',VillagerData:{level:99,profession:"minecraft:weaponsmith",type:"minecraft:plains"},Offers:{},NoAI:true}

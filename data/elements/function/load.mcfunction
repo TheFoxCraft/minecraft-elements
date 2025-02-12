@@ -107,6 +107,9 @@ bossbar set elements:gruppenziel_hub name {"text": "Aktuell gibt es kein Gruppen
 bossbar add elements:stage-1_boss "%null%"
 bossbar set elements:stage-1_boss color red
 bossbar set elements:stage-1_boss name {"text": "Rießiger Silberfisch","color": "white"}
+bossbar add elements:stage-2_boss "%null%"
+bossbar set elements:stage-2_boss color red
+bossbar set elements:stage-2_boss name {"text": "Plasma-Blaze","color": "white"}
 
 
 
@@ -166,6 +169,8 @@ scoreboard objectives add elements_stats_eq dummy
 scoreboard objectives add elements_stats_lootbox dummy
 scoreboard objectives add elements_stats_stage_1_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_1_boss_killed dummy
+scoreboard objectives add elements_stats_stage_2_boss_spawned dummy
+scoreboard objectives add elements_stats_stage_2_boss_killed dummy
 scoreboard objectives add elements_stats_stage_0_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_0_boss_killed dummy
 #miningxp
