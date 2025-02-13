@@ -1,0 +1,95 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:diamond_pickaxe",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:unbreakable": {},
+                  "minecraft:damage_resistant": {
+                    "types": "#minecraft:is_fire"
+                  },
+                  "minecraft:custom_model_data": 2
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "bold": true,
+                    "color": "blue",
+                    "italic": false,
+                    "text": "Element Pickaxe"
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "text": "Cobblestone Drop: "
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "text": "+200%"
+                    }
+                  ],
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "text": "Basalt Drop: "
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "text": "+200%"
+                    }
+                  ],
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "text": "Stone Drop: "
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "text": "+200%"
+                    }
+                  ],
+                  {
+                    "text": " "
+                  },
+                  {
+                    "bold": true,
+                    "color": "blue",
+                    "italic": false,
+                    "text": "Rare"
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

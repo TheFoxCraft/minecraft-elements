@@ -1,1 +1,1 @@
-give @s oak_wood[custom_name='{"bold":true,"color":"blue","italic":false,"text":"Compressed Wood"}',lore=['{"color":"gray","italic":false,"text":"Komprimiertes Holz"}','" "','{"bold":true,"color":"blue","italic":false,"text":"Rare"}'],custom_model_data=1] 1
+loot give @s loot elements:items/compressed/wood

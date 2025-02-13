@@ -1,0 +1,1 @@
+loot give @s loot elements:items/customs/photon/rare

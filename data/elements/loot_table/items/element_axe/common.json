@@ -1,0 +1,71 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:iron_axe",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:unbreakable": {},
+                  "minecraft:damage_resistant": {
+                    "types": "#minecraft:is_fire"
+                  },
+                  "minecraft:custom_model_data": 1
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "bold": true,
+                    "color": "yellow",
+                    "italic": false,
+                    "text": "Element Axe"
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "text": "Spruce-Log Drop: "
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "text": "+100%"
+                    }
+                  ],
+                  {
+                    "text": " "
+                  },
+                  {
+                    "bold": true,
+                    "color": "yellow",
+                    "italic": false,
+                    "text": "Common"
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

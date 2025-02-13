@@ -1,0 +1,123 @@
+{
+    "type": "command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:ghast_tear",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:custom_model_data": 1,
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "id": "movement_speed",
+                        "type": "movement_speed",
+                        "amount": 3,
+                        "operation": "add_multiplied_base",
+                        "slot": "hand"
+                      },
+                      {
+                        "id": "water_movement_efficiency",
+                        "type": "water_movement_efficiency",
+                        "amount": 1,
+                        "operation": "add_value",
+                        "slot": "hand"
+                      },
+                      {
+                        "id": "movement_efficiency",
+                        "type": "movement_efficiency",
+                        "amount": 1,
+                        "operation": "add_value",
+                        "slot": "hand"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  },
+                  "minecraft:enchantment_glint_override": true
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "bold": true,
+                    "color": "gold",
+                    "italic": false,
+                    "text": "Photon"
+                  }
+                ],
+                "target": "item_name"
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "color": "gray",
+                    "italic": false,
+                    "text": "In der Hand: "
+                  },
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "text": " Geschwindigkeit: "
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "text": "+300%"
+                    }
+                  ],
+                  {
+                    "color": "dark_gray",
+                    "italic": false,
+                    "text": "  (Betrifft auch Schwimmen)"
+                  },
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "text": " Geschwindigkeits-Effizienz: "
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "text": "100%"
+                    }
+                  ],
+                  {
+                    "color": "dark_gray",
+                    "italic": false,
+                    "text": "  (Entfernt Slowness bei Soulsand etc.)"
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "bold": true,
+                    "color": "gold",
+                    "italic": false,
+                    "text": "Legendary"
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

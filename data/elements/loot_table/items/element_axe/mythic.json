@@ -1,0 +1,87 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:netherite_axe",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:unbreakable": {},
+                  "minecraft:damage_resistant": {
+                    "types": "#minecraft:is_fire"
+                  },
+                  "minecraft:custom_model_data": 5
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "bold": true,
+                    "color": "light_purple",
+                    "italic": false,
+                    "text": "Element Axe"
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "text": "Spruce-Log Drop: "
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "text": "+500%"
+                    }
+                  ],
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "bold": true,
+                      "color": "light_purple",
+                      "italic": false,
+                      "obfuscated": true,
+                      "text": "cc"
+                    },
+                    {
+                      "bold": true,
+                      "italic": false,
+                      "obfuscated": false,
+                      "text": "Mythic"
+                    },
+                    {
+                      "bold": true,
+                      "italic": false,
+                      "obfuscated": true,
+                      "text": "cc"
+                    }
+                  ]
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

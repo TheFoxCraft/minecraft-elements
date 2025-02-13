@@ -3,12 +3,12 @@ execute if score #server elements_stage_2_portal_enable matches 1 in elements:hu
 execute if score #server elements_stage_2_portal_enable matches 1 in elements:hub run kill @e[type=interaction,tag=stage-2_portal]
 execute if score #server elements_stage_2_portal_enable matches 1 in elements:hub run setblock 57 100 9 air
 
-#achtung FALSCHE KOORDINATEN
+
 execute if score #server elements_stage_2_portal_enable matches 0 run tellraw @s ["",{"text":"Das Portal für Stage 2 wurde künstlich geöffnet!","color":"green"}]
 execute if score #server elements_stage_2_portal_enable matches 0 in elements:hub run setblock 51 100 41 reinforced_deepslate
 execute if score #server elements_stage_2_portal_enable matches 0 in elements:hub run summon interaction 51.5 100.00 41.5 {width:1.01f,height:1.01f,response:1b,Tags:["stage-2_portal"]}
 execute if score #server elements_stage_2_portal_enable matches 0 in elements:hub run setblock 57 100 9 vault[facing=south,ominous=true]{config:{loot_table:"elements:stage-2_boss-loot",override_loot_table_to_display:"minecraft:empty",key_item:{id:"minecraft:stripped_bamboo_block",components:{"minecraft:item_name":'{"color":"yellow","text":"Holz-Boss Schlüssel"}',"minecraft:lore":['" "','{"color":"gray","italic":false,"text":"Öffnet den Vault im HUB für deinen Loot"}','" "','{"bold":true,"color":"blue","italic":false,"text":"Rare"}'],"minecraft:custom_model_data":1,"minecraft:enchantment_glint_override":true,damage_resistant:{types:"#is_fire"}}}},shared_data:{loot_table:"elements:stage-2_boss-loot"}} replace
-#achtung FALSCHE KOORDINATEN und falscher Loottable
+
 
 execute if score #server elements_stage_2_portal_enable matches 0 run scoreboard players set #server elements_stage_2_portal_enable 2
 execute if score #server elements_stage_2_portal_enable matches 1 run scoreboard players set #server elements_stage_2_portal_enable 0

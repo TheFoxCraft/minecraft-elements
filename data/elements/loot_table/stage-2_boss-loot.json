@@ -1,158 +1,150 @@
 {
-    "type": "vault",
-    "pools": [
-      {
-        "rolls": 3,
-        "entries": [
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:charcoal",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:bone",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:gravel",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:flint",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:apple",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_name",
-                "name": [
-                  {
-                    "text": "#lebensfrucht"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:cookie",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_name",
-                "name": [
-                  {
-                    "text": "#bosskeks"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:gray_dye",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_name",
-                "name": [
-                  {
-                    "text": "#gravity-stone"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "empty",
-            "weight": 1
-          }
-        ]
-      },
-      {
-        "rolls": 5,
-        "entries": [
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:stone",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:cobblestone",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:blackstone",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+  "type": "vault",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:charcoal",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:gravel",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:flint",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "weight": 5,
+          "value": "elements:items/customs/photon/rare",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:apple",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "#lebensfrucht"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 10,
+          "name": "minecraft:cookie",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "#bosskeks"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 80
+        }
+      ]
+    },
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:oak_log",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:spruce_log",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:oak_planks",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

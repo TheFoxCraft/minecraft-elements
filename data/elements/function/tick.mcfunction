@@ -1,4 +1,4 @@
-function elements:sonstiges-always/spawning
+function elements:villager/spawning/main
 function elements:sonstiges-always/sonstiges
 function elements:sonstiges-always/level {elements_level_stone:10,elements_level_wood:1}
 function elements:villager/techniker
