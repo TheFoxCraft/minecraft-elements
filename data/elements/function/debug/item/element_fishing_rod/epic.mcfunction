@@ -1,1 +1,1 @@
-give @s fishing_rod[custom_name='{"bold":true,"color":"dark_purple","italic":false,"text":"Element Fishing Rod"}',lore=['" "','[{"color":"gray","italic":false,"text":"Luck: "},{"color":"green","italic":false,"text":"+50"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}','" "'],unbreakable={},damage_resistant={types:"#minecraft:is_fire"},custom_model_data=1,attribute_modifiers={modifiers:[{id:"luck",type:"luck",amount:50,operation:"add_value",slot:"hand"}],show_in_tooltip:false}] 1
+loot give @s loot elements:items/element_fishing_rod/epic

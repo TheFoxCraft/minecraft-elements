@@ -1,0 +1,1 @@
+loot give @s loot elements:items/customs/mana_messstab

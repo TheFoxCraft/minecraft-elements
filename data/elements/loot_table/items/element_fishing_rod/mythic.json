@@ -1,0 +1,54 @@
+{
+    "type": "command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:fishing_rod",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:unbreakable": {},
+                  "minecraft:damage_resistant": {
+                    "types": "#minecraft:is_fire"
+                  },
+                  "minecraft:custom_model_data": 1,
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "id": "luck",
+                        "type": "luck",
+                        "amount": 100,
+                        "operation": "add_value",
+                        "slot": "hand"
+                      }
+                    ],
+                    "show_in_tooltip": false
+                  }
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "bold": true,
+                    "color": "light_purple",
+                    "italic": false,
+                    "text": "Element Fishing Rod"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
