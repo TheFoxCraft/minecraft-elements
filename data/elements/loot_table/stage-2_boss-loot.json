@@ -18,7 +18,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:bone",
+          "name": "minecraft:birch_sapling",
           "functions": [
             {
               "function": "set_count",
@@ -29,7 +29,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:gravel",
+          "name": "minecraft:acacia_sapling",
           "functions": [
             {
               "function": "set_count",
@@ -40,7 +40,62 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:flint",
+          "name": "minecraft:cherry_sapling",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:jungle_sapling",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:spruce_sapling",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:dark_oak_sapling",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:oak_sapling",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:mangrove_propagule",
           "functions": [
             {
               "function": "set_count",

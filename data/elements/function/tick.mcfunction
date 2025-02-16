@@ -61,7 +61,8 @@ execute if score #server elements_stage_1_boss_status matches 1 run function ele
 execute if score #server elements_stage_2_boss_status matches 1 run function elements:bosse/stage-2/main
 
 execute as @a[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:{"minecraft:custom_model_data":1}}},gamemode=!adventure] run function elements:custom-items/rettungs-plattform/rettungs-plattform-always
-execute as @e[type=item,nbt={Item:{id:"minecraft:blue_ice",count:1,components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if block ~ ~ ~ fire if score #server elements_stage_1_portal_enable matches 0 run function elements:stages/stage-1/portal-enable
+execute as @e[type=item,nbt={Item:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if block ~ ~ ~ fire if score #server elements_stage_1_portal_enable matches 0 run function elements:stages/stage-1/portal-enable
+execute as @e[type=item,nbt={Item:{id:"minecraft:dark_oak_sapling",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:spruce_log"},OnGround:1b},distance=..0.3] if entity @e[type=item,nbt={Item:{id:"minecraft:charcoal"},OnGround:1b},distance=..0.3,] if score #server elements_stage_2_portal_enable matches 0 run function elements:stages/stage-2/portal-enable
 
 
 

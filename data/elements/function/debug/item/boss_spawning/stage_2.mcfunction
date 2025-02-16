@@ -1,0 +1,1 @@
+loot give @s loot elements:items/boss_spawing/stage_2

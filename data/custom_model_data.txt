@@ -25,3 +25,6 @@
     netherite_pickaxe: Element Pickaxe | Mythic
     netherite_axe: Element Axe | Mythic
 6:
+
+100:
+    stick: Admin Wand (für Abgaben)
