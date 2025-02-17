@@ -73,6 +73,15 @@ execute as @s run scoreboard players set #server elements_stage_2_boss_status 0
 execute as @s run scoreboard players set #server elements_stage_2_boss_melee_timer 0
 execute as @s run scoreboard players set #server elements_custom-items_shop_boss-frucht_remain 0
 execute as @s run scoreboard players set #server elements_get-name_status 1
+execute as @s run scoreboard players set #server elements_double-xp-event_active 0
+execute as @s run scoreboard players set #server elements_double-xp-event_timer_actual_h 0
+execute as @s run scoreboard players set #server elements_double-xp-event_timer_actual_min 0
+execute as @s run scoreboard players set #server elements_double-xp-event_timer_actual_sec 0
+execute as @s run scoreboard players set #server elements_double-xp-event_timer_max_h 0
+execute as @s run scoreboard players set #server elements_double-xp-event_timer_max_min 0
+execute as @s run scoreboard players set #server elements_double-xp-event_timer_max_sec 0
+execute as @s run scoreboard players set #server elements_admin_config_interface 1
+
 execute as @s run scoreboard players set #server elements_leaderboards_id-1_rang_enable 0
 execute as @s run data modify storage elements_leaderboard_id-1 name_1 set value "#empty"
 execute as @s run data modify storage elements_leaderboard_id-1 name_2 set value "#empty"

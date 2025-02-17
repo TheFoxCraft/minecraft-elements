@@ -20,6 +20,7 @@ execute as @a[scores={elements_level_wood_6=1..}] run scoreboard players remove 
 
 
 $execute as @a[scores={elements_level_stone_1=1..}] if score #server elements_stage matches 1.. if score @s elements_homedimension = @s elements_dimension run xp add @s $(elements_level_stone) points
+$execute as @a[scores={elements_level_stone_1=1..}] if score #server elements_stage matches 1.. if score @s elements_homedimension = @s elements_dimension if score #server elements_double-xp-event_active matches 1 run xp add @s $(elements_level_stone) points
 execute as @a[scores={elements_level_stone_1=1..},nbt={SelectedItem:{id:"minecraft:iron_pickaxe",components:{"minecraft:custom_model_data":1}}}] at @e[type=item,nbt={Item:{id:"minecraft:cobblestone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:cobblestone",count:1}}
 execute as @a[scores={elements_level_stone_1=1..},nbt={SelectedItem:{id:"minecraft:diamond_pickaxe",components:{"minecraft:custom_model_data":2}}}] at @e[type=item,nbt={Item:{id:"minecraft:cobblestone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:cobblestone",count:2}}
 execute as @a[scores={elements_level_stone_1=1..},nbt={SelectedItem:{id:"minecraft:diamond_pickaxe",components:{"minecraft:custom_model_data":3}}}] at @e[type=item,nbt={Item:{id:"minecraft:cobblestone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:cobblestone",count:3}}
@@ -30,6 +31,7 @@ execute as @a[scores={elements_level_stone_1=1..},nbt={SelectedItem:{id:"minecra
 execute as @a[scores={elements_level_stone_1=1..}] run scoreboard players set @s elements_level_stone_1 0
 
 $execute as @a[scores={elements_level_stone_2=1..}] if score #server elements_stage matches 1.. if score @s elements_homedimension = @s elements_dimension run xp add @s $(elements_level_stone) points
+$execute as @a[scores={elements_level_stone_2=1..}] if score #server elements_stage matches 1.. if score @s elements_homedimension = @s elements_dimension if score #server elements_double-xp-event_active matches 1 run xp add @s $(elements_level_stone) points
 execute as @a[scores={elements_level_stone_2=1..},nbt={SelectedItem:{id:"minecraft:iron_pickaxe",components:{"minecraft:custom_model_data":1}}}] at @e[type=item,nbt={Item:{id:"minecraft:basalt",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:basalt",count:1}}
 execute as @a[scores={elements_level_stone_2=1..},nbt={SelectedItem:{id:"minecraft:diamond_pickaxe",components:{"minecraft:custom_model_data":2}}}] at @e[type=item,nbt={Item:{id:"minecraft:basalt",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:basalt",count:2}}
 execute as @a[scores={elements_level_stone_2=1..},nbt={SelectedItem:{id:"minecraft:diamond_pickaxe",components:{"minecraft:custom_model_data":3}}}] at @e[type=item,nbt={Item:{id:"minecraft:basalt",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:basalt",count:3}}
@@ -40,6 +42,7 @@ execute as @a[scores={elements_level_stone_2=1..},nbt={SelectedItem:{id:"minecra
 execute as @a[scores={elements_level_stone_2=1..}] run scoreboard players set @s elements_level_stone_2 0
 
 $execute as @a[scores={elements_level_stone_3=1..}] if score #server elements_stage matches 1.. if score @s elements_homedimension = @s elements_dimension run xp add @s $(elements_level_stone) points
+$execute as @a[scores={elements_level_stone_3=1..}] if score #server elements_stage matches 1.. if score @s elements_homedimension = @s elements_dimension if score #server elements_double-xp-event_active matches 1 run xp add @s $(elements_level_stone) points
 execute as @a[scores={elements_level_stone_3=1..},nbt={SelectedItem:{id:"minecraft:iron_pickaxe",count:1,components:{"minecraft:custom_model_data":1,"minecraft:enchantments":{levels:{"minecraft:silk_touch":1}}}}}] at @e[type=item,nbt={Item:{id:"minecraft:stone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:stone",count:1}}
 execute as @a[scores={elements_level_stone_3=1..},nbt={SelectedItem:{id:"minecraft:diamond_pickaxe",components:{"minecraft:custom_model_data":2,"minecraft:enchantments":{levels:{"minecraft:silk_touch":1}}}}}] at @e[type=item,nbt={Item:{id:"minecraft:stone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:stone",count:2}}
 execute as @a[scores={elements_level_stone_3=1..},nbt={SelectedItem:{id:"minecraft:diamond_pickaxe",components:{"minecraft:custom_model_data":3,"minecraft:enchantments":{levels:{"minecraft:silk_touch":1}}}}}] at @e[type=item,nbt={Item:{id:"minecraft:stone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:stone",count:3}}
@@ -66,6 +69,7 @@ execute as @a[scores={elements_level_stone_3=1..}] run scoreboard players set @s
 
 
 $execute as @a[scores={elements_level_wood_1=1..}] if score #server elements_stage matches 2.. if score @s elements_homedimension = @s elements_dimension run xp add @s $(elements_level_wood) levels
+$execute as @a[scores={elements_level_wood_1=1..}] if score #server elements_stage matches 2.. if score @s elements_homedimension = @s elements_dimension if score #server elements_double-xp-event_active matches 1 run xp add @s $(elements_level_wood) levels
 execute as @a[scores={elements_level_wood_1=1..},nbt={SelectedItem:{id:"minecraft:iron_axe",components:{"minecraft:custom_model_data":1}}}] at @e[type=item,nbt={Item:{id:"minecraft:oak_log",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:oak_log",count:1}}
 execute as @a[scores={elements_level_wood_1=1..},nbt={SelectedItem:{id:"minecraft:diamond_axe",components:{"minecraft:custom_model_data":2}}}] at @e[type=item,nbt={Item:{id:"minecraft:oak_log",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:oak_log",count:2}}
 execute as @a[scores={elements_level_wood_1=1..},nbt={SelectedItem:{id:"minecraft:diamond_axe",components:{"minecraft:custom_model_data":3}}}] at @e[type=item,nbt={Item:{id:"minecraft:oak_log",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:oak_log",count:3}}
@@ -76,6 +80,7 @@ execute as @a[scores={elements_level_wood_1=1..},nbt={SelectedItem:{id:"minecraf
 execute as @a[scores={elements_level_wood_1=1..}] run scoreboard players set @s elements_level_wood_1 0
 
 $execute as @a[scores={elements_level_wood_2=1..}] if score #server elements_stage matches 2.. if score @s elements_homedimension = @s elements_dimension run xp add @s $(elements_level_wood) levels
+$execute as @a[scores={elements_level_wood_2=1..}] if score #server elements_stage matches 2.. if score @s elements_homedimension = @s elements_dimension if score #server elements_double-xp-event_active matches 1 run xp add @s $(elements_level_wood) levels
 execute as @a[scores={elements_level_wood_2=1..},nbt={SelectedItem:{id:"minecraft:iron_axe",components:{"minecraft:custom_model_data":1}}}] at @e[type=item,nbt={Item:{id:"minecraft:spruce_log",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:spruce_log",count:1}}
 execute as @a[scores={elements_level_wood_2=1..},nbt={SelectedItem:{id:"minecraft:diamond_axe",components:{"minecraft:custom_model_data":2}}}] at @e[type=item,nbt={Item:{id:"minecraft:spruce_log",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:spruce_log",count:2}}
 execute as @a[scores={elements_level_wood_2=1..},nbt={SelectedItem:{id:"minecraft:diamond_axe",components:{"minecraft:custom_model_data":3}}}] at @e[type=item,nbt={Item:{id:"minecraft:spruce_log",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:spruce_log",count:3}}
@@ -86,6 +91,7 @@ execute as @a[scores={elements_level_wood_2=1..},nbt={SelectedItem:{id:"minecraf
 execute as @a[scores={elements_level_wood_2=1..}] run scoreboard players set @s elements_level_wood_2 0
 
 $execute as @a[scores={elements_level_wood_3=1..}] if score #server elements_stage matches 2.. if score @s elements_homedimension = @s elements_dimension run xp add @s $(elements_level_wood) levels
+$execute as @a[scores={elements_level_wood_3=1..}] if score #server elements_stage matches 2.. if score @s elements_homedimension = @s elements_dimension if score #server elements_double-xp-event_active matches 1 run xp add @s $(elements_level_wood) levels
 execute as @a[scores={elements_level_wood_3=1..},nbt={SelectedItem:{id:"minecraft:iron_axe",components:{"minecraft:custom_model_data":1}}}] at @e[type=item,nbt={Item:{id:"minecraft:dark_oak_log",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:dark_oak_log",count:1}}
 execute as @a[scores={elements_level_wood_3=1..},nbt={SelectedItem:{id:"minecraft:diamond_axe",components:{"minecraft:custom_model_data":2}}}] at @e[type=item,nbt={Item:{id:"minecraft:dark_oak_log",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:dark_oak_log",count:2}}
 execute as @a[scores={elements_level_wood_3=1..},nbt={SelectedItem:{id:"minecraft:diamond_axe",components:{"minecraft:custom_model_data":3}}}] at @e[type=item,nbt={Item:{id:"minecraft:dark_oak_log",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:dark_oak_log",count:3}}

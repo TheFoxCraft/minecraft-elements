@@ -1,4 +1,27 @@
-function elements:villager/spawning/main
+#timers
+scoreboard players add #server elements_function_timer_1m 1
+scoreboard players add #server elements_function_timer_10s 1
+scoreboard players add #server elements_function_timer_5s 1
+scoreboard players add #server elements_function_timer_3s 1
+scoreboard players add #server elements_function_timer_1s 1
+
+execute if score #server elements_function_timer_1m matches 1200.. run function elements:function-timers/1m
+execute if score #server elements_function_timer_1m matches 1200.. run scoreboard players set #server elements_function_timer_1m 0
+execute if score #server elements_function_timer_10s matches 200.. run function elements:function-timers/10s
+execute if score #server elements_function_timer_10s matches 200.. run scoreboard players set #server elements_function_timer_10s 0
+execute if score #server elements_function_timer_5s matches 100.. run function elements:function-timers/5s
+execute if score #server elements_function_timer_5s matches 100.. run scoreboard players set #server elements_function_timer_5s 0
+execute if score #server elements_function_timer_3s matches 60.. run function elements:function-timers/3s
+execute if score #server elements_function_timer_3s matches 60.. run scoreboard players set #server elements_function_timer_3s 0
+execute if score #server elements_function_timer_1s matches 20.. run function elements:function-timers/1s
+execute if score #server elements_function_timer_1s matches 20.. run scoreboard players set #server elements_function_timer_1s 0
+
+
+
+
+#-------------------------------------ALWAYS-------------------------------------ALWAYS-----------------------------------ALWAYS----------------------------------
+
+
 function elements:sonstiges-always/sonstiges
 function elements:sonstiges-always/level {elements_level_stone:10,elements_level_wood:1}
 function elements:villager/techniker
@@ -41,8 +64,9 @@ execute as @a[scores={elements_enderchest_interface_number=4}] run function elem
 execute as @a[scores={elements_enderchest_interface_number=5}] run function elements:enderchest/casino
 execute as @a[scores={elements_enderchest_interface_number=6}] run function elements:enderchest/collections/menu
 execute as @a[scores={elements_enderchest_interface_number=7}] run function elements:enderchest/settings
-execute as @a[scores={elements_enderchest_interface_number=8,elements_rank_admin=1}] run function elements:enderchest/admin-settings/abgaben
-execute as @a[scores={elements_enderchest_interface_number=8,elements_rank_admin=1}] if score #server elements_setup matches 1.. run function elements:enderchest/admin-settings/teleporter
+execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=1,elements_rank_admin=1}] if score #server elements_setup matches 1.. run function elements:enderchest/admin-settings/abgaben
+execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=1,elements_rank_admin=1}] if score #server elements_setup matches 2.. run function elements:enderchest/admin-settings/teleporter
+execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=2,elements_rank_admin=1}] if score #server elements_setup matches 3.. run function elements:enderchest/admin-settings/double-xp-event/main
 execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_count=1,elements_enderchest_shop_ocean=1}] run function elements:enderchest/shop/ocean-shop
 execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_count=1,elements_enderchest_shop_stone=1}] run function elements:enderchest/shop/stone-shop
 execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_count=1,elements_enderchest_shop_sky=1}] run function elements:enderchest/shop/sky-shop

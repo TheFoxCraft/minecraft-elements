@@ -394,6 +394,11 @@ scoreboard objectives add elements_enderchest_interface_click_shop_sky_infinity 
 scoreboard objectives add elements_enderchest_interface_click_shop_sky_luck-of-the-sea dummy
 scoreboard objectives add elements_enderchest_interface_click_shop_sky_loyalty dummy
 
+scoreboard objectives add elements_enderchest_interface_click_adminsettings_double-xp_open dummy
+scoreboard objectives add elements_enderchest_interface_click_adminsettings_double-xp_activate dummy
+scoreboard objectives add elements_enderchest_interface_click_adminsettings_double-xp_change_time dummy
+scoreboard objectives add elements_enderchest_interface_click_adminsettings_double-xp_get_time dummy
+
 
 scoreboard objectives add elements_uniqueitem_collections_stone dummy
 scoreboard objectives add elements_spawn_energiekern dummy
@@ -560,10 +565,29 @@ scoreboard objectives add elements_mana_item_messstab_cooldown dummy
 scoreboard objectives add elements_mana_item_magische-schale_cooldown dummy
 scoreboard objectives add elements_recycler_update dummy
 scoreboard objectives add elements_recycler_stats_1 dummy
+scoreboard objectives add elements_function_timer_1m dummy
+scoreboard objectives add elements_function_timer_10s dummy
+scoreboard objectives add elements_function_timer_5s dummy
+scoreboard objectives add elements_function_timer_3s dummy
+scoreboard objectives add elements_function_timer_1s dummy
+scoreboard objectives add elements_sonstiges_no-too-expensive_success dummy
+scoreboard objectives add elements_admin_config_interface dummy
 
 
-
-
+#double-xp Event
+scoreboard objectives add elements_double-xp-event_active dummy
+scoreboard objectives add elements_double-xp-event_timer_max_h dummy
+scoreboard objectives add elements_double-xp-event_timer_max_min dummy
+scoreboard objectives add elements_double-xp-event_timer_max_sec dummy
+scoreboard objectives add elements_double-xp-event_timer_max_all dummy
+scoreboard objectives add elements_double-xp-event_timer_actual_h dummy
+scoreboard objectives add elements_double-xp-event_timer_actual_min dummy
+scoreboard objectives add elements_double-xp-event_timer_actual_sec dummy
+scoreboard objectives add elements_double-xp-event_timer_actual_all dummy
+scoreboard objectives add elements_double-xp-event_calc_var dummy
+scoreboard objectives add elements_double-xp-event_get_timer_data dummy
+bossbar add elements:double-xp-event_timer "%null%"
+bossbar set elements:double-xp-event_timer color yellow
 
 #leaderboards
 scoreboard objectives add elements_leaderboards_id-1_rang_enable dummy

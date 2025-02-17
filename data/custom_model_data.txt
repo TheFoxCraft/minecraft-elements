@@ -8,6 +8,7 @@
     stripped_bamboo_block: Stage 2 Boos Loot Key
     ghast_tear: Photon | Rare
     stick: Mana-Messstab
+    experience_bottle: Admin-Config | Öffne Double-Xp-Event Interface
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -24,7 +25,33 @@
 5:
     netherite_pickaxe: Element Pickaxe | Mythic
     netherite_axe: Element Axe | Mythic
-6:
+10:
+    gray_dye: Admin-Config | Double-Level Kein Event aktiv
+    lime_dye: Admin-Config | Double-Level  Event aktiv
+    clock: Admin-Config | Double-Level Timer Action
+    lectern: Admin-Config | Double-Level Timer Action
+11:
+    clock: Admin-Config | Double-Level Timer Action
+12:
+    clock: Admin-Config | Double-Level Timer Action
+13:
+    clock: Admin-Config | Double-Level Timer Action
+14:
+    clock: Admin-Config | Double-Level Timer Action
+15:
+    clock: Admin-Config | Double-Level Timer Action
+
 
 100:
     stick: Admin Wand (für Abgaben)
+
+
+
+
+#template
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] store result score @s elements_enderchest_interface_click_adminsettings_double-xp_dummy run clear @s minecraft:dummy2[custom_model_data=10]
+execute as @a[scores={elements_enderchest_interface_click_adminsettings_double-xp_dummy=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_adminsettings_double-xp_dummy=1}] run say action here
+execute as @a[scores={elements_enderchest_interface_click_adminsettings_double-xp_dummy=1}] run scoreboard players set @s elements_enderchest_interface_click_adminsettings_double-xp_dummy 0
+kill @e[type=item,nbt={Item:{id:"minecraft:dummy2",count:1,components:{"minecraft:custom_model_data":10}}}]
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score #server elements_double-xp-event_active matches 0 run item replace entity @s enderchest.9 with dummy2[custom_name='[{"color":"gold","text":"Status: ","italic": false},{"text": "Inaktiv","color": "gray"}]',lore=['{"text": "Klicke um ein Event für die Festgelegte Zeit zu starten!","color": "gray","italic": false}'],custom_model_data=10] 1

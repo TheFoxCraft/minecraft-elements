@@ -1,11 +1,30 @@
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8}] store result score @s elements_enderchest_interface_click_adminsettings_back run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=2]
 execute as @a[scores={elements_enderchest_interface_click_adminsettings_back=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_adminsettings_back=1,elements_enderchest_level_settings=0}] run scoreboard players set @s elements_enderchest_interface_number 1
-execute as @a[scores={elements_enderchest_interface_click_adminsettings_back=1,elements_enderchest_level_settings=1}] run scoreboard players set @s elements_enderchest_interface_number 7
+execute as @a[scores={elements_enderchest_interface_click_adminsettings_back=1,elements_enderchest_level_settings=0,elements_admin_config_interface=1}] run scoreboard players set @s elements_enderchest_interface_number 1
+execute as @a[scores={elements_enderchest_interface_click_adminsettings_back=1,elements_enderchest_level_settings=1,elements_admin_config_interface=1}] run scoreboard players set @s elements_enderchest_interface_number 7
+execute as @a[scores={elements_enderchest_interface_click_adminsettings_back=1,elements_enderchest_level_settings=1,elements_admin_config_interface=2}] run scoreboard players set @s elements_admin_config_interface 1
 execute as @a[scores={elements_enderchest_interface_click_adminsettings_back=1}] run function elements:enderchest/enderchest-clear
 execute as @a[scores={elements_enderchest_interface_click_adminsettings_back=1}] run scoreboard players set @s elements_enderchest_interface_click_adminsettings_back 0
 kill @e[type=item,nbt={Item:{id:"minecraft:magenta_glazed_terracotta",count:1,components:{"minecraft:custom_model_data":2}}}]
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","text":"Zurück"}',custom_model_data=2] 1
+
+#interfaces:
+# 1: main
+# 2: double-xp-event
+
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1}] store result score @s elements_enderchest_interface_click_adminsettings_double-xp_open run clear @s minecraft:experience_bottle[custom_model_data=1]
+execute as @a[scores={elements_enderchest_interface_click_adminsettings_double-xp_open=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_adminsettings_double-xp_open=1}] run function elements:enderchest/enderchest-clear
+execute as @a[scores={elements_enderchest_interface_click_adminsettings_double-xp_open=1}] run scoreboard players set @s elements_admin_config_interface 2
+execute as @a[scores={elements_enderchest_interface_click_adminsettings_double-xp_open=1}] run scoreboard players set @s elements_enderchest_interface_click_adminsettings_double-xp_open 0
+kill @e[type=item,nbt={Item:{id:"minecraft:experience_bottle",count:1,components:{"minecraft:custom_model_data":1}}}]
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1}] run item replace entity @s enderchest.1 with experience_bottle[custom_name='{"color":"gold","text":"Doppelte Level Event","italic": false}',lore=['{"text": "Klicke um das Menü zum Einstellen zu öffnen!","color": "gray","italic": false}'],custom_model_data=1] 1
+
+
+
+
+
+
 
 #first setup
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8}] store result score @s elements_enderchest_interface_click_adminsettings_first-setup run clear @s minecraft:barrier[custom_model_data=10]
