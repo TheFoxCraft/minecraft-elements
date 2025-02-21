@@ -1,16 +1,12 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "category": "building",
-    "key": {
-      "S": {
-        "item": "minecraft:basalt"
-      }
-    },
-    "pattern": [
-      "SS",
-      "SS"
-    ],
-    "result": {
-      
-    }
-  }
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": "minecraft:basalt"
+  },
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "result": {}
+}

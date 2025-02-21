@@ -9,16 +9,19 @@
     ghast_tear: Photon | Rare
     stick: Mana-Messstab
     experience_bottle: Admin-Config | Öffne Double-Xp-Event Interface
+    cookie: Bosskeks Stage 1
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
     diamond_axe: Element Axe | Rare
     netherite_axe: Elemen Axe | Rare (Upgraded)
+    cookie: Bosskeks Stage 2
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
     diamond_axe: Element Axe | Epic
     netherite_axe: Element Axe | Epic (Upgraded)
+    cookie: Bosskeks Stage 3
 4:
     netherite_pickaxe: Element Pickaxe | Legendary
     netherite_axe: Element Axe | Legendary
@@ -48,7 +51,9 @@
 
 
 
-#template
+#templates
+
+#button click enderchest
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] store result score @s elements_enderchest_interface_click_adminsettings_double-xp_dummy run clear @s minecraft:dummy2[custom_model_data=10]
 execute as @a[scores={elements_enderchest_interface_click_adminsettings_double-xp_dummy=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @a[scores={elements_enderchest_interface_click_adminsettings_double-xp_dummy=1}] run say action here

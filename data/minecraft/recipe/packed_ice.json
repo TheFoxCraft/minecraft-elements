@@ -1,16 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-      "##",
-      "##"
-  ],
-  "key": {
-      "#": {
-          "item": "minecraft:ice"
-      }
-  },
-  "result": {
-      "id": "minecraft:packed_ice",
-      "count": 1
-  }
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": "minecraft:ice"
+    },
+    "result": {
+        "id": "minecraft:packed_ice",
+        "count": 1
+    }
 }

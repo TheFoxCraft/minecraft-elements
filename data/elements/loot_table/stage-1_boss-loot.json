@@ -55,7 +55,7 @@
         "entries": [
           {
             "type": "item",
-            "weight": 1,
+            "weight": 5,
             "name": "minecraft:apple",
             "functions": [
               {
@@ -73,27 +73,14 @@
             ]
           },
           {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:cookie",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_name",
-                "name": [
-                  {
-                    "text": "#bosskeks"
-                  }
-                ]
-              }
-            ]
+            "type": "loot_table",
+            "weight": 10,
+            "value": "elements:items/customs/boss-keks/stage_1"
+            
           },
           {
             "type": "item",
-            "weight": 1,
+            "weight": 5,
             "name": "minecraft:gray_dye",
             "functions": [
               {
@@ -112,7 +99,7 @@
           },
           {
             "type": "empty",
-            "weight": 1
+            "weight": 80
           }
         ]
       },

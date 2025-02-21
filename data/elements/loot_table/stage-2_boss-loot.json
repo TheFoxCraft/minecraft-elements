@@ -139,23 +139,9 @@
           ]
         },
         {
-          "type": "item",
+          "type": "loot_table",
           "weight": 10,
-          "name": "minecraft:cookie",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "#bosskeks"
-                }
-              ]
-            }
-          ]
+          "value": "elements:items/customs/boss-keks/stage_2"
         },
         {
           "type": "empty",

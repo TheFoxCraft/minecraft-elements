@@ -572,6 +572,9 @@ scoreboard objectives add elements_function_timer_3s dummy
 scoreboard objectives add elements_function_timer_1s dummy
 scoreboard objectives add elements_sonstiges_no-too-expensive_success dummy
 scoreboard objectives add elements_admin_config_interface dummy
+scoreboard objectives add elements_custom-items_boss-keks_stage-1_cooldown dummy
+scoreboard objectives add elements_custom-items_boss-keks_stage-2_cooldown dummy
+scoreboard objectives add elements_custom-items_boss-keks_stage-3_cooldown dummy
 
 
 #double-xp Event

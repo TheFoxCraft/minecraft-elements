@@ -1,0 +1,84 @@
+{
+  "type": "command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:cookie",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:custom_model_data": 1,
+                "minecraft:damage_resistant": {
+                  "types": "#minecraft:is_fire"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 999999,
+                  "animation": "none"
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "blue",
+                  "italic": false,
+                  "text": "Boss-Keks"
+                }
+              ],
+              "target": "item_name"
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                [
+                  {
+                    "color": "gray",
+                    "italic": false,
+                    "text": "Verbrauchen: "
+                  },
+                  {
+                    "color": "green",
+                    "italic": false,
+                    "text": "+50 Level"
+                  }
+                ],
+                {
+                  "text": " "
+                },
+                {
+                  "color": "dark_gray",
+                  "italic": false,
+                  "text": "Von Stage 1"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "bold": true,
+                  "color": "blue",
+                  "italic": false,
+                  "text": "Rare"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
