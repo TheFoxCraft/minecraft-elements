@@ -1,4 +1,5 @@
 1:
+    apple: Lebensfrucht
     structure_void: detection für fishing
     fishing_rod: Element Fishing Rod | Common
     cobbled_deepslate: Compressed Cobblestone 
@@ -10,21 +11,25 @@
     stick: Mana-Messstab
     experience_bottle: Admin-Config | Öffne Double-Xp-Event Interface
     cookie: Bosskeks Stage 1
+    potion: Kleiner Heiltrank | Nether Shop
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
     diamond_axe: Element Axe | Rare
     netherite_axe: Elemen Axe | Rare (Upgraded)
     cookie: Bosskeks Stage 2
+    potion: Kleiner Heiltrank | Nether Shop Buying
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
     diamond_axe: Element Axe | Epic
     netherite_axe: Element Axe | Epic (Upgraded)
     cookie: Bosskeks Stage 3
+    potion: Großer Heiltrank | Nether Shop
 4:
     netherite_pickaxe: Element Pickaxe | Legendary
     netherite_axe: Element Axe | Legendary
+    potion: Großer Heiltrank | Nether Shop Buying
 5:
     netherite_pickaxe: Element Pickaxe | Mythic
     netherite_axe: Element Axe | Mythic

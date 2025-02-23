@@ -537,6 +537,7 @@ scoreboard objectives add elements_custom-items_shop_fishing-frucht_timer_tick d
 scoreboard objectives add elements_custom-items_shop_fishing-frucht_enable dummy
 scoreboard objectives add elements_custom-items_shop_fishing-frucht_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_small-heal-potion_cooldown dummy
+scoreboard objectives add elements_custom-items_shop_big-heal-potion_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_boss-frucht_remain dummy
 scoreboard objectives add elements_stage_1_portal_enable dummy
 scoreboard objectives add elements_stage_1_boss_status dummy
@@ -572,6 +573,12 @@ scoreboard objectives add elements_function_timer_3s dummy
 scoreboard objectives add elements_function_timer_1s dummy
 scoreboard objectives add elements_sonstiges_no-too-expensive_success dummy
 scoreboard objectives add elements_admin_config_interface dummy
+scoreboard objectives add elements_maxhealth dummy
+scoreboard objectives add elements_maxhealth_old dummy
+scoreboard objectives add elements_maxhealth_update_queue dummy
+scoreboard objectives add elements_custom-items_lebensfrucht_cooldown dummy
+scoreboard objectives add elements_inv_small_heal_pot dummy
+scoreboard objectives add elements_inv_big_heal_pot dummy
 scoreboard objectives add elements_custom-items_boss-keks_stage-1_cooldown dummy
 scoreboard objectives add elements_custom-items_boss-keks_stage-2_cooldown dummy
 scoreboard objectives add elements_custom-items_boss-keks_stage-3_cooldown dummy

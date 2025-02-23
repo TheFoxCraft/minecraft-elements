@@ -94,16 +94,31 @@ execute as @a[scores={elements_enderchest_interface_number=9}] run item replace 
 
 
 
-execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_nether-wart run clear @s minecraft:nether_wart[custom_model_data=2]
-execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=..199}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=..199}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=200..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=200..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=200..}] run give @s nether_wart 1
-execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=200..}] run xp add @s -200 levels
-execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_nether_nether-wart 0
-kill @e[type=item,nbt={Item:{id:"minecraft:nether_wart",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.14 with potion[custom_name='{"color":"yellow","text":"Kleiner Heiltrank [10 Level]","italic": false}',custom_model_data=2] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_heal-small run clear @s minecraft:potion[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-small=1,elements_mainlevel=..9}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-small=1,elements_mainlevel=..9}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-small=1,elements_mainlevel=10..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-small=1,elements_mainlevel=10..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-small=1,elements_mainlevel=10..}] run loot give @s loot elements:items/shops/nether/small_heal_pot
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-small=1,elements_mainlevel=10..}] run xp add @s -10 levels
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-small=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_nether_heal-small 0
+kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.14 loot elements:items/shops/nether/small_heal_pot
+execute as @a[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.14 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Kleiner Heiltrank [10 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data",    "value": 2  }]
+
+
+
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_heal-big run clear @s minecraft:potion[custom_model_data=4]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-big=1,elements_mainlevel=..49}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-big=1,elements_mainlevel=..49}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-big=1,elements_mainlevel=50..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-big=1,elements_mainlevel=50..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-big=1,elements_mainlevel=50..}] run loot give @s loot elements:items/shops/nether/big_heal_pot
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-big=1,elements_mainlevel=50..}] run xp add @s -50 levels
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heal-big=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_nether_heal-big 0
+kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":3}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.15 loot elements:items/shops/nether/big_heal_pot
+execute as @a[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.15 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Großer Heiltrank [50 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 4 }]
 
 
 

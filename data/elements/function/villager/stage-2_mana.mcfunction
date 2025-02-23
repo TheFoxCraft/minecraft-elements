@@ -48,7 +48,9 @@ execute as @a[scores={elements_villager_stage-2_mana_level=3,just-ignore=412}] r
 execute as @a[scores={elements_villager_stage-2_mana_level=3,just-ignore=413}] run tellraw @s ["","\n",{"text":"Albus:","underlined":true,"color":"dark_red"},"\n",{"text":"Es ist eine Schüssel, die dich mit unendlich Essen versorgt. Ich weiss, dass klingt erstmal langweilig, aber du wirst den Wert dahinter später noch verstehen."},"\n","\n",{"text":"Okay.","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 414"}}]
 execute as @a[scores={elements_villager_stage-2_mana_level=3,just-ignore=413}] run scoreboard players set @s just-ignore 0
 execute as @a[scores={elements_villager_stage-2_mana_level=3,just-ignore=414}] run tellraw @s ["","\n",{"text":"Albus:","underlined":true,"color":"dark_red"},"\n",{"text":"So, hier viel Spaß damit."}]
-execute as @a[scores={elements_villager_stage-2_mana_level=3,just-ignore=414}] run give @s rabbit_stew[consumable={consume_seconds:99999},custom_model_data=1,item_name='{"bold":true,"color":"blue","italic":false,"text":"Magische Schale"}',lore=['{"color":"gray","italic":false,"text":"Gibt dir volle Sättigung."}','" "','[{"color":"gray","italic":false,"text":"Benutzung: "},{"color":"red","italic":false,"text":"-100 Mana"}]','" "','{"color":"blue","italic":false,"text":"Rare"}'],food={nutrition:1,saturation:1,can_always_eat:true},enchantment_glint_override=true] 1
+#execute as @a[scores={elements_villager_stage-2_mana_level=3,just-ignore=414}] run give @s rabbit_stew[consumable={consume_seconds:99999},custom_model_data=1,item_name='{"bold":true,"color":"blue","italic":false,"text":"Magische Schale"}',lore=['{"color":"gray","italic":false,"text":"Gibt dir volle Sättigung."}','" "','[{"color":"gray","italic":false,"text":"Benutzung: "},{"color":"red","italic":false,"text":"-100 Mana"}]','" "','{"color":"blue","italic":false,"text":"Rare"}'],food={nutrition:1,saturation:1,can_always_eat:true},enchantment_glint_override=true] 1
+execute as @a[scores={elements_villager_stage-2_mana_level=3,just-ignore=414}] run loot give @s loot elements:items/customs/magische_schale
+
 execute as @a[scores={elements_villager_stage-2_mana_level=3,just-ignore=414}] run scoreboard players set @s elements_villager_stage-2_mana_level 4
 execute as @a[scores={just-ignore=414}] run scoreboard players set @s just-ignore 0
 
@@ -67,7 +69,7 @@ execute as @a[scores={elements_villager_stage-2_mana_level=4,just-ignore=418,ele
 execute as @a[scores={elements_villager_stage-2_mana_level=4,just-ignore=418,elements_mainlevel=1000..}] run xp add @s -1000 levels
 execute as @a[scores={elements_villager_stage-2_mana_level=4,just-ignore=418,elements_mainlevel=..999}] run tellraw @s ["","\n",{"text":"Albus:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast keine 1000 Level"}]
 execute as @a[scores={elements_villager_stage-2_mana_level=4,just-ignore=418}] run scoreboard players set @s just-ignore 0
-execute as @a[scores={elements_villager_stage-2_mana_level=4,just-ignore=419,elements_mainlevel=1000..}] run loot give @s loot elements:items/customs/mana_messstab
+execute as @a[scores={elements_villager_stage-2_mana_level=4,just-ignore=419,elements_mainlevel=1000..}] run loot give @s loot elements:items/customs/magische_schale
 execute as @a[scores={elements_villager_stage-2_mana_level=4,just-ignore=419,elements_mainlevel=1000..}] run tellraw @s ["","\n",{"text":"Albus:","underlined":true,"color":"dark_red"},"\n",{"text":"Hier hast du deine Neue Magische Schale"}]
 execute as @a[scores={elements_villager_stage-2_mana_level=4,just-ignore=419,elements_mainlevel=1000..}] run xp add @s -1000 levels
 execute as @a[scores={elements_villager_stage-2_mana_level=4,just-ignore=419,elements_mainlevel=..999}] run tellraw @s ["","\n",{"text":"Albus:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast keine 1000 Level"}]

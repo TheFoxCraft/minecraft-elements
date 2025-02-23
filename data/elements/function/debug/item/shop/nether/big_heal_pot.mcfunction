@@ -1,0 +1,1 @@
+loot give @s loot elements:items/shops/nether/big_heal_pot

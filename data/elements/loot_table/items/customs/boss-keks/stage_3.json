@@ -23,6 +23,11 @@
                 "minecraft:consumable": {
                   "consume_seconds": 999999,
                   "animation": "none"
+                },
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
                 }
               }
             },

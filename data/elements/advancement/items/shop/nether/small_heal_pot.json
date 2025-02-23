@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_model_data": 1
+            
+          },
+          "items": "potion"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "elements:custom-items/shop/nether/small_heal_pot"
+  }
+}
