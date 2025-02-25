@@ -81,6 +81,21 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_fishing-frucht_timer_sec 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_fishing-frucht_timer_tick 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_fishing-frucht_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_leveltrank_enable 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_leveltrank_timer_h 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_leveltrank_timer_min 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_leveltrank_timer_sec 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_leveltrank_timer_tick 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_leveltrank_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_leveltrank_counter_stage-1 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_leveltrank_counter_stage-2 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_hastetrank_enable 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_hastetrank_timer_h 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_hastetrank_timer_min 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_hastetrank_timer_sec 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_hastetrank_timer_tick 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_hastetrank_cooldown 0
+
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_levellost 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_villager_stage-2_mana_level 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stage-2_mana_activate_timer_sec 0

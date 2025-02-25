@@ -9,6 +9,8 @@ execute as @a[scores={elements_custom-items_shop_fishing-frucht_cooldown=1..}] r
 execute as @a[scores={elements_custom-items_shop_small-heal-potion_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_small-heal-potion_cooldown 1
 execute as @a[scores={elements_custom-items_shop_big-heal-potion_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_big-heal-potion_cooldown 1
 execute as @a[scores={elements_custom-items_lebensfrucht_cooldown=1..}] run scoreboard players remove @s elements_custom-items_lebensfrucht_cooldown 1
+execute as @a[scores={elements_custom-items_shop_leveltrank_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_leveltrank_cooldown 1
+execute as @a[scores={elements_custom-items_shop_hastetrank_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_hastetrank_cooldown 1
 
 
 

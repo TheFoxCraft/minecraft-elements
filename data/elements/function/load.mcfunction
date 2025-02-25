@@ -539,6 +539,20 @@ scoreboard objectives add elements_custom-items_shop_fishing-frucht_cooldown dum
 scoreboard objectives add elements_custom-items_shop_small-heal-potion_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_big-heal-potion_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_boss-frucht_remain dummy
+scoreboard objectives add elements_custom-items_shop_leveltrank_cooldown dummy
+scoreboard objectives add elements_custom-items_shop_hastetrank_cooldown dummy
+scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-1 dummy
+scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-2 dummy
+scoreboard objectives add elements_custom-items_shop_leveltrank_enable dummy
+scoreboard objectives add elements_custom-items_shop_leveltrank_timer_h dummy
+scoreboard objectives add elements_custom-items_shop_leveltrank_timer_min dummy
+scoreboard objectives add elements_custom-items_shop_leveltrank_timer_sec dummy
+scoreboard objectives add elements_custom-items_shop_leveltrank_timer_tick dummy
+scoreboard objectives add elements_custom-items_shop_hastetrank_enable dummy
+scoreboard objectives add elements_custom-items_shop_hastetrank_timer_h dummy
+scoreboard objectives add elements_custom-items_shop_hastetrank_timer_min dummy
+scoreboard objectives add elements_custom-items_shop_hastetrank_timer_sec dummy
+scoreboard objectives add elements_custom-items_shop_hastetrank_timer_tick dummy
 scoreboard objectives add elements_stage_1_portal_enable dummy
 scoreboard objectives add elements_stage_1_boss_status dummy
 scoreboard objectives add elements_stage_1_boss_loot_count dummy
@@ -579,6 +593,8 @@ scoreboard objectives add elements_maxhealth_update_queue dummy
 scoreboard objectives add elements_custom-items_lebensfrucht_cooldown dummy
 scoreboard objectives add elements_inv_small_heal_pot dummy
 scoreboard objectives add elements_inv_big_heal_pot dummy
+
+
 scoreboard objectives add elements_custom-items_boss-keks_stage-1_cooldown dummy
 scoreboard objectives add elements_custom-items_boss-keks_stage-2_cooldown dummy
 scoreboard objectives add elements_custom-items_boss-keks_stage-3_cooldown dummy

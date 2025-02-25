@@ -16,11 +16,11 @@
               {
                 "function": "set_components",
                 "components": {
-                  "minecraft:custom_model_data": 5,
+                  "minecraft:custom_model_data": 7,
                   "minecraft:hide_additional_tooltip": {},
-                  "max_stack_size": 64,
+                  "minecraft:max_stack_size": 64,
                   "minecraft:potion_contents": {
-                    "custom_color": 10499071
+                    "custom_color": 5439418
                   },
                   "minecraft:food": {
                     "nutrition": 0,
@@ -37,12 +37,11 @@
                 "name": [
                   {
                     "bold": true,
-                    "color": "blue",
+                    "color": "yellow",
                     "italic": false,
-                    "text": "Leveltrank"
+                    "text": "Hastetrank"
                   }
-                ],
-                "target": "custom_name"
+                ]
               },
               {
                 "function": "set_lore",
@@ -59,7 +58,12 @@
                     {
                       "color": "green",
                       "italic": false,
-                      "text": "Level-Ertrag +10% für 15 Minuten"
+                      "text": "Haste III für 1 Stunde "
+                    },
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "text": "[Stackable]"
                     }
                   ],
                   {
@@ -67,9 +71,9 @@
                   },
                   {
                     "bold": true,
-                    "color": "blue",
+                    "color": "yellow",
                     "italic": false,
-                    "text": "Rare"
+                    "text": "Common"
                   }
                 ],
                 "mode": "append"

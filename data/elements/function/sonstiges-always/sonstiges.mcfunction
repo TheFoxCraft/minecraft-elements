@@ -75,7 +75,7 @@ execute as @a at @s run particle minecraft:cherry_leaves 0.53 110.00 0.56 20 1 2
 execute in elements:ocean positioned 0.50 61.00 0.50 run effect give @a[distance=..30] water_breathing 10 0 true
 
 
-
+execute as @a[scores={elements_custom-items_shop_hastetrank_enable=1}] run effect give @s haste 1 2 true
 
 
 #calc stats collections

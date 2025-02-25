@@ -33,6 +33,15 @@
 5:
     netherite_pickaxe: Element Pickaxe | Mythic
     netherite_axe: Element Axe | Mythic
+    potion: Leveltrank | Stone Shop
+6:
+    potion: Leveltrank | Stone Shop Buying
+7:
+    potion: Hastetrank | Stone Shop
+8:
+    potion: Hastetrank | Stone Shop Buying
+9:
+    
 10:
     gray_dye: Admin-Config | Double-Level Kein Event aktiv
     lime_dye: Admin-Config | Double-Level  Event aktiv
