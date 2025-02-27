@@ -21,6 +21,7 @@
     cookie: Bosskeks Stage 2
     potion: Kleiner Heiltrank | Nether Shop Buying
     golden_apple: Bossfrucht Stage 1 | Ocean Shop Buying
+    golden_apple: Bossfrucht Disabled #UNUSED
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -45,12 +46,13 @@
 8:
     potion: Hastetrank | Stone Shop Buying
 9:
-    
+    potion: Water-Breathing-Potion | Ocean Shop
 10:
     gray_dye: Admin-Config | Double-Level Kein Event aktiv
     lime_dye: Admin-Config | Double-Level  Event aktiv
     clock: Admin-Config | Double-Level Timer Action
     lectern: Admin-Config | Double-Level Timer Action
+    potion: Water-Breathing-Potion | Ocean Shop Buying
 11:
     clock: Admin-Config | Double-Level Timer Action
 12:

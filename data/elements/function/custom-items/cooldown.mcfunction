@@ -11,8 +11,9 @@ execute as @a[scores={elements_custom-items_shop_big-heal-potion_cooldown=1..}] 
 execute as @a[scores={elements_custom-items_lebensfrucht_cooldown=1..}] run scoreboard players remove @s elements_custom-items_lebensfrucht_cooldown 1
 execute as @a[scores={elements_custom-items_shop_leveltrank_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_leveltrank_cooldown 1
 execute as @a[scores={elements_custom-items_shop_hastetrank_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_hastetrank_cooldown 1
-execute as @a[scores={elements_custom-items_shop_boss-frucht_cooldown_stage-1=1..}] run scoreboard players remove @s elements_custom-items_shop_boss-frucht_cooldown_stage-1 1
-execute as @a[scores={elements_custom-items_shop_boss-frucht_cooldown_stage-2=1..}] run scoreboard players remove @s elements_custom-items_shop_boss-frucht_cooldown_stage-2 1
+execute as @a[scores={elements_custom-items_shop_water-breathing_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_water-breathing_cooldown 1
+execute as @a[scores={elements_custom-items_shop_boss-frucht_stage-1_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_boss-frucht_stage-1_cooldown 1
+execute as @a[scores={elements_custom-items_shop_boss-frucht_stage-2_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_boss-frucht_stage-2_cooldown 1
 
 
 

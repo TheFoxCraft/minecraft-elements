@@ -7,7 +7,7 @@
           {
             "type": "item",
             "weight": 1,
-            "name": "minecraft:golden_apple",
+            "name": "minecraft:apple",
             "functions": [
               {
                 "function": "set_count",
@@ -16,15 +16,7 @@
               {
                 "function": "set_components",
                 "components": {
-                  "minecraft:custom_model_data": 1,
-                  "minecraft:food": {
-                    "nutrition": 0,
-                    "saturation": 0,
-                    "can_always_eat": true
-                  },
-                  "minecraft:consumable": {
-                    "consume_seconds": 999999
-                  }
+                  "minecraft:custom_model_data": 2
                 }
               },
               {
@@ -32,9 +24,9 @@
                 "name": [
                   {
                     "bold": true,
-                    "color": "dark_purple",
+                    "color": "dark_gray",
                     "italic": false,
-                    "text": "Bossfrucht Stage 1"
+                    "text": "Bossfrucht Stage 2"
                   }
                 ]
               },
@@ -46,39 +38,48 @@
                   },
                   [
                     {
-                      "color": "light_purple",
+                      "color": "dark_gray",
                       "italic": false,
                       "text": "Verbrauchen: "
                     },
                     {
-                      "color": "gray",
+                      "color": "dark_gray",
                       "italic": false,
                       "text": "Gibt eine "
                     },
                     {
-                      "color": "green",
+                      "color": "dark_gray",
                       "italic": false,
                       "text": "10% Chance"
                     }
                   ],
                   {
-                    "color": "gray",
+                    "color": "dark_gray",
                     "italic": false,
                     "text": "Für eine zweiten Boss-Key beim nächsten Kampf"
                   },
                   {
                     "color": "dark_gray",
                     "italic": false,
-                    "text": "(Nur beim Stage 1 Boss)"
+                    "text": "(Nur beim Stage 2 Boss)"
                   },
                   {
                     "text": " "
                   },
                   {
-                    "color": "dark_purple",
+                    "color": "dark_gray",
                     "italic": false,
                     "bold": true,
                     "text": "Epic"
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "color": "red",
+                    "italic": false,
+                    "bold": true,
+                    "text": "Noch nicht Freigeschaltet"
                   },
                   {
                     "text": " "

@@ -74,8 +74,9 @@ execute if score #server elements_stats_playtime_min matches 60.. run scoreboard
 execute as @a at @s run particle minecraft:cherry_leaves 0.53 110.00 0.56 20 1 20 0 10 normal @a[nbt={Dimension:"elements:hub"}]
 execute in elements:ocean positioned 0.50 61.00 0.50 run effect give @a[distance=..30] water_breathing 10 0 true
 
-
+#effects
 execute as @a[scores={elements_custom-items_shop_hastetrank_enable=1}] run effect give @s haste 1 2 true
+execute as @a[scores={elements_custom-items_shop_water-breathing_enable=1}] run effect give @s water_breathing 1 0 true
 
 
 #calc stats collections

@@ -95,6 +95,14 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_hastetrank_timer_sec 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_hastetrank_timer_tick 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_hastetrank_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_water-breathing_enable 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_water-breathing_timer_h 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_water-breathing_timer_min 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_water-breathing_timer_sec 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_water-breathing_timer_tick 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_water-breathing_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_boss-frucht_stage-1_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_boss-frucht_stage-2_cooldown 0
 
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_levellost 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_villager_stage-2_mana_level 0

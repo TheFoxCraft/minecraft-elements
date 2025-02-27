@@ -70,6 +70,18 @@
                     "color": "dark_gray",
                     "italic": false,
                     "text": "(Nur beim Stage 2 Boss)"
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "color": "dark_purple",
+                    "italic": false,
+                    "bold": true,
+                    "text": "Epic"
+                  },
+                  {
+                    "text": " "
                   }
                 ],
                 "mode": "append"
