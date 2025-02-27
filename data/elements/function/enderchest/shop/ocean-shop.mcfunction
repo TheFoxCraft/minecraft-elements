@@ -110,3 +110,16 @@ execute as @a[scores={elements_enderchest_interface_click_shop_ocean_fishingfruc
 kill @e[type=item,nbt={Item:{id:"minecraft:pumpkin_pie",count:1,components:{"minecraft:custom_model_data":2}}}]
 execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.17 with pumpkin_pie[max_stack_size=64,can_break={predicates:[{blocks:"pumpkin"}],show_in_tooltip:false},custom_name='{"color":"yellow","italic":false,"text":"Fishingfrucht [500 Level]"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Fishing XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=2,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
 
+
+
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_ocean_boss-frucht run clear @s minecraft:golden_apple[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/ocean/bossfrucht/stage_1
+execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=500..}] run xp add @s -500 levels
+execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_ocean_boss-frucht 0
+kill @e[type=item,nbt={Item:{id:"minecraft:golden_apple",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] if score #server elements_stage matches 1.. run loot replace entity @s enderchest.19 loot elements:items/shops/ocean/bossfrucht/stage_1
+execute as @a[scores={elements_enderchest_interface_number=9}] if score #server elements_stage matches 1.. run item modify entity @s enderchest.19 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 1 [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 2 }]

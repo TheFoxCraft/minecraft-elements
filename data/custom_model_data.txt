@@ -12,6 +12,7 @@
     experience_bottle: Admin-Config | Öffne Double-Xp-Event Interface
     cookie: Bosskeks Stage 1
     potion: Kleiner Heiltrank | Nether Shop
+    golden_apple: Bossfrucht Stage 1 | Ocean Shop
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -19,6 +20,7 @@
     netherite_axe: Elemen Axe | Rare (Upgraded)
     cookie: Bosskeks Stage 2
     potion: Kleiner Heiltrank | Nether Shop Buying
+    golden_apple: Bossfrucht Stage 1 | Ocean Shop Buying
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -26,10 +28,12 @@
     netherite_axe: Element Axe | Epic (Upgraded)
     cookie: Bosskeks Stage 3
     potion: Großer Heiltrank | Nether Shop
+    golden_apple: Bossfrucht Stage 2 | Ocean Shop 
 4:
     netherite_pickaxe: Element Pickaxe | Legendary
     netherite_axe: Element Axe | Legendary
     potion: Großer Heiltrank | Nether Shop Buying
+    golden_apple: Bossfrucht Stage 2 | Ocean Shop Buying
 5:
     netherite_pickaxe: Element Pickaxe | Mythic
     netherite_axe: Element Axe | Mythic

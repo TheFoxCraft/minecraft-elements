@@ -2,7 +2,7 @@
 
 
 execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distance=0..] run kill @e[tag=stage-1_boss]
-execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distance=0..] run scoreboard players set #server elements_custom-items_shop_boss-frucht_remain 0
+execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distance=0..] run scoreboard players set #server elements_custom-items_shop_boss-frucht_remain_stage-1 0
 execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distance=0..] run scoreboard players set @a elements_stage_1_boss_spawn-player 0
 execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distance=0..] run scoreboard players set #server elements_stage_1_boss_status 0
 
@@ -24,9 +24,9 @@ execute if score #server elements_stage_1_boss_status matches 1 unless entity @e
 execute if score #server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] run scoreboard players add @a[scores={elements_stage_1_boss_spawn-player=1},limit=1] elements_stats_stage_0_boss_killed 1
 execute if score #server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] run scoreboard players add @a[scores={elements_stage_1_boss_spawn-player=1},limit=1] elements_stats_stage_1_boss_killed 1
 execute if score #server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] run scoreboard players set @a[scores={elements_stage_1_boss_spawn-player=1}] elements_stage_1_boss_spawn-player 0
-execute if score #server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] if score #server elements_custom-items_shop_boss-frucht_remain matches 1 in elements:stage-1_bossroom run setblock 0 101 -1 chest[facing=east]{LootTable:"elements:stage-1_boss_key"} replace
-execute if score #server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] if score #server elements_custom-items_shop_boss-frucht_remain matches 0 in elements:stage-1_bossroom run setblock 0 101 -1 chest[facing=east]{LootTable:"elements:items/boss_key/stage_1"} replace
-execute if score #server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] if score #server elements_custom-items_shop_boss-frucht_remain matches 1 run scoreboard players set #server elements_custom-items_shop_boss-frucht_remain 0
+execute if score #server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] if score #server elements_custom-items_shop_boss-frucht_remain_stage-1 matches 1 in elements:stage-1_bossroom run setblock 0 101 -1 chest[facing=east]{LootTable:"elements:stage-1_boss_key"} replace
+execute if score #server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] if score #server elements_custom-items_shop_boss-frucht_remain_stage-1 matches 0 in elements:stage-1_bossroom run setblock 0 101 -1 chest[facing=east]{LootTable:"elements:items/boss_key/stage_1"} replace
+execute if score #server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] if score #server elements_custom-items_shop_boss-frucht_remain_stage-1 matches 1 run scoreboard players set #server elements_custom-items_shop_boss-frucht_remain_stage-1 0
 execute if score #server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] run scoreboard players set #server elements_stage_1_boss_status 0
 
 execute in elements:stage-1_bossroom as @a[distance=0..] if entity @e[tag=stage-1_boss] run bossbar set elements:stage-1_boss players @s

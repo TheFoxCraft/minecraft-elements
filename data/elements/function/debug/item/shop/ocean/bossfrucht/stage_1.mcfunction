@@ -1,0 +1,1 @@
+loot give @s loot elements:items/shops/ocean/bossfrucht/stage_1
