@@ -16,20 +16,23 @@
               {
                 "function": "set_components",
                 "components": {
-                  "minecraft:max_stack_size": 64,
-                  "minecraft:hide_additional_tooltip": {},
+                  "minecraft:custom_model_data": 11,
                   "minecraft:food": {
                     "nutrition": 0,
                     "saturation": 0,
                     "can_always_eat": true
                   },
+                  "max_stack_size": 64,
                   "minecraft:consumable": {
-                    "consume_seconds": 999999
+                    "consume_seconds": 99999
                   },
+                  "minecraft:damage_resistant": {
+                    "types": "#minecraft:is_fire"
+                  },
+                  "minecraft:hide_additional_tooltip": {},
                   "minecraft:potion_contents": {
-                    "custom_color": 16716820
-                  },
-                  "minecraft:custom_model_data": 3
+                    "custom_color": 15484415
+                  }
                 }
               },
               {
@@ -39,7 +42,7 @@
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Großer Heiltrank"
+                    "text": "Manatrank"
                   }
                 ]
               },
@@ -53,12 +56,12 @@
                     {
                       "color": "green",
                       "italic": false,
-                      "text": "Verbrauchen: "
+                      "text": "Verwenden: "
                     },
                     {
                       "color": "gray",
                       "italic": false,
-                      "text": "Heilt sofort um 8 Herzen"
+                      "text": "Füllt die Mana des Spielers um 100 Punkte auf"
                     }
                   ],
                   {

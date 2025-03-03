@@ -14,6 +14,8 @@ execute as @a[scores={elements_custom-items_shop_hastetrank_cooldown=1..}] run s
 execute as @a[scores={elements_custom-items_shop_water-breathing_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_water-breathing_cooldown 1
 execute as @a[scores={elements_custom-items_shop_boss-frucht_stage-1_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_boss-frucht_stage-1_cooldown 1
 execute as @a[scores={elements_custom-items_shop_boss-frucht_stage-2_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_boss-frucht_stage-2_cooldown 1
+execute as @a[scores={elements_custom-items_shop_hot-lava_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_hot-lava_cooldown 1
+execute as @a[scores={elements_custom-items_shop_manatrank_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_manatrank_cooldown 1
 
 
 

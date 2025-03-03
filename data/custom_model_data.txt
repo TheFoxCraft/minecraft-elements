@@ -13,6 +13,7 @@
     cookie: Bosskeks Stage 1
     potion: Kleiner Heiltrank | Nether Shop
     golden_apple: Bossfrucht Stage 1 | Ocean Shop
+    lava_bucket: Heiße Lava | Nether Shop
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -22,6 +23,7 @@
     potion: Kleiner Heiltrank | Nether Shop Buying
     golden_apple: Bossfrucht Stage 1 | Ocean Shop Buying
     golden_apple: Bossfrucht Disabled #UNUSED
+    lava_bucket: Heiße Lava | Nether Shop Buying
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -55,8 +57,10 @@
     potion: Water-Breathing-Potion | Ocean Shop Buying
 11:
     clock: Admin-Config | Double-Level Timer Action
+    potion: Manatrank | Sky Shop
 12:
     clock: Admin-Config | Double-Level Timer Action
+    potion: Manatrank | Sky Shop Buying
 13:
     clock: Admin-Config | Double-Level Timer Action
 14:
@@ -69,7 +73,7 @@
     stick: Admin Wand (für Abgaben)
 
 
-
+#Color Orange: ff8800
 
 #templates
 

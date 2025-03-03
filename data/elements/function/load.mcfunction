@@ -201,6 +201,7 @@ scoreboard objectives add elements_miningxp_fishing_loot dummy
 scoreboard objectives add elements_config_death_level dummy
 scoreboard objectives add elements_death_level dummy
 scoreboard objectives add elements_fixed dummy
+scoreboard objectives add elements_fixed-value_1 dummy
 scoreboard objectives add elements_death_level_lost dummy
 scoreboard objectives add elements_death_level_loose dummy
 scoreboard objectives add elements_stats_serverlevel dummy
@@ -562,6 +563,10 @@ scoreboard objectives add elements_custom-items_shop_water-breathing_timer_h dum
 scoreboard objectives add elements_custom-items_shop_water-breathing_timer_min dummy
 scoreboard objectives add elements_custom-items_shop_water-breathing_timer_sec dummy
 scoreboard objectives add elements_custom-items_shop_water-breathing_timer_tick dummy
+scoreboard objectives add elements_custom-items_shop_hot-lava_cooldown dummy
+scoreboard objectives add elements_custom-items_shop_hot-lava_damage_queue dummy
+scoreboard objectives add elements_custom-items_shop_hot-lava_damage dummy
+scoreboard objectives add elements_custom-items_shop_manatrank_cooldown dummy
 scoreboard objectives add elements_stage_1_portal_enable dummy
 scoreboard objectives add elements_stage_1_boss_status dummy
 scoreboard objectives add elements_stage_1_boss_loot_count dummy
@@ -602,7 +607,7 @@ scoreboard objectives add elements_maxhealth_update_queue dummy
 scoreboard objectives add elements_custom-items_lebensfrucht_cooldown dummy
 scoreboard objectives add elements_inv_small_heal_pot dummy
 scoreboard objectives add elements_inv_big_heal_pot dummy
-
+scoreboard objectives add elements_inv_manatrank dummy
 
 scoreboard objectives add elements_custom-items_boss-keks_stage-1_cooldown dummy
 scoreboard objectives add elements_custom-items_boss-keks_stage-2_cooldown dummy
@@ -670,3 +675,5 @@ execute unless score #server elements_stats_playtime_min matches 1.. run scorebo
 execute unless score #server elements_uniqueitem_collections_stone matches 0.. run scoreboard players set #server elements_uniqueitem_collections_stone 0
 
 
+#set fixed values
+scoreboard players set #server elements_fixed-value_1 1

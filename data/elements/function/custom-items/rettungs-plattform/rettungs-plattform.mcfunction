@@ -7,7 +7,7 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",comp
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:{"minecraft:custom_model_data":1}}},scores={elements_custom-items_shop_rettungs-plattform_cooldown=0}] run scoreboard players operation @r elements_custom-items_shop_rettungs-plattform_block-need -= @s elements_custom-items_shop_rettungs-plattform_block-count
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:{"minecraft:custom_model_data":1}}},scores={elements_custom-items_shop_rettungs-plattform_cooldown=0}] run function elements:custom-items/rettungs-plattform/rettungs-plattform-blockplace with entity @s Inventory[{Slot:-106b}]
 
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:{"minecraft:custom_model_data":1}}}] run scoreboard players set @s elements_custom-items_shop_rettungs-plattform_cooldown 5
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:{"minecraft:custom_model_data":1}}}] run scoreboard players set @s elements_custom-items_shop_rettungs-plattform_cooldown 2
 
 
 

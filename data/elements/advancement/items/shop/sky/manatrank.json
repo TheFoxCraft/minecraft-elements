@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "components": {
+              "minecraft:custom_model_data": 11
+              
+            },
+            "items": "potion"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "elements:custom-items/shop/sky/manatrank"
+    }
+  }
+  

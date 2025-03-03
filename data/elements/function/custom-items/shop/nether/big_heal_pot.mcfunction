@@ -6,4 +6,4 @@ execute as @s[scores={elements_custom-items_shop_big-heal-potion_cooldown=0}] ru
 execute as @s[scores={elements_custom-items_shop_big-heal-potion_cooldown=0}] run title @s actionbar ["",{"text": "Geheilt! ","color":"green"},{"text": "Verbleibende Tränke: "},{"score": {"name": "@s","objective": "elements_inv_big_heal_pot"}}]
 
 
-scoreboard players set @s elements_custom-items_shop_big-heal-potion_cooldown 5
+scoreboard players set @s elements_custom-items_shop_big-heal-potion_cooldown 2

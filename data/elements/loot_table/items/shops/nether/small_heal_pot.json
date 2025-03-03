@@ -51,12 +51,12 @@
                   },
                   [
                     {
-                      "color": "gray",
+                      "color": "green",
                       "italic": false,
                       "text": "Verbrauchen: "
                     },
                     {
-                      "color": "green",
+                      "color": "gray",
                       "italic": false,
                       "text": "Heilt sofort um 4 Herzen"
                     }

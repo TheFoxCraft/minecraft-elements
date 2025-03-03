@@ -29,6 +29,19 @@ execute as @a[scores={elements_enderchest_interface_number=9}] run item replace 
 execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.25 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
 
 
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_heisse-lava run clear @s minecraft:magma_block[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heisse-lava=1,elements_mainlevel=..99}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heisse-lava=1,elements_mainlevel=..99}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heisse-lava=1,elements_mainlevel=100..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heisse-lava=1,elements_mainlevel=100..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heisse-lava=1,elements_mainlevel=100..}] run loot give @s loot elements:items/shops/nether/hot_lava
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heisse-lava=1,elements_mainlevel=100..}] run xp add @s -100 levels
+execute as @a[scores={elements_enderchest_interface_click_shop_nether_heisse-lava=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_nether_heisse-lava 0
+kill @e[type=item,nbt={Item:{id:"minecraft:magma_block",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.4 loot elements:items/shops/nether/hot_lava
+execute as @a[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.4 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Heiße Lava [100 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data",    "value": 2  }]
+
+
 execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_nether_nether-wart run clear @s minecraft:nether_wart[custom_model_data=2]
 execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=..199}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_click_shop_nether_nether-wart=1,elements_mainlevel=..199}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]

@@ -4,4 +4,4 @@ execute as @s[scores={elements_custom-items_boss-keks_stage-2_cooldown=0}] run t
 execute as @s[scores={elements_custom-items_boss-keks_stage-2_cooldown=0}] run xp add @s 200 levels
 execute as @s[scores={elements_custom-items_boss-keks_stage-2_cooldown=0}] run clear @s cookie[custom_model_data=2] 1
 
-scoreboard players set @s elements_custom-items_boss-keks_stage-2_cooldown 5
+scoreboard players set @s elements_custom-items_boss-keks_stage-2_cooldown 2

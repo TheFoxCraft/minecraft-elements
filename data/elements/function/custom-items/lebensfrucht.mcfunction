@@ -6,4 +6,4 @@ execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] run clear 
 execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] at @s run playsound entity.player.levelup master @s
 
 
-scoreboard players set @s elements_custom-items_lebensfrucht_cooldown 5
+scoreboard players set @s elements_custom-items_lebensfrucht_cooldown 2

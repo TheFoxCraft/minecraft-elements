@@ -20,6 +20,26 @@ execute as @a[scores={elements_enderchest_interface_number=9}] run item replace 
 execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.18 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
 
 
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_sky_manatrank run clear @s minecraft:potion[custom_model_data=12]
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/sky/manatrank
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/sky/manatrank
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/sky/manatrank
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/sky/manatrank
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/sky/manatrank
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/sky/manatrank
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/sky/manatrank
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/sky/manatrank
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/sky/manatrank
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/sky/manatrank
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1,elements_mainlevel=500..}] run xp add @s -500 levels
+execute as @a[scores={elements_enderchest_interface_click_shop_sky_manatrank=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_sky_manatrank 0
+kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":12}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.3 loot elements:items/shops/sky/manatrank
+execute as @a[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.3 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "10x Manatrank [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data","value":12}]
 
 
 execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_sky_elytra run clear @s minecraft:elytra[custom_model_data=2]

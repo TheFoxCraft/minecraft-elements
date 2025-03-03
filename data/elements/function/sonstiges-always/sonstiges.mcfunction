@@ -28,6 +28,8 @@ execute in elements:ocean as @a[distance=0..] run scoreboard players set @s elem
 
 execute as @a store result score @s elements_inv_compressed_cobblestone run clear @s minecraft:cobbled_deepslate[custom_model_data=1] 0
 execute as @a store result score @s elements_inv_small_heal_pot run clear @s minecraft:potion[custom_model_data=1] 0
+execute as @a store result score @s elements_inv_big_heal_pot run clear @s minecraft:potion[custom_model_data=3] 0
+execute as @a store result score @s elements_inv_manatrank run clear @s minecraft:potion[custom_model_data=11] 0
 execute as @a store result score @s elements_inv_compressed_wood run clear @s minecraft:oak_wood[custom_model_data=1] 0
 execute as @a store result score @s elements_inv_cobblestone run clear @s minecraft:cobblestone 0
 execute as @a store result score @s elements_inv_basalt run clear @s minecraft:basalt 0

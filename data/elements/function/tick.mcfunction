@@ -48,6 +48,7 @@ function elements:custom-items/fishing-frucht/timer
 function elements:custom-items/shop/stone/leveltrank/timer
 function elements:custom-items/shop/stone/hastetrank/timer
 function elements:custom-items/shop/ocean/water-breathing/timer
+function elements:custom-items/shop/nether/hot_lava/main
 function elements:stages/refresh-vaults
 function elements:spawn/leaderboards/refresh-timer
 function elements:mana/regernation
