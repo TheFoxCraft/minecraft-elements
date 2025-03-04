@@ -16,7 +16,7 @@
               {
                 "function": "set_components",
                 "components": {
-                  "minecraft:custom_model_data": 1,
+                  "minecraft:custom_model_data": 3,
                   "minecraft:attribute_modifiers": {
                     "modifiers": [
                       {

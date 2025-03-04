@@ -7,7 +7,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:fishing_rod",
+          "name": "minecraft:gray_dye",
           "functions": [
             {
               "function": "set_count",
@@ -16,23 +16,11 @@
             {
               "function": "set_components",
               "components": {
-                "minecraft:unbreakable": {},
+                "minecraft:custom_model_data": 4,
                 "minecraft:damage_resistant": {
                   "types": "#minecraft:is_fire"
                 },
-                "minecraft:custom_model_data": 5,
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [
-                    {
-                      "id": "luck",
-                      "type": "luck",
-                      "amount": 100,
-                      "operation": "add_value",
-                      "slot": "hand"
-                    }
-                  ],
-                  "show_in_tooltip": false
-                }
+                "enchantment_glint_override": true
               }
             },
             {
@@ -42,9 +30,10 @@
                   "bold": true,
                   "color": "light_purple",
                   "italic": false,
-                  "text": "Element Fishing Rod"
+                  "text": "Gravity-Stone"
                 }
-              ]
+              ],
+              "target": "item_name"
             },
             {
               "function": "set_lore",
@@ -52,16 +41,26 @@
                 {
                   "text": " "
                 },
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "text": "In der Hand: "
+                },
                 [
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Luck: "
+                    "text": " Zieht Gegenstände im Radius von"
                   },
                   {
                     "color": "green",
                     "italic": false,
-                    "text": "+100"
+                    "text": " 15 Blöcken "
+                  },
+                  {
+                    "color": "gray",
+                    "italic": false,
+                    "text": "zu dir"
                   }
                 ],
                 {
@@ -69,11 +68,11 @@
                 },
                 [
                   {
-                    "text": "cc",
                     "bold": true,
                     "color": "light_purple",
-                    "obfuscated": true,
-                    "italic": false
+                    "italic": false,
+                    "text": "cc",
+                    "obfuscated": true
                   },
                   {
                     "bold": true,
@@ -83,16 +82,13 @@
                     "obfuscated": false
                   },
                   {
-                    "text": "cc",
                     "bold": true,
                     "color": "light_purple",
-                    "obfuscated": true,
-                    "italic": false
+                    "italic": false,
+                    "text": "cc",
+                    "obfuscated": true
                   }
-                ],
-                {
-                  "text": " "
-                }
+                ]
               ],
               "mode": "append"
             }

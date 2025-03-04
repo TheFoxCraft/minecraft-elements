@@ -13,7 +13,7 @@ kill @e[type=text_display,tag=stats]
 summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Level verloren: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_stats_levellost"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]
-summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"EQ-Score: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_stats_eq"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"EQ-Score (!): ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_stats_eq"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]
 summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Mining-Level: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_miningxp_mining_level"},"color":"gray","italic": false}]',alignment:center}
@@ -22,7 +22,10 @@ kill @e[type=text_display,tag=stats]
 summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Foraging-Level: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_miningxp_foresting_level"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]
-summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Farming-Level: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_stats_harvestinglevel"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Farming-Level: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_miningxp_farming_level"},"color":"gray","italic": false}]',alignment:center}
+data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
+kill @e[type=text_display,tag=stats]
+summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Fishing-Level: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_miningxp_fishing_level"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]
 summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Tode: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_deathcount"},"color":"gray","italic": false}]',alignment:center}

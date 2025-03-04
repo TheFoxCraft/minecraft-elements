@@ -18,7 +18,10 @@ execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrad
 execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrade=1}] unless entity @s[nbt={EnderItems:[{Slot:14b}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 3
 #open-finish
 
-#addhere
+# |-----------------------------------------ADD HERE-----------------------------------------|
+
+
+#element pickaxe
 execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:iron_pickaxe",components:{"minecraft:custom_model_data":1}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_pickaxe/rare
 execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:iron_pickaxe",components:{"minecraft:custom_model_data":1}}]}] run xp add @s -10000 levels
 
@@ -37,6 +40,7 @@ execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderI
 execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_pickaxe",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_pickaxe/mythic
 execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_pickaxe",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
 
+#element axe
 execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:iron_axe",components:{"minecraft:custom_model_data":1}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_axe/rare
 execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:iron_axe",components:{"minecraft:custom_model_data":1}}]}] run xp add @s -10000 levels
 
@@ -55,6 +59,42 @@ execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderI
 execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_axe",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_axe/mythic
 execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_axe",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
 
+#photon
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":1}}]}] run loot replace entity @s enderchest.14 loot elements:items/customs/photon/epic
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":1}}]}] run xp add @s -50000 levels
+
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":2}}]}] run loot replace entity @s enderchest.14 loot elements:items/customs/photon/legendary
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":2}}]}] run xp add @s -250000 levels
+
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":3}}]}] run loot replace entity @s enderchest.14 loot elements:items/customs/photon/mythic
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":3}}]}] run xp add @s -750000 levels
+
+#element fishing-rod
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":1}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_fishing_rod/rare
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":1}}]}] run xp add @s -10000 levels
+
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":2}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_fishing_rod/epic
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":2}}]}] run xp add @s -50000 levels
+
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":3}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_fishing_rod/legendary
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":3}}]}] run xp add @s -250000 levels
+
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_fishing_rod/mythic
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
+
+#photon
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:gray_dye",components:{"minecraft:custom_model_data":1}}]}] run loot replace entity @s enderchest.14 loot elements:items/customs/gravity-stone/epic
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:gray_dye",components:{"minecraft:custom_model_data":1}}]}] run xp add @s -50000 levels
+
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:gray_dye",components:{"minecraft:custom_model_data":2}}]}] run loot replace entity @s enderchest.14 loot elements:items/customs/gravity-stone/legendary
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:gray_dye",components:{"minecraft:custom_model_data":2}}]}] run xp add @s -250000 levels
+
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:gray_dye",components:{"minecraft:custom_model_data":3}}]}] run loot replace entity @s enderchest.14 loot elements:items/customs/gravity-stone/mythic
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:gray_dye",components:{"minecraft:custom_model_data":3}}]}] run xp add @s -750000 levels
+
+# |-----------------------------------------\ADD HERE END-----------------------------------------|
+
+
 #close-finish
 execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrade=1,elements_enderchest_upgradeschmiede_upgrade=3}] run item replace entity @s enderchest.12 with air
 execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrade=1,elements_enderchest_upgradeschmiede_upgrade=3}] at @s run playsound minecraft:block.anvil.use master @s
@@ -65,8 +105,9 @@ execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrad
 scoreboard players set @a elements_enderchest_upgradeschmiede_upgrade 0
 
 
+# |-----------------------------------------ADD HERE-----------------------------------------|
 
-#addhere
+#element pickaxe
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:iron_pickaxe",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:iron_pickaxe",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 1
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:diamond_pickaxe",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
@@ -80,6 +121,7 @@ execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_pickaxe",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_pickaxe",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 4
 
+#element axe
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:iron_axe",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:iron_axe",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 1
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:diamond_axe",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
@@ -93,7 +135,33 @@ execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_axe",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_axe",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 4
 
+#photon
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 2
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 3
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":3}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":3}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 4
 
+#element fishing-rod
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 2
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":3}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":3}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 3
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 4
+
+#gravity stone
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:gray_dye",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:gray_dye",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 2
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:gray_dye",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:gray_dye",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 3
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:gray_dye",components:{"minecraft:custom_model_data":3}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:gray_dye",components:{"minecraft:custom_model_data":3}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 4
+
+# |-----------------------------------------\ADD HERE END-----------------------------------------|
 
 execute as @a[scores={elements_enderchest_interface_number=3,elements_enderchest_upgradeschmiede_level=1,elements_mainlevel=10000..,elements_enderchest_upgradeschmiede_upgrade=1}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 2
 execute as @a[scores={elements_enderchest_interface_number=3,elements_enderchest_upgradeschmiede_level=2,elements_mainlevel=50000..,elements_enderchest_upgradeschmiede_upgrade=1}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 2

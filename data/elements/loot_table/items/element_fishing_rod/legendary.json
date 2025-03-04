@@ -20,7 +20,7 @@
                   "minecraft:damage_resistant": {
                     "types": "#minecraft:is_fire"
                   },
-                  "minecraft:custom_model_data": 1,
+                  "minecraft:custom_model_data": 4,
                   "minecraft:attribute_modifiers": {
                     "modifiers": [
                       {
@@ -45,6 +45,39 @@
                     "text": "Element Fishing Rod"
                   }
                 ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "text": "Luck: "
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "text": "+75"
+                    }
+                  ],
+                  {
+                    "text": " "
+                  },
+                  {
+                    "bold": true,
+                    "color": "gold",
+                    "italic": false,
+                    "text": "Legendary"
+                  },
+                  {
+                    "text": " "
+                  }
+                ],
+                "mode": "append"
               }
             ]
           }

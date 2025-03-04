@@ -120,21 +120,25 @@
           ]
         },
         {
-          "type": "item",
-          "weight": 5,
-          "name": "minecraft:apple",
-          "functions": [
+          "type": "alternatives",
+          "children": [
             {
-              "function": "set_count",
-              "count": 1
+              "type": "loot_table",
+              "value": "elements:items/customs/lebensfrucht",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "elements_stage": 2
+                  }
+                }
+              ],
+              "weight": 5
             },
             {
-              "function": "set_name",
-              "name": [
-                {
-                  "text": "#lebensfrucht"
-                }
-              ]
+              "type": "minecraft:empty",
+              "weight": 5
             }
           ]
         },

@@ -1,0 +1,1 @@
+loot give @s loot elements:items/shops/ocean/magisches_wasser

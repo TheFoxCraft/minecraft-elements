@@ -13,7 +13,8 @@
     cookie: Bosskeks Stage 1
     potion: Kleiner Heiltrank | Nether Shop
     golden_apple: Bossfrucht Stage 1 | Ocean Shop
-    lava_bucket: Heiße Lava | Nether Shop
+    magma_block: Heiße Lava | Nether Shop
+    gray_dye: Gravity-Stone | Rare
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -23,7 +24,10 @@
     potion: Kleiner Heiltrank | Nether Shop Buying
     golden_apple: Bossfrucht Stage 1 | Ocean Shop Buying
     golden_apple: Bossfrucht Disabled #UNUSED
-    lava_bucket: Heiße Lava | Nether Shop Buying
+    magma_block: Heiße Lava | Nether Shop Buying
+    ghast_tear: Photon | Epic
+    fishing_rod: Element Fishing Rod | Rare
+    gray_dye: Gravity-Stone | Epic
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -32,15 +36,22 @@
     cookie: Bosskeks Stage 3
     potion: Großer Heiltrank | Nether Shop
     golden_apple: Bossfrucht Stage 2 | Ocean Shop 
+    ghast_tear: Photon | Legendary
+    fishing_rod: Element Fishing Rod | Epic
+    gray_dye: Gravity-Stone | Legendary
 4:
     netherite_pickaxe: Element Pickaxe | Legendary
     netherite_axe: Element Axe | Legendary
     potion: Großer Heiltrank | Nether Shop Buying
     golden_apple: Bossfrucht Stage 2 | Ocean Shop Buying
+    ghast_tear: Photon | Mythic
+    fishing_rod: Element Fishing Rod | Legendary
+    gray_dye: Gravity-Stone | Mythic
 5:
     netherite_pickaxe: Element Pickaxe | Mythic
     netherite_axe: Element Axe | Mythic
     potion: Leveltrank | Stone Shop
+    fishing_rod: Element Fishing Rod | Mythic
 6:
     potion: Leveltrank | Stone Shop Buying
 7:

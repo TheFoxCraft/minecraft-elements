@@ -7,7 +7,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:fishing_rod",
+          "name": "minecraft:water_bucket",
           "functions": [
             {
               "function": "set_count",
@@ -16,22 +16,27 @@
             {
               "function": "set_components",
               "components": {
-                "minecraft:unbreakable": {},
+                "minecraft:custom_model_data": 1,
                 "minecraft:damage_resistant": {
                   "types": "#minecraft:is_fire"
                 },
-                "minecraft:custom_model_data": 1,
+                "minecraft:enchantment_glint_override": true,
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
                     {
-                      "id": "luck",
-                      "type": "luck",
-                      "amount": 10,
-                      "operation": "add_value",
+                      "id": "block_interaction_range",
+                      "type": "block_interaction_range",
+                      "amount": -1,
+                      "operation": "add_multiplied_base",
                       "slot": "hand"
                     }
                   ],
                   "show_in_tooltip": false
+                },
+                "minecraft:max_damage": 50,
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "dispensable": false
                 }
               }
             },
@@ -40,9 +45,9 @@
               "name": [
                 {
                   "bold": true,
-                  "color": "yellow",
+                  "color": "dark_purple",
                   "italic": false,
-                  "text": "Element Fishing Rod"
+                  "text": "Magisches Wasser"
                 }
               ]
             },
@@ -52,29 +57,47 @@
                 {
                   "text": " "
                 },
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "text": "Magisches Wasser mit höherer Sidetemperatur"
+                },
+                {
+                  "text": " "
+                },
                 [
-                  {
-                    "color": "gray",
-                    "italic": false,
-                    "text": "Luck: "
-                  },
                   {
                     "color": "green",
                     "italic": false,
-                    "text": "+10"
+                    "text": "Verwenden: "
+                  },
+                  {
+                    "color": "gray",
+                    "italic": false,
+                    "text": "Platziert Wasser an der Position des Spielers"
                   }
                 ],
+                {
+                  "color": "dark_gray",
+                  "italic": false,
+                  "text": "Funktioniert auch im Nether"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "text": "50 Verwendungen"
+                },
                 {
                   "text": " "
                 },
                 {
                   "bold": true,
-                  "color": "yellow",
+                  "color": "dark_purple",
                   "italic": false,
-                  "text": "Common"
-                },
-                {
-                  "text": " "
+                  "text": "Epic"
                 }
               ],
               "mode": "append"
