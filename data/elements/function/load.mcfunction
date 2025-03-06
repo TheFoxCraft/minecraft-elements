@@ -539,10 +539,9 @@ scoreboard objectives add elements_custom-items_shop_fishing-frucht_enable dummy
 scoreboard objectives add elements_custom-items_shop_fishing-frucht_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_small-heal-potion_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_big-heal-potion_cooldown dummy
-scoreboard objectives add elements_custom-items_shop_boss-frucht_remain_stage-1 dummy
-scoreboard objectives add elements_custom-items_shop_boss-frucht_stage-1_cooldown dummy
-scoreboard objectives add elements_custom-items_shop_boss-frucht_remain_stage-2 dummy
-scoreboard objectives add elements_custom-items_shop_boss-frucht_stage-2_cooldown dummy
+scoreboard objectives add elements_custom-items_shop_boss-frucht_cooldown dummy
+scoreboard objectives add elements_custom-items_shop_boss-frucht_remain dummy
+scoreboard objectives add elements_custom-items_shop_boss-frucht_current_stage dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-1 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-2 dummy
@@ -608,6 +607,9 @@ scoreboard objectives add elements_custom-items_lebensfrucht_cooldown dummy
 scoreboard objectives add elements_inv_small_heal_pot dummy
 scoreboard objectives add elements_inv_big_heal_pot dummy
 scoreboard objectives add elements_inv_manatrank dummy
+scoreboard objectives add elements_custom_doubleclick_cooldown dummy
+scoreboard objectives add leave trigger
+scoreboard objectives add elements_stats_fish_caught dummy
 
 scoreboard objectives add elements_custom-items_boss-keks_stage-1_cooldown dummy
 scoreboard objectives add elements_custom-items_boss-keks_stage-2_cooldown dummy

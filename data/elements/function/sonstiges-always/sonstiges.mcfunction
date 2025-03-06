@@ -119,6 +119,8 @@ execute as @e[type=minecraft:drowned,nbt={HandItems:[{id:"minecraft:trident"}]}]
 bossbar set elements:gruppenziel_total players @a[scores={elements_settings_gruppengoal_show=3}]
 bossbar set elements:gruppenziel_hub players @a[scores={elements_settings_gruppengoal_show=2},nbt={Dimension:"elements:hub"}]
 
+#double-click cooldown
+execute as @a[scores={elements_custom_doubleclick_cooldown=1..}] run scoreboard players remove @s elements_custom_doubleclick_cooldown 1
 
 
 #execute as @e[type=minecraft:interaction,tag=startquest] at @s on target run tag @s add right

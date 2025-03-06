@@ -101,10 +101,12 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_water-breathing_timer_sec 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_water-breathing_timer_tick 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_water-breathing_cooldown 0
-execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_boss-frucht_stage-1_cooldown 0
-execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_boss-frucht_stage-2_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_boss-frucht_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_boss-frucht_current_stage 1
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_boss-frucht_remain 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_hot-lava_cooldown 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_manatrank_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_fish_caught 0
 
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_levellost 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_villager_stage-2_mana_level 0
@@ -118,6 +120,7 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_admin_config_interface 1
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_maxhealth 6
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_maxhealth_old 6
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom_doubleclick_cooldown 0
 
 
 execute as @a[scores={elements_playtime=20}] run scoreboard players add #server elements_abgabe_general_goal 100

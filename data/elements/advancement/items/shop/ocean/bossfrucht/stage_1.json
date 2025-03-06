@@ -6,7 +6,7 @@
           "item": {
             "items": "minecraft:golden_apple",
             "components": {
-              "minecraft:custom_model_data": 1
+              "minecraft:custom_model_data": 2
             }
           }
         }

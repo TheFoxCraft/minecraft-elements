@@ -2,31 +2,31 @@
 scoreboard players add #server elements_abgabe_refresh_timer 1
 
 
-#steinmetz
+#steinmetz #1
 execute if score #server elements_abgabe_start_steinmetz matches 3 run function elements:spawn/abgaben/steinmetz/spawning
 execute if score #server elements_abgabe_start_steinmetz matches 1 run function elements:spawn/abgaben/steinmetz/running
-#mitte
+#mitte #2
 execute if score #server elements_abgabe_start_mitte matches 3 run function elements:spawn/abgaben/mitte/spawning
 execute if score #server elements_abgabe_start_mitte matches 1 run function elements:spawn/abgaben/mitte/running
-#boden_1
+#boden_1 #3
 execute if score #server elements_abgabe_start_boden1 matches 3 run function elements:spawn/abgaben/boden_1/spawning
 execute if score #server elements_abgabe_start_boden1 matches 1 run function elements:spawn/abgaben/boden_1/running
-#boden_2
+#boden_2 #4
 execute if score #server elements_abgabe_start_boden2 matches 3 run function elements:spawn/abgaben/boden_2/spawning
 execute if score #server elements_abgabe_start_boden2 matches 1 run function elements:spawn/abgaben/boden_2/running
-#säulen
+#säulen #5
 execute if score #server elements_abgabe_start_saeulen matches 3 run function elements:spawn/abgaben/saeulen/spawning
 execute if score #server elements_abgabe_start_saeulen matches 1 run function elements:spawn/abgaben/saeulen/running
-#titus
+#titus #6
 execute if score #server elements_abgabe_shop_titus matches 3 run function elements:spawn/abgaben/titus/spawning
 execute if score #server elements_abgabe_shop_titus matches 1 run function elements:spawn/abgaben/titus/running
-#clementius
+#clementius #7
 execute if score #server elements_abgabe_shop_clementius matches 3 run function elements:spawn/abgaben/clementius/spawning
 execute if score #server elements_abgabe_shop_clementius matches 1 run function elements:spawn/abgaben/clementius/running
-#mystery
+#mystery #8
 execute if score #server elements_abgabe_shop_mystery matches 3 run function elements:spawn/abgaben/mystery/spawning
 execute if score #server elements_abgabe_shop_mystery matches 1 run function elements:spawn/abgaben/mystery/running
-#leer-shop
+#leer-shop #9
 execute if score #server elements_abgabe_shop_leer matches 3 run function elements:spawn/abgaben/leer-shop/spawning
 execute if score #server elements_abgabe_shop_leer matches 1 run function elements:spawn/abgaben/leer-shop/running
 #stage 2 wood/level/gang

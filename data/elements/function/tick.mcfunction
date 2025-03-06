@@ -55,6 +55,7 @@ function elements:mana/regernation
 function elements:mana/main
 function elements:mana/cooldown
 function elements:spawn/community-hub
+function elements:custom-items/shop/ocean/bossfrucht/main_handling
  
 
 
@@ -91,7 +92,8 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:
 execute as @e[type=item,nbt={Item:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if block ~ ~ ~ fire if score #server elements_stage_1_portal_enable matches 0 run function elements:stages/stage-1/portal-enable
 execute as @e[type=item,nbt={Item:{id:"minecraft:dark_oak_sapling",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:spruce_log"},OnGround:1b},distance=..0.3] if entity @e[type=item,nbt={Item:{id:"minecraft:charcoal"},OnGround:1b},distance=..0.3,] if score #server elements_stage_2_portal_enable matches 0 run function elements:stages/stage-2/portal-enable
 
-
+execute as @a[tag=elements_boss_spectator] at @s run function elements:bosse/spectator
+execute as @a[tag=!elements_boss_spectator] run scoreboard players reset @s leave
 
 
 execute as @a[scores={elements_collections_interface=2}] run function elements:enderchest/collections/stone

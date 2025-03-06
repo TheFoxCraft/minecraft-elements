@@ -28,6 +28,9 @@ kill @e[type=text_display,tag=stats]
 summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Fishing-Level: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_miningxp_fishing_level"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]
+summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Fische Geangelt: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_stats_fish_caught"},"color":"gray","italic": false}]',alignment:center}
+data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
+kill @e[type=text_display,tag=stats]
 summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Tode: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_deathcount"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]

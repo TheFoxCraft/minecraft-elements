@@ -2,8 +2,8 @@ execute as @a[scores={elements_enderchest_level_upgradeschmiede=1,elements_ender
 execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] unless entity @s[nbt={EnderItems:[{Slot:12b}]}] unless entity @p[nbt={EnderItems:[{Slot:14b}]}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] if entity @s[nbt={EnderItems:[{Slot:12b}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] if entity @s[nbt={EnderItems:[{Slot:12b}]}] run tellraw @s {"text": "Achtung! Du hast noch ein Item im Input-Slot!","color": "red"}
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] run tellraw @s {"text": "Achtung! Du hast noch ein Item im Output-Slot!","color": "red"}
+execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] if entity @s[nbt={EnderItems:[{Slot:12b}]}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Achtung! Du hast noch ein Item im Input-Slot!","color": "red"}]
+execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Achtung! Du hast noch ein Item im Output-Slot!","color": "red"}]
 execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] unless entity @s[nbt={EnderItems:[{Slot:12b}]}] unless entity @p[nbt={EnderItems:[{Slot:14b}]}] run scoreboard players set @s elements_enderchest_interface_number 1
 execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] unless entity @s[nbt={EnderItems:[{Slot:12b}]}] unless entity @p[nbt={EnderItems:[{Slot:14b}]}] run function elements:enderchest/enderchest-clear
 execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] run scoreboard players set @s elements_enderchest_interface_click_upgradeschmiede_back 0
@@ -13,7 +13,7 @@ execute as @a[scores={elements_enderchest_level_upgradeschmiede=1,elements_ender
 
 
 execute as @a[scores={elements_enderchest_level_upgradeschmiede=1,elements_enderchest_interface_number=3}] store result score @s elements_enderchest_interface_click_upgradeschmiede_upgrade run clear @s minecraft:anvil[custom_model_data=2]
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrade=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] run tellraw @s {"text": "Achtung! Du hast noch ein Item im Output-Slot!","color": "red"}
+execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrade=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Achtung! Du hast noch ein Item im Output-Slot!","color": "red"}]
 execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrade=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrade=1}] unless entity @s[nbt={EnderItems:[{Slot:14b}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 3
 #open-finish

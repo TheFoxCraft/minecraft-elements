@@ -16,7 +16,7 @@
               {
                 "function": "set_components",
                 "components": {
-                  "minecraft:custom_model_data": 1,
+                  "minecraft:custom_model_data": 2,
                   "minecraft:food": {
                     "nutrition": 0,
                     "saturation": 0,
@@ -64,12 +64,7 @@
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Für eine zweiten Boss-Key beim nächsten Kampf"
-                  },
-                  {
-                    "color": "dark_gray",
-                    "italic": false,
-                    "text": "(Nur beim Stage 1 Boss)"
+                    "text": "Für einen zweiten Boss-Key beim nächsten Kampf"
                   },
                   {
                     "text": " "

@@ -6,8 +6,7 @@ execute as @s[scores={elements_custom-items_shop_fishing-frucht_enable=1}] run s
 execute as @s[scores={elements_custom-items_shop_leveltrank_enable=1}] run scoreboard players set @s elements_enderchest_stats_addition 1
 execute as @s[scores={elements_custom-items_shop_hastetrank_enable=1}] run scoreboard players set @s elements_enderchest_stats_addition 1
 execute as @s[scores={elements_custom-items_shop_water-breathing_enable=1}] run scoreboard players set @s elements_enderchest_stats_addition 1
-execute as @s[scores={elements_custom-items_shop_boss-frucht_remain_stage-1=1..}] run scoreboard players set @s elements_enderchest_stats_addition 1
-execute as @s[scores={elements_custom-items_shop_boss-frucht_remain_stage-2=1..}] run scoreboard players set @s elements_enderchest_stats_addition 1
+execute as @s[scores={elements_custom-items_shop_boss-frucht_remain=1..}] run scoreboard players set @s elements_enderchest_stats_addition 1
 
 execute as @s[scores={elements_enderchest_stats_addition=1}] run tellraw @s ["\n",{"text": "[","color": "white"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "white"},{"text": "Alle deine Aktuellen Boosts:"}]
 
@@ -26,8 +25,5 @@ execute as @s[scores={elements_custom-items_shop_hastetrank_enable=1}] run tellr
 execute as @s[scores={elements_custom-items_shop_water-breathing_enable=1}] run tellraw @s ["",{"text":"Wasseratmung: ","color":"green"},{"score":{"name":"@s","objective":"elements_custom-items_shop_water-breathing_timer_h"}},":",{"score":{"name":"@s","objective":"elements_custom-items_shop_water-breathing_timer_min"}},":",{"score":{"name":"@s","objective":"elements_custom-items_shop_water-breathing_timer_sec"}}]
 
 
-execute as @s[scores={elements_custom-items_shop_boss-frucht_remain_stage-1=1..}] run tellraw @s ["",{"text":"Boss-Frucht Stage 1: ","color":"green"},{"score":{"name":"@s","objective":"elements_custom-items_shop_boss-frucht_remain_stage-1"}}]
-execute as @s[scores={elements_custom-items_shop_boss-frucht_remain_stage-2=1..}] run tellraw @s ["",{"text":"Boss-Frucht Stage 2: ","color":"green"},{"score":{"name":"@s","objective":"elements_custom-items_shop_boss-frucht_remain_stage-2"}}]
-
-
+execute as @s[scores={elements_custom-items_shop_boss-frucht_remain=1..}] run tellraw @s ["",{"text":"Boss-Frucht: ","color":"green"},{"score":{"name":"@s","objective":"elements_custom-items_shop_boss-frucht_remain"}}]
 
