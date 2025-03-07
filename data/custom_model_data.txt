@@ -15,6 +15,7 @@
     golden_apple: Bossfrucht Stage 1 | Ocean Shop Buying
     magma_block: Heiße Lava | Nether Shop
     gray_dye: Gravity-Stone | Rare
+    oak_wood: Compressed Wood
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
