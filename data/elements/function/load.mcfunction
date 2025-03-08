@@ -209,6 +209,13 @@ scoreboard objectives add elements_stats_serverdeath dummy
 scoreboard objectives add elements_inv_bone dummy
 scoreboard objectives add elements_inv_rotten_flesh dummy
 scoreboard objectives add elements_inv_gunpowder dummy
+scoreboard objectives add elements_inv_iron_ingot dummy
+scoreboard objectives add elements_inv_copper_ingot dummy
+scoreboard objectives add elements_inv_diamond dummy
+scoreboard objectives add elements_inv_emerald dummy
+scoreboard objectives add elements_inv_ancient_debris dummy
+scoreboard objectives add elements_inv_elytra dummy
+
 scoreboard objectives add elements_titus_level dummy
 scoreboard objectives add elements_titus_clicked dummy
 scoreboard objectives add elements_mystery_clicked dummy

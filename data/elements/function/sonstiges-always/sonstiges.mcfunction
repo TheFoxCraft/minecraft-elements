@@ -25,7 +25,7 @@ execute in elements:sky as @a[distance=0..] run scoreboard players set @s elemen
 execute in elements:hub as @a[distance=0..] run scoreboard players set @s elements_dimension 0
 execute in elements:ocean as @a[distance=0..] run scoreboard players set @s elements_dimension 1
 
-
+#inventory checks
 execute as @a store result score @s elements_inv_compressed_cobblestone run clear @s minecraft:cobbled_deepslate[custom_model_data=1] 0
 execute as @a store result score @s elements_inv_small_heal_pot run clear @s minecraft:potion[custom_model_data=1] 0
 execute as @a store result score @s elements_inv_big_heal_pot run clear @s minecraft:potion[custom_model_data=3] 0
@@ -46,6 +46,12 @@ execute as @a store result score @s elements_inv_bonemeal run clear @s minecraft
 execute as @a store result score @s elements_inv_bone run clear @s minecraft:bone 0
 execute as @a store result score @s elements_inv_rotten_flesh run clear @s minecraft:rotten_flesh 0
 execute as @a store result score @s elements_inv_gunpowder run clear @s minecraft:gunpowder 0
+execute as @a store result score @s elements_inv_iron_ingot run clear @s minecraft:iron_ingot 0
+execute as @a store result score @s elements_inv_copper_ingot run clear @s minecraft:copper_ingot 0
+execute as @a store result score @s elements_inv_diamond run clear @s minecraft:diamond 0
+execute as @a store result score @s elements_inv_emerald run clear @s minecraft:emerald 0
+execute as @a store result score @s elements_inv_ancient_debris run clear @s minecraft:ancient_debris 0
+execute as @a store result score @s elements_inv_elytra run clear @s minecraft:elytra 0
 
 
 execute as @a if score @s elements_stats_maxlevel < @s elements_mainlevel run scoreboard players operation @s elements_stats_maxlevel = @s elements_mainlevel

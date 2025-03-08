@@ -16,6 +16,7 @@
     magma_block: Heiße Lava | Nether Shop
     gray_dye: Gravity-Stone | Rare
     oak_wood: Compressed Wood
+    gray_stained_glass_pane: Shop disabled Shops
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)

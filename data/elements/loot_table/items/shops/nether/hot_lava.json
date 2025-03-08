@@ -82,11 +82,7 @@
                     "text": "Zerstört Stein im 10x10x10 Würfel um den Spieler"
                   }
                 ],
-                {
-                  "text": "Shift Klick: Zerstört jeden Block im Umkreis mit Blockdrop (Experimental)",
-                  "italic": false,
-                  "color": "red"
-                },
+                
                 {
                   "text": " "
                 },

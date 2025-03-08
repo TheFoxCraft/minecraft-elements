@@ -67,5 +67,123 @@ execute as @a[scores={just-ignore=209}] run scoreboard players set @s just-ignor
 execute as @a[scores={elements_clementius_level=4,elements_clementius_clicked=1}] if score #server elements_stage matches ..1 run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Tut mir Leid, bisher ist mir nichts für dich eingefallen! Komm doch später nochmal wieder!"}]
 execute as @a[scores={elements_clementius_level=4,elements_clementius_clicked=1}] if score #server elements_stage matches ..1 run scoreboard players set @s elements_clementius_clicked 0
 
-execute as @a[scores={elements_clementius_level=4,elements_clementius_clicked=1}] if score #server elements_stage matches 2.. run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Mehr noch nicht gecodet!"}]
+
+# Stage 2
+
+execute as @a[scores={elements_clementius_level=4,elements_clementius_clicked=1}] if score #server elements_stage matches 2.. run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":""},{"text":"Da bist du ja wieder. Ich hab gute Neuigkeiten: Ich hab ein Neues Upgrade für deine Enderchest für dich!"},"\n","\n",{"text":"Ok Cool! Was ist es diesmal?","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 210"}}]
 execute as @a[scores={elements_clementius_level=4,elements_clementius_clicked=1}] if score #server elements_stage matches 2.. run scoreboard players set @s elements_clementius_clicked 0
+
+
+execute as @a[scores={elements_clementius_level=4,just-ignore=210}] if score #server elements_stage matches 2.. at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":""},{"text":"Es ist etwas ganz besonderes: Dein eigener persönlicher Shop! Persönlich in dem Sinn, dass er auf deine Heimatdimension angepasst ist!"},"\n","\n",{"text":"Das klingt cool!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 211"}}]
+execute as @a[scores={elements_clementius_level=4,just-ignore=210}] if score #server elements_stage matches 2.. at @s unless entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=210}] run scoreboard players set @s just-ignore 0
+
+execute as @a[scores={elements_clementius_level=4,just-ignore=211}] if score #server elements_stage matches 2.. at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":""},{"text":"Das ist es allerings. Dafür benötige ich allerdings einen Eisenbarren, einen Kupferbarren und 2.000 Level von dir!"},"\n","\n",{"text":"Alles Klar!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 212"}}]
+execute as @a[scores={elements_clementius_level=4,just-ignore=211}] if score #server elements_stage matches 2.. at @s unless entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=211}] run scoreboard players set @s just-ignore 0
+
+
+execute as @a[scores={elements_clementius_level=4,just-ignore=212}] if score #server elements_stage matches 2.. at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":""},{"text":"Ich warte solange"}]
+execute as @a[scores={elements_clementius_level=4,just-ignore=212}] if score #server elements_stage matches 2.. at @s if entity @e[type=villager,tag=clementius,distance=..10] run scoreboard players set @s elements_clementius_level 5
+execute as @a[scores={elements_clementius_level=4,just-ignore=212}] if score #server elements_stage matches 2.. at @s unless entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=212}] run scoreboard players set @s just-ignore 0
+
+
+execute as @a[scores={elements_clementius_level=5,elements_clementius_clicked=1}] run tellraw @s ["",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Schon fertig? Ok, fangen wir mit dem Eisenbarren und Kupferbarren an!"},"\n","\n",{"text":"Hier sind sie!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 213"}}]
+execute as @a[scores={elements_clementius_level=5,elements_clementius_clicked=1}] run scoreboard players set @s elements_clementius_clicked 0
+execute as @a[scores={elements_clementius_level=5,just-ignore=213,elements_inv_iron_ingot=1..,elements_inv_copper_ingot=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Vielen Dank."}]
+execute as @a[scores={elements_clementius_level=5,just-ignore=213,elements_inv_iron_ingot=1..,elements_inv_copper_ingot=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run clear @s iron_ingot 1
+execute as @a[scores={elements_clementius_level=5,just-ignore=213,elements_inv_iron_ingot=1..,elements_inv_copper_ingot=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run clear @s copper_ingot 1
+execute as @a[scores={elements_clementius_level=5,just-ignore=213,elements_inv_iron_ingot=1..,elements_inv_copper_ingot=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run scoreboard players set @s elements_clementius_level 6
+execute as @a[scores={elements_clementius_level=5,just-ignore=213,elements_inv_iron_ingot=..0,elements_inv_copper_ingot=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast keinen Eisenbarren!"}]
+execute as @a[scores={elements_clementius_level=5,just-ignore=213,elements_inv_iron_ingot=1..,elements_inv_copper_ingot=..0}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast keinen Kupferbarren!"}]
+execute as @a[scores={elements_clementius_level=5,just-ignore=213,elements_inv_iron_ingot=..0,elements_inv_copper_ingot=..0}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast keinen Kupferbarren und keinen Eisenbarren!"}]
+execute as @a[scores={elements_clementius_level=5,just-ignore=213}] at @s unless entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=213}] run scoreboard players set @s just-ignore 0
+
+execute as @a[scores={elements_clementius_level=6,elements_clementius_clicked=1}] run tellraw @s ["",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Jetzt noch die 2.000 Level!."},"\n","\n",{"text":"Hier sind sie!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 214"}}]
+execute as @a[scores={elements_clementius_level=6,elements_clementius_clicked=1}] run scoreboard players set @s elements_clementius_clicked 0
+execute as @a[scores={elements_clementius_level=6,just-ignore=214,elements_mainlevel=2000..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Perfekt. Ich hab deiner Enderchest deinen Shop hinzugefügt!"},"\n","\n",{"text":"Ok, und wie genau funktioniert es?","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 215"}}]
+execute as @a[scores={elements_clementius_level=6,just-ignore=214,elements_mainlevel=2000..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run xp add @s -2000 levels
+execute as @a[scores={elements_clementius_level=6,just-ignore=214,elements_mainlevel=2000..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run scoreboard players set @s elements_clementius_level 7
+execute as @a[scores={elements_clementius_level=6,just-ignore=214,elements_mainlevel=..1999}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast nicht genügend Level!"}]
+execute as @a[scores={elements_clementius_level=6,just-ignore=214}] at @s unless entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=214}] run scoreboard players set @s just-ignore 0
+
+execute as @a[scores={elements_clementius_level=7,elements_clementius_clicked=1}] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":""},{"text":"Du siehst alle Items die du kaufen kannst, mit Ihrem Preis, einfach einmal anklicken, und schon hast du das Item gekauft! "},{"text": "(Sollten Admins den Shop einer anderen Dimension für alle Freigeschaltet haben, siehst du erst ein Menü in dem Du den Shop auswählen kannst.)","color": "gray"},"\n","\n",{"text":"Alles Klar, das schau ich mir gleich mal an!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 216"}}]
+execute as @a[scores={elements_clementius_level=7,elements_clementius_clicked=1}] run scoreboard players set @s elements_clementius_clicked 0
+execute as @a[scores={elements_clementius_level=7,just-ignore=215}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":""},{"text":"Du siehst alle Items die du kaufen kannst, mit Ihrem Preis, einfach einmal anklicken, und schon hast du das Item gekauft! "},{"text": "(Sollten Admins den Shop einer anderen Dimension für alle Freigeschaltet haben, siehst du erst ein Menü in dem Du den Shop auswählen kannst.)","color": "gray"},"\n","\n",{"text":"Alles Klar, das schau ich mir gleich mal an!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 216"}}]
+execute as @a[scores={elements_clementius_level=7,just-ignore=215}] at @s unless entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=215}] run scoreboard players set @s just-ignore 0
+
+
+execute as @a[scores={elements_clementius_level=7,just-ignore=216}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":""},{"text":"Mach das. Ich denke solange über weitere Upgrades nach."}]
+execute as @a[scores={elements_clementius_level=7,just-ignore=216}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run scoreboard players set @s elements_enderchest_level_shop 1
+execute as @a[scores={elements_clementius_level=7,just-ignore=216}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run scoreboard players set @s elements_clementius_level 8
+execute as @a[scores={elements_clementius_level=7,just-ignore=216}] at @s unless entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=216}] run scoreboard players set @s just-ignore 0
+
+
+execute as @a[scores={elements_clementius_level=8,elements_clementius_clicked=1}] if score #server elements_stage matches ..2 run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Tut mir Leid, bisher hab ich nichts Neues Für dich!"}]
+execute as @a[scores={elements_clementius_level=8,elements_clementius_clicked=1}] if score #server elements_stage matches ..2 run scoreboard players set @s elements_clementius_clicked 0
+
+
+# Stage 3
+
+execute as @a[scores={elements_clementius_level=8,elements_clementius_clicked=1}] if score #server elements_stage matches 3.. run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":""},{"text":"Da bist du ja wieder. Ja, du hast Recht, ich hab wieder was neues für dich"},"\n","\n",{"text":"Und was ist es?","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 217"}}]
+execute as @a[scores={elements_clementius_level=8,elements_clementius_clicked=1}] if score #server elements_stage matches 3.. run scoreboard players set @s elements_clementius_clicked 0
+
+
+execute as @a[scores={elements_clementius_level=8,just-ignore=217}] if score #server elements_stage matches 3.. at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":""},{"text":"Es ist etwas sehr nützliches, und zwar da du die Enderchest ja nicht normal verwenden kannst, wäre es doch cool wenn du dieses Feature wieder verwenden könntest oder?"},"\n","\n",{"text":"Da hast du Recht!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 218"}}]
+execute as @a[scores={elements_clementius_level=8,just-ignore=217}] if score #server elements_stage matches 3.. at @s unless entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=217}] run scoreboard players set @s just-ignore 0
+
+execute as @a[scores={elements_clementius_level=8,just-ignore=218}] if score #server elements_stage matches 3.. at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":""},{"text":"Die Enderchest in der Enderchest ist allerdings etwas teurer, und zwar brauche ich einen Smaragd, einen Diamant, ein Ancient Debris, eine Elytra und 1.000 Level!"},"\n","\n",{"text":"Oh, ja das ist teuer.. Ich halte mich mal ran","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 219"}}]
+execute as @a[scores={elements_clementius_level=8,just-ignore=218}] if score #server elements_stage matches 3.. at @s unless entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=218}] run scoreboard players set @s just-ignore 0
+
+
+execute as @a[scores={elements_clementius_level=8,just-ignore=219}] if score #server elements_stage matches 3.. at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":""},{"text":"Ich warte solange"}]
+execute as @a[scores={elements_clementius_level=8,just-ignore=219}] if score #server elements_stage matches 3.. at @s if entity @e[type=villager,tag=clementius,distance=..10] run scoreboard players set @s elements_clementius_level 9
+execute as @a[scores={elements_clementius_level=8,just-ignore=219}] if score #server elements_stage matches 3.. at @s unless entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=219}] run scoreboard players set @s just-ignore 0
+
+
+execute as @a[scores={elements_clementius_level=9,elements_clementius_clicked=1}] run tellraw @s ["",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Da bist du ja schon wieder! Ok, fangen wir mit dem Smaragd und dem Diamant an!"},"\n","\n",{"text":"Hier sind sie!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 220"}}]
+execute as @a[scores={elements_clementius_level=9,elements_clementius_clicked=1}] run scoreboard players set @s elements_clementius_clicked 0
+execute as @a[scores={elements_clementius_level=9,just-ignore=220,elements_inv_diamond=1..,elements_inv_emerald=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Vielen Dank."}]
+execute as @a[scores={elements_clementius_level=9,just-ignore=220,elements_inv_diamond=1..,elements_inv_emerald=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run clear @s diamond 1
+execute as @a[scores={elements_clementius_level=9,just-ignore=220,elements_inv_diamond=1..,elements_inv_emerald=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run clear @s emerald 1
+execute as @a[scores={elements_clementius_level=9,just-ignore=220,elements_inv_diamond=1..,elements_inv_emerald=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run scoreboard players set @s elements_clementius_level 10
+execute as @a[scores={elements_clementius_level=9,just-ignore=220,elements_inv_diamond=..0,elements_inv_emerald=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast keinen Diamant!"}]
+execute as @a[scores={elements_clementius_level=9,just-ignore=220,elements_inv_diamond=1..,elements_inv_emerald=..0}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast keinen Smaragd!"}]
+execute as @a[scores={elements_clementius_level=9,just-ignore=220,elements_inv_diamond=..0,elements_inv_emerald=..0}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast keinen Diamant und keinen Smaragd!"}]
+execute as @a[scores={elements_clementius_level=9,just-ignore=220}] at @s unless entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=220}] run scoreboard players set @s just-ignore 0
+
+execute as @a[scores={elements_clementius_level=10,elements_clementius_clicked=1}] run tellraw @s ["",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Dann als Nächstes das Ancient Debris und die Elytra"},"\n","\n",{"text":"Hier sind sie!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 221"}}]
+execute as @a[scores={elements_clementius_level=10,elements_clementius_clicked=1}] run scoreboard players set @s elements_clementius_clicked 0
+execute as @a[scores={elements_clementius_level=10,just-ignore=221,elements_inv_ancient_debris=1..,elements_inv_elytra=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Vielen Dank."}]
+execute as @a[scores={elements_clementius_level=10,just-ignore=221,elements_inv_ancient_debris=1..,elements_inv_elytra=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run clear @s ancient_debris 1
+execute as @a[scores={elements_clementius_level=10,just-ignore=221,elements_inv_ancient_debris=1..,elements_inv_elytra=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run clear @s elytra 1
+execute as @a[scores={elements_clementius_level=10,just-ignore=221,elements_inv_ancient_debris=1..,elements_inv_elytra=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run scoreboard players set @s elements_clementius_level 11
+execute as @a[scores={elements_clementius_level=10,just-ignore=221,elements_inv_ancient_debris=..0,elements_inv_elytra=1..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast kein Ancient Debris!"}]
+execute as @a[scores={elements_clementius_level=10,just-ignore=221,elements_inv_ancient_debris=1..,elements_inv_elytra=..0}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast keine Elytra!"}]
+execute as @a[scores={elements_clementius_level=10,just-ignore=221,elements_inv_ancient_debris=..0,elements_inv_elytra=..0}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast kein Ancient Debris und keine Elytra!"}]
+execute as @a[scores={elements_clementius_level=10,just-ignore=221}] at @s unless entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=221}] run scoreboard players set @s just-ignore 0
+
+execute as @a[scores={elements_clementius_level=11,elements_clementius_clicked=1}] run tellraw @s ["",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Jetzt noch die 1.000 Level!."},"\n","\n",{"text":"Hier sind sie!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 222"}}]
+execute as @a[scores={elements_clementius_level=11,elements_clementius_clicked=1}] run scoreboard players set @s elements_clementius_clicked 0
+execute as @a[scores={elements_clementius_level=11,just-ignore=222,elements_mainlevel=1000..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Perfekt. Ich hab deiner Enderchest das Feature hinzugefügt! Ich denke es ist selbsterklärend"}]
+execute as @a[scores={elements_clementius_level=11,just-ignore=222,elements_mainlevel=1000..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run xp add @s -1000 levels
+execute as @a[scores={elements_clementius_level=11,just-ignore=222,elements_mainlevel=1000..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run scoreboard players set @s elements_clementius_level 12
+execute as @a[scores={elements_clementius_level=11,just-ignore=222,elements_mainlevel=1000..}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run scoreboard players set @s elements_enderchest_level_enderchest 1
+execute as @a[scores={elements_clementius_level=11,just-ignore=222,elements_mainlevel=..999}] at @s if entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast nicht genügend Level!"}]
+execute as @a[scores={elements_clementius_level=11,just-ignore=222}] at @s unless entity @e[type=villager,tag=clementius,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=222}] run scoreboard players set @s just-ignore 0
+
+
+execute as @a[scores={elements_clementius_level=12,elements_clementius_clicked=1}] run tellraw @s ["","\n",{"text":"Clementius:","underlined":true,"color":"dark_red"},"\n",{"text":"Tut mir Leid, aber ich habe keine Neuen Sachen für dich!"}]
+execute as @a[scores={elements_clementius_level=12,elements_clementius_clicked=1}] run scoreboard players set @s elements_clementius_clicked 0
+

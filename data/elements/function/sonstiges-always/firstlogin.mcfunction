@@ -130,6 +130,6 @@ execute as @a[scores={elements_playerid=0},limit=1] run scoreboard players add #
 execute as @a[scores={elements_playerid=0},limit=1] run scoreboard players operation @s elements_playerid = #server elements_playerid
 
 execute as @a[scores={elements_playtime=20}] run tellraw @s {"text": "Willkommen in Minecraft Elements!","color":"gold"}
-execute as @a[scores={elements_playtime=20}] run title @s title {"text": "Minecraft Elements","color": "dark_purple"}
-
+execute as @a[scores={elements_playtime=20}] run title @s title {"text": "MINECRAFT ELEMENTS","color": "light_purple"}
+execute as @a[scores={elements_playtime=20}] run title @s subtitle [{"text": "Willkommen, ","color": "dark_purple"},{"selector": "@s","color": "dark_purple"}]
 
