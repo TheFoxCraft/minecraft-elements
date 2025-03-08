@@ -1,0 +1,6 @@
+data modify storage elements_retina:data Surfaces.Top append value [0,480,0,30,480,480]
+data modify storage elements_retina:data Surfaces.Bottom append value [0,0,0,30,0,480]
+data modify storage elements_retina:data Surfaces.West append value [0,0,0,0,480,480]
+data modify storage elements_retina:data Surfaces.East append value [30,0,0,30,480,480]
+data modify storage elements_retina:data Surfaces.North append value [0,0,0,30,480,0]
+data modify storage elements_retina:data Surfaces.South append value [0,0,480,30,480,480]

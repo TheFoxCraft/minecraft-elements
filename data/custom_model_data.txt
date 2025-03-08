@@ -17,6 +17,10 @@
     gray_dye: Gravity-Stone | Rare
     oak_wood: Compressed Wood
     gray_stained_glass_pane: Shop disabled Shops
+    ender_pearl: Enderchest Teleporter
+    crafting_table: Enderchest Shop
+    magenta_glazed_terracotta: Enderchest Return (Zurück)
+    spruce_sapling: Farmslot Stage 2
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -29,6 +33,13 @@
     ghast_tear: Photon | Epic
     fishing_rod: Element Fishing Rod | Rare
     gray_dye: Gravity-Stone | Epic
+    ender_pearl: Enderchest Admin Settings Teleport Menü
+    crafting_table: Enderchest Admin Settings Shop Menü
+    stone: Enderchest Shop Selection
+    grass_block: Enderchest Shop Selection
+    netherrack: Enderchest Shop Selection
+    water_bucket: Enderchest Shop Selection
+
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -40,6 +51,10 @@
     ghast_tear: Photon | Legendary
     fishing_rod: Element Fishing Rod | Epic
     gray_dye: Gravity-Stone | Legendary
+    stone: Enderchest Shop Selection Admin Settings
+    grass_block: Enderchest Shop Selection Admin Settings
+    netherrack: Enderchest Shop Selection Admin Settings
+    water_bucket: Enderchest Shop Selection Admin Settings
 4:
     netherite_pickaxe: Element Pickaxe | Legendary
     netherite_axe: Element Axe | Legendary
@@ -70,6 +85,7 @@
 11:
     clock: Admin-Config | Double-Level Timer Action
     potion: Manatrank | Sky Shop
+    stick: Enderchest Admin Settings AdminWand
 12:
     clock: Admin-Config | Double-Level Timer Action
     potion: Manatrank | Sky Shop Buying

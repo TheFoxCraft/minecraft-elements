@@ -1,0 +1,25 @@
+data modify storage elements_retina:output Target set value 'ENTITY'
+data modify storage elements_retina:output TargetedEntity set value {UUID:[I;0,0,0,0],Pos:[0.0f,0.0f,0.0f]}
+execute as @e[type=!#elements_retina:ignore,tag=retina.possible_target] if score @s retina.id = $closest_cuboid_id retina.__variable__ run function elements_retina:__private__/anonymous/12
+data modify storage elements_retina:data Entity set from entity @e[type=!#elements_retina:ignore,tag=retina.target,limit=1]
+data modify storage elements_retina:output TargetedEntity.UUID set from storage elements_retina:data Entity.UUID
+data modify storage elements_retina:output TargetedEntity.Pos set from storage elements_retina:data Entity.Pos
+data remove storage elements_retina:data Entity
+data modify storage elements_retina:output ContactSurface set from storage elements_retina:data ContactSurface
+data modify storage elements_retina:output ContactCoordinates set value [0.0d,0.0d,0.0d]
+execute if score $X0 retina.__variable__ matches ..-1 run scoreboard players add $X0 retina.__variable__ 480
+execute if score $Y0 retina.__variable__ matches ..-1 run scoreboard players add $Y0 retina.__variable__ 480
+execute if score $expand_entity_hitboxes retina.__variable__ = $expand_entity_hitboxes retina.__variable__ run function elements_retina:__private__/if_else/29
+scoreboard players operation $targeted_X retina.__variable__ += $origin_X retina.__variable__
+execute store result storage elements_retina:output ContactCoordinates[0] double 0.0020833 run scoreboard players get $targeted_X retina.__variable__
+execute if score $nearest_axis retina.__variable__ matches 0 run function elements_retina:__private__/if_else/30
+scoreboard players operation $targeted_Y retina.__variable__ += $origin_Y retina.__variable__
+execute store result storage elements_retina:output ContactCoordinates[1] double 0.0020833 run scoreboard players get $targeted_Y retina.__variable__
+execute if score $nearest_axis retina.__variable__ matches 1 run function elements_retina:__private__/if_else/31
+scoreboard players operation $targeted_Z retina.__variable__ += $origin_Z retina.__variable__
+execute store result storage elements_retina:output ContactCoordinates[2] double 0.0020833 run scoreboard players get $targeted_Z retina.__variable__
+execute if score $nearest_axis retina.__variable__ matches 2 run function elements_retina:__private__/if_else/32
+scoreboard players operation $total_distance retina.__variable__ /= 480 retina.__int__
+execute if score $total_distance retina.__variable__ matches ..-1 run scoreboard players operation $total_distance retina.__variable__ *= -1 retina.__int__
+execute store result storage elements_retina:output Distance double 0.0020833 run scoreboard players get $total_distance retina.__variable__
+execute if data storage elements_retina:input {EndpointEntity:true} summon minecraft:marker run function elements_retina:__private__/anonymous/13

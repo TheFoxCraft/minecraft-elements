@@ -1,1 +1,6 @@
-{ "values": ["elements:load"] }
+{
+    "values": [
+        "elements:load",
+        "elements_retina:__load__"
+    ]
+}

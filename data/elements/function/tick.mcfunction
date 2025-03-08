@@ -68,9 +68,6 @@ execute as @a[scores={elements_enderchest_interface_number=4}] run function elem
 execute as @a[scores={elements_enderchest_interface_number=5}] run function elements:enderchest/casino
 execute as @a[scores={elements_enderchest_interface_number=6}] run function elements:enderchest/collections/menu
 execute as @a[scores={elements_enderchest_interface_number=7}] run function elements:enderchest/settings
-execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=1,elements_rank_admin=1}] if score #server elements_setup matches 1.. run function elements:enderchest/admin-settings/abgaben
-execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=1,elements_rank_admin=1}] if score #server elements_setup matches 2.. run function elements:enderchest/admin-settings/teleporter
-execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=2,elements_rank_admin=1}] if score #server elements_setup matches 3.. run function elements:enderchest/admin-settings/double-xp-event/main
 execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_count=1,elements_enderchest_shop_ocean=1}] run function elements:enderchest/shop/ocean-shop
 execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_count=1,elements_enderchest_shop_stone=1}] run function elements:enderchest/shop/stone-shop
 execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_count=1,elements_enderchest_shop_sky=1}] run function elements:enderchest/shop/sky-shop
@@ -112,6 +109,11 @@ execute as @e[tag=spawner_leaderboard_id-6] at @s run function elements:spawn/le
 
 #stageset
 scoreboard players operation @a elements_stage = #server elements_stage
+
+
+# Farmslots
+function elements:farm_slots/stage_2/main
+
 
 ##needs to be at the end!
 function elements:custom-items/cooldown

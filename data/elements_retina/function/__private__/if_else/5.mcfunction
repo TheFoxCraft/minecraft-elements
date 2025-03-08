@@ -1,0 +1,2 @@
+scoreboard players operation $entity_half_width retina.__variable__ += $expand_entity_hitboxes retina.__variable__
+scoreboard players operation $entity_height retina.__variable__ += $expand_entity_hitboxes retina.__variable__

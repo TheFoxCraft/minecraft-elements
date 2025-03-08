@@ -1,0 +1,1 @@
+loot give @s loot elements:items/farm_slots/stage_2
