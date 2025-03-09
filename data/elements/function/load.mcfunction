@@ -623,6 +623,8 @@ scoreboard objectives add elements_inv_manatrank dummy
 scoreboard objectives add elements_custom_doubleclick_cooldown dummy
 scoreboard objectives add leave trigger
 scoreboard objectives add elements_stats_fish_caught dummy
+scoreboard objectives add elements_get-login minecraft.custom:minecraft.leave_game
+scoreboard objectives add elements_get-login_cooldown dummy
 
 
 scoreboard objectives add elements_custom-items_boss-keks_stage-1_cooldown dummy
@@ -666,6 +668,7 @@ scoreboard objectives add elements_farm-slots_stage-2_broken minecraft.mined:spr
 scoreboard objectives add elements_farm-slots_stage-2_slots dummy
 scoreboard objectives add elements_farm-slots_stage-2_max-slots dummy
 scoreboard objectives add elements_farm-slots_stage-2_correct_UUID dummy
+scoreboard objectives add elements_farm-slots_stage-2_broken_slots dummy
 
 
 scoreboard objectives setdisplay list elements_mainlevel

@@ -56,7 +56,12 @@ function elements:mana/main
 function elements:mana/cooldown
 function elements:spawn/community-hub
 function elements:custom-items/shop/ocean/bossfrucht/main_handling
- 
+
+#get login
+execute as @a[scores={elements_get-login=1..}] run scoreboard players set @s elements_get-login_cooldown 20
+execute as @a[scores={elements_get-login=1..}] run scoreboard players set @s elements_get-login 0
+execute as @a[scores={elements_get-login_cooldown=1..}] run scoreboard players remove @s elements_get-login_cooldown 1
+execute as @a[scores={elements_get-login_cooldown=1}] run function elements:sonstiges/on_login
 
 
 #enderchest

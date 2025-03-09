@@ -1,0 +1,1 @@
+$tellraw @a[nbt={UUID:$(UUID)},scores={just-ignore=500}] ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text":"#"},{"score": {"name": "@a[nbt={UUID:$(UUID)}]","objective": "elements_farm-slots_stage-2_broken_slots"}},{"text": " ist bei $(x) $(y) $(z) in $(Dim)"}]

@@ -1,0 +1,8 @@
+Techniker: 000-099
+Titus: 100-199
+Clementius: 200-299
+Mystery: 300-399
+Stage-2_Mana: 400-499
+
+Customs: 500-599
+    500: Get Broken Farm-Slots Stage 2
