@@ -48,22 +48,22 @@ kill @e[type=text_display,tag=stats]
 summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Server-Stats","color":"gold","bold": true,"italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]
-summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Server Level:","color":"blue","italic": false},{"text":" (Online) ","color":"dark_gray","italic": false},{"score":{"name":"#server","objective":"elements_stats_serverlevel"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Server Level:","color":"blue","italic": false},{"text":" (Online) ","color":"dark_gray","italic": false},{"score":{"name":".server","objective":"elements_stats_serverlevel"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]
-summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Höchst-Level Server: ","color":"blue","italic": false},{"score":{"name":"#server","objective":"elements_stats_servermaxlevel"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Höchst-Level Server: ","color":"blue","italic": false},{"score":{"name":".server","objective":"elements_stats_servermaxlevel"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]
-summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Server Level verloren: ","color":"blue","italic": false},{"score":{"name":"#server","objective":"elements_stats_serverlevellost"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Server Level verloren: ","color":"blue","italic": false},{"score":{"name":".server","objective":"elements_stats_serverlevellost"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]
-summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Server Tode: ","color":"blue","italic": false},{"score":{"name":"#server","objective":"elements_stats_serverdeath"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Server Tode: ","color":"blue","italic": false},{"score":{"name":".server","objective":"elements_stats_serverdeath"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]
-summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Server Lootboxen geöffnet: ","color":"blue","italic": false},{"score":{"name":"#server","objective":"elements_stats_lootbox"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Server Lootboxen geöffnet: ","color":"blue","italic": false},{"score":{"name":".server","objective":"elements_stats_lootbox"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]
-summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Server Spielzeit: ","color":"blue","italic": false},{"score":{"name":"#server","objective":"elements_stats_playtime_h"},"color":"gray","italic": false},{"text":":","color":"gray","italic": false},{"score":{"name":"#server","objective":"elements_stats_playtime_min"},"color":"gray","italic": false},{"text":":","color":"gray","italic": false},{"score":{"name":"#server","objective":"elements_stats_playtime_sec"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Server Spielzeit: ","color":"blue","italic": false},{"score":{"name":".server","objective":"elements_stats_playtime_h"},"color":"gray","italic": false},{"text":":","color":"gray","italic": false},{"score":{"name":".server","objective":"elements_stats_playtime_min"},"color":"gray","italic": false},{"text":":","color":"gray","italic": false},{"score":{"name":".server","objective":"elements_stats_playtime_sec"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]
 

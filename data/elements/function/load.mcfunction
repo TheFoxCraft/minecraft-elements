@@ -596,6 +596,8 @@ scoreboard objectives add elements_get-name_status dummy
 scoreboard objectives add elements_get-name_continue dummy
 scoreboard objectives add elements_villager_stage-2_mana_clicked dummy
 scoreboard objectives add elements_villager_stage-2_mana_level dummy
+scoreboard objectives add elements_villager_stage-2_farm-slots_clicked dummy
+scoreboard objectives add elements_villager_stage-2_farm-slots_level dummy
 scoreboard objectives add elements_stage-2_mana_activate_timer_tick dummy
 scoreboard objectives add elements_stage-2_mana_activate_timer_sec dummy
 scoreboard objectives add elements_mana_mana-count dummy
@@ -688,19 +690,19 @@ scoreboard objectives add elements_level_wood_6 minecraft.used:minecraft.dark_oa
 
 ##set values at start
 
-execute unless score #server elements_playerid matches 1.. run scoreboard players set #server elements_playerid 1
-execute unless score #server elements_stats_servermaxlevel matches 1.. run scoreboard players set #server elements_stats_servermaxlevel 0
-execute unless score #server elements_config_death_level matches 1.. run scoreboard players set #server elements_config_death_level 5
-execute unless score #server elements_stats_serverlevellost matches 1.. run scoreboard players set #server elements_stats_serverlevellost 0
-execute unless score #server elements_stats_serverdeath matches 1.. run scoreboard players set #server elements_stats_serverdeath 0
-execute unless score #server elements_stats_playtime_h matches 1.. run scoreboard players set #server elements_stats_playtime_h 0
-execute unless score #server elements_stats_playtime_sec matches 1.. run scoreboard players set #server elements_stats_playtime_sec 0
-execute unless score #server elements_stats_playtime_min matches 1.. run scoreboard players set #server elements_stats_playtime_min 0
+execute unless score .server elements_playerid matches 1.. run scoreboard players set .server elements_playerid 1
+execute unless score .server elements_stats_servermaxlevel matches 1.. run scoreboard players set .server elements_stats_servermaxlevel 0
+execute unless score .server elements_config_death_level matches 1.. run scoreboard players set .server elements_config_death_level 5
+execute unless score .server elements_stats_serverlevellost matches 1.. run scoreboard players set .server elements_stats_serverlevellost 0
+execute unless score .server elements_stats_serverdeath matches 1.. run scoreboard players set .server elements_stats_serverdeath 0
+execute unless score .server elements_stats_playtime_h matches 1.. run scoreboard players set .server elements_stats_playtime_h 0
+execute unless score .server elements_stats_playtime_sec matches 1.. run scoreboard players set .server elements_stats_playtime_sec 0
+execute unless score .server elements_stats_playtime_min matches 1.. run scoreboard players set .server elements_stats_playtime_min 0
 
 
 #unique sets
-execute unless score #server elements_uniqueitem_collections_stone matches 0.. run scoreboard players set #server elements_uniqueitem_collections_stone 0
+execute unless score .server elements_uniqueitem_collections_stone matches 0.. run scoreboard players set .server elements_uniqueitem_collections_stone 0
 
 
 #set fixed values
-scoreboard players set #server elements_fixed-value_1 1
+scoreboard players set .server elements_fixed-value_1 1

@@ -16,5 +16,5 @@ $execute as @a[nbt={UUID:$(UUID)}] if score @s elements_miningxp_fishing_level >
 
 $execute as @a[nbt={UUID:$(UUID)}] run xp add @s 3 levels
 $execute as @a[nbt={UUID:$(UUID)}] run scoreboard players add @s elements_stats_fish_caught 1
-$execute as @a[nbt={UUID:$(UUID)}] run scoreboard players add #server elements_stats_fish_caught 1
-$execute as @a[nbt={UUID:$(UUID)}] if score #server elements_double-xp-event_active matches 1 run xp add @s 3 levels
+$execute as @a[nbt={UUID:$(UUID)}] run scoreboard players add .server elements_stats_fish_caught 1
+$execute as @a[nbt={UUID:$(UUID)}] if score .server elements_double-xp-event_active matches 1 run xp add @s 3 levels

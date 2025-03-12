@@ -106,15 +106,15 @@ execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_
 execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_7=1}] run scoreboard players add @s elements_casino_stats_lvlinvestiert 1000
 execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_8=1}] run scoreboard players add @s elements_casino_stats_lvlinvestiert 5000
 execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_9=1}] run scoreboard players add @s elements_casino_stats_lvlinvestiert 10000
-execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_1=1}] run scoreboard players add #server elements_casino_stats_lvlinvestiert 1
-execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_2=1}] run scoreboard players add #server elements_casino_stats_lvlinvestiert 5
-execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_3=1}] run scoreboard players add #server elements_casino_stats_lvlinvestiert 10
-execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_4=1}] run scoreboard players add #server elements_casino_stats_lvlinvestiert 50
-execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_5=1}] run scoreboard players add #server elements_casino_stats_lvlinvestiert 100
-execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_6=1}] run scoreboard players add #server elements_casino_stats_lvlinvestiert 500
-execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_7=1}] run scoreboard players add #server elements_casino_stats_lvlinvestiert 1000
-execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_8=1}] run scoreboard players add #server elements_casino_stats_lvlinvestiert 5000
-execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_9=1}] run scoreboard players add #server elements_casino_stats_lvlinvestiert 10000
+execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_1=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 1
+execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_2=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 5
+execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_3=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 10
+execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_4=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 50
+execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_5=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 100
+execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_6=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 500
+execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_7=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 1000
+execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_8=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 5000
+execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_9=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 10000
 execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_1=1}] run xp add @s -1 levels
 execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_2=1}] run xp add @s -5 levels
 execute as @a[scores={elements_casino_interface=2,elements_enderchest_interface_click_casino_einsatz_3=1}] run xp add @s -10 levels

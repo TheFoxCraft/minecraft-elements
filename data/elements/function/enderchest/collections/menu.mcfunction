@@ -43,5 +43,5 @@ execute as @a[scores={elements_enderchest_interface_click_collections_stone=1}] 
 execute as @a[scores={elements_enderchest_interface_click_collections_stone=1}] run function elements:enderchest/enderchest-clear
 execute as @a[scores={elements_enderchest_interface_click_collections_stone=1}] run scoreboard players set @s elements_enderchest_interface_click_collections_stone 0
 
-execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] if score #server elements_stage matches 1.. run item replace entity @s enderchest.9 with cobblestone[custom_name='{"color":"gold","italic":false,"text":"Stein"}',custom_model_data=10] 1
+execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] if score .server elements_stage matches 1.. run item replace entity @s enderchest.9 with cobblestone[custom_name='{"color":"gold","italic":false,"text":"Stein"}',custom_model_data=10] 1
 

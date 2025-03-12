@@ -31,22 +31,22 @@ kill @e[type=text_display,tag=casino_stats]
 summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Server","color":"gold","bold": true,"italic": false}]',alignment:center}
 data modify entity @e[tag=casino_stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=casino_stats,limit=1] text
 kill @e[type=text_display,tag=casino_stats]
-summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Level investiert: ","color":"blue","italic": false},{"score":{"name":"#server","objective":"elements_casino_stats_lvlinvestiert"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Level investiert: ","color":"blue","italic": false},{"score":{"name":".server","objective":"elements_casino_stats_lvlinvestiert"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=casino_stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=casino_stats,limit=1] text
 kill @e[type=text_display,tag=casino_stats]
-summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Level gewonnen: ","color":"blue","italic": false},{"score":{"name":"#server","objective":"elements_casino_stats_lvlgewonnen"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Level gewonnen: ","color":"blue","italic": false},{"score":{"name":".server","objective":"elements_casino_stats_lvlgewonnen"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=casino_stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=casino_stats,limit=1] text
 kill @e[type=text_display,tag=casino_stats]
-summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Level verloren: ","color":"blue","italic": false},{"score":{"name":"#server","objective":"elements_casino_stats_lvlverloren"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Level verloren: ","color":"blue","italic": false},{"score":{"name":".server","objective":"elements_casino_stats_lvlverloren"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=casino_stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=casino_stats,limit=1] text
 kill @e[type=text_display,tag=casino_stats]
-summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Level Ertrag: ","color":"blue","italic": false},{"score":{"name":"#server","objective":"elements_casino_stats_lvlumsatz"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Level Ertrag: ","color":"blue","italic": false},{"score":{"name":".server","objective":"elements_casino_stats_lvlumsatz"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=casino_stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=casino_stats,limit=1] text
 kill @e[type=text_display,tag=casino_stats]
-summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Pferderennen gespielt: ","color":"blue","italic": false},{"score":{"name":"#server","objective":"elements_casino_stats_game_horse"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Pferderennen gespielt: ","color":"blue","italic": false},{"score":{"name":".server","objective":"elements_casino_stats_game_horse"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=casino_stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=casino_stats,limit=1] text
 kill @e[type=text_display,tag=casino_stats]
-summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Glücksrad gedreht: ","color":"blue","italic": false},{"score":{"name":"#server","objective":"elements_casino_stats_game_luckywheel"},"color":"gray","italic": false}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Glücksrad gedreht: ","color":"blue","italic": false},{"score":{"name":".server","objective":"elements_casino_stats_game_luckywheel"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=casino_stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=casino_stats,limit=1] text
 kill @e[type=text_display,tag=casino_stats]
 

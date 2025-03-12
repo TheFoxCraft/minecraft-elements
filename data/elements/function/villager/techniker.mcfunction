@@ -1,6 +1,6 @@
 execute as @e[type=minecraft:interaction,tag=techniker] at @s on target run tag @s add techniker
 execute as @a[tag=techniker] run scoreboard players set @s elements_techniker_clicked 1
-execute as @e[type=minecraft:interaction] at @s if entity @a[tag=techniker,distance=..4] run data remove entity @s interaction
+execute as @e[type=minecraft:interaction] at @s if entity @a[tag=techniker,distance=..10] run data remove entity @s interaction
 tag @a remove techniker
 
 #000
@@ -9,11 +9,11 @@ tag @a remove techniker
 execute as @a[scores={elements_techniker_level=0,elements_techniker_clicked=1}] run tellraw @s ["","\n",{"text":"Techniker:","underlined":true,"color":"dark_red"},"\n",{"text":"Willkommen in deiner neuen Heimatdimension, "},{"selector":"@s","color":"gold"},{"text": "!"},"\n",{"text":"Es ist wichtig, dass du darüber informiert bist, dass es aufgrund des Verschwindens des Energiekerns zu weiteren Störungen in der Welt kommen kann. Enderkisten sind beispielsweise äußerst instabil, daher solltest du keine Gegenstände hineinlegen, da sie jederzeit verschwinden könnten!"},"\n","\n",{"text":"Alles Klar!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 5"}}]
 execute as @a[scores={elements_techniker_level=0,elements_techniker_clicked=1}] run scoreboard players set @s elements_techniker_clicked 0
 execute as @a[scores={elements_techniker_level=0,just-ignore=5}] run tellraw @s ["","\n",{"text":"Techniker:","underlined":true,"color":"dark_red"},"\n",{"text":"Außderdem solltest du wissen, dass du vorerst gestrandet bist. Es besteht derzeit keine Möglichkeit, Kontakt zu den anderen Dimensionen herzustellen."},"\n","\n",{"text":"Wie können wir das ändern?","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 6"}}]
-execute as @a[scores={elements_techniker_level=0,just-ignore=5}] run scoreboard players set @s just-ignore 0
+execute as @a[scores={just-ignore=5}] run scoreboard players set @s just-ignore 0
 execute as @a[scores={elements_techniker_level=0,just-ignore=6}] run tellraw @s ["","\n",{"text":"Techniker:","underlined":true,"color":"dark_red"},"\n",{"text":"Hilf mir ein wenig, und ich kann möglicherweise wieder eine Verbindung herstellen"},"\n","\n",{"text":"Was muss ich tun?","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 7"}}]
-execute as @a[scores={elements_techniker_level=0,just-ignore=6}] run scoreboard players set @s just-ignore 0
+execute as @a[scores={just-ignore=6}] run scoreboard players set @s just-ignore 0
 execute as @a[scores={elements_techniker_level=0,just-ignore=7}] run tellraw @s ["","\n",{"text":"Techniker:","underlined":true,"color":"dark_red"},"\n",{"text":"Ich benötige einige Ressourcen, und dann können wir weitersehen."},"\n","\n",{"text":"Ich bin dabei!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 8"}}]
-execute as @a[scores={elements_techniker_level=0,just-ignore=7}] run scoreboard players set @s just-ignore 0
+execute as @a[scores={just-ignore=7}] run scoreboard players set @s just-ignore 0
 execute as @a[scores={elements_techniker_level=0,just-ignore=8,elements_homedimension=1..3}] run tellraw @s ["","\n",{"text":"Techniker:","underlined":true,"color":"dark_red"},"\n",{"text":"Bringe mir zu Beginn 200 Bruchstein. Und übrigens, bevor ich es vergesse, hier eine kleine Starterbox, damit du in dieser Dimension überleben kannst"}]
 execute as @a[scores={elements_techniker_level=0,just-ignore=8,elements_homedimension=1..3}] run scoreboard players set @s elements_techniker_level 1
 execute as @a[scores={elements_techniker_level=0,just-ignore=8,elements_homedimension=1..3}] run scoreboard players set @s just-ignore 0
@@ -38,7 +38,7 @@ execute as @a[scores={elements_techniker_level=2,elements_homedimension=4,just-i
 execute as @a[scores={elements_techniker_level=2,elements_homedimension=4,just-ignore=9,elements_inv_basalt=200..}] run clear @s basalt 200
 execute as @a[scores={elements_techniker_level=2,elements_homedimension=4,just-ignore=9,elements_inv_basalt=200..}] run scoreboard players set @s elements_techniker_level 3
 execute as @a[scores={elements_techniker_level=2,elements_homedimension=4,just-ignore=9,elements_inv_basalt=..199}] run tellraw @s ["","\n",{"text":"Techniker:","underlined":true,"color":"dark_red"},"\n",{"text":"Du hast nicht genügend Basalt!"}]
-execute as @a[scores={just-ignore=9,elements_homedimension=4}] run scoreboard players set @s just-ignore 0
+execute as @a[scores={just-ignore=9}] run scoreboard players set @s just-ignore 0
 
 execute as @a[scores={elements_techniker_level=3,elements_techniker_clicked=1}] run tellraw @s ["","\n",{"text":"Techniker:","underlined":true,"color":"dark_red"},"\n",{"text":"Als nächstes benötige ich etwas organisches Material. Kannst du mir bitte 100 Eichenstämme bringen?"},"\n","\n",{"text":"Mach ich!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 10"}}]
 execute as @a[scores={elements_techniker_level=3,elements_techniker_clicked=1}] run scoreboard players set @s elements_techniker_clicked 0

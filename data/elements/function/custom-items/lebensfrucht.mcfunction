@@ -4,13 +4,13 @@ advancement revoke @s only elements:items/customs/lebensfrucht
 
 
 
-execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score #server elements_stage matches 1 if score @s elements_maxhealth matches 6.. run tag @s add elements_custom-items_lebensfrucht_limit
-execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score #server elements_stage matches 2 if score @s elements_maxhealth matches 10.. run tag @s add elements_custom-items_lebensfrucht_limit
-execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score #server elements_stage matches 3 if score @s elements_maxhealth matches 14.. run tag @s add elements_custom-items_lebensfrucht_limit
-execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score #server elements_stage matches 4 if score @s elements_maxhealth matches 18.. run tag @s add elements_custom-items_lebensfrucht_limit
-execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score #server elements_stage matches 5 if score @s elements_maxhealth matches 22.. run tag @s add elements_custom-items_lebensfrucht_limit
-execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score #server elements_stage matches 6 if score @s elements_maxhealth matches 26.. run tag @s add elements_custom-items_lebensfrucht_limit
-execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score #server elements_stage matches 7 if score @s elements_maxhealth matches 30.. run tag @s add elements_custom-items_lebensfrucht_limit
+execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score .server elements_stage matches 1 if score @s elements_maxhealth matches 6.. run tag @s add elements_custom-items_lebensfrucht_limit
+execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score .server elements_stage matches 2 if score @s elements_maxhealth matches 10.. run tag @s add elements_custom-items_lebensfrucht_limit
+execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score .server elements_stage matches 3 if score @s elements_maxhealth matches 14.. run tag @s add elements_custom-items_lebensfrucht_limit
+execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score .server elements_stage matches 4 if score @s elements_maxhealth matches 18.. run tag @s add elements_custom-items_lebensfrucht_limit
+execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score .server elements_stage matches 5 if score @s elements_maxhealth matches 22.. run tag @s add elements_custom-items_lebensfrucht_limit
+execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score .server elements_stage matches 6 if score @s elements_maxhealth matches 26.. run tag @s add elements_custom-items_lebensfrucht_limit
+execute as @s[scores={elements_custom-items_lebensfrucht_cooldown=0}] if score .server elements_stage matches 7 if score @s elements_maxhealth matches 30.. run tag @s add elements_custom-items_lebensfrucht_limit
 
 
 

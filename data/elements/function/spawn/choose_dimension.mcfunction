@@ -14,7 +14,7 @@ execute as @a[scores={just-ignore=1006}] run function elements:sonstiges/total-r
 
 
 execute as @a[scores={just-ignore=1001,elements_is-assigned-to-dimension=0}] run scoreboard players set @s elements_homedimension 1
-execute as @a[scores={just-ignore=1001,elements_is-assigned-to-dimension=0}] run scoreboard players add #server elements_data_playerin_oceanblock 1
+execute as @a[scores={just-ignore=1001,elements_is-assigned-to-dimension=0}] run scoreboard players add .server elements_data_playerin_oceanblock 1
 execute as @a[scores={just-ignore=1001,elements_is-assigned-to-dimension=0}] run tellraw @s {"text": "Dimension ausgewählt!","color": "green"}
 execute as @a[scores={just-ignore=1001,elements_is-assigned-to-dimension=0}] run title @s title {"text": "Oceanblock","color": "dark_blue"}
 execute as @a[scores={just-ignore=1001,elements_is-assigned-to-dimension=0}] run title @s subtitle {"text": "ist deine Heimatdimension","color": "dark_blue"}
@@ -23,7 +23,7 @@ execute as @a[scores={just-ignore=1001,elements_is-assigned-to-dimension=0}] at 
 execute as @a[scores={just-ignore=1001,elements_is-assigned-to-dimension=0}] run scoreboard players set @s elements_is-assigned-to-dimension 1
 
 execute as @a[scores={just-ignore=1002,elements_is-assigned-to-dimension=0}] run scoreboard players set @s elements_homedimension 2
-execute as @a[scores={just-ignore=1002,elements_is-assigned-to-dimension=0}] run scoreboard players add #server elements_data_playerin_stoneblock 1
+execute as @a[scores={just-ignore=1002,elements_is-assigned-to-dimension=0}] run scoreboard players add .server elements_data_playerin_stoneblock 1
 execute as @a[scores={just-ignore=1002,elements_is-assigned-to-dimension=0}] run tellraw @s {"text": "Dimension ausgewählt!","color": "green"}
 execute as @a[scores={just-ignore=1002,elements_is-assigned-to-dimension=0}] run title @s title {"text": "Stoneblock","color": "gray"}
 execute as @a[scores={just-ignore=1002,elements_is-assigned-to-dimension=0}] run title @s subtitle {"text": "ist deine Heimatdimension","color": "gray"}
@@ -32,7 +32,7 @@ execute as @a[scores={just-ignore=1002,elements_is-assigned-to-dimension=0}] at 
 execute as @a[scores={just-ignore=1002,elements_is-assigned-to-dimension=0}] run scoreboard players set @s elements_is-assigned-to-dimension 1
 
 execute as @a[scores={just-ignore=1003,elements_is-assigned-to-dimension=0}] run scoreboard players set @s elements_homedimension 3
-execute as @a[scores={just-ignore=1003,elements_is-assigned-to-dimension=0}] run scoreboard players add #server elements_data_playerin_skyblock 1
+execute as @a[scores={just-ignore=1003,elements_is-assigned-to-dimension=0}] run scoreboard players add .server elements_data_playerin_skyblock 1
 execute as @a[scores={just-ignore=1003,elements_is-assigned-to-dimension=0}] run tellraw @s {"text": "Dimension ausgewählt!","color": "green"}
 execute as @a[scores={just-ignore=1003,elements_is-assigned-to-dimension=0}] run title @s title {"text": "Skyblock","color": "blue"}
 execute as @a[scores={just-ignore=1003,elements_is-assigned-to-dimension=0}] run title @s subtitle {"text": "ist deine Heimatdimension","color": "blue"}
@@ -41,7 +41,7 @@ execute as @a[scores={just-ignore=1003,elements_is-assigned-to-dimension=0}] at 
 execute as @a[scores={just-ignore=1003,elements_is-assigned-to-dimension=0}] run scoreboard players set @s elements_is-assigned-to-dimension 1
 
 execute as @a[scores={just-ignore=1004,elements_is-assigned-to-dimension=0}] run scoreboard players set @s elements_homedimension 4
-execute as @a[scores={just-ignore=1004,elements_is-assigned-to-dimension=0}] run scoreboard players add #server elements_data_playerin_netherblock 1
+execute as @a[scores={just-ignore=1004,elements_is-assigned-to-dimension=0}] run scoreboard players add .server elements_data_playerin_netherblock 1
 execute as @a[scores={just-ignore=1004,elements_is-assigned-to-dimension=0}] run tellraw @s {"text": "Dimension ausgewählt!","color": "green"}
 execute as @a[scores={just-ignore=1004,elements_is-assigned-to-dimension=0}] run title @s title {"text": "Netherblock","color": "red"}
 execute as @a[scores={just-ignore=1004,elements_is-assigned-to-dimension=0}] run title @s subtitle {"text": "ist deine Heimatdimension","color": "red"}

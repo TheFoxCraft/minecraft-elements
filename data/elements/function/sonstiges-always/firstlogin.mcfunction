@@ -112,6 +112,7 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_levellost 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_villager_stage-2_mana_level 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_villager_stage-2_farm-slots_level 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stage-2_mana_activate_timer_sec 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stage-2_mana_activate_timer_tick 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_mana_regeneration-per-sec 1
@@ -125,11 +126,11 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom_doubleclick_cooldown 0
 
 
-execute as @a[scores={elements_playtime=20}] run scoreboard players add #server elements_abgabe_general_goal 100
-execute as @a[scores={elements_playtime=20}] if score #server elements_setup matches 1.. in elements:hub run tp @s 0 101 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players add .server elements_abgabe_general_goal 100
+execute as @a[scores={elements_playtime=20}] if score .server elements_setup matches 1.. in elements:hub run tp @s 0 101 0
 
-execute as @a[scores={elements_playerid=0},limit=1] run scoreboard players add #server elements_playerid 1
-execute as @a[scores={elements_playerid=0},limit=1] run scoreboard players operation @s elements_playerid = #server elements_playerid
+execute as @a[scores={elements_playerid=0},limit=1] run scoreboard players add .server elements_playerid 1
+execute as @a[scores={elements_playerid=0},limit=1] run scoreboard players operation @s elements_playerid = .server elements_playerid
 
 execute as @a[scores={elements_playtime=20}] run tellraw @s {"text": "Willkommen in Minecraft Elements!","color":"gold"}
 execute as @a[scores={elements_playtime=20}] run title @s title {"text": "MINECRAFT ELEMENTS","color": "light_purple"}

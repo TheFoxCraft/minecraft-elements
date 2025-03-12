@@ -101,26 +101,26 @@ execute as @a[scores={elements_titus_level=7,just-ignore=116}] at @s unless enti
 execute as @a[scores={just-ignore=116}] run scoreboard players set @s just-ignore 0
 
 
-execute as @a[scores={elements_titus_level=8,elements_titus_clicked=1}] if score #server elements_stage matches ..1 run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"Tut mir Leid, aber mehr habe ich aktuell leider nicht für dich!"}]
-execute as @a[scores={elements_titus_level=8,elements_titus_clicked=1}] if score #server elements_stage matches ..1 run scoreboard players set @s elements_titus_clicked 0
+execute as @a[scores={elements_titus_level=8,elements_titus_clicked=1}] if score .server elements_stage matches ..1 run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"Tut mir Leid, aber mehr habe ich aktuell leider nicht für dich!"}]
+execute as @a[scores={elements_titus_level=8,elements_titus_clicked=1}] if score .server elements_stage matches ..1 run scoreboard players set @s elements_titus_clicked 0
 
 #stage 2
 
-execute as @a[scores={elements_titus_level=8,elements_titus_clicked=1}] if score #server elements_stage matches 2.. at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"Soso, da bist du ja wieder. Aber du hast Recht, neue Stage neues Glück, ich hab wieder was für dich!"},"\n","\n",{"text":"Cool, was ist es denn?","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 117"}}]
-execute as @a[scores={elements_titus_level=8,elements_titus_clicked=1}] if score #server elements_stage matches 2.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
-execute as @a[scores={elements_titus_level=8,elements_titus_clicked=1}] if score #server elements_stage matches 2.. run scoreboard players set @s elements_titus_clicked 0
+execute as @a[scores={elements_titus_level=8,elements_titus_clicked=1}] if score .server elements_stage matches 2.. at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"Soso, da bist du ja wieder. Aber du hast Recht, neue Stage neues Glück, ich hab wieder was für dich!"},"\n","\n",{"text":"Cool, was ist es denn?","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 117"}}]
+execute as @a[scores={elements_titus_level=8,elements_titus_clicked=1}] if score .server elements_stage matches 2.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={elements_titus_level=8,elements_titus_clicked=1}] if score .server elements_stage matches 2.. run scoreboard players set @s elements_titus_clicked 0
 
-execute as @a[scores={elements_titus_level=8,just-ignore=117}] if score #server elements_stage matches 2.. at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"Es ist natürlich der Autocompact für Holz!"},"\n","\n",{"text":"Ah, cool, was kostet es diesmal?","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 118"}}]
-execute as @a[scores={elements_titus_level=8,just-ignore=117}] if score #server elements_stage matches 2.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={elements_titus_level=8,just-ignore=117}] if score .server elements_stage matches 2.. at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"Es ist natürlich der Autocompact für Holz!"},"\n","\n",{"text":"Ah, cool, was kostet es diesmal?","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 118"}}]
+execute as @a[scores={elements_titus_level=8,just-ignore=117}] if score .server elements_stage matches 2.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
 execute as @a[scores={just-ignore=117}] run scoreboard players set @s just-ignore 0
 
-execute as @a[scores={elements_titus_level=8,just-ignore=118}] if score #server elements_stage matches 2.. at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"64 Komprimiertes Holz und 1.000 Level!"},"\n","\n",{"text":"Puh, das ist eine Menge, aber ich halte mich ran","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 119"}}]
-execute as @a[scores={elements_titus_level=8,just-ignore=118}] if score #server elements_stage matches 2.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={elements_titus_level=8,just-ignore=118}] if score .server elements_stage matches 2.. at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"64 Komprimiertes Holz und 1.000 Level!"},"\n","\n",{"text":"Puh, das ist eine Menge, aber ich halte mich ran","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 119"}}]
+execute as @a[scores={elements_titus_level=8,just-ignore=118}] if score .server elements_stage matches 2.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
 execute as @a[scores={just-ignore=118}] run scoreboard players set @s just-ignore 0
 
-execute as @a[scores={elements_titus_level=8,just-ignore=119}] if score #server elements_stage matches 2.. at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"Ich warte solange"}]
-execute as @a[scores={elements_titus_level=8,just-ignore=119}] if score #server elements_stage matches 2.. at @s if entity @e[type=villager,tag=titus,distance=..10] run scoreboard players set @s elements_titus_level 9
-execute as @a[scores={elements_titus_level=8,just-ignore=119}] if score #server elements_stage matches 2.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={elements_titus_level=8,just-ignore=119}] if score .server elements_stage matches 2.. at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"Ich warte solange"}]
+execute as @a[scores={elements_titus_level=8,just-ignore=119}] if score .server elements_stage matches 2.. at @s if entity @e[type=villager,tag=titus,distance=..10] run scoreboard players set @s elements_titus_level 9
+execute as @a[scores={elements_titus_level=8,just-ignore=119}] if score .server elements_stage matches 2.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
 execute as @a[scores={just-ignore=119}] run scoreboard players set @s just-ignore 0
 
 execute as @a[scores={elements_titus_level=9,elements_titus_clicked=1}] run tellraw @s ["",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"Hast du schon alles? Gut, fangen wir mit den 64 Komprimiertem Holz an."},"\n","\n",{"text":"Bitteschön!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 120"}}]
@@ -143,8 +143,8 @@ execute as @a[scores={elements_titus_level=10,just-ignore=121}] at @s unless ent
 execute as @a[scores={just-ignore=121}] run scoreboard players set @s just-ignore 0
 
 
-execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score #server elements_stage matches ..2 run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"Tut mir Leid, aber mehr habe ich aktuell leider nicht für dich!"}]
-execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score #server elements_stage matches ..2 run scoreboard players set @s elements_titus_clicked 0
+execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score .server elements_stage matches ..2 run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"Tut mir Leid, aber mehr habe ich aktuell leider nicht für dich!"}]
+execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score .server elements_stage matches ..2 run scoreboard players set @s elements_titus_clicked 0
 
-execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score #server elements_stage matches 3.. run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"Mehr noch nicht gecodet!"}]
-execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score #server elements_stage matches 3.. run scoreboard players set @s elements_titus_clicked 0
+execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score .server elements_stage matches 3.. run tellraw @s ["","\n",{"text":"Titus:","underlined":true,"color":"dark_red"},"\n",{"text":"Mehr noch nicht gecodet!"}]
+execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score .server elements_stage matches 3.. run scoreboard players set @s elements_titus_clicked 0

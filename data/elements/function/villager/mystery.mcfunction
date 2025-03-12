@@ -1,6 +1,6 @@
 execute as @e[type=minecraft:interaction,tag=mystery] at @s on target run tag @s add mystery
 execute as @a[tag=mystery] run scoreboard players set @s elements_mystery_clicked 1
-execute as @e[type=minecraft:interaction] at @s if entity @a[tag=mystery,distance=..4] run data remove entity @s interaction
+execute as @e[type=minecraft:interaction] at @s if entity @a[tag=mystery,distance=..10] run data remove entity @s interaction
 tag @a remove mystery
 
 #300
@@ -11,7 +11,7 @@ execute as @a[scores={elements_mystery_clicked=1}] run scoreboard players set @s
 execute as @a[scores={just-ignore=301,elements_mainlevel=..999}] at @s if entity @e[type=villager,tag=mystery,distance=..10] run tellraw @s ["","\n",{"text":"Mystery:","underlined":true,"color":"dark_red"},"\n",{"text": "Du hast zu wenig Level!"}]
 execute as @a[scores={just-ignore=301,elements_mainlevel=1000..}] at @s if entity @e[type=villager,tag=mystery,distance=..10] run give @s rotten_flesh
 execute as @a[scores={just-ignore=301,elements_mainlevel=1000..}] at @s if entity @e[type=villager,tag=mystery,distance=..10] run scoreboard players add @s elements_stats_lootbox 1
-execute as @a[scores={just-ignore=301,elements_mainlevel=1000..}] at @s if entity @e[type=villager,tag=mystery,distance=..10] run scoreboard players add #server elements_stats_lootbox 1
+execute as @a[scores={just-ignore=301,elements_mainlevel=1000..}] at @s if entity @e[type=villager,tag=mystery,distance=..10] run scoreboard players add .server elements_stats_lootbox 1
 execute as @a[scores={just-ignore=301,elements_mainlevel=1000..}] at @s if entity @e[type=villager,tag=mystery,distance=..10] run effect give @s resistance 1 10 true
 execute as @a[scores={just-ignore=301,elements_mainlevel=1000..}] at @s if entity @e[type=villager,tag=mystery,distance=..10] at @s run summon firework_rocket ~ ~1 ~ {FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",has_twinkle:true,has_trail:true,colors:[I;16711680,65280,255]}]}}}}
 execute as @a[scores={just-ignore=301,elements_mainlevel=1000..}] at @s if entity @e[type=villager,tag=mystery,distance=..10] unless score @s elements_stats_lootbox matches 100 run tellraw @s ["","\n",{"text":"Mystery:","underlined":true,"color":"dark_red"},"\n",{"text":"Gekauft! Möchtest du erneut eine Lootbox für "},{"text": "1000 Level","color": "green"},{"text": " kaufen?"},"\n","\n",{"text":"Kaufen!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 301"}}]

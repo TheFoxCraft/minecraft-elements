@@ -23,8 +23,14 @@ execute as @e[type=armor_stand,tag=spawner_stage-2_mana] at @s run summon text_d
 execute as @e[type=armor_stand,tag=spawner_stage-2_mana] at @s run summon villager ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:["stage-2_mana","follow"],VillagerData:{level:99,profession:"minecraft:cleric",type:"minecraft:savanna"},Offers:{}}
 execute as @e[type=armor_stand,tag=spawner_stage-2_mana] at @s run kill @s
 
-execute as @e[type=armor_stand,tag=spawner_steinmetz] at @s if score #server elements_stage matches 1.. run function elements:villager/spawning/stage_1
+execute as @e[type=armor_stand,tag=spawner_stage-2_farm-slots] at @s run summon interaction ~ ~ ~ {width:0.8f,height:2f,response:1b,Tags:["stage-2_farm-slots"]}
+execute as @e[type=armor_stand,tag=spawner_stage-2_farm-slots] at @s run summon text_display ~ ~2 ~ {billboard:"center",Tags:["stage-2_farm-slots"],text:'{"text":"Farmer Lehrling","color":"gold"}',alignment:"center"}
+execute as @e[type=armor_stand,tag=spawner_stage-2_farm-slots] at @s run summon villager ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:["stage-2_farm-slots","follow"],VillagerData:{level:99,profession:"minecraft:librarian",type:"minecraft:taiga"},Offers:{}}
+execute as @e[type=armor_stand,tag=spawner_stage-2_farm-slots] at @s run kill @s
 
 
-execute as @e[type=armor_stand,tag=spawner_foerster,limit=1] at @s if score #server elements_stage matches 2.. run function elements:villager/spawning/stage_2
+execute as @e[type=armor_stand,tag=spawner_steinmetz] at @s if score .server elements_stage matches 1.. run function elements:villager/spawning/stage_1
+
+
+execute as @e[type=armor_stand,tag=spawner_foerster,limit=1] at @s if score .server elements_stage matches 2.. run function elements:villager/spawning/stage_2
 

@@ -12,11 +12,11 @@ execute in elements:sky run gamemode survival @a[distance=0..,gamemode=adventure
 execute in elements:hub run gamemode adventure @a[distance=0..,gamemode=survival]
 execute in elements:stage-1_bossroom run gamemode adventure @a[distance=0..,gamemode=survival]
 
-execute as @a[scores={elements_homedimension=0},nbt={Dimension:"minecraft:overworld"}] if score #server elements_setup matches 1.. in elements:hub run tp 0 101 0
-execute as @a[scores={elements_homedimension=4},nbt={Dimension:"minecraft:overworld"}] if score #server elements_setup matches 1.. in elements:nether run tp 0 100 0
-execute as @a[scores={elements_homedimension=2},nbt={Dimension:"minecraft:overworld"}] if score #server elements_setup matches 1.. in elements:stone run tp 0 100 0
-execute as @a[scores={elements_homedimension=3},nbt={Dimension:"minecraft:overworld"}] if score #server elements_setup matches 1.. in elements:sky run tp 0 100 0
-execute as @a[scores={elements_homedimension=1},nbt={Dimension:"minecraft:overworld"}] if score #server elements_setup matches 1.. in elements:ocean run tp 0 61 0
+execute as @a[scores={elements_homedimension=0},nbt={Dimension:"minecraft:overworld"}] if score .server elements_setup matches 1.. in elements:hub run tp 0 101 0
+execute as @a[scores={elements_homedimension=4},nbt={Dimension:"minecraft:overworld"}] if score .server elements_setup matches 1.. in elements:nether run tp 0 100 0
+execute as @a[scores={elements_homedimension=2},nbt={Dimension:"minecraft:overworld"}] if score .server elements_setup matches 1.. in elements:stone run tp 0 100 0
+execute as @a[scores={elements_homedimension=3},nbt={Dimension:"minecraft:overworld"}] if score .server elements_setup matches 1.. in elements:sky run tp 0 100 0
+execute as @a[scores={elements_homedimension=1},nbt={Dimension:"minecraft:overworld"}] if score .server elements_setup matches 1.. in elements:ocean run tp 0 61 0
 
 
 execute in elements:nether as @a[distance=0..] run scoreboard players set @s elements_dimension 4
@@ -55,13 +55,13 @@ execute as @a store result score @s elements_inv_elytra run clear @s minecraft:e
 
 
 execute as @a if score @s elements_stats_maxlevel < @s elements_mainlevel run scoreboard players operation @s elements_stats_maxlevel = @s elements_mainlevel
-execute as @a if score #server elements_stats_servermaxlevel < @s elements_mainlevel run scoreboard players operation #server elements_stats_servermaxlevel = @s elements_mainlevel
+execute as @a if score .server elements_stats_servermaxlevel < @s elements_mainlevel run scoreboard players operation .server elements_stats_servermaxlevel = @s elements_mainlevel
 
-scoreboard players set #server elements_stats_serverlevel 0
-scoreboard players operation #server elements_stats_serverlevel += @a elements_mainlevel
+scoreboard players set .server elements_stats_serverlevel 0
+scoreboard players operation .server elements_stats_serverlevel += @a elements_mainlevel
 
 
-execute if score #server elements_stage matches 1.. as @a run scoreboard players add @s elements_stats_playtime_ticks 1
+execute if score .server elements_stage matches 1.. as @a run scoreboard players add @s elements_stats_playtime_ticks 1
 execute as @a[scores={elements_stats_playtime_ticks=20..}] run scoreboard players add @s elements_stats_playtime_sec 1
 execute as @a[scores={elements_stats_playtime_ticks=20..}] run scoreboard players remove @s elements_stats_playtime_ticks 20
 execute as @a[scores={elements_stats_playtime_sec=60..}] run scoreboard players add @s elements_stats_playtime_min 1
@@ -69,13 +69,13 @@ execute as @a[scores={elements_stats_playtime_sec=60..}] run scoreboard players 
 execute as @a[scores={elements_stats_playtime_min=60..}] run scoreboard players add @s elements_stats_playtime_h 1
 execute as @a[scores={elements_stats_playtime_min=60..}] run scoreboard players remove @s elements_stats_playtime_min 60
 
-execute if score #server elements_stage matches 1.. as @a run scoreboard players add #server elements_stats_playtime_ticks 1
-execute if score #server elements_stats_playtime_ticks matches 20.. run scoreboard players add #server elements_stats_playtime_sec 1
-execute if score #server elements_stats_playtime_ticks matches 20.. run scoreboard players remove #server elements_stats_playtime_ticks 20
-execute if score #server elements_stats_playtime_sec matches 60.. run scoreboard players add #server elements_stats_playtime_min 1
-execute if score #server elements_stats_playtime_sec matches 60.. run scoreboard players remove #server elements_stats_playtime_sec 60
-execute if score #server elements_stats_playtime_min matches 60.. run scoreboard players add #server elements_stats_playtime_h 1
-execute if score #server elements_stats_playtime_min matches 60.. run scoreboard players remove #server elements_stats_playtime_min 60
+execute if score .server elements_stage matches 1.. as @a run scoreboard players add .server elements_stats_playtime_ticks 1
+execute if score .server elements_stats_playtime_ticks matches 20.. run scoreboard players add .server elements_stats_playtime_sec 1
+execute if score .server elements_stats_playtime_ticks matches 20.. run scoreboard players remove .server elements_stats_playtime_ticks 20
+execute if score .server elements_stats_playtime_sec matches 60.. run scoreboard players add .server elements_stats_playtime_min 1
+execute if score .server elements_stats_playtime_sec matches 60.. run scoreboard players remove .server elements_stats_playtime_sec 60
+execute if score .server elements_stats_playtime_min matches 60.. run scoreboard players add .server elements_stats_playtime_h 1
+execute if score .server elements_stats_playtime_min matches 60.. run scoreboard players remove .server elements_stats_playtime_min 60
 
 
 
@@ -99,9 +99,9 @@ execute as @a[scores={elements_collections_calc_basalt=1..}] run scoreboard play
 
 #update signs
 
-execute in elements:hub positioned 12.50 101.00 -14.5 if entity @a[distance=..10] if score #server elements_update-sign_timer matches 20 if score #server elements_stage matches 1.. run function elements:spawn/updatesigns
-execute in elements:hub positioned 12.50 101.00 -14.5 if entity @a[distance=..10] if score #server elements_update-sign_timer matches 20.. run scoreboard players set #server elements_update-sign_timer 0
-execute in elements:hub positioned 12.50 101.00 -14.5 if entity @a[distance=..10] run scoreboard players add #server elements_update-sign_timer 1
+execute in elements:hub positioned 12.50 101.00 -14.5 if entity @a[distance=..10] if score .server elements_update-sign_timer matches 20 if score .server elements_stage matches 1.. run function elements:spawn/updatesigns
+execute in elements:hub positioned 12.50 101.00 -14.5 if entity @a[distance=..10] if score .server elements_update-sign_timer matches 20.. run scoreboard players set .server elements_update-sign_timer 0
+execute in elements:hub positioned 12.50 101.00 -14.5 if entity @a[distance=..10] run scoreboard players add .server elements_update-sign_timer 1
 
 
 #kill adminwand as item

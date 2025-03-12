@@ -1,20 +1,20 @@
 #timers
-scoreboard players add #server elements_function_timer_1m 1
-scoreboard players add #server elements_function_timer_10s 1
-scoreboard players add #server elements_function_timer_5s 1
-scoreboard players add #server elements_function_timer_3s 1
-scoreboard players add #server elements_function_timer_1s 1
+scoreboard players add .server elements_function_timer_1m 1
+scoreboard players add .server elements_function_timer_10s 1
+scoreboard players add .server elements_function_timer_5s 1
+scoreboard players add .server elements_function_timer_3s 1
+scoreboard players add .server elements_function_timer_1s 1
 
-execute if score #server elements_function_timer_1m matches 1200.. run function elements:function-timers/1m
-execute if score #server elements_function_timer_1m matches 1200.. run scoreboard players set #server elements_function_timer_1m 0
-execute if score #server elements_function_timer_10s matches 200.. run function elements:function-timers/10s
-execute if score #server elements_function_timer_10s matches 200.. run scoreboard players set #server elements_function_timer_10s 0
-execute if score #server elements_function_timer_5s matches 100.. run function elements:function-timers/5s
-execute if score #server elements_function_timer_5s matches 100.. run scoreboard players set #server elements_function_timer_5s 0
-execute if score #server elements_function_timer_3s matches 60.. run function elements:function-timers/3s
-execute if score #server elements_function_timer_3s matches 60.. run scoreboard players set #server elements_function_timer_3s 0
-execute if score #server elements_function_timer_1s matches 20.. run function elements:function-timers/1s
-execute if score #server elements_function_timer_1s matches 20.. run scoreboard players set #server elements_function_timer_1s 0
+execute if score .server elements_function_timer_1m matches 1200.. run function elements:function-timers/1m
+execute if score .server elements_function_timer_1m matches 1200.. run scoreboard players set .server elements_function_timer_1m 0
+execute if score .server elements_function_timer_10s matches 200.. run function elements:function-timers/10s
+execute if score .server elements_function_timer_10s matches 200.. run scoreboard players set .server elements_function_timer_10s 0
+execute if score .server elements_function_timer_5s matches 100.. run function elements:function-timers/5s
+execute if score .server elements_function_timer_5s matches 100.. run scoreboard players set .server elements_function_timer_5s 0
+execute if score .server elements_function_timer_3s matches 60.. run function elements:function-timers/3s
+execute if score .server elements_function_timer_3s matches 60.. run scoreboard players set .server elements_function_timer_3s 0
+execute if score .server elements_function_timer_1s matches 20.. run function elements:function-timers/1s
+execute if score .server elements_function_timer_1s matches 20.. run scoreboard players set .server elements_function_timer_1s 0
 
 
 
@@ -36,6 +36,7 @@ function elements:miningxp/get_fishing/get_fishing
 function elements:villager/titus
 function elements:villager/mystery
 function elements:villager/stage-2_mana
+function elements:villager/stage-2_farm-slots
 function elements:enderchest/casino/horse/horse
 function elements:enderchest/casino/luckywheel/luckywheel
 function elements:spawn/abgaben/main
@@ -84,15 +85,15 @@ execute as @a[scores={elements_death=1..}] run function elements:sonstiges/death
 function elements:sonstiges/spawn-management
 execute as @a[scores={elements_choose_dimension=1..4}] run function elements:spawn/choose_dimension
 execute as @a[scores={just-ignore=1001..1006}] run function elements:spawn/choose_dimension
-execute if score #server elements_abgabe_shop_leer matches 2 run function elements:spawn/leer-shop
-execute if score #server elements_stage_1_portal_enable matches 1 run function elements:stages/stage-1/portal
-execute if score #server elements_stage_2_portal_enable matches 1 run function elements:stages/stage-2/portal
-execute if score #server elements_stage_1_boss_status matches 1 run function elements:bosse/stage-1/main
-execute if score #server elements_stage_2_boss_status matches 1 run function elements:bosse/stage-2/main
+execute if score .server elements_abgabe_shop_leer matches 2 run function elements:spawn/leer-shop
+execute if score .server elements_stage_1_portal_enable matches 1 run function elements:stages/stage-1/portal
+execute if score .server elements_stage_2_portal_enable matches 1 run function elements:stages/stage-2/portal
+execute if score .server elements_stage_1_boss_status matches 1 run function elements:bosse/stage-1/main
+execute if score .server elements_stage_2_boss_status matches 1 run function elements:bosse/stage-2/main
 
 execute as @a[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:{"minecraft:custom_model_data":1}}},gamemode=!adventure] run function elements:custom-items/rettungs-plattform/rettungs-plattform-always
-execute as @e[type=item,nbt={Item:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if block ~ ~ ~ fire if score #server elements_stage_1_portal_enable matches 0 run function elements:stages/stage-1/portal-enable
-execute as @e[type=item,nbt={Item:{id:"minecraft:dark_oak_sapling",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:spruce_log"},OnGround:1b},distance=..0.3] if entity @e[type=item,nbt={Item:{id:"minecraft:charcoal"},OnGround:1b},distance=..0.3,] if score #server elements_stage_2_portal_enable matches 0 run function elements:stages/stage-2/portal-enable
+execute as @e[type=item,nbt={Item:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if block ~ ~ ~ fire if score .server elements_stage_1_portal_enable matches 0 run function elements:stages/stage-1/portal-enable
+execute as @e[type=item,nbt={Item:{id:"minecraft:dark_oak_sapling",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:spruce_log"},OnGround:1b},distance=..0.3] if entity @e[type=item,nbt={Item:{id:"minecraft:charcoal"},OnGround:1b},distance=..0.3,] if score .server elements_stage_2_portal_enable matches 0 run function elements:stages/stage-2/portal-enable
 
 execute as @a[tag=elements_boss_spectator] at @s run function elements:bosse/spectator
 execute as @a[tag=!elements_boss_spectator] run scoreboard players reset @s leave
@@ -113,7 +114,7 @@ execute as @e[tag=spawner_leaderboard_id-6] at @s run function elements:spawn/le
 
 
 #stageset
-scoreboard players operation @a elements_stage = #server elements_stage
+scoreboard players operation @a elements_stage = .server elements_stage
 
 
 # Farmslots
