@@ -139,12 +139,30 @@ execute as @a[scores={elements_techniker_level=17,elements_techniker_clicked=1}]
 execute as @a[scores={elements_techniker_level=17,elements_techniker_clicked=1}] run scoreboard players set @s elements_enderchest_level_tp 2
 execute as @a[scores={elements_techniker_level=17,elements_techniker_clicked=1}] run scoreboard players set @s elements_enderchest_settings_tp-mode 1
 execute as @a[scores={elements_techniker_level=17,elements_techniker_clicked=1}] run scoreboard players set @s elements_enderchest_settings_dimension 1
+execute as @a[scores={elements_techniker_level=17,elements_techniker_clicked=1}] run scoreboard players set @s elements_techniker_message_cooldown 1200
 execute as @a[scores={elements_techniker_level=17,elements_techniker_clicked=1}] run scoreboard players set @s elements_techniker_level 18
-execute as @a[scores={elements_techniker_clicked=1}] run scoreboard players set @s elements_techniker_clicked 0
+execute as @a[scores={elements_techniker_level=18,elements_techniker_clicked=1}] run scoreboard players set @s elements_techniker_clicked 0
+execute as @a[scores={elements_techniker_level=18}] run scoreboard players set @s elements_techniker_level 19
+
+# Random Messages.
+execute as @a[scores={elements_techniker_level=19,elements_techniker_clicked=1,elements_techniker_message_cooldown=0}] store result score @s elements_techniker_random_type run random value 1..3
+execute as @a[scores={elements_techniker_level=19,elements_techniker_clicked=1,elements_techniker_message_cooldown=0}] run scoreboard players set @s elements_techniker_message_cooldown 1200
+execute as @a[scores={elements_techniker_level=19,elements_techniker_clicked=1}] run scoreboard players set @s elements_techniker_clicked 0
+
+#Cooldown
+execute as @a[scores={elements_techniker_message_cooldown=1..}] run scoreboard players remove @s elements_techniker_message_cooldown 1
+
+# Zitate
+execute as @a[scores={elements_techniker_random_type=1..2}] store result score @s elements_techniker_random_message run random value 1..41
+execute as @a[scores={elements_techniker_random_type=1..2}] run function elements:villager/techniker_sprueche/zitate
+# Witzige Sprüche
+execute as @a[scores={elements_techniker_random_type=3}] store result score @s elements_techniker_random_message run random value 1..40
+execute as @a[scores={elements_techniker_random_type=3}] run function elements:villager/techniker_sprueche/lustige_sprueche
 
 
+#execute as @a[scores={elements_techniker_random_type=1..}] run tellraw @s [{"score": {"name": "@s","objective": "elements_techniker_random_type"}}," - ",{"score": {"name": "@s","objective": "elements_techniker_random_message"}}]
 
 
-
-
-
+# Random Message End
+scoreboard players set @a elements_techniker_random_message 0
+scoreboard players set @a elements_techniker_random_type 0

@@ -120,6 +120,9 @@ scoreboard objectives add elements_rank_cam dummy
 scoreboard objectives add elements_stage dummy
 scoreboard objectives add elements_mainlevel dummy
 scoreboard objectives add elements_techniker_level dummy
+scoreboard objectives add elements_techniker_random_type dummy
+scoreboard objectives add elements_techniker_random_message dummy
+scoreboard objectives add elements_techniker_message_cooldown dummy
 scoreboard objectives add elements_homedimension dummy
 scoreboard objectives add elements_playtime minecraft.custom:minecraft.play_time
 scoreboard objectives add elements_techniker_clicked dummy

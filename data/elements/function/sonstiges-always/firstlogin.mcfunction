@@ -109,6 +109,7 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_fish_caught 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_farm-slots_stage-2_slots 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_farm-slots_stage-2_max-slots 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_techniker_message_cooldown 0
 
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_levellost 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_villager_stage-2_mana_level 0
