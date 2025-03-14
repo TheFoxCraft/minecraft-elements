@@ -21,6 +21,7 @@
     crafting_table: Enderchest Shop
     magenta_glazed_terracotta: Enderchest Return (Zurück)
     spruce_sapling: Farmslot Stage 2
+    written_book: Element Fishing Rod Rätsel Teil 1 | Sticks
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)

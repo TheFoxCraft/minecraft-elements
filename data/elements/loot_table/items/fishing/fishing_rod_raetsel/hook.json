@@ -1,0 +1,38 @@
+{
+    "type": "command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:written_book_content": {
+                    "title": "Der Stabile Haken",
+                    "author": "Unknown",
+                    "generation": 0,
+                    "pages": [
+                      "{\"text\":\"Drei Gaben, schlicht, doch stark vereint,\n\nWo Holz auf Eisen sich vereint.\n\nEin Stab so schlicht, ein Brett so klar,\n\nUnd Eisen glänzt, wie's immer war.\"}",
+                      "{\"text\":\"Leg nieder, wo der Boden ruht,\n\nDie Dinge dreifach – fest und gut.\n\nWenn Kraft sich mischt aus Holz und Stahl,\n\nErwacht daraus ein Haken schmal.\"}",
+                      "{\"text\":\"Nicht Feuer noch ein Hammer schwer,\n\nDie Form entsteht aus mehr und mehr.\n\nWer klug verbindet, was hier liegt,\n\nGewinnt, was fest im Griffe wiegt.\"}"
+                    ]
+                  },
+                  "minecraft:custom_model_data": 1,
+                  "hide_additional_tooltip": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

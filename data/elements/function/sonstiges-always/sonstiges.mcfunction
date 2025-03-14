@@ -60,6 +60,9 @@ execute as @a if score .server elements_stats_servermaxlevel < @s elements_mainl
 scoreboard players set .server elements_stats_serverlevel 0
 scoreboard players operation .server elements_stats_serverlevel += @a elements_mainlevel
 
+# set values from server to all players
+scoreboard players operation @a elements_stage = .server elements_stage
+scoreboard players operation @a elements_custom-items_fishing-rod_crafting_progress = .server elements_custom-items_fishing-rod_crafting_progress
 
 execute if score .server elements_stage matches 1.. as @a run scoreboard players add @s elements_stats_playtime_ticks 1
 execute as @a[scores={elements_stats_playtime_ticks=20..}] run scoreboard players add @s elements_stats_playtime_sec 1

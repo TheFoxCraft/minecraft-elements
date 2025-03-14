@@ -29,6 +29,6 @@ execute if score .server elements_abgabe_shop_leer_progress >= .server elements_
 execute if score .server elements_abgabe_shop_leer_progress >= .server elements_abgabe_shop_leer_goal if score .server elements_abgabe_shop_leer matches 1 in elements:hub run kill @e[tag=abgabe_shop_leer]
 execute if score .server elements_abgabe_shop_leer_progress >= .server elements_abgabe_shop_leer_goal if score .server elements_abgabe_shop_leer matches 1 in elements:hub if block 15 100 -6 reinforced_deepslate run setblock 15 100 -6 air
 execute if score .server elements_abgabe_shop_leer_progress >= .server elements_abgabe_shop_leer_goal if score .server elements_abgabe_shop_leer matches 1 in elements:hub run place template elements:hub/aufbau_shop_leer_fertig 10 100 -12
-execute if score .server elements_abgabe_shop_leer_progress >= .server elements_abgabe_shop_leer_goal if score .server elements_abgabe_shop_leer matches 1 in elements:hub run say score für nächstes ziel (community hub)
+execute if score .server elements_abgabe_shop_leer_progress >= .server elements_abgabe_shop_leer_goal if score .server elements_abgabe_shop_leer matches 1 in elements:hub run scoreboard players set .server elements_abgabe_other_community-hub-main 3
 execute if score .server elements_abgabe_shop_leer_progress >= .server elements_abgabe_shop_leer_goal if score .server elements_abgabe_shop_leer matches 1 in elements:hub run scoreboard players set .server elements_abgabe_shop_leer 2
 

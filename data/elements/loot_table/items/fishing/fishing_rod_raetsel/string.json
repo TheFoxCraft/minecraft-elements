@@ -1,0 +1,38 @@
+{
+    "type": "command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:written_book_content": {
+                    "title": "Die Reißfeste Schnur",
+                    "author": "Unknown",
+                    "generation": 0,
+                    "pages": [
+                      "{\"text\":\"Ein Band, das weder reißt noch bricht,\n\nVerwoben still im Schattenlicht.\n\nVon Wesen einst im Dunkel gesponnen,\n\nDurch Kampf und List nur je gewonnen.\"}",
+                      "{\"text\":\"Es zieht, es zögert, doch hält es fest,\n\nEin letzter Faden, der nie dich verlässt.\n\nWo Wege enden, tief und sacht,\n\nHält seine Stärke ewige Wacht.\"}",
+                      "{\"text\":\"Ein zarter Strang, doch voller Kraft,\n\nDer vieles bindet, vieles schafft.\n\nWer ihn erspäht und recht bewahrt,\n\nTrägt Halt und Stärke immer parat.\"}"
+                    ]
+                  },
+                  "minecraft:custom_model_data": 1,
+                  "hide_additional_tooltip": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

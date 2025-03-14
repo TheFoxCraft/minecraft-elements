@@ -99,6 +99,36 @@
           ]
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "elements:items/fishing/fishing_rod_raetsel/string",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "elements:items/fishing/fishing_rod_raetsel/sticks",
+          "weight": 1
+          
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "elements:items/fishing/fishing_rod_raetsel/hook",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "elements:items/fishing/fishing_rod_raetsel/crafting",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 496
+        }
+      ]
     }
   ],
   "random_sequence": "minecraft:gameplay/fishing/treasure"

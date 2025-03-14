@@ -81,6 +81,7 @@ execute as @s run scoreboard players set .server elements_double-xp-event_timer_
 execute as @s run scoreboard players set .server elements_double-xp-event_timer_max_min 0
 execute as @s run scoreboard players set .server elements_double-xp-event_timer_max_sec 0
 execute as @s run scoreboard players set .server elements_admin_config_interface 1
+execute as @s run scoreboard players set .server elements_custom-items_fishing-rod_crafting_progress 0
 
 execute as @s run scoreboard players set .server elements_leaderboards_id-1_rang_enable 0
 execute as @s run data modify storage elements_leaderboard_id-1 name_1 set value "#empty"

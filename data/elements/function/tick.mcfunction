@@ -113,8 +113,7 @@ execute as @e[tag=spawner_leaderboard_id-5] at @s run function elements:spawn/le
 execute as @e[tag=spawner_leaderboard_id-6] at @s run function elements:spawn/leaderboards/6_fishing-level/spawning
 
 
-#stageset
-scoreboard players operation @a elements_stage = .server elements_stage
+
 
 
 # Farmslots

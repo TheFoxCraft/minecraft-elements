@@ -33,19 +33,11 @@ execute as @e[type=allay,tag=spawn_levelbaum_level] at @s if entity @s[y=107,dy=
 
 
 execute as @e[type=minecraft:interaction,tag=spawn_levelbaum_level] at @s on target run tag @s add spawn_levelbaum_level_player
-execute as @a[tag=spawn_levelbaum_level_player] at @s run playsound entity.player.levelup master @s
-execute as @a[tag=spawn_levelbaum_level_player] if score .server elements_stage matches 2 run tellraw @s ["",{"text": "Server: ","color": "yellow"},{"text": "Der Allay hat eine große Ladung Level gedroppt! "},{"text": "+500 Level","color": "green"}]
-execute as @a[tag=spawn_levelbaum_level_player] if score .server elements_stage matches 2 run xp add @s 500 levels
-execute as @a[tag=spawn_levelbaum_level_player] at @s run kill @e[tag=spawn_levelbaum_level,sort=nearest,limit=2]
-execute as @e[type=minecraft:interaction] at @s if entity @a[tag=spawn_levelbaum_level_player,distance=..10] run data remove entity @s interaction
-tag @a remove spawn_levelbaum_level_player
-
 execute as @e[type=minecraft:interaction,tag=spawn_levelbaum_level] at @s on attacker run tag @s add spawn_levelbaum_level_player
 execute as @a[tag=spawn_levelbaum_level_player] at @s run playsound entity.player.levelup master @s
-execute as @a[tag=spawn_levelbaum_level_player] if score .server elements_stage matches 2 run tellraw @s ["",{"text": "Server: ","color": "yellow"},{"text": "Der Allay hat eine große Ladung Level gedroppt! "},{"text": "+500 Level","color": "green"}]
+execute as @a[tag=spawn_levelbaum_level_player] if score .server elements_stage matches 2 run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Der Allay hat eine große Ladung Level gedroppt! "},{"text": "+500 Level","color": "green"}]
 execute as @a[tag=spawn_levelbaum_level_player] if score .server elements_stage matches 2 run xp add @s 500 levels
 execute as @a[tag=spawn_levelbaum_level_player] at @s run kill @e[tag=spawn_levelbaum_level,sort=nearest,limit=2]
-execute as @e[type=minecraft:interaction] at @s if entity @a[tag=spawn_levelbaum_level_player,distance=..10] run data remove entity @s attack
+execute as @e[type=minecraft:interaction] at @s if entity @a[tag=spawn_levelbaum_level_player] run data remove entity @s interaction
+execute as @e[type=minecraft:interaction] at @s if entity @a[tag=spawn_levelbaum_level_player] run data remove entity @s attack
 tag @a remove spawn_levelbaum_level_player
-
-

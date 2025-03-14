@@ -1,0 +1,39 @@
+{
+    "type": "command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:written_book_content": {
+                    "title": "Der Feste Griff",
+                    "author": "Unknown",
+                    "generation": 0,
+                    "pages": [
+                      "{\"text\":\"Im tiefen Wald, wo Winde wehn,\n\nDort lässt sich Holz aus Stürmen sehn.\n\nGezeichnet von der Zeiten Kraft,\n\nTrägt es, was lang Bestand erschafft.\"}",
+                      "{\"text\":\"Nicht leicht zu brechen, fest und zäh,\n\nDoch rohe Form hilft selten je.\n\nWo scharfer Stein im Kreise geht,\n\nEin alter Zauber leise weht.\"}",
+                      "{\"text\":\"Leg nieder Holz, das stark besteht,\n\nWo Stein die Form in Ordnung dreht.\n\nDrei Schnitte tief, und bald entsteht,\n\nEin Stab, der lang die Zeit besteht.\"}",
+                      "{\"text\":\"Kein Sturm vermag ihn je zu beugen,\n\nKein Feuer ihn zur Asche zeugen.\n\nWer klug die Schärfe nutzt und lenkt,\n\nDem bleibt, was Macht und Dauer schenkt.\"}"
+                    ]
+                  },
+                  "minecraft:custom_model_data": 1,
+                  "hide_additional_tooltip": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

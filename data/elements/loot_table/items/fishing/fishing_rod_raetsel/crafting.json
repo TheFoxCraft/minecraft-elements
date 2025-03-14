@@ -1,0 +1,38 @@
+{
+    "type": "command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:written_book_content": {
+                    "title": "Wo Feuer die Form enthüllt",
+                    "author": "Unknown",
+                    "generation": 0,
+                    "pages": [
+                      "{\"text\":\"Drei Gaben braucht es, schlicht und klar,\n\nDie Kraft vereint, wie's einstens war.\n\nEin Faden fein, der niemals bricht,\n\nEin Haken, scharf im Funkellicht.\"}",
+                      "{\"text\":\"Ein Stab aus Holz, aus festem Kern,\n\nGeformt durch Hand, die schafft und lern.\n\nWas lose liegt, ist wertlos klein,\n\nDoch Feuer schließt die Teile ein.\"}",
+                      "{\"text\":\"Wo Hammer kracht auf Amboss' Rund,\n\nDort findet Form den rechten Grund.\n\nBring, was du hast, zur heißen Glut,\n\nWo Handwerk Wunder wirken tut.\"}"
+                    ]
+                  },
+                  "minecraft:custom_model_data": 1,
+                  "hide_additional_tooltip": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
