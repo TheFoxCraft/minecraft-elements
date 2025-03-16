@@ -9,8 +9,8 @@ data modify storage elements_get_item_data boss_spawning_stage_2 set from entity
 
 function elements:villager/spawning/stage_2_final with storage elements_get_item_data
 
-data modify entity @n[tag=foerster] Offers.Recipes.[3].buy.count set value 32
-data modify entity @n[tag=foerster] Offers.Recipes.[4].buy.count set value 32
+data modify entity @n[tag=foerster] Offers.Recipes.[1].buy.count set value 32
+data modify entity @n[tag=foerster] Offers.Recipes.[2].buy.count set value 32
 
 kill @e[tag=spawning_foerster,type=armor_stand]
 kill @s

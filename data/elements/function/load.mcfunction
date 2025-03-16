@@ -180,9 +180,7 @@ scoreboard objectives add elements_stats_stage_0_boss_killed dummy
 scoreboard objectives add elements_miningxp_mining_mine-get_stone minecraft.mined:minecraft.stone
 scoreboard objectives add elements_miningxp_mining_mine-get_cobblestone minecraft.mined:minecraft.cobblestone
 scoreboard objectives add elements_miningxp_mining_mine-get_basalt minecraft.mined:minecraft.basalt
-scoreboard objectives add elements_miningxp_foresting_mine-get_oak minecraft.mined:minecraft.oak_log
 scoreboard objectives add elements_miningxp_foresting_mine-get_spruce minecraft.mined:minecraft.spruce_log
-scoreboard objectives add elements_miningxp_foresting_mine-get_dark_oak minecraft.mined:minecraft.dark_oak_log
 
 scoreboard objectives add elements_miningxp_mining_xp dummy
 scoreboard objectives add elements_miningxp_mining_level dummy
@@ -270,13 +268,22 @@ scoreboard objectives add elements_aa_secret_12 dummy
 scoreboard objectives add elements_aa_secret_13 dummy
 scoreboard objectives add elements_aa_secret_14 dummy
 scoreboard objectives add elements_aa_secret_15 dummy
+
+#collections
 scoreboard objectives add elements_enderchest_level_collections dummy
 scoreboard objectives add elements_collections_interface dummy
+# stage 1
 scoreboard objectives add elements_collections_stone_collect dummy
 scoreboard objectives add elements_collections_stats_stone_total dummy
 scoreboard objectives add elements_collections_calc_stone minecraft.mined:stone
 scoreboard objectives add elements_collections_calc_cobblestone minecraft.mined:cobblestone
 scoreboard objectives add elements_collections_calc_basalt minecraft.mined:basalt
+# stage 2
+scoreboard objectives add elements_collections_wood_collect dummy
+scoreboard objectives add elements_collections_stats_wood_total minecraft.mined:spruce_log
+
+
+scoreboard objectives add elements_custom-items_fishing_rod_crafting_sticks_cooldown dummy
 
 
 # Vermutlich Unnötig, da einzeles Score reicht
@@ -417,7 +424,14 @@ scoreboard objectives add elements_collections_calc_basalt minecraft.mined:basal
 #ersatz:
 scoreboard objectives add elements_enderchest_interface_clicked dummy
 
+
+## UNIQUES
+#collections
 scoreboard objectives add elements_uniqueitem_collections_stone dummy
+scoreboard objectives add elements_uniqueitem_collections_wood dummy
+
+
+
 scoreboard objectives add elements_spawn_energiekern dummy
 scoreboard objectives add elements_spawn_energiekern_manage_rotation dummy
 scoreboard objectives add elements_spawn_start dummy
@@ -679,16 +693,12 @@ scoreboard objectives add elements_farm-slots_stage-2_broken_slots dummy
 scoreboard objectives setdisplay list elements_mainlevel
 
 
-scoreboard objectives add elements_level_stone_1 minecraft.mined:minecraft.cobblestone
-scoreboard objectives add elements_level_stone_2 minecraft.mined:minecraft.basalt
-scoreboard objectives add elements_level_stone_3 minecraft.mined:minecraft.stone
+scoreboard objectives add elements_level_stone_cobblestone minecraft.mined:minecraft.cobblestone
+scoreboard objectives add elements_level_stone_basalt minecraft.mined:minecraft.basalt
+scoreboard objectives add elements_level_stone_stone minecraft.mined:minecraft.stone
 
-scoreboard objectives add elements_level_wood_1 minecraft.mined:minecraft.oak_log
-scoreboard objectives add elements_level_wood_2 minecraft.mined:minecraft.spruce_log
-scoreboard objectives add elements_level_wood_3 minecraft.mined:minecraft.dark_oak_log
-scoreboard objectives add elements_level_wood_4 minecraft.used:minecraft.oak_log
-scoreboard objectives add elements_level_wood_5 minecraft.used:minecraft.spruce_log
-scoreboard objectives add elements_level_wood_6 minecraft.used:minecraft.dark_oak_log
+scoreboard objectives add elements_level_wood_spruce minecraft.mined:minecraft.spruce_log
+scoreboard objectives add elements_level_wood_spruce_placed minecraft.used:minecraft.spruce_log
 
 
 ##set values at start

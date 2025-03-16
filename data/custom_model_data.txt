@@ -5,7 +5,7 @@
     cobbled_deepslate: Compressed Cobblestone 
     iron_pickaxe: Element Pickaxe | Common
     blue_ice: Stage 1 Boss Spawn-Item
-    dark_oak_sapling: Bos Spawning Stage 2 (Rätsel)
+    dark_oak_sapling: Boss Spawning Stage 2 (Rätsel)
     stripped_bamboo_block: Stage 2 Boos Loot Key
     ghast_tear: Photon | Rare
     stick: Mana-Messstab
@@ -22,6 +22,7 @@
     magenta_glazed_terracotta: Enderchest Return (Zurück)
     spruce_sapling: Farmslot Stage 2
     written_book: Element Fishing Rod Rätsel Teil 1 | Sticks
+    tripwire_hook: Fishing Rod Crafting Hook
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -40,7 +41,7 @@
     grass_block: Enderchest Shop Selection
     netherrack: Enderchest Shop Selection
     water_bucket: Enderchest Shop Selection
-
+    stick: Fishing Rod Crafting Sticks
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -83,10 +84,14 @@
     clock: Admin-Config | Double-Level Timer Action
     lectern: Admin-Config | Double-Level Timer Action
     potion: Water-Breathing-Potion | Ocean Shop Buying
+    spruce_log: Collections Interface
 11:
     clock: Admin-Config | Double-Level Timer Action
     potion: Manatrank | Sky Shop
     stick: Enderchest Admin Settings AdminWand
+    cobblestone: Collections Interface
+    oak_hanging_sign: Collections Interface
+    spruce_log: Collections Interface
 12:
     clock: Admin-Config | Double-Level Timer Action
     potion: Manatrank | Sky Shop Buying

@@ -38,6 +38,12 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_casino_stats_game_luckywheel 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_casino_interface 1
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_collections_stone_collect 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_collections_stats_stone_total 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_collections_wood_collect 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_collections_stats_wood_total 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_uniqueitem_collections_stone 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_uniqueitem_collections_wood 0
+
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_spawn_energiekern_particle_settings 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_settings_tp-mode 1
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_is-assigned-to-dimension 0

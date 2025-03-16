@@ -57,6 +57,7 @@ function elements:mana/main
 function elements:mana/cooldown
 function elements:spawn/community-hub
 function elements:custom-items/shop/ocean/bossfrucht/main_handling
+function elements:custom-items/element_fishing_rod/crafting_main
 
 #get login
 execute as @a[scores={elements_get-login=1..}] run scoreboard players set @s elements_get-login_cooldown 20
@@ -99,7 +100,6 @@ execute as @a[tag=elements_boss_spectator] at @s run function elements:bosse/spe
 execute as @a[tag=!elements_boss_spectator] run scoreboard players reset @s leave
 
 
-execute as @a[scores={elements_collections_interface=2}] run function elements:enderchest/collections/stone
 
 
 
