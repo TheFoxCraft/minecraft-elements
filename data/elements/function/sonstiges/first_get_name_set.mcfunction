@@ -1,0 +1,1 @@
+$data modify storage elements_playerdata_$(ID) name set from entity @n[tag=get-name] ArmorItems[3].components.minecraft:profile.name

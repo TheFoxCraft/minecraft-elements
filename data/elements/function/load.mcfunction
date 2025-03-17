@@ -611,6 +611,7 @@ scoreboard objectives add elements_spawn_vaults_refresh dummy
 scoreboard objectives add elements_leaderboards_refresh-timer dummy
 scoreboard objectives add elements_get-name_status dummy
 scoreboard objectives add elements_get-name_continue dummy
+scoreboard objectives add elements_get-name_progress dummy
 scoreboard objectives add elements_villager_stage-2_mana_clicked dummy
 scoreboard objectives add elements_villager_stage-2_mana_level dummy
 scoreboard objectives add elements_villager_stage-2_farm-slots_clicked dummy
@@ -644,6 +645,7 @@ scoreboard objectives add leave trigger
 scoreboard objectives add elements_stats_fish_caught dummy
 scoreboard objectives add elements_get-login minecraft.custom:minecraft.leave_game
 scoreboard objectives add elements_get-login_cooldown dummy
+
 
 
 scoreboard objectives add elements_custom-items_boss-keks_stage-1_cooldown dummy
