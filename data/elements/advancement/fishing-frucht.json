@@ -5,16 +5,9 @@
       "conditions": {
         "item": {
           "components": {
-            "minecraft:custom_model_data": 1,
-            "minecraft:can_break": {
-              "predicates": [
-                {
-                  "blocks": "minecraft:pumpkin"
-                }
-              ],
-              "show_in_tooltip": false
-            }
-          }
+            "minecraft:custom_model_data": 1
+          },
+          "items": "pumpkin_pie"
         }
       }
     }

@@ -103,7 +103,7 @@ execute as @a[tag=!elements_boss_spectator] run scoreboard players reset @s leav
 
 
 
-execute as @a[scores={elements_get-name_status=0}] run function elements:sonstiges-always/first_get_name with entity @s
+execute as @a[scores={elements_get-name_status=0}] run function elements:sonstiges/get_name/get_name with entity @s
 
 #leaderboards-spawning
 execute as @e[tag=spawner_leaderboard_id-1] at @s run function elements:spawn/leaderboards/1_level-verloren/spawning

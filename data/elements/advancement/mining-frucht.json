@@ -5,16 +5,9 @@
       "conditions": {
         "item": {
           "components": {
-            "minecraft:custom_model_data": 1,
-            "minecraft:can_break": {
-              "predicates": [
-                {
-                  "blocks": "minecraft:chorus_flower"
-                }
-              ],
-              "show_in_tooltip": false
-            }
-          }
+            "minecraft:custom_model_data": 1
+          },
+          "items": "chorus_fruit"
         }
       }
     }

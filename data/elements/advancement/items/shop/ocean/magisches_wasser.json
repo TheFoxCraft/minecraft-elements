@@ -5,14 +5,15 @@
       "conditions": {
         "item": {
           "components": {
-            "minecraft:custom_model_data": 1
+            "minecraft:custom_model_data": 13
+            
           },
-          "items": "sweet_berries"
+          "items": "potion"
         }
       }
     }
   },
   "rewards": {
-    "function": "elements:custom-items/foraging-frucht/trigger"
+    "function": "elements:custom-items/shop/ocean/magisches_wasser/trigger"
   }
 }

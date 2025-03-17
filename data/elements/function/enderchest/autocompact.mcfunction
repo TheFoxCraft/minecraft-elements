@@ -1,24 +1,33 @@
-execute as @a[scores={elements_enderchest_level_autocompact=1..,elements_enderchest_interface_number=2}] store result score @s elements_enderchest_interface_click_autocompact_back run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=1]
-execute as @a[scores={elements_enderchest_interface_click_autocompact_back=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_autocompact_back=1}] run scoreboard players set @s elements_enderchest_interface_number 1
-execute as @a[scores={elements_enderchest_interface_click_autocompact_back=1}] run function elements:enderchest/enderchest-clear
-execute as @a[scores={elements_enderchest_interface_click_autocompact_back=1}] run scoreboard players set @s elements_enderchest_interface_click_autocompact_back 0
+execute as @a[scores={elements_enderchest_level_autocompact=1..,elements_enderchest_interface_number=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=1]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_number 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:magenta_glazed_terracotta",count:1,components:{"minecraft:custom_model_data":1}}}]
 execute as @a[scores={elements_enderchest_level_autocompact=1..,elements_enderchest_interface_number=2}] run item replace entity @s enderchest.22 with magenta_glazed_terracotta[custom_name='{"color":"red","text":"Zurück","italic": false}',custom_model_data=1] 1
 
 
 
-execute as @a[scores={elements_enderchest_level_autocompact=1..,elements_enderchest_interface_number=2}] store result score @s elements_enderchest_interface_click_autocompact_off run clear @s minecraft:red_dye[custom_model_data=1]
-execute as @a[scores={elements_enderchest_level_autocompact=1..,elements_enderchest_interface_number=2}] store result score @s elements_enderchest_interface_click_autocompact_stone_on run clear @s minecraft:stone[custom_model_data=1]
-execute as @a[scores={elements_enderchest_level_autocompact=2..,elements_enderchest_interface_number=2}] store result score @s elements_enderchest_interface_click_autocompact_holz_on run clear @s minecraft:oak_log[custom_model_data=1]
-execute as @a[scores={elements_enderchest_interface_click_autocompact_off=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_autocompact_off=1}] run function elements:enderchest/autocompact-reset
-execute as @a[scores={elements_enderchest_interface_click_autocompact_stone_on=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_autocompact_stone_on=1}] run function elements:enderchest/autocompact-reset
-execute as @a[scores={elements_enderchest_interface_click_autocompact_stone_on=1}] run scoreboard players set @s elements_autocompactor_stone 1
-execute as @a[scores={elements_enderchest_interface_click_autocompact_holz_on=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_autocompact_holz_on=1}] run function elements:enderchest/autocompact-reset
-execute as @a[scores={elements_enderchest_interface_click_autocompact_holz_on=1}] run scoreboard players set @s elements_autocompactor_wood 1
+execute as @a[scores={elements_enderchest_level_autocompact=1..,elements_enderchest_interface_number=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:red_dye[custom_model_data=1]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/autocompact-reset
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+
+execute as @a[scores={elements_enderchest_level_autocompact=1..,elements_enderchest_interface_number=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:stone[custom_model_data=1]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/autocompact-reset
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_autocompactor_stone 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+
+execute as @a[scores={elements_enderchest_level_autocompact=2..,elements_enderchest_interface_number=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:oak_log[custom_model_data=1]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/autocompact-reset
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_autocompactor_wood 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+
+
+
+
 
 
 

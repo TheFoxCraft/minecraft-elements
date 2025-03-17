@@ -1,0 +1,3 @@
+Error-Codes:
+
+1: Name im Playerdata Storage nicht gefunden. Wird neu berechnet | Sollte keine Probleme machen, wenn fehler auftritt trotzdem komisch

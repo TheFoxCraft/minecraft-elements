@@ -1,21 +1,21 @@
-execute as @a[scores={elements_enderchest_level_upgradeschmiede=1,elements_enderchest_interface_number=3}] store result score @s elements_enderchest_interface_click_upgradeschmiede_back run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=2]
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] unless entity @s[nbt={EnderItems:[{Slot:12b}]}] unless entity @p[nbt={EnderItems:[{Slot:14b}]}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] if entity @s[nbt={EnderItems:[{Slot:12b}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] if entity @s[nbt={EnderItems:[{Slot:12b}]}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Achtung! Du hast noch ein Item im Input-Slot!","color": "red"}]
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Achtung! Du hast noch ein Item im Output-Slot!","color": "red"}]
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] unless entity @s[nbt={EnderItems:[{Slot:12b}]}] unless entity @p[nbt={EnderItems:[{Slot:14b}]}] run scoreboard players set @s elements_enderchest_interface_number 1
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] unless entity @s[nbt={EnderItems:[{Slot:12b}]}] unless entity @p[nbt={EnderItems:[{Slot:14b}]}] run function elements:enderchest/enderchest-clear
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_back=1}] run scoreboard players set @s elements_enderchest_interface_click_upgradeschmiede_back 0
+execute as @a[scores={elements_enderchest_level_upgradeschmiede=1,elements_enderchest_interface_number=3}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] unless entity @s[nbt={EnderItems:[{Slot:12b}]}] unless entity @p[nbt={EnderItems:[{Slot:14b}]}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] if entity @s[nbt={EnderItems:[{Slot:12b}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1}] if entity @s[nbt={EnderItems:[{Slot:12b}]}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Achtung! Du hast noch ein Item im Input-Slot!","color": "red"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Achtung! Du hast noch ein Item im Output-Slot!","color": "red"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] unless entity @s[nbt={EnderItems:[{Slot:12b}]}] unless entity @p[nbt={EnderItems:[{Slot:14b}]}] run scoreboard players set @s elements_enderchest_interface_number 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] unless entity @s[nbt={EnderItems:[{Slot:12b}]}] unless entity @p[nbt={EnderItems:[{Slot:14b}]}] run function elements:enderchest/enderchest-clear
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:magenta_glazed_terracotta",count:1,components:{"minecraft:custom_model_data":2}}}]
 execute as @a[scores={elements_enderchest_level_upgradeschmiede=1,elements_enderchest_interface_number=3}] run item replace entity @s enderchest.22 with magenta_glazed_terracotta[custom_name='{"color":"red","text":"Zurück","italic": false}',custom_model_data=2] 1
 
 
 
-execute as @a[scores={elements_enderchest_level_upgradeschmiede=1,elements_enderchest_interface_number=3}] store result score @s elements_enderchest_interface_click_upgradeschmiede_upgrade run clear @s minecraft:anvil[custom_model_data=2]
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrade=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Achtung! Du hast noch ein Item im Output-Slot!","color": "red"}]
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrade=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrade=1}] unless entity @s[nbt={EnderItems:[{Slot:14b}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 3
+execute as @a[scores={elements_enderchest_level_upgradeschmiede=1,elements_enderchest_interface_number=3}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:anvil[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Achtung! Du hast noch ein Item im Output-Slot!","color": "red"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] if entity @s[nbt={EnderItems:[{Slot:14b}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1}] unless entity @s[nbt={EnderItems:[{Slot:14b}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 3
 #open-finish
 
 # |-----------------------------------------ADD HERE-----------------------------------------|
@@ -96,9 +96,9 @@ execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderI
 
 
 #close-finish
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrade=1,elements_enderchest_upgradeschmiede_upgrade=3}] run item replace entity @s enderchest.12 with air
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrade=1,elements_enderchest_upgradeschmiede_upgrade=3}] at @s run playsound minecraft:block.anvil.use master @s
-execute as @a[scores={elements_enderchest_interface_click_upgradeschmiede_upgrade=1}] run scoreboard players set @s elements_enderchest_interface_click_upgradeschmiede_upgrade 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_enderchest_upgradeschmiede_upgrade=3}] run item replace entity @s enderchest.12 with air
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_enderchest_upgradeschmiede_upgrade=3}] at @s run playsound minecraft:block.anvil.use master @s
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 
 

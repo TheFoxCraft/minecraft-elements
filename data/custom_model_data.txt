@@ -97,8 +97,10 @@
     potion: Manatrank | Sky Shop Buying
 13:
     clock: Admin-Config | Double-Level Timer Action
+    potion: Magisches Wasser | Ocean Shop
 14:
     clock: Admin-Config | Double-Level Timer Action
+    potion: Magisches Wasser | Ocean Shop Buying
 15:
     clock: Admin-Config | Double-Level Timer Action
 

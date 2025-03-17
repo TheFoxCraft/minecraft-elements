@@ -1,8 +1,8 @@
-execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_ocean_back run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=2]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_back=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_back=1}] run scoreboard players set @s elements_enderchest_interface_number 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_back=1}] run function elements:enderchest/enderchest-clear
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_back=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_ocean_back 0
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_number 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:magenta_glazed_terracotta",count:1,components:{"minecraft:custom_model_data":2}}}]
 execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","text":"Zurück","italic": false}',custom_model_data=2] 1
 
@@ -32,125 +32,139 @@ execute as @a[scores={elements_enderchest_interface_number=9}] run item replace 
 execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.25 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
 
 
-execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_ocean_water-breathing run clear @s minecraft:potion[custom_model_data=10]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_water-breathing=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_water-breathing=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_water-breathing=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_water-breathing=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_water-breathing=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/ocean/water-breathing
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_water-breathing=1,elements_mainlevel=500..}] run xp add @s -500 levels
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_water-breathing=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_ocean_water-breathing 0
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=14]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/ocean/magisches_wasser
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run xp add @s -500 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":14}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.4 loot elements:items/shops/ocean/magisches_wasser
+execute as @a[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.4 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Magisches Wasser [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 14 }]
+
+
+
+
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=10]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/ocean/water-breathing
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run xp add @s -500 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":10}}}]
 execute as @a[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.10 loot elements:items/shops/ocean/water-breathing
 execute as @a[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.10 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Water Breathing Potion [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 10 }]
 
 
 
-
-execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_ocean_shulkershell run clear @s minecraft:shulker_shell[custom_model_data=2]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_shulkershell=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_shulkershell=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_shulkershell=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_shulkershell=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_shulkershell=1,elements_mainlevel=500..}] run give @s shulker_shell 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_shulkershell=1,elements_mainlevel=500..}] run xp add @s -500 levels
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_shulkershell=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_ocean_shulkershell 0
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:shulker_shell[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run give @s shulker_shell 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run xp add @s -500 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:shulker_shell",count:1,components:{"minecraft:custom_model_data":2}}}]
 execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.12 with shulker_shell[custom_name='{"color":"yellow","text":"Shulker-Shell [500 Level]","italic": false}',custom_model_data=2] 1
 
 
 
-execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_ocean_emerald run clear @s minecraft:emerald[custom_model_data=2]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_emerald=1,elements_mainlevel=..49}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_emerald=1,elements_mainlevel=..49}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_emerald=1,elements_mainlevel=50..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_emerald=1,elements_mainlevel=50..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_emerald=1,elements_mainlevel=50..}] run give @s emerald 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_emerald=1,elements_mainlevel=50..}] run xp add @s -50 levels
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_emerald=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_ocean_emerald 0
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:emerald[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..}] run give @s emerald 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..}] run xp add @s -50 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:emerald",count:1,components:{"minecraft:custom_model_data":2}}}]
 execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.13 with emerald[custom_name='{"color":"yellow","text":"Smaragd [50 Level]","italic": false}',custom_model_data=2] 1
 
 
 
-execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_ocean_miningfrucht run clear @s minecraft:chorus_fruit[custom_model_data=2]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_miningfrucht=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_miningfrucht=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_miningfrucht=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_miningfrucht=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_miningfrucht=1,elements_mainlevel=500..}] run give @s chorus_fruit[max_stack_size=64,can_break={predicates:[{blocks:"chorus_flower"}],show_in_tooltip:false},custom_name='{"color":"yellow","italic":false,"text":"Miningfrucht"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Mining XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=1,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_miningfrucht=1,elements_mainlevel=500..}] run xp add @s -500 levels
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_miningfrucht=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_ocean_miningfrucht 0
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:chorus_fruit[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run give @s chorus_fruit[max_stack_size=64,custom_name='{"color":"yellow","italic":false,"text":"Miningfrucht"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Mining XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=1,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run xp add @s -500 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:chorus_fruit",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.14 with chorus_fruit[max_stack_size=64,can_break={predicates:[{blocks:"chorus_flower"}],show_in_tooltip:false},custom_name='{"color":"yellow","italic":false,"text":"Miningfrucht [500 Level]"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Mining XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=2,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.14 with chorus_fruit[max_stack_size=64,custom_name='{"color":"yellow","italic":false,"text":"Miningfrucht [500 Level]"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Mining XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=2,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
 
 
 
-execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_ocean_foragingfrucht run clear @s minecraft:sweet_berries[custom_model_data=2]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_foragingfrucht=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_foragingfrucht=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_foragingfrucht=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_foragingfrucht=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_foragingfrucht=1,elements_mainlevel=500..}] run give @s sweet_berries[max_stack_size=64,can_break={predicates:[{blocks:"sweet_berry_bush"}],show_in_tooltip:false},custom_name='{"color":"yellow","italic":false,"text":"Foragingfrucht"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Foraging XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=1,attribute_modifiers={modifiers:[{id:"block_interaction_range",type:"block_interaction_range",amount:-1,operation:"add_multiplied_base",slot:"hand"}],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_foragingfrucht=1,elements_mainlevel=500..}] run xp add @s -500 levels
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_foragingfrucht=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_ocean_foragingfrucht 0
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:sweet_berries[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run give @s sweet_berries[max_stack_size=64,custom_name='{"color":"yellow","italic":false,"text":"Foragingfrucht"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Foraging XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=1,attribute_modifiers={modifiers:[{id:"block_interaction_range",type:"block_interaction_range",amount:-1,operation:"add_multiplied_base",slot:"hand"}],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run xp add @s -500 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:sweet_berries",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.15 with sweet_berries[max_stack_size=64,can_break={predicates:[{blocks:"sweet_berry_bush"}],show_in_tooltip:false},custom_name='{"color":"yellow","italic":false,"text":"Foragingfrucht [500 Level]"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Foraging XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=2,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.15 with sweet_berries[max_stack_size=64,custom_name='{"color":"yellow","italic":false,"text":"Foragingfrucht [500 Level]"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Foraging XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=2,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
 
 
-execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_ocean_farmingfrucht run clear @s minecraft:glow_berries[custom_model_data=2]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_farmingfrucht=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_farmingfrucht=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_farmingfrucht=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_farmingfrucht=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_farmingfrucht=1,elements_mainlevel=500..}] run give @s glow_berries[max_stack_size=64,can_break={predicates:[{blocks:"cave_vines"}],show_in_tooltip:false},custom_name='{"color":"yellow","italic":false,"text":"Farmingfrucht"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Farming XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=1,attribute_modifiers={modifiers:[{id:"block_interaction_range",type:"block_interaction_range",amount:-1,operation:"add_multiplied_base",slot:"hand"}],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_farmingfrucht=1,elements_mainlevel=500..}] run xp add @s -500 levels
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_farmingfrucht=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_ocean_farmingfrucht 0
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:glow_berries[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run give @s glow_berries[max_stack_size=64,custom_name='{"color":"yellow","italic":false,"text":"Farmingfrucht"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Farming XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=1,attribute_modifiers={modifiers:[{id:"block_interaction_range",type:"block_interaction_range",amount:-1,operation:"add_multiplied_base",slot:"hand"}],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run xp add @s -500 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:glow_berries",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.16 with glow_berries[max_stack_size=64,can_break={predicates:[{blocks:"cave_vines"}],show_in_tooltip:false},custom_name='{"color":"yellow","italic":false,"text":"Farmingfrucht [500 Level]"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Farming XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=2,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.16 with glow_berries[max_stack_size=64,custom_name='{"color":"yellow","italic":false,"text":"Farmingfrucht [500 Level]"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Farming XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=2,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
 
 
 
-execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_ocean_fishingfrucht run clear @s minecraft:pumpkin_pie[custom_model_data=2]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_fishingfrucht=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_fishingfrucht=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_fishingfrucht=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_fishingfrucht=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_fishingfrucht=1,elements_mainlevel=500..}] run give @s pumpkin_pie[max_stack_size=64,can_break={predicates:[{blocks:"pumpkin"}],show_in_tooltip:false},custom_name='{"color":"yellow","italic":false,"text":"Fishingfrucht"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Fishing XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=1,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_fishingfrucht=1,elements_mainlevel=500..}] run xp add @s -500 levels
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_fishingfrucht=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_ocean_fishingfrucht 0
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:pumpkin_pie[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run give @s pumpkin_pie[max_stack_size=64,custom_name='{"color":"yellow","italic":false,"text":"Fishingfrucht"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Fishing XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=1,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run xp add @s -500 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:pumpkin_pie",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.17 with pumpkin_pie[max_stack_size=64,can_break={predicates:[{blocks:"pumpkin"}],show_in_tooltip:false},custom_name='{"color":"yellow","italic":false,"text":"Fishingfrucht [500 Level]"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Fishing XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=2,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.17 with pumpkin_pie[max_stack_size=64,custom_name='{"color":"yellow","italic":false,"text":"Fishingfrucht [500 Level]"}',lore=['" "','[{"color":"light_purple","italic":false,"text":"Verbrauchen: "},{"color":"gray","italic":false,"text":"Fishing XP Bonus: "},{"color":"green","italic":false,"text":"+33% / 30 Minuten"}]','" "','{"bold":true,"color":"dark_purple","italic":false,"text":"Epic"}'],hide_additional_tooltip={},custom_model_data=2,attribute_modifiers={modifiers:[],show_in_tooltip:false},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:99999}] 1
 
 
 
 # BOSS-FRÜCHTE
 
 #header
-execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_click_shop_ocean_boss-frucht run clear @s minecraft:golden_apple[custom_model_data=1]
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:golden_apple[custom_model_data=1]
 
 #stage 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=..49}] if score .server elements_stage matches 1 at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=..49}] if score .server elements_stage matches 1 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=50..}] if score .server elements_stage matches 1 at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=50..}] if score .server elements_stage matches 1 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=50..}] if score .server elements_stage matches 1 run loot give @s loot elements:items/shops/ocean/bossfrucht/stage_1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=50..}] if score .server elements_stage matches 1 run xp add @s -50 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49}] if score .server elements_stage matches 1 at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49}] if score .server elements_stage matches 1 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..}] if score .server elements_stage matches 1 at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..}] if score .server elements_stage matches 1 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..}] if score .server elements_stage matches 1 run loot give @s loot elements:items/shops/ocean/bossfrucht/stage_1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..}] if score .server elements_stage matches 1 run xp add @s -50 levels
 execute as @a[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 1 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_1
 execute as @a[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 1 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 1 [50 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]
 
 #stage 2
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=..499}] if score .server elements_stage matches 2 at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=..499}] if score .server elements_stage matches 2 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=500..}] if score .server elements_stage matches 2 at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=500..}] if score .server elements_stage matches 2 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=500..}] if score .server elements_stage matches 2 run loot give @s loot elements:items/shops/ocean/bossfrucht/stage_2
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1,elements_mainlevel=500..}] if score .server elements_stage matches 2 run xp add @s -500 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] if score .server elements_stage matches 2 at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] if score .server elements_stage matches 2 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] if score .server elements_stage matches 2 at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] if score .server elements_stage matches 2 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] if score .server elements_stage matches 2 run loot give @s loot elements:items/shops/ocean/bossfrucht/stage_2
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] if score .server elements_stage matches 2 run xp add @s -500 levels
 execute as @a[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 2 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_2
 execute as @a[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 2 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 2 [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]
 
 #footer
-execute as @a[scores={elements_enderchest_interface_click_shop_ocean_boss-frucht=1}] run scoreboard players set @s elements_enderchest_interface_click_shop_ocean_boss-frucht 0
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:golden_apple",components:{"minecraft:custom_model_data":1}}}]
 
 # BOSS-FRÜCHTE END

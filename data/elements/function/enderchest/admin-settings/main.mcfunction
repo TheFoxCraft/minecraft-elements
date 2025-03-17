@@ -72,17 +72,18 @@ execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number
 
 
 #first setup
-execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8}] store result score @s elements_enderchest_interface_click_adminsettings_first-setup run clear @s minecraft:barrier[custom_model_data=10]
-execute as @a[scores={elements_enderchest_interface_click_adminsettings_first-setup=1}] run function elements:enderchest/admin-settings/first-setup
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:barrier[custom_model_data=10]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/admin-settings/first-setup
 kill @e[type=item,nbt={Item:{id:"minecraft:barrier",count:1,components:{"minecraft:custom_model_data":10}}}]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8}] unless score .server elements_setup matches 1.. run item replace entity @s enderchest.13 with barrier[custom_name='{"color":"red","text":"Startsetup","italic": false,"bold": true}',lore=['[{"text": "Achtung! Dieser Schritt kann normalerweise"}]','[{"text": "nur einmal ausgeführt werden!"}]','[{"text": "Solltest du ihn, (wie auch immer du das schaffst)"}]','[{"text": "erneut ausführen wird ALLES zurückgesetzt! (=nicht so gut!)"}]'],custom_model_data=10] 1
 
 
 
-execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8}] unless score .server elements_spawn_energiekern-activate matches 1 store result score @s elements_enderchest_interface_click_adminsettings_start-story run clear @s minecraft:beacon[custom_model_data=2]
-execute as @a[scores={elements_enderchest_interface_click_adminsettings_start-story=1}] unless score .server elements_spawn_energiekern-activate matches 1 at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_adminsettings_start-story=1}] unless score .server elements_spawn_energiekern-activate matches 1 run tellraw @s {"text":"Möchtest du die Startstory und das Projekt starten? Dann klicke HIER!","color":"gold","clickEvent":{"action":"run_command","value":"/scoreboard players set .server elements_setup_temp 1"},"hoverEvent":{"action":"show_text","contents":["Klicke um die Startstory und das Projekt zu starten!"]}}
-execute as @a[scores={elements_enderchest_interface_click_adminsettings_start-story=1}] unless score .server elements_spawn_energiekern-activate matches 1 run scoreboard players set @s elements_enderchest_interface_click_adminsettings_start-story 0
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8}] unless score .server elements_spawn_energiekern-activate matches 1 store result score @s elements_enderchest_interface_clicked run clear @s minecraft:beacon[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] unless score .server elements_spawn_energiekern-activate matches 1 at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] unless score .server elements_spawn_energiekern-activate matches 1 run tellraw @s {"text":"Möchtest du die Startstory und das Projekt starten? Dann klicke HIER!","color":"gold","clickEvent":{"action":"run_command","value":"/scoreboard players set .server elements_setup_temp 1"},"hoverEvent":{"action":"show_text","contents":["Klicke um die Startstory und das Projekt zu starten!"]}}
+execute as @a[scores={elements_enderchest_interface_clicked=1}] unless score .server elements_spawn_energiekern-activate matches 1 run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:beacon",count:1,components:{"minecraft:custom_model_data":2}}}]
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8}] if score .server elements_setup matches 1 unless score .server elements_spawn_energiekern-activate matches 1 run item replace entity @s enderchest.13 with beacon[custom_name='{"color":"gold","italic":false,"text":"Starte Projekt!"}',lore=['{"color":"gold","italic":false,"text":"(Bestätigung im Chat!)"}','{"color":"gray","italic":false,"text":"Startet das Projekt, der Energiekern wird "}','{"color":"gray","italic":false,"text":"\\"aktiviert\\". Die Startstory"}','{"color":"gray","italic":false,"text":"spielt sich ab. Danach können"}','{"color":"gray","italic":false,"text":"die Spieler ihre Heimatdimension wählen"}'],custom_model_data=2] 1
 

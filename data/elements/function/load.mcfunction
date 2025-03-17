@@ -596,6 +596,10 @@ scoreboard objectives add elements_custom-items_shop_hot-lava_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_hot-lava_damage_queue dummy
 scoreboard objectives add elements_custom-items_shop_hot-lava_damage dummy
 scoreboard objectives add elements_custom-items_shop_manatrank_cooldown dummy
+scoreboard objectives add elements_custom-items_shop_magisches-wasser_cooldown dummy
+scoreboard objectives add elements_custom-items_shop_magisches-wasser_damage dummy
+scoreboard objectives add elements_custom-items_shop_magisches-wasser_distance dummy
+scoreboard objectives add elements_custom-items_shop_magisches-wasser_is_block dummy
 scoreboard objectives add elements_stage_1_portal_enable dummy
 scoreboard objectives add elements_stage_1_boss_status dummy
 scoreboard objectives add elements_stage_1_boss_loot_count dummy
@@ -610,7 +614,6 @@ scoreboard objectives add elements_stage_2_boss_spawn-player dummy
 scoreboard objectives add elements_spawn_vaults_refresh dummy
 scoreboard objectives add elements_leaderboards_refresh-timer dummy
 scoreboard objectives add elements_get-name_status dummy
-scoreboard objectives add elements_get-name_continue dummy
 scoreboard objectives add elements_get-name_progress dummy
 scoreboard objectives add elements_villager_stage-2_mana_clicked dummy
 scoreboard objectives add elements_villager_stage-2_mana_level dummy
