@@ -10,3 +10,4 @@ execute as @s[predicate=elements:is_in_stoneblock] at @s unless block ~ ~ ~ spru
 execute as @s[predicate=elements:is_in_oceanblock] at @s unless block ~ ~ ~ spruce_sapling run data modify storage elements_farmslots_stage_2_broken_slots Dim set value "Ocean-Block"
 
 function elements:farm_slots/stage_2/show_broken_slots_message with storage elements_farmslots_stage_2_broken_slots
+

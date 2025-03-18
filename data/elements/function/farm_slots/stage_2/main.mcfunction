@@ -9,38 +9,59 @@ execute as @a[scores={elements_farm-slots_stage-2_placed=1..},sort=nearest,limit
 execute as @a[scores={elements_farm-slots_stage-2_placed=1..},sort=nearest,limit=1] run scoreboard players remove @s elements_farm-slots_stage-2_placed 1
 
 
+#should be placed
+# block occupied
+# block can be placed
+
+#block below missing
 
 
 
-
-#markers
-
-#on-break
-
+#normal break
 execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s if block ~ ~ ~ air if block ~ ~-1 ~ #dirt run function elements:farm_slots/stage_2/break with entity @n[distance=..10,scores={elements_farm-slots_stage-2_broken=1..}]
-execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s unless block ~ ~ ~ #elements:farmslots/stage_2_ignore unless entity @n[distance=..10,scores={elements_farm-slots_stage-2_broken=1..}] if block ~ ~-1 ~ #dirt run setblock ~ ~ ~ spruce_sapling
-execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s unless block ~ ~ ~ #elements:farmslots/stage_2_slot unless entity @n[distance=..10,scores={elements_farm-slots_stage-2_broken=1..}] unless block ~ ~-1 ~ #dirt run function elements:farm_slots/stage_2/highlight_missing_block
-execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s unless block ~ ~ ~ #elements:farmslots/stage_2_slot unless entity @n[distance=..10,scores={elements_farm-slots_stage-2_broken=1..}] if block ~ ~-1 ~ #dirt run function elements:farm_slots/stage_2/highlight_missing_block
-
-execute as @e[type=marker,tag=elements_farm-slot_stage-2,tag=!elements_farm-slot_stage-2_broken] at @s if block ~ ~ ~ air unless entity @n[distance=..10,scores={elements_farm-slots_stage-2_broken=1..}] unless block ~ ~-1 ~ #dirt run tag @s add elements_farm-slot_stage-2_broken
-execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s if block ~ ~ ~ spruce_sapling unless block ~ ~-1 ~ #dirt run setblock ~ ~ ~ air
-execute as @e[type=marker,tag=elements_farm-slot_stage-2,tag=elements_farm-slot_stage-2_broken] at @s if block ~ ~ ~ spruce_sapling run tag @s remove elements_farm-slot_stage-2_broken
-execute as @e[type=marker,tag=elements_farm-slot_stage-2,tag=elements_farm-slot_stage-2_broken] at @s unless block ~ ~ ~ #elements:farmslots/stage_2_ignore run tellraw @a[distance=..7] ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Du kannst hier diesen Block nicht platzieren! Hier ist ein Farmslot","color": "red"}]
-execute as @e[type=marker,tag=elements_farm-slot_stage-2,tag=elements_farm-slot_stage-2_broken] at @s unless block ~ ~ ~ #elements:farmslots/stage_2_ignore run fill ~ ~ ~ ~ ~ ~ air destroy
-
-
-execute as @a[nbt={SelectedItem:{id:"minecraft:spruce_sapling",components:{"minecraft:custom_model_data":1}}}] run title @s actionbar ["",{"text": "Farmslots: ","color": "green"},{"score": {"name": "@s","objective": "elements_farm-slots_stage-2_slots"},"color": "green"},{"text": "/","color": "green"},{"score": {"name": "@s","objective": "elements_farm-slots_stage-2_max-slots"},"color": "green"}]
 
 #grown
 execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s if block ~ ~ ~ spruce_log run tag @s add elements_farm-slot_stage-2_grown
 execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s if block ~ ~ ~ spruce_log run tag @s remove elements_farm-slot_stage-2
 
-execute as @e[type=marker,tag=elements_farm-slot_stage-2_grown] at @s if block ~ ~ ~ air run tag @s add elements_farm-slot_stage-2
-execute as @e[type=marker,tag=elements_farm-slot_stage-2_grown] at @s if block ~ ~ ~ air run setblock ~ ~ ~ spruce_sapling
-execute as @e[type=marker,tag=elements_farm-slot_stage-2_grown,tag=elements_farm-slot_stage-2] at @s if block ~ ~ ~ spruce_sapling run tag @s remove elements_farm-slot_stage-2_grown
+execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s if block ~ ~ ~ air if block ~ ~-1 ~ #dirt run setblock ~ ~ ~ spruce_sapling
 
+
+#broken
+execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s if block ~ ~ ~ #elements:farmslots/stage_2_broken unless entity @n[distance=..10,scores={elements_farm-slots_stage-2_broken=1..}] run tag @s add elements_farm-slot_stage-2_broken
+execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s if block ~ ~ ~ #elements:farmslots/stage_2_broken unless entity @n[distance=..10,scores={elements_farm-slots_stage-2_broken=1..}] run tag @s remove elements_farm-slot_stage-2
+
+
+execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s unless block ~ ~ ~ spruce_sapling run tellraw @a[distance=..7] ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Du kannst hier diesen Block nicht platzieren! Hier ist ein Farmslot","color": "red"}]
+execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s unless block ~ ~ ~ spruce_sapling run fill ~ ~ ~ ~ ~ ~ air destroy
+
+
+#is broken
+execute as @e[type=marker,tag=elements_farm-slot_stage-2_broken] at @s if block ~ ~ ~ air if block ~ ~-1 ~ #dirt unless entity @n[distance=..10,scores={elements_farm-slots_stage-2_broken=1..}] run tag @s add elements_farm-slot_stage-2
+execute as @e[type=marker,tag=elements_farm-slot_stage-2_broken] at @s if block ~ ~ ~ air if block ~ ~-1 ~ #dirt unless entity @n[distance=..10,scores={elements_farm-slots_stage-2_broken=1..}] run tag @s remove elements_farm-slot_stage-2_broken
+
+
+execute as @e[type=marker,tag=elements_farm-slot_stage-2_broken] at @s unless block ~ ~ ~ #elements:farmslots/stage_2_broken run tellraw @a[distance=..7] ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Du kannst hier diesen Block nicht platzieren! Hier ist ein Farmslot","color": "red"}]
+execute as @e[type=marker,tag=elements_farm-slot_stage-2_broken] at @s unless block ~ ~ ~ #elements:farmslots/stage_2_broken run fill ~ ~ ~ ~ ~ ~ air destroy
+
+
+#grown
+execute as @e[type=marker,tag=elements_farm-slot_stage-2_grown] at @s if block ~ ~ ~ air run tag @s add elements_farm-slot_stage-2
+execute as @e[type=marker,tag=elements_farm-slot_stage-2_grown] at @s if block ~ ~ ~ air run tag @s remove elements_farm-slot_stage-2_grown
+
+
+#highlighting
 execute as @e[type=marker,tag=elements_farm-slot_stage-2_grown] at @s if entity @a[distance=..10] run function elements:farm_slots/stage_2/highlight_grown_block
-execute as @e[type=marker,tag=elements_farm-slot_stage-2,tag=!elements_farm-slot_stage-2_broken] at @s if entity @a[distance=..10] run function elements:farm_slots/stage_2/highlight_normal_block
+execute as @e[type=marker,tag=elements_farm-slot_stage-2_broken] at @s if entity @a[distance=..10] run function elements:farm_slots/stage_2/highlight_missing_block
+execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s if entity @a[distance=..10] run function elements:farm_slots/stage_2/highlight_normal_block
+
+
+
+
+
+# show remaining slots
+execute as @a[nbt={SelectedItem:{id:"minecraft:spruce_sapling",components:{"minecraft:custom_model_data":1}}}] run title @s actionbar ["",{"text": "Farmslots: ","color": "green"},{"score": {"name": "@s","objective": "elements_farm-slots_stage-2_slots"},"color": "green"},{"text": "/","color": "green"},{"score": {"name": "@s","objective": "elements_farm-slots_stage-2_max-slots"},"color": "green"}]
+
 
 #show broken slots
 execute as @a[scores={just-ignore=500}] run function elements:farm_slots/stage_2/show_broken_slots_pre

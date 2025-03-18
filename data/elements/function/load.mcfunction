@@ -164,18 +164,30 @@ scoreboard objectives add elements_stats_maxlevel dummy
 scoreboard objectives add elements_stats_servermaxlevel dummy
 scoreboard objectives add elements_stats_levellost dummy
 scoreboard objectives add elements_stats_serverlevellost dummy
+scoreboard objectives add elements_stats_level_erhalten dummy
+scoreboard objectives add elements_stats_level_erhalten_calc dummy
+scoreboard objectives add elements_stats_level_erhalten_calc_get dummy
+scoreboard objectives add elements_stats_level_erhalten_calc_get_old dummy
+scoreboard objectives add elements_stats_level_ausgegeben dummy
+scoreboard objectives add elements_stats_level_ausgegeben_calc dummy
+scoreboard objectives add elements_stats_level_ausgegeben_calc_get dummy
+scoreboard objectives add elements_stats_level_ausgegeben_calc_get_old dummy
 scoreboard objectives add elements_stats_playtime_ticks dummy
 scoreboard objectives add elements_stats_playtime_sec dummy
 scoreboard objectives add elements_stats_playtime_min dummy
 scoreboard objectives add elements_stats_playtime_h dummy
 scoreboard objectives add elements_stats_eq dummy
 scoreboard objectives add elements_stats_lootbox dummy
+
+
 scoreboard objectives add elements_stats_stage_1_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_1_boss_killed dummy
 scoreboard objectives add elements_stats_stage_2_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_2_boss_killed dummy
 scoreboard objectives add elements_stats_stage_0_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_0_boss_killed dummy
+
+
 #miningxp
 scoreboard objectives add elements_miningxp_mining_mine-get_stone minecraft.mined:minecraft.stone
 scoreboard objectives add elements_miningxp_mining_mine-get_cobblestone minecraft.mined:minecraft.cobblestone

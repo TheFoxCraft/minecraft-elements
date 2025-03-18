@@ -90,14 +90,29 @@ execute as @a[scores={elements_custom-items_shop_hastetrank_enable=1}] run effec
 execute as @a[scores={elements_custom-items_shop_water-breathing_enable=1}] run effect give @s water_breathing 1 0 true
 
 
-#calc stats collections
+#calc stats
 
+##collections
 execute as @a[scores={elements_collections_calc_stone=1..}] run scoreboard players add @s elements_collections_stats_stone_total 1
 execute as @a[scores={elements_collections_calc_stone=1..}] run scoreboard players remove @s elements_collections_calc_stone 1
 execute as @a[scores={elements_collections_calc_cobblestone=1..}] run scoreboard players add @s elements_collections_stats_stone_total 1
 execute as @a[scores={elements_collections_calc_cobblestone=1..}] run scoreboard players remove @s elements_collections_calc_cobblestone 1
 execute as @a[scores={elements_collections_calc_basalt=1..}] run scoreboard players add @s elements_collections_stats_stone_total 1
 execute as @a[scores={elements_collections_calc_basalt=1..}] run scoreboard players remove @s elements_collections_calc_basalt 1
+
+# all time level erhalten
+execute as @a store result score @s elements_stats_level_erhalten_calc_get run xp query @s levels
+execute as @a if score @s elements_stats_level_erhalten_calc_get > @s elements_stats_level_erhalten_calc_get_old run scoreboard players operation @s elements_stats_level_erhalten_calc = @s elements_stats_level_erhalten_calc_get
+execute as @a if score @s elements_stats_level_erhalten_calc_get > @s elements_stats_level_erhalten_calc_get_old run scoreboard players operation @s elements_stats_level_erhalten_calc -= @s elements_stats_level_erhalten_calc_get_old
+execute as @a if score @s elements_stats_level_erhalten_calc_get > @s elements_stats_level_erhalten_calc_get_old run scoreboard players operation @s elements_stats_level_erhalten += @s elements_stats_level_erhalten_calc
+execute as @a run scoreboard players operation @s elements_stats_level_erhalten_calc_get_old = @s elements_stats_level_erhalten_calc_get
+
+# all time level ausgegeben (ausgenommen tode)
+execute as @a store result score @s elements_stats_level_ausgegeben_calc_get run xp query @s levels
+execute as @a if score @s elements_stats_level_ausgegeben_calc_get < @s elements_stats_level_ausgegeben_calc_get_old run scoreboard players operation @s elements_stats_level_ausgegeben_calc = @s elements_stats_level_ausgegeben_calc_get_old
+execute as @a if score @s elements_stats_level_ausgegeben_calc_get < @s elements_stats_level_ausgegeben_calc_get_old run scoreboard players operation @s elements_stats_level_ausgegeben_calc -= @s elements_stats_level_ausgegeben_calc_get
+execute as @a if score @s elements_stats_level_ausgegeben_calc_get < @s elements_stats_level_ausgegeben_calc_get_old run scoreboard players operation @s elements_stats_level_ausgegeben += @s elements_stats_level_ausgegeben_calc
+execute as @a run scoreboard players operation @s elements_stats_level_ausgegeben_calc_get_old = @s elements_stats_level_ausgegeben_calc_get
 
 
 #update signs

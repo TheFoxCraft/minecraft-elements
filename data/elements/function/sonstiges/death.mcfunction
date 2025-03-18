@@ -21,3 +21,7 @@ scoreboard players add .server elements_stats_serverdeath 1
 scoreboard players set @s elements_death_level 0
 scoreboard players set @s elements_death_level_lost 0
 scoreboard players set @s elements_death 0
+
+
+# cancel stats for ausgegeben 
+execute as @a store result score @s elements_stats_level_ausgegeben_calc_get_old run xp query @s levels
