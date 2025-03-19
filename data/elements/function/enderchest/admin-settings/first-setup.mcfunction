@@ -9,6 +9,10 @@ execute as @s in elements:sky run place template elements:spawn/sky -20 94 -20
 execute as @s run tellraw @a {"text": "04/x Spawne Sky-Spawn","color": "yellow"}
 execute as @s in elements:ocean run place template elements:spawn/ocean -20 56 -20
 execute as @s run tellraw @a {"text": "05/x Spawne Ocean-Spawn","color": "yellow"}
+execute as @s in elements:stage-1_bossroom run place template elements:boss_room/stage_1 -20 99 -20
+execute as @s run tellraw @a {"text": "05/x Spawne Boss-Room Stage 1","color": "yellow"}
+execute as @s in elements:stage-2_bossroom run place template elements:boss_room/stage_2 -20 98 -20
+execute as @s run tellraw @a {"text": "05/x Spawne Boss-Room Stage 2","color": "yellow"}
 execute as @s run scoreboard players set .server elements_stage 0
 execute as @s run tellraw @a {"text": "06/x Setze Scores","color": "yellow"}
 execute as @s run scoreboard players set .server elements_stats_lootbox 0
@@ -82,6 +86,8 @@ execute as @s run scoreboard players set .server elements_double-xp-event_timer_
 execute as @s run scoreboard players set .server elements_admin_config_interface 1
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_stone 0
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_wood 0
+execute as @s run scoreboard players set .server elements_update_sequence_status 0
+execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
 
 
 execute as @s run scoreboard players set .server elements_leaderboards_id-1_rang_enable 0
@@ -141,4 +147,4 @@ execute as @s run tellraw @a {"text": "19/x Starte Leaderboards","color": "yello
 execute as @s run tellraw @a {"text": "Minecraft Elements Setup erfolgreich abgeschlossen!","color": "green"}
 execute as @s in elements:hub run tp @a 0 101 0
 execute as @s run scoreboard players set .server elements_setup 1
-execute as @s run scoreboard players set @s elements_enderchest_interface_click_adminsettings_first-setup 0
+execute as @s run scoreboard players set @s elements_enderchest_interface_clicked 0

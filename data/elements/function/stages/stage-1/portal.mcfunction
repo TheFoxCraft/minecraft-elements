@@ -21,7 +21,7 @@ execute in elements:stage-1_bossroom positioned 0.5 101.00 0.5 if score .server 
 execute in elements:stage-1_bossroom positioned 0.5 102.50 0.5 if score .server elements_stage_1_boss_status matches 0 unless entity @e[tag=stage-1_boss_altar_name,type=text_display,distance=..1] run summon text_display 0.5 102.50 0.5 {billboard:"center",default_background:1b,alignment:"center",Tags:["stage-1_boss_altar_name"],text:'[{"text": "Altar","color": "gold"}]'}
 execute in elements:stage-1_bossroom unless block 0 101 1 minecraft:ender_chest if score .server elements_stage_1_boss_status matches 0 run setblock 0 101 1 ender_chest[facing=east]
 execute in elements:stage-1_bossroom unless block 0 101 0 minecraft:reinforced_deepslate if score .server elements_stage_1_boss_status matches 0 run setblock 0 101 0 reinforced_deepslate
-execute in elements:stage-1_bossroom unless block 0 101 -1 minecraft:chest if score .server elements_stage_1_boss_status matches 0 run setblock 0 101 -1 chest[facing=east]
+execute in elements:stage-1_bossroom unless block 0 101 -1 minecraft:chest if block 0 101 -1 air if score .server elements_stage_1_boss_status matches 0 run setblock 0 101 -1 chest[facing=east]
 execute in elements:stage-1_bossroom unless block 0 101 1 minecraft:air if score .server elements_stage_1_boss_status matches 1 run setblock 0 101 1 air
 execute in elements:stage-1_bossroom unless block 0 101 0 minecraft:air if score .server elements_stage_1_boss_status matches 1 run setblock 0 101 0 air
 execute in elements:stage-1_bossroom unless block 0 101 -1 minecraft:air if score .server elements_stage_1_boss_status matches 1 run setblock 0 101 -1 air
@@ -51,7 +51,7 @@ execute as @a[tag=stage-1_boss_spawn,nbt={SelectedItem:{id:"minecraft:blue_ice",
 
 #stats-ende
 execute as @a[tag=stage-1_boss_spawn,nbt={SelectedItem:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}}}] if score .server elements_stage_1_boss_loot_count matches 0 in elements:stage-1_bossroom run tellraw @a[distance=0..] ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Der Rießige Silberfisch wurde gespawnt!","color": "white"}]
-execute as @a[tag=stage-1_boss_spawn,nbt={SelectedItem:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}}}] if score .server elements_stage_1_boss_loot_count matches 0 in elements:stage-1_bossroom run summon silverfish 0 102 0 {PersistenceRequired:1b,Health:256f,Tags:["stage-1_boss"],attributes:[{id:"minecraft:attack_damage",base:3},{id:"minecraft:follow_range",base:50},{id:"minecraft:max_health",base:256},{id:"minecraft:scale",base:7}]}
+execute as @a[tag=stage-1_boss_spawn,nbt={SelectedItem:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}}}] if score .server elements_stage_1_boss_loot_count matches 0 in elements:stage-1_bossroom run summon silverfish 0 102 0 {PersistenceRequired:1b,Health:256f,Tags:["stage-1_boss"],attributes:[{id:"minecraft:attack_damage",base:3},{id:"minecraft:follow_range",base:50},{id:"minecraft:max_health",base:256},{id:"minecraft:scale",base:7}],HandItems:[{id:"barrier",components:{enchantments:{"elements:projectile_invulnerablity":1}}},{}],HandDropChances:[0f,0f],CustomName:'{"text": "Rießiger Silberfisch","color": "yellow"}',DeathLootTable:"minecraft:empty"}
 execute as @a[tag=stage-1_boss_spawn,nbt={SelectedItem:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}}}] if score .server elements_stage_1_boss_loot_count matches 0 run scoreboard players set .server elements_stage_1_boss_melee_timer 40
 execute as @a[tag=stage-1_boss_spawn,nbt={SelectedItem:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}}}] if score .server elements_stage_1_boss_loot_count matches 0 run clear @s blue_ice[custom_model_data=1] 1
 execute as @e[type=minecraft:interaction,tag=stage-1_boss_activate] run data remove entity @s interaction
@@ -61,3 +61,4 @@ tag @a remove stage-1_boss_spawn
 execute in elements:stage-1_bossroom if score .server elements_stage_1_boss_status matches 1 run bossbar set elements:stage-1_boss players @a[distance=0..]
 execute if score .server elements_stage_1_boss_status matches 0 run bossbar set elements:stage-1_boss players
 
+#structure place -20 99 -20

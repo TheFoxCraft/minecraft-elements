@@ -58,6 +58,7 @@ function elements:mana/cooldown
 function elements:spawn/community-hub
 function elements:custom-items/shop/ocean/bossfrucht/main_handling
 function elements:custom-items/element_fishing_rod/crafting_main
+function elements:sonstiges-always/update_sequence/main
 
 #get login
 execute as @a[scores={elements_get-login=1..}] run scoreboard players set @s elements_get-login_cooldown 20

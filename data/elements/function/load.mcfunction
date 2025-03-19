@@ -178,6 +178,8 @@ scoreboard objectives add elements_stats_playtime_min dummy
 scoreboard objectives add elements_stats_playtime_h dummy
 scoreboard objectives add elements_stats_eq dummy
 scoreboard objectives add elements_stats_lootbox dummy
+scoreboard objectives add elements_mystery_lootbox_jackpot dummy
+scoreboard objectives add elements_mystery_lootbox_random dummy
 
 
 scoreboard objectives add elements_stats_stage_1_boss_spawned dummy
@@ -229,6 +231,7 @@ scoreboard objectives add elements_inv_emerald dummy
 scoreboard objectives add elements_inv_ancient_debris dummy
 scoreboard objectives add elements_inv_elytra dummy
 
+scoreboard objectives add elements_update_sequence_status dummy
 scoreboard objectives add elements_titus_level dummy
 scoreboard objectives add elements_titus_clicked dummy
 scoreboard objectives add elements_mystery_clicked dummy
