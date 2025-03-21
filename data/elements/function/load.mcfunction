@@ -180,6 +180,7 @@ scoreboard objectives add elements_stats_eq dummy
 scoreboard objectives add elements_stats_lootbox dummy
 scoreboard objectives add elements_mystery_lootbox_jackpot dummy
 scoreboard objectives add elements_mystery_lootbox_random dummy
+scoreboard objectives add elements_sonstiges_actionbar_pause dummy
 
 
 scoreboard objectives add elements_stats_stage_1_boss_spawned dummy
@@ -615,6 +616,14 @@ scoreboard objectives add elements_custom-items_shop_magisches-wasser_cooldown d
 scoreboard objectives add elements_custom-items_shop_magisches-wasser_damage dummy
 scoreboard objectives add elements_custom-items_shop_magisches-wasser_distance dummy
 scoreboard objectives add elements_custom-items_shop_magisches-wasser_is_block dummy
+scoreboard objectives add elements_custom-items_mystery_tp-schwert_cooldown dummy
+scoreboard objectives add elements_custom-items_mystery_barriere-stab_cooldown dummy
+scoreboard objectives add elements_custom-items_mystery_barriere-stab_particle_x dummy
+scoreboard objectives add elements_custom-items_mystery_barriere-stab_particle_y dummy
+scoreboard objectives add elements_custom-items_mystery_excalibur_cooldown dummy
+scoreboard objectives add elements_custom-items_mystery_excalibur_sword_despawn dummy
+scoreboard objectives add elements_custom-items_mystery_excalibur_sword_random dummy
+scoreboard objectives add elements_custom-items_mystery_zerberster_cooldown dummy
 scoreboard objectives add elements_stage_1_portal_enable dummy
 scoreboard objectives add elements_stage_1_boss_status dummy
 scoreboard objectives add elements_stage_1_boss_loot_count dummy

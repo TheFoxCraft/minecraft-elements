@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "components": {
+              "minecraft:custom_model_data": 1
+            },
+            "items": "blaze_rod"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "elements:custom-items/mystery/barriere_stab"
+    }
+  }
+  

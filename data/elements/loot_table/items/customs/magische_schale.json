@@ -50,7 +50,7 @@
                   {
                     "color": "green",
                     "italic": false,
-                    "text": "Benutzung: "
+                    "text": "Benutzen: "
                   },
                   {
                     "color": "gray",
@@ -58,13 +58,11 @@
                     "text": "Gibt dir Volle Sättigung"
                   }
                 ],
+                
                 {
-                  "text": " "
-                },
-                {
-                  "color": "gray",
+                  "color": "red",
                   "italic": false,
-                  "text": "   20 Mana pro Benutzung"
+                  "text": "(100 Mana)"
                 },
                 {
                   "text": " "

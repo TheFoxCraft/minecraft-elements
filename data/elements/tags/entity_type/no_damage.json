@@ -1,0 +1,18 @@
+{
+    "values": [
+        "marker",
+        "block_display",
+        "text_display",
+        "item_display",
+        "item",
+        "item_frame",
+        "armor_stand",
+        "#boat",
+        "experience_orb",
+        "#impact_projectiles",
+        "interaction",
+        "#elements_retina:minecart",
+        "painting",
+        "tnt"
+    ]
+}

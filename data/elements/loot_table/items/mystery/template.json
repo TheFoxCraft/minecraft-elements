@@ -1,54 +1,65 @@
 {
-    "type": "command",
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:eye_armor_trim_smithing_template",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_name",
-                "name": [
-                  {
-                    "color": "yellow",
-                    "italic": false,
-                    "text": "Platzhalter"
-                  }
-                ]
-              },
-              {
-                "function": "set_lore",
-                "lore": [
-                  {
-                    "text": " "
-                  },
-                  {
-                    "color": "gray",
-                    "italic": false,
-                    "text": "Templates"
-                  },
-                  {
-                    "text": " "
-                  },
-                  {
-                    "bold": true,
-                    "color": "yellow",
-                    "italic": false,
-                    "text": "Common"
-                  }
-                ],
-                "mode": "append"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+  "type": "command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:spire_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:silence_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:bolt_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:vex_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:eye_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

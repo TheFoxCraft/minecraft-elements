@@ -112,6 +112,10 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_boss-frucht_remain 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_hot-lava_cooldown 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_manatrank_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_magisches-wasser_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_mystery_tp-schwert_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_mystery_barriere-stab_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_mystery_excalibur_cooldown 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_fish_caught 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_farm-slots_stage-2_slots 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_farm-slots_stage-2_max-slots 0
@@ -134,7 +138,7 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_maxhealth_old 6
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom_doubleclick_cooldown 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_update_sequence_status 0
-
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_sonstiges_actionbar_pause 0
 
 
 execute as @a[scores={elements_playtime=20}] run scoreboard players operation @s elements_update_sequence_status = .server elements_update_sequence_status

@@ -1,54 +1,87 @@
 {
-    "type": "command",
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:blaze_rod",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_name",
-                "name": [
+  "type": "command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:blaze_rod",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:custom_model_data": 1,
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                },
+                "minecraft:enchantment_glint_override": true
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "dark_purple",
+                  "italic": false,
+                  "text": "Barriere Stab",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                [
                   {
-                    "color": "yellow",
+                    "color": "green",
                     "italic": false,
-                    "text": "Platzhalter"
-                  }
-                ]
-              },
-              {
-                "function": "set_lore",
-                "lore": [
-                  {
-                    "text": " "
+                    "text": "Benutzen: "
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Barriere-Stab"
-                  },
-                  {
-                    "text": " "
-                  },
-                  {
-                    "bold": true,
-                    "color": "yellow",
-                    "italic": false,
-                    "text": "Common"
+                    "text": "Macht den Spieler für"
                   }
                 ],
-                "mode": "append"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "text": " kurze Zeit unverwundbar"
+                },
+                {
+                  "color": "red",
+                  "italic": false,
+                  "text": "(200 Mana)"
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "bold": true,
+                  "color": "dark_purple",
+                  "italic": false,
+                  "text": "Epic"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

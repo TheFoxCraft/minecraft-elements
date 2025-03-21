@@ -23,6 +23,10 @@
     spruce_sapling: Farmslot Stage 2
     written_book: Element Fishing Rod Rätsel Teil 1 | Sticks
     tripwire_hook: Fishing Rod Crafting Hook
+    diamond_sword: TP-Schwert Mystery Loot Table
+    blaze_rod: Barriere-Stab Mystery Loot Table
+    golden_sword: Excalibur Mystery Loot Table
+    iron_sword: Zerberster Mystery Loot Table
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)

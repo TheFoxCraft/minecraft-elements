@@ -16,7 +16,10 @@ execute as @a[scores={elements_custom-items_shop_boss-frucht_cooldown=1..}] run 
 execute as @a[scores={elements_custom-items_shop_hot-lava_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_hot-lava_cooldown 1
 execute as @a[scores={elements_custom-items_shop_manatrank_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_manatrank_cooldown 1
 execute as @a[scores={elements_custom-items_shop_magisches-wasser_cooldown=1..}] run scoreboard players remove @s elements_custom-items_shop_magisches-wasser_cooldown 1
-
+execute as @a[scores={elements_custom-items_mystery_tp-schwert_cooldown=1..}] run scoreboard players remove @s elements_custom-items_mystery_tp-schwert_cooldown 1
+execute as @a[scores={elements_custom-items_mystery_barriere-stab_cooldown=1..}] run scoreboard players remove @s elements_custom-items_mystery_barriere-stab_cooldown 1
+execute as @a[scores={elements_custom-items_mystery_excalibur_cooldown=1..}] run scoreboard players remove @s elements_custom-items_mystery_excalibur_cooldown 1
+execute as @a[scores={elements_custom-items_mystery_zerberster_cooldown=1..}] run scoreboard players remove @s elements_custom-items_mystery_zerberster_cooldown 1
 
 
 #boss-keks

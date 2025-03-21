@@ -1,9 +1,22 @@
-execute as @a[nbt={SelectedItem:{id:"minecraft:stick",components:{"minecraft:custom_model_data":1}}}] run title @s actionbar ["",{"text": "Mana: ","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-count"},"color": "dark_purple"},{"text": "/","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-max"},"color": "dark_purple"}]
-execute as @a[nbt={Inventory:[{id:"minecraft:stick",Slot:-106b,components:{"minecraft:custom_model_data":1}}]}] run title @s actionbar ["",{"text": "Mana: ","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-count"},"color": "dark_purple"},{"text": "/","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-max"},"color": "dark_purple"}]
 
-execute as @a[nbt={SelectedItem:{id:"minecraft:rabbit_stew",components:{"minecraft:custom_model_data":1}}}] run title @s actionbar ["",{"text": "Mana: ","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-count"},"color": "dark_purple"},{"text": "/","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-max"},"color": "dark_purple"}]
-execute as @a[nbt={Inventory:[{id:"minecraft:rabbit_stew",Slot:-106b,components:{"minecraft:custom_model_data":1}}]}] run title @s actionbar ["",{"text": "Mana: ","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-count"},"color": "dark_purple"},{"text": "/","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-max"},"color": "dark_purple"}]
+# show infos for all items
+execute as @a[nbt={SelectedItem:{id:"minecraft:stick",components:{"minecraft:custom_model_data":1}}}] run function elements:mana/show_info
+execute as @a[nbt={Inventory:[{id:"minecraft:stick",Slot:-106b,components:{"minecraft:custom_model_data":1}}]}] run function elements:mana/show_info
 
-execute as @a[nbt={SelectedItem:{id:"minecraft:potion",components:{"minecraft:custom_model_data":11}}}] run title @s actionbar ["",{"text": "Mana: ","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-count"},"color": "dark_purple"},{"text": "/","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-max"},"color": "dark_purple"}]
-execute as @a[nbt={Inventory:[{id:"minecraft:potion",Slot:-106b,components:{"minecraft:custom_model_data":11}}]}] run title @s actionbar ["",{"text": "Mana: ","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-count"},"color": "dark_purple"},{"text": "/","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-max"},"color": "dark_purple"}]
+execute as @a[nbt={SelectedItem:{id:"minecraft:rabbit_stew",components:{"minecraft:custom_model_data":1}}}] run function elements:mana/show_info
+execute as @a[nbt={Inventory:[{id:"minecraft:rabbit_stew",Slot:-106b,components:{"minecraft:custom_model_data":1}}]}] run function elements:mana/show_info
 
+execute as @a[nbt={SelectedItem:{id:"minecraft:potion",components:{"minecraft:custom_model_data":11}}}] run function elements:mana/show_info
+execute as @a[nbt={Inventory:[{id:"minecraft:potion",Slot:-106b,components:{"minecraft:custom_model_data":11}}]}] run function elements:mana/show_info
+
+execute as @a[nbt={SelectedItem:{id:"minecraft:blaze_rod",components:{"minecraft:custom_model_data":1}}}] run function elements:mana/show_info
+execute as @a[nbt={Inventory:[{id:"minecraft:blaze_rod",Slot:-106b,components:{"minecraft:custom_model_data":1}}]}] run function elements:mana/show_info
+
+execute as @a[nbt={SelectedItem:{id:"minecraft:diamond_sword",components:{"minecraft:custom_model_data":1}}}] run function elements:mana/show_info
+execute as @a[nbt={Inventory:[{id:"minecraft:diamond_sword",Slot:-106b,components:{"minecraft:custom_model_data":1}}]}] run function elements:mana/show_info
+
+execute as @a[nbt={SelectedItem:{id:"minecraft:golden_sword",components:{"minecraft:custom_model_data":1}}}] run function elements:mana/show_info
+execute as @a[nbt={Inventory:[{id:"minecraft:golden_sword",Slot:-106b,components:{"minecraft:custom_model_data":1}}]}] run function elements:mana/show_info
+
+execute as @a[nbt={SelectedItem:{id:"minecraft:iron_sword",components:{"minecraft:custom_model_data":1}}}] run function elements:mana/show_info
+execute as @a[nbt={Inventory:[{id:"minecraft:iron_sword",Slot:-106b,components:{"minecraft:custom_model_data":1}}]}] run function elements:mana/show_info

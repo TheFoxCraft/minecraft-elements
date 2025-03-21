@@ -125,7 +125,9 @@ execute in elements:hub positioned 12.50 101.00 -14.5 if entity @a[distance=..10
 #kill adminwand as item
 kill @e[type=item,nbt={Item:{id:"minecraft:stick",count:1,components:{"minecraft:custom_model_data":100}}}]
 
-
+# excalibur clear
+execute as @e[type=item_display,tag=elements_mystery_excalibur_sword] run scoreboard players add @s elements_custom-items_mystery_excalibur_sword_despawn 1
+execute as @e[type=item_display,tag=elements_mystery_excalibur_sword,scores={elements_custom-items_mystery_excalibur_sword_despawn=200..}] run kill @s
 
 
 #dimension-team set
@@ -145,6 +147,8 @@ bossbar set elements:gruppenziel_hub players @a[scores={elements_settings_gruppe
 
 #double-click cooldown
 execute as @a[scores={elements_custom_doubleclick_cooldown=1..}] run scoreboard players remove @s elements_custom_doubleclick_cooldown 1
+#actionbar pause for constant notifications
+execute as @a[scores={elements_sonstiges_actionbar_pause=1..}] run scoreboard players remove @s elements_sonstiges_actionbar_pause 1
 
 
 #execute as @e[type=minecraft:interaction,tag=startquest] at @s on target run tag @s add right
