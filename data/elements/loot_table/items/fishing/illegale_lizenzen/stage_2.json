@@ -1,0 +1,75 @@
+{
+    "type": "command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:paper",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:custom_model_data": 2,
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true
+                  },
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:consumable": {
+                    "consume_seconds": 999999
+                  }
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "color": "yellow",
+                    "italic": false,
+                    "text": "Illegale Lizenz",
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "text": " "
+                  },
+                  {
+                    "color": "gray",
+                    "italic": false,
+                    "text": "Illegale Lizenz für 4 Extra Farmslots"
+                  },
+                  {
+                    "color": "gray",
+                    "italic": false,
+                    "text": "Für Stage 2"
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "bold": true,
+                    "color": "yellow",
+                    "italic": false,
+                    "text": "Common"
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

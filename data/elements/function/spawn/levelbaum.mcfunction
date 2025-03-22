@@ -1,9 +1,8 @@
 #spawning
 
 execute as @e[type=minecraft:interaction,tag=spawn_levelbaum_task] at @s on target run tag @s add spawn_levelbaum_task
-execute as @a[tag=spawn_levelbaum_task,scores={elements_inv_bonemeal=1..}] run scoreboard players add .server elements_spawn_levelbaum_task 1
-execute as @a[tag=spawn_levelbaum_task,scores={elements_inv_bonemeal=1..}] at @s run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 100 2
-execute as @a[tag=spawn_levelbaum_task,scores={elements_inv_bonemeal=1..}] run clear @s bone_meal 1
+execute as @a[tag=spawn_levelbaum_task,scores={elements_inv_bonemeal=1..},nbt={SelectedItem:{id:"minecraft:bone_meal"}}] run scoreboard players add .server elements_spawn_levelbaum_task 1
+execute as @a[tag=spawn_levelbaum_task,scores={elements_inv_bonemeal=1..},nbt={SelectedItem:{id:"minecraft:bone_meal"}}] run clear @s bone_meal 1
 execute as @e[type=minecraft:interaction] at @s if entity @a[tag=spawn_levelbaum_task,distance=..10] run data remove entity @s interaction
 tag @a remove spawn_levelbaum_task
 

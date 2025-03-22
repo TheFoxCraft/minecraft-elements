@@ -45,18 +45,27 @@ execute as @s run scoreboard players set .server elements_abgabe_start_boden2_go
 execute as @s run scoreboard players set .server elements_abgabe_start_boden2_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_start_saeulen_goal 64
 execute as @s run scoreboard players set .server elements_abgabe_start_saeulen_progress 0
-execute as @s run scoreboard players set .server elements_abgabe_shop_titus_goal 64
+execute as @s run scoreboard players set .server elements_abgabe_shop_titus_goal 128
 execute as @s run scoreboard players set .server elements_abgabe_shop_titus_progress 0
-execute as @s run scoreboard players set .server elements_abgabe_shop_clementius_goal 64
+execute as @s run scoreboard players set .server elements_abgabe_shop_clementius_goal 128
 execute as @s run scoreboard players set .server elements_abgabe_shop_clementius_progress 0
+execute as @s run scoreboard players set .server elements_abgabe_shop_mystery_goal 256
+execute as @s run scoreboard players set .server elements_abgabe_shop_mystery_progress 0
+execute as @s run scoreboard players set .server elements_abgabe_shop_leer_goal 256
+execute as @s run scoreboard players set .server elements_abgabe_shop_leer_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_stage_wood_level_goal 10000
 execute as @s run scoreboard players set .server elements_abgabe_stage_wood_level_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_levelbaum_goal 200
 execute as @s run scoreboard players set .server elements_abgabe_other_levelbaum_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_community-hub-main_goal 100000
 execute as @s run scoreboard players set .server elements_abgabe_other_community-hub-main_progress 0
+execute as @s run scoreboard players set .server elements_abgabe_other_angel-teich_goal 200
+execute as @s run scoreboard players set .server elements_abgabe_other_angel-teich_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_recycler_goal 50000
 execute as @s run scoreboard players set .server elements_abgabe_other_recycler_progress 0
+execute as @s run scoreboard players set .server elements_recycler_stats_1 0
+execute as @s run scoreboard players set .server elements_recycler_stats_2 0
+execute as @s run scoreboard players set .server elements_recycler_stats_2_spawn 0
 execute as @s run scoreboard players set .server elements_abgabe_general_abgabe-mode 2
 execute as @s run scoreboard players set .server elements_spawn_shop_leer_timer_tick 0
 execute as @s run scoreboard players set .server elements_spawn_shop_leer_timer-2_tick 0
@@ -88,6 +97,7 @@ execute as @s run scoreboard players set .server elements_uniqueitem_collections
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_wood 0
 execute as @s run scoreboard players set .server elements_update_sequence_status 0
 execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
+
 
 
 execute as @s run scoreboard players set .server elements_leaderboards_id-1_rang_enable 0
@@ -134,6 +144,7 @@ execute as @s run data modify storage elements_leaderboard_id-6 name_5 set value
 execute as @s run data modify storage elements_leaderboard_id-6 name_temp set value "#empty"
 
 execute as @s run tellraw @a {"text": "22/x Spawne Techniker","color": "yellow"}
+execute as @e[type=villager,tag=techniker,predicate=elements:is_in_oceanblock] run item replace entity @s armor.head with glass
 execute as @s in elements:hub run summon villager 0.5 100.00 -16.5 {Invulnerable:1b,Tags:["start_steinmetz","follow"],HandItems:[{id:"minecraft:stone",count:1},{}],CustomName:'{"color":"gray","text":"Steinmetz"}',VillagerData:{level:99,profession:"minecraft:weaponsmith",type:"minecraft:plains"},Offers:{},NoAI:true}
 execute as @s run tellraw @a {"text": "15/x Spawne Fake-Steinmetz","color": "yellow"}
 execute as @s in elements:hub run summon villager 15.5 100.00 10.5 {Invulnerable:1b,NoAI:1b,Tags:["start_clementius","follow"],CustomName:'{"color":"gold","text":"Clementius"}',HandItems:[{id:"minecraft:anvil",count:1},{}],VillagerData:{level:99,profession:"minecraft:cleric",type:"minecraft:taiga"},Offers:{}}

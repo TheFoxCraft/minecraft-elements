@@ -19,7 +19,7 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_eq 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_miningxp_foresting_level 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_miningxp_fishing_level 0
-execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_harvestinglevel 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_miningxp_farming_level 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_maxlevel 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_miningxp_mining_level 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_playtime_h 0
@@ -124,6 +124,9 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_get-name_status 0
 
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_levellost 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_level_erhalten 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stats_level_ausgegeben 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_deathcount 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_villager_stage-2_mana_level 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_villager_stage-2_farm-slots_level 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stage-2_mana_activate_timer_sec 0
@@ -135,7 +138,7 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_mana_item_messstab_cooldown 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_admin_config_interface 1
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_maxhealth 6
-execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_maxhealth_old 6
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_maxhealth_old 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom_doubleclick_cooldown 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_update_sequence_status 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_sonstiges_actionbar_pause 0

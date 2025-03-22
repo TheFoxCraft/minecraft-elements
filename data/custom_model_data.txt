@@ -27,6 +27,7 @@
     blaze_rod: Barriere-Stab Mystery Loot Table
     golden_sword: Excalibur Mystery Loot Table
     iron_sword: Zerberster Mystery Loot Table
+    paper: Illegale Lizenz Stage 1
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -46,6 +47,8 @@
     netherrack: Enderchest Shop Selection
     water_bucket: Enderchest Shop Selection
     stick: Fishing Rod Crafting Sticks
+    structure_void: Fishing get Guardian Trigger
+    paper: Illegale Lizenz Stage 2
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)

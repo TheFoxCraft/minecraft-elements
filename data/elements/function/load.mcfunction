@@ -1,4 +1,4 @@
-tellraw @a {"text": "Das Inoffzielle Minecraft Elements Datapack von TheFoxCraft wurde aktiviert/reloaded!","color": "gold"}
+tellraw @a ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Erfolgreich Neu geladen!"},{"text": " (Credits)","color": "gray","hoverEvent": {"action": "show_text","contents": [{"text": "Ursprüngliches Projekt Und Idee von SparkofPhoenix! Ich, TheFoxCraft, habe hier nur meine Eigene Version von Elements gemacht und stehe in keiner Verbindung mit Spark selbst!"}]}}]
 
 execute in elements:hub run gamerule keepInventory true
 execute in elements:hub run gamerule lavaSourceConversion true
@@ -302,142 +302,6 @@ scoreboard objectives add elements_collections_stats_wood_total minecraft.mined:
 scoreboard objectives add elements_custom-items_fishing_rod_crafting_sticks_cooldown dummy
 
 
-# Vermutlich Unnötig, da einzeles Score reicht
-
-#scoreboard objectives add elements_enderchest_interface_click_collections_back dummy
-#scoreboard objectives add elements_enderchest_interface_click_collections_stone dummy
-#scoreboard objectives add elements_enderchest_interface_click_collections_stone_back dummy
-#scoreboard objectives add elements_enderchest_interface_click_collections_stone_stats dummy
-#scoreboard objectives add elements_enderchest_interface_click_collections_stone_deny dummy
-#scoreboard objectives add elements_enderchest_interface_click_collections_stone_get_1 dummy
-#scoreboard objectives add elements_enderchest_interface_click_collections_stone_get_2 dummy
-#scoreboard objectives add elements_enderchest_interface_click_collections_stone_get_3 dummy
-#scoreboard objectives add elements_enderchest_interface_click_collections_stone_get_4 dummy
-#scoreboard objectives add elements_enderchest_interface_click_collections_stone_get_5 dummy
-#scoreboard objectives add elements_enderchest_interface_click_collections_stone_get_6 dummy
-#scoreboard objectives add elements_enderchest_interface_click_collections_stone_get_7 dummy
-#scoreboard objectives add elements_enderchest_interface_click_collections_stone_get_8 dummy
-#scoreboard objectives add elements_enderchest_interface_click_collections_stone_get_9 dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_oceanblock dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_stoneblock dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_netherblock dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_skyblock dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_hub dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_enderchest dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_stats dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_collections dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_autocompact dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_upgradeschmiede dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_casino dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_settings dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_dimension dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_tp dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_adminsettings dummy
-#scoreboard objectives add elements_enderchest_interface_click_main_shop dummy
-#scoreboard objectives add elements_enderchest_interface_click_enderchest_back dummy
-#scoreboard objectives add elements_enderchest_interface_click_autocompact_back dummy
-#scoreboard objectives add elements_enderchest_interface_click_autocompact_off dummy
-#scoreboard objectives add elements_enderchest_interface_click_autocompact_stone_on dummy
-#scoreboard objectives add elements_enderchest_interface_click_autocompact_holz_on dummy
-#scoreboard objectives add elements_enderchest_interface_click_upgradeschmiede_back dummy
-#scoreboard objectives add elements_enderchest_interface_click_upgradeschmiede_upgrade dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_back dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_stats dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_horse dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_luckywheel dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_einsatz_back dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_einsatz_err dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_einsatz_1 dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_einsatz_2 dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_einsatz_3 dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_einsatz_4 dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_einsatz_5 dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_einsatz_6 dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_einsatz_7 dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_einsatz_8 dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_einsatz_9 dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_horse_finish dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_horse_start_1 dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_horse_start_2 dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_horse_start_3 dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_luckywheel_finish dummy
-#scoreboard objectives add elements_enderchest_interface_click_casino_luckywheel_start dummy
-#scoreboard objectives add elements_enderchest_interface_click_settings_back dummy
-#scoreboard objectives add elements_enderchest_interface_click_settings_tp dummy
-#scoreboard objectives add elements_enderchest_interface_click_settings_energiekern dummy
-#scoreboard objectives add elements_enderchest_interface_click_settings_gruppengoal dummy
-#scoreboard objectives add elements_enderchest_interface_click_adminsettings_back dummy
-#scoreboard objectives add elements_enderchest_interface_click_adminsettings_first-setup dummy
-#scoreboard objectives add elements_enderchest_interface_click_adminsettings_start-story dummy
-#scoreboard objectives add elements_enderchest_interface_click_adminsettings_abgabe-mode dummy
-#scoreboard objectives add elements_enderchest_interface_click_adminsettings_abgabe-wand dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_back dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_ocean dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_stone dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_nether dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_ocean_back dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_stone_back dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_back dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_nether_back dummy
-#
-#scoreboard objectives add elements_enderchest_interface_click_shop_nether_heisse-lava dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_nether_nether-wart dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_nether_quartz dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_nether_blaze-rod dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_nether_enderpearl dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_nether_witherskeleton-skull dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_nether_heal-small dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_nether_heal-big dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_nether_ancient-debris dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_nether_upgrade-template dummy
-#
-#scoreboard objectives add elements_enderchest_interface_click_shop_stone_rettungs-plattform dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_stone_iron dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_stone_copper dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_stone_gold dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_stone_redstone dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_stone_dia dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_stone_leveltrank dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_stone_hastetrank dummy
-#
-#scoreboard objectives add elements_enderchest_interface_click_shop_ocean_magisches-wasser dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_ocean_boss-frucht dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_ocean_water-breathing dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_ocean_lucktrank dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_ocean_emerald dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_ocean_shulkershell dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_ocean_fishingfrucht dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_ocean_miningfrucht dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_ocean_foragingfrucht dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_ocean_farmingfrucht dummy
-#
-#
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_manatrank dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_elytra dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_efficiency dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_sharpness dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_protection dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_mending dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_unbreaking dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_silktouch dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_featherfalling dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_swift-sneak dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_depth-strider dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_aqua-affinity dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_lure dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_sweeping dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_power dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_infinity dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_luck-of-the-sea dummy
-#scoreboard objectives add elements_enderchest_interface_click_shop_sky_loyalty dummy
-#
-#scoreboard objectives add elements_enderchest_interface_click_adminsettings_double-xp_open dummy
-#scoreboard objectives add elements_enderchest_interface_click_adminsettings_double-xp_activate dummy
-#scoreboard objectives add elements_enderchest_interface_click_adminsettings_double-xp_change_time dummy
-#scoreboard objectives add elements_enderchest_interface_click_adminsettings_double-xp_get_time dummy
-
-#ersatz:
 scoreboard objectives add elements_enderchest_interface_clicked dummy
 
 
@@ -469,6 +333,7 @@ scoreboard objectives add elements_data_playerin_netherblock dummy
 scoreboard objectives add elements_choose_dimension dummy
 scoreboard objectives add elements_is-assigned-to-dimension dummy
 scoreboard objectives add elements_update-sign_timer dummy
+#abgaben
 scoreboard objectives add elements_abgabe_start_steinmetz dummy
 scoreboard objectives add elements_abgabe_start_steinmetz_progress dummy
 scoreboard objectives add elements_abgabe_start_steinmetz_goal dummy
@@ -525,6 +390,11 @@ scoreboard objectives add elements_abgabe_other_recycler dummy
 scoreboard objectives add elements_abgabe_other_recycler_progress dummy
 scoreboard objectives add elements_abgabe_other_recycler_goal dummy
 scoreboard objectives add elements_abgabe_other_recycler_abgabe-mode dummy
+scoreboard objectives add elements_abgabe_other_angel-teich dummy
+scoreboard objectives add elements_abgabe_other_angel-teich_progress dummy
+scoreboard objectives add elements_abgabe_other_angel-teich_goal dummy
+scoreboard objectives add elements_abgabe_other_angel-teich_abgabe-mode dummy
+
 scoreboard objectives add elements_abgabe_general_goal dummy
 scoreboard objectives add elements_abgabe_refresh_timer dummy
 scoreboard objectives add elements_abgabe_general_abgabe-mode dummy
@@ -549,6 +419,11 @@ scoreboard objectives add elements_enderchest_shop_stone dummy
 scoreboard objectives add elements_enderchest_shop_sky dummy
 scoreboard objectives add elements_enderchest_shop_nether dummy
 scoreboard objectives add elements_enderchest_stats_addition dummy
+
+# all item cooldowns unnecessary (REPLACE)
+scoreboard objectives add elements_custom-items_item-click_cooldown dummy
+
+
 scoreboard objectives add elements_custom-items_shop_rettungs-plattform_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_rettungs-plattform_damage dummy
 scoreboard objectives add elements_custom-items_shop_rettungs-plattform_cooldown_show dummy
@@ -624,6 +499,9 @@ scoreboard objectives add elements_custom-items_mystery_excalibur_cooldown dummy
 scoreboard objectives add elements_custom-items_mystery_excalibur_sword_despawn dummy
 scoreboard objectives add elements_custom-items_mystery_excalibur_sword_random dummy
 scoreboard objectives add elements_custom-items_mystery_zerberster_cooldown dummy
+
+
+
 scoreboard objectives add elements_stage_1_portal_enable dummy
 scoreboard objectives add elements_stage_1_boss_status dummy
 scoreboard objectives add elements_stage_1_boss_loot_count dummy
@@ -653,6 +531,8 @@ scoreboard objectives add elements_mana_item_messstab_cooldown dummy
 scoreboard objectives add elements_mana_item_magische-schale_cooldown dummy
 scoreboard objectives add elements_recycler_update dummy
 scoreboard objectives add elements_recycler_stats_1 dummy
+scoreboard objectives add elements_recycler_stats_2 dummy
+scoreboard objectives add elements_recycler_stats_2_spawn dummy
 scoreboard objectives add elements_function_timer_1m dummy
 scoreboard objectives add elements_function_timer_10s dummy
 scoreboard objectives add elements_function_timer_5s dummy
@@ -667,6 +547,7 @@ scoreboard objectives add elements_custom-items_lebensfrucht_cooldown dummy
 scoreboard objectives add elements_inv_small_heal_pot dummy
 scoreboard objectives add elements_inv_big_heal_pot dummy
 scoreboard objectives add elements_inv_manatrank dummy
+scoreboard objectives add elements_inv_fish dummy
 scoreboard objectives add elements_custom_doubleclick_cooldown dummy
 scoreboard objectives add leave trigger
 scoreboard objectives add elements_stats_fish_caught dummy
@@ -732,7 +613,7 @@ scoreboard objectives add elements_level_wood_spruce_placed minecraft.used:minec
 
 ##set values at start
 
-execute unless score .server elements_playerid matches 1.. run scoreboard players set .server elements_playerid 1
+execute unless score .server elements_playerid matches 0.. run scoreboard players set .server elements_playerid 0
 execute unless score .server elements_stats_servermaxlevel matches 1.. run scoreboard players set .server elements_stats_servermaxlevel 0
 execute unless score .server elements_config_death_level matches 1.. run scoreboard players set .server elements_config_death_level 5
 execute unless score .server elements_stats_serverlevellost matches 1.. run scoreboard players set .server elements_stats_serverlevellost 0

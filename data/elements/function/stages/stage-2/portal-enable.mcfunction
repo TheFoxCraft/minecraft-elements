@@ -1,5 +1,6 @@
 particle minecraft:smoke ~ ~ ~ 1 1 1 0.01 5000
 tellraw @a [{"text": "Server: ","color": "yellow"},{"text": "Die Stufen des Lebens wurden fusioniert! Das Rätsel zum zweiten Boss wurde gelöst! Das Portal ist geöffnet!","color": "white"}]
+title @a title [{"text": "Portal eröffnet!","color": "green"}]
 kill @s
 kill @n[type=item,nbt={Item:{id:"minecraft:spruce_log"}}]
 kill @n[type=item,nbt={Item:{id:"minecraft:charcoal"}}]

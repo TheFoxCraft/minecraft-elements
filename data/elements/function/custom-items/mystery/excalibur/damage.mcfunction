@@ -1,1 +1,1 @@
-$damage @n[nbt={UUID:$(UUID)}] 200 magic
+$damage @n[nbt={UUID:$(UUID)}] 150 magic

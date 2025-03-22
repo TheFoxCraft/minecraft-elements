@@ -52,6 +52,7 @@ execute as @a store result score @s elements_inv_diamond run clear @s minecraft:
 execute as @a store result score @s elements_inv_emerald run clear @s minecraft:emerald 0
 execute as @a store result score @s elements_inv_ancient_debris run clear @s minecraft:ancient_debris 0
 execute as @a store result score @s elements_inv_elytra run clear @s minecraft:elytra 0
+execute as @a store result score @s elements_inv_fish run clear @s #fishes 0
 
 
 execute as @a if score @s elements_stats_maxlevel < @s elements_mainlevel run scoreboard players operation @s elements_stats_maxlevel = @s elements_mainlevel
@@ -149,6 +150,13 @@ bossbar set elements:gruppenziel_hub players @a[scores={elements_settings_gruppe
 execute as @a[scores={elements_custom_doubleclick_cooldown=1..}] run scoreboard players remove @s elements_custom_doubleclick_cooldown 1
 #actionbar pause for constant notifications
 execute as @a[scores={elements_sonstiges_actionbar_pause=1..}] run scoreboard players remove @s elements_sonstiges_actionbar_pause 1
+
+
+#guardian spawning fishing
+execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] at @s if score .server elements_stage matches ..1 run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_1",Tags:["elements_guardian"],PersistenceRequired:1b}
+execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] at @s if score .server elements_stage matches 2.. run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_2",Tags:["elements_guardian"],PersistenceRequired:1b}
+execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] run kill @s
+
 
 
 #execute as @e[type=minecraft:interaction,tag=startquest] at @s on target run tag @s add right

@@ -1,6 +1,7 @@
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=1]
 execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_enderchest_level_settings=0,elements_admin_config_interface=1}] run scoreboard players set @s elements_enderchest_interface_number 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_enderchest_level_settings=0,elements_admin_config_interface=2..}] run scoreboard players set @s elements_admin_config_interface 1
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_enderchest_level_settings=1,elements_admin_config_interface=1}] run scoreboard players set @s elements_enderchest_interface_number 7
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_enderchest_level_settings=1,elements_admin_config_interface=2..}] run scoreboard players set @s elements_admin_config_interface 1
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
@@ -45,7 +46,7 @@ execute as @a[scores={elements_enderchest_interface_clicked=1}] run function ele
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_admin_config_interface 2
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:experience_bottle",count:1,components:{"minecraft:custom_model_data":1}}}]
-execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1}] run item replace entity @s enderchest.10 with experience_bottle[custom_name='{"color":"gold","text":"Doppelte Level Event","italic": false}',lore=['{"text": "Klicke um das Menü zum Einstellen zu öffnen!","color": "gray","italic": false}'],custom_model_data=1] 1
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1,}] if score .server elements_setup matches 2.. run item replace entity @s enderchest.10 with experience_bottle[custom_name='{"color":"gold","text":"Doppelte Level Event","italic": false}',lore=['{"text": "Klicke um das Menü zum Einstellen zu öffnen!","color": "gray","italic": false}'],custom_model_data=1] 1
 
 
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:ender_pearl[custom_model_data=2]
@@ -54,7 +55,7 @@ execute as @a[scores={elements_enderchest_interface_clicked=1}] run function ele
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_admin_config_interface 3
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:ender_pearl",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1}] run item replace entity @s enderchest.11 with ender_pearl[custom_name='{"color":"gold","text":"Teleporter","italic": false}',lore=['{"text": "Klicke um ein Menü für die Teleporter zu öffnen,","color": "gray","italic": false}','{"text":"falls du selbst das Teleport-Modul noch nicht freigeschaltet hast.","color": "gray","italic": false}'],custom_model_data=2] 1
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1}] if score .server elements_setup matches 2.. run item replace entity @s enderchest.11 with ender_pearl[custom_name='{"color":"gold","text":"Teleporter","italic": false}',lore=['{"text": "Klicke um ein Menü für die Teleporter zu öffnen,","color": "gray","italic": false}','{"text":"falls du selbst das Teleport-Modul noch nicht freigeschaltet hast.","color": "gray","italic": false}'],custom_model_data=2] 1
 
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:crafting_table[custom_model_data=2]
 execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
@@ -62,7 +63,7 @@ execute as @a[scores={elements_enderchest_interface_clicked=1}] run function ele
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_admin_config_interface 4
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:crafting_table",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1}] run item replace entity @s enderchest.12 with crafting_table[custom_name='{"color":"gold","text":"Shops","italic": false}',lore=['{"text": "Klicke um das Menü für das Freischalten der Shops einzustellen","color": "gray","italic": false}'],custom_model_data=2] 1
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1}] if score .server elements_setup matches 2.. run item replace entity @s enderchest.12 with crafting_table[custom_name='{"color":"gold","text":"Shops","italic": false}',lore=['{"text": "Klicke um das Menü für das Freischalten der Shops einzustellen","color": "gray","italic": false}'],custom_model_data=2] 1
 
 
 
@@ -94,6 +95,7 @@ execute if score .server elements_setup_temp matches 1 if score .server elements
 execute if score .server elements_setup_temp matches 1 run scoreboard players set .server elements_setup_temp 0
 
 
+## Start Story
 
 execute if score .server elements_setup matches 2 run scoreboard players add .server elements_setup_timer 1
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 40 in elements:hub positioned 0 101 0 run spreadplayers ~ ~ 1 10 under 101 false @a
@@ -118,29 +120,32 @@ execute if score .server elements_setup matches 2 if score .server elements_setu
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 900 as @e[tag=start_mystery] at @s run particle minecraft:portal ~ ~0.5 ~ 0.3 0.5 0.3 3 10000 force @a
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 940 as @e[tag=start_mystery] at @s run tp ~ ~-30 ~ 
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 945 as @e[tag=start_mystery] at @s run kill @s
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 970 run tellraw @a ["",{"text": "Steinmetz: ","color": "yellow"},{"text": "Sorry Spieler, ich verlasse euch auch, aber ich komme zurück um euch zu helfen, wenn die Gefahr vorbei ist!"}]
+execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 970 run tellraw @a ["",{"text": "Steinmetz: ","color": "yellow"},{"text": "Sorry Leute, ich verlasse euch auch, aber ich komme zurück um euch zu helfen, wenn die Gefahr vorbei ist, versprochen!"}]
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1000 as @e[tag=start_steinmetz] at @s run particle minecraft:portal ~ ~0.5 ~ 0.3 0.5 0.3 3 10000 force @a
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1040 as @e[tag=start_steinmetz] at @s run tp ~ ~-30 ~ 
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1045 as @e[tag=start_steinmetz] at @s run kill @s
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1100 run tellraw @a ["",{"text": "Warden: ","color": "yellow"},{"text": "Hahaha! Jetzt seid ihr komplett auf Euch Allein gestellt!"}]
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1180 run tellraw @a ["",{"text": "Warden: ","color": "yellow"},{"text": "Ich werde den Energiekern an mich nehmen, ihr werdet ihn nie wieder sehen!"}]
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1270 run tellraw @a ["",{"text": "Warden: ","color": "yellow"},{"text": "Los! Kommt und räumt den Laden leer!"}]
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1220..1320 in elements:hub run summon allay 0 70 0 {NoAI:true,Invulnerable:true,Tags:["start_allay","start_itemsteal"]}
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1330 in elements:hub run spreadplayers 0 0 3 25 under 101 false @e[tag=start_allay]
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1330 as @e[tag=start_allay] at @s run particle minecraft:portal ~ ~ ~ 0.3 0.3 0.3 0 100 force @a
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1335 as @e[tag=start_allay] run data modify entity @s NoAI set value false
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1220..1320 in elements:hub run summon fox 0 70 0 {NoAI:true,Invulnerable:true,active_effects:[{id:"minecraft:speed",amplifier:1,duration:-1,show_particles:0b}],Tags:["start_fox","start_itemsteal"]}
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1350 in elements:hub run spreadplayers 0 0 3 25 under 101 false @e[tag=start_fox]
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1350 as @e[tag=start_fox] at @s run particle minecraft:portal ~ ~ ~ 0.3 0.3 0.3 0 100 force @a
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1355 as @e[tag=start_fox] run data modify entity @s NoAI set value false
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1900 run tellraw @a ["",{"text": "Warden: ","color": "yellow"},{"text": "So, jetzt wurden all eure Special Items geklaut! Mal sehen wie ihr ohne sie zurechtkommt!"}]
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1950 at @e[tag=unique_item_item] run particle minecraft:large_smoke ~ ~ ~ 0.2 0.2 0.2 0 50
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1950 run kill @e[tag=unique_item_total]
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2000 run tellraw @a ["",{"text": "Warden: ","color": "yellow"},{"text": "Füchse, Allays ihr geht jetzt besser..."}]
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2000..2202 as @e[tag=start_itemsteal,limit=1] at @s run particle minecraft:portal ~ ~ ~ 0.3 0.3 0.3 0 500 force @a
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2000..2202 as @e[tag=start_itemsteal,limit=1] at @s run tp @s ~ ~-50 ~
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2000..2202 as @e[tag=start_itemsteal,limit=1] at @s run kill @s
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2250 run tellraw @a ["",{"text": "Warden: ","color": "yellow"},{"text": "Soo, denn jetzt jagen wir den Laden hoch!"}]
+
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1270 run tellraw @a ["",{"text": "Warden: ","color": "yellow"},{"text": "Los! Kommt und räumt den Laden leer!"}]
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1220..1320 in elements:hub run summon allay 0 70 0 {NoAI:true,Invulnerable:true,Tags:["start_allay","start_itemsteal"]}
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1330 in elements:hub run spreadplayers 0 0 3 25 under 101 false @e[tag=start_allay]
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1330 as @e[tag=start_allay] at @s run particle minecraft:portal ~ ~ ~ 0.3 0.3 0.3 0 100 force @a
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1335 as @e[tag=start_allay] run data modify entity @s NoAI set value false
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1220..1320 in elements:hub run summon fox 0 70 0 {NoAI:true,Invulnerable:true,active_effects:[{id:"minecraft:speed",amplifier:1,duration:-1,show_particles:0b}],Tags:["start_fox","start_itemsteal"]}
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1350 in elements:hub run spreadplayers 0 0 3 25 under 101 false @e[tag=start_fox]
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1350 as @e[tag=start_fox] at @s run particle minecraft:portal ~ ~ ~ 0.3 0.3 0.3 0 100 force @a
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1355 as @e[tag=start_fox] run data modify entity @s NoAI set value false
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1900 run tellraw @a ["",{"text": "Warden: ","color": "yellow"},{"text": "So, jetzt wurden all eure Special Items geklaut! Mal sehen wie ihr ohne sie zurechtkommt!"}]
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1950 at @e[tag=unique_item_item] run particle minecraft:large_smoke ~ ~ ~ 0.2 0.2 0.2 0 50
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1950 run kill @e[tag=unique_item_total]
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2000 run tellraw @a ["",{"text": "Warden: ","color": "yellow"},{"text": "Füchse, Allays ihr geht jetzt besser..."}]
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2000..2202 as @e[tag=start_itemsteal,limit=1] at @s run particle minecraft:portal ~ ~ ~ 0.3 0.3 0.3 0 500 force @a
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2000..2202 as @e[tag=start_itemsteal,limit=1] at @s run tp @s ~ ~-50 ~
+#execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2000..2202 as @e[tag=start_itemsteal,limit=1] at @s run kill @s
+
+execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 1270 run scoreboard players set .server elements_setup_timer 2250
+execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2250 run tellraw @a ["",{"text": "Warden: ","color": "yellow"},{"text": "Soo, aber jetzt jagen wir den Laden hier erstmal in die Luft!"}]
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2200..2300 in elements:hub run summon creeper 0 70 0 {NoAI:true,Invulnerable:true,Tags:["start_creeper"],ExplosionRadius:0b}
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2350 in elements:hub run spreadplayers 0 0 3 20 under 101 false @e[tag=start_creeper]
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2350 as @e[tag=start_creeper] at @s run particle minecraft:portal ~ ~ ~ 0.3 0.3 0.3 0 100 force @a
@@ -160,7 +165,7 @@ execute if score .server elements_setup matches 2 if score .server elements_setu
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2670 as @e[tag=start_warden] at @s run particle minecraft:portal ~ ~0.5 ~ 0.3 0.5 0.3 3 10000 force @a
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2710 as @e[tag=start_warden] at @s run tp @s 0 ~-50 0
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2720 as @e[tag=start_warden] run kill @s
-execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2900 run tellraw @a ["",{"text": "Steinmetz: ","color": "yellow"},{"text": "Ich glaub die sind jetzt weg!"}]
+execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 2900 run tellraw @a ["",{"text": "Steinmetz: ","color": "yellow"},{"text": "Psst.. Ich glaub die sind jetzt weg"}]
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 3000 run tellraw @a ["",{"text": "Steinmetz: ","color": "yellow"},{"text": "Aber auch wenn die Gefahr jetzt weg ist, braucht ihr nicht meinen, dass ich, so wie der HUB jetzt aussieht, zurückkomme!"}]
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 3100 run tellraw @a ["",{"text": "Steinmetz: ","color": "yellow"},{"text": "Repariert erstmal meinen Platz und dann sehen wir weiter!"}]
 execute if score .server elements_setup matches 2 if score .server elements_setup_timer matches 3200 run tellraw @a ["",{"text": "Server: ","color": "yellow"},{"text": "Ihr könnt jetzt eure Klasse wählen, um aufzubauen, was der Warden zerstört hat."}]

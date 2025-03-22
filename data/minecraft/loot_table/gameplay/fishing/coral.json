@@ -1,0 +1,65 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "tube_coral",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "brain_coral",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "bubble_coral",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "fire_coral",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "horn_coral",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "tube_coral_fan",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "brain_coral_fan",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "bubble_coral_fan",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "fire_coral_fan",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "horn_coral_fan",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "sea_pickle",
+                    "weight": 3
+                }
+            ]
+        }
+    ]
+}

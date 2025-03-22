@@ -1,0 +1,21 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "elements:items/fishing/illegale_lizenzen/stage_1",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "elements:items/fishing/illegale_lizenzen/stage_2",
+                    "weight": 2
+                }
+            ]
+            
+        }
+    ]
+}

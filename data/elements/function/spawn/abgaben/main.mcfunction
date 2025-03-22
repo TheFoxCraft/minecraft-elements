@@ -41,6 +41,9 @@ execute if score .server elements_abgabe_other_levelbaum matches 1 run function 
 #community-hub
 execute if score .server elements_abgabe_other_community-hub-main matches 3 run function elements:spawn/abgaben/community-hub/spawning
 execute if score .server elements_abgabe_other_community-hub-main matches 1 run function elements:spawn/abgaben/community-hub/running
+#community-hub angelteich
+execute if score .server elements_abgabe_other_angel-teich matches 3 run function elements:spawn/abgaben/angel_teich/spawning
+execute if score .server elements_abgabe_other_angel-teich matches 1 run function elements:spawn/abgaben/angel_teich/running
 #community-hub recyler
 execute if score .server elements_abgabe_other_recycler matches 3 run function elements:spawn/abgaben/recycler/spawning
 execute if score .server elements_abgabe_other_recycler matches 1 run function elements:spawn/abgaben/recycler/running

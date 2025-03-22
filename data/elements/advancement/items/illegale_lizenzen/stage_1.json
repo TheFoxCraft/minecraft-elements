@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "components": {
+              "minecraft:custom_model_data": 1
+            },
+            "items": "paper"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "elements:custom-items/illegale_lizenzen/stage_1"
+    }
+  }
+  

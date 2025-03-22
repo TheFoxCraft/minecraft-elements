@@ -6,7 +6,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:name_tag"
+          "name": "minecraft:name_tag",
+          "weight": 100
         },
         {
           "type": "minecraft:item",
@@ -18,7 +19,8 @@
                 "minecraft:max_stack_size": 64
               }
             }
-          ]
+          ],
+          "weight": 100
         },
         {
           "type": "minecraft:item",
@@ -38,7 +40,8 @@
               "options": "#minecraft:on_random_loot"
             }
           ],
-          "name": "minecraft:bow"
+          "name": "minecraft:bow",
+          "weight": 100
         },
         {
           "type": "minecraft:item",
@@ -58,7 +61,8 @@
               "options": "#minecraft:on_random_loot"
             }
           ],
-          "name": "minecraft:fishing_rod"
+          "name": "minecraft:fishing_rod",
+          "weight": 100
         },
         {
           "type": "minecraft:item",
@@ -69,11 +73,49 @@
               "options": "#minecraft:on_random_loot"
             }
           ],
-          "name": "minecraft:book"
+          "name": "minecraft:book",
+          "weight": 100
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:nautilus_shell"
+          "name": "minecraft:nautilus_shell",
+          "weight": 100
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:gameplay/fishing/coral",
+          "weight": 50
+        },
+        {
+          "type": "loot_table",
+          "value": "elements:items/customs/lebensfrucht",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "structure_void",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_model_data": 2
+              }
+              
+            },
+            {
+              "function": "set_name",
+              "name": "[Utility] Get Guardian Trigger"
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                "Wenn du dieses Item ins Inv bekommen hast,",
+                "sag bitte einem Admin bescheid!"
+              ],
+              "mode": "append"
+            }
+          ],
+          "weight": 5
         }
       ],
       "rolls": 1.0

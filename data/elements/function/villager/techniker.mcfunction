@@ -153,9 +153,12 @@ execute as @a[scores={elements_techniker_level=19,elements_techniker_clicked=1}]
 execute as @a[scores={elements_techniker_message_cooldown=1..}] run scoreboard players remove @s elements_techniker_message_cooldown 1
 
 # Zitate
-execute as @a[scores={elements_techniker_random_type=1..2}] store result score @s elements_techniker_random_message run random value 1..41
-execute as @a[scores={elements_techniker_random_type=1..2}] run function elements:villager/techniker_sprueche/zitate
+execute as @a[scores={elements_techniker_random_type=1}] store result score @s elements_techniker_random_message run random value 1..141
+execute as @a[scores={elements_techniker_random_type=1}] run function elements:villager/techniker_sprueche/zitate
 # Witzige Sprüche
+execute as @a[scores={elements_techniker_random_type=2}] store result score @s elements_techniker_random_message run random value 1..40
+execute as @a[scores={elements_techniker_random_type=2}] run function elements:villager/techniker_sprueche/lustige_sprueche
+# Random Fakten
 execute as @a[scores={elements_techniker_random_type=3}] store result score @s elements_techniker_random_message run random value 1..40
 execute as @a[scores={elements_techniker_random_type=3}] run function elements:villager/techniker_sprueche/lustige_sprueche
 

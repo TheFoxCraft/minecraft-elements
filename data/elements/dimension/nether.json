@@ -9,7 +9,7 @@
       "layers": [
         {
           "block": "minecraft:lava",
-          "height": 100
+          "height": 164
         }
       ],
       "structure_overrides": []

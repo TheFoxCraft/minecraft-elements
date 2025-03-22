@@ -26,3 +26,9 @@ execute as @a[scores={elements_custom-items_mystery_zerberster_cooldown=1..}] ru
 execute as @a[scores={elements_custom-items_boss-keks_stage-1_cooldown=1..}] run scoreboard players remove @s elements_custom-items_boss-keks_stage-1_cooldown 1
 execute as @a[scores={elements_custom-items_boss-keks_stage-2_cooldown=1..}] run scoreboard players remove @s elements_custom-items_boss-keks_stage-2_cooldown 1
 execute as @a[scores={elements_custom-items_boss-keks_stage-3_cooldown=1..}] run scoreboard players remove @s elements_custom-items_boss-keks_stage-3_cooldown 1
+
+
+
+#replaced:
+
+execute as @a[scores={elements_custom-items_item-click_cooldown=1..}] run scoreboard players remove @s elements_custom-items_item-click_cooldown 1
