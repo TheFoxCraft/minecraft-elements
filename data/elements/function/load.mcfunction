@@ -181,6 +181,7 @@ scoreboard objectives add elements_stats_lootbox dummy
 scoreboard objectives add elements_mystery_lootbox_jackpot dummy
 scoreboard objectives add elements_mystery_lootbox_random dummy
 scoreboard objectives add elements_sonstiges_actionbar_pause dummy
+scoreboard objectives add elements_schrotthaendler_clicked dummy
 
 
 scoreboard objectives add elements_stats_stage_1_boss_spawned dummy

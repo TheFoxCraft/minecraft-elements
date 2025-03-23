@@ -25,6 +25,7 @@ execute if score .server elements_function_timer_1s matches 20.. run scoreboard 
 function elements:sonstiges-always/sonstiges
 function elements:sonstiges-always/level {elements_level_stone:10,elements_level_wood:1}
 function elements:villager/techniker
+function elements:villager/schrotthaendler
 function elements:sonstiges-always/firstlogin
 function elements:villager/clementius
 function elements:sonstiges-always/autocompactor

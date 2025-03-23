@@ -3,6 +3,11 @@ execute as @e[type=armor_stand,tag=spawner_techniker] at @s run summon text_disp
 execute as @e[type=armor_stand,tag=spawner_techniker] at @s run summon villager ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:["techniker","follow"],CustomName:'{"color":"blue","text":"Techniker"}',VillagerData:{level:99,profession:"minecraft:toolsmith",type:"minecraft:plains"},Offers:{}}
 execute as @e[type=armor_stand,tag=spawner_techniker] at @s run kill @s
 
+execute as @e[type=armor_stand,tag=spawner_schrotthaendler] at @s run summon interaction ~ ~ ~ {width:0.8f,height:2f,response:1b,Tags:["leer_shop_all","schrotthaendler"]}
+execute as @e[type=armor_stand,tag=spawner_schrotthaendler] at @s run summon text_display ~ ~2 ~ {billboard:"center",Tags:["leer_shop_all","schrotthaendler"],text:'{"text":"Schrotthändler","color":"blue"}',alignment:"center"}
+execute as @e[type=armor_stand,tag=spawner_schrotthaendler] at @s run summon villager ~ ~ ~ {NoAI:1b,Invulnerable:1b,CanPickUpLoot:0b,Tags:["leer_shop_all","leer_shop_schrotthaendler","schrotthaendler","follow"],CustomName:'{"color":"gold","text":"Schrotthändler"}',VillagerData:{level:99,profession:"minecraft:weaponsmith",type:"minecraft:savanna"},Offers:{}}
+execute as @e[type=armor_stand,tag=spawner_schrotthaendler] at @s run kill @s
+
 execute as @e[type=armor_stand,tag=spawner_clementius] at @s run summon interaction ~ ~ ~ {width:0.8f,height:2f,response:1b,Tags:["clementius"]}
 execute as @e[type=armor_stand,tag=spawner_clementius] at @s run summon text_display ~ ~2 ~ {billboard:"center",Tags:["clementius"],text:'{"text":"Clementius","color":"gold"}',alignment:"center"}
 execute as @e[type=armor_stand,tag=spawner_clementius] at @s run summon villager ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:["clementius","follow"],HandItems:[{id:"minecraft:anvil",count:1},{}],VillagerData:{level:99,profession:"minecraft:cleric",type:"minecraft:taiga"},Offers:{}}

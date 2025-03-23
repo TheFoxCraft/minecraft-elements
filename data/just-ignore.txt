@@ -10,3 +10,5 @@ Customs: 500-599
 Stage-2_Farm-Slots: 600-699
 
 
+Schrotthändler: 700-799
+
