@@ -107,12 +107,16 @@ execute as @a[tag=!elements_boss_spectator] run scoreboard players reset @s leav
 execute as @a[scores={elements_get-name_status=0}] run function elements:sonstiges/get_name/get_name with entity @s
 
 #leaderboards-spawning
+execute as @e[tag=spawner_leaderboard_id-0] at @s run function elements:spawn/leaderboards/0_server-stats/spawning
 execute as @e[tag=spawner_leaderboard_id-1] at @s run function elements:spawn/leaderboards/1_level-verloren/spawning
 execute as @e[tag=spawner_leaderboard_id-2] at @s run function elements:spawn/leaderboards/2_death-count/spawning
 execute as @e[tag=spawner_leaderboard_id-3] at @s run function elements:spawn/leaderboards/3_mining-level/spawning
 execute as @e[tag=spawner_leaderboard_id-4] at @s run function elements:spawn/leaderboards/4_foraging-level/spawning
 execute as @e[tag=spawner_leaderboard_id-5] at @s run function elements:spawn/leaderboards/5_farming-level/spawning
 execute as @e[tag=spawner_leaderboard_id-6] at @s run function elements:spawn/leaderboards/6_fishing-level/spawning
+execute as @e[tag=spawner_leaderboard_id-7] at @s run function elements:spawn/leaderboards/7_hoechst_level/spawning
+execute as @e[tag=spawner_leaderboard_id-8] at @s run function elements:spawn/leaderboards/8_ausgegebene-level/spawning
+execute as @e[tag=spawner_leaderboard_id-9] at @s run function elements:spawn/leaderboards/9_erhaltene-level/spawning
 
 
 

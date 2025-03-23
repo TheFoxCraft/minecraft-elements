@@ -100,48 +100,8 @@ execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpo
 
 
 
-execute as @s run scoreboard players set .server elements_leaderboards_id-1_rang_enable 0
-execute as @s run data modify storage elements_leaderboard_id-1 name_1 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-1 name_2 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-1 name_3 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-1 name_4 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-1 name_5 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-1 name_temp set value "#empty"
-execute as @s run scoreboard players set .server elements_leaderboards_id-2_rang_enable 0
-execute as @s run data modify storage elements_leaderboard_id-2 name_1 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-2 name_2 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-2 name_3 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-2 name_4 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-2 name_5 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-2 name_temp set value "#empty"
-execute as @s run scoreboard players set .server elements_leaderboards_id-3_rang_enable 0
-execute as @s run data modify storage elements_leaderboard_id-3 name_1 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-3 name_2 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-3 name_3 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-3 name_4 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-3 name_5 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-3 name_temp set value "#empty"
-execute as @s run scoreboard players set .server elements_leaderboards_id-4_rang_enable 0
-execute as @s run data modify storage elements_leaderboard_id-4 name_1 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-4 name_2 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-4 name_3 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-4 name_4 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-4 name_5 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-4 name_temp set value "#empty"
-execute as @s run scoreboard players set .server elements_leaderboards_id-5_rang_enable 0
-execute as @s run data modify storage elements_leaderboard_id-5 name_1 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-5 name_2 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-5 name_3 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-5 name_4 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-5 name_5 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-5 name_temp set value "#empty"
-execute as @s run scoreboard players set .server elements_leaderboards_id-6_rang_enable 0
-execute as @s run data modify storage elements_leaderboard_id-6 name_1 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-6 name_2 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-6 name_3 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-6 name_4 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-6 name_5 set value "#empty"
-execute as @s run data modify storage elements_leaderboard_id-6 name_temp set value "#empty"
+function elements:spawn/leaderboards/reset-all
+
 
 execute as @s run tellraw @a {"text": "22/x Spawne Techniker","color": "yellow"}
 execute as @e[type=villager,tag=techniker,predicate=elements:is_in_oceanblock] run item replace entity @s armor.head with glass

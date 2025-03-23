@@ -83,7 +83,7 @@ execute if score .server elements_stats_playtime_min matches 60.. run scoreboard
 
 
 
-execute as @a at @s run particle minecraft:cherry_leaves 0.53 110.00 0.56 20 1 20 0 10 normal @a[nbt={Dimension:"elements:hub"}]
+execute in elements:hub run particle minecraft:cherry_leaves 0.53 110.00 0.56 20 1 20 0 10 normal @a[nbt={Dimension:"elements:hub"}]
 execute in elements:ocean positioned 0.50 61.00 0.50 run effect give @a[distance=..30] water_breathing 10 0 true
 
 #effects

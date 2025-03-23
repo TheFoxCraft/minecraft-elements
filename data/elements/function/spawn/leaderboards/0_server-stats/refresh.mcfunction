@@ -1,0 +1,6 @@
+execute as @e[tag=leaderboard_id-0_rang1,type=text_display] run data merge entity @s {text:'[{"text": "Level Verloren","color": "white"},{"text": " - ","color": "white"},{"color": "white","score": {"name": ".server","objective": "elements_stats_serverlevellost"}}]'}
+execute as @e[tag=leaderboard_id-0_rang2,type=text_display] run data merge entity @s {text:'[{"text": "Tode","color": "white"},{"text": " - ","color": "white"},{"color": "white","score": {"name": ".server","objective": "elements_stats_serverdeath"}}]'}
+execute as @e[tag=leaderboard_id-0_rang3,type=text_display] run data merge entity @s {text:'[{"text": "Lootboxen Geöffnet","color": "white"},{"text": " - ","color": "white"},{"color": "white","score": {"name": ".server","objective": "elements_stats_lootbox"}}]'}
+execute as @e[tag=leaderboard_id-0_rang4,type=text_display] run data merge entity @s {text:'[{"text": "Fische Geangelt","color": "white"},{"text": " - ","color": "white"},{"color": "white","score": {"name": ".server","objective": "elements_stats_fish_caught"}}]'}
+execute as @e[tag=leaderboard_id-0_rang5,type=text_display] run data merge entity @s {text:'[{"text": "Bosse Besiegt","color": "white"},{"text": " - ","color": "white"},{"color": "white","score": {"name": ".server","objective": "elements_stats_stage_0_boss_killed"}}]'}
+

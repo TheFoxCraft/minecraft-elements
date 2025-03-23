@@ -589,7 +589,12 @@ scoreboard objectives add elements_leaderboards_id-5_rang_enable dummy
 scoreboard objectives add elements_leaderboards_id-5_rang dummy
 scoreboard objectives add elements_leaderboards_id-6_rang_enable dummy
 scoreboard objectives add elements_leaderboards_id-6_rang dummy
-
+scoreboard objectives add elements_leaderboards_id-7_rang_enable dummy
+scoreboard objectives add elements_leaderboards_id-7_rang dummy
+scoreboard objectives add elements_leaderboards_id-8_rang_enable dummy
+scoreboard objectives add elements_leaderboards_id-8_rang dummy
+scoreboard objectives add elements_leaderboards_id-9_rang_enable dummy
+scoreboard objectives add elements_leaderboards_id-9_rang dummy
 
 #farmslots
 scoreboard objectives add elements_farm-slots_stage-2_placed minecraft.used:spruce_sapling

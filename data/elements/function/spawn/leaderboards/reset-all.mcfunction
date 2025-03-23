@@ -4,3 +4,6 @@ function elements:spawn/leaderboards/3_mining-level/reset
 function elements:spawn/leaderboards/4_foraging-level/reset
 function elements:spawn/leaderboards/5_farming-level/reset
 function elements:spawn/leaderboards/6_fishing-level/reset
+function elements:spawn/leaderboards/7_hoechst_level/reset
+function elements:spawn/leaderboards/8_ausgegebene-level/reset
+function elements:spawn/leaderboards/9_erhaltene-level/reset

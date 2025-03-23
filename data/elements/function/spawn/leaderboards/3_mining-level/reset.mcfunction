@@ -4,4 +4,4 @@ data modify storage elements_leaderboard_id-3 name_2 set value "#empty"
 data modify storage elements_leaderboard_id-3 name_3 set value "#empty"
 data modify storage elements_leaderboard_id-3 name_4 set value "#empty"
 data modify storage elements_leaderboard_id-3 name_5 set value "#empty"
-scoreboard players set #empty elements_stats_levellost -1
+scoreboard players set #empty elements_miningxp_mining_level -1
