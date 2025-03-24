@@ -107,6 +107,11 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_water-breathing_timer_sec 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_water-breathing_timer_tick 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_water-breathing_cooldown 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_luck-potion_enable 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_luck-potion_timer_h 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_luck-potion_timer_min 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_luck-potion_timer_sec 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_luck-potion_timer_tick 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_boss-frucht_cooldown 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_boss-frucht_current_stage 1
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_custom-items_shop_boss-frucht_remain 0

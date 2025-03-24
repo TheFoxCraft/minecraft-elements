@@ -181,7 +181,22 @@ scoreboard objectives add elements_stats_lootbox dummy
 scoreboard objectives add elements_mystery_lootbox_jackpot dummy
 scoreboard objectives add elements_mystery_lootbox_random dummy
 scoreboard objectives add elements_sonstiges_actionbar_pause dummy
+
+
+
+
+## Schrotthändler
 scoreboard objectives add elements_schrotthaendler_clicked dummy
+scoreboard objectives add elements_inv_token_common dummy
+scoreboard objectives add elements_inv_token_rare dummy
+scoreboard objectives add elements_inv_token_epic dummy
+scoreboard objectives add elements_inv_token_legendary dummy
+scoreboard objectives add elements_inv_token_mythic dummy
+#sold items
+scoreboard objectives add elements_schrotthaendler_item_gravity-stone_rare dummy
+scoreboard objectives add elements_schrotthaendler_item_lebensfrucht dummy
+scoreboard objectives add elements_schrotthaendler_item_photon_rare dummy
+
 
 
 scoreboard objectives add elements_stats_stage_1_boss_spawned dummy
@@ -232,6 +247,7 @@ scoreboard objectives add elements_inv_diamond dummy
 scoreboard objectives add elements_inv_emerald dummy
 scoreboard objectives add elements_inv_ancient_debris dummy
 scoreboard objectives add elements_inv_elytra dummy
+
 
 scoreboard objectives add elements_update_sequence_status dummy
 scoreboard objectives add elements_titus_level dummy
@@ -484,6 +500,11 @@ scoreboard objectives add elements_custom-items_shop_water-breathing_timer_h dum
 scoreboard objectives add elements_custom-items_shop_water-breathing_timer_min dummy
 scoreboard objectives add elements_custom-items_shop_water-breathing_timer_sec dummy
 scoreboard objectives add elements_custom-items_shop_water-breathing_timer_tick dummy
+scoreboard objectives add elements_custom-items_shop_luck-potion_enable dummy
+scoreboard objectives add elements_custom-items_shop_luck-potion_timer_h dummy
+scoreboard objectives add elements_custom-items_shop_luck-potion_timer_min dummy
+scoreboard objectives add elements_custom-items_shop_luck-potion_timer_sec dummy
+scoreboard objectives add elements_custom-items_shop_luck-potion_timer_tick dummy
 scoreboard objectives add elements_custom-items_shop_hot-lava_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_hot-lava_damage_queue dummy
 scoreboard objectives add elements_custom-items_shop_hot-lava_damage dummy

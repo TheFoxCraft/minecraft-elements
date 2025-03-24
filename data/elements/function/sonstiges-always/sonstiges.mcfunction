@@ -53,6 +53,7 @@ execute as @a store result score @s elements_inv_emerald run clear @s minecraft:
 execute as @a store result score @s elements_inv_ancient_debris run clear @s minecraft:ancient_debris 0
 execute as @a store result score @s elements_inv_elytra run clear @s minecraft:elytra 0
 execute as @a store result score @s elements_inv_fish run clear @s #fishes 0
+execute as @a store result score @s elements_inv_token_common run clear @s iron_ingot[custom_model_data=1] 0
 
 
 execute as @a if score @s elements_stats_maxlevel < @s elements_mainlevel run scoreboard players operation @s elements_stats_maxlevel = @s elements_mainlevel
@@ -89,6 +90,7 @@ execute in elements:ocean positioned 0.50 61.00 0.50 run effect give @a[distance
 #effects
 execute as @a[scores={elements_custom-items_shop_hastetrank_enable=1}] run effect give @s haste 1 2 true
 execute as @a[scores={elements_custom-items_shop_water-breathing_enable=1}] run effect give @s water_breathing 1 0 true
+execute as @a[scores={elements_custom-items_shop_luck-potion_enable=1}] run effect give @s luck 1 2 true
 
 
 #calc stats

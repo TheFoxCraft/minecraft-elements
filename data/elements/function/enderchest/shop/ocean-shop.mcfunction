@@ -61,6 +61,20 @@ execute as @a[scores={elements_enderchest_interface_number=9}] run item modify e
 
 
 
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=16]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/ocean/luck-potion
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run xp add @s -500 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":16}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.11 loot elements:items/shops/ocean/luck-potion
+execute as @a[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.11 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Luck Potion [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 16 }]
+
+
+
 execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:shulker_shell[custom_model_data=2]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]

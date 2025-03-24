@@ -47,6 +47,7 @@ function elements:custom-items/mining-frucht/timer
 function elements:custom-items/foraging-frucht/timer
 function elements:custom-items/farming-frucht/timer
 function elements:custom-items/fishing-frucht/timer
+function elements:custom-items/shop/ocean/luck-potion/timer
 function elements:custom-items/shop/stone/leveltrank/timer
 function elements:custom-items/shop/stone/hastetrank/timer
 function elements:custom-items/shop/ocean/water-breathing/timer
