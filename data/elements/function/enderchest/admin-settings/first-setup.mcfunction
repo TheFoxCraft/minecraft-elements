@@ -25,6 +25,7 @@ execute as @s run scoreboard players set .server elements_casino_stats_game_luck
 execute as @s run scoreboard players set .server elements_spawn_energiekern 0
 execute as @s run scoreboard players set .server elements_stats_servermaxlevel 0
 execute as @s run scoreboard players set .server elements_config_death_level 5
+execute as @s run scoreboard players set .server elements_config_death_level_datenspeicher 15
 execute as @s run scoreboard players set .server elements_stats_serverlevellost 0
 execute as @s run scoreboard players set .server elements_stats_serverdeath 0
 execute as @s run scoreboard players set .server elements_stats_playtime_h 0
@@ -93,8 +94,11 @@ execute as @s run scoreboard players set .server elements_double-xp-event_timer_
 execute as @s run scoreboard players set .server elements_double-xp-event_timer_max_min 0
 execute as @s run scoreboard players set .server elements_double-xp-event_timer_max_sec 0
 execute as @s run scoreboard players set .server elements_admin_config_interface 1
+#uniques
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_stone 0
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_wood 0
+execute as @s run scoreboard players set .server elements_uniqueitem_other_datenspeicher 0
+
 execute as @s run scoreboard players set .server elements_update_sequence_status 0
 execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
 
@@ -117,5 +121,45 @@ execute as @s run function elements:spawn/leaderboards/reset-all
 execute as @s run tellraw @a {"text": "19/x Starte Leaderboards","color": "yellow"}
 execute as @s run tellraw @a {"text": "Minecraft Elements Setup erfolgreich abgeschlossen!","color": "green"}
 execute as @s in elements:hub run tp @a 0 101 0
+
+#summon unique item placeholders
+
+execute in elements:hub run summon marker 28.5 101.5 24.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker 28.5 101.5 18.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker 28.5 101.5 12.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker 28.5 101.5 6.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker 28.5 101.5 -5.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker 28.5 101.5 -11.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker 28.5 101.5 -17.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker 28.5 101.5 -23.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+
+execute in elements:hub run summon marker -27.5 101.5 24.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -27.5 101.5 18.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -27.5 101.5 12.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -27.5 101.5 6.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -27.5 101.5 -5.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -27.5 101.5 -11.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -27.5 101.5 -17.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -27.5 101.5 -23.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+
+execute in elements:hub run summon marker 24.5 101.5 28.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker 18.5 101.5 28.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker 12.5 101.5 28.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker 6.5 101.5 28.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -5.5 101.5 28.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -11.5 101.5 28.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -17.5 101.5 28.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -23.5 101.5 28.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+
+execute in elements:hub run summon marker 24.5 101.5 -27.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker 18.5 101.5 -27.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker 12.5 101.5 -27.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker 6.5 101.5 -27.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -5.5 101.5 -27.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -11.5 101.5 -27.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -17.5 101.5 -27.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+execute in elements:hub run summon marker -23.5 101.5 -27.5 {Tags:["elements_unique_placeholder",elements_unique_placeholder_empty]}
+
+
 execute as @s run scoreboard players set .server elements_setup 1
 execute as @s run scoreboard players set @s elements_enderchest_interface_clicked 0

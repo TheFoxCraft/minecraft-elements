@@ -7,7 +7,7 @@
           {
             "type": "item",
             "weight": 1,
-            "name": "minecraft:potion",
+            "name": "minecraft:recovery_compass",
             "functions": [
               {
                 "function": "set_count",
@@ -16,20 +16,7 @@
               {
                 "function": "set_components",
                 "components": {
-                  "minecraft:custom_model_data": 15,
-                  "minecraft:hide_additional_tooltip": {},
-                  "minecraft:max_stack_size": 64,
-                  "minecraft:potion_contents": {
-                    "potion": "luck"
-                  },
-                  "minecraft:food": {
-                    "nutrition": 0,
-                    "saturation": 0,
-                    "can_always_eat": true
-                  },
-                  "minecraft:consumable": {
-                    "consume_seconds": 999999
-                  }
+                  "minecraft:custom_model_data": 1
                 }
               },
               {
@@ -37,9 +24,9 @@
                 "name": [
                   {
                     "bold": true,
-                    "color": "blue",
+                    "color": "gold",
                     "italic": false,
-                    "text": "Luck Potion"
+                    "text": "Datenspeicher"
                   }
                 ]
               },
@@ -49,21 +36,24 @@
                   {
                     "text": " "
                   },
+                  {
+                    "color": "gray",
+                    "italic": false,
+                    "text": "Speichert deine Level."
+                  },
+                  {
+                    "text": " "
+                  },
                   [
-                    {
-                      "color": "gray",
-                      "italic": false,
-                      "text": "Verbrauchen: "
-                    },
                     {
                       "color": "green",
                       "italic": false,
-                      "text": "Glück 50 für 1 Stunde "
+                      "text": "Fähigkeit: "
                     },
                     {
                       "color": "gray",
                       "italic": false,
-                      "text": "[Stackable]"
+                      "text": "Verliere nur 85% statt 95% deiner Level beim Tod"
                     }
                   ],
                   {
@@ -71,9 +61,9 @@
                   },
                   {
                     "bold": true,
-                    "color": "blue",
+                    "color": "gold",
                     "italic": false,
-                    "text": "Rare"
+                    "text": "Legendary"
                   }
                 ],
                 "mode": "append"

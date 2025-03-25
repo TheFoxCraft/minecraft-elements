@@ -42,6 +42,19 @@ execute as @a[scores={elements_enderchest_interface_number=9}] run loot replace 
 execute as @a[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.3 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "10x Manatrank [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data","value":12}]
 
 
+execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:warped_fungus_on_a_stick[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run loot give @s loot elements:items/shops/sky/sauger
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..}] run xp add @s -500 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+kill @e[type=item,nbt={Item:{id:"minecraft:warped_fungus_on_a_stick",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.4 loot elements:items/shops/sky/sauger
+execute as @a[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.4 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Sauger [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data","value":2}]
+
+
 execute as @a[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:elytra[custom_model_data=2]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..9999}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..9999}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
@@ -64,7 +77,7 @@ execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..}] run xp add @s -200 levels
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.9 with enchanted_book[custom_name='{"color":"yellow","text":"Effizienz [200 Level]","italic": false}',custom_model_data=2] 1
+execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.9 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.efficiency","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=2] 1
 
 
 

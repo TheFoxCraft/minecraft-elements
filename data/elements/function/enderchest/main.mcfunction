@@ -189,7 +189,7 @@ execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playso
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_number 8
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:recovery_compass",count:1,components:{"minecraft:custom_model_data":1}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:recovery_compass",count:1,components:{"minecraft:custom_model_data":2}}}]
 execute as @a[scores={elements_enderchest_level_settings=0,elements_enderchest_interface_number=1,elements_rank_admin=1}] run item replace entity @s enderchest.18 with recovery_compass[custom_name='{"color":"light_purple","text":"Admin-Settings","italic": false}',custom_model_data=2] 1
 
 #Shop -9

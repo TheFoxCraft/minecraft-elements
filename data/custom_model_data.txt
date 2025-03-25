@@ -29,6 +29,8 @@
     iron_sword: Zerberster Mystery Loot Table
     paper: Illegale Lizenz Stage 1
     iron_ingot: Token Common
+    warped_fungus_on_a_stick: Sauger | Sky Shop
+    recovery_compass: Unique | Datenspeicher
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -50,6 +52,7 @@
     stick: Fishing Rod Crafting Sticks
     structure_void: Fishing get Guardian Trigger
     paper: Illegale Lizenz Stage 2
+    warped_fungus_on_a_stick: Sauger | Sky Shop Buying
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)

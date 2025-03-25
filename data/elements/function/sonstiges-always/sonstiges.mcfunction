@@ -90,7 +90,7 @@ execute in elements:ocean positioned 0.50 61.00 0.50 run effect give @a[distance
 #effects
 execute as @a[scores={elements_custom-items_shop_hastetrank_enable=1}] run effect give @s haste 1 2 true
 execute as @a[scores={elements_custom-items_shop_water-breathing_enable=1}] run effect give @s water_breathing 1 0 true
-execute as @a[scores={elements_custom-items_shop_luck-potion_enable=1}] run effect give @s luck 1 2 true
+execute as @a[scores={elements_custom-items_shop_luck-potion_enable=1}] run effect give @s luck 1 49 true
 
 
 #calc stats
@@ -159,6 +159,10 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,compone
 execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] at @s if score .server elements_stage matches 2.. run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_2",Tags:["elements_guardian"],PersistenceRequired:1b}
 execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] run kill @s
 
+
+#sauger workaround
+execute as @a[scores={elements_custom-items_shop_sauger_click=1..}] run function elements:custom-items/shop/sky/sauger/trigger
+execute as @a[scores={elements_custom-items_shop_sauger_click=1..}] run scoreboard players remove @s elements_custom-items_shop_sauger_click 1
 
 
 #execute as @e[type=minecraft:interaction,tag=startquest] at @s on target run tag @s add right

@@ -231,6 +231,7 @@ scoreboard objectives add elements_miningxp_fishing_nextlevel dummy
 scoreboard objectives add elements_miningxp_fishing_loot dummy
 
 scoreboard objectives add elements_config_death_level dummy
+scoreboard objectives add elements_config_death_level_datenspeicher dummy
 scoreboard objectives add elements_death_level dummy
 scoreboard objectives add elements_fixed dummy
 scoreboard objectives add elements_fixed-value_1 dummy
@@ -326,8 +327,8 @@ scoreboard objectives add elements_enderchest_interface_clicked dummy
 #collections
 scoreboard objectives add elements_uniqueitem_collections_stone dummy
 scoreboard objectives add elements_uniqueitem_collections_wood dummy
-
-
+#other
+scoreboard objectives add elements_uniqueitem_other_datenspeicher dummy
 
 scoreboard objectives add elements_spawn_energiekern dummy
 scoreboard objectives add elements_spawn_energiekern_manage_rotation dummy
@@ -508,6 +509,8 @@ scoreboard objectives add elements_custom-items_shop_luck-potion_timer_tick dumm
 scoreboard objectives add elements_custom-items_shop_hot-lava_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_hot-lava_damage_queue dummy
 scoreboard objectives add elements_custom-items_shop_hot-lava_damage dummy
+scoreboard objectives add elements_custom-items_shop_sauger_damage dummy
+scoreboard objectives add elements_custom-items_shop_sauger_click minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add elements_custom-items_shop_manatrank_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_magisches-wasser_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_magisches-wasser_damage dummy
