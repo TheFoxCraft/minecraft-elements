@@ -34,7 +34,7 @@
                 "function": "set_lore",
                 "lore": [
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "color": "gray",
@@ -42,13 +42,13 @@
                     "text": "Hält alles Fest"
                   },
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Rare"
+                    "translate": "elements.main.rarities.rare"
                   }
                 ],
                 "mode": "append"

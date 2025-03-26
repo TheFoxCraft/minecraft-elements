@@ -26,7 +26,7 @@ execute as @a[tag=recycler_abgabe,scores={elements_inv_compressed_wood=64..},nbt
 
 #other
 execute as @e[type=minecraft:interaction] at @s if entity @a[tag=recycler_abgabe] run data remove entity @s interaction
-execute as @a[tag=!recycler_abgabe_success,tag=recycler_abgabe] run tellraw @s ["",{"text": "Server: ","color": "yellow"},{"text":"Du kannst hier Komprimiertes Material abgeben. Halte dazu das abzugegebene Material in der Hand. Du brauchst mindestens 64."}]
+execute as @a[tag=!recycler_abgabe_success,tag=recycler_abgabe] run tellraw @s ["",{"translate":"elements.main.other.server","color": "yellow"},{"text":"Du kannst hier Komprimiertes Material abgeben. Halte dazu das abzugegebene Material in der Hand. Du brauchst mindestens 64."}]
 execute as @a[tag=!recycler_abgabe_success,tag=recycler_abgabe] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 
 execute as @a[tag=recycler_abgabe_success] at @s run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 100 2

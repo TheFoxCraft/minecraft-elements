@@ -52,7 +52,7 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 [
                   {
@@ -77,7 +77,7 @@
                   "text": "(1.500 Mana)"
                 },
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 [
                   {
@@ -92,7 +92,7 @@
                     "color": "light_purple",
                     "italic": false,
                     "obfuscated": false,
-                    "text": "Mythic"
+                    "translate": "elements.main.rarities.mythic"
                   },
                   {
                     "bold": true,

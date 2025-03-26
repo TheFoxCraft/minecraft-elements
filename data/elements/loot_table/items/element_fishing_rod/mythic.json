@@ -50,7 +50,7 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 [
                   {
@@ -65,7 +65,7 @@
                   }
                 ],
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 [
                   {
@@ -79,7 +79,7 @@
                     "bold": true,
                     "color": "light_purple",
                     "italic": false,
-                    "text": "Mythic",
+                    "translate": "elements.main.rarities.mythic",
                     "obfuscated": false
                   },
                   {
@@ -91,7 +91,7 @@
                   }
                 ],
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 }
               ],
               "mode": "append"

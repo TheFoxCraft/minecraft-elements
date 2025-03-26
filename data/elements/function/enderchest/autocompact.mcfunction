@@ -48,21 +48,21 @@ execute as @a[scores={elements_enderchest_level_autocompact=2..,elements_enderch
 
 clear @a minecraft:black_stained_glass_pane[custom_model_data=1]
 kill @e[type=item,nbt={Item:{id:"minecraft:black_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":1}}}]
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.0 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.1 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.2 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.3 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.4 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.5 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.6 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.7 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.8 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.18 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.19 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.20 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.21 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.23 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.24 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.25 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.26 with black_stained_glass_pane[custom_name='{"text":" "}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.0 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.1 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.2 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.3 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.4 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.5 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.6 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.7 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.8 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.18 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.19 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.20 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.21 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.23 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.24 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.25 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @a[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.26 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 

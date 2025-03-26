@@ -53,7 +53,7 @@
                     "bold": true,
                     "color": "gold",
                     "italic": false,
-                    "text": "Photon"
+                    "translate": "elements.item.customs.photon.name"
                   }
                 ],
                 "target": "item_name"
@@ -62,55 +62,55 @@
                 "function": "set_lore",
                 "lore": [
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "In der Hand: "
+                    "translate": "elements.main.other.in_hand"
                   },
                   [
                     {
                       "color": "gray",
                       "italic": false,
-                      "text": " Geschwindigkeit: "
+                      "translate": "elements.item.customs.photon.description_1"
                     },
                     {
                       "color": "green",
                       "italic": false,
-                      "text": "+300%"
+                      "translate": "elements.item.customs.photon.legendary.speed"
                     }
                   ],
                   {
                     "color": "dark_gray",
                     "italic": false,
-                    "text": "  (Betrifft auch Schwimmen)"
+                    "translate": "elements.item.customs.photon.description_2"
                   },
                   [
                     {
                       "color": "gray",
                       "italic": false,
-                      "text": " Geschwindigkeits-Effizienz: "
+                      "translate": "elements.item.customs.photon.description_3"
                     },
                     {
                       "color": "green",
                       "italic": false,
-                      "text": "100%"
+                      "translate": "elements.item.customs.photon.description_4"
                     }
                   ],
                   {
                     "color": "dark_gray",
                     "italic": false,
-                    "text": "  (Entfernt Slowness bei Soulsand etc.)"
+                    "translate": "elements.item.customs.photon.description_5"
                   },
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "bold": true,
                     "color": "gold",
                     "italic": false,
-                    "text": "Legendary"
+                    "translate": "elements.main.rarities.legendary"
                   }
                 ],
                 "mode": "append"

@@ -1,7 +1,7 @@
 
 execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=3}] store success score @s elements_enderchest_interface_clicked run clear @s oak_hanging_sign[custom_model_data=11]
 execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_clicked=1}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Deine aktuell gefarmten Items: ",{"score":{"name":"@s","objective":"elements_collections_stats_wood_total"},"color":"gold"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Deine aktuell gefarmten Items: ",{"score":{"name":"@s","objective":"elements_collections_stats_wood_total"},"color":"gold"}]
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 
@@ -19,99 +19,99 @@ execute as @a[scores={elements_enderchest_interface_number=6,elements_collection
 # collect not possible
 execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=3}] store success score @s elements_enderchest_interface_clicked run clear @s red_stained_glass_pane[custom_model_data=10]
 execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_clicked=1}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Du hast noch nicht genug gefarmt! Aktuell: ",{"score":{"name":"@s","objective":"elements_collections_stats_wood_total"},"color":"gold"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Du hast noch nicht genug gefarmt! Aktuell: ",{"score":{"name":"@s","objective":"elements_collections_stats_wood_total"},"color":"gold"}]
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=3}] store success score @s elements_enderchest_interface_clicked run clear @s lime_stained_glass_pane[custom_model_data=10]
 execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @a[scores={elements_enderchest_interface_clicked=1}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Du hast die Belohnung bereits abgeholt!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Du hast die Belohnung bereits abgeholt!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 # collect 1
 execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=3}] store success score @s elements_enderchest_interface_clicked run clear @s orange_stained_glass_pane[custom_model_data=10]
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..-1}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..-1}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..-1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=0}] at @s run playsound minecraft:entity.player.levelup master @s
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=0}] run xp add @s 50 levels
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=0}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Belohnung eingefordert!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=0}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Belohnung eingefordert!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=0}] run scoreboard players set @s elements_collections_wood_collect 1
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 # collect 2
 execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=3}] store success score @s elements_enderchest_interface_clicked run clear @s orange_stained_glass_pane[custom_model_data=11]
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..0}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..0}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=1}] at @s run playsound minecraft:entity.player.levelup master @s
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=1}] run xp add @s 200 levels
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=1}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Belohnung eingefordert!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=1}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Belohnung eingefordert!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=1}] run scoreboard players set @s elements_collections_wood_collect 2
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 # collect 3
 execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=3}] store success score @s elements_enderchest_interface_clicked run clear @s orange_stained_glass_pane[custom_model_data=12]
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..1}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..1}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=2}] at @s run playsound minecraft:entity.player.levelup master @s
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=2}] run xp add @s 500 levels
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=2}] run loot give @s loot elements:items/customs/lebensfrucht
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=2}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Belohnung eingefordert!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=2}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Belohnung eingefordert!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=2}] run scoreboard players set @s elements_collections_wood_collect 3
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 # collect 4
 execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=3}] store success score @s elements_enderchest_interface_clicked run clear @s orange_stained_glass_pane[custom_model_data=13]
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..2}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..2}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..2}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=3}] at @s run playsound minecraft:entity.player.levelup master @s
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=3}] run xp add @s 1000 levels
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=3}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Belohnung eingefordert!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=3}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Belohnung eingefordert!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=3}] run scoreboard players set @s elements_collections_wood_collect 4
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 # collect 5
 execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=3}] store success score @s elements_enderchest_interface_clicked run clear @s orange_stained_glass_pane[custom_model_data=14]
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..3}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..3}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..3}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=4}] at @s run playsound minecraft:entity.player.levelup master @s
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=4}] run xp add @s 2000 levels
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=4}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Belohnung eingefordert!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=4}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Belohnung eingefordert!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=4}] run scoreboard players set @s elements_collections_wood_collect 5
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 # collect 6
 execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=3}] store success score @s elements_enderchest_interface_clicked run clear @s orange_stained_glass_pane[custom_model_data=15]
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..4}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..4}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..4}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=5}] at @s run playsound minecraft:entity.player.levelup master @s
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=5}] run xp add @s 5000 levels
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=5}] run loot give @s loot elements:items/customs/lebensfrucht
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=5}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Belohnung eingefordert!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=5}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Belohnung eingefordert!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=5}] run scoreboard players set @s elements_collections_wood_collect 6
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 # collect 7
 execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=3}] store success score @s elements_enderchest_interface_clicked run clear @s orange_stained_glass_pane[custom_model_data=16]
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..5}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..5}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..5}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=6}] at @s run playsound minecraft:entity.player.levelup master @s
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=6}] run xp add @s 10000 levels
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=6}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Belohnung eingefordert!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=6}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Belohnung eingefordert!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=6}] run scoreboard players set @s elements_collections_wood_collect 7
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 # collect 8
 execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=3}] store success score @s elements_enderchest_interface_clicked run clear @s orange_stained_glass_pane[custom_model_data=17]
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..6}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..6}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..6}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=7}] at @s run playsound minecraft:entity.player.levelup master @s
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=7}] run xp add @s 25000 levels
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=7}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Belohnung eingefordert!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=7}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Belohnung eingefordert!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=7}] run scoreboard players set @s elements_collections_wood_collect 8
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 # collect 9
 execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=3}] store success score @s elements_enderchest_interface_clicked run clear @s orange_stained_glass_pane[custom_model_data=18]
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..7}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..7}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Du musst erst die vorherigen Belohnungen abholen!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=..7}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=8}] at @s run playsound minecraft:entity.player.levelup master @s
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=8}] run xp add @s 50000 levels
@@ -119,7 +119,7 @@ execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collectio
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=8}] if score .server elements_uniqueitem_collections_wood matches 1 run loot give @s loot elements:items/customs/lebensfrucht
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=8}] if score .server elements_uniqueitem_collections_wood matches 0 run scoreboard players set @s elements_uniqueitem_collections_wood 1
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=8}] if score .server elements_uniqueitem_collections_wood matches 0 run scoreboard players set .server elements_uniqueitem_collections_wood 1
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=8}] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}," Belohnung eingefordert!"]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=8}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Belohnung eingefordert!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_wood_collect=8}] run scoreboard players set @s elements_collections_wood_collect 9
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 

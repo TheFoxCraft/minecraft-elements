@@ -1,20 +1,12 @@
 execute as @s at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s in elements:hub run place template elements:hub/01_start_repaired -30 93 -30
-execute as @s run tellraw @a {"text": "01/x Spawne HUB","color": "yellow"}
 execute as @s in elements:nether run place template elements:spawn/nether -23 94 -23
-execute as @s run tellraw @a {"text": "02/x Spawne Nether-Spawn","color": "yellow"}
 execute as @s in elements:stone run place template elements:spawn/stone -22 97 -22
-execute as @s run tellraw @a {"text": "03/x Spawne Stone-Spawn ","color": "yellow"}
 execute as @s in elements:sky run place template elements:spawn/sky -20 94 -20
-execute as @s run tellraw @a {"text": "04/x Spawne Sky-Spawn","color": "yellow"}
 execute as @s in elements:ocean run place template elements:spawn/ocean -20 56 -20
-execute as @s run tellraw @a {"text": "05/x Spawne Ocean-Spawn","color": "yellow"}
 execute as @s in elements:stage-1_bossroom run place template elements:boss_room/stage_1 -20 99 -20
-execute as @s run tellraw @a {"text": "05/x Spawne Boss-Room Stage 1","color": "yellow"}
 execute as @s in elements:stage-2_bossroom run place template elements:boss_room/stage_2 -20 98 -20
-execute as @s run tellraw @a {"text": "05/x Spawne Boss-Room Stage 2","color": "yellow"}
 execute as @s run scoreboard players set .server elements_stage 0
-execute as @s run tellraw @a {"text": "06/x Setze Scores","color": "yellow"}
 execute as @s run scoreboard players set .server elements_stats_lootbox 0
 execute as @s run scoreboard players set .server elements_casino_stats_lvlinvestiert 0
 execute as @s run scoreboard players set .server elements_casino_stats_lvlgewonnen 0
@@ -95,7 +87,7 @@ execute as @s run scoreboard players set .server elements_double-xp-event_timer_
 execute as @s run scoreboard players set .server elements_double-xp-event_timer_max_sec 0
 execute as @s run scoreboard players set .server elements_admin_config_interface 1
 #uniques
-execute as @s run scoreboard players set .server elements_uniqueitem_collections_stone 0
+execute as @s run scoreboard players set .server elements_uniqueitem_collections_bruchstueck_der_eismauer 0
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_wood 0
 execute as @s run scoreboard players set .server elements_uniqueitem_other_datenspeicher 0
 
@@ -107,18 +99,13 @@ execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpo
 function elements:spawn/leaderboards/reset-all
 
 
-execute as @s run tellraw @a {"text": "22/x Spawne Techniker","color": "yellow"}
+
 execute as @e[type=villager,tag=techniker,predicate=elements:is_in_oceanblock] run item replace entity @s armor.head with glass
 execute as @s in elements:hub run summon villager 0.5 100.00 -16.5 {Invulnerable:1b,Tags:["start_steinmetz","follow"],HandItems:[{id:"minecraft:stone",count:1},{}],CustomName:'{"color":"gray","text":"Steinmetz"}',VillagerData:{level:99,profession:"minecraft:weaponsmith",type:"minecraft:plains"},Offers:{},NoAI:true}
-execute as @s run tellraw @a {"text": "15/x Spawne Fake-Steinmetz","color": "yellow"}
-execute as @s in elements:hub run summon villager 15.5 100.00 10.5 {Invulnerable:1b,NoAI:1b,Tags:["start_clementius","follow"],CustomName:'{"color":"gold","text":"Clementius"}',HandItems:[{id:"minecraft:anvil",count:1},{}],VillagerData:{level:99,profession:"minecraft:cleric",type:"minecraft:taiga"},Offers:{}}
-execute as @s run tellraw @a {"text": "16/x Spawne Fake-Clementius","color": "yellow"}
-execute as @s in elements:hub run summon villager -14.5 100.00 10.5 {Invulnerable:1b,NoAI:1b,Tags:["start_titus","follow"],CustomName:'{"color":"gold","text":"Titus"}',HandItems:[{id:"minecraft:smithing_table",count:1},{}],VillagerData:{level:99,profession:"minecraft:weaponsmith",type:"minecraft:taiga"},Offers:{}}
-execute as @s run tellraw @a {"text": "17/x Spawne Fake-Titus","color": "yellow"}
-execute as @s in elements:hub run summon villager -14.5 100.00 -9.5 {Invulnerable:1b,NoAI:1b,Tags:["start_mystery","follow"],CustomName:'{"color":"gold","text":"Mystery"}',HandItems:[{id:"minecraft:totem_of_undying",count:1},{}],VillagerData:{level:99,profession:"minecraft:cleric",type:"minecraft:swamp"},Offers:{}}
-execute as @s run tellraw @a {"text": "18/x Spawne Fake-Mystery","color": "yellow"}
+execute as @s in elements:hub run summon villager 15.5 100.00 10.5 {Invulnerable:1b,NoAI:1b,Tags:["start_clementius","follow"],CustomName:'{"color":"gold","translate":"elements.villager.clementius.name"}',HandItems:[{id:"minecraft:anvil",count:1},{}],VillagerData:{level:99,profession:"minecraft:cleric",type:"minecraft:taiga"},Offers:{}}
+execute as @s in elements:hub run summon villager -14.5 100.00 10.5 {Invulnerable:1b,NoAI:1b,Tags:["start_titus","follow"],CustomName:'{"color":"gold","translate":"elements.villager.titus.name"}',HandItems:[{id:"minecraft:smithing_table",count:1},{}],VillagerData:{level:99,profession:"minecraft:weaponsmith",type:"minecraft:taiga"},Offers:{}}
+execute as @s in elements:hub run summon villager -14.5 100.00 -9.5 {Invulnerable:1b,NoAI:1b,Tags:["start_mystery","follow"],CustomName:'{"color":"gold","translate":"elements.villager.mystery.name"}',HandItems:[{id:"minecraft:totem_of_undying",count:1},{}],VillagerData:{level:99,profession:"minecraft:cleric",type:"minecraft:swamp"},Offers:{}}
 execute as @s run function elements:spawn/leaderboards/reset-all
-execute as @s run tellraw @a {"text": "19/x Starte Leaderboards","color": "yellow"}
 execute as @s run tellraw @a {"text": "Minecraft Elements Setup erfolgreich abgeschlossen!","color": "green"}
 execute as @s in elements:hub run tp @a 0 101 0
 

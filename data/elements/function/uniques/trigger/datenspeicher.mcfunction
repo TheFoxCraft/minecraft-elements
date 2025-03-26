@@ -1,10 +1,11 @@
-tellraw @a ["",{"text": "Server: ","color": "yellow"},{"selector": "@s"},{"text":" hat ein "},{"text": "EINZIGARTIGES LEGENDÄRES ITEM","color": "gold","italic": true,"bold": true},{"text": " gefunden und dafür "},{"text": "25.000 Level","color": "green"},{"text": " bekommen!"}]
+tellraw @a ["",{"translate":"elements.main.other.server","color": "yellow"},{"selector": "@s"},{"text":" hat ein "},{"text": "EINZIGARTIGES LEGENDÄRES ITEM","color": "gold","italic": true,"bold": true},{"text": " gefunden und dafür "},{"text": "25.000 Level","color": "green"},{"text": " bekommen!"}]
 execute in elements:hub run loot spawn 0 101 0 loot elements:items/uniques/other/datenspeicher
 execute in elements:hub positioned 0 101 0 run data modify entity @n[type=item,nbt={Item:{id:"minecraft:recovery_compass",components:{"minecraft:custom_model_data":1}}}] Owner set from entity @s UUID
 execute in elements:hub positioned 0 101 0 run data modify entity @n[type=item,nbt={Item:{id:"minecraft:recovery_compass",components:{"minecraft:custom_model_data":1}}}] Invulnerable set value 1b
-tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Aus Sicherheitsgründen findest du dein Item im HUB! (i)","hoverEvent": {"action": "show_text","contents": {"text": "Um zu verhindern, dass das Item im Void verloren geht, wurde es stattdessen im HUB in der Mitte gespawnt! (Keine Sorge, nur du kannst es einsammeln, aber Achtung, despawnen geht schon)"}}}]
+tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Aus Sicherheitsgründen findest du dein Item im HUB! (i)","hoverEvent": {"action": "show_text","contents": {"text": "Um zu verhindern, dass das Item im Void verloren geht, wurde es stattdessen im HUB in der Mitte gespawnt! (Keine Sorge, nur du kannst es einsammeln, aber Achtung, despawnen geht schon)"}}}]
 
 xp add @s 25000 levels
+execute at @s run playsound ui.toast.challenge_complete master @s
 
 scoreboard players set @s elements_uniqueitem_other_datenspeicher 1
 scoreboard players set .server elements_uniqueitem_other_datenspeicher 1

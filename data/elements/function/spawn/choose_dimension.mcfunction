@@ -9,7 +9,7 @@ execute as @a[scores={just-ignore=1005}] run tellraw @s ["",{"text":"Bist du dir
 
 
 execute as @a[scores={elements_choose_dimension=1..4}] run scoreboard players set @s elements_choose_dimension 0
-execute as @a[scores={just-ignore=1006}] run tellraw @s ["",{"text": "Server: ","color": "yellow"},{"text": "Du hast dich zurückgesetzt! Du kannst jetzt deine Dimension neu auswählen!"}]
+execute as @a[scores={just-ignore=1006}] run tellraw @s ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Du hast dich zurückgesetzt! Du kannst jetzt deine Dimension neu auswählen!"}]
 execute as @a[scores={just-ignore=1006}] run function elements:sonstiges/total-reset
 
 

@@ -4,7 +4,7 @@
 execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distance=0..] run kill @e[tag=stage-1_boss]
 execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distance=0..] run scoreboard players set .server elements_custom-items_shop_boss-frucht_remain 0
 execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distance=0..] run scoreboard players set @a elements_stage_1_boss_spawn-player 0
-execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distance=0..] run tellraw @a[distance=0..,tag=elements_boss_spectator] ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Bosskampf Beendet! Zuschauermodus verlassen."}]
+execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distance=0..] run tellraw @a[distance=0..,tag=elements_boss_spectator] ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Bosskampf Beendet! Zuschauermodus verlassen."}]
 execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distance=0..] run place template elements:boss_room/stage_1 -20 99 -20
 execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distance=0..] run scoreboard players set @a[distance=0..,tag=elements_boss_spectator] leave 2
 execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distance=0..] run scoreboard players set .server elements_stage_1_boss_status 0
@@ -21,8 +21,8 @@ execute if score .server elements_stage_1_boss_melee_timer matches 0 store resul
 
 
 execute if score .server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] in elements:stage-1_bossroom run place template elements:boss_room/stage_1 -20 99 -20
-execute if score .server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] in elements:stage-1_bossroom run tellraw @a[distance=0..] ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Der Rießige Silberfisch wurde besiegt!","color": "white"}]
-execute if score .server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] in elements:stage-1_bossroom run tellraw @a[distance=0..,tag=elements_boss_spectator] ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Bosskampf Beendet! Zuschauermodus verlassen."}]
+execute if score .server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] in elements:stage-1_bossroom run tellraw @a[distance=0..] ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Der Rießige Silberfisch wurde besiegt!","color": "white"}]
+execute if score .server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] in elements:stage-1_bossroom run tellraw @a[distance=0..,tag=elements_boss_spectator] ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Bosskampf Beendet! Zuschauermodus verlassen."}]
 execute if score .server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] in elements:stage-1_bossroom run scoreboard players set @a[distance=0..,tag=elements_boss_spectator] leave 2
 execute if score .server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] run scoreboard players add .server elements_stats_stage_0_boss_killed 1
 execute if score .server elements_stage_1_boss_status matches 1 unless entity @e[tag=stage-1_boss] run scoreboard players add .server elements_stats_stage_1_boss_killed 1

@@ -30,7 +30,7 @@
                   "bold": true,
                   "color": "light_purple",
                   "italic": false,
-                  "text": "Gravity-Stone"
+                  "translate": "elements.item.customs.gravity_stone.name"
                 }
               ],
               "target": "item_name"
@@ -39,32 +39,32 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 {
                   "color": "gray",
                   "italic": false,
-                  "text": "In der Hand: "
+                  "translate": "elements.main.other.in_hand"
                 },
                 [
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": " Zieht Gegenstände im Radius von"
+                    "translate": "elements.item.customs.gravity_stone.description_1"
                   },
                   {
                     "color": "green",
                     "italic": false,
-                    "text": " 15 Blöcken "
+                    "translate": "elements.item.customs.gravity_stone.mythic.range"
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "zu dir"
+                    "translate": "elements.item.customs.gravity_stone.description_2"
                   }
                 ],
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 [
                   {
@@ -78,7 +78,7 @@
                     "bold": true,
                     "color": "light_purple",
                     "italic": false,
-                    "text": "Mythic",
+                    "translate": "elements.main.rarities.mythic",
                     "obfuscated": false
                   },
                   {

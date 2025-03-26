@@ -28,7 +28,7 @@
                 "name": [
                   {
                     "color": "yellow",
-                    "text": "Holz-Boss Schlüssel"
+                    "translate": "elements.item.boss_key.stage_2.name"
                   }
                 ],
                 "target": "item_name"
@@ -37,21 +37,21 @@
                 "function": "set_lore",
                 "lore": [
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Öffnet den Vault im HUB für deinen Loot"
+                    "translate": "elements.item.boss_key.description"
                   },
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Rare"
+                    "translate": "elements.main.rarities.rare"
                   }
                 ],
                 "mode": "append"

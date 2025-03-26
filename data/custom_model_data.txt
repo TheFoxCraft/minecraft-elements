@@ -17,6 +17,7 @@
     gray_dye: Gravity-Stone | Rare
     oak_wood: Compressed Wood
     gray_stained_glass_pane: Shop disabled Shops
+    blue_stained_glass_pane: Background Enderchest
     ender_pearl: Enderchest Teleporter
     crafting_table: Enderchest Shop
     magenta_glazed_terracotta: Enderchest Return (Zurück)
@@ -53,6 +54,7 @@
     structure_void: Fishing get Guardian Trigger
     paper: Illegale Lizenz Stage 2
     warped_fungus_on_a_stick: Sauger | Sky Shop Buying
+    blue_ice: Unique | Bruchstück der Eismauer
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -123,7 +125,7 @@
 
 
 #Color Orange: ff8800
-{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"}
+{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}
 
 #templates
 

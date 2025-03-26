@@ -32,7 +32,7 @@ execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s if block ~ ~ ~ #
 execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s if block ~ ~ ~ #elements:farmslots/stage_2_broken unless entity @n[distance=..10,scores={elements_farm-slots_stage-2_broken=1..}] run tag @s remove elements_farm-slot_stage-2
 
 
-execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s unless block ~ ~ ~ spruce_sapling run tellraw @a[distance=..7] ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Du kannst hier diesen Block nicht platzieren! Hier ist ein Farmslot","color": "red"}]
+execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s unless block ~ ~ ~ spruce_sapling run tellraw @a[distance=..7] ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Du kannst hier diesen Block nicht platzieren! Hier ist ein Farmslot","color": "red"}]
 execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s unless block ~ ~ ~ spruce_sapling run fill ~ ~ ~ ~ ~ ~ air destroy
 
 
@@ -41,7 +41,7 @@ execute as @e[type=marker,tag=elements_farm-slot_stage-2_broken] at @s if block 
 execute as @e[type=marker,tag=elements_farm-slot_stage-2_broken] at @s if block ~ ~ ~ air if block ~ ~-1 ~ #dirt unless entity @n[distance=..10,scores={elements_farm-slots_stage-2_broken=1..}] run tag @s remove elements_farm-slot_stage-2_broken
 
 
-execute as @e[type=marker,tag=elements_farm-slot_stage-2_broken] at @s unless block ~ ~ ~ #elements:farmslots/stage_2_broken run tellraw @a[distance=..7] ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Du kannst hier diesen Block nicht platzieren! Hier ist ein Farmslot","color": "red"}]
+execute as @e[type=marker,tag=elements_farm-slot_stage-2_broken] at @s unless block ~ ~ ~ #elements:farmslots/stage_2_broken run tellraw @a[distance=..7] ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Du kannst hier diesen Block nicht platzieren! Hier ist ein Farmslot","color": "red"}]
 execute as @e[type=marker,tag=elements_farm-slot_stage-2_broken] at @s unless block ~ ~ ~ #elements:farmslots/stage_2_broken run fill ~ ~ ~ ~ ~ ~ air destroy
 
 

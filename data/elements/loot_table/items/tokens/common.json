@@ -36,13 +36,13 @@
                 "function": "set_lore",
                 "lore": [
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "bold": true,
                     "color": "yellow",
                     "italic": false,
-                    "text": "Common"
+                    "translate": "elements.main.rarities.common"
                   }
                 ],
                 "mode": "append"

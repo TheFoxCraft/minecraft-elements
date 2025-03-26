@@ -25,7 +25,7 @@
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Compressed Wood"
+                    "translate": "elements.item.compressed.stage_2.name"
                   }
                 ]
               },
@@ -35,16 +35,16 @@
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Komprimiertes Holz"
+                    "translate": "elements.item.compressed.stage_2.description"
                   },
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Rare"
+                    "translate": "elements.main.rarities.rare"
                   }
                 ],
                 "mode": "append"

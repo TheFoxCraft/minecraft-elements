@@ -35,7 +35,7 @@
                 "function": "set_lore",
                 "lore": [
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "color": "gray",
@@ -43,7 +43,7 @@
                     "text": "Magischer Fichtensetzling, der auf ewig wächst"
                   },
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "color": "dark_gray",
@@ -51,12 +51,12 @@
                     "text": "(Teil des Farmslot Systems)"
                   },
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "color": "yellow",
                     "italic": false,
-                    "text": "Common"
+                    "translate": "elements.main.rarities.common"
                   }
                 ],
                 "mode": "append"

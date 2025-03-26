@@ -42,13 +42,13 @@
                 "function": "set_lore",
                 "lore": [
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   [
                     {
                       "color": "light_purple",
                       "italic": false,
-                      "text": "Verbrauchen: "
+                      "translate": "elements.main.other.consume"
                     },
                     {
                       "color": "gray",
@@ -67,16 +67,16 @@
                     "text": "Für einen zweiten Boss-Key beim nächsten Kampf"
                   },
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "color": "dark_purple",
                     "italic": false,
                     "bold": true,
-                    "text": "Epic"
+                    "translate": "elements.main.rarities.epic"
                   },
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   }
                 ],
                 "mode": "append"

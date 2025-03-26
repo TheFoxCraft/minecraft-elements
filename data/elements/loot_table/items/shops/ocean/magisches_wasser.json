@@ -53,7 +53,7 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 {
                   "color": "gray",
@@ -61,7 +61,7 @@
                   "text": "Magisches Wasser mit höherer Sidetemperatur"
                 },
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 [
                   {
@@ -81,7 +81,7 @@
                   "text": "Funktioniert auch im Nether"
                 },
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 {
                   "color": "gray",
@@ -89,13 +89,13 @@
                   "text": "50 Verwendungen"
                 },
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 {
                   "bold": true,
                   "color": "dark_purple",
                   "italic": false,
-                  "text": "Epic"
+                  "translate": "elements.main.rarities.epic"
                 }
               ],
               "mode": "append"

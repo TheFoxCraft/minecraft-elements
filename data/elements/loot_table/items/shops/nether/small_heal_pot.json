@@ -47,13 +47,13 @@
                 "function": "set_lore",
                 "lore": [
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   [
                     {
                       "color": "green",
                       "italic": false,
-                      "text": "Verbrauchen: "
+                      "translate": "elements.main.other.consume"
                     },
                     {
                       "color": "gray",
@@ -62,13 +62,13 @@
                     }
                   ],
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Rare"
+                    "translate": "elements.main.rarities.rare"
                   }
                 ],
                 "mode": "append"

@@ -25,7 +25,7 @@ kill @e[type=text_display,tag=casino_stats]
 
 
 
-summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":" "}]',alignment:center}
+summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"translate":"elements.main.other.space"}]',alignment:center}
 data modify entity @e[tag=casino_stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=casino_stats,limit=1] text
 kill @e[type=text_display,tag=casino_stats]
 summon text_display ~ ~ ~ {Tags:["casino_stats"],text:'[{"text":"Server","color":"gold","bold": true,"italic": false}]',alignment:center}

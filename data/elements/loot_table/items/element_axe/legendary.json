@@ -37,7 +37,7 @@
                 "function": "set_lore",
                 "lore": [
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   [
                     {
@@ -52,13 +52,13 @@
                     }
                   ],
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "bold": true,
                     "color": "gold",
                     "italic": false,
-                    "text": "Legendary"
+                    "translate": "elements.main.rarities.legendary"
                   }
                 ],
                 "mode": "append"

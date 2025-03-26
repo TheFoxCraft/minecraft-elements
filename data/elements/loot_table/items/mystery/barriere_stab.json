@@ -43,7 +43,7 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 [
                   {
@@ -68,13 +68,13 @@
                   "text": "(200 Mana)"
                 },
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 {
                   "bold": true,
                   "color": "dark_purple",
                   "italic": false,
-                  "text": "Epic"
+                  "translate": "elements.main.rarities.epic"
                 }
               ],
               "mode": "append"

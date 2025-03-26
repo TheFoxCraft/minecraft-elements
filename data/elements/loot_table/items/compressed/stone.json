@@ -26,7 +26,7 @@
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Compressed Cobblestonee"
+                    "translate": "elements.item.compressed.stage_1.name"
                   }
                 ]
               },
@@ -36,16 +36,16 @@
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Komprimierter Bruchstein"
+                    "translate": "elements.item.compressed.stage_1.description"
                   },
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Rare"
+                    "translate": "elements.main.rarities.rare"
                   }
                 ],
                 "mode": "append"

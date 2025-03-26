@@ -1,85 +1,77 @@
 {
-    "type": "command",
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:stick",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_components",
-                "components": {
-                  "minecraft:custom_model_data": 1,
-                  "minecraft:consumable": {
-                    "consume_seconds": 99999,
-                    "animation": "none"
-                  }
+  "type": "command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:custom_model_data": 1,
+                "minecraft:consumable": {
+                  "consume_seconds": 99999,
+                  "animation": "none"
                 }
-              },
-              {
-                "function": "set_name",
-                "name": [
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "yellow",
+                  "italic": false,
+                  "translate": "elements.item.customs.mana_messstab.name"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "translate": "elements.main.other.space"
+                },
+                [
                   {
-                    "bold": true,
-                    "color": "yellow",
+                    "color": "green",
                     "italic": false,
-                    "text": "Mana Mess-Stab"
-                  }
-                ]
-              },
-              {
-                "function": "set_lore",
-                "lore": [
-                  {
-                    "text": " "
+                    "translate": "elements.main.other.use"
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Zeigt deine Mana an."
-                  },
-                  {
-                    "text": " "
-                  },
-                  [
-                    {
-                      "color": "gray",
-                      "italic": false,
-                      "text": "Benutzung: "
-                    },
-                    {
-                      "color": "red",
-                      "italic": false,
-                      "text": "(20 Mana)"
-                    }
-                  ],
-                  {
-                    "color": "gray",
-                    "italic": false,
-                    "text": " Zeigt dir zusätzliche Mana an"
-                  },
-                  {
-                    "text": " "
-                  },
-                  {
-                    "bold": true,
-                    "color": "yellow",
-                    "italic": false,
-                    "text": "Common"
+                    "translate": "elements.item.customs.mana_messstab.description"
                   }
                 ],
-                "mode": "append"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+                {
+                  "color": "red",
+                  "italic": false,
+                  "translate": "elements.item.customs.mana_messstab.mana"
+                },
+                {
+                  "translate": "elements.main.other.space"
+                },
+                {
+                  "bold": true,
+                  "color": "yellow",
+                  "italic": false,
+                  "translate": "elements.main.rarities.common"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

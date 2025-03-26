@@ -89,10 +89,10 @@
                 {
                   "color": "blue",
                   "italic": false,
-                  "text": "Rare"
+                  "translate": "elements.main.rarities.rare"
                 },
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 {
                   "color": "gray",

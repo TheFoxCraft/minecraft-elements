@@ -1,4 +1,4 @@
-tellraw @a ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Erfolgreich Neu geladen!"},{"text": " (Credits)","color": "gray","hoverEvent": {"action": "show_text","contents": [{"text": "Ursprüngliches Projekt Und Idee von SparkofPhoenix! Ich, TheFoxCraft, habe hier nur meine Eigene Version von Elements gemacht und stehe in keiner Verbindung mit Spark selbst!"}]}}]
+tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message"},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 
 execute in elements:hub run gamerule keepInventory true
 execute in elements:hub run gamerule lavaSourceConversion true
@@ -325,10 +325,11 @@ scoreboard objectives add elements_enderchest_interface_clicked dummy
 
 ## UNIQUES
 #collections
-scoreboard objectives add elements_uniqueitem_collections_stone dummy
+scoreboard objectives add elements_uniqueitem_collections_bruchstueck_der_eismauer dummy
 scoreboard objectives add elements_uniqueitem_collections_wood dummy
 #other
 scoreboard objectives add elements_uniqueitem_other_datenspeicher dummy
+
 
 scoreboard objectives add elements_spawn_energiekern dummy
 scoreboard objectives add elements_spawn_energiekern_manage_rotation dummy

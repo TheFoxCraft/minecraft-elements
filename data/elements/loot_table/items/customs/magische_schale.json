@@ -35,7 +35,7 @@
                   "bold": true,
                   "color": "blue",
                   "italic": false,
-                  "text": "Magische Schale"
+                  "translate": "elements.item.customs.magische_schale.name"
                 }
               ],
               "target": "item_name"
@@ -44,34 +44,34 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 [
                   {
                     "color": "green",
                     "italic": false,
-                    "text": "Benutzen: "
+                    "translate": "elements.main.other.use"
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Gibt dir Volle Sättigung"
+                    "translate": "elements.item.customs.magische_schale.description"
                   }
                 ],
                 
                 {
                   "color": "red",
                   "italic": false,
-                  "text": "(100 Mana)"
+                  "translate": "elements.item.customs.magische_schale.mana"
                 },
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 {
                   "bold": true,
                   "color": "blue",
                   "italic": false,
-                  "text": "Rare"
+                  "translate": "elements.main.rarities.rare"
                 }
               ],
               "mode": "append"

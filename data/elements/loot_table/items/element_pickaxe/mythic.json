@@ -37,7 +37,7 @@
                 "function": "set_lore",
                 "lore": [
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   [
                     {
@@ -76,7 +76,7 @@
                     }
                   ],
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   [
                     {
@@ -90,7 +90,7 @@
                       "bold": true,
                       "italic": false,
                       "obfuscated": false,
-                      "text": "Mythic"
+                      "translate": "elements.main.rarities.mythic"
                     },
                     {
                       "bold": true,

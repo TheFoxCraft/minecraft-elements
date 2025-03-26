@@ -7,7 +7,7 @@ kill @e[type=item,nbt={Item:{id:"minecraft:magenta_glazed_terracotta",count:1,co
 execute as @a[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","text":"Zurück","italic": false}',custom_model_data=2] 1
 
 
-
+clear @a blue_stained_glass_pane[custom_model_data=1]
 kill @e[type=item,nbt={Item:{id:"minecraft:blue_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":1}}}]
 execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_interface=0}] run item replace entity @s enderchest.0 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
 execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_interface=0}] run item replace entity @s enderchest.1 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1

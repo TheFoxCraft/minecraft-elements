@@ -28,7 +28,7 @@
                   {
                     "color": "yellow",
                     "italic": false,
-                    "text": "Vereistes Fossil"
+                    "translate": "elements.item.boss_spawning.stage_1.name"
                   }
                 ],
                 "target": "item_name"
@@ -38,21 +38,21 @@
                 "lore": [
                   {
                     "color": "gray",
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Was darin wohl verborgen ist?"
+                    "translate": "elements.item.boss_spawning.stage_1.description"
                   },
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Rare"
+                    "translate": "elements.main.rarities.rare"
                   }
                 ],
                 "mode": "append"

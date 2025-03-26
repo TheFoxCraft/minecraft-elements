@@ -46,7 +46,7 @@
                     "bold": true,
                     "color": "dark_purple",
                     "italic": false,
-                    "text": "Photon"
+                    "translate": "elements.item.customs.photon.name"
                   }
                 ],
                 "target": "item_name"
@@ -55,38 +55,38 @@
                 "function": "set_lore",
                 "lore": [
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "In der Hand: "
+                    "translate": "elements.main.other.in_hand"
                   },
                   [
                     {
                       "color": "gray",
                       "italic": false,
-                      "text": " Geschwindigkeit: "
+                      "translate": "elements.item.customs.photon.description_1"
                     },
                     {
                       "color": "green",
                       "italic": false,
-                      "text": "+100%"
+                      "translate": "elements.item.customs.photon.epic.speed"
                     }
                   ],
                   {
                     "color": "dark_gray",
                     "italic": false,
-                    "text": "  (Betrifft auch Schwimmen)"
+                    "translate": "elements.item.customs.photon.description_2"
                   },
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "bold": true,
                     "color": "dark_purple",
                     "italic": false,
-                    "text": "Epic"
+                    "translate": "elements.main.rarities.epic"
                   }
                 ],
                 "mode": "append"

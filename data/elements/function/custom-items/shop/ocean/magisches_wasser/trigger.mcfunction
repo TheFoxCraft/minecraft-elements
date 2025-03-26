@@ -1,7 +1,7 @@
 advancement revoke @s only elements:items/shop/ocean/magisches_wasser
 
-execute as @s[scores={elements_custom-items_shop_magisches-wasser_cooldown=0},gamemode=adventure] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Du kannst das hier nicht verwenden!","color": "red"}]
-execute as @s[scores={elements_custom-items_shop_magisches-wasser_cooldown=0},nbt={Inventory:[{id:"minecraft:potion",Slot:-106b,components:{"minecraft:custom_model_data":13}}]},gamemode=!adventure] run tellraw @s ["",{"text": "[","color": "gray"},{"text": "Elements","color": "light_purple"},{"text": "] ","color": "gray"},{"text": "Bitte verwende das Item nur in der Mainhand","color": "#ff8800"}]
+execute as @s[scores={elements_custom-items_shop_magisches-wasser_cooldown=0},gamemode=adventure] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Du kannst das hier nicht verwenden!","color": "red"}]
+execute as @s[scores={elements_custom-items_shop_magisches-wasser_cooldown=0},nbt={Inventory:[{id:"minecraft:potion",Slot:-106b,components:{"minecraft:custom_model_data":13}}]},gamemode=!adventure] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Bitte verwende das Item nur in der Mainhand","color": "#ff8800"}]
 
 
 execute as @s[scores={elements_custom-items_shop_magisches-wasser_cooldown=0},nbt={SelectedItem:{id:"minecraft:potion",components:{"minecraft:custom_model_data":13}}},gamemode=!adventure] store result score @s elements_custom-items_shop_magisches-wasser_damage run data get entity @s SelectedItem.components."minecraft:damage"

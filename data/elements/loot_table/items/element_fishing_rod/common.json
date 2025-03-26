@@ -50,7 +50,7 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 [
                   {
@@ -65,16 +65,16 @@
                   }
                 ],
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 {
                   "bold": true,
                   "color": "yellow",
                   "italic": false,
-                  "text": "Common"
+                  "translate": "elements.main.rarities.common"
                 },
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 }
               ],
               "mode": "append"

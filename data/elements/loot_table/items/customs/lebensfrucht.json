@@ -39,7 +39,7 @@
                     "bold": true,
                     "color": "dark_purple",
                     "italic": false,
-                    "text": "Lebensfrucht"
+                    "translate": "elements.item.customs.lebensfrucht.name"
                   }
                 ],
                 "target": "item_name"
@@ -48,27 +48,28 @@
                 "function": "set_lore",
                 "lore": [
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   [
                     {
                       "color": "gray",
                       "italic": false,
-                      "text": "Verbrauchen: "
+                      "translate": "elements.main.other.consume"
                     },
                     {
                       "color": "dark_red",
-                      "text": "+0.5 Herzen"
+                      "translate": "elements.item.customs.lebensfrucht.description",
+                      "italic": false
                     }
                   ],
                   {
-                    "text": " "
+                    "translate": "elements.main.other.space"
                   },
                   {
                     "bold": true,
                     "color": "dark_purple",
                     "italic": false,
-                    "text": "Epic"
+                    "translate": "elements.main.rarities.epic"
                   }
                 ],
                 "mode": "append"

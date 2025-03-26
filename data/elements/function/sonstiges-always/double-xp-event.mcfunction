@@ -39,12 +39,12 @@ execute store result bossbar elements:double-xp-event_timer max run scoreboard p
 execute store result bossbar elements:double-xp-event_timer value run scoreboard players get .server elements_double-xp-event_timer_actual_all
 
 
-execute if score .server elements_double-xp-event_timer_actual_all matches 0 if score .server elements_double-xp-event_active matches 1 run tellraw @a ["",{"text": "Server: ","color": "yellow"},{"text": "Das Doppelte-Level Event ist beendet!","color": "white"}]
+execute if score .server elements_double-xp-event_timer_actual_all matches 0 if score .server elements_double-xp-event_active matches 1 run tellraw @a ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Das Doppelte-Level Event ist beendet!","color": "white"}]
 execute if score .server elements_double-xp-event_timer_actual_all matches 0 if score .server elements_double-xp-event_active matches 1 as @a at @s run playsound minecraft:block.beacon.deactivate master @s
 execute if score .server elements_double-xp-event_timer_actual_all matches 0 if score .server elements_double-xp-event_active matches 1 run title @a title ["",{"text": "Doppelte-Level Event ist beendet!","color": "red"}]
 execute if score .server elements_double-xp-event_timer_actual_all matches 0 if score .server elements_double-xp-event_active matches 1 as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=2}] run function elements:enderchest/enderchest-clear
 execute if score .server elements_double-xp-event_timer_actual_all matches 0 if score .server elements_double-xp-event_active matches 1 run scoreboard players set .server elements_double-xp-event_active 0
 
 
-bossbar set elements:double-xp-event_timer name ["",{"text": "DOPPELTE LEVEL EVENT","color": "gold"},{"text": "  -  "},{"score": {"name": ".server","objective": "elements_double-xp-event_timer_actual_h"}},{"text": ":","color": "white"},{"score": {"name": ".server","objective": "elements_double-xp-event_timer_actual_min"}},{"text": ":","color": "white"},{"score": {"name": ".server","objective": "elements_double-xp-event_timer_actual_sec"}}]
+bossbar set elements:double-xp-event_timer name ["",{"text": "DOPPELTE LEVEL EVENT","color": "gold"},{"text": "  -  "},{"score": {"name": ".server","objective": "elements_double-xp-event_timer_actual_h"}},{"translate":"elements.main.other.:","color": "white"},{"score": {"name": ".server","objective": "elements_double-xp-event_timer_actual_min"}},{"translate":"elements.main.other.:","color": "white"},{"score": {"name": ".server","objective": "elements_double-xp-event_timer_actual_sec"}}]
 

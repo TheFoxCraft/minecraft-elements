@@ -38,7 +38,7 @@
                   "bold": true,
                   "color": "blue",
                   "italic": false,
-                  "text": "Boss-Keks"
+                  "translate": "elements.item.boss_keks.name"
                 }
               ],
               "target": "item_name"
@@ -47,36 +47,36 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 [
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Verbrauchen: "
+                    "translate": "elements.main.other.consume"
                   },
                   {
                     "color": "green",
                     "italic": false,
-                    "text": "+500 Level"
+                    "translate": "elements.item.boss_keks.stage_3.add_level"
                   }
                 ],
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 {
                   "color": "dark_gray",
                   "italic": false,
-                  "text": "Von Stage 3"
+                  "translate": "elements.item.boss_keks.stage_3.description"
                 },
                 {
-                  "text": " "
+                  "translate": "elements.main.other.space"
                 },
                 {
                   "bold": true,
                   "color": "blue",
                   "italic": false,
-                  "text": "Rare"
+                  "translate": "elements.main.rarities.rare"
                 }
               ],
               "mode": "append"
