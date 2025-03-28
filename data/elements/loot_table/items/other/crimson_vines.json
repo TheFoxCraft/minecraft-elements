@@ -1,0 +1,35 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:crimson_roots",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "italic": false,
+                                    "translate": "block.minecraft.weeping_vines"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_model_data": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -26,7 +26,7 @@ execute as @s run item replace entity @s enderchest.22 from entity @e[type=chest
 execute as @s run item replace entity @s enderchest.23 from entity @e[type=chest_minecart,tag=enderchest,limit=1,sort=nearest] container.23
 execute as @s run item replace entity @s enderchest.24 from entity @e[type=chest_minecart,tag=enderchest,limit=1,sort=nearest] container.24
 execute as @s run item replace entity @s enderchest.25 from entity @e[type=chest_minecart,tag=enderchest,limit=1,sort=nearest] container.25
-execute as @s run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","text":"Zurück"}',custom_model_data=3] 1
+execute as @s run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","translate":"elements.enderchest.zurueck"}',custom_model_data=3] 1
 execute as @s run data remove entity @e[type=chest_minecart,tag=enderchest,limit=1] Items
 execute as @s run kill @e[type=chest_minecart,tag=enderchest]
 execute as @s run scoreboard players set @s elements_enderchest_interface_number 4

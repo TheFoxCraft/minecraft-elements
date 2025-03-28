@@ -12,9 +12,13 @@ scoreboard players set .server elements_abgabe_gruppenziel_progress 0
 
 
 # stage 2 gang
-execute if score .server elements_stage matches 1 if score .server elements_abgabe_stage_wood_level matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_goal = .server elements_abgabe_stage_wood_level_goal
-execute if score .server elements_stage matches 1 if score .server elements_abgabe_stage_wood_level matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_progress = .server elements_abgabe_stage_wood_level_progress
+execute if score .server elements_stage matches 1 if score .server elements_abgabe_stage_2_gang matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_goal = .server elements_abgabe_stage_2_gang_goal
+execute if score .server elements_stage matches 1 if score .server elements_abgabe_stage_2_gang matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_progress = .server elements_abgabe_stage_2_gang_progress
 
 # stage 2 final room
-execute if score .server elements_stage matches 1 if score .server elements_abgabe_stage_wood matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_goal = .server elements_abgabe_stage_wood_goal
-execute if score .server elements_stage matches 1 if score .server elements_abgabe_stage_wood matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_progress = .server elements_abgabe_stage_wood_progress
+execute if score .server elements_stage matches 1 if score .server elements_abgabe_stage_2 matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_goal = .server elements_abgabe_stage_2_goal
+execute if score .server elements_stage matches 1 if score .server elements_abgabe_stage_2 matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_progress = .server elements_abgabe_stage_2_progress
+
+# stage 3 final room
+execute if score .server elements_stage matches 2 if score .server elements_abgabe_stage_3 matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_goal = .server elements_abgabe_stage_3_goal
+execute if score .server elements_stage matches 2 if score .server elements_abgabe_stage_3 matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_progress = .server elements_abgabe_stage_3_progress

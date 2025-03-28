@@ -146,5 +146,42 @@ execute as @a[scores={just-ignore=121}] run scoreboard players set @s just-ignor
 execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score .server elements_stage matches ..2 run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Tut mir Leid, aber mehr habe ich aktuell leider nicht für dich!"}]
 execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score .server elements_stage matches ..2 run scoreboard players set @s elements_titus_clicked 0
 
-execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score .server elements_stage matches 3.. run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Mehr noch nicht gecodet!"}]
+
+
+#stage 3
+
+execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score .server elements_stage matches 3.. at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Soso, Guten Tag, ja Richtig, Neue Stage, Neues Autocompact!"},"\n","\n",{"text":"Was kostet es diesmal?","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 122"}}]
+execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score .server elements_stage matches 3.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
 execute as @a[scores={elements_titus_level=11,elements_titus_clicked=1}] if score .server elements_stage matches 3.. run scoreboard players set @s elements_titus_clicked 0
+
+execute as @a[scores={elements_titus_level=11,just-ignore=122}] if score .server elements_stage matches 3.. at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"100 Komprimierte Crimson Vines und 2.000 Level!"},"\n","\n",{"text":"Ok, ich besorge das mal!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 123"}}]
+execute as @a[scores={elements_titus_level=11,just-ignore=122}] if score .server elements_stage matches 3.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=122}] run scoreboard players set @s just-ignore 0
+
+execute as @a[scores={elements_titus_level=11,just-ignore=123}] if score .server elements_stage matches 3.. at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Ich warte solange"}]
+execute as @a[scores={elements_titus_level=11,just-ignore=123}] if score .server elements_stage matches 3.. at @s if entity @e[type=villager,tag=titus,distance=..10] run scoreboard players set @s elements_titus_level 12
+execute as @a[scores={elements_titus_level=11,just-ignore=123}] if score .server elements_stage matches 3.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=123}] run scoreboard players set @s just-ignore 0
+
+execute as @a[scores={elements_titus_level=12,elements_titus_clicked=1}] run tellraw @s ["",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Hast du schon alles? Gut, fangen wir mit den 100 Komprimiertem Crimson Vines an."},"\n","\n",{"text":"Bitteschön!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 124"}}]
+execute as @a[scores={elements_titus_level=12,elements_titus_clicked=1}] run scoreboard players set @s elements_titus_clicked 0
+execute as @a[scores={elements_titus_level=12,just-ignore=124,elements_inv_compressed_crimson_vines=100..}] at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Vielen Dank."}]
+execute as @a[scores={elements_titus_level=12,just-ignore=124,elements_inv_compressed_crimson_vines=100..}] at @s if entity @e[type=villager,tag=titus,distance=..10] run clear @s nether_wart_block[custom_model_data=1] 100
+execute as @a[scores={elements_titus_level=12,just-ignore=124,elements_inv_compressed_crimson_vines=100..}] at @s if entity @e[type=villager,tag=titus,distance=..10] run scoreboard players set @s elements_titus_level 13
+execute as @a[scores={elements_titus_level=12,just-ignore=124,elements_inv_compressed_crimson_vines=..99}] at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Du hast nicht genügend Komprimierte Crimson Vines!"}]
+execute as @a[scores={elements_titus_level=12,just-ignore=124}] at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=124}] run scoreboard players set @s just-ignore 0
+
+execute as @a[scores={elements_titus_level=13,elements_titus_clicked=1}] run tellraw @s ["",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Jetzt noch die 2.000 Level!."},"\n","\n",{"text":"Hier sind sie!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 125"}}]
+execute as @a[scores={elements_titus_level=13,elements_titus_clicked=1}] run scoreboard players set @s elements_titus_clicked 0
+execute as @a[scores={elements_titus_level=13,just-ignore=125,elements_mainlevel=2000..}] at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Perfekt! Ich habe deiner Enderkiste das Modul hinzugefügt! Bis zum nächsten Mal"}]
+execute as @a[scores={elements_titus_level=13,just-ignore=125,elements_mainlevel=2000..}] at @s if entity @e[type=villager,tag=titus,distance=..10] run xp add @s -1000 levels
+execute as @a[scores={elements_titus_level=13,just-ignore=125,elements_mainlevel=2000..}] at @s if entity @e[type=villager,tag=titus,distance=..10] run scoreboard players set @s elements_enderchest_level_autocompact 3
+execute as @a[scores={elements_titus_level=13,just-ignore=125,elements_mainlevel=2000..}] at @s if entity @e[type=villager,tag=titus,distance=..10] run scoreboard players set @s elements_titus_level 14
+execute as @a[scores={elements_titus_level=13,just-ignore=125,elements_mainlevel=..1999}] at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Du hast nicht genügend Level!"}]
+execute as @a[scores={elements_titus_level=13,just-ignore=125}] at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @a[scores={just-ignore=125}] run scoreboard players set @s just-ignore 0
+
+
+execute as @a[scores={elements_titus_level=14,elements_titus_clicked=1}] if score .server elements_stage matches ..3 run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Tut mir Leid, aber mehr habe ich aktuell leider nicht für dich!"}]
+execute as @a[scores={elements_titus_level=14,elements_titus_clicked=1}] if score .server elements_stage matches ..3 run scoreboard players set @s elements_titus_clicked 0

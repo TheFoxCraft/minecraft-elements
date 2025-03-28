@@ -23,7 +23,7 @@ execute if score .server elements_function_timer_1s matches 20.. run scoreboard 
 
 
 function elements:sonstiges-always/sonstiges
-function elements:sonstiges-always/level {elements_level_stone:10,elements_level_wood:1}
+function elements:sonstiges-always/level {elements_level_stone:10,elements_level_wood:1,elements_level_crimson_vines:2}
 function elements:villager/techniker
 function elements:villager/schrotthaendler
 function elements:sonstiges-always/firstlogin
@@ -32,6 +32,7 @@ function elements:sonstiges-always/autocompactor
 function elements:sonstiges-always/special-items
 function elements:miningxp/miningxp
 function elements:miningxp/forestingxp
+function elements:miningxp/farmingxp
 function elements:miningxp/fishingxp
 function elements:miningxp/get_fishing/get_fishing
 function elements:villager/titus
@@ -127,6 +128,7 @@ execute as @e[tag=spawner_leaderboard_id-9] at @s run function elements:spawn/le
 
 # Farmslots
 function elements:farm_slots/stage_2/main
+function elements:farm_slots/stage_3/main
 
 
 ##needs to be at the end!

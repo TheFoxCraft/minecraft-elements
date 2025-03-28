@@ -21,7 +21,7 @@
                   "modifiers": [],
                   "show_in_tooltip": false
                 },
-                "minecraft:custom_model_data": 1,
+                "minecraft:custom_model_data": 2,
                 "minecraft:food": {
                   "nutrition": 0,
                   "saturation": 0,

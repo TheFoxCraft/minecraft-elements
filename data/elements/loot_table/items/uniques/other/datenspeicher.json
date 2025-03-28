@@ -26,7 +26,7 @@
                     "bold": true,
                     "color": "gold",
                     "italic": false,
-                    "text": "Datenspeicher"
+                    "translate": "elements.item.unique.datenspeicher.name"
                   }
                 ]
               },
@@ -39,7 +39,7 @@
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Speichert deine Level."
+                    "translate": "elements.item.unique.datenspeicher.description"
                   },
                   {
                     "translate": "elements.main.other.space"
@@ -48,12 +48,12 @@
                     {
                       "color": "green",
                       "italic": false,
-                      "text": "Fähigkeit: "
+                      "translate": "elements.main.other.ability"
                     },
                     {
                       "color": "gray",
                       "italic": false,
-                      "text": "Verliere nur 85% statt 95% deiner Level beim Tod"
+                      "translate": "elements.item.unique.datenspeicher.ability"
                     }
                   ],
                   {

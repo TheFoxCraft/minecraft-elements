@@ -185,7 +185,7 @@ execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1}
 execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1}] run function elements:enderchest/enderchest-clear
 execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1}] run scoreboard players set @s elements_enderchest_interface_click_casino_horse_finish 0
-execute as @a[scores={elements_casino_interface=6}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","text":"Zurück","italic": false}',custom_model_data=10] 1
+execute as @a[scores={elements_casino_interface=6}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","translate":"elements.enderchest.zurueck","italic": false}',custom_model_data=10] 1
 
 
 

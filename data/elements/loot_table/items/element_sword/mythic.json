@@ -1,0 +1,110 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:netherite_pickaxe",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:unbreakable": {},
+                  "minecraft:damage_resistant": {
+                    "types": "#minecraft:is_fire"
+                  },
+                  "minecraft:custom_model_data": 5
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "bold": true,
+                    "color": "light_purple",
+                    "italic": false,
+                    "text": "Element Pickaxe"
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "translate": "elements.main.other.space"
+                  },
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "text": "Cobblestone Drop: "
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "text": "+500%"
+                    }
+                  ],
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "text": "Basalt Drop: "
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "text": "+500%"
+                    }
+                  ],
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "text": "Stone Drop: "
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "text": "+500%"
+                    }
+                  ],
+                  {
+                    "translate": "elements.main.other.space"
+                  },
+                  [
+                    {
+                      "bold": true,
+                      "color": "light_purple",
+                      "italic": false,
+                      "obfuscated": true,
+                      "text": "cc"
+                    },
+                    {
+                      "bold": true,
+                      "italic": false,
+                      "obfuscated": false,
+                      "translate": "elements.main.rarities.mythic"
+                    },
+                    {
+                      "bold": true,
+                      "italic": false,
+                      "obfuscated": true,
+                      "text": "cc"
+                    }
+                  ]
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

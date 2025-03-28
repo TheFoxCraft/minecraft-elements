@@ -5,7 +5,7 @@
         "conditions": {
           "item": {
             "components": {
-              "minecraft:custom_model_data": 1
+              "minecraft:custom_model_data": 2
             },
             "items": "iron_sword"
           }

@@ -139,11 +139,12 @@ scoreboard objectives add elements_clementius_level dummy
 scoreboard objectives add elements_clementius_clicked dummy
 scoreboard objectives add elements_inv_compressed_cobblestone dummy
 scoreboard objectives add elements_inv_compressed_wood dummy
+scoreboard objectives add elements_inv_compressed_crimson_vines dummy
+scoreboard objectives add elements_inv_crimson_vines dummy
 scoreboard objectives add elements_enderchest_interface_number dummy
-scoreboard objectives add elements_autocompactor_stone dummy
+scoreboard objectives add elements_autocompactor dummy
 scoreboard objectives add elements_inv_stone dummy
 scoreboard objectives add elements_enderchest_interface_clear dummy
-scoreboard objectives add elements_autocompactor_wood dummy
 scoreboard objectives add elements_inv_sprucelog dummy
 scoreboard objectives add elements_inv_dark_oaklog dummy
 scoreboard objectives add elements_enderchest_upgradeschmiede_upgrade dummy
@@ -212,6 +213,9 @@ scoreboard objectives add elements_miningxp_mining_mine-get_stone minecraft.mine
 scoreboard objectives add elements_miningxp_mining_mine-get_cobblestone minecraft.mined:minecraft.cobblestone
 scoreboard objectives add elements_miningxp_mining_mine-get_basalt minecraft.mined:minecraft.basalt
 scoreboard objectives add elements_miningxp_foresting_mine-get_spruce minecraft.mined:minecraft.spruce_log
+scoreboard objectives add elements_miningxp_farming_mine-get_crimson_vines minecraft.mined:minecraft.weeping_vines
+scoreboard objectives add elements_miningxp_farming_mine-get_crimson_vines_plant minecraft.mined:minecraft.weeping_vines_plant
+
 
 scoreboard objectives add elements_miningxp_mining_xp dummy
 scoreboard objectives add elements_miningxp_mining_level dummy
@@ -315,7 +319,11 @@ scoreboard objectives add elements_collections_calc_basalt minecraft.mined:basal
 # stage 2
 scoreboard objectives add elements_collections_wood_collect dummy
 scoreboard objectives add elements_collections_stats_wood_total minecraft.mined:spruce_log
-
+# stage 3
+scoreboard objectives add elements_collections_crimson_vines_collect dummy
+scoreboard objectives add elements_collections_stats_crimson_vines_total dummy
+scoreboard objectives add elements_collections_calc_crimson_vines minecraft.mined:weeping_vines
+scoreboard objectives add elements_collections_calc_crimson_vines_plant minecraft.mined:weeping_vines_plant
 
 scoreboard objectives add elements_custom-items_fishing_rod_crafting_sticks_cooldown dummy
 
@@ -327,6 +335,7 @@ scoreboard objectives add elements_enderchest_interface_clicked dummy
 #collections
 scoreboard objectives add elements_uniqueitem_collections_bruchstueck_der_eismauer dummy
 scoreboard objectives add elements_uniqueitem_collections_wood dummy
+scoreboard objectives add elements_uniqueitem_collections_crimson_vines dummy
 #other
 scoreboard objectives add elements_uniqueitem_other_datenspeicher dummy
 
@@ -352,6 +361,7 @@ scoreboard objectives add elements_data_playerin_netherblock dummy
 scoreboard objectives add elements_choose_dimension dummy
 scoreboard objectives add elements_is-assigned-to-dimension dummy
 scoreboard objectives add elements_update-sign_timer dummy
+scoreboard objectives add elements_playercount dummy
 #abgaben
 scoreboard objectives add elements_abgabe_start_steinmetz dummy
 scoreboard objectives add elements_abgabe_start_steinmetz_progress dummy
@@ -389,14 +399,18 @@ scoreboard objectives add elements_abgabe_shop_leer dummy
 scoreboard objectives add elements_abgabe_shop_leer_progress dummy
 scoreboard objectives add elements_abgabe_shop_leer_goal dummy
 scoreboard objectives add elements_abgabe_shop_leer_abgabe-mode dummy
-scoreboard objectives add elements_abgabe_stage_wood_level dummy
-scoreboard objectives add elements_abgabe_stage_wood_level_progress dummy
-scoreboard objectives add elements_abgabe_stage_wood_level_goal dummy
-scoreboard objectives add elements_abgabe_stage_wood_level_abgabe-mode dummy
-scoreboard objectives add elements_abgabe_stage_wood dummy
-scoreboard objectives add elements_abgabe_stage_wood_progress dummy
-scoreboard objectives add elements_abgabe_stage_wood_goal dummy
-scoreboard objectives add elements_abgabe_stage_wood_abgabe-mode dummy
+scoreboard objectives add elements_abgabe_stage_2_gang dummy
+scoreboard objectives add elements_abgabe_stage_2_gang_progress dummy
+scoreboard objectives add elements_abgabe_stage_2_gang_goal dummy
+scoreboard objectives add elements_abgabe_stage_2_gang_abgabe-mode dummy
+scoreboard objectives add elements_abgabe_stage_2 dummy
+scoreboard objectives add elements_abgabe_stage_2_progress dummy
+scoreboard objectives add elements_abgabe_stage_2_goal dummy
+scoreboard objectives add elements_abgabe_stage_2_abgabe-mode dummy
+scoreboard objectives add elements_abgabe_stage_3 dummy
+scoreboard objectives add elements_abgabe_stage_3_progress dummy
+scoreboard objectives add elements_abgabe_stage_3_goal dummy
+scoreboard objectives add elements_abgabe_stage_3_abgabe-mode dummy
 scoreboard objectives add elements_abgabe_other_levelbaum dummy
 scoreboard objectives add elements_abgabe_other_levelbaum_progress dummy
 scoreboard objectives add elements_abgabe_other_levelbaum_goal dummy
@@ -566,6 +580,7 @@ scoreboard objectives add elements_function_timer_3s dummy
 scoreboard objectives add elements_function_timer_1s dummy
 scoreboard objectives add elements_sonstiges_no-too-expensive_success dummy
 scoreboard objectives add elements_admin_config_interface dummy
+scoreboard objectives add elements_admin_config_tipps_interface dummy
 scoreboard objectives add elements_maxhealth dummy
 scoreboard objectives add elements_maxhealth_old dummy
 scoreboard objectives add elements_maxhealth_update_queue dummy
@@ -630,6 +645,14 @@ scoreboard objectives add elements_farm-slots_stage-2_max-slots dummy
 scoreboard objectives add elements_farm-slots_stage-2_correct_UUID dummy
 scoreboard objectives add elements_farm-slots_stage-2_broken_slots dummy
 
+scoreboard objectives add elements_farm-slots_stage-3_placed dummy
+scoreboard objectives add elements_farm-slots_stage-3_broken minecraft.mined:weeping_vines
+scoreboard objectives add elements_farm-slots_stage-3_broken_plant minecraft.mined:weeping_vines_plant
+scoreboard objectives add elements_farm-slots_stage-3_slots dummy
+scoreboard objectives add elements_farm-slots_stage-3_max-slots dummy
+scoreboard objectives add elements_farm-slots_stage-3_correct_UUID dummy
+scoreboard objectives add elements_farm-slots_stage-3_broken_slots dummy
+
 
 scoreboard objectives setdisplay list elements_mainlevel
 
@@ -640,6 +663,10 @@ scoreboard objectives add elements_level_stone_stone minecraft.mined:minecraft.s
 
 scoreboard objectives add elements_level_wood_spruce minecraft.mined:minecraft.spruce_log
 scoreboard objectives add elements_level_wood_spruce_placed minecraft.used:minecraft.spruce_log
+
+scoreboard objectives add elements_level_crimson_vines minecraft.mined:minecraft.weeping_vines
+scoreboard objectives add elements_level_crimson_vines_plant minecraft.mined:minecraft.weeping_vines_plant
+
 
 
 ##set values at start
@@ -654,8 +681,6 @@ execute unless score .server elements_stats_playtime_sec matches 1.. run scorebo
 execute unless score .server elements_stats_playtime_min matches 1.. run scoreboard players set .server elements_stats_playtime_min 0
 
 
-#unique sets
-execute unless score .server elements_uniqueitem_collections_stone matches 0.. run scoreboard players set .server elements_uniqueitem_collections_stone 0
 
 
 #set fixed values

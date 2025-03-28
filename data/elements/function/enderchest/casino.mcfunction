@@ -7,7 +7,7 @@ execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard p
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:magenta_glazed_terracotta",count:1,components:{"minecraft:custom_model_data":4}}}]
-execute as @a[scores={elements_enderchest_level_casino=1,elements_enderchest_interface_number=5,elements_casino_interface=1}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","text":"Zurück","italic": false}',custom_model_data=4] 1
+execute as @a[scores={elements_enderchest_level_casino=1,elements_enderchest_interface_number=5,elements_casino_interface=1}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","translate":"elements.enderchest.zurueck","italic": false}',custom_model_data=4] 1
 
 
 execute as @a[scores={elements_enderchest_level_casino=1,elements_enderchest_interface_number=5,elements_casino_interface=1}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:lectern[custom_model_data=2]
@@ -190,7 +190,7 @@ execute as @a[scores={elements_enderchest_interface_clicked=1}] run function ele
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game 0
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:magenta_glazed_terracotta",count:1,components:{"minecraft:custom_model_data":5}}}]
-execute as @a[scores={elements_casino_interface=2}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","text":"Zurück","italic": false}',custom_model_data=5] 1
+execute as @a[scores={elements_casino_interface=2}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","translate":"elements.enderchest.zurueck","italic": false}',custom_model_data=5] 1
 
 
 

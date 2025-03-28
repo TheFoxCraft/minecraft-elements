@@ -46,8 +46,10 @@ execute as @s run scoreboard players set .server elements_abgabe_shop_mystery_go
 execute as @s run scoreboard players set .server elements_abgabe_shop_mystery_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_shop_leer_goal 256
 execute as @s run scoreboard players set .server elements_abgabe_shop_leer_progress 0
-execute as @s run scoreboard players set .server elements_abgabe_stage_wood_level_goal 10000
-execute as @s run scoreboard players set .server elements_abgabe_stage_wood_level_progress 0
+execute as @s run scoreboard players set .server elements_abgabe_stage_2_gang_goal 10000
+execute as @s run scoreboard players set .server elements_abgabe_stage_2_gang_progress 0
+execute as @s run scoreboard players set .server elements_abgabe_stage_2_progress 0
+execute as @s run scoreboard players set .server elements_abgabe_stage_3_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_levelbaum_goal 200
 execute as @s run scoreboard players set .server elements_abgabe_other_levelbaum_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_community-hub-main_goal 100000

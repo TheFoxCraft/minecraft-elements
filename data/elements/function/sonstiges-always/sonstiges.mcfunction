@@ -31,6 +31,8 @@ execute as @a store result score @s elements_inv_small_heal_pot run clear @s min
 execute as @a store result score @s elements_inv_big_heal_pot run clear @s minecraft:potion[custom_model_data=3] 0
 execute as @a store result score @s elements_inv_manatrank run clear @s minecraft:potion[custom_model_data=11] 0
 execute as @a store result score @s elements_inv_compressed_wood run clear @s minecraft:oak_wood[custom_model_data=1] 0
+execute as @a store result score @s elements_inv_compressed_crimson_vines run clear @s minecraft:nether_wart_block[custom_model_data=1] 0
+execute as @a store result score @s elements_inv_crimson_vines run clear @s minecraft:crimson_roots[custom_model_data=1] 0
 execute as @a store result score @s elements_inv_cobblestone run clear @s minecraft:cobblestone 0
 execute as @a store result score @s elements_inv_basalt run clear @s minecraft:basalt 0
 execute as @a store result score @s elements_inv_stone run clear @s minecraft:stone 0
@@ -102,6 +104,12 @@ execute as @a[scores={elements_collections_calc_cobblestone=1..}] run scoreboard
 execute as @a[scores={elements_collections_calc_cobblestone=1..}] run scoreboard players remove @s elements_collections_calc_cobblestone 1
 execute as @a[scores={elements_collections_calc_basalt=1..}] run scoreboard players add @s elements_collections_stats_stone_total 1
 execute as @a[scores={elements_collections_calc_basalt=1..}] run scoreboard players remove @s elements_collections_calc_basalt 1
+
+execute as @a[scores={elements_collections_calc_crimson_vines=1..}] run scoreboard players add @s elements_collections_stats_crimson_vines_total 1
+execute as @a[scores={elements_collections_calc_crimson_vines=1..}] run scoreboard players remove @s elements_collections_calc_crimson_vines 1
+execute as @a[scores={elements_collections_calc_crimson_vines_plant=1..}] run scoreboard players add @s elements_collections_stats_crimson_vines_total 1
+execute as @a[scores={elements_collections_calc_crimson_vines_plant=1..}] run scoreboard players remove @s elements_collections_calc_crimson_vines_plant 1
+
 
 # all time level erhalten
 execute as @a store result score @s elements_stats_level_erhalten_calc_get run xp query @s levels

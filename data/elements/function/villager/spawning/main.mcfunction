@@ -37,5 +37,6 @@ execute as @e[type=armor_stand,tag=spawner_stage-2_farm-slots] at @s run kill @s
 execute as @e[type=armor_stand,tag=spawner_steinmetz] at @s if score .server elements_stage matches 1.. run function elements:villager/spawning/stage_1
 
 
-execute as @e[type=armor_stand,tag=spawner_foerster,limit=1] at @s if score .server elements_stage matches 2.. run function elements:villager/spawning/stage_2
+execute as @e[type=armor_stand,tag=spawner_foerster] at @s if score .server elements_stage matches 2.. run function elements:villager/spawning/stage_2
 
+execute as @e[type=armor_stand,tag=spawner_stage-3_main] at @s if score .server elements_stage matches 2.. run function elements:villager/spawning/stage_3

@@ -18,5 +18,5 @@ execute as @a[nbt={Inventory:[{id:"minecraft:diamond_sword",Slot:-106b,component
 execute as @a[nbt={SelectedItem:{id:"minecraft:golden_sword",components:{"minecraft:custom_model_data":1}}}] run function elements:mana/show_info
 execute as @a[nbt={Inventory:[{id:"minecraft:golden_sword",Slot:-106b,components:{"minecraft:custom_model_data":1}}]}] run function elements:mana/show_info
 
-execute as @a[nbt={SelectedItem:{id:"minecraft:iron_sword",components:{"minecraft:custom_model_data":1}}}] run function elements:mana/show_info
-execute as @a[nbt={Inventory:[{id:"minecraft:iron_sword",Slot:-106b,components:{"minecraft:custom_model_data":1}}]}] run function elements:mana/show_info
+execute as @a[nbt={SelectedItem:{id:"minecraft:iron_sword",components:{"minecraft:custom_model_data":2}}}] run function elements:mana/show_info
+execute as @a[nbt={Inventory:[{id:"minecraft:iron_sword",Slot:-106b,components:{"minecraft:custom_model_data":2}}]}] run function elements:mana/show_info

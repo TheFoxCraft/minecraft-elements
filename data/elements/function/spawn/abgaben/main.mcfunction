@@ -30,11 +30,11 @@ execute if score .server elements_abgabe_shop_mystery matches 1 run function ele
 execute if score .server elements_abgabe_shop_leer matches 3 run function elements:spawn/abgaben/leer-shop/spawning
 execute if score .server elements_abgabe_shop_leer matches 1 run function elements:spawn/abgaben/leer-shop/running
 #stage 2 wood/level/gang
-execute if score .server elements_abgabe_stage_wood_level matches 3 run function elements:spawn/abgaben/stage-2_gang/spawning
-execute if score .server elements_abgabe_stage_wood_level matches 1 run function elements:spawn/abgaben/stage-2_gang/running
+execute if score .server elements_abgabe_stage_2_gang matches 3 run function elements:spawn/abgaben/stage-2_gang/spawning
+execute if score .server elements_abgabe_stage_2_gang matches 1 run function elements:spawn/abgaben/stage-2_gang/running
 #stage 2 final room
-execute if score .server elements_abgabe_stage_wood matches 3 run function elements:spawn/abgaben/stage-2_room/spawning
-execute if score .server elements_abgabe_stage_wood matches 1 run function elements:spawn/abgaben/stage-2_room/running
+execute if score .server elements_abgabe_stage_2 matches 3 run function elements:spawn/abgaben/stage-2_room/spawning
+execute if score .server elements_abgabe_stage_2 matches 1 run function elements:spawn/abgaben/stage-2_room/running
 #levelbaum
 execute if score .server elements_abgabe_other_levelbaum matches 3 run function elements:spawn/abgaben/levelbaum/spawning
 execute if score .server elements_abgabe_other_levelbaum matches 1 run function elements:spawn/abgaben/levelbaum/running
@@ -47,6 +47,9 @@ execute if score .server elements_abgabe_other_angel-teich matches 1 run functio
 #community-hub recyler
 execute if score .server elements_abgabe_other_recycler matches 3 run function elements:spawn/abgaben/recycler/spawning
 execute if score .server elements_abgabe_other_recycler matches 1 run function elements:spawn/abgaben/recycler/running
+#stage 3 final room
+execute if score .server elements_abgabe_stage_3 matches 3 run function elements:spawn/abgaben/stage-3_room/spawning
+execute if score .server elements_abgabe_stage_3 matches 1 run function elements:spawn/abgaben/stage-3_room/running
 
 
 
@@ -55,9 +58,9 @@ execute if score .server elements_abgabe_refresh_timer matches 40.. run scoreboa
 
 
 
+# dynamic rates
 
-
-
+# managed in function timer 10s
 
 
 #save

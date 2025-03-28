@@ -78,7 +78,7 @@ scoreboard players operation $distance_Z retina.__variable__ /= 480 retina.__int
 execute if score $output_vec3.Z retina.__variable__ matches 0 store result score $delta_Z retina.__variable__ run scoreboard players set $distance_Z retina.__variable__ 2147483647
 scoreboard players operation $int_Z retina.__variable__ = $Z retina.__variable__
 scoreboard players operation $int_Z retina.__variable__ /= 480 retina.__int__
-execute if score $debug_messages retina.__variable__ matches 1.. run tellraw @a ["",{"text":"Origin: "},{"translate":"elements.main.other.[","color":"yellow","type":"text"},{"score":{"name":"$int_X","objective":"retina.__variable__"},"color":"yellow","type":"score"},{"text":", ","color":"yellow"},{"score":{"name":"$int_Y","objective":"retina.__variable__"},"color":"yellow","type":"score"},{"text":", ","color":"yellow"},{"score":{"name":"$int_Z","objective":"retina.__variable__"},"color":"yellow","type":"score"},{"text":"]","color":"yellow"}]
+execute if score $debug_messages retina.__variable__ matches 1.. run tellraw @a ["",{"text":"Origin: "},{"text":"[","color":"yellow","type":"text"},{"score":{"name":"$int_X","objective":"retina.__variable__"},"color":"yellow","type":"score"},{"text":", ","color":"yellow"},{"score":{"name":"$int_Y","objective":"retina.__variable__"},"color":"yellow","type":"score"},{"text":", ","color":"yellow"},{"score":{"name":"$int_Z","objective":"retina.__variable__"},"color":"yellow","type":"score"},{"text":"]","color":"yellow"}]
 scoreboard players set $step retina.__variable__ 0
 execute store result score $offset_Y retina.__variable__ run data get entity @s Pos[1] -480
 scoreboard players operation $offset_Y retina.__variable__ += $Y retina.__variable__

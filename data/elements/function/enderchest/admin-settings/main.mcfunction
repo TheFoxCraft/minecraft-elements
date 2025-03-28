@@ -7,7 +7,7 @@ execute as @a[scores={elements_enderchest_interface_clicked=1,elements_enderches
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:magenta_glazed_terracotta",count:1,components:{"minecraft:custom_model_data":1}}}]
-execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","text":"Zurück"}',custom_model_data=1] 1
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","translate": "elements.enderchest.zurueck","italic": false}',custom_model_data=1] 1
 
 execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=1}] run item replace entity @s enderchest.0 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=1}] run item replace entity @s enderchest.1 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
@@ -31,6 +31,7 @@ execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_conf
 execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=2,elements_rank_admin=1}] if score .server elements_setup matches 3.. run function elements:enderchest/admin-settings/double-xp-event/main
 execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=3,elements_rank_admin=1}] if score .server elements_setup matches 2.. run function elements:enderchest/admin-settings/teleporter
 execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=4,elements_rank_admin=1}] if score .server elements_setup matches 3.. run function elements:enderchest/admin-settings/shops
+execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_rank_admin=1}] if score .server elements_setup matches 3.. run function elements:enderchest/admin-settings/raetsel_tipps/main
 
 
 
@@ -39,6 +40,7 @@ execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_conf
 # 2: double-xp-event
 # 3: Teleporter
 # 4: Shop Settings
+# 5: Tipps
 
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:experience_bottle[custom_model_data=1]
 execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
@@ -65,6 +67,14 @@ execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard p
 kill @e[type=item,nbt={Item:{id:"minecraft:crafting_table",count:1,components:{"minecraft:custom_model_data":2}}}]
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1}] if score .server elements_setup matches 2.. run item replace entity @s enderchest.12 with crafting_table[custom_name='{"color":"gold","text":"Shops","italic": false}',lore=['{"text": "Klicke um das Menü für das Freischalten der Shops einzustellen","color": "gray","italic": false}'],custom_model_data=2] 1
 
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:name_tag[custom_model_data=2]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_admin_config_interface 5
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_admin_config_tipps_interface 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+kill @e[type=item,nbt={Item:{id:"minecraft:name_tag",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=1}] if score .server elements_setup matches 2.. run item replace entity @s enderchest.13 with name_tag[custom_name='{"color":"gold","translate": "elements.enderchest.admin_settings.tipps.name","italic": false}',lore=['{"translate": "elements.enderchest.admin_settings.tipps.description","color": "gray","italic": false}'],custom_model_data=2] 1
 
 
 
