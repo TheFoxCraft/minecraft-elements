@@ -25,7 +25,7 @@ execute if score .server elements_function_timer_1s matches 20.. run scoreboard 
 function elements:sonstiges-always/sonstiges
 function elements:sonstiges-always/level {elements_level_stone:10,elements_level_wood:1,elements_level_crimson_vines:2}
 function elements:villager/techniker
-function elements:villager/schrotthaendler
+#function elements:villager/schrotthaendler
 function elements:sonstiges-always/firstlogin
 function elements:villager/clementius
 function elements:sonstiges-always/autocompactor
@@ -39,6 +39,8 @@ function elements:villager/titus
 function elements:villager/mystery
 function elements:villager/stage-2_mana
 function elements:villager/stage-2_farm-slots
+function elements:villager/stage-3_mana
+function elements:villager/stage-3_farm-slots
 function elements:enderchest/casino/horse/horse
 function elements:enderchest/casino/luckywheel/luckywheel
 function elements:spawn/abgaben/main
@@ -94,8 +96,10 @@ execute as @a[scores={just-ignore=1001..1006}] run function elements:spawn/choos
 execute if score .server elements_abgabe_shop_leer matches 2 run function elements:spawn/leer-shop
 execute if score .server elements_stage_1_portal_enable matches 1 run function elements:stages/stage-1/portal
 execute if score .server elements_stage_2_portal_enable matches 1 run function elements:stages/stage-2/portal
+execute if score .server elements_stage_3_portal_enable matches 1 run function elements:stages/stage-3/portal
 execute if score .server elements_stage_1_boss_status matches 1 run function elements:bosse/stage-1/main
 execute if score .server elements_stage_2_boss_status matches 1 run function elements:bosse/stage-2/main
+execute if score .server elements_stage_3_boss_status matches 1 run function elements:bosse/stage-3/main
 
 execute as @a[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:{"minecraft:custom_model_data":1}}},gamemode=!adventure] run function elements:custom-items/rettungs-plattform/rettungs-plattform-always
 execute as @e[type=item,nbt={Item:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if block ~ ~ ~ fire if score .server elements_stage_1_portal_enable matches 0 run function elements:stages/stage-1/portal-enable

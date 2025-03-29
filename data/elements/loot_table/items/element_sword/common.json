@@ -49,7 +49,7 @@
                     {
                       "color": "green",
                       "italic": false,
-                      "translate": "elements.item.element_sword.drop"
+                      "translate": "elements.item.element_sword.common.drop"
                     }
                   ],
                   {

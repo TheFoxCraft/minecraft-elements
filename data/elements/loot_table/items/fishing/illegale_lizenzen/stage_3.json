@@ -1,4 +1,5 @@
 {
+    "type": "command",
     "pools": [
       {
         "rolls": 1,
@@ -6,7 +7,7 @@
           {
             "type": "item",
             "weight": 1,
-            "name": "minecraft:netherite_sword",
+            "name": "minecraft:paper",
             "functions": [
               {
                 "function": "set_count",
@@ -15,21 +16,26 @@
               {
                 "function": "set_components",
                 "components": {
-                  "minecraft:unbreakable": {},
-                  "minecraft:damage_resistant": {
-                    "types": "#minecraft:is_fire"
+                  "minecraft:custom_model_data": 3,
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true
                   },
-                  "minecraft:custom_model_data": 4
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:consumable": {
+                    "consume_seconds": 999999
+                  }
                 }
               },
               {
                 "function": "set_name",
                 "name": [
                   {
-                    "bold": true,
-                    "color": "gold",
+                    "color": "yellow",
                     "italic": false,
-                    "translate": "elements.item.element_sword.name"
+                    "text": "Illegale Lizenz",
+                    "bold": true
                   }
                 ]
               },
@@ -39,26 +45,24 @@
                   {
                     "translate": "elements.main.other.space"
                   },
-                  [
-                    {
-                      "color": "gray",
-                      "italic": false,
-                      "translate": "elements.item.element_sword.description"
-                    },
-                    {
-                      "color": "green",
-                      "italic": false,
-                      "translate": "elements.item.element_sword.legendary.drop"
-                    }
-                  ],
+                  {
+                    "color": "gray",
+                    "italic": false,
+                    "text": "Illegale Lizenz für 5 Extra Farmslots"
+                  },
+                  {
+                    "color": "gray",
+                    "italic": false,
+                    "text": "Für Stage 3"
+                  },
                   {
                     "translate": "elements.main.other.space"
                   },
                   {
                     "bold": true,
-                    "color": "gold",
+                    "color": "yellow",
                     "italic": false,
-                    "translate": "elements.main.rarities.legendary"
+                    "translate": "elements.main.rarities.common"
                   }
                 ],
                 "mode": "append"

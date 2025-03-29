@@ -6,6 +6,7 @@ execute as @s in elements:sky run place template elements:spawn/sky -20 94 -20
 execute as @s in elements:ocean run place template elements:spawn/ocean -20 56 -20
 execute as @s in elements:stage-1_bossroom run place template elements:boss_room/stage_1 -20 99 -20
 execute as @s in elements:stage-2_bossroom run place template elements:boss_room/stage_2 -20 98 -20
+execute as @s in elements:stage-2_bossroom run place template elements:boss_room/stage_3 -41 95 -32
 execute as @s run scoreboard players set .server elements_stage 0
 execute as @s run scoreboard players set .server elements_stats_lootbox 0
 execute as @s run scoreboard players set .server elements_casino_stats_lvlinvestiert 0
@@ -61,6 +62,8 @@ execute as @s run scoreboard players set .server elements_abgabe_other_recycler_
 execute as @s run scoreboard players set .server elements_recycler_stats_1 0
 execute as @s run scoreboard players set .server elements_recycler_stats_2 0
 execute as @s run scoreboard players set .server elements_recycler_stats_2_spawn 0
+execute as @s run scoreboard players set .server elements_recycler_stats_3 0
+execute as @s run scoreboard players set .server elements_recycler_stats_3_spawn 0
 execute as @s run scoreboard players set .server elements_abgabe_general_abgabe-mode 2
 execute as @s run scoreboard players set .server elements_spawn_shop_leer_timer_tick 0
 execute as @s run scoreboard players set .server elements_spawn_shop_leer_timer-2_tick 0
@@ -79,6 +82,9 @@ execute as @s run scoreboard players set .server elements_stage_1_boss_melee_tim
 execute as @s run scoreboard players set .server elements_stage_2_portal_enable 0
 execute as @s run scoreboard players set .server elements_stage_2_boss_status 0
 execute as @s run scoreboard players set .server elements_stage_2_boss_melee_timer 0
+execute as @s run scoreboard players set .server elements_stage_3_portal_enable 0
+execute as @s run scoreboard players set .server elements_stage_3_boss_status 0
+execute as @s run scoreboard players set .server elements_stage_3_boss_melee_timer 0
 execute as @s run scoreboard players set .server elements_custom-items_shop_boss-frucht_remain 0
 execute as @s run scoreboard players set .server elements_double-xp-event_active 0
 execute as @s run scoreboard players set .server elements_double-xp-event_timer_actual_h 0

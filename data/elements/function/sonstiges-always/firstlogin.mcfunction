@@ -141,6 +141,8 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_deathcount 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_villager_stage-2_mana_level 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_villager_stage-2_farm-slots_level 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_villager_stage-3_mana_level 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_villager_stage-3_farm-slots_level 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stage-2_mana_activate_timer_sec 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_stage-2_mana_activate_timer_tick 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_mana_regeneration-per-sec 1

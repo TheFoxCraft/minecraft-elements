@@ -81,6 +81,7 @@
     water_bucket: Enderchest Shop Selection Admin Settings
     guster_banner_pattern: Enderchest Admin Settings Tipps Stage 1 #3
     bordure_indented_banner_pattern: Enderchest Admin Settings Tipps Stage 2 #3
+    paper: Illegale Lizenz Stage 3
 4:
     netherite_pickaxe: Element Pickaxe | Legendary
     netherite_axe: Element Axe | Legendary

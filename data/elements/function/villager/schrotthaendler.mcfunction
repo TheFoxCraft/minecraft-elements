@@ -3,7 +3,17 @@ execute as @a[tag=schrotthaendler] run scoreboard players set @s elements_schrot
 execute as @e[type=minecraft:interaction] at @s if entity @a[tag=schrotthaendler,distance=..10] run data remove entity @s interaction
 tag @a remove schrotthaendler
 
-#700
+#700   ACHTUNG ALLE JUST_IGONRE SCORES SIND FALSCH, DA DIESE ANDERS VERWENDET WERDEN | LEGACY
+#700   ACHTUNG ALLE JUST_IGONRE SCORES SIND FALSCH, DA DIESE ANDERS VERWENDET WERDEN | LEGACY
+#700   ACHTUNG ALLE JUST_IGONRE SCORES SIND FALSCH, DA DIESE ANDERS VERWENDET WERDEN | LEGACY
+#700   ACHTUNG ALLE JUST_IGONRE SCORES SIND FALSCH, DA DIESE ANDERS VERWENDET WERDEN | LEGACY
+#700   ACHTUNG ALLE JUST_IGONRE SCORES SIND FALSCH, DA DIESE ANDERS VERWENDET WERDEN | LEGACY
+#700   ACHTUNG ALLE JUST_IGONRE SCORES SIND FALSCH, DA DIESE ANDERS VERWENDET WERDEN | LEGACY
+#700   ACHTUNG ALLE JUST_IGONRE SCORES SIND FALSCH, DA DIESE ANDERS VERWENDET WERDEN | LEGACY
+#700   ACHTUNG ALLE JUST_IGONRE SCORES SIND FALSCH, DA DIESE ANDERS VERWENDET WERDEN | LEGACY
+#700   ACHTUNG ALLE JUST_IGONRE SCORES SIND FALSCH, DA DIESE ANDERS VERWENDET WERDEN | LEGACY
+#700   ACHTUNG ALLE JUST_IGONRE SCORES SIND FALSCH, DA DIESE ANDERS VERWENDET WERDEN | LEGACY
+#700   ACHTUNG ALLE JUST_IGONRE SCORES SIND FALSCH, DA DIESE ANDERS VERWENDET WERDEN | LEGACY
 
 execute as @a[scores={elements_schrotthaendler_clicked=1}] run tellraw @s ["","\n",{"text":"Schrotthändler: ","color":"yellow"},{"text":"Guten Tag! Bei mir kannst du deine einige deiner Besonderen Items gegen Level verkaufen, wenn du diese nichtmehr brauchst. Andere können sie dann wieder mit Leveln und Tokens kaufen.  Wenn du etwas kaufen willst, klicke Unten. Wenn du etwas verkaufen willst, halte dein Item in der Hand und klicke Ebenfalls Unten."},"\n","\n",{"text":"Ich möchte etwas kaufen","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 700"}}," | ",{"text":" Ich möchte mein Item verkaufen","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger just-ignore set 701"}}]
 execute as @a[scores={elements_schrotthaendler_clicked=1}] run scoreboard players set @s elements_schrotthaendler_clicked 0

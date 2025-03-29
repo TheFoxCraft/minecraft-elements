@@ -1,4 +1,5 @@
 {
+    "type": "command",
     "pools": [
       {
         "rolls": 1,
@@ -6,7 +7,7 @@
           {
             "type": "item",
             "weight": 1,
-            "name": "minecraft:netherite_sword",
+            "name": "minecraft:golden_apple",
             "functions": [
               {
                 "function": "set_count",
@@ -15,11 +16,15 @@
               {
                 "function": "set_components",
                 "components": {
-                  "minecraft:unbreakable": {},
-                  "minecraft:damage_resistant": {
-                    "types": "#minecraft:is_fire"
+                  "minecraft:custom_model_data": 4,
+                  "minecraft:food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": true
                   },
-                  "minecraft:custom_model_data": 4
+                  "minecraft:consumable": {
+                    "consume_seconds": 999999
+                  }
                 }
               },
               {
@@ -27,9 +32,9 @@
                 "name": [
                   {
                     "bold": true,
-                    "color": "gold",
+                    "color": "dark_purple",
                     "italic": false,
-                    "translate": "elements.item.element_sword.name"
+                    "text": "Bossfrucht Stage 3"
                   }
                 ]
               },
@@ -41,24 +46,37 @@
                   },
                   [
                     {
+                      "color": "light_purple",
+                      "italic": false,
+                      "translate": "elements.main.other.consume"
+                    },
+                    {
                       "color": "gray",
                       "italic": false,
-                      "translate": "elements.item.element_sword.description"
+                      "text": "Gibt eine "
                     },
                     {
                       "color": "green",
                       "italic": false,
-                      "translate": "elements.item.element_sword.legendary.drop"
+                      "text": "10% Chance"
                     }
                   ],
+                  {
+                    "color": "gray",
+                    "italic": false,
+                    "text": "Für einen zweiten Boss-Key beim nächsten Kampf"
+                  },
                   {
                     "translate": "elements.main.other.space"
                   },
                   {
-                    "bold": true,
-                    "color": "gold",
+                    "color": "dark_purple",
                     "italic": false,
-                    "translate": "elements.main.rarities.legendary"
+                    "bold": true,
+                    "translate": "elements.main.rarities.epic"
+                  },
+                  {
+                    "translate": "elements.main.other.space"
                   }
                 ],
                 "mode": "append"

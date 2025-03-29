@@ -177,6 +177,17 @@ execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @a[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 2 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_2
 execute as @a[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 2 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 2 [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]
 
+#stage 3
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..999}] if score .server elements_stage matches 3 at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..999}] if score .server elements_stage matches 3 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..}] if score .server elements_stage matches 3 at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..}] if score .server elements_stage matches 3 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..}] if score .server elements_stage matches 3 run loot give @s loot elements:items/shops/ocean/bossfrucht/stage_3
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..}] if score .server elements_stage matches 3 run xp add @s -1000 levels
+execute as @a[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 3 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_3
+execute as @a[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 3 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 3 [1.000 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]
+
+
 #footer
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:golden_apple",components:{"minecraft:custom_model_data":1}}}]

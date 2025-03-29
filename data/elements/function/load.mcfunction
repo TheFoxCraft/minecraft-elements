@@ -79,6 +79,17 @@ execute in elements:stage-2_bossroom run gamerule doTraderSpawning false
 execute in elements:stage-2_bossroom run gamerule doPatrolSpawning false
 execute in elements:stage-2_bossroom run gamerule disableRaids true
 
+execute in elements:stage-3_bossroom run gamerule keepInventory true
+execute in elements:stage-3_bossroom run gamerule lavaSourceConversion true
+execute in elements:stage-3_bossroom run gamerule spawnRadius 0
+execute in elements:stage-3_bossroom run gamerule universalAnger true
+execute in elements:stage-3_bossroom run gamerule doFireTick false
+execute in elements:stage-3_bossroom run difficulty hard
+execute in elements:stage-3_bossroom run forceload add 0 0 -1 -1
+execute in elements:stage-3_bossroom run gamerule doTraderSpawning false
+execute in elements:stage-3_bossroom run gamerule doPatrolSpawning false
+execute in elements:stage-3_bossroom run gamerule disableRaids true
+
 
 team add elements_ocean {"text": "[OCEAN] ","color": "dark_blue"}
 team add elements_stone {"text": "[STONE] ","color": "gray"}
@@ -110,6 +121,10 @@ bossbar set elements:stage-1_boss name {"text": "Rießiger Silberfisch","color":
 bossbar add elements:stage-2_boss "%null%"
 bossbar set elements:stage-2_boss color red
 bossbar set elements:stage-2_boss name {"text": "Plasma-Blaze","color": "white"}
+bossbar add elements:stage-3_boss "%null%"
+bossbar set elements:stage-3_boss color red
+bossbar set elements:stage-3_boss name {"text": "Böser Hoglin","color": "white"}
+
 
 
 
@@ -204,6 +219,8 @@ scoreboard objectives add elements_stats_stage_1_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_1_boss_killed dummy
 scoreboard objectives add elements_stats_stage_2_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_2_boss_killed dummy
+scoreboard objectives add elements_stats_stage_3_boss_spawned dummy
+scoreboard objectives add elements_stats_stage_3_boss_killed dummy
 scoreboard objectives add elements_stats_stage_0_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_0_boss_killed dummy
 
@@ -552,6 +569,11 @@ scoreboard objectives add elements_stage_2_boss_status dummy
 scoreboard objectives add elements_stage_2_boss_loot_count dummy
 scoreboard objectives add elements_stage_2_boss_melee_timer dummy
 scoreboard objectives add elements_stage_2_boss_spawn-player dummy
+scoreboard objectives add elements_stage_3_portal_enable dummy
+scoreboard objectives add elements_stage_3_boss_status dummy
+scoreboard objectives add elements_stage_3_boss_loot_count dummy
+scoreboard objectives add elements_stage_3_boss_melee_timer dummy
+scoreboard objectives add elements_stage_3_boss_spawn-player dummy
 
 scoreboard objectives add elements_spawn_vaults_refresh dummy
 scoreboard objectives add elements_leaderboards_refresh-timer dummy
@@ -561,6 +583,10 @@ scoreboard objectives add elements_villager_stage-2_mana_clicked dummy
 scoreboard objectives add elements_villager_stage-2_mana_level dummy
 scoreboard objectives add elements_villager_stage-2_farm-slots_clicked dummy
 scoreboard objectives add elements_villager_stage-2_farm-slots_level dummy
+scoreboard objectives add elements_villager_stage-3_mana_clicked dummy
+scoreboard objectives add elements_villager_stage-3_mana_level dummy
+scoreboard objectives add elements_villager_stage-3_farm-slots_clicked dummy
+scoreboard objectives add elements_villager_stage-3_farm-slots_level dummy
 scoreboard objectives add elements_stage-2_mana_activate_timer_tick dummy
 scoreboard objectives add elements_stage-2_mana_activate_timer_sec dummy
 scoreboard objectives add elements_mana_mana-count dummy
@@ -573,6 +599,8 @@ scoreboard objectives add elements_recycler_update dummy
 scoreboard objectives add elements_recycler_stats_1 dummy
 scoreboard objectives add elements_recycler_stats_2 dummy
 scoreboard objectives add elements_recycler_stats_2_spawn dummy
+scoreboard objectives add elements_recycler_stats_3 dummy
+scoreboard objectives add elements_recycler_stats_3_spawn dummy
 scoreboard objectives add elements_function_timer_1m dummy
 scoreboard objectives add elements_function_timer_10s dummy
 scoreboard objectives add elements_function_timer_5s dummy

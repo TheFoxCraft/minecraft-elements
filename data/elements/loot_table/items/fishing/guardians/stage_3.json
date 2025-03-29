@@ -7,6 +7,11 @@
                 {
                     "type": "loot_table",
                     "value": "elements:items/fishing/illegale_lizenzen/stage_2",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "elements:items/fishing/illegale_lizenzen/stage_3",
                     "weight": 2
                 }
             ]

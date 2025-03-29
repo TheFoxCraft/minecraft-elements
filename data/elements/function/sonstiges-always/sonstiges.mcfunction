@@ -11,6 +11,8 @@ execute in elements:stone run gamemode survival @a[distance=0..,gamemode=adventu
 execute in elements:sky run gamemode survival @a[distance=0..,gamemode=adventure]
 execute in elements:hub run gamemode adventure @a[distance=0..,gamemode=survival]
 execute in elements:stage-1_bossroom run gamemode adventure @a[distance=0..,gamemode=survival]
+execute in elements:stage-2_bossroom run gamemode adventure @a[distance=0..,gamemode=survival]
+execute in elements:stage-3_bossroom run gamemode adventure @a[distance=0..,gamemode=survival]
 
 execute as @a[scores={elements_homedimension=0},nbt={Dimension:"minecraft:overworld"}] if score .server elements_setup matches 1.. in elements:hub run tp 0 101 0
 execute as @a[scores={elements_homedimension=4},nbt={Dimension:"minecraft:overworld"}] if score .server elements_setup matches 1.. in elements:nether run tp 0 100 0
@@ -164,7 +166,8 @@ execute as @a[scores={elements_sonstiges_actionbar_pause=1..}] run scoreboard pl
 
 #guardian spawning fishing
 execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] at @s if score .server elements_stage matches ..1 run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_1",Tags:["elements_guardian"],PersistenceRequired:1b}
-execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] at @s if score .server elements_stage matches 2.. run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_2",Tags:["elements_guardian"],PersistenceRequired:1b}
+execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] at @s if score .server elements_stage matches 2 run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_2",Tags:["elements_guardian"],PersistenceRequired:1b}
+execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] at @s if score .server elements_stage matches 3.. run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_3",Tags:["elements_guardian"],PersistenceRequired:1b}
 execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] run kill @s
 
 
