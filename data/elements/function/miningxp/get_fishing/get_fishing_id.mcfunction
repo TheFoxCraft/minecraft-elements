@@ -8,7 +8,7 @@ $execute as @a[scores={elements_custom-items_shop_fishing-frucht_counter=3..},nb
 
 $execute as @a[scores={elements_miningxp_fishing_level=..99},nbt={UUID:$(UUID)}] run title @s actionbar ["",{"text":"🎣 Fishing: ","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_fishing_xp"},"color":"blue"},{"text":"/","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_fishing_nextlevel"},"color":"blue"},{"text":" XP","color":"blue"}]
 $execute as @a[scores={elements_miningxp_fishing_level=100},nbt={UUID:$(UUID)}] run title @s actionbar ["",{"text":"🎣 Fishing: ","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_fishing_xp"},"color":"blue"},{"text":" XP","color":"blue"}]
-
+$scoreboard players set @a[nbt={UUID:$(UUID)}] elements_sonstiges_actionbar_pause 20
 
 $execute as @a[nbt={UUID:$(UUID)}] store result score @s elements_miningxp_fishing_loot run random value 1..100
 $execute as @a[nbt={UUID:$(UUID)}] if score @s elements_miningxp_fishing_level >= @s elements_miningxp_fishing_loot at @s run loot spawn ~ ~ ~ fish elements:fishing_treasure_no-trigger ~ ~ ~

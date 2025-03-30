@@ -144,10 +144,10 @@ execute as @e[type=item_display,tag=elements_mystery_excalibur_sword,scores={ele
 
 
 #dimension-team set
-execute as @a[scores={elements_homedimension=1},team=!elements_ocean] run team join elements_ocean
-execute as @a[scores={elements_homedimension=2},team=!elements_stone] run team join elements_stone
-execute as @a[scores={elements_homedimension=3},team=!elements_sky] run team join elements_sky
-execute as @a[scores={elements_homedimension=4},team=!elements_nether] run team join elements_nether
+execute if score .server elements_override_by_dd matches 0 as @a[scores={elements_homedimension=1},team=!elements_ocean] run team join elements_ocean
+execute if score .server elements_override_by_dd matches 0 as @a[scores={elements_homedimension=2},team=!elements_stone] run team join elements_stone
+execute if score .server elements_override_by_dd matches 0 as @a[scores={elements_homedimension=3},team=!elements_sky] run team join elements_sky
+execute if score .server elements_override_by_dd matches 0 as @a[scores={elements_homedimension=4},team=!elements_nether] run team join elements_nether
 
 
 #disable entity drops

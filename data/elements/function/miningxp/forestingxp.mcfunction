@@ -13,6 +13,7 @@ execute as @a[scores={elements_miningxp_foresting_mine-get_spruce=1..}] at @s st
 execute as @a[scores={elements_miningxp_foresting_mine-get_spruce=1..}] at @s if score @s elements_miningxp_foresting_level >= @s elements_miningxp_foresting_loot at @e[type=item,nbt={Item:{id:"minecraft:spruce_log",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:spruce_log",count:1}}
 execute as @a[scores={elements_miningxp_foresting_mine-get_spruce=1..,elements_miningxp_foresting_level=..99}] run title @s actionbar ["",{"text":"🪓 Foraging: ","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_foresting_xp"},"color":"blue"},{"text":"/","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_foresting_nextlevel"},"color":"blue"},{"text":" XP","color":"blue"}]
 execute as @a[scores={elements_miningxp_foresting_mine-get_spruce=1..,elements_miningxp_foresting_level=100}] run title @s actionbar ["",{"text":"🪓 Foraging: ","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_foresting_xp"},"color":"blue"},{"text":" XP","color":"blue"}]
+execute as @a[scores={elements_miningxp_foresting_mine-get_spruce=1..}] run scoreboard players set @s elements_sonstiges_actionbar_pause 20
 execute as @a[scores={elements_miningxp_foresting_mine-get_spruce=1..}] run scoreboard players remove @s elements_miningxp_foresting_mine-get_spruce 1
 
 execute as @a[scores={elements_custom-items_shop_foraging-frucht_counter=3..}] run scoreboard players add @s elements_miningxp_foresting_xp 3

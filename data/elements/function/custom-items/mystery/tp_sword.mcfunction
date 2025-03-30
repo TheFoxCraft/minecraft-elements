@@ -9,7 +9,7 @@ execute as @s[scores={elements_custom-items_mystery_tp-schwert_cooldown=0,elemen
 execute as @s[scores={elements_custom-items_mystery_tp-schwert_cooldown=0,elements_mana_mana-count=10..},gamemode=!adventure] at @s rotated as @s run tp @s ^ ^ ^15
 execute as @s[scores={elements_custom-items_mystery_tp-schwert_cooldown=0,elements_mana_mana-count=10..},gamemode=!adventure] at @s run playsound entity.player.teleport master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_custom-items_mystery_tp-schwert_cooldown=0,elements_mana_mana-count=10..},gamemode=!adventure] at @s run effect give @s slow_falling 2 128 false
-execute as @s[scores={elements_custom-items_mystery_tp-schwert_cooldown=0,elements_mana_mana-count=10..},gamemode=!adventure] run scoreboard players set @s elements_sonstiges_actionbar_pause 15
+execute as @s[scores={elements_custom-items_mystery_tp-schwert_cooldown=0,elements_mana_mana-count=10..},gamemode=!adventure] run scoreboard players set @s elements_sonstiges_actionbar_pause 20
 execute as @s[scores={elements_custom-items_mystery_tp-schwert_cooldown=0,elements_mana_mana-count=10..},gamemode=!adventure] run title @s actionbar ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "10 Mana verbraucht (Jetzt: "},{"score": {"name": "@s","objective": "elements_mana_mana-count"}},{"text": ")"}]
 execute as @s[scores={elements_custom-items_mystery_tp-schwert_cooldown=0,elements_mana_mana-count=10..},gamemode=!adventure] run scoreboard players remove @s elements_mana_mana-count 10
 

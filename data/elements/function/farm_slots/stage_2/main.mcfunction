@@ -61,7 +61,7 @@ execute as @e[type=marker,tag=elements_farm-slot_stage-2] at @s if entity @a[dis
 
 # show remaining slots
 execute as @a[nbt={SelectedItem:{id:"minecraft:spruce_sapling",components:{"minecraft:custom_model_data":1}}}] run title @s actionbar ["",{"text": "Farmslots: ","color": "green"},{"score": {"name": "@s","objective": "elements_farm-slots_stage-2_slots"},"color": "green"},{"text": "/","color": "green"},{"score": {"name": "@s","objective": "elements_farm-slots_stage-2_max-slots"},"color": "green"}]
-
+execute as @a[nbt={SelectedItem:{id:"minecraft:spruce_sapling",components:{"minecraft:custom_model_data":1}}}] run scoreboard players set @s elements_sonstiges_actionbar_hold 1
 
 #show broken slots
 execute as @a[scores={just-ignore=500}] run function elements:farm_slots/stage_2/show_broken_slots_pre

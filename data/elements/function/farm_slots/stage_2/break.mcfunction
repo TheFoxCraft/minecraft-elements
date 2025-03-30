@@ -9,6 +9,7 @@ $execute if score @s elements_farm-slots_stage-2_correct_UUID matches 0 run tell
 execute if score @s elements_farm-slots_stage-2_correct_UUID matches 0 run loot spawn ~ ~ ~ loot elements:items/farm_slots/stage_2
 $execute if score @s elements_farm-slots_stage-2_correct_UUID matches 0 run scoreboard players remove @a[nbt={UUID:$(UUID)}] elements_farm-slots_stage-2_slots 1
 $execute if score @s elements_farm-slots_stage-2_correct_UUID matches 0 as @a[nbt={UUID:$(UUID)}] run title @s actionbar ["",{"text": "Farmslots: ","color": "green"},{"score": {"name": "@s","objective": "elements_farm-slots_stage-2_slots"},"color": "green"},{"text": "/","color": "green"},{"score": {"name": "@s","objective": "elements_farm-slots_stage-2_max-slots"},"color": "green"}]
+$execute if score @s elements_farm-slots_stage-2_correct_UUID matches 0 as @a[nbt={UUID:$(UUID)}] run scoreboard players set @s elements_sonstiges_actionbar_pause 20
 
 $scoreboard players set @a[nbt={UUID:$(UUID)}] elements_farm-slots_stage-2_broken 0
 

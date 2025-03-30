@@ -127,7 +127,7 @@ bossbar set elements:stage-3_boss name {"text": "Böser Hoglin","color": "white"
 
 
 
-
+scoreboard objectives add elements_override_by_dd dummy
 scoreboard objectives add just-ignore trigger
 scoreboard objectives add elements_admin_config_clicked dummy
 scoreboard objectives add elements_rank_admin dummy
@@ -709,7 +709,9 @@ execute unless score .server elements_stats_playtime_sec matches 1.. run scorebo
 execute unless score .server elements_stats_playtime_min matches 1.. run scoreboard players set .server elements_stats_playtime_min 0
 
 
-
+#check for dasdatapack
+scoreboard players set .server elements_override_by_dd 0
+function dasdatapack:elements/check_for_install
 
 #set fixed values
 scoreboard players set .server elements_fixed-value_1 1

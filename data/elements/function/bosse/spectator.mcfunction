@@ -1,4 +1,5 @@
 title @s actionbar ["",{"text": "Du bist Zuschauer!","color": "green"},{"text": " Nutze \"/trigger leave\" zum Verlassen!","color": "gray"}]
+scoreboard players set @s elements_sonstiges_actionbar_hold 2
 
 scoreboard players enable @s leave
 

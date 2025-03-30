@@ -18,6 +18,7 @@ execute as @a[scores={elements_miningxp_mining_mine-get_stone=1..}] at @s if sco
 execute as @a[scores={elements_miningxp_mining_mine-get_stone=1..}] at @s if score @s elements_miningxp_mining_level >= @s elements_miningxp_mining_loot at @e[type=item,nbt={Item:{id:"minecraft:cobblestone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:cobblestone",count:1}}
 execute as @a[scores={elements_miningxp_mining_mine-get_stone=1..,elements_miningxp_mining_level=..99}] run title @s actionbar ["",{"text":"⛏ Mining: ","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_mining_xp"},"color":"blue"},{"text":"/","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_mining_nextlevel"},"color":"blue"},{"text":" XP","color":"blue"}]
 execute as @a[scores={elements_miningxp_mining_mine-get_stone=1..,elements_miningxp_mining_level=100}] run title @s actionbar ["",{"text":"⛏ Mining: ","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_mining_xp"},"color":"blue"},{"text":" XP","color":"blue"}]
+execute as @a[scores={elements_miningxp_mining_mine-get_stone=1..}] run scoreboard players set @s elements_sonstiges_actionbar_pause 20
 execute as @a[scores={elements_miningxp_mining_mine-get_stone=1..}] run scoreboard players remove @s elements_miningxp_mining_mine-get_stone 1
 
 execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..}] run scoreboard players add @s elements_miningxp_mining_xp 1
@@ -34,6 +35,7 @@ execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..}] at @s 
 execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..}] at @s if score @s elements_miningxp_mining_level >= @s elements_miningxp_mining_loot at @e[type=item,nbt={Item:{id:"minecraft:cobblestone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:cobblestone",count:1}}
 execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..,elements_miningxp_mining_level=..99}] run title @s actionbar ["",{"text":"⛏ Mining: ","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_mining_xp"},"color":"blue"},{"text":"/","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_mining_nextlevel"},"color":"blue"},{"text":" XP","color":"blue"}]
 execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..,elements_miningxp_mining_level=100}] run title @s actionbar ["",{"text":"⛏ Mining: ","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_mining_xp"},"color":"blue"},{"text":" XP","color":"blue"}]
+execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..}] run scoreboard players set @s elements_sonstiges_actionbar_pause 20
 execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..}] run scoreboard players remove @s elements_miningxp_mining_mine-get_cobblestone 1
 
 execute as @a[scores={elements_miningxp_mining_mine-get_basalt=1..}] run scoreboard players add @s elements_miningxp_mining_xp 1
@@ -50,6 +52,7 @@ execute as @a[scores={elements_miningxp_mining_mine-get_basalt=1..}] at @s store
 execute as @a[scores={elements_miningxp_mining_mine-get_basalt=1..}] at @s if score @s elements_miningxp_mining_level >= @s elements_miningxp_mining_loot at @e[type=item,nbt={Item:{id:"minecraft:basalt",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:basalt",count:1}}
 execute as @a[scores={elements_miningxp_mining_mine-get_basalt=1..,elements_miningxp_mining_level=..99}] run title @s actionbar ["",{"text":"⛏ Mining: ","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_mining_xp"},"color":"blue"},{"text":"/","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_mining_nextlevel"},"color":"blue"},{"text":" XP","color":"blue"}]
 execute as @a[scores={elements_miningxp_mining_mine-get_basalt=1..,elements_miningxp_mining_level=100}] run title @s actionbar ["",{"text":"⛏ Mining: ","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_mining_xp"},"color":"blue"},{"text":" XP","color":"blue"}]
+execute as @a[scores={elements_miningxp_mining_mine-get_basalt=1..}] run scoreboard players set @s elements_sonstiges_actionbar_pause 20
 execute as @a[scores={elements_miningxp_mining_mine-get_basalt=1..}] run scoreboard players remove @s elements_miningxp_mining_mine-get_basalt 1
 
 execute as @a[scores={elements_custom-items_shop_mining-frucht_counter=3..}] run scoreboard players add @s elements_miningxp_mining_xp 1
