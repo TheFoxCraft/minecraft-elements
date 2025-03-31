@@ -29,7 +29,7 @@
                     "bold": true,
                     "color": "dark_purple",
                     "italic": false,
-                    "text": "Element Pickaxe"
+                    "translate": "elements.item.element_sword.name"
                   }
                 ]
               },

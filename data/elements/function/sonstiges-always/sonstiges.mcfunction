@@ -176,6 +176,9 @@ execute as @a[scores={elements_custom-items_shop_sauger_click=1..}] run function
 execute as @a[scores={elements_custom-items_shop_sauger_click=1..}] run scoreboard players remove @s elements_custom-items_shop_sauger_click 1
 
 
+bossbar set elements:credits players @a
+bossbar set elements:credits_hide players @a
+
 #execute as @e[type=minecraft:interaction,tag=startquest] at @s on target run tag @s add right
 #execute as @a[tag=right] run scoreboard players set @s techniker_clicked 1
 #execute as @e[type=minecraft:interaction] at @s if entity @p[tag=right,distance=..4] run data remove entity @s interaction

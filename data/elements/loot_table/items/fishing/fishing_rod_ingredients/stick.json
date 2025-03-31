@@ -27,7 +27,7 @@
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Stabiler Stock"
+                    "translate": "elements.item.fishing_rod.ingredients.stick.name"
                   }
                 ]
               },
@@ -40,7 +40,7 @@
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Hergestellt aus dem Härtesten Bekannten Holz"
+                    "translate": "elements.item.fishing_rod.ingredients.stick.description"
                   },
                   {
                     "translate": "elements.main.other.space"

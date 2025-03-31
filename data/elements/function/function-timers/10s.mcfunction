@@ -1,6 +1,6 @@
 #functions
 
-
+function elements:sonstiges/credits_bossbar
 
 #abgaben dynamic goals
 scoreboard players set .server elements_abgabe_stage_2_goal 100

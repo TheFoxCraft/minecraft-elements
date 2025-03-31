@@ -109,6 +109,15 @@ team modify elements_god_stone prefix {"text": "[ELEMENTS-GOD] ","color": "gray"
 team modify elements_god_sky prefix {"text": "[ELEMENTS-GOD] ","color": "aqua"}
 team modify elements_god_nether prefix {"text": "[ELEMENTS-GOD] ","color": "red"}
 
+
+bossbar add elements:credits "%null%"
+bossbar set elements:credits color purple
+bossbar set elements:credits name [{"translate": "elements.main.elements_sign"}]
+bossbar set elements:credits value 100
+bossbar add elements:credits_hide "%null%"
+bossbar set elements:credits_hide color purple
+bossbar set elements:credits_hide name ""
+bossbar set elements:credits_hide value 100
 bossbar add elements:gruppenziel_total "%null%"
 bossbar set elements:gruppenziel_total color green
 bossbar set elements:gruppenziel_total name {"text": "Aktuell gibt es kein Gruppenziel","color": "white"}

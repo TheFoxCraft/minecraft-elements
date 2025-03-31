@@ -39,7 +39,7 @@
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Großer Heiltrank"
+                    "translate": "elements.item.shop.nether.großer_heiltrank.name"
                   }
                 ]
               },
@@ -58,7 +58,7 @@
                     {
                       "color": "gray",
                       "italic": false,
-                      "text": "Heilt sofort um 8 Herzen"
+                      "translate": "elements.item.shop.nether.großer_heiltrank.description"
                     }
                   ],
                   {

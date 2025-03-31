@@ -39,7 +39,7 @@
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Luck Potion"
+                    "translate": "elements.item.shop.ocean.luck_potion.name"
                   }
                 ]
               },
@@ -51,19 +51,19 @@
                   },
                   [
                     {
-                      "color": "gray",
+                      "color": "green",
                       "italic": false,
                       "translate": "elements.main.other.consume"
                     },
                     {
-                      "color": "green",
-                      "italic": false,
-                      "text": "Glück 50 für 1 Stunde "
-                    },
-                    {
                       "color": "gray",
                       "italic": false,
-                      "text": "[Stackable]"
+                      "translate": "elements.item.shop.ocean.luck_potion.description_1"
+                    },
+                    {
+                      "color": "dark_gray",
+                      "italic": false,
+                      "translate": "elements.item.shop.ocean.luck_potion.description_2"
                     }
                   ],
                   {

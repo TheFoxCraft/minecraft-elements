@@ -39,7 +39,7 @@
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Water Breathing Potion"
+                    "translate": "elements.item.shop.ocean.water_breathing.name"
                   }
                 ]
               },
@@ -51,19 +51,19 @@
                   },
                   [
                     {
-                      "color": "gray",
+                      "color": "green",
                       "italic": false,
                       "translate": "elements.main.other.consume"
                     },
                     {
-                      "color": "green",
-                      "italic": false,
-                      "text": "Wasseratmung für 1 Stunde "
-                    },
-                    {
                       "color": "gray",
                       "italic": false,
-                      "text": "[Stackable]"
+                      "translate": "elements.item.shop.ocean.water_breathing.description_1"
+                    },
+                    {
+                      "color": "dark_gray",
+                      "italic": false,
+                      "translate": "elements.item.shop.ocean.water_breathing.description_2"
                     }
                   ],
                   {

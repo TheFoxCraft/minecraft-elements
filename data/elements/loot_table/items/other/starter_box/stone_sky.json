@@ -67,7 +67,7 @@
                 "name": [
                   {
                     "italic": false,
-                    "text": "Starterbox"
+                    "translate": "elements.item.other.starterbox"
                   }
                 ]
               }

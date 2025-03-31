@@ -39,7 +39,7 @@
                     "bold": true,
                     "color": "blue",
                     "italic": false,
-                    "text": "Leveltrank"
+                    "translate": "elements.item.shop.stone.level_trank.name"
                   }
                 ],
                 "target": "custom_name"
@@ -52,14 +52,14 @@
                   },
                   [
                     {
-                      "color": "gray",
+                      "color": "green",
                       "italic": false,
                       "translate": "elements.main.other.consume"
                     },
                     {
-                      "color": "green",
+                      "color": "gray",
                       "italic": false,
-                      "text": "Level-Ertrag +10% für 15 Minuten"
+                      "translate": "elements.item.shop.stone.level_trank.description_1"
                     }
                   ],
                   {

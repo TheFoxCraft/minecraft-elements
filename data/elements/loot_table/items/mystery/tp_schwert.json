@@ -42,7 +42,7 @@
                   "bold": true,
                   "color": "dark_purple",
                   "italic": false,
-                  "text": "TP-Schwert"
+                  "translate": "elements.item.customs.mystery.tp_schwert.name"
                 }
               ]
             },
@@ -56,23 +56,26 @@
                   {
                     "color": "green",
                     "italic": false,
-                    "text": "Benutzen: "
+                    "translate": "elements.main.other.use"
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Teleportiert den Spieler 15 Blöcke"
+                    "translate": "elements.item.customs.mystery.tp_schwert.description_1"
                   }
                 ],
                 {
                   "color": "gray",
                   "italic": false,
-                  "text": " in Blickrichtung"
+                  "translate": "elements.item.customs.mystery.tp_schwert.description_2"
                 },
                 {
                   "color": "red",
                   "italic": false,
-                  "text": "(10 Mana)"
+                  "translate": "elements.item.main.mana_use",
+                  "with": [
+                    "10"
+                  ]
                 },
                 {
                   "translate": "elements.main.other.space"

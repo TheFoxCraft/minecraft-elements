@@ -33,7 +33,7 @@
                   "bold": true,
                   "color": "blue",
                   "italic": false,
-                  "text": "Sauger"
+                  "translate": "elements.item.shop.sky.sauger.name"
                 }
               ]
             },
@@ -46,7 +46,7 @@
                 {
                   "color": "gray",
                   "italic": false,
-                  "text": "Mit Magischer Saugkraft"
+                  "translate": "elements.item.shop.sky.sauger.description"
                 },
                 {
                   "translate": "elements.main.other.space"
@@ -55,12 +55,12 @@
                   {
                     "color": "green",
                     "italic": false,
-                    "text": "Verwenden: "
+                    "translate": "elements.main.other.use"
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Saugt Wasser im 10x10x10 um den Spieler auf"
+                    "translate": "elements.item.shop.sky.sauger.use"
                   }
                 ],
                 {
@@ -69,7 +69,7 @@
                 {
                   "color": "gray",
                   "italic": false,
-                  "text": "50 Verwendungen"
+                  "translate": "elements.item.shop.sky.sauger.usages"
                 },
                 {
                   "translate": "elements.main.other.space"

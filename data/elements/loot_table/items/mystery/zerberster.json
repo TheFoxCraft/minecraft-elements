@@ -41,7 +41,7 @@
                 {
                   "color": "gold",
                   "italic": false,
-                  "text": "Zerberster",
+                  "translate": "elements.item.customs.mystery.zerberster.name",
                   "bold": true
                 }
               ]
@@ -56,28 +56,31 @@
                   {
                     "color": "green",
                     "italic": false,
-                    "text": "Benutzen: "
+                    "translate": "elements.main.other.use"
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Greift bis zu 10 Gegener"
+                    "translate": "elements.item.customs.mystery.zerberster.description_1"
                   }
                 ],
                 {
                   "color": "gray",
                   "italic": false,
-                  "text": " in der Nähe an"
+                  "translate": "elements.item.customs.mystery.zerberster.description_2"
                 },
                 {
                   "color": "dark_gray",
                   "italic": false,
-                  "text": " (Sneake um Spieler einzuschließen)"
+                  "translate": "elements.item.customs.mystery.zerberster.description_3"
                 },
                 {
                   "color": "red",
                   "italic": false,
-                  "text": "(50 Mana)"
+                  "translate": "elements.item.main.mana_use",
+                  "with": [
+                    "50"
+                  ]
                 },
                 {
                   "translate": "elements.main.other.space"

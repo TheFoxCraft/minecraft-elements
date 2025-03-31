@@ -19,7 +19,7 @@
                   {
                     "color": "yellow",
                     "italic": false,
-                    "text": "Was Krasses"
+                    "translate": "elements.item.customs.mystery.trash.name"
                   }
                 ]
               },
@@ -32,7 +32,7 @@
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Vertrau mir, ist was ganz Krasses!"
+                    "translate": "elements.item.customs.mystery.trash.description"
                   },
                   {
                     "translate": "elements.main.other.space"

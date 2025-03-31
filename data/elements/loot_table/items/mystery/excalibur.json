@@ -43,7 +43,7 @@
                 {
                   "color": "light_purple",
                   "italic": false,
-                  "text": "Excalibur",
+                  "translate": "elements.item.customs.mystery.excalibur.name",
                   "bold": true
                 }
               ]
@@ -58,23 +58,26 @@
                   {
                     "color": "green",
                     "italic": false,
-                    "text": "Benutzen: "
+                    "translate": "elements.main.other.use"
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Pfählt Gegner mit einem"
+                    "translate": "elements.item.customs.mystery.excalibur.description_1"
                   }
                 ],
                 {
                   "color": "gray",
                   "italic": false,
-                  "text": " mächtigen Angriff."
+                  "translate": "elements.item.customs.mystery.excalibur.description_2"
                 },
                 {
                   "color": "red",
                   "italic": false,
-                  "text": "(1.500 Mana)"
+                  "translate": "elements.item.main.mana_use",
+                  "with": [
+                    "1.500"
+                  ]
                 },
                 {
                   "translate": "elements.main.other.space"

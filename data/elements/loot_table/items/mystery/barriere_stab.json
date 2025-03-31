@@ -34,7 +34,7 @@
                 {
                   "color": "dark_purple",
                   "italic": false,
-                  "text": "Barriere Stab",
+                  "translate": "elements.item.customs.mystery.barriere_stab.name",
                   "bold": true
                 }
               ]
@@ -49,23 +49,26 @@
                   {
                     "color": "green",
                     "italic": false,
-                    "text": "Benutzen: "
+                    "translate": "elements.main.other.use"
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Macht den Spieler für"
+                    "translate": "elements.item.customs.mystery.barriere_stab.description_1"
                   }
                 ],
                 {
                   "color": "gray",
                   "italic": false,
-                  "text": " kurze Zeit unverwundbar"
+                  "translate": "elements.item.customs.mystery.barriere_stab.description_2"
                 },
                 {
                   "color": "red",
                   "italic": false,
-                  "text": "(200 Mana)"
+                  "translate": "elements.item.main.mana_use",
+                  "with": [
+                    "200"
+                  ]
                 },
                 {
                   "translate": "elements.main.other.space"

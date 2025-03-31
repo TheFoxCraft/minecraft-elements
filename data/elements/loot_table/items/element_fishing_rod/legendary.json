@@ -42,7 +42,7 @@
                     "bold": true,
                     "color": "gold",
                     "italic": false,
-                    "text": "Element Fishing Rod"
+                    "translate": "elements.item.element_fishing_rod.name"
                   }
                 ]
               },
@@ -56,12 +56,12 @@
                     {
                       "color": "gray",
                       "italic": false,
-                      "text": "Luck: "
+                      "translate": "elements.item.element_fishing_rod.description"
                     },
                     {
                       "color": "green",
                       "italic": false,
-                      "text": "+75"
+                      "translate": "elements.item.element_fishing_rod.legendary.luck"
                     }
                   ],
                   {

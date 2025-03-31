@@ -52,7 +52,7 @@
                   "bold": true,
                   "color": "dark_purple",
                   "italic": false,
-                  "text": "Heiße Lava"
+                  "translate": "elements.item.shop.nether.hot_lava.name"
                 }
               ]
             },
@@ -65,7 +65,7 @@
                 {
                   "color": "gray",
                   "italic": false,
-                  "text": "Super Heiße, Ätzende Lava"
+                  "translate": "elements.item.shop.nether.hot_lava.description"
                 },
                 {
                   "translate": "elements.main.other.space"
@@ -74,12 +74,12 @@
                   {
                     "color": "green",
                     "italic": false,
-                    "text": "Verwenden: "
+                    "translate": "elements.main.other.use"
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Zerstört Stein im 10x10x10 Würfel um den Spieler"
+                    "translate": "elements.item.shop.nether.hot_lava.use"
                   }
                 ],
                 
@@ -89,7 +89,7 @@
                 {
                   "color": "gray",
                   "italic": false,
-                  "text": "50 Verwendungen"
+                  "translate": "elements.item.shop.nether.hot_lava.usages"
                 },
                 {
                   "translate": "elements.main.other.space"

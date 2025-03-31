@@ -29,7 +29,7 @@
                     "bold": true,
                     "color": "light_purple",
                     "italic": false,
-                    "text": "Element Axe"
+                    "translate": "elements.item.element_axe.name"
                   }
                 ]
               },
@@ -44,12 +44,12 @@
                     {
                       "color": "gray",
                       "italic": false,
-                      "text": "Spruce-Log Drop: "
+                      "translate":"elements.item.element_axe.description"
                     },
                     {
                       "color": "green",
                       "italic": false,
-                      "text": "+500%"
+                      "translate":"elements.item.element_tools.mythic.drop"
                     }
                   ],
                   {

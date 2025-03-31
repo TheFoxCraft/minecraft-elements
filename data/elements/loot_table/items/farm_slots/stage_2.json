@@ -26,7 +26,7 @@
                   {
                     "color": "yellow",
                     "italic": false,
-                    "text": "Fichtensetzling"
+                    "translate": "elements.item.farm_slots.stage_2.name"
                   }
                 ],
                 "target": "item_name"
@@ -40,7 +40,7 @@
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Magischer Fichtensetzling, der auf ewig wächst"
+                    "translate": "elements.item.farm_slots.stage_2.description_1"
                   },
                   {
                     "translate": "elements.main.other.space"
@@ -48,7 +48,7 @@
                   {
                     "color": "dark_gray",
                     "italic": false,
-                    "text": "(Teil des Farmslot Systems)"
+                    "translate": "elements.item.farm_slots.stage_2.description_2"
                   },
                   {
                     "translate": "elements.main.other.space"

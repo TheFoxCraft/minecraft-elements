@@ -39,7 +39,7 @@
                     "bold": true,
                     "color": "yellow",
                     "italic": false,
-                    "text": "Hastetrank"
+                    "translate": "elements.item.shop.stone.haste_trank.name"
                   }
                 ]
               },
@@ -51,19 +51,19 @@
                   },
                   [
                     {
-                      "color": "gray",
+                      "color": "green",
                       "italic": false,
                       "translate": "elements.main.other.consume"
                     },
                     {
-                      "color": "green",
-                      "italic": false,
-                      "text": "Haste III für 1 Stunde "
-                    },
-                    {
                       "color": "gray",
                       "italic": false,
-                      "text": "[Stackable]"
+                      "translate": "elements.item.shop.stone.haste_trank.description_1"
+                    },
+                    {
+                      "color": "dark_gray",
+                      "italic": false,
+                      "translate": "elements.item.shop.stone.haste_trank.description_2"
                     }
                   ],
                   {

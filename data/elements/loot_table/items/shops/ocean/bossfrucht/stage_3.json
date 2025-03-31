@@ -34,7 +34,10 @@
                     "bold": true,
                     "color": "dark_purple",
                     "italic": false,
-                    "text": "Bossfrucht Stage 3"
+                    "translate": "elements.item.shop.ocean.bossfrucht.name",
+                    "with": [
+                      "3"
+                    ]
                   }
                 ]
               },
@@ -53,18 +56,18 @@
                     {
                       "color": "gray",
                       "italic": false,
-                      "text": "Gibt eine "
+                      "translate": "elements.item.shop.ocean.bossfrucht.description_1"
                     },
                     {
                       "color": "green",
                       "italic": false,
-                      "text": "10% Chance"
+                      "translate": "elements.item.shop.ocean.bossfrucht.description_2"
                     }
                   ],
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Für einen zweiten Boss-Key beim nächsten Kampf"
+                    "translate": "elements.item.shop.ocean.bossfrucht.description_3"
                   },
                   {
                     "translate": "elements.main.other.space"

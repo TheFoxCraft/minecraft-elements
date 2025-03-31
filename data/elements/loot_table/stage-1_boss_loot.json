@@ -2,15 +2,6 @@
   "type": "vault",
   "pools": [
     {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "loot_table",
-          "value": "elements:items/tokens/common"
-        }
-      ]
-    },
-    {
       "rolls": 3,
       "entries": [
         {

@@ -7,7 +7,7 @@
           {
             "type": "item",
             "weight": 1,
-            "name": "minecraft:golden_apple",
+            "name": "minecraft:chorus_fruit",
             "functions": [
               {
                 "function": "set_count",
@@ -16,7 +16,9 @@
               {
                 "function": "set_components",
                 "components": {
-                  "minecraft:custom_model_data": 3,
+                  "minecraft:custom_model_data": 1,
+                  "minecraft:hide_additional_tooltip": {},
+                  "minecraft:max_stack_size": 64,
                   "minecraft:food": {
                     "nutrition": 0,
                     "saturation": 0,
@@ -34,10 +36,7 @@
                     "bold": true,
                     "color": "dark_purple",
                     "italic": false,
-                    "translate": "elements.item.shop.ocean.bossfrucht.name",
-                    "with": [
-                      "2"
-                    ]
+                    "translate": "elements.item.shop.ocean.mining_frucht.name"
                   }
                 ]
               },
@@ -49,37 +48,24 @@
                   },
                   [
                     {
-                      "color": "light_purple",
+                      "color": "green",
                       "italic": false,
                       "translate": "elements.main.other.consume"
                     },
                     {
                       "color": "gray",
                       "italic": false,
-                      "translate": "elements.item.shop.ocean.bossfrucht.description_1"
-                    },
-                    {
-                      "color": "green",
-                      "italic": false,
-                      "translate": "elements.item.shop.ocean.bossfrucht.description_2"
+                      "translate": "elements.item.shop.ocean.mining_frucht.description"
                     }
                   ],
                   {
-                    "color": "gray",
-                    "italic": false,
-                    "translate": "elements.item.shop.ocean.bossfrucht.description_3"
-                  },
-                  {
                     "translate": "elements.main.other.space"
                   },
                   {
+                    "bold": true,
                     "color": "dark_purple",
                     "italic": false,
-                    "bold": true,
                     "translate": "elements.main.rarities.epic"
-                  },
-                  {
-                    "translate": "elements.main.other.space"
                   }
                 ],
                 "mode": "append"

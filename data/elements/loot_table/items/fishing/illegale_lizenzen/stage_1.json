@@ -34,7 +34,7 @@
                   {
                     "color": "yellow",
                     "italic": false,
-                    "text": "Illegale Lizenz",
+                    "translate": "elements.item.illegale_lizenz.name",
                     "bold": true
                   }
                 ]
@@ -48,12 +48,18 @@
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Illegale Lizenz für 5 Extra Farmslots"
+                    "translate": "elements.item.illegale_lizenz.description",
+                    "with": [
+                      "5"
+                    ]
                   },
                   {
                     "color": "gray",
                     "italic": false,
-                    "text": "Für Stage 1"
+                    "translate": "elements.item.illegale_lizenz.stage",
+                    "with": [
+                      "1"
+                    ]
                   },
                   {
                     "translate": "elements.main.other.space"
