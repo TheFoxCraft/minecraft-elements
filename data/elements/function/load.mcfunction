@@ -1,4 +1,5 @@
-tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message"},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
+"with":[{"text":"V-1.0.0.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 
 execute in elements:hub run gamerule keepInventory true
 execute in elements:hub run gamerule lavaSourceConversion true
@@ -143,6 +144,8 @@ scoreboard objectives add elements_rank_admin dummy
 scoreboard objectives add elements_rank_cam dummy
 scoreboard objectives add elements_stage dummy
 scoreboard objectives add elements_mainlevel dummy
+scoreboard objectives add elements_tokens_random dummy
+scoreboard objectives add elements_tokens_count dummy
 scoreboard objectives add elements_techniker_level dummy
 scoreboard objectives add elements_techniker_random_type dummy
 scoreboard objectives add elements_techniker_random_message dummy
@@ -210,17 +213,6 @@ scoreboard objectives add elements_sonstiges_actionbar_pause dummy
 
 
 
-## Schrotthändler
-scoreboard objectives add elements_schrotthaendler_clicked dummy
-scoreboard objectives add elements_inv_token_common dummy
-scoreboard objectives add elements_inv_token_rare dummy
-scoreboard objectives add elements_inv_token_epic dummy
-scoreboard objectives add elements_inv_token_legendary dummy
-scoreboard objectives add elements_inv_token_mythic dummy
-#sold items
-scoreboard objectives add elements_schrotthaendler_item_gravity-stone_rare dummy
-scoreboard objectives add elements_schrotthaendler_item_lebensfrucht dummy
-scoreboard objectives add elements_schrotthaendler_item_photon_rare dummy
 
 
 
@@ -583,6 +575,8 @@ scoreboard objectives add elements_stage_3_boss_status dummy
 scoreboard objectives add elements_stage_3_boss_loot_count dummy
 scoreboard objectives add elements_stage_3_boss_melee_timer dummy
 scoreboard objectives add elements_stage_3_boss_spawn-player dummy
+
+scoreboard objectives add elements_stage_3_portal_enable_fungus_timer dummy
 
 scoreboard objectives add elements_spawn_vaults_refresh dummy
 scoreboard objectives add elements_leaderboards_refresh-timer dummy

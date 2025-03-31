@@ -57,7 +57,7 @@ execute as @a store result score @s elements_inv_emerald run clear @s minecraft:
 execute as @a store result score @s elements_inv_ancient_debris run clear @s minecraft:ancient_debris 0
 execute as @a store result score @s elements_inv_elytra run clear @s minecraft:elytra 0
 execute as @a store result score @s elements_inv_fish run clear @s #fishes 0
-execute as @a store result score @s elements_inv_token_common run clear @s iron_ingot[custom_model_data=1] 0
+
 
 
 execute as @a if score @s elements_stats_maxlevel < @s elements_mainlevel run scoreboard players operation @s elements_stats_maxlevel = @s elements_mainlevel

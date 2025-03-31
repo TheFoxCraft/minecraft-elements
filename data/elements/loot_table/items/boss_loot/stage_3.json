@@ -1,0 +1,151 @@
+{
+  "type": "vault",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:charcoal",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:netherrack",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:porkchop",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:leather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "weight": 5,
+          "value": "elements:items/element_helment/rare",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "loot_table",
+              "value": "elements:items/customs/lebensfrucht",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "elements_stage": 3
+                  }
+                }
+              ],
+              "weight": 5
+            },
+            {
+              "type": "minecraft:empty",
+              "weight": 5
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 10,
+          "value": "elements:items/customs/boss-keks/stage_3"
+        },
+        {
+          "type": "empty",
+          "weight": 80
+        }
+      ]
+    },
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:charcoal",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:netherrack",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:porkchop",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:leather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,7 @@
           {
             "type": "item",
             "weight": 1,
-            "name": "minecraft:iron_sword",
+            "name": "minecraft:crimson_fungus",
             "functions": [
               {
                 "function": "set_count",
@@ -15,21 +15,28 @@
               {
                 "function": "set_components",
                 "components": {
-                  "minecraft:unbreakable": {},
-                  "minecraft:damage_resistant": {
-                    "types": "#minecraft:is_fire"
-                  },
-                  "minecraft:custom_model_data": 1
+                  "minecraft:custom_model_data": 1,
+                  "attribute_modifiers": {
+                    "modifiers": [
+                        {
+                            "type": "block_interaction_range",
+                            "id": "block_interaction_range",
+                            "amount": -1,
+                            "operation": "add_multiplied_base"
+                        }
+                    ],
+                    "show_in_tooltip": false
+                  }
                 }
               },
               {
                 "function": "set_name",
                 "name": [
                   {
-                    "bold": true,
-                    "color": "yellow",
+                    "color": "blue",
                     "italic": false,
-                    "translate": "elements.item.element_sword.name"
+                    "bold": true,
+                    "translate": "elements.item.stage_3.portal_enable.crimson_fungus.name"
                   }
                 ],
                 "target": "item_name"
@@ -40,26 +47,20 @@
                   {
                     "translate": "elements.main.other.space"
                   },
-                  [
-                    {
-                      "color": "gray",
-                      "italic": false,
-                      "translate": "elements.item.element_sword.description"
-                    },
-                    {
-                      "color": "green",
-                      "italic": false,
-                      "translate": "elements.item.element_tools.common.drop"
-                    }
-                  ],
                   {
+                    "color": "gray",
+                    "italic": false,
+                    "translate": "elements.item.stage_3.portal_enable.crimson_fungus.description"
+                  },
+                  {
+                    "italic": false,
                     "translate": "elements.main.other.space"
                   },
                   {
                     "bold": true,
-                    "color": "yellow",
+                    "color": "blue",
                     "italic": false,
-                    "translate": "elements.main.rarities.common"
+                    "translate": "elements.main.rarities.rare"
                   }
                 ],
                 "mode": "append"

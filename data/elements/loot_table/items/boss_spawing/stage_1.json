@@ -26,7 +26,8 @@
                 "function": "set_name",
                 "name": [
                   {
-                    "color": "yellow",
+                    "color": "blue",
+                    "bold": true,
                     "italic": false,
                     "translate": "elements.item.boss_spawning.stage_1.name"
                   }

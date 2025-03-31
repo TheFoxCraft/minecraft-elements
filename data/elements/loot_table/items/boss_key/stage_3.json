@@ -7,7 +7,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:smooth_stone",
+          "name": "minecraft:crimson_hyphae",
           "functions": [
             {
               "function": "set_count",
@@ -16,11 +16,11 @@
             {
               "function": "set_components",
               "components": {
+                "minecraft:custom_model_data": 1,
+                "minecraft:enchantment_glint_override": true,
                 "minecraft:damage_resistant": {
                   "types": "#minecraft:is_fire"
-                },
-                "minecraft:custom_model_data": 1,
-                "minecraft:enchantment_glint_override": true
+                }
               }
             },
             {
@@ -29,7 +29,7 @@
                 {
                   "color": "blue",
                   "bold": true,
-                  "translate": "elements.item.boss_key.stage_1.name"
+                  "translate": "elements.item.boss_key.stage_3.name"
                 }
               ],
               "target": "item_name"

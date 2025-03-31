@@ -38,6 +38,8 @@
     warped_fungus: Stage 3 Boss Spawning
     weeping_vines: Enderchest Autocompact Stage 3
     crimson_roots: Alternative Fake to Weeping Vines
+    crimson_fungus: Stage 3 Boss Portal Rätsel Teil
+    crimson_hyphae: Spage 3 Boss-Key
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)

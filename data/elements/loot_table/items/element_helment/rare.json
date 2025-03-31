@@ -6,7 +6,7 @@
           {
             "type": "item",
             "weight": 1,
-            "name": "minecraft:iron_sword",
+            "name": "minecraft:diamond_chestplate",
             "functions": [
               {
                 "function": "set_count",
@@ -19,7 +19,7 @@
                   "minecraft:damage_resistant": {
                     "types": "#minecraft:is_fire"
                   },
-                  "minecraft:custom_model_data": 1
+                  "minecraft:custom_model_data": 2
                 }
               },
               {
@@ -27,12 +27,11 @@
                 "name": [
                   {
                     "bold": true,
-                    "color": "yellow",
+                    "color": "blue",
                     "italic": false,
-                    "translate": "elements.item.element_sword.name"
+                    "translate": "elements.item.element_pickaxe.name"
                   }
-                ],
-                "target": "item_name"
+                ]
               },
               {
                 "function": "set_lore",
@@ -44,12 +43,12 @@
                     {
                       "color": "gray",
                       "italic": false,
-                      "translate": "elements.item.element_sword.description"
+                      "translate": "elements.item.element_pickaxe.description"
                     },
                     {
                       "color": "green",
                       "italic": false,
-                      "translate": "elements.item.element_tools.common.drop"
+                      "translate":"elements.item.element_tools.rare.drop"
                     }
                   ],
                   {
@@ -57,9 +56,9 @@
                   },
                   {
                     "bold": true,
-                    "color": "yellow",
+                    "color": "blue",
                     "italic": false,
-                    "translate": "elements.main.rarities.common"
+                    "translate": "elements.main.rarities.rare"
                   }
                 ],
                 "mode": "append"
