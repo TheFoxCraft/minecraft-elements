@@ -26,15 +26,6 @@ execute as @a[scores={elements_enderchest_interface_number=6}] run item replace 
 execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.6 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.7 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.8 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.9 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.10 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.11 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.12 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.13 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.14 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.15 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.16 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
-execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.17 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.18 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.19 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 execute as @a[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.20 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
@@ -84,7 +75,7 @@ execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playso
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_collections_interface 4
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] if score .server elements_stage matches 2.. run item replace entity @s enderchest.11 with weeping_vines[custom_name='{"color":"gold","italic":false,"text":"Crimson Vines"}',custom_model_data=10] 1
+execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] if score .server elements_stage matches 3.. run item replace entity @s enderchest.11 with weeping_vines[custom_name='{"color":"gold","italic":false,"text":"Crimson Vines"}',custom_model_data=10] 1
 
 
 # collections

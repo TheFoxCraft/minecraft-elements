@@ -21,7 +21,7 @@ execute as @a[scores={elements_enderchest_interface_clicked=1}] run function ele
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_admin_config_tipps_interface 3
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:spruce_log",count:1,components:{"minecraft:custom_model_data":12}}}]
-execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_admin_config_tipps_interface=1}] if score .server elements_setup matches 2.. run item replace entity @s enderchest.10 with spruce_log[custom_name='{"color":"gold","translate": "elements.enderchest.admin_settings.tipps.stage_2.name","italic": false}',lore=['{"translate": "elements.enderchest.admin_settings.tipps.stage_2.description","color": "gray","italic": false}'],custom_model_data=12] 1
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_admin_config_tipps_interface=1}] if score .server elements_stage matches 2.. if score .server elements_setup matches 2.. run item replace entity @s enderchest.10 with spruce_log[custom_name='{"color":"gold","translate": "elements.enderchest.admin_settings.tipps.stage_2.name","italic": false}',lore=['{"translate": "elements.enderchest.admin_settings.tipps.stage_2.description","color": "gray","italic": false}'],custom_model_data=12] 1
 
 
 

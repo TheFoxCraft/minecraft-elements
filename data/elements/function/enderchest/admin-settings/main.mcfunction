@@ -29,7 +29,7 @@ execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_conf
 
 execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=1,elements_rank_admin=1}] if score .server elements_setup matches 1.. run function elements:enderchest/admin-settings/abgaben
 execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=2,elements_rank_admin=1}] if score .server elements_setup matches 3.. run function elements:enderchest/admin-settings/double-xp-event/main
-execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=3,elements_rank_admin=1}] if score .server elements_setup matches 2.. run function elements:enderchest/admin-settings/teleporter
+execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=3,elements_rank_admin=1}] if score .server elements_setup matches 1.. run function elements:enderchest/admin-settings/teleporter
 execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=4,elements_rank_admin=1}] if score .server elements_setup matches 3.. run function elements:enderchest/admin-settings/shops
 execute as @a[scores={elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_rank_admin=1}] if score .server elements_setup matches 3.. run function elements:enderchest/admin-settings/raetsel_tipps/main
 

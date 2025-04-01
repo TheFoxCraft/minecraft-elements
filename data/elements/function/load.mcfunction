@@ -1,5 +1,6 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
 "with":[{"text":"V-1.0.0.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
 execute in elements:hub run gamerule lavaSourceConversion true
@@ -13,6 +14,7 @@ execute in elements:hub run forceload add 10 -15
 execute in elements:hub run gamerule doTraderSpawning false
 execute in elements:hub run gamerule doPatrolSpawning false
 execute in elements:hub run gamerule disableRaids true
+execute in elements:hub run gamerule sendCommandFeedback false
 
 execute in elements:ocean run gamerule keepInventory true
 execute in elements:ocean run gamerule lavaSourceConversion true
@@ -24,6 +26,7 @@ execute in elements:ocean run forceload add 0 0
 execute in elements:ocean run gamerule doTraderSpawning false
 execute in elements:ocean run gamerule doPatrolSpawning false
 execute in elements:ocean run gamerule disableRaids true
+execute in elements:ocean run gamerule sendCommandFeedback false
 
 execute in elements:stone run gamerule keepInventory true
 execute in elements:stone run gamerule lavaSourceConversion true
@@ -35,6 +38,7 @@ execute in elements:stone run forceload add 0 0
 execute in elements:stone run gamerule doTraderSpawning false
 execute in elements:stone run gamerule doPatrolSpawning false
 execute in elements:stone run gamerule disableRaids true
+execute in elements:stone run gamerule sendCommandFeedback false
 
 execute in elements:sky run gamerule keepInventory true
 execute in elements:sky run gamerule lavaSourceConversion true
@@ -46,6 +50,7 @@ execute in elements:sky run forceload add 0 0
 execute in elements:sky run gamerule doTraderSpawning false
 execute in elements:sky run gamerule doPatrolSpawning false
 execute in elements:sky run gamerule disableRaids true
+execute in elements:sky run gamerule sendCommandFeedback false
 
 execute in elements:nether run gamerule keepInventory true
 execute in elements:nether run gamerule lavaSourceConversion true
@@ -57,6 +62,7 @@ execute in elements:nether run forceload add 0 0
 execute in elements:nether run gamerule doTraderSpawning false
 execute in elements:nether run gamerule doPatrolSpawning false
 execute in elements:nether run gamerule disableRaids true
+execute in elements:nether run gamerule sendCommandFeedback false
 
 execute in elements:stage-1_bossroom run gamerule keepInventory true
 execute in elements:stage-1_bossroom run gamerule lavaSourceConversion true
@@ -68,6 +74,7 @@ execute in elements:stage-1_bossroom run forceload add 0 0 -1 -1
 execute in elements:stage-1_bossroom run gamerule doTraderSpawning false
 execute in elements:stage-1_bossroom run gamerule doPatrolSpawning false
 execute in elements:stage-1_bossroom run gamerule disableRaids true
+execute in elements:stage-1_bossroom run gamerule sendCommandFeedback false
 
 execute in elements:stage-2_bossroom run gamerule keepInventory true
 execute in elements:stage-2_bossroom run gamerule lavaSourceConversion true
@@ -79,6 +86,7 @@ execute in elements:stage-2_bossroom run forceload add 0 0 -1 -1
 execute in elements:stage-2_bossroom run gamerule doTraderSpawning false
 execute in elements:stage-2_bossroom run gamerule doPatrolSpawning false
 execute in elements:stage-2_bossroom run gamerule disableRaids true
+execute in elements:stage-2_bossroom run gamerule sendCommandFeedback false
 
 execute in elements:stage-3_bossroom run gamerule keepInventory true
 execute in elements:stage-3_bossroom run gamerule lavaSourceConversion true
@@ -90,6 +98,7 @@ execute in elements:stage-3_bossroom run forceload add 0 0 -1 -1
 execute in elements:stage-3_bossroom run gamerule doTraderSpawning false
 execute in elements:stage-3_bossroom run gamerule doPatrolSpawning false
 execute in elements:stage-3_bossroom run gamerule disableRaids true
+execute in elements:stage-3_bossroom run gamerule sendCommandFeedback false
 
 
 team add elements_ocean {"text": "[OCEAN] ","color": "dark_blue"}
