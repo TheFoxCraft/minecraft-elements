@@ -34,12 +34,15 @@
     recovery_compass: Unique | Datenspeicher
     guster_banner_pattern: Enderchest Admin Settings Tipps Stage 1 #1
     bordure_indented_banner_pattern: Enderchest Admin Settings Tipps Stage 2 #1
+    flow_banner_pattern: Endechest Admin Settings Tipps Stage 3 #1
+    globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Introduction
     nether_wart_block: Compressed Crimson Vines Stage 3
     warped_fungus: Stage 3 Boss Spawning
     weeping_vines: Enderchest Autocompact Stage 3
     crimson_roots: Alternative Fake to Weeping Vines
     crimson_fungus: Stage 3 Boss Portal Rätsel Teil
     crimson_hyphae: Spage 3 Boss-Key
+    
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -66,6 +69,8 @@
     name_tag: Enderchest Admin Settings Tipp main Menu
     guster_banner_pattern: Enderchest Admin Settings Tipps Stage 1 #2
     bordure_indented_banner_pattern: Enderchest Admin Settings Tipps Stage 2 #2
+    flow_banner_pattern: Endechest Admin Settings Tipps Stage 3 #2
+    globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod String Tipp
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -83,6 +88,8 @@
     water_bucket: Enderchest Shop Selection Admin Settings
     guster_banner_pattern: Enderchest Admin Settings Tipps Stage 1 #3
     bordure_indented_banner_pattern: Enderchest Admin Settings Tipps Stage 2 #3
+    flow_banner_pattern: Endechest Admin Settings Tipps Stage 3 #3
+    globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod String Solution
     paper: Illegale Lizenz Stage 3
 4:
     netherite_pickaxe: Element Pickaxe | Legendary
@@ -94,20 +101,26 @@
     gray_dye: Gravity-Stone | Mythic
     guster_banner_pattern: Enderchest Admin Settings Tipps Stage 1 Finale Lösung
     bordure_indented_banner_pattern: Enderchest Admin Settings Tipps Stage 1 Finale Lösung
-
+    flow_banner_pattern: Endechest Admin Settings Tipps Stage 3 Finale Lösung
+    globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Sticks Tipp
 5:
     netherite_pickaxe: Element Pickaxe | Mythic
     netherite_axe: Element Axe | Mythic
     potion: Leveltrank | Stone Shop
     fishing_rod: Element Fishing Rod | Mythic
+    globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Sticks Solution
 6:
     potion: Leveltrank | Stone Shop Buying
+    globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Hook Tipp
 7:
     potion: Hastetrank | Stone Shop
+    globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Hook Solution
 8:
     potion: Hastetrank | Stone Shop Buying
+    globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Crafing Tipp
 9:
     potion: Water-Breathing-Potion | Ocean Shop
+    globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Crafting Finale Lösung
 10:
     gray_dye: Admin-Config | Double-Level Kein Event aktiv
     lime_dye: Admin-Config | Double-Level  Event aktiv
@@ -129,6 +142,8 @@
     clock: Admin-Config | Double-Level Timer Action
     potion: Manatrank | Sky Shop Buying
     spruce_log: Admin Settings Tipps Stage 2 Mainmenu
+    weeping_vines: Admin Settings Tipps Stage 3 Mainmenu
+    fishing_rod: Admin Settings Tipps Fishing Rod Mainmenu
 13:
     clock: Admin-Config | Double-Level Timer Action
     potion: Magisches Wasser | Ocean Shop

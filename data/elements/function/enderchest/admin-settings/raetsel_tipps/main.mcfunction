@@ -2,9 +2,13 @@
 #1 Mainmenu
 #2 Stage 1
 #3 Stage 2
+#4 Stage 3
+#5 Fishing Rod
 
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_admin_config_tipps_interface=2}] run function elements:enderchest/admin-settings/raetsel_tipps/stage_1
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_admin_config_tipps_interface=3}] run function elements:enderchest/admin-settings/raetsel_tipps/stage_2
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_admin_config_tipps_interface=4}] run function elements:enderchest/admin-settings/raetsel_tipps/stage_3
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_admin_config_tipps_interface=5}] run function elements:enderchest/admin-settings/raetsel_tipps/fishing_rod
 
 
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_admin_config_tipps_interface=1}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:stone[custom_model_data=10]
@@ -22,6 +26,23 @@ execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard p
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:spruce_log",count:1,components:{"minecraft:custom_model_data":12}}}]
 execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_admin_config_tipps_interface=1}] if score .server elements_stage matches 2.. if score .server elements_setup matches 2.. run item replace entity @s enderchest.10 with spruce_log[custom_name='{"color":"gold","translate": "elements.enderchest.admin_settings.tipps.stage_2.name","italic": false}',lore=['{"translate": "elements.enderchest.admin_settings.tipps.stage_2.description","color": "gray","italic": false}'],custom_model_data=12] 1
+
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_admin_config_tipps_interface=1}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:weeping_vines[custom_model_data=12]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_admin_config_tipps_interface 4
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+kill @e[type=item,nbt={Item:{id:"minecraft:weeping_vines",count:1,components:{"minecraft:custom_model_data":12}}}]
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_admin_config_tipps_interface=1}] if score .server elements_stage matches 3.. if score .server elements_setup matches 2.. run item replace entity @s enderchest.11 with weeping_vines[custom_name='{"color":"gold","translate": "elements.enderchest.admin_settings.tipps.stage_3.name","italic": false}',lore=['{"translate": "elements.enderchest.admin_settings.tipps.stage_3.description","color": "gray","italic": false}'],custom_model_data=12] 1
+
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_admin_config_tipps_interface=1}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:fishing_rod[custom_model_data=12]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_admin_config_tipps_interface 5
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+kill @e[type=item,nbt={Item:{id:"minecraft:fishing_rod",count:1,components:{"minecraft:custom_model_data":12}}}]
+execute as @a[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=5,elements_admin_config_tipps_interface=1}] if score .server elements_stage matches 1.. if score .server elements_setup matches 2.. run item replace entity @s enderchest.12 with fishing_rod[custom_name='{"color":"gold","translate": "elements.enderchest.admin_settings.tipps.fishing_rod.name","italic": false}',lore=['{"translate": "elements.enderchest.admin_settings.tipps.fishing_rod.description","color": "gray","italic": false}'],custom_model_data=12] 1
+
 
 
 

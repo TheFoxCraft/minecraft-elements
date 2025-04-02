@@ -78,6 +78,20 @@ execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderI
 execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_sword",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_sword/mythic
 execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_sword",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
 
+#element armor
+#helmet
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_helmet",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_helmet/mythic
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_helmet",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
+#chestplate
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_chestplate",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_helmet/mythic
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_chestplate",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
+#leggings
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_leggings",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_helmet/mythic
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_leggings",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
+#boots
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_boots",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_helmet/mythic
+execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_boots",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
+
 
 #photon
 execute as @a[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":1}}]}] run loot replace entity @s enderchest.14 loot elements:items/customs/photon/epic
@@ -168,6 +182,21 @@ execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_sword",components:{"minecraft:custom_model_data":3}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 3
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_sword",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_sword",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 4
+
+#element armor
+#helmet
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_helmet",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_helmet",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 4
+#chestplate
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_chestplate",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_chestplate",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 4
+#leggings
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_leggings",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_leggings",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 4
+#boots
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_boots",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_boots",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 4
+
 
 #photon
 execute as @a[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:ghast_tear",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1

@@ -56,7 +56,7 @@
         {
           "type": "loot_table",
           "weight": 5,
-          "value": "elements:items/element_helment/rare",
+          "value": "elements:items/element_helmet/legendary",
           "functions": [
             {
               "function": "set_count",

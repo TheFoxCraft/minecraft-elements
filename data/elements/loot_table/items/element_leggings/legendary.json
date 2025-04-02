@@ -6,7 +6,7 @@
           {
             "type": "item",
             "weight": 1,
-            "name": "minecraft:diamond_chestplate",
+            "name": "minecraft:netherite_leggings",
             "functions": [
               {
                 "function": "set_count",
@@ -19,7 +19,30 @@
                   "minecraft:damage_resistant": {
                     "types": "#minecraft:is_fire"
                   },
-                  "minecraft:custom_model_data": 2
+                  "minecraft:custom_model_data": 4,
+                  "attribute_modifiers": [
+                    {
+                      "type": "armor",
+                      "id": "armor",
+                      "amount": 8,
+                      "slot": "head",
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "armor_toughness",
+                      "id": "armor_toughness",
+                      "amount": 5,
+                      "slot": "head",
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "knockback_resistance",
+                      "id": "knockback_resistance",
+                      "amount": 2,
+                      "slot": "head",
+                      "operation": "add_value"
+                    }
+                  ]
                 }
               },
               {
@@ -27,9 +50,9 @@
                 "name": [
                   {
                     "bold": true,
-                    "color": "blue",
+                    "color": "gold",
                     "italic": false,
-                    "translate": "elements.item.element_pickaxe.name"
+                    "translate": "elements.item.element_leggings.name"
                   }
                 ]
               },
@@ -43,12 +66,12 @@
                     {
                       "color": "gray",
                       "italic": false,
-                      "translate": "elements.item.element_pickaxe.description"
+                      "translate":"elements.item.element_leggings.description"
                     },
                     {
                       "color": "green",
                       "italic": false,
-                      "translate":"elements.item.element_tools.rare.drop"
+                      "translate":"elements.item.element_leggings.legendary.armor"
                     }
                   ],
                   {
@@ -56,9 +79,9 @@
                   },
                   {
                     "bold": true,
-                    "color": "blue",
+                    "color": "gold",
                     "italic": false,
-                    "translate": "elements.main.rarities.rare"
+                    "translate": "elements.main.rarities.legendary"
                   }
                 ],
                 "mode": "append"

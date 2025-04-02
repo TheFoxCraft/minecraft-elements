@@ -1,0 +1,94 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:netherite_boots",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:unbreakable": {},
+                  "minecraft:damage_resistant": {
+                    "types": "#minecraft:is_fire"
+                  },
+                  "minecraft:custom_model_data": 4,
+                  "attribute_modifiers": [
+                    {
+                      "type": "armor",
+                      "id": "armor",
+                      "amount": 5,
+                      "slot": "head",
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "armor_toughness",
+                      "id": "armor_toughness",
+                      "amount": 5,
+                      "slot": "head",
+                      "operation": "add_value"
+                    },
+                    {
+                      "type": "knockback_resistance",
+                      "id": "knockback_resistance",
+                      "amount": 2,
+                      "slot": "head",
+                      "operation": "add_value"
+                    }
+                  ]
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "bold": true,
+                    "color": "gold",
+                    "italic": false,
+                    "translate": "elements.item.element_boots.name"
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "translate": "elements.main.other.space"
+                  },
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "translate":"elements.item.element_boots.description"
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "translate":"elements.item.element_boots.legendary.armor"
+                    }
+                  ],
+                  {
+                    "translate": "elements.main.other.space"
+                  },
+                  {
+                    "bold": true,
+                    "color": "gold",
+                    "italic": false,
+                    "translate": "elements.main.rarities.legendary"
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
