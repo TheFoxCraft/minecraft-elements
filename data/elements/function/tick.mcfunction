@@ -92,7 +92,7 @@ execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest
 execute as @a[scores={elements_death=1..}] run function elements:sonstiges/death
 function elements:sonstiges/spawn-management
 execute as @a[scores={elements_choose_dimension=1..4}] run function elements:spawn/choose_dimension
-execute as @a[scores={just-ignore=1001..1006}] run function elements:spawn/choose_dimension
+execute as @a[scores={z_just-ignore=1001..1006}] run function elements:spawn/choose_dimension
 execute if score .server elements_abgabe_shop_leer matches 2 run function elements:spawn/leer-shop
 execute if score .server elements_stage_1_portal_enable matches 1 run function elements:stages/stage-1/portal
 execute if score .server elements_stage_2_portal_enable matches 1 run function elements:stages/stage-2/portal

@@ -147,7 +147,7 @@ bossbar set elements:stage-3_boss name {"text": "Böser Hoglin","color": "white"
 
 
 scoreboard objectives add elements_override_by_dd dummy
-scoreboard objectives add just-ignore trigger
+scoreboard objectives add z_just-ignore trigger
 scoreboard objectives add elements_admin_config_clicked dummy
 scoreboard objectives add elements_rank_admin dummy
 scoreboard objectives add elements_rank_cam dummy

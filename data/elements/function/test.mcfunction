@@ -1,4 +1,4 @@
-#scoreboard players operation .server just-ignore = #server just-ignore
+#scoreboard players operation .server z_just-ignore = #server z_just-ignore
 #scoreboard players operation .server elements_admin_config_clicked = #server elements_admin_config_clicked
 #scoreboard players operation .server elements_rank_admin = #server elements_rank_admin
 #scoreboard players operation .server elements_rank_cam = #server elements_rank_cam

@@ -64,4 +64,4 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:spruce_sapling",components:{"mine
 execute as @a[nbt={SelectedItem:{id:"minecraft:spruce_sapling",components:{"minecraft:custom_model_data":1}}}] run scoreboard players set @s elements_sonstiges_actionbar_hold 1
 
 #show broken slots
-execute as @a[scores={just-ignore=500}] run function elements:farm_slots/stage_2/show_broken_slots_pre
+execute as @a[scores={z_just-ignore=500}] run function elements:farm_slots/stage_2/show_broken_slots_pre

@@ -62,4 +62,4 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:nether_wart_block",components:{"m
 scoreboard players set @a elements_farm-slots_stage-3_broken 0
 
 #show broken slots
-execute as @a[scores={just-ignore=501}] run function elements:farm_slots/stage_3/show_broken_slots_pre
+execute as @a[scores={z_just-ignore=501}] run function elements:farm_slots/stage_3/show_broken_slots_pre

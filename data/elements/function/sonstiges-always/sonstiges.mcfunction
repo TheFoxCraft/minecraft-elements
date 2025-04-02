@@ -1,8 +1,8 @@
 execute as @e[tag=follow] at @s run rotate @s facing entity @p
-scoreboard players enable @a just-ignore
-tellraw @a[scores={just-ignore=1}] {"text": "Ich hab doch gesagt IGNORIEREN!","color": "red"}
-title @a[scores={just-ignore=1}] title {"text": "Ich hab doch gesagt IGNORIEREN","color": "red"} 
-scoreboard players set @a[scores={just-ignore=1}] just-ignore 0
+scoreboard players enable @a z_just-ignore
+tellraw @a[scores={z_just-ignore=1}] {"text": "Ich hab doch gesagt IGNORIEREN!","color": "red"}
+title @a[scores={z_just-ignore=1}] title {"text": "Ich hab doch gesagt IGNORIEREN","color": "red"} 
+scoreboard players set @a[scores={z_just-ignore=1}] z_just-ignore 0
 
 scoreboard players set #fixed_100 elements_fixed 100
 
@@ -175,16 +175,15 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,compone
 execute as @a[scores={elements_custom-items_shop_sauger_click=1..}] run function elements:custom-items/shop/sky/sauger/trigger
 execute as @a[scores={elements_custom-items_shop_sauger_click=1..}] run scoreboard players remove @s elements_custom-items_shop_sauger_click 1
 
-
+#credits
 bossbar set elements:credits players @a
 bossbar set elements:credits_hide players @a
 
-#execute as @e[type=minecraft:interaction,tag=startquest] at @s on target run tag @s add right
-#execute as @a[tag=right] run scoreboard players set @s techniker_clicked 1
-#execute as @e[type=minecraft:interaction] at @s if entity @p[tag=right,distance=..4] run data remove entity @s interaction
-#tag @a remove right
 
+#cam-accs
+execute as @a[scores={elements_rank_cam=1}] unless score @s elements_rank_admin matches 1 run gamemode spectator @s
 
-
+#dasdatapack
+execute as @a run scoreboard players operation @s dd_rank_cam = @s elements_rank_cam
 
 
