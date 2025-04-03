@@ -182,6 +182,24 @@ bossbar set elements:credits_hide players @a
 
 #cam-accs
 execute as @a[scores={elements_rank_cam=1}] unless score @s elements_rank_admin matches 1 run gamemode spectator @s
+#dimension-switch
+execute as @a[scores={elements_rank_cam=1}] run scoreboard players enable @s Dimension-Switch
+execute as @a[scores={elements_rank_cam=0}] run scoreboard players reset @s Dimension-Switch
+execute as @a[scores={Dimension-Switch=1}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.chat.cam_acc.dimension_switch.message.main"}]
+execute as @a[scores={Dimension-Switch=1}] run tellraw @s ["",{"translate": "elements.chat.cam_acc.dimension_switch.message.ocean","hoverEvent": {"action": "show_text","contents": "Klicke zum Teleportieren!"},"clickEvent": {"action": "run_command","value": "/trigger Dimension-Switch set 2"}}]
+execute as @a[scores={Dimension-Switch=1}] run tellraw @s ["",{"translate": "elements.chat.cam_acc.dimension_switch.message.stone","hoverEvent": {"action": "show_text","contents": "Klicke zum Teleportieren!"},"clickEvent": {"action": "run_command","value": "/trigger Dimension-Switch set 3"}}]
+execute as @a[scores={Dimension-Switch=1}] run tellraw @s ["",{"translate": "elements.chat.cam_acc.dimension_switch.message.sky","hoverEvent": {"action": "show_text","contents": "Klicke zum Teleportieren!"},"clickEvent": {"action": "run_command","value": "/trigger Dimension-Switch set 4"}}]
+execute as @a[scores={Dimension-Switch=1}] run tellraw @s ["",{"translate": "elements.chat.cam_acc.dimension_switch.message.nether","hoverEvent": {"action": "show_text","contents": "Klicke zum Teleportieren!"},"clickEvent": {"action": "run_command","value": "/trigger Dimension-Switch set 5"}}]
+execute as @a[scores={Dimension-Switch=1}] run tellraw @s ["",{"translate": "elements.chat.cam_acc.dimension_switch.message.hub","hoverEvent": {"action": "show_text","contents": "Klicke zum Teleportieren!"},"clickEvent": {"action": "run_command","value": "/trigger Dimension-Switch set 6"}}]
+#teleports
+execute as @a[scores={Dimension-Switch=2}] in elements:ocean run tp 0 62 0
+execute as @a[scores={Dimension-Switch=3}] in elements:stone run tp 0 101 0
+execute as @a[scores={Dimension-Switch=4}] in elements:sky run tp 0 101 0
+execute as @a[scores={Dimension-Switch=5}] in elements:nether run tp 0 101 0
+execute as @a[scores={Dimension-Switch=6}] in elements:hub run tp 0 101 0
+
+execute as @a[scores={Dimension-Switch=1..}] run scoreboard players reset @s Dimension-Switch
+
 
 #dasdatapack
 execute as @a run scoreboard players operation @s dd_rank_cam = @s elements_rank_cam

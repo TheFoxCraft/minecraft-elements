@@ -145,7 +145,7 @@ bossbar set elements:stage-3_boss color red
 bossbar set elements:stage-3_boss name {"text": "Böser Hoglin","color": "white"}
 
 
-
+scoreboard objectives add Dimension-Switch trigger
 scoreboard objectives add elements_override_by_dd dummy
 scoreboard objectives add z_just-ignore trigger
 scoreboard objectives add elements_admin_config_clicked dummy

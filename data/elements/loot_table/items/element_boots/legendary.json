@@ -23,26 +23,31 @@
                   "attribute_modifiers": [
                     {
                       "type": "armor",
-                      "id": "armor",
+                      "id": "armor_boots",
                       "amount": 5,
-                      "slot": "head",
+                      "slot": "feet",
                       "operation": "add_value"
                     },
                     {
                       "type": "armor_toughness",
-                      "id": "armor_toughness",
+                      "id": "armor_toughness_boots",
                       "amount": 5,
-                      "slot": "head",
+                      "slot": "feet",
                       "operation": "add_value"
                     },
                     {
                       "type": "knockback_resistance",
-                      "id": "knockback_resistance",
-                      "amount": 2,
-                      "slot": "head",
+                      "id": "knockback_resistance_boots",
+                      "amount": 0.2,
+                      "slot": "feet",
                       "operation": "add_value"
                     }
-                  ]
+                  ],
+                  "minecraft:trim": {
+                    "material": "diamond",
+                    "pattern": "minecraft:silence",
+                    "show_in_tooltip": true
+                  }
                 }
               },
               {
@@ -66,12 +71,12 @@
                     {
                       "color": "gray",
                       "italic": false,
-                      "translate":"elements.item.element_boots.description"
+                      "translate":"elements.item.element_armor.description"
                     },
                     {
                       "color": "green",
                       "italic": false,
-                      "translate":"elements.item.element_boots.legendary.armor"
+                      "translate":"elements.item.element_armor.legendary.armor"
                     }
                   ],
                   {

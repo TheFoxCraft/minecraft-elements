@@ -23,26 +23,31 @@
                   "attribute_modifiers": [
                     {
                       "type": "armor",
-                      "id": "armor",
+                      "id": "armor_helmet",
                       "amount": 5,
                       "slot": "head",
                       "operation": "add_value"
                     },
                     {
                       "type": "armor_toughness",
-                      "id": "armor_toughness",
+                      "id": "armor_toughness_helmet",
                       "amount": 5,
                       "slot": "head",
                       "operation": "add_value"
                     },
                     {
                       "type": "knockback_resistance",
-                      "id": "knockback_resistance",
-                      "amount": 2,
+                      "id": "knockback_resistance_helmet",
+                      "amount": 0.2,
                       "slot": "head",
                       "operation": "add_value"
                     }
-                  ]
+                  ],
+                  "minecraft:trim": {
+                    "material": "diamond",
+                    "pattern": "minecraft:silence",
+                    "show_in_tooltip": true
+                  }
                 }
               },
               {
@@ -66,12 +71,12 @@
                     {
                       "color": "gray",
                       "italic": false,
-                      "translate":"elements.item.element_helmet.description"
+                      "translate":"elements.item.element_armor.description"
                     },
                     {
                       "color": "green",
                       "italic": false,
-                      "translate":"elements.item.element_helmet.legendary.armor"
+                      "translate":"elements.item.element_armor.legendary.armor"
                     }
                   ],
                   {
