@@ -84,6 +84,7 @@ execute as @s run scoreboard players set .server elements_admin_config_interface
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_bruchstueck_der_eismauer 0
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_wood 0
 execute as @s run scoreboard players set .server elements_uniqueitem_other_datenspeicher 0
+execute as @s run scoreboard players set .server elements_uniqueitem_planetenkern 0
 
 execute as @s run scoreboard players set .server elements_update_sequence_status 0
 execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000

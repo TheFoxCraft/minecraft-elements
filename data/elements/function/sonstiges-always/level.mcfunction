@@ -25,7 +25,7 @@ execute as @a[scores={elements_level_stone_cobblestone=1..},nbt={SelectedItem:{i
 execute as @a[scores={elements_level_stone_cobblestone=1..},nbt={SelectedItem:{id:"minecraft:netherite_pickaxe",components:{"minecraft:custom_model_data":4}}}] at @s at @e[type=item,nbt={Item:{id:"minecraft:cobblestone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:cobblestone",count:4}}
 execute as @a[scores={elements_level_stone_cobblestone=1..},nbt={SelectedItem:{id:"minecraft:netherite_pickaxe",components:{"minecraft:custom_model_data":5}}}] at @s at @e[type=item,nbt={Item:{id:"minecraft:cobblestone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:cobblestone",count:5}}
 execute as @a[scores={elements_level_stone_cobblestone=1..},nbt={Inventory:[{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":2}}]}] at @e[type=item,nbt={Item:{id:"minecraft:cobblestone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:cobblestone",count:1}}
-
+execute as @a[scores={elements_level_stone_cobblestone=1..}] if score .server elements_uniqueitem_planetenkern matches 0 run function elements:uniques/trigger/planetenkern/random
 execute as @a[scores={elements_level_stone_cobblestone=1..}] run scoreboard players set @s elements_level_stone_cobblestone 0
 
 $execute as @a[scores={elements_level_stone_basalt=1..}] if score .server elements_stage matches 1.. if score @s elements_homedimension = @s elements_dimension run xp add @s $(elements_level_stone) points
@@ -39,6 +39,7 @@ execute as @a[scores={elements_level_stone_basalt=1..},nbt={SelectedItem:{id:"mi
 execute as @a[scores={elements_level_stone_basalt=1..},nbt={SelectedItem:{id:"minecraft:netherite_pickaxe",components:{"minecraft:custom_model_data":4}}}] at @s at @e[type=item,nbt={Item:{id:"minecraft:basalt",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:basalt",count:4}}
 execute as @a[scores={elements_level_stone_basalt=1..},nbt={SelectedItem:{id:"minecraft:netherite_pickaxe",components:{"minecraft:custom_model_data":5}}}] at @s at @e[type=item,nbt={Item:{id:"minecraft:basalt",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:basalt",count:5}}
 execute as @a[scores={elements_level_stone_basalt=1..},nbt={Inventory:[{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":2}}]}] at @e[type=item,nbt={Item:{id:"minecraft:basalt",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:basalt",count:1}}
+execute as @a[scores={elements_level_stone_basalt=1..}] if score .server elements_uniqueitem_planetenkern matches 0 run function elements:uniques/trigger/planetenkern/random
 execute as @a[scores={elements_level_stone_basalt=1..}] run scoreboard players set @s elements_level_stone_basalt 0
 
 $execute as @a[scores={elements_level_stone_stone=1..}] if score .server elements_stage matches 1.. if score @s elements_homedimension = @s elements_dimension run xp add @s $(elements_level_stone) points
@@ -68,6 +69,7 @@ execute as @a[scores={elements_level_stone_stone=1..},nbt={SelectedItem:{id:"min
 execute as @a[scores={elements_level_stone_stone=1..},nbt={SelectedItem:{id:"minecraft:netherite_pickaxe",components:{"minecraft:custom_model_data":4}}}] at @s at @e[type=item,nbt={Item:{id:"minecraft:cobblestone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:cobblestone",count:4}}
 execute as @a[scores={elements_level_stone_stone=1..},nbt={SelectedItem:{id:"minecraft:netherite_pickaxe",components:{"minecraft:custom_model_data":5}}}] at @s at @e[type=item,nbt={Item:{id:"minecraft:cobblestone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:cobblestone",count:5}}
 execute as @a[scores={elements_level_stone_stone=1..},nbt={Inventory:[{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":2}}]}] at @e[type=item,nbt={Item:{id:"minecraft:cobblestone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:cobblestone",count:1}}
+execute as @a[scores={elements_level_stone_stone=1..}] if score .server elements_uniqueitem_planetenkern matches 0 run function elements:uniques/trigger/planetenkern/random
 execute as @a[scores={elements_level_stone_stone=1..}] run scoreboard players set @s elements_level_stone_stone 0
 
 $execute as @a[scores={elements_custom-items_shop_leveltrank_counter_stage-1=10..}] run xp add @s $(elements_level_stone) points

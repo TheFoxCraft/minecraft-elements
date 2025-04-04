@@ -48,6 +48,7 @@ execute as @a[scores={elements_playtime=20}] run scoreboard players set @s eleme
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_uniqueitem_collections_wood 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_uniqueitem_collections_crimson_vines 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_uniqueitem_other_datenspeicher 0
+execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_uniqueitem_planetenkern 0
 
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_spawn_energiekern_particle_settings 0
 execute as @a[scores={elements_playtime=20}] run scoreboard players set @s elements_enderchest_settings_tp-mode 1

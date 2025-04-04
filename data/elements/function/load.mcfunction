@@ -144,7 +144,7 @@ bossbar add elements:stage-3_boss "%null%"
 bossbar set elements:stage-3_boss color red
 bossbar set elements:stage-3_boss name {"text": "Böser Hoglin","color": "white"}
 
-
+scoreboard objectives add elements_random dummy
 scoreboard objectives add Dimension-Switch trigger
 scoreboard objectives add elements_override_by_dd dummy
 scoreboard objectives add z_just-ignore trigger
@@ -363,8 +363,12 @@ scoreboard objectives add elements_enderchest_interface_clicked dummy
 scoreboard objectives add elements_uniqueitem_collections_bruchstueck_der_eismauer dummy
 scoreboard objectives add elements_uniqueitem_collections_wood dummy
 scoreboard objectives add elements_uniqueitem_collections_crimson_vines dummy
+#collection_farming
+scoreboard objectives add elements_uniqueitem_planetenkern dummy
 #other
 scoreboard objectives add elements_uniqueitem_other_datenspeicher dummy
+
+
 
 
 scoreboard objectives add elements_spawn_energiekern dummy
