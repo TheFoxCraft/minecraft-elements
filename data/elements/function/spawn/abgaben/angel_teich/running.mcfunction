@@ -25,9 +25,9 @@ execute as @e[type=minecraft:interaction,tag=abgabe_other_angel-teich] at @s if 
 tag @a remove abgabe_other_angel-teich
 
 execute if score .server elements_abgabe_other_angel-teich_progress >= .server elements_abgabe_other_angel-teich_goal if score .server elements_abgabe_other_angel-teich matches 1 in elements:hub as @a at @s run playsound entity.player.levelup master @s
-execute if score .server elements_abgabe_other_angel-teich_progress >= .server elements_abgabe_other_angel-teich_goal if score .server elements_abgabe_other_angel-teich matches 1 in elements:hub as @a run tellraw @a ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Der Angel-Teich wurde aufgebaut!"}]
-execute if score .server elements_abgabe_other_angel-teich_progress >= .server elements_abgabe_other_angel-teich_goal if score .server elements_abgabe_other_angel-teich matches 1 in elements:hub as @a run title @a title ["",{"text": "Abgabeziel Erfüllt!","color": "green"}]
-execute if score .server elements_abgabe_other_angel-teich_progress >= .server elements_abgabe_other_angel-teich_goal if score .server elements_abgabe_other_angel-teich matches 1 in elements:hub as @a run title @a subtitle ["",{"text": "Der Angelteich wurde freigeschaltet"}]
+execute if score .server elements_abgabe_other_angel-teich_progress >= .server elements_abgabe_other_angel-teich_goal if score .server elements_abgabe_other_angel-teich matches 1 in elements:hub run tellraw @a ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Der Angel-Teich wurde aufgebaut!"}]
+execute if score .server elements_abgabe_other_angel-teich_progress >= .server elements_abgabe_other_angel-teich_goal if score .server elements_abgabe_other_angel-teich matches 1 in elements:hub run title @a title ["",{"text": "Abgabeziel Erfüllt!","color": "green"}]
+execute if score .server elements_abgabe_other_angel-teich_progress >= .server elements_abgabe_other_angel-teich_goal if score .server elements_abgabe_other_angel-teich matches 1 in elements:hub run title @a subtitle ["",{"text": "Der Angelteich wurde freigeschaltet"}]
 execute if score .server elements_abgabe_other_angel-teich_progress >= .server elements_abgabe_other_angel-teich_goal if score .server elements_abgabe_other_angel-teich matches 1 in elements:hub run kill @e[tag=abgabe_other_angel-teich]
 execute if score .server elements_abgabe_other_angel-teich_progress >= .server elements_abgabe_other_angel-teich_goal if score .server elements_abgabe_other_angel-teich matches 1 in elements:hub if block 6 100 -32 reinforced_deepslate run setblock 6 100 -32 air
 execute if score .server elements_abgabe_other_angel-teich_progress >= .server elements_abgabe_other_angel-teich_goal if score .server elements_abgabe_other_angel-teich matches 1 in elements:hub run place template elements:hub/stage_extend/angelteich -6 96 -54
@@ -35,3 +35,4 @@ execute if score .server elements_abgabe_other_angel-teich_progress >= .server e
 execute if score .server elements_abgabe_other_angel-teich_progress >= .server elements_abgabe_other_angel-teich_goal if score .server elements_abgabe_other_angel-teich matches 1 in elements:hub run scoreboard players set .server elements_abgabe_other_angel-teich 2
 
 #pre: community-hub
+

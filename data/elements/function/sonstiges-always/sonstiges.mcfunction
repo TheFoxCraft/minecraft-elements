@@ -130,11 +130,6 @@ execute as @a if score @s elements_stats_level_ausgegeben_calc_get < @s elements
 execute as @a run scoreboard players operation @s elements_stats_level_ausgegeben_calc_get_old = @s elements_stats_level_ausgegeben_calc_get
 
 
-#update signs
-
-execute in elements:hub positioned 12.50 101.00 -14.5 if entity @a[distance=..10] if score .server elements_update-sign_timer matches 20 if score .server elements_stage matches 1.. run function elements:spawn/updatesigns
-execute in elements:hub positioned 12.50 101.00 -14.5 if entity @a[distance=..10] if score .server elements_update-sign_timer matches 20.. run scoreboard players set .server elements_update-sign_timer 0
-execute in elements:hub positioned 12.50 101.00 -14.5 if entity @a[distance=..10] run scoreboard players add .server elements_update-sign_timer 1
 
 
 #kill adminwand as item

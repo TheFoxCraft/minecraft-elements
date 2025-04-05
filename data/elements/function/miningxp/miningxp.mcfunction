@@ -1,5 +1,6 @@
 
 execute as @a[scores={elements_miningxp_mining_mine-get_stone=1..}] run scoreboard players add @s elements_miningxp_mining_xp 1
+execute as @a[scores={elements_miningxp_mining_mine-get_stone=1..},nbt={Inventory:[{id:"minecraft:fire_charge",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players add @s elements_miningxp_mining_xp 1
 execute as @a[scores={elements_miningxp_mining_mine-get_stone=1..,elements_custom-items_shop_mining-frucht_enable=1}] run scoreboard players add @s elements_custom-items_shop_mining-frucht_counter 1
 execute as @a[scores={elements_miningxp_mining_mine-get_stone=1..}] at @s store result score @s elements_miningxp_mining_loot run random value 1..20
 execute as @a[scores={elements_miningxp_mining_mine-get_stone=1..}] at @s if score @s elements_miningxp_mining_level >= @s elements_miningxp_mining_loot at @e[type=item,nbt={Item:{id:"minecraft:stone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:stone",count:1}}
@@ -22,6 +23,7 @@ execute as @a[scores={elements_miningxp_mining_mine-get_stone=1..}] run scoreboa
 execute as @a[scores={elements_miningxp_mining_mine-get_stone=1..}] run scoreboard players remove @s elements_miningxp_mining_mine-get_stone 1
 
 execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..}] run scoreboard players add @s elements_miningxp_mining_xp 1
+execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..},nbt={Inventory:[{id:"minecraft:fire_charge",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players add @s elements_miningxp_mining_xp 1
 execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..,elements_custom-items_shop_mining-frucht_enable=1}] run scoreboard players add @s elements_custom-items_shop_mining-frucht_counter 1
 execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..}] at @s store result score @s elements_miningxp_mining_loot run random value 1..20
 execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..}] at @s if score @s elements_miningxp_mining_level >= @s elements_miningxp_mining_loot at @e[type=item,nbt={Item:{id:"minecraft:cobblestone",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:cobblestone",count:1}}
@@ -39,6 +41,7 @@ execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..}] run sc
 execute as @a[scores={elements_miningxp_mining_mine-get_cobblestone=1..}] run scoreboard players remove @s elements_miningxp_mining_mine-get_cobblestone 1
 
 execute as @a[scores={elements_miningxp_mining_mine-get_basalt=1..}] run scoreboard players add @s elements_miningxp_mining_xp 1
+execute as @a[scores={elements_miningxp_mining_mine-get_basalt=1..},nbt={Inventory:[{id:"minecraft:fire_charge",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players add @s elements_miningxp_mining_xp 1
 execute as @a[scores={elements_miningxp_mining_mine-get_basalt=1..,elements_custom-items_shop_mining-frucht_enable=1}] run scoreboard players add @s elements_custom-items_shop_mining-frucht_counter 1
 execute as @a[scores={elements_miningxp_mining_mine-get_basalt=1..}] at @s store result score @s elements_miningxp_mining_loot run random value 1..20
 execute as @a[scores={elements_miningxp_mining_mine-get_basalt=1..}] at @s if score @s elements_miningxp_mining_level >= @s elements_miningxp_mining_loot at @e[type=item,nbt={Item:{id:"minecraft:basalt",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:basalt",count:1}}
@@ -168,3 +171,6 @@ execute as @a if score @s elements_miningxp_mining_xp >= @s elements_miningxp_mi
 execute as @a if score @s elements_miningxp_mining_xp >= @s elements_miningxp_mining_nextlevel unless score @s elements_miningxp_mining_level matches 101.. run scoreboard players add @s elements_mana_mana-max 10
 execute as @a if score @s elements_miningxp_mining_xp >= @s elements_miningxp_mining_nextlevel unless score @s elements_miningxp_mining_level matches 101.. run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text":"Du bist im Mining-Level aufgestiegen: Level "},{"score":{"name":"@s","objective":"elements_miningxp_mining_level"}}]
 execute as @a[scores={elements_miningxp_mining_level=100}] if score @s elements_miningxp_mining_xp >= @s elements_miningxp_mining_nextlevel unless score @s elements_miningxp_mining_level matches 101.. run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text":"Herzlichen Glückwünsch!","color":"gold"},"\n",{"text":"Du hast das Maximale Mining-Level erreicht!","color":"gold"}]
+
+
+# exponential function: 1000000 * 1.01^x-99

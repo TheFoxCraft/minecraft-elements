@@ -51,9 +51,9 @@ kill @e[type=item,nbt={Item:{id:"minecraft:blue_stained_glass_pane",count:1,comp
 
 #start
 
-execute as @a[scores={elements_casino_interface=7,elements_casino_game_luckywheel_speed=0}] store success score @s elements_enderchest_interface_click_casino_luckywheel_start run clear @s purple_stained_glass_pane[custom_model_data=1]
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_start=1}] run scoreboard players set @s elements_casino_game_luckywheel_speed 1
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_start=1}] run scoreboard players set @s elements_enderchest_interface_click_casino_luckywheel_start 0
+execute as @a[scores={elements_casino_interface=7,elements_casino_game_luckywheel_speed=0}] store success score @s elements_enderchest_interface_clicked run clear @s purple_stained_glass_pane[custom_model_data=1]
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_luckywheel_speed 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 
 
@@ -129,30 +129,30 @@ execute as @a[scores={elements_casino_interface=7,elements_casino_game_luckywhee
 execute as @a[scores={elements_casino_interface=8}] unless entity @s[nbt={EnderItems:[{id:"minecraft:totem_of_undying",Slot:13b,components:{"minecraft:custom_model_data":1}}]}] store result storage elements_getid ID int 1 run scoreboard players get @s elements_playerid
 execute as @a[scores={elements_casino_interface=8}] unless entity @s[nbt={EnderItems:[{id:"minecraft:totem_of_undying",Slot:13b,components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/casino/luckywheel/winner2 with storage elements_getid
 
-execute as @a[scores={elements_casino_interface=8}] store result score @s elements_enderchest_interface_click_casino_luckywheel_finish run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=10]
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=0}] run scoreboard players operation @s elements_casino_stats_lvlverloren += @s elements_casino_game_einsatz
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=0}] run scoreboard players operation .server elements_casino_stats_lvlverloren += @s elements_casino_game_einsatz
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=0}] run scoreboard players operation @s elements_casino_stats_lvlumsatz -= @s elements_casino_game_einsatz
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=0}] run scoreboard players operation .server elements_casino_stats_lvlumsatz -= @s elements_casino_game_einsatz
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1}] run scoreboard players set @s elements_casino_game_price 9
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1}] run scoreboard players operation @s elements_casino_game_price *= @s elements_casino_game_einsatz
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1}] run scoreboard players operation @s elements_casino_stats_lvlgewonnen += @s elements_casino_game_price
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1}] run scoreboard players operation .server elements_casino_stats_lvlgewonnen += @s elements_casino_game_price
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1}] run scoreboard players operation @s elements_casino_stats_lvlumsatz += @s elements_casino_game_price
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1}] run scoreboard players operation .server elements_casino_stats_lvlumsatz += @s elements_casino_game_price
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=1}] run xp add @s 10 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=5}] run xp add @s 50 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=10}] run xp add @s 100 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=50}] run xp add @s 500 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=100}] run xp add @s 1000 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=500}] run xp add @s 5000 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=1000}] run xp add @s 10000 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=5000}] run xp add @s 50000 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=10000}] run xp add @s 100000 levels
+execute as @a[scores={elements_casino_interface=8}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=10]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=0}] run scoreboard players operation @s elements_casino_stats_lvlverloren += @s elements_casino_game_einsatz
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=0}] run scoreboard players operation .server elements_casino_stats_lvlverloren += @s elements_casino_game_einsatz
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=0}] run scoreboard players operation @s elements_casino_stats_lvlumsatz -= @s elements_casino_game_einsatz
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=0}] run scoreboard players operation .server elements_casino_stats_lvlumsatz -= @s elements_casino_game_einsatz
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1}] run scoreboard players set @s elements_casino_game_price 9
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1}] run scoreboard players operation @s elements_casino_game_price *= @s elements_casino_game_einsatz
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1}] run scoreboard players operation @s elements_casino_stats_lvlgewonnen += @s elements_casino_game_price
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1}] run scoreboard players operation .server elements_casino_stats_lvlgewonnen += @s elements_casino_game_price
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1}] run scoreboard players operation @s elements_casino_stats_lvlumsatz += @s elements_casino_game_price
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1}] run scoreboard players operation .server elements_casino_stats_lvlumsatz += @s elements_casino_game_price
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=1}] run xp add @s 10 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=5}] run xp add @s 50 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=10}] run xp add @s 100 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=50}] run xp add @s 500 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=100}] run xp add @s 1000 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=500}] run xp add @s 5000 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=1000}] run xp add @s 10000 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=5000}] run xp add @s 50000 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_luckywheel_win=1,elements_casino_game_einsatz=10000}] run xp add @s 100000 levels
 
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1}] run scoreboard players set @s elements_casino_interface 1
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1}] run function elements:enderchest/enderchest-clear
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1}] run scoreboard players set @s elements_casino_game 0
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_casino_luckywheel_finish=1}] run scoreboard players set @s elements_enderchest_interface_click_casino_luckywheel_finish 0
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_interface 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game 0
+execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 execute as @a[scores={elements_casino_interface=8}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","translate":"elements.enderchest.zurueck","italic": false}',custom_model_data=10] 1

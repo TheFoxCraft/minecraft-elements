@@ -1,8 +1,8 @@
-particle minecraft:smoke ~ ~ ~ 1 1 1 0.01 5000
+particle minecraft:smoke ~ ~1 ~ 1 1 1 0.01 5000
 tellraw @a ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Aus dem Eisklotz kam ein merkwürdiges Wesen heraus. Das Rätsel zum Ersten Boss wurde gelöst! Das Portal ist geöffnet!","color": "white"}]
 title @a title [{"text": "Portal eröffnet!","color": "green"}]
 kill @s
-setblock ~ ~ ~ air
+
 
 
 execute in elements:hub run setblock -12 100 -15 reinforced_deepslate

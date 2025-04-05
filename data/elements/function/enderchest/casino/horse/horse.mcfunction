@@ -55,22 +55,30 @@ execute as @a[scores={elements_casino_interface=3}] run scoreboard players set @
 execute as @a[scores={elements_casino_interface=3}] run scoreboard players set @s elements_casino_game_horse_pos_2 9
 execute as @a[scores={elements_casino_interface=3}] run scoreboard players set @s elements_casino_game_horse_pos_3 18
 
-execute as @a[scores={elements_casino_interface=3}] store result score @s elements_enderchest_interface_click_casino_horse_start_1 run clear @s iron_horse_armor[custom_model_data=1]
-execute as @a[scores={elements_casino_interface=3}] store result score @s elements_enderchest_interface_click_casino_horse_start_2 run clear @s golden_horse_armor[custom_model_data=1]
-execute as @a[scores={elements_casino_interface=3}] store result score @s elements_enderchest_interface_click_casino_horse_start_3 run clear @s diamond_horse_armor[custom_model_data=1]
+execute as @a[scores={elements_casino_interface=3}] store result score @s elements_enderchest_interface_clicked run clear @s iron_horse_armor[custom_model_data=1]
+execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_clicked=1}] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1
+execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_horse_horse 1
+execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_horse_load 4
+execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
-execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_click_casino_horse_start_1=1}] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1
-execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_click_casino_horse_start_2=1}] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1
-execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_click_casino_horse_start_3=1}] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1
-execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_click_casino_horse_start_1=1}] run scoreboard players set @s elements_casino_game_horse_horse 1
-execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_click_casino_horse_start_2=1}] run scoreboard players set @s elements_casino_game_horse_horse 2
-execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_click_casino_horse_start_3=1}] run scoreboard players set @s elements_casino_game_horse_horse 3
-execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_click_casino_horse_start_1=1}] run scoreboard players set @s elements_casino_game_horse_load 4
-execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_click_casino_horse_start_2=1}] run scoreboard players set @s elements_casino_game_horse_load 4
-execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_click_casino_horse_start_3=1}] run scoreboard players set @s elements_casino_game_horse_load 4
-execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_click_casino_horse_start_1=1}] run scoreboard players set @s elements_enderchest_interface_click_casino_horse_start_1 0
-execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_click_casino_horse_start_2=1}] run scoreboard players set @s elements_enderchest_interface_click_casino_horse_start_2 0
-execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_click_casino_horse_start_3=1}] run scoreboard players set @s elements_enderchest_interface_click_casino_horse_start_3 0
+execute as @a[scores={elements_casino_interface=3}] store result score @s elements_enderchest_interface_clicked run clear @s golden_horse_armor[custom_model_data=1]
+execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_clicked=1}] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1
+execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_horse_horse 2
+execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_horse_load 4
+execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+
+execute as @a[scores={elements_casino_interface=3}] store result score @s elements_enderchest_interface_clicked run clear @s diamond_horse_armor[custom_model_data=1]
+execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_clicked=1}] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1
+execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_horse_horse 3
+execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_horse_load 4
+execute as @a[scores={elements_casino_interface=3,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+
+
+
+
+
+
+
 
 clear @a iron_horse_armor[custom_model_data=1]
 clear @a golden_horse_armor[custom_model_data=1]
@@ -160,31 +168,31 @@ kill @e[type=item,nbt={Item:{id:"minecraft:totem_of_undying",count:1,components:
 kill @e[type=item,nbt={Item:{id:"minecraft:magenta_glazed_terracotta",count:1,components:{"minecraft:custom_model_data":10}}}]
 
 
-execute as @a[scores={elements_casino_interface=6}] store result score @s elements_enderchest_interface_click_casino_horse_finish run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=10]
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=2}] run scoreboard players operation @s elements_casino_stats_lvlverloren += @s elements_casino_game_einsatz
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=2}] run scoreboard players operation .server elements_casino_stats_lvlverloren += @s elements_casino_game_einsatz
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=2}] run scoreboard players operation @s elements_casino_stats_lvlumsatz -= @s elements_casino_game_einsatz
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=2}] run scoreboard players operation .server elements_casino_stats_lvlumsatz -= @s elements_casino_game_einsatz
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1}] run scoreboard players set @s elements_casino_game_price 2
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1}] run scoreboard players operation @s elements_casino_game_price *= @s elements_casino_game_einsatz
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1}] run scoreboard players operation @s elements_casino_stats_lvlgewonnen += @s elements_casino_game_price
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1}] run scoreboard players operation .server elements_casino_stats_lvlgewonnen += @s elements_casino_game_price
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1}] run scoreboard players operation @s elements_casino_stats_lvlumsatz += @s elements_casino_game_price
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1}] run scoreboard players operation .server elements_casino_stats_lvlumsatz += @s elements_casino_game_price
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=1}] run xp add @s 3 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=5}] run xp add @s 15 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=10}] run xp add @s 30 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=50}] run xp add @s 150 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=100}] run xp add @s 300 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=500}] run xp add @s 1500 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=1000}] run xp add @s 3000 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=5000}] run xp add @s 15000 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=10000}] run xp add @s 30000 levels
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1}] run scoreboard players set @s elements_casino_interface 1
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1}] run scoreboard players set @s elements_casino_game 0
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1}] run function elements:enderchest/enderchest-clear
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @a[scores={elements_enderchest_interface_click_casino_horse_finish=1}] run scoreboard players set @s elements_enderchest_interface_click_casino_horse_finish 0
+execute as @a[scores={elements_casino_interface=6}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=10]
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=2}] run scoreboard players operation @s elements_casino_stats_lvlverloren += @s elements_casino_game_einsatz
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=2}] run scoreboard players operation .server elements_casino_stats_lvlverloren += @s elements_casino_game_einsatz
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=2}] run scoreboard players operation @s elements_casino_stats_lvlumsatz -= @s elements_casino_game_einsatz
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=2}] run scoreboard players operation .server elements_casino_stats_lvlumsatz -= @s elements_casino_game_einsatz
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1}] run scoreboard players set @s elements_casino_game_price 2
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1}] run scoreboard players operation @s elements_casino_game_price *= @s elements_casino_game_einsatz
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1}] run scoreboard players operation @s elements_casino_stats_lvlgewonnen += @s elements_casino_game_price
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1}] run scoreboard players operation .server elements_casino_stats_lvlgewonnen += @s elements_casino_game_price
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1}] run scoreboard players operation @s elements_casino_stats_lvlumsatz += @s elements_casino_game_price
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1}] run scoreboard players operation .server elements_casino_stats_lvlumsatz += @s elements_casino_game_price
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=1}] run xp add @s 3 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=5}] run xp add @s 15 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=10}] run xp add @s 30 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=50}] run xp add @s 150 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=100}] run xp add @s 300 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=500}] run xp add @s 1500 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=1000}] run xp add @s 3000 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=5000}] run xp add @s 15000 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_casino_game_horse_winner_load=1,elements_casino_game_einsatz=10000}] run xp add @s 30000 levels
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_interface 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game 0
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
+execute as @a[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 execute as @a[scores={elements_casino_interface=6}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","translate":"elements.enderchest.zurueck","italic": false}',custom_model_data=10] 1
 
 

@@ -36,7 +36,7 @@ scoreboard players operation .server elements_abgabe_shop_leer_goal *= .server e
 scoreboard players set .server elements_abgabe_other_levelbaum_goal 10
 scoreboard players operation .server elements_abgabe_other_levelbaum_goal *= .server elements_playercount
 
-scoreboard players set .server elements_abgabe_other_community-hub-main_goal 5000
+scoreboard players set .server elements_abgabe_other_community-hub-main_goal 2000
 scoreboard players operation .server elements_abgabe_other_community-hub-main_goal *= .server elements_playercount
 
 scoreboard players set .server elements_abgabe_other_angel-teich_goal 100
@@ -49,7 +49,7 @@ scoreboard players operation .server elements_abgabe_other_recycler_goal *= .ser
 scoreboard players set .server elements_abgabe_stage_2_gang_goal 500
 scoreboard players operation .server elements_abgabe_stage_2_gang_goal *= .server elements_playercount
 
-scoreboard players set .server elements_abgabe_stage_2_goal 250
+scoreboard players set .server elements_abgabe_stage_2_goal 100
 scoreboard players operation .server elements_abgabe_stage_2_goal *= .server elements_playercount
 
 scoreboard players set .server elements_abgabe_stage_3_goal 400

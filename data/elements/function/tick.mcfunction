@@ -21,46 +21,56 @@ execute if score .server elements_function_timer_1s matches 20.. run scoreboard 
 
 #-------------------------------------ALWAYS-------------------------------------ALWAYS-----------------------------------ALWAYS----------------------------------
 
-
+# performance-update V1
 function elements:sonstiges-always/sonstiges
-function elements:sonstiges-always/level {elements_level_stone:10,elements_level_wood:1,elements_level_crimson_vines:2}
-function elements:villager/techniker
-#function elements:villager/schrotthaendler
+function elements:sonstiges-always/level
 function elements:sonstiges-always/firstlogin
-function elements:villager/clementius
+execute as @a at @s if entity @e[type=minecraft:interaction,tag=techniker,distance=..10] run function elements:villager/techniker
+execute as @a at @s if entity @e[type=minecraft:interaction,tag=clementius,distance=..10] run function elements:villager/clementius
+
+execute as @a at @s if entity @e[type=minecraft:interaction,tag=titus,distance=..10] run function elements:villager/titus
+execute as @a at @s if entity @e[type=minecraft:interaction,tag=mystery,distance=..10] run function elements:villager/mystery
+execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-2_mana,distance=..10] run function elements:villager/stage-2_mana
+execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-2_farm-slots,distance=..10] run function elements:villager/stage-2_farm-slots
+execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-3_mana,distance=..10] run function elements:villager/stage-3_mana
+execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-3_farm-slots,distance=..10] run function elements:villager/stage-3_farm-slots
+
 function elements:sonstiges-always/autocompactor
 function elements:sonstiges-always/special-items
-function elements:miningxp/miningxp
-function elements:miningxp/forestingxp
-function elements:miningxp/farmingxp
-function elements:miningxp/fishingxp
-function elements:miningxp/get_fishing/get_fishing
-function elements:villager/titus
-function elements:villager/mystery
-function elements:villager/stage-2_mana
-function elements:villager/stage-2_farm-slots
-function elements:villager/stage-3_mana
-function elements:villager/stage-3_farm-slots
-function elements:enderchest/casino/horse/horse
-function elements:enderchest/casino/luckywheel/luckywheel
 function elements:spawn/abgaben/main
-function elements:spawn/gruppenziel
 function elements:spawn/levelbaum
-function elements:custom-items/mining-frucht/timer
-function elements:custom-items/foraging-frucht/timer
-function elements:custom-items/farming-frucht/timer
-function elements:custom-items/fishing-frucht/timer
-function elements:custom-items/shop/ocean/luck-potion/timer
-function elements:custom-items/shop/stone/leveltrank/timer
-function elements:custom-items/shop/stone/hastetrank/timer
-function elements:custom-items/shop/ocean/water-breathing/timer
+execute as @a[scores={elements_custom-items_shop_mining-frucht_enable=1}] run function elements:custom-items/mining-frucht/timer
+execute as @a[scores={elements_custom-items_shop_foraging-frucht_enable=1}] run function elements:custom-items/foraging-frucht/timer
+execute as @a[scores={elements_custom-items_shop_farming-frucht_enable=1}] run function elements:custom-items/farming-frucht/timer
+execute as @a[scores={elements_custom-items_shop_fishing-frucht_enable=1}] run function elements:custom-items/fishing-frucht/timer
+execute as @a[scores={elements_custom-items_shop_luck-potion_enable=1}] run function elements:custom-items/shop/ocean/luck-potion/timer
+execute as @a[scores={elements_custom-items_shop_leveltrank_enable=1}] run function elements:custom-items/shop/stone/leveltrank/timer
+execute as @a[scores={elements_custom-items_shop_hastetrank_enable=1}] run function elements:custom-items/shop/stone/hastetrank/timer
+execute as @a[scores={elements_custom-items_shop_water-breathing_enable=1}] run function elements:custom-items/shop/ocean/water-breathing/timer
 function elements:custom-items/shop/nether/hot_lava/main
-function elements:stages/refresh-vaults
 function elements:spawn/leaderboards/refresh-timer
 function elements:mana/regernation
 function elements:mana/main
 function elements:mana/cooldown
 function elements:spawn/community-hub
+
+#muss noch gemacht werden
+
+
+function elements:miningxp/miningxp
+function elements:miningxp/forestingxp
+function elements:miningxp/farmingxp
+function elements:miningxp/fishingxp
+function elements:miningxp/get_fishing/get_fishing
+
+
+
+
+
+
+
+
+
 function elements:custom-items/shop/ocean/bossfrucht/main_handling
 function elements:custom-items/element_fishing_rod/crafting_main
 function elements:sonstiges-always/update_sequence/main
@@ -80,6 +90,8 @@ execute as @a[scores={elements_enderchest_interface_number=2}] run function elem
 execute as @a[scores={elements_enderchest_interface_number=3}] run function elements:enderchest/upgradeschmiede
 execute as @a[scores={elements_enderchest_interface_number=4}] run function elements:enderchest/enderchest
 execute as @a[scores={elements_enderchest_interface_number=5}] run function elements:enderchest/casino
+execute as @a[scores={elements_enderchest_interface_number=5}] run function elements:enderchest/casino/horse/horse
+execute as @a[scores={elements_enderchest_interface_number=5}] run function elements:enderchest/casino/luckywheel/luckywheel
 execute as @a[scores={elements_enderchest_interface_number=6}] run function elements:enderchest/collections/menu
 execute as @a[scores={elements_enderchest_interface_number=7}] run function elements:enderchest/settings
 execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_count=1,elements_enderchest_shop_ocean=1}] run function elements:enderchest/shop/ocean-shop
@@ -102,7 +114,7 @@ execute if score .server elements_stage_2_boss_status matches 1 run function ele
 execute if score .server elements_stage_3_boss_status matches 1 run function elements:bosse/stage-3/main
 
 execute as @a[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:{"minecraft:custom_model_data":1}}},gamemode=!adventure] run function elements:custom-items/rettungs-plattform/rettungs-plattform-always
-execute as @e[type=item,nbt={Item:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if block ~ ~ ~ fire if score .server elements_stage_1_portal_enable matches 0 run function elements:stages/stage-1/portal-enable
+execute as @e[type=item,nbt={Item:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if block ~ ~ ~ lava if score .server elements_stage_1_portal_enable matches 0 run function elements:stages/stage-1/portal-enable
 execute as @e[type=item,nbt={Item:{id:"minecraft:dark_oak_sapling",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:spruce_log"},OnGround:1b},distance=..0.3] if entity @e[type=item,nbt={Item:{id:"minecraft:charcoal"},OnGround:1b},distance=..0.3,] if score .server elements_stage_2_portal_enable matches 0 run function elements:stages/stage-2/portal-enable
 execute if score .server elements_stage_3_portal_enable matches 0 run function elements:stages/stage-3/portal-enable/main
 

@@ -1,7 +1,4 @@
 
-
-
-
 execute as @e[type=fishing_bobber,tag=!elements_has_fishing_bobber] at @s if block ~ ~ ~ water run summon marker ~ ~ ~ {Tags:["elements_fishing_bobber"]}
 execute as @e[type=fishing_bobber,tag=!elements_has_fishing_bobber] at @s if block ~ ~ ~ water on origin run data modify entity @n[type=marker,tag=elements_fishing_bobber] data.UUID set from entity @s UUID
 execute as @e[type=fishing_bobber,tag=!elements_has_fishing_bobber] at @s if block ~ ~ ~ water run tag @s add elements_has_fishing_bobber
