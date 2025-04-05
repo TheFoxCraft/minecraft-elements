@@ -86,7 +86,9 @@ execute as @s run scoreboard players set .server elements_uniqueitem_collections
 execute as @s run scoreboard players set .server elements_uniqueitem_other_datenspeicher 0
 execute as @s run scoreboard players set .server elements_uniqueitem_planetenkern 0
 
-execute as @s run scoreboard players set .server elements_update_sequence_status 0
+#add with every update
+execute as @s run scoreboard players set .server elements_update_sequence_status 2
+
 execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
 
 

@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.0.0.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.0.0.2","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -166,6 +166,7 @@ scoreboard objectives add elements_inv_cobblestone dummy
 scoreboard objectives add elements_inv_basalt dummy
 scoreboard objectives add elements_inv_oaklog dummy
 scoreboard objectives add elements_inv_bonemeal dummy
+scoreboard objectives add elements_inv_stone_stage_1 dummy
 scoreboard objectives add elements_enderchest_level dummy
 scoreboard objectives add elements_start dummy
 scoreboard objectives add elements_deathcount deathCount

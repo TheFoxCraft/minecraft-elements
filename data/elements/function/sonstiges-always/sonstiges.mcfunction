@@ -6,6 +6,7 @@ scoreboard players set @a[scores={z_just-ignore=1}] z_just-ignore 0
 
 scoreboard players set #fixed_100 elements_fixed 100
 
+execute in elements:ocean run gamemode survival @a[distance=0..,gamemode=adventure]
 execute in elements:nether run gamemode survival @a[distance=0..,gamemode=adventure]
 execute in elements:stone run gamemode survival @a[distance=0..,gamemode=adventure]
 execute in elements:sky run gamemode survival @a[distance=0..,gamemode=adventure]
@@ -57,6 +58,7 @@ execute as @a store result score @s elements_inv_emerald run clear @s minecraft:
 execute as @a store result score @s elements_inv_ancient_debris run clear @s minecraft:ancient_debris 0
 execute as @a store result score @s elements_inv_elytra run clear @s minecraft:elytra 0
 execute as @a store result score @s elements_inv_fish run clear @s #fishes 0
+execute as @a store result score @s elements_inv_stone_stage_1 run clear @s #elements:stage_1_stone 0
 
 
 
