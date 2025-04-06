@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.0.0.2","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.0.1.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -128,6 +128,10 @@ bossbar add elements:credits_hide "%null%"
 bossbar set elements:credits_hide color purple
 bossbar set elements:credits_hide name ""
 bossbar set elements:credits_hide value 100
+bossbar add elements:credits_small "%null%"
+bossbar set elements:credits_small color purple
+bossbar set elements:credits_small name [{"translate": "elements.main.elements_no_sign"}]
+bossbar set elements:credits_small value 100
 bossbar add elements:gruppenziel_total "%null%"
 bossbar set elements:gruppenziel_total color green
 bossbar set elements:gruppenziel_total name {"text": "Aktuell gibt es kein Gruppenziel","color": "white"}
@@ -382,6 +386,13 @@ scoreboard objectives add elements_spawn_energiekern-activate_timer dummy
 scoreboard objectives add elements_spawn_energiekern_entity-count dummy
 scoreboard objectives add elements_enderchest_settings_tp-mode dummy
 scoreboard objectives add elements_enderchest_settings_dimension dummy
+scoreboard objectives add elements_enderchest_settings_rotation_nether dummy
+scoreboard objectives add elements_enderchest_settings_rotation_stone dummy
+scoreboard objectives add elements_enderchest_settings_rotation_sky dummy
+scoreboard objectives add elements_enderchest_settings_rotation_ocean dummy
+scoreboard objectives add elements_enderchest_settings_rotation_hub dummy
+scoreboard objectives add elements_enderchest_settings_interface dummy
+scoreboard objectives add elements_settings_credits dummy
 scoreboard objectives add elements_setup dummy
 scoreboard objectives add elements_setup_timer dummy
 scoreboard objectives add elements_setup_temp dummy
@@ -683,7 +694,7 @@ scoreboard objectives add elements_leaderboards_id-9_rang_enable dummy
 scoreboard objectives add elements_leaderboards_id-9_rang dummy
 
 #farmslots
-scoreboard objectives add elements_farm-slots_stage-2_placed minecraft.used:spruce_sapling
+scoreboard objectives add elements_farm-slots_stage-2_placed dummy
 scoreboard objectives add elements_farm-slots_stage-2_broken minecraft.mined:spruce_sapling
 scoreboard objectives add elements_farm-slots_stage-2_slots dummy
 scoreboard objectives add elements_farm-slots_stage-2_max-slots dummy

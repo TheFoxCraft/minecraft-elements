@@ -1,0 +1,1 @@
+$execute in elements:sky run tp @s 0 100 0 $(sky) ~

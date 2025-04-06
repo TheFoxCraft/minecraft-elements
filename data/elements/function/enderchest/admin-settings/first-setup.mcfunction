@@ -6,7 +6,7 @@ execute as @s in elements:sky run place template elements:spawn/sky -20 94 -20
 execute as @s in elements:ocean run place template elements:spawn/ocean -20 56 -20
 execute as @s in elements:stage-1_bossroom run place template elements:boss_room/stage_1 -20 99 -20
 execute as @s in elements:stage-2_bossroom run place template elements:boss_room/stage_2 -20 98 -20
-execute as @s in elements:stage-2_bossroom run place template elements:boss_room/stage_3 -41 95 -32
+execute as @s in elements:stage-3_bossroom run place template elements:boss_room/stage_3 -41 95 -32
 execute as @s run scoreboard players set .server elements_stage 0
 execute as @s run scoreboard players set .server elements_stats_lootbox 0
 execute as @s run scoreboard players set .server elements_casino_stats_lvlinvestiert 0
@@ -87,7 +87,7 @@ execute as @s run scoreboard players set .server elements_uniqueitem_other_daten
 execute as @s run scoreboard players set .server elements_uniqueitem_planetenkern 0
 
 #add with every update
-execute as @s run scoreboard players set .server elements_update_sequence_status 2
+execute as @s run scoreboard players set .server elements_update_sequence_status 3
 
 execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
 

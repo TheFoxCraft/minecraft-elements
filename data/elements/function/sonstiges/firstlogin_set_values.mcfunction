@@ -157,7 +157,13 @@ scoreboard players set @s elements_custom_doubleclick_cooldown 0
 scoreboard players set @s elements_update_sequence_status 0
 scoreboard players set @s elements_sonstiges_actionbar_pause 0
 scoreboard players set @s elements_tokens_count 0
-
+scoreboard players set @s elements_settings_credits 3
+scoreboard players set @s elements_enderchest_settings_rotation_nether 0
+scoreboard players set @s elements_enderchest_settings_rotation_stone 0
+scoreboard players set @s elements_enderchest_settings_rotation_nether 0
+scoreboard players set @s elements_enderchest_settings_rotation_ocean 0
+scoreboard players set @s elements_enderchest_settings_rotation_hub 0
+scoreboard players set @s elements_enderchest_settings_interface 1
 
 scoreboard players operation @s elements_update_sequence_status = .server elements_update_sequence_status
 

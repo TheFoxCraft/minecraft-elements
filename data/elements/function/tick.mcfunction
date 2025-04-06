@@ -30,7 +30,7 @@ execute as @a at @s if entity @e[type=minecraft:interaction,tag=clementius,dista
 
 execute as @a at @s if entity @e[type=minecraft:interaction,tag=titus,distance=..10] run function elements:villager/titus
 execute as @a at @s if entity @e[type=minecraft:interaction,tag=mystery,distance=..10] run function elements:villager/mystery
-execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-2_mana,distance=..10] run function elements:villager/stage-2_mana
+execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-2_mana,distance=..30] run function elements:villager/stage-2_mana
 execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-2_farm-slots,distance=..10] run function elements:villager/stage-2_farm-slots
 execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-3_mana,distance=..10] run function elements:villager/stage-3_mana
 execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-3_farm-slots,distance=..10] run function elements:villager/stage-3_farm-slots
@@ -62,11 +62,6 @@ function elements:miningxp/forestingxp
 function elements:miningxp/farmingxp
 function elements:miningxp/fishingxp
 function elements:miningxp/get_fishing/get_fishing
-
-
-
-
-
 
 
 

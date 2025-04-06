@@ -173,9 +173,9 @@ execute as @a[scores={elements_custom-items_shop_sauger_click=1..}] run function
 execute as @a[scores={elements_custom-items_shop_sauger_click=1..}] run scoreboard players remove @s elements_custom-items_shop_sauger_click 1
 
 #credits
-bossbar set elements:credits players @a
-bossbar set elements:credits_hide players @a
-
+bossbar set elements:credits players @a[scores={elements_settings_credits=3}]
+bossbar set elements:credits_hide players @a[scores={elements_settings_credits=3}]
+bossbar set elements:credits_small players @a[scores={elements_settings_credits=2}]
 
 #cam-accs
 execute as @a[scores={elements_rank_cam=1}] unless score @s elements_rank_admin matches 1 run gamemode spectator @s

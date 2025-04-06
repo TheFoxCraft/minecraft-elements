@@ -1,0 +1,1 @@
+$execute in elements:stone run tp @s 0 100 0 $(stone) ~

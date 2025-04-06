@@ -42,7 +42,7 @@
     crimson_roots: Alternative Fake to Weeping Vines
     crimson_fungus: Stage 3 Boss Portal Rätsel Teil
     crimson_hyphae: Spage 3 Boss-Key
-    
+    armor_stand: Enderchest Settings Dimension Rotation
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -71,6 +71,7 @@
     bordure_indented_banner_pattern: Enderchest Admin Settings Tipps Stage 2 #2
     flow_banner_pattern: Endechest Admin Settings Tipps Stage 3 #2
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod String Tipp
+    dark_oak_hanging_sign: Enderchest Settings Credits
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -109,6 +110,11 @@
     potion: Leveltrank | Stone Shop
     fishing_rod: Element Fishing Rod | Mythic
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Sticks Solution
+    nether_star: Enderchest Settings Dimension Rotation HUB
+    blue_stained_glass_pane:
+    gray_stained_glass_pane:
+    light_blue_stained_glass_pane:
+    red_stained_glass_pane:
 6:
     potion: Leveltrank | Stone Shop Buying
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Hook Tipp

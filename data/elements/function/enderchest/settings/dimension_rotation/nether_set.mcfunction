@@ -1,0 +1,1 @@
+$item replace entity @s enderchest.15 with red_stained_glass_pane[custom_name='{"color":"gold","text":"Nether","italic": false}',lore=['{"text": "$(nether)°","color": "gray","italic": false}','""','{"text": "Klicke zum ändern, Shift für Schnelles Drehen","color": "gray","italic": false}'],custom_model_data=5] 1

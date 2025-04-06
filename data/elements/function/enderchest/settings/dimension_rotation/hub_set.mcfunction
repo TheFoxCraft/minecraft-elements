@@ -1,0 +1,1 @@
+$item replace entity @s enderchest.13 with nether_star[custom_name='{"color":"gold","text":"HUB","italic": false}',lore=['{"text": "$(hub)°","color": "gray","italic": false}','""','{"text": "Klicke zum ändern, Shift für Schnelles Drehen","color": "gray","italic": false}'],custom_model_data=5] 1

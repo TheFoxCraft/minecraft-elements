@@ -1,0 +1,1 @@
+$item replace entity @s enderchest.11 with blue_stained_glass_pane[custom_name='{"color":"gold","text":"Ocean","italic": false}',lore=['{"text": "$(ocean)°","color": "gray","italic": false}','""','{"text": "Klicke zum ändern, Shift für Schnelles Drehen","color": "gray","italic": false}'],custom_model_data=5] 1

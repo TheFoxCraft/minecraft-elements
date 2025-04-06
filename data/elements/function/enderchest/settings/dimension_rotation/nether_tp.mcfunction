@@ -1,0 +1,1 @@
+$execute in elements:nether run tp @s 0 100 0 $(nether) ~

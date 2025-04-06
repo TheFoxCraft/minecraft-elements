@@ -1,0 +1,27 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "location": [
+            {
+                "condition": "minecraft:block_state_property",
+                "block": "spruce_sapling"
+            },
+            {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": "spruce_sapling"
+                    
+                }
+            }
+          ]
+          
+        }
+      }
+    },
+    "rewards": {
+      "function": "elements:farm_slots/stage_2/get_block_placing"
+    }
+  }
+  
