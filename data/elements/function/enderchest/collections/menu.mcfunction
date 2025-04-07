@@ -17,6 +17,20 @@ kill @e[type=item,nbt={Item:{id:"minecraft:cobblestone",count:1,components:{"min
 kill @e[type=item,nbt={Item:{id:"minecraft:spruce_log",count:1,components:{"minecraft:custom_model_data":10}}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:weeping_vines",count:1,components:{"minecraft:custom_model_data":10}}}]
 
+kill @e[type=item,nbt={Item:{id:"minecraft:lime_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":10}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":10}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:orange_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":10}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:orange_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":11}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:orange_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":12}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:orange_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":13}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:orange_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":14}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:orange_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":15}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:orange_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":16}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:orange_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":17}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:orange_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":18}}}]
+
+
+
 execute as @s[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.0 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 execute as @s[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.1 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 execute as @s[scores={elements_enderchest_interface_number=6}] run item replace entity @s enderchest.2 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1

@@ -1,3 +1,13 @@
+$execute as @a[nbt={UUID:$(UUID)}] if entity @s[nbt={SelectedItem:{id:"minecraft:iron_axe",components:{"minecraft:custom_model_data":1}}}] run return fail
+$execute as @a[nbt={UUID:$(UUID)}] if entity @s[nbt={SelectedItem:{id:"minecraft:diamond_axe",components:{"minecraft:custom_model_data":2}}}] run return fail
+$execute as @a[nbt={UUID:$(UUID)}] if entity @s[nbt={SelectedItem:{id:"minecraft:netherite_axe",components:{"minecraft:custom_model_data":2}}}] run return fail
+$execute as @a[nbt={UUID:$(UUID)}] if entity @s[nbt={SelectedItem:{id:"minecraft:diamond_axe",components:{"minecraft:custom_model_data":3}}}] run return fail
+$execute as @a[nbt={UUID:$(UUID)}] if entity @s[nbt={SelectedItem:{id:"minecraft:netherite_axe",components:{"minecraft:custom_model_data":3}}}] run return fail
+$execute as @a[nbt={UUID:$(UUID)}] if entity @s[nbt={SelectedItem:{id:"minecraft:netherite_axe",components:{"minecraft:custom_model_data":4}}}] run return fail
+$execute as @a[nbt={UUID:$(UUID)}] if entity @s[nbt={SelectedItem:{id:"minecraft:netherite_axe",components:{"minecraft:custom_model_data":5}}}] run return fail
+
+
+
 $data modify storage elements_farmslots_stage_2 UUID set value $(UUID)
 execute store success score @s elements_farm-slots_stage-2_correct_UUID run data modify storage elements_farmslots_stage_2 UUID set from entity @s data.Owner
 
@@ -13,4 +23,4 @@ $execute if score @s elements_farm-slots_stage-2_correct_UUID matches 0 as @a[nb
 
 $scoreboard players set @a[nbt={UUID:$(UUID)}] elements_farm-slots_stage-2_broken 0
 
-execute if score @s elements_farm-slots_stage-2_correct_UUID matches 0 run kill @s
+$execute if entity @a[nbt={UUID:$(UUID)}] if score @s elements_farm-slots_stage-2_correct_UUID matches 0 run kill @s

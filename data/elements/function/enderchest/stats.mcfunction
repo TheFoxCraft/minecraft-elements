@@ -49,6 +49,9 @@ kill @e[type=text_display,tag=stats]
 summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Lootboxen geöffnet: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_stats_lootbox"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]
+summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Tokens: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_tokens_count"},"color":"gray","italic": false}]',alignment:center}
+data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
+kill @e[type=text_display,tag=stats]
 summon text_display ~ ~ ~ {Tags:["stats"],text:'[{"text":"Spielzeit: ","color":"blue","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_stats_playtime_h"},"color":"gray","italic": false},{"translate":"elements.main.other.:","color":"gray","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_stats_playtime_min"},"color":"gray","italic": false},{"translate":"elements.main.other.:","color":"gray","italic": false},{"score":{"name":"@a[scores={elements_enderchest_stats_load=1},limit=1]","objective":"elements_stats_playtime_sec"},"color":"gray","italic": false}]',alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]

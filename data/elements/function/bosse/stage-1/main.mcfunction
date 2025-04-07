@@ -15,7 +15,7 @@ execute in elements:stage-1_bossroom unless entity @a[gamemode=!spectator,distan
 execute if score .server elements_stage_1_boss_melee_timer matches 1.. run scoreboard players remove .server elements_stage_1_boss_melee_timer 1
 
 execute if score .server elements_stage_1_boss_melee_timer matches 0 as @e[tag=stage-1_boss] at @s run particle dust{color:[0.588,0.569,0.631],scale:1} ~ ~1.5 ~ 2.5 1.5 2.5 0 1000 normal
-execute if score .server elements_stage_1_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-1_boss,distance=..6] run damage @s 2 minecraft:magic by @n[tag=stage-1_boss] from @n[tag=stage-1_boss]
+execute if score .server elements_stage_1_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-1_boss,distance=..6] run damage @s 4 minecraft:boss_stage_1
 execute if score .server elements_stage_1_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-1_boss,distance=..6] run playsound minecraft:enchant.thorns.hit master @s
 execute if score .server elements_stage_1_boss_melee_timer matches 0 store result score .server elements_stage_1_boss_melee_timer run random value 30..200
 

@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:name_tag",
-          "weight": 100
+          "weight": 25
         },
         {
           "type": "minecraft:item",
@@ -20,7 +20,7 @@
               }
             }
           ],
-          "weight": 100
+          "weight": 25
         },
         {
           "type": "minecraft:item",
@@ -41,7 +41,7 @@
             }
           ],
           "name": "minecraft:bow",
-          "weight": 100
+          "weight": 25
         },
         {
           "type": "minecraft:item",
@@ -62,7 +62,7 @@
             }
           ],
           "name": "minecraft:fishing_rod",
-          "weight": 100
+          "weight": 25
         },
         {
           "type": "minecraft:item",
@@ -74,17 +74,22 @@
             }
           ],
           "name": "minecraft:book",
-          "weight": 100
+          "weight": 25
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:nautilus_shell",
-          "weight": 100
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "weight": 12
         },
         {
           "type": "minecraft:loot_table",
           "value": "minecraft:gameplay/fishing/coral",
-          "weight": 50
+          "weight": 25
         },
         {
           "type": "loot_table",

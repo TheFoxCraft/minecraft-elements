@@ -13,7 +13,7 @@ execute in elements:stage-3_bossroom unless entity @a[gamemode=!spectator,distan
 execute if score .server elements_stage_3_boss_melee_timer matches 1.. run scoreboard players remove .server elements_stage_3_boss_melee_timer 1
 
 execute if score .server elements_stage_3_boss_melee_timer matches 0 as @e[tag=stage-3_boss] at @s run particle dust{color:16058119,scale:1} ~ ~2 ~ 4 4 4 0 200 normal
-execute if score .server elements_stage_3_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-3_boss,distance=..10] run damage @s 15 minecraft:magic by @n[tag=stage-3_boss] from @n[tag=stage-3_boss]
+execute if score .server elements_stage_3_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-3_boss,distance=..10] run damage @s 25 minecraft:boss_stage_3
 execute if score .server elements_stage_3_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-3_boss,distance=..10] run playsound minecraft:enchant.thorns.hit master @s
 execute if score .server elements_stage_3_boss_melee_timer matches 0 store result score .server elements_stage_3_boss_melee_timer run random value 40..100
 
@@ -34,7 +34,7 @@ execute if score .server elements_stage_3_boss_status matches 1 unless entity @e
 execute if score .server elements_stage_3_boss_status matches 1 unless entity @e[tag=stage-3_boss] if score .server elements_custom-items_shop_boss-frucht_remain matches 1 run scoreboard players set .server elements_custom-items_shop_boss-frucht_remain 0
 execute if score .server elements_stage_3_boss_status matches 1 unless entity @e[tag=stage-3_boss] run scoreboard players set .server elements_stage_3_boss_status 0
 
-execute in elements:stage-3_bossroom as @a[distance=0..] if entity @e[tag=stage-3_boss] run bossbar set elements:stage-3_boss players @s
+execute in elements:stage-3_bossroom if entity @e[tag=stage-3_boss] run bossbar set elements:stage-3_boss players @a[distance=0..]
 
 execute in elements:stage-3_bossroom store result bossbar elements:stage-3_boss value run data get entity @n[tag=stage-3_boss] Health
 execute in elements:stage-3_bossroom store result bossbar elements:stage-3_boss max run attribute @n[tag=stage-3_boss] max_health get 1

@@ -36,7 +36,6 @@ execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-3_mana,dis
 execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-3_farm-slots,distance=..10] run function elements:villager/stage-3_farm-slots
 
 function elements:sonstiges-always/autocompactor
-function elements:sonstiges-always/special-items
 function elements:spawn/abgaben/main
 function elements:spawn/levelbaum
 execute as @a[scores={elements_custom-items_shop_mining-frucht_enable=1}] run function elements:custom-items/mining-frucht/timer
@@ -53,6 +52,8 @@ function elements:mana/regernation
 function elements:mana/main
 function elements:mana/cooldown
 function elements:spawn/community-hub
+function elements:stages/refresh-vaults
+function elements:sonstiges-always/special-items
 
 #muss noch gemacht werden
 
@@ -89,11 +90,7 @@ execute as @a[scores={elements_enderchest_interface_number=5}] run function elem
 execute as @a[scores={elements_enderchest_interface_number=5}] run function elements:enderchest/casino/luckywheel/luckywheel
 execute as @a[scores={elements_enderchest_interface_number=6}] run function elements:enderchest/collections/menu
 execute as @a[scores={elements_enderchest_interface_number=7}] run function elements:enderchest/settings
-execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_count=1,elements_enderchest_shop_ocean=1}] run function elements:enderchest/shop/ocean-shop
-execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_count=1,elements_enderchest_shop_stone=1}] run function elements:enderchest/shop/stone-shop
-execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_count=1,elements_enderchest_shop_sky=1}] run function elements:enderchest/shop/sky-shop
-execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_count=1,elements_enderchest_shop_nether=1}] run function elements:enderchest/shop/nether-shop
-execute as @a[scores={elements_enderchest_interface_number=9,elements_enderchest_shop_count=2..4}] run function elements:enderchest/shop/select_shop
+execute as @a[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/select_shop
 
 
 execute as @a[scores={elements_death=1..}] run function elements:sonstiges/death

@@ -25,8 +25,8 @@ execute if score @s elements_mystery_lootbox_random matches 10000 as @a at @s ru
 
 
 
-$execute in elements:hub positioned -14.5 101.0 -8.50 if entity @e[type=item,tag=mystery_loot,distance=..0.1] run summon item -14.5 101.7 -8.50 {Tags:["mystery_loot","mystery_loot_handle"],Item:{id:"rotten_flesh"},Owner:$(UUID),Age:-1,PickupDelay:20,Invulnerable:1b}
-$execute in elements:hub positioned -14.5 101.0 -8.50 unless entity @e[type=item,tag=mystery_loot,distance=..0.1] run summon item -14.5 101.0 -8.50 {Tags:["mystery_loot","mystery_loot_handle"],Item:{id:"rotten_flesh"},Owner:$(UUID),Age:-1,PickupDelay:20,Invulnerable:1b}
+$execute in elements:hub positioned -14.5 101.0 -8.50 if entity @e[type=item,tag=mystery_loot,distance=..0.1] run summon item -14.5 101.7 -8.50 {Tags:["mystery_loot","mystery_loot_handle","gravity_stone_ignore"],Item:{id:"rotten_flesh"},Owner:$(UUID),Age:-1,PickupDelay:20,Invulnerable:1b}
+$execute in elements:hub positioned -14.5 101.0 -8.50 unless entity @e[type=item,tag=mystery_loot,distance=..0.1] run summon item -14.5 101.0 -8.50 {Tags:["mystery_loot","mystery_loot_handle","gravity_stone_ignore"],Item:{id:"rotten_flesh"},Owner:$(UUID),Age:-1,PickupDelay:20,Invulnerable:1b}
 
 data modify entity @n[tag=mystery_loot_handle,type=item] Item set from entity @n[tag=elements_mystery_loot,type=armor_stand] HandItems.[0]
 tag @n[tag=mystery_loot_handle,type=item] remove mystery_loot_handle

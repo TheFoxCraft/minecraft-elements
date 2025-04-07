@@ -185,7 +185,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard p
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_settings_interface 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:diamond",count:1,components:{"minecraft:custom_model_data":1}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:compass",count:1,components:{"minecraft:custom_model_data":1}}}]
 execute as @s[scores={elements_enderchest_level_settings=1,elements_enderchest_interface_number=1}] run item replace entity @s enderchest.18 with compass[custom_name='{"color":"gold","text":"Settings","italic": false}',custom_model_data=1] 1
 
 #Admin-Settings -8
@@ -205,5 +205,5 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard p
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/load
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:piston",count:1,components:{"minecraft:custom_model_data":1}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:crafting_table",count:1,components:{"minecraft:custom_model_data":1}}}]
 execute as @s[scores={elements_enderchest_level_shop=1,elements_enderchest_interface_number=1}] run item replace entity @s enderchest.6 with crafting_table[custom_name='{"color":"gold","text":"Shop","italic": false}',custom_model_data=1] 1

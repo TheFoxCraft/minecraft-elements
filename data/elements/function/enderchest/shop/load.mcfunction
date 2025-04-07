@@ -20,12 +20,3 @@ execute if score .server elements_enderchest_shop_nether matches 2 run scoreboar
 execute as @s run scoreboard players set @s elements_enderchest_shop_interface 0
 
 
-
-execute as @s run scoreboard players set @s elements_enderchest_shop_count 0
-execute as @s run scoreboard players operation @s elements_enderchest_shop_count += @s elements_enderchest_shop_ocean
-execute as @s run scoreboard players operation @s elements_enderchest_shop_count += @s elements_enderchest_shop_stone
-execute as @s run scoreboard players operation @s elements_enderchest_shop_count += @s elements_enderchest_shop_sky
-execute as @s run scoreboard players operation @s elements_enderchest_shop_count += @s elements_enderchest_shop_nether
-
-
-

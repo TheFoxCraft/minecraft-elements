@@ -9,7 +9,7 @@ execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard p
 
 clear @a minecraft:weeping_vines[custom_model_data=11]
 kill @e[type=item,nbt={Item:{id:"minecraft:oak_hanging_sign",count:1,components:{"minecraft:custom_model_data":11}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:spruce_log",count:1,components:{"minecraft:custom_model_data":11}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:weeping_vines",count:1,components:{"minecraft:custom_model_data":11}}}]
 
 
 execute as @a[scores={elements_enderchest_interface_number=6,elements_collections_interface=4}] run item replace entity @s enderchest.3 with weeping_vines[custom_name='{"color":"gold","italic":false,"text":"Farme Crimson Vines"}',lore=['{"color":"gray","italic":false,"text":"Und erreiche Meilensteine."}'],custom_model_data=11] 1

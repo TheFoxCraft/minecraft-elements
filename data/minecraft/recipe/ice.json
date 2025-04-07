@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "snowball",
+        "snowball",
+        "snowball",
+        "snowball",
+        "snowball",
+        "snowball",
+        "snowball",
+        "snowball",
+        "snowball"
+    ],
+    "result": 
+    {
+        "id": "minecraft:ice",
+        "count": 1
+    }
+}
