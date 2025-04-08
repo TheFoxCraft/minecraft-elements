@@ -1,5 +1,6 @@
 
 execute as @a[scores={elements_miningxp_foresting_mine-get_spruce=1..}] run scoreboard players add @s elements_miningxp_foresting_xp 3
+execute as @a[scores={elements_miningxp_foresting_mine-get_spruce=1..},nbt={Inventory:[{id:"minecraft:crafting_table",components:{"minecraft:custom_model_data":5}}]}] run scoreboard players add @s elements_miningxp_foresting_xp 1
 execute as @a[scores={elements_miningxp_foresting_mine-get_spruce=1..,elements_custom-items_shop_foraging-frucht_enable=1}] run scoreboard players add @s elements_custom-items_shop_foraging-frucht_counter 1
 execute as @a[scores={elements_miningxp_foresting_mine-get_spruce=1..}] at @s store result score @s elements_miningxp_foresting_loot run random value 1..20
 execute as @a[scores={elements_miningxp_foresting_mine-get_spruce=1..}] at @s if score @s elements_miningxp_foresting_level >= @s elements_miningxp_foresting_loot at @e[type=item,nbt={Item:{id:"minecraft:spruce_log",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:spruce_log",count:1}}

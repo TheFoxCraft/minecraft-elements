@@ -44,9 +44,9 @@ scoreboard players set @s elements_collections_crimson_vines_collect 0
 scoreboard players set @s elements_collections_stats_crimson_vines_total 0
 #uniques
 scoreboard players set @s elements_uniqueitem_collections_bruchstueck_der_eismauer 0
-scoreboard players set @s elements_uniqueitem_collections_wood 0
-scoreboard players set @s elements_uniqueitem_collections_crimson_vines 0
+scoreboard players set @s elements_uniqueitem_collections_auf_log 0
 scoreboard players set @s elements_uniqueitem_other_datenspeicher 0
+scoreboard players set @s elements_uniqueitem_ork_schatz 0
 scoreboard players set @s elements_uniqueitem_planetenkern 0
 
 scoreboard players set @s elements_spawn_energiekern_particle_settings 0

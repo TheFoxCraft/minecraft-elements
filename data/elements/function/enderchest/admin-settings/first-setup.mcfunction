@@ -82,8 +82,9 @@ execute as @s run scoreboard players set .server elements_double-xp-event_timer_
 execute as @s run scoreboard players set .server elements_admin_config_interface 1
 #uniques
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_bruchstueck_der_eismauer 0
-execute as @s run scoreboard players set .server elements_uniqueitem_collections_wood 0
+execute as @s run scoreboard players set .server elements_uniqueitem_collections_auf_log 0
 execute as @s run scoreboard players set .server elements_uniqueitem_other_datenspeicher 0
+execute as @s run scoreboard players set .server elements_uniqueitem_ork_schatz 0
 execute as @s run scoreboard players set .server elements_uniqueitem_planetenkern 0
 
 #add with every update

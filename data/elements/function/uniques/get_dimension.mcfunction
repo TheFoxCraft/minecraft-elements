@@ -1,0 +1,4 @@
+execute if score @s elements_homedimension matches 1 run data modify storage elements_unique_item_set_name player_dimension set value '{"text":"[O]","bold":true,"color":"dark_blue"}'
+execute if score @s elements_homedimension matches 2 run data modify storage elements_unique_item_set_name player_dimension set value '{"text":"[S]","bold":true,"color":"gray"}'
+execute if score @s elements_homedimension matches 3 run data modify storage elements_unique_item_set_name player_dimension set value '{"text":"[S]","bold":true,"color":"aqua"}'
+execute if score @s elements_homedimension matches 4 run data modify storage elements_unique_item_set_name player_dimension set value '{"text":"[N]","bold":true,"color":"red"}'

@@ -19,12 +19,14 @@ execute if score .server elements_function_timer_1s matches 20.. run scoreboard 
 
 
 
-#-------------------------------------ALWAYS-------------------------------------ALWAYS-----------------------------------ALWAYS----------------------------------
+#-------------------------------------ALWAYS-------------------------------------ALWAYS-----------------------------------ALWAYS----------------------------------#
 
 # performance-update V1
 function elements:sonstiges-always/sonstiges
+
 function elements:sonstiges-always/level
 function elements:sonstiges-always/firstlogin
+
 execute as @a at @s if entity @e[type=minecraft:interaction,tag=techniker,distance=..10] run function elements:villager/techniker
 execute as @a at @s if entity @e[type=minecraft:interaction,tag=clementius,distance=..10] run function elements:villager/clementius
 
@@ -46,9 +48,9 @@ execute as @a[scores={elements_custom-items_shop_luck-potion_enable=1}] run func
 execute as @a[scores={elements_custom-items_shop_leveltrank_enable=1}] run function elements:custom-items/shop/stone/leveltrank/timer
 execute as @a[scores={elements_custom-items_shop_hastetrank_enable=1}] run function elements:custom-items/shop/stone/hastetrank/timer
 execute as @a[scores={elements_custom-items_shop_water-breathing_enable=1}] run function elements:custom-items/shop/ocean/water-breathing/timer
-function elements:custom-items/shop/nether/hot_lava/main
+execute as @a[scores={elements_custom-items_shop_hot-lava_damage_queue=1}] run function elements:custom-items/shop/nether/hot_lava/main
 function elements:spawn/leaderboards/refresh-timer
-function elements:mana/regernation
+function elements:mana/regeneration
 function elements:mana/main
 function elements:mana/cooldown
 function elements:spawn/community-hub

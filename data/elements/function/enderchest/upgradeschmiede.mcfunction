@@ -130,6 +130,7 @@ execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderI
 
 
 #close-finish
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_upgradeschmiede_upgrade=3}] run function elements:enderchest/upgradeschmiede_copy_data
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_upgradeschmiede_upgrade=3}] run item replace entity @s enderchest.12 with air
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_upgradeschmiede_upgrade=3}] at @s run playsound minecraft:block.anvil.use master @s
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0

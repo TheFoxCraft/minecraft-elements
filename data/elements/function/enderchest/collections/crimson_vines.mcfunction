@@ -115,8 +115,8 @@ execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collectio
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_crimson_vines_collect=..7}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_crimson_vines_collect=8}] at @s run playsound minecraft:entity.player.levelup master @s
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_crimson_vines_collect=8}] run xp add @s 100000 levels
-execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_crimson_vines_collect=8}] if score .server elements_uniqueitem_collections_crimson_vines matches 0 run give @s structure_void[custom_name='{"text": "Unique-Item"}']
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_crimson_vines_collect=8}] if score .server elements_uniqueitem_collections_crimson_vines matches 1 run loot give @s loot elements:items/customs/lebensfrucht
+execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_crimson_vines_collect=8}] if score .server elements_uniqueitem_collections_crimson_vines matches 0 run give @s structure_void[custom_name='{"text": "Unique-Item"}']
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_crimson_vines_collect=8}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}," Belohnung eingefordert!"]
 execute as @a[scores={elements_enderchest_interface_clicked=1,elements_collections_crimson_vines_collect=8}] run scoreboard players set @s elements_collections_crimson_vines_collect 9
 execute as @a[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0

@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.1.1.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.2.0.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -361,15 +361,16 @@ scoreboard objectives add elements_custom-items_fishing_rod_crafting_sticks_cool
 
 
 scoreboard objectives add elements_enderchest_interface_clicked dummy
+scoreboard objectives add elements_free_inv_slots dummy
 
 
 ## UNIQUES
 #collections
 scoreboard objectives add elements_uniqueitem_collections_bruchstueck_der_eismauer dummy
-scoreboard objectives add elements_uniqueitem_collections_wood dummy
-scoreboard objectives add elements_uniqueitem_collections_crimson_vines dummy
+scoreboard objectives add elements_uniqueitem_collections_auf_log dummy
 #collection_farming
 scoreboard objectives add elements_uniqueitem_planetenkern dummy
+scoreboard objectives add elements_uniqueitem_ork_schatz dummy
 #other
 scoreboard objectives add elements_uniqueitem_other_datenspeicher dummy
 

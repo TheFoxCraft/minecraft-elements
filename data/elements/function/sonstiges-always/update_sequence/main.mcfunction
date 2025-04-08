@@ -64,6 +64,27 @@ execute as @a[scores={elements_update_sequence_status=2}] if score .server eleme
 # ..
 execute as @a[scores={elements_update_sequence_status=2}] if score .server elements_update_sequence_status matches 3.. run scoreboard players set @s elements_update_sequence_status 3
 
+#1.0.1.0
+
+
+execute if score .server elements_update_sequence_status matches 3 run scoreboard players set .server elements_uniqueitem_collections_auf_log 0
+execute if score .server elements_update_sequence_status matches 3 run scoreboard players set .server elements_uniqueitem_ork_schatz 0
+#execute if score .server elements_update_sequence_status matches 3 run say (Hier dann neue default-values setzen)
+execute if score .server elements_update_sequence_status matches 3 run scoreboard players set .server elements_update_sequence_status 4
+
+
+execute as @a[scores={elements_update_sequence_status=3}] if score .server elements_update_sequence_status matches 4.. run title @s title ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
+execute as @a[scores={elements_update_sequence_status=3}] if score .server elements_update_sequence_status matches 4.. run title @s subtitle ["",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.2.0.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
+execute as @a[scores={elements_update_sequence_status=3}] if score .server elements_update_sequence_status matches 4.. run tellraw @s ["","\n","\n","\n","\n","\n",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.2.0.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"\n","\n",{"text": "Seit du das letzte mal online warst gab es ein Update!\n Das ist neu:","color": "green"},"\n"]
+execute as @a[scores={elements_update_sequence_status=3}] if score .server elements_update_sequence_status matches 4.. run tellraw @s ["",{"text": "Changelog ist im Discord verfügbar"}]
+# ..
+execute as @a[scores={elements_update_sequence_status=3}] if score .server elements_update_sequence_status matches 4.. run scoreboard players set @s elements_uniqueitem_collections_auf_log 0
+execute as @a[scores={elements_update_sequence_status=3}] if score .server elements_update_sequence_status matches 4.. run scoreboard players set @s elements_uniqueitem_ork_schatz 0
+
+
+#execute as @a[scores={elements_update_sequence_status=3}] if score .server elements_update_sequence_status matches 4.. run say (Hier dann neue default-values setzen)
+# ..
+execute as @a[scores={elements_update_sequence_status=3}] if score .server elements_update_sequence_status matches 4.. run scoreboard players set @s elements_update_sequence_status 4
 
 
 

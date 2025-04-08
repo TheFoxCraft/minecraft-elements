@@ -1,0 +1,1 @@
+$data modify storage elements_unique_item_set_name player_name set from storage elements_playerdata_$(ID) name

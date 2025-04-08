@@ -1,0 +1,9 @@
+function elements:spawn/leaderboards/1_level-verloren/main with storage elements_leaderboard_id-1
+function elements:spawn/leaderboards/2_death-count/main with storage elements_leaderboard_id-2
+function elements:spawn/leaderboards/3_mining-level/main with storage elements_leaderboard_id-3
+function elements:spawn/leaderboards/4_foraging-level/main with storage elements_leaderboard_id-4
+function elements:spawn/leaderboards/5_farming-level/main with storage elements_leaderboard_id-5
+function elements:spawn/leaderboards/6_fishing-level/main with storage elements_leaderboard_id-6
+function elements:spawn/leaderboards/7_hoechst_level/main with storage elements_leaderboard_id-7
+function elements:spawn/leaderboards/8_ausgegebene-level/main with storage elements_leaderboard_id-8
+function elements:spawn/leaderboards/9_erhaltene-level/main with storage elements_leaderboard_id-9
