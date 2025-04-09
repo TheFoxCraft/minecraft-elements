@@ -1,6 +1,6 @@
 tellraw @a ["",{"translate":"elements.main.other.server","color": "yellow"},{"selector": "@s"},{"text":" hat ein "},{"text": "EINZIGARTIGES LEGENDÄRES ITEM","color": "gold","italic": true,"bold": true},{"text": " gefunden und dafür "},{"text": "25.000 Level","color": "green"},{"text": " bekommen!"}]
 
-loot give @s loot elements:items/uniques/collections/auf_log
+function elements:sonstiges/savely_give_loot {id:"elements:items/uniques/collections/auf_log"}
 xp add @s 25000 levels
 execute at @s run playsound ui.toast.challenge_complete master @s
 

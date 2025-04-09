@@ -361,7 +361,7 @@ scoreboard objectives add elements_custom-items_fishing_rod_crafting_sticks_cool
 
 
 scoreboard objectives add elements_enderchest_interface_clicked dummy
-scoreboard objectives add elements_free_inv_slots dummy
+scoreboard objectives add elements_used_inv_slots dummy
 
 
 ## UNIQUES

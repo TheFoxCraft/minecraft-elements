@@ -26,7 +26,7 @@ execute as @s[scores={elements_villager_stage-2_mana_level=1}] run function elem
 execute as @s[scores={elements_villager_stage-2_mana_level=2,elements_villager_stage-2_mana_clicked=1}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_2.mana.name.chat","color":"yellow"},{"text":"Na wie fühlt man sich so als Magier? Damit du sehen kannst wie viel Energie du gerade hast, gebe ich dir hier einen Messstab."},"\n","\n",{"text":"Ok, Cool","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger z_just-ignore set 406"}}]
 execute as @s[scores={elements_villager_stage-2_mana_level=2,elements_villager_stage-2_mana_clicked=1}] run scoreboard players set @s elements_villager_stage-2_mana_clicked 0
 execute as @s[scores={elements_villager_stage-2_mana_level=2,z_just-ignore=406}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_2.mana.name.chat","color":"yellow"},{"text":"Halte ihn in der Hand, dann siehst du deine Mana und auch deine Maximale Energie"}]
-execute as @s[scores={elements_villager_stage-2_mana_level=2,z_just-ignore=406}] run loot give @s loot elements:items/customs/mana_messstab
+execute as @s[scores={elements_villager_stage-2_mana_level=2,z_just-ignore=406}] run function elements:sonstiges/savely_give_loot {id:"elements:items/customs/mana_messstab"}
 execute as @s[scores={elements_villager_stage-2_mana_level=2,z_just-ignore=406}] run scoreboard players set @s elements_villager_stage-2_mana_level 3
 execute as @s[scores={z_just-ignore=406}] run scoreboard players set @s z_just-ignore 0
 
@@ -49,7 +49,7 @@ execute as @s[scores={elements_villager_stage-2_mana_level=3,z_just-ignore=413}]
 execute as @s[scores={z_just-ignore=413}] run scoreboard players set @s z_just-ignore 0
 
 #execute as @s[scores={elements_villager_stage-2_mana_level=3,z_just-ignore=414,elements_mainlevel=4000..}}] run give @s rabbit_stew[consumable={consume_seconds:99999},custom_model_data=1,item_name='{"bold":true,"color":"blue","italic":false,"text":"Magische Schale"}',lore=['{"color":"gray","italic":false,"text":"Gibt dir volle Sättigung."}','" "','[{"color":"gray","italic":false,"text":"Benutzung: "},{"color":"red","italic":false,"text":"-100 Mana"}]','" "','{"color":"blue","italic":false,"text":"Rare"}'],food={nutrition:1,saturation:1,can_always_eat:true},enchantment_glint_override=true] 1
-execute as @s[scores={elements_villager_stage-2_mana_level=3,z_just-ignore=414,elements_mainlevel=4000..}] run loot give @s loot elements:items/customs/magische_schale
+execute as @s[scores={elements_villager_stage-2_mana_level=3,z_just-ignore=414,elements_mainlevel=4000..}] run function elements:sonstiges/savely_give_loot {id:"elements:items/customs/magische_schale"}
 execute as @s[scores={elements_villager_stage-2_mana_level=3,z_just-ignore=414,elements_mainlevel=4000..}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_2.mana.name.chat","color":"yellow"},{"text":"So, hier. Viel Spaß damit"}]
 execute as @s[scores={elements_villager_stage-2_mana_level=3,z_just-ignore=414,elements_mainlevel=4000..}] run xp add @s -4000 levels
 execute as @s[scores={elements_villager_stage-2_mana_level=3,z_just-ignore=414,elements_mainlevel=..3999}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_2.mana.name.chat","color":"yellow"},{"text":"Du hast keine 4.000 Level"}]
@@ -66,12 +66,12 @@ execute as @s[scores={elements_villager_stage-2_mana_level=4,z_just-ignore=416}]
 execute as @s[scores={z_just-ignore=416}] run scoreboard players set @s z_just-ignore 0
 execute as @s[scores={elements_villager_stage-2_mana_level=4,z_just-ignore=417}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_2.mana.name.chat","color":"yellow"},{"text":"Na dann ist ja alles Gut. Aber wie gesagt, mehr hab ich nicht für dich."}]
 execute as @s[scores={z_just-ignore=417}] run scoreboard players set @s z_just-ignore 0
-execute as @s[scores={elements_villager_stage-2_mana_level=4,z_just-ignore=418,elements_mainlevel=5000..}] run loot give @s loot elements:items/customs/mana_messstab
+execute as @s[scores={elements_villager_stage-2_mana_level=4,z_just-ignore=418,elements_mainlevel=5000..}] run function elements:sonstiges/savely_give_loot {id:"elements:items/customs/mana_messstab"}
 execute as @s[scores={elements_villager_stage-2_mana_level=4,z_just-ignore=418,elements_mainlevel=5000..}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_2.mana.name.chat","color":"yellow"},{"text":"Hier hast du deinen Neuen Mana-Stab"}]
 execute as @s[scores={elements_villager_stage-2_mana_level=4,z_just-ignore=418,elements_mainlevel=5000..}] run xp add @s -5000 levels
 execute as @s[scores={elements_villager_stage-2_mana_level=4,z_just-ignore=418,elements_mainlevel=..4999}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_2.mana.name.chat","color":"yellow"},{"text":"Du hast keine 5.000 Level"}]
 execute as @s[scores={z_just-ignore=418}] run scoreboard players set @s z_just-ignore 0
-execute as @s[scores={elements_villager_stage-2_mana_level=4,z_just-ignore=419,elements_mainlevel=5000..}] run loot give @s loot elements:items/customs/magische_schale
+execute as @s[scores={elements_villager_stage-2_mana_level=4,z_just-ignore=419,elements_mainlevel=5000..}] run function elements:sonstiges/savely_give_loot {id:"elements:items/customs/magische_schale"}
 execute as @s[scores={elements_villager_stage-2_mana_level=4,z_just-ignore=419,elements_mainlevel=5000..}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_2.mana.name.chat","color":"yellow"},{"text":"Hier hast du deine Neue Magische Schale"}]
 execute as @s[scores={elements_villager_stage-2_mana_level=4,z_just-ignore=419,elements_mainlevel=5000..}] run xp add @s -5000 levels
 execute as @s[scores={elements_villager_stage-2_mana_level=4,z_just-ignore=419,elements_mainlevel=..4999}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_2.mana.name.chat","color":"yellow"},{"text":"Du hast keine 5.000 Level"}]

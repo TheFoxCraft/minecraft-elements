@@ -20,9 +20,9 @@ execute as @s[scores={elements_techniker_level=0,z_just-ignore=8,elements_homedi
 execute as @s[scores={elements_techniker_level=0,z_just-ignore=8,elements_homedimension=4}] run tellraw @s ["","\n",{"translate":"elements.villager.techniker.name.chat","color":"yellow"},{"text":"Bringe mir zu Beginn 200 Basalt. Und übrigens, bevor ich es vergesse, hier eine kleine Starterbox, damit du in dieser Dimension überleben kannst"}]
 execute as @s[scores={elements_techniker_level=0,z_just-ignore=8,elements_homedimension=4}] run scoreboard players set @s elements_techniker_level 1
 execute as @s[scores={z_just-ignore=8}] run scoreboard players set @s z_just-ignore 0
-execute as @s[scores={elements_techniker_level=1,elements_homedimension=1}] run loot give @s loot elements:items/other/starter_box/ocean
-execute as @s[scores={elements_techniker_level=1,elements_homedimension=2..3}] run loot give @s loot elements:items/other/starter_box/stone_sky
-execute as @s[scores={elements_techniker_level=1,elements_homedimension=4}] run loot give @s loot elements:items/other/starter_box/nether
+execute as @s[scores={elements_techniker_level=1,elements_homedimension=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/other/starter_box/ocean"}
+execute as @s[scores={elements_techniker_level=1,elements_homedimension=2..3}] run function elements:sonstiges/savely_give_loot {id:"elements:items/other/starter_box/stone_sky"}
+execute as @s[scores={elements_techniker_level=1,elements_homedimension=4}] run function elements:sonstiges/savely_give_loot {id:"elements:items/other/starter_box/nether"}
 execute as @s[scores={elements_techniker_level=1}] run scoreboard players set @s elements_techniker_level 2
 
 execute as @s[scores={elements_techniker_level=2,elements_techniker_clicked=1,elements_homedimension=1..3}] run tellraw @s ["","\n",{"translate":"elements.villager.techniker.name.chat","color":"yellow"},{"text":"Hast du die 200 Steine dabei?"},"\n","\n",{"text":"Ja, hier sind sie!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger z_just-ignore set 9"}}]

@@ -13,7 +13,7 @@ execute in elements:stage-3_bossroom unless entity @a[gamemode=!spectator,distan
 execute if score .server elements_stage_3_boss_melee_timer matches 1.. run scoreboard players remove .server elements_stage_3_boss_melee_timer 1
 
 execute if score .server elements_stage_3_boss_melee_timer matches 0 as @e[tag=stage-3_boss] at @s run particle dust{color:16058119,scale:1} ~ ~2 ~ 4 4 4 0 200 normal
-execute if score .server elements_stage_3_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-3_boss,distance=..10] run damage @s 25 minecraft:boss_stage_3
+execute if score .server elements_stage_3_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-3_boss,distance=..10] run damage @s 25 elements:boss_stage_3
 execute if score .server elements_stage_3_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-3_boss,distance=..10] run playsound minecraft:enchant.thorns.hit master @s
 execute if score .server elements_stage_3_boss_melee_timer matches 0 store result score .server elements_stage_3_boss_melee_timer run random value 40..100
 

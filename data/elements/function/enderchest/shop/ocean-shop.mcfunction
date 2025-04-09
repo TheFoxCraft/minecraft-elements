@@ -37,7 +37,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run loot give @s loot elements:items/shops/ocean/magisches_wasser
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/magisches_wasser"}
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -53,7 +53,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run loot give @s loot elements:items/shops/ocean/water-breathing
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/water-breathing"}
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -68,7 +68,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run loot give @s loot elements:items/shops/ocean/luck-potion
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/luck-potion"}
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -111,7 +111,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run loot give @s loot elements:items/shops/ocean/mining_frucht
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/mining_frucht"}
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -126,7 +126,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run loot give @s loot elements:items/shops/ocean/foraging_frucht
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/foraging_frucht"}
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -140,7 +140,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run loot give @s loot elements:items/shops/ocean/farming_frucht
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/farming_frucht"}
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -155,7 +155,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run loot give @s loot elements:items/shops/ocean/fishing_frucht
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/fishing_frucht"}
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -175,7 +175,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 1 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 1 at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 1 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 1 run loot give @s loot elements:items/shops/ocean/bossfrucht/stage_1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 1 run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/bossfrucht/stage_1"}
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 1 run xp add @s -50 levels
 execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 1 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_1
 execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 1 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 1 [50 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]
@@ -185,7 +185,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 2 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 2 at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 2 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 2 run loot give @s loot elements:items/shops/ocean/bossfrucht/stage_2
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 2 run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/bossfrucht/stage_2"}
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 2 run xp add @s -500 levels
 execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 2 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_2
 execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 2 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 2 [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]
@@ -195,7 +195,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..999,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 3 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 3 at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 3 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 3 run loot give @s loot elements:items/shops/ocean/bossfrucht/stage_3
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 3 run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/bossfrucht/stage_3"}
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 3 run xp add @s -1000 levels
 execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 3 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_3
 execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 3 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 3 [1.000 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]

@@ -34,7 +34,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_nether=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_nether=1}] run loot give @s loot elements:items/shops/nether/hot_lava
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_nether=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/nether/hot_lava"}
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_nether=1}] run xp add @s -500 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -118,7 +118,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..9,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=10..,elements_enderchest_shop_nether=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=10..,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=10..,elements_enderchest_shop_nether=1}] run loot give @s loot elements:items/shops/nether/small_heal_pot
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=10..,elements_enderchest_shop_nether=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/nether/small_heal_pot"}
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=10..,elements_enderchest_shop_nether=1}] run xp add @s -10 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -133,7 +133,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] run loot give @s loot elements:items/shops/nether/big_heal_pot
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/nether/big_heal_pot"}
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] run xp add @s -50 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
