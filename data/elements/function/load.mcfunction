@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.2.0.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.3.0.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -591,16 +591,22 @@ scoreboard objectives add elements_stage_1_boss_status dummy
 scoreboard objectives add elements_stage_1_boss_loot_count dummy
 scoreboard objectives add elements_stage_1_boss_melee_timer dummy
 scoreboard objectives add elements_stage_1_boss_spawn-player dummy
+scoreboard objectives add elements_stage_1_boss_players_in_arena dummy
+scoreboard objectives add elements_stage_1_boss_spectator_in_arena dummy
 scoreboard objectives add elements_stage_2_portal_enable dummy
 scoreboard objectives add elements_stage_2_boss_status dummy
 scoreboard objectives add elements_stage_2_boss_loot_count dummy
 scoreboard objectives add elements_stage_2_boss_melee_timer dummy
 scoreboard objectives add elements_stage_2_boss_spawn-player dummy
+scoreboard objectives add elements_stage_2_boss_players_in_arena dummy
+scoreboard objectives add elements_stage_2_boss_spectator_in_arena dummy
 scoreboard objectives add elements_stage_3_portal_enable dummy
 scoreboard objectives add elements_stage_3_boss_status dummy
 scoreboard objectives add elements_stage_3_boss_loot_count dummy
 scoreboard objectives add elements_stage_3_boss_melee_timer dummy
 scoreboard objectives add elements_stage_3_boss_spawn-player dummy
+scoreboard objectives add elements_stage_3_boss_players_in_arena dummy
+scoreboard objectives add elements_stage_3_boss_spectator_in_arena dummy
 
 scoreboard objectives add elements_stage_3_portal_enable_fungus_timer dummy
 
