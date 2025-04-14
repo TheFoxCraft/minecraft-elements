@@ -3,6 +3,11 @@ execute store success score @s elements_farm-slots_stage-3_correct_UUID run data
 
 $execute if score @s elements_farm-slots_stage-3_correct_UUID matches 1 run tellraw @a[nbt={UUID:$(UUID)}] ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Du kannst diesen Farmslot nicht abbauen, da er dir nicht gehört!","color": "red"}]
 execute if score @s elements_farm-slots_stage-3_correct_UUID matches 1 run setblock ~ ~ ~ weeping_vines
+$execute if score @s elements_farm-slots_stage-3_correct_UUID matches 1 run scoreboard players set @a[nbt={UUID:$(UUID)}] elements_miningxp_farming_mine-get_crimson_vines_plant 0
+$execute if score @s elements_farm-slots_stage-3_correct_UUID matches 1 run scoreboard players set @a[nbt={UUID:$(UUID)}] elements_miningxp_farming_mine-get_crimson_vines 0
+$execute if score @s elements_farm-slots_stage-3_correct_UUID matches 1 run scoreboard players set @a[nbt={UUID:$(UUID)}] elements_level_crimson_vines 0
+$execute if score @s elements_farm-slots_stage-3_correct_UUID matches 1 run scoreboard players set @a[nbt={UUID:$(UUID)}] elements_level_crimson_vines_plant 0
+
 
 
 $execute if score @s elements_farm-slots_stage-3_correct_UUID matches 0 run tellraw @a[nbt={UUID:$(UUID)}] ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Farmslot abgebaut!"}]

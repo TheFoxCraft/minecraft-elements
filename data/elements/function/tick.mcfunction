@@ -21,7 +21,13 @@ execute if score .server elements_function_timer_1s matches 20.. run scoreboard 
 
 #-------------------------------------ALWAYS-------------------------------------ALWAYS-----------------------------------ALWAYS----------------------------------#
 
-# performance-update V1
+# Farmslots
+function elements:farm_slots/stage_2/main
+function elements:farm_slots/stage_3/main
+
+
+
+
 function elements:sonstiges-always/sonstiges
 
 function elements:sonstiges-always/level
@@ -93,6 +99,7 @@ execute as @a[scores={elements_enderchest_interface_number=5}] run function elem
 execute as @a[scores={elements_enderchest_interface_number=6}] run function elements:enderchest/collections/menu
 execute as @a[scores={elements_enderchest_interface_number=7}] run function elements:enderchest/settings
 execute as @a[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/select_shop
+execute as @a[scores={elements_enderchest_interface_number=10}] run function elements:enderchest/handelsplatz/main
 
 
 execute as @a[scores={elements_death=1..}] run function elements:sonstiges/death
@@ -125,10 +132,6 @@ execute as @a[scores={elements_get-name_status=0}] run function elements:sonstig
 
 
 
-
-# Farmslots
-function elements:farm_slots/stage_2/main
-function elements:farm_slots/stage_3/main
 
 
 ##needs to be at the end!

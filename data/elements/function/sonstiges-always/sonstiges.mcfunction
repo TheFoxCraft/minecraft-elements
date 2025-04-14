@@ -197,6 +197,16 @@ execute as @a[scores={Dimension-Switch=6}] in elements:hub run tp 0 101 0
 
 execute as @a[scores={Dimension-Switch=1..}] run scoreboard players reset @s Dimension-Switch
 
+#no bonemeal
+execute as @a if entity @s[nbt={SelectedItem:{id:"minecraft:bone_meal"}}] run attribute @s block_interaction_range modifier add minecraft:elements_no_bonemeal_mainhand -1 add_multiplied_base
+execute as @a unless entity @s[nbt={SelectedItem:{id:"minecraft:bone_meal"}}] run attribute @s block_interaction_range modifier remove minecraft:elements_no_bonemeal_mainhand
+execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:bone_meal",Slot:-106b}]}] run attribute @s block_interaction_range modifier add minecraft:elements_no_bonemeal_offhand -1 add_multiplied_base
+execute as @a unless entity @s[nbt={Inventory:[{id:"minecraft:bone_meal",Slot:-106b}]}] run attribute @s block_interaction_range modifier remove minecraft:elements_no_bonemeal_offhand
+
+execute as @a[scores={elements_inv_bonemeal=3..},predicate=!elements:is_in_hub] run give @s bone 1
+execute as @a[scores={elements_inv_bonemeal=3..},predicate=!elements:is_in_hub] run clear @s bone_meal 3
+execute as @a[scores={elements_inv_bonemeal=1..2},predicate=!elements:is_in_hub] run clear @s bone_meal 1
+
 
 #dasdatapack
 execute as @a run scoreboard players operation @s dd_rank_cam = @s elements_rank_cam

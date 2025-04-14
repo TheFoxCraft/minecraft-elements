@@ -43,6 +43,10 @@
     crimson_fungus: Stage 3 Boss Portal Rätsel Teil
     crimson_hyphae: Spage 3 Boss-Key
     armor_stand: Enderchest Settings Dimension Rotation
+    barrel: Handsplatz Enderchest Main
+    name_tag: Handelsplatz Enderchest Neues Angebot
+    oak_hanging_sign: Handelsplatz Enderchest Info
+    player_head: Handelsplatz Enderchest Page next
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -72,6 +76,7 @@
     flow_banner_pattern: Endechest Admin Settings Tipps Stage 3 #2
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod String Tipp
     dark_oak_hanging_sign: Enderchest Settings Credits
+    player_head: Handelsplatz Enderchest Page previous
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)

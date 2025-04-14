@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.3.0.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.3.2.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -170,6 +170,7 @@ scoreboard objectives add elements_inv_cobblestone dummy
 scoreboard objectives add elements_inv_basalt dummy
 scoreboard objectives add elements_inv_oaklog dummy
 scoreboard objectives add elements_inv_bonemeal dummy
+scoreboard objectives add elements_bonemeal_success dummy
 scoreboard objectives add elements_inv_stone_stage_1 dummy
 scoreboard objectives add elements_enderchest_level dummy
 scoreboard objectives add elements_start dummy
@@ -198,6 +199,10 @@ scoreboard objectives add elements_enderchest_level_stats dummy
 scoreboard objectives add elements_enderchest_level_upgradeschmiede dummy
 scoreboard objectives add elements_enderchest_level_autocompact dummy
 scoreboard objectives add elements_enderchest_level_tp dummy
+scoreboard objectives add elements_enderchest_level_handelsplatz dummy
+scoreboard objectives add elements_enderchest_handelsplatz_interface dummy
+scoreboard objectives add elements_enderchest_handelsplatz_page dummy
+scoreboard objectives add elements_enderchest_handelsplatz_page_count dummy
 scoreboard objectives add elements_enderchest_stats_load dummy
 scoreboard objectives add elements_stats_mininglevel dummy
 scoreboard objectives add elements_stats_forestinglevel dummy

@@ -15,3 +15,6 @@ execute as @e[tag=spawner_leaderboard_id-6] at @s run function elements:spawn/le
 execute as @e[tag=spawner_leaderboard_id-7] at @s run function elements:spawn/leaderboards/7_hoechst_level/spawning
 execute as @e[tag=spawner_leaderboard_id-8] at @s run function elements:spawn/leaderboards/8_ausgegebene-level/spawning
 execute as @e[tag=spawner_leaderboard_id-9] at @s run function elements:spawn/leaderboards/9_erhaltene-level/spawning
+
+
+execute as @a[nbt={SelectedItem:{id:"minecraft:bone"}}] run item modify entity @s weapon.mainhand {function:"set_components",components:{food:{nutrition:0,saturation:0,can_always_eat:true},consumable:{consume_seconds:99999}}}

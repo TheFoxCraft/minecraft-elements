@@ -15,6 +15,7 @@ scoreboard players set @s elements_enderchest_level_collections 0
 scoreboard players set @s elements_enderchest_level_settings 0
 scoreboard players set @s elements_enderchest_level_stats 0
 scoreboard players set @s elements_enderchest_level_casino 0
+scoreboard players set @s elements_enderchest_level_handelsplatz 0
 scoreboard players set @s elements_stats_eq 0
 scoreboard players set @s elements_miningxp_foresting_level 0
 scoreboard players set @s elements_miningxp_fishing_level 0
@@ -173,7 +174,7 @@ execute if score .server elements_setup matches 1.. in elements:hub run tp @s 0 
 
 
 
-
+function elements:miningxp/set_all_goals
 
 
 

@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "bone"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "elements:sonstiges/bonemeal/trigger"
+    }
+  }
+  
