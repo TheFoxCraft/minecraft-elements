@@ -66,18 +66,6 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "options": "#minecraft:on_random_loot"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 25
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:nautilus_shell",
           "weight": 25
         },
@@ -94,7 +82,7 @@
         {
           "type": "loot_table",
           "value": "elements:items/customs/lebensfrucht",
-          "weight": 5
+          "weight": 2
         },
         {
           "type": "item",
@@ -120,7 +108,64 @@
               "mode": "append"
             }
           ],
-          "weight": 5
+          "weight": 4
+        },
+        {
+          "type": "loot_table",
+          "value":"elements:items/other/element_shard",
+          "weight": 10,
+          "conditions": [
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "match_tool",
+                  "predicate": {
+                    "items": "fishing_rod",
+                    "components": {
+                      "custom_model_data": 1
+                    }
+                  }
+                },
+                {
+                  "condition": "match_tool",
+                  "predicate": {
+                    "items": "fishing_rod",
+                    "components": {
+                      "custom_model_data": 2
+                    }
+                  }
+                },
+                {
+                  "condition": "match_tool",
+                  "predicate": {
+                    "items": "fishing_rod",
+                    "components": {
+                      "custom_model_data": 3
+                    }
+                  }
+                },
+                {
+                  "condition": "match_tool",
+                  "predicate": {
+                    "items": "fishing_rod",
+                    "components": {
+                      "custom_model_data": 4
+                    }
+                  }
+                },
+                {
+                  "condition": "match_tool",
+                  "predicate": {
+                    "items": "fishing_rod",
+                    "components": {
+                      "custom_model_data": 5
+                    }
+                  }
+                }
+              ]
+            }
+          ]
         }
       ],
       "rolls": 1.0

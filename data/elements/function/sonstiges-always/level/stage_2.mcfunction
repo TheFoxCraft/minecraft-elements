@@ -11,3 +11,4 @@ execute as @s[nbt={SelectedItem:{id:"minecraft:netherite_axe",components:{"minec
 execute as @s[nbt={Inventory:[{id:"minecraft:oak_log",components:{"minecraft:custom_model_data":5}}]}] at @e[type=item,nbt={Item:{id:"minecraft:spruce_log",count:1}},limit=1,sort=nearest] run summon item ~ ~ ~ {Item:{id:"minecraft:spruce_log",count:1}}
 execute if score .server elements_uniqueitem_ork_schatz matches 0 run function elements:uniques/trigger/ork_schatz/random
 scoreboard players set @s elements_level_wood_spruce 0
+function elements:sonstiges/element_shards/trigger

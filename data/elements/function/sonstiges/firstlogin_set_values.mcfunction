@@ -49,6 +49,7 @@ scoreboard players set @s elements_uniqueitem_collections_auf_log 0
 scoreboard players set @s elements_uniqueitem_other_datenspeicher 0
 scoreboard players set @s elements_uniqueitem_ork_schatz 0
 scoreboard players set @s elements_uniqueitem_planetenkern 0
+scoreboard players set @s elements_uniqueitem_wanderlachs 0
 
 scoreboard players set @s elements_spawn_energiekern_particle_settings 0
 scoreboard players set @s elements_enderchest_settings_tp-mode 1

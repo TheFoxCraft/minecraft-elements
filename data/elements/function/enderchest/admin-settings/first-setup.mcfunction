@@ -83,12 +83,15 @@ execute as @s run scoreboard players set .server elements_admin_config_interface
 #uniques
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_bruchstueck_der_eismauer 0
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_auf_log 0
+execute as @s run scoreboard players set .server elements_uniqueitem_collections_bug_abuser 0
 execute as @s run scoreboard players set .server elements_uniqueitem_other_datenspeicher 0
 execute as @s run scoreboard players set .server elements_uniqueitem_ork_schatz 0
 execute as @s run scoreboard players set .server elements_uniqueitem_planetenkern 0
+execute as @s run scoreboard players set .server elements_uniqueitem_wanderlachs 0
+execute as @s run scoreboard players set .server elements_uniqueitem_fragment_der_himmelswarze 0
 
 #add with every update
-execute as @s run scoreboard players set .server elements_update_sequence_status 3
+execute as @s run scoreboard players set .server elements_update_sequence_status 6
 
 execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
 

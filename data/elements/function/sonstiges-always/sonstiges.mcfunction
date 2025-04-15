@@ -56,10 +56,11 @@ execute as @a store result score @s elements_inv_copper_ingot run clear @s minec
 execute as @a store result score @s elements_inv_diamond run clear @s minecraft:diamond 0
 execute as @a store result score @s elements_inv_emerald run clear @s minecraft:emerald 0
 execute as @a store result score @s elements_inv_ancient_debris run clear @s minecraft:ancient_debris 0
-execute as @a store result score @s elements_inv_elytra run clear @s minecraft:elytra 0
+execute as @a store result score @s elements_inv_infinity_book run clear @s enchanted_book[stored_enchantments={infinity:1}] 0
 execute as @a store result score @s elements_inv_fish run clear @s #fishes 0
 execute as @a store result score @s elements_inv_stone_stage_1 run clear @s #elements:stage_1_stone 0
 
+execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_model_data":1}}}] at @s run function elements:custom-items/shop/sky/sauger/show_size
 
 
 execute as @a if score @s elements_stats_maxlevel < @s elements_mainlevel run scoreboard players operation @s elements_stats_maxlevel = @s elements_mainlevel

@@ -29,4 +29,10 @@ execute as @s[nbt={SelectedItem:{id:"minecraft:netherite_sword",components:{"min
 execute as @s[nbt={SelectedItem:{id:"minecraft:netherite_sword",components:{"minecraft:custom_model_data":5}}}] at @s at @e[type=item,nbt={Item:{id:"minecraft:crimson_roots",count:1}},limit=1,sort=nearest] run loot spawn ~ ~ ~ loot elements:items/other/crimson_vines
 execute as @s[nbt={SelectedItem:{id:"minecraft:netherite_sword",components:{"minecraft:custom_model_data":5}}}] at @s at @e[type=item,nbt={Item:{id:"minecraft:crimson_roots",count:1}},limit=1,sort=nearest] run loot spawn ~ ~ ~ loot elements:items/other/crimson_vines
 
+execute as @s[nbt={Inventory:[{id:"minecraft:crimson_fungus",components:{"minecraft:custom_model_data":2}}]}] at @e[type=item,nbt={Item:{id:"minecraft:crimson_roots",count:1}},limit=1,sort=nearest] run loot spawn ~ ~ ~ loot elements:items/other/crimson_vines
+
+
+execute if score .server elements_uniqueitem_fragment_der_himmelswarze matches 0 run function elements:uniques/trigger/fragment_der_himmelswarze/random
+
 scoreboard players remove @s elements_level_crimson_vines 1
+function elements:sonstiges/element_shards/trigger

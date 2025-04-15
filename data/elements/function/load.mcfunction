@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.3.2.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.5.0.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -230,6 +230,13 @@ scoreboard objectives add elements_mystery_lootbox_random dummy
 scoreboard objectives add elements_sonstiges_actionbar_pause dummy
 
 
+scoreboard objectives add elements_element_shards_count dummy
+scoreboard objectives add elements_element_shards_block_count dummy
+scoreboard objectives add elements_element_shards_value dummy
+scoreboard objectives add elements_element_shards_music_timer_common dummy
+scoreboard objectives add elements_element_shards_music_timer_rare dummy
+scoreboard objectives add elements_element_shards_music_timer_epic dummy
+scoreboard objectives add elements_element_shards_music_timer_legendary dummy
 
 
 
@@ -288,7 +295,7 @@ scoreboard objectives add elements_inv_copper_ingot dummy
 scoreboard objectives add elements_inv_diamond dummy
 scoreboard objectives add elements_inv_emerald dummy
 scoreboard objectives add elements_inv_ancient_debris dummy
-scoreboard objectives add elements_inv_elytra dummy
+scoreboard objectives add elements_inv_infinity_book dummy
 
 
 scoreboard objectives add elements_update_sequence_status dummy
@@ -373,9 +380,12 @@ scoreboard objectives add elements_used_inv_slots dummy
 #collections
 scoreboard objectives add elements_uniqueitem_collections_bruchstueck_der_eismauer dummy
 scoreboard objectives add elements_uniqueitem_collections_auf_log dummy
+scoreboard objectives add elements_uniqueitem_collections_bug_abuser dummy
 #collection_farming
 scoreboard objectives add elements_uniqueitem_planetenkern dummy
 scoreboard objectives add elements_uniqueitem_ork_schatz dummy
+scoreboard objectives add elements_uniqueitem_fragment_der_himmelswarze dummy
+scoreboard objectives add elements_uniqueitem_wanderlachs dummy
 #other
 scoreboard objectives add elements_uniqueitem_other_datenspeicher dummy
 

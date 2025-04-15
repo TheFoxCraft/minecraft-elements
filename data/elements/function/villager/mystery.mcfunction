@@ -4,6 +4,19 @@ execute as @e[type=minecraft:interaction] at @s if entity @s[tag=mystery,distanc
 tag @s remove mystery
 
 #300
+execute as @s[scores={elements_mystery_clicked=1}] store result score @s elements_element_shards_count run clear @s amethyst_shard[custom_model_data=1] 0
+execute as @s[scores={elements_mystery_clicked=1,elements_element_shards_count=64..}] run tellraw @s ["","\n",{"translate":"elements.villager.mystery.name.chat","color":"yellow"},{"text": "Ich sehe du hast eine Menge "},{"text": "Element Shards","color": "light_purple"},{"text": " dabei! Wenn du willst kann ich sie dir zu Blöcken verarbeiten, dann sparst du dir etwas Inventar-Platz!"},"\n","\n",{"text":"Ja gerne!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger z_just-ignore set 303"}}]
+execute as @s[scores={elements_mystery_clicked=1,elements_element_shards_count=64..}] run scoreboard players set @s elements_mystery_clicked 0
+
+execute as @s[scores={z_just-ignore=303}] at @s if entity @e[type=villager,tag=mystery,distance=..10] run function elements:sonstiges/savely_give_loot {id:"elements:items/other/element_shard_block"}
+execute as @s[scores={z_just-ignore=303}] at @s if entity @e[type=villager,tag=mystery,distance=..10] run clear @s amethyst_shard[custom_model_data=1] 64
+execute as @s[scores={z_just-ignore=303}] at @s unless entity @e[type=villager,tag=mystery,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @s[scores={z_just-ignore=303}] run scoreboard players set @s z_just-ignore 0
+
+
+
+
+
 
 execute as @s[scores={elements_mystery_clicked=1}] run tellraw @s ["","\n",{"translate":"elements.villager.mystery.name.chat","color":"yellow"},{"text":"Möchtest du eine Lootbox für "},{"text": "1000 Level","color": "green"},{"text": " kaufen? Bei jedem Kauf nimmst du Außerdem an der Lotterie Teil und 500 Deiner Level gehen in den Pot. Aktuell sind "},{"score": {"name": ".server","objective": "elements_mystery_lootbox_jackpot"},"color": "green"},{"text": " Level","color": "green"},{"text": " im Pot."},"\n","\n",{"text":"Kaufen!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger z_just-ignore set 301"}}]
 execute as @s[scores={elements_mystery_clicked=1}] run scoreboard players set @s elements_mystery_clicked 0
