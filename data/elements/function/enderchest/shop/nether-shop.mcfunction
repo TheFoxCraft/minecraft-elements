@@ -53,7 +53,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:nether_wart",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.9 with nether_wart[custom_name='{"color":"yellow","text":"Netherwarze [200 Level]","italic": false}',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.9 with nether_wart[custom_name='[{"translate": "item.minecraft.nether_wart","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=2] 1
 
 
 
@@ -67,7 +67,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:quartz",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.10 with quartz[custom_name='{"color":"yellow","text":"Quartz [5 Level]","italic": false}',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.10 with quartz[custom_name='[{"translate": "item.minecraft.quartz","color": "yellow","italic": false},{"color":"yellow","text":" [5 Level]","italic": false}]',custom_model_data=2] 1
 
 
 
@@ -81,7 +81,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:blaze_rod",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.11 with blaze_rod[custom_name='{"color":"yellow","text":"Lohenrute [50 Level]","italic": false}',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.11 with blaze_rod[custom_name='[{"translate": "item.minecraft.blaze_rod","color": "yellow","italic": false},{"color":"yellow","text":" [50 Level]","italic": false}]',custom_model_data=2] 1
 
 
 
@@ -95,7 +95,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:ender_pearl",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.12 with ender_pearl[custom_name='{"color":"yellow","text":"Enderperle [50 Level]","italic": false}',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.12 with ender_pearl[custom_name='[{"translate": "item.minecraft.ender_pearl","color": "yellow","italic": false},{"color":"yellow","text":" [50 Level]","italic": false}]',custom_model_data=2] 1
 
 
 
@@ -109,7 +109,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:wither_skeleton_skull",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.13 with wither_skeleton_skull[custom_name='{"color":"yellow","text":"Wither-Skelettschädel [1.000 Level]","italic": false}',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.13 with wither_skeleton_skull[custom_name='[{"translate": "block.minecraft.wither_skeleton_skull","color": "yellow","italic": false},{"color":"yellow","text":" [1.000 Level]","italic": false}]',custom_model_data=2] 1
 
 
 
@@ -153,7 +153,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:ancient_debris",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.16 with ancient_debris[custom_name='{"color":"yellow","text":"Antiker Schrott [250 Level]","italic": false}',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.16 with ancient_debris[custom_name='[{"translate": "block.minecraft.ancient_debris","color": "yellow","italic": false},{"color":"yellow","text":" [250 Level]","italic": false}]',custom_model_data=2] 1
 
 
 
@@ -167,7 +167,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:netherite_upgrade_smithing_template",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.17 with netherite_upgrade_smithing_template[custom_name='{"color":"yellow","text":"Upgrade Template [2.000 Level]","italic": false}',custom_model_data=2,hide_additional_tooltip={}] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.17 with netherite_upgrade_smithing_template[custom_name='[{"translate": "item.minecraft.netherite_upgrade_smithing_template","color": "yellow","italic": false},{"color":"yellow","text":" [2.000 Level]","italic": false}]',custom_model_data=2,hide_additional_tooltip={}] 1
 
 
 

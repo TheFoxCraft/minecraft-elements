@@ -88,7 +88,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:shulker_shell",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.12 with shulker_shell[custom_name='{"color":"yellow","text":"Shulker-Shell [500 Level]","italic": false}',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.12 with shulker_shell[custom_name='[{"translate": "item.minecraft.shulker_shell","color": "yellow","italic": false},{"color":"yellow","text":" [500 Level]","italic": false}]',custom_model_data=2] 1
 
 
 
@@ -102,7 +102,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:emerald",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.13 with emerald[custom_name='{"color":"yellow","text":"Smaragd [50 Level]","italic": false}',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.13 with emerald[custom_name='[{"translate": "item.minecraft.emerald","color": "yellow","italic": false},{"color":"yellow","text":" [50 Level]","italic": false}]',custom_model_data=2] 1
 
 
 

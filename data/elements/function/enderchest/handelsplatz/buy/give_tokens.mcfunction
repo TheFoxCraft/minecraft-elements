@@ -1,0 +1,1 @@
+$scoreboard players operation $(Seller) elements_enderchest_handelsplatz_tokens_to_give += @s elements_enderchest_handelsplatz_buy_price

@@ -209,6 +209,16 @@ execute as @a[scores={elements_inv_bonemeal=3..},predicate=!elements:is_in_hub] 
 execute as @a[scores={elements_inv_bonemeal=1..2},predicate=!elements:is_in_hub] run clear @s bone_meal 1
 
 
+## handelsmarkt
+#kill dropped items
+execute store success score .server elements_enderchest_handelsplatz_reload_offers run kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{handelsmarkt_item:true}}}}]
+execute if score .server elements_enderchest_handelsplatz_reload_offers matches 1 run scoreboard players set @a[scores={elements_enderchest_interface_number=10,elements_enderchest_handelsplatz_interface=0}] elements_enderchest_handelsplatz_reload_offers 1
+# reload offers
+execute as @a[scores={elements_enderchest_handelsplatz_reload_offers=1}] if score @s elements_enderchest_handelsplatz_interface matches 0 if score @s elements_enderchest_interface_number matches 10 run function elements:enderchest/handelsplatz/load
+execute as @a[scores={elements_enderchest_handelsplatz_reload_offers=1}] run scoreboard players set @s elements_enderchest_handelsplatz_reload_offers 0
+# give sold tokens
+# managed in function timer 5s
+
 #dasdatapack
 execute as @a run scoreboard players operation @s dd_rank_cam = @s elements_rank_cam
 

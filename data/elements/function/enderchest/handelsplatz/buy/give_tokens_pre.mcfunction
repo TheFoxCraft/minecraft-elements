@@ -1,0 +1,2 @@
+$data modify storage minecraft:elements_handelsmarkt_offers Buy.Seller set from storage elements_handelsmarkt_offers Offers[{ID:$(Item_ID)}].Player_Name
+function elements:enderchest/handelsplatz/buy/give_tokens with storage elements_handelsmarkt_offers Buy

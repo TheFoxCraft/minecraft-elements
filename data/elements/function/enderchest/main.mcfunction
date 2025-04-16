@@ -214,9 +214,9 @@ execute as @s[scores={elements_enderchest_level_handelsplatz=1,elements_enderche
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_number 10
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
-execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/handelsplatz/load
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_handelsplatz_interface 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_handelsplatz_page 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/handelsplatz/load
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:barrel",count:1,components:{"minecraft:custom_model_data":1}}}]
 execute as @s[scores={elements_enderchest_level_handelsplatz=1,elements_enderchest_interface_number=1}] run item replace entity @s enderchest.16 with barrel[custom_name='{"color":"gold","text":"Handelsplatz","italic": false}',custom_model_data=1] 1

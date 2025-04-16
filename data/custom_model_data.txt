@@ -172,8 +172,10 @@
     potion: Luck-Potion | Ocean Shop Buying
 20:
     gray_stained_glass_pane: Shop Select Disabled
+    copper_ingot: Handelsplatz New Offer Preis verringern
 21:
     gray_stained_glass_pane: Shop Select Disabled
+    copper_ingot: Handelsplatz New Offer Preis erhöhen
 22:
     gray_stained_glass_pane: Shop Select Disabled
 23:

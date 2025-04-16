@@ -111,8 +111,8 @@
           "weight": 1
         },
         {
-          "type": "minecraft:empty",
-          "weight": 99
+          "type": "empty",
+          "weight": 74
         }
       ],
       "conditions": [
@@ -120,71 +120,104 @@
           "condition": "any_of",
           "terms": [
             {
-              "condition": "match_tool",
+              "condition": "entity_properties",
               "predicate": {
-                "items": "iron_sword",
-                "components": {
-                  "custom_model_data": 1
+                "equipment": {
+                  "mainhand": {
+                    "items": "iron_sword",
+                    "components": {
+                      "custom_model_data": 1
+                    }
+                  }
                 }
-              }
+              },
+              "entity": "attacker"
             },
             {
-              "condition": "match_tool",
+              "condition": "entity_properties",
               "predicate": {
-                "items": "diamond_sword",
-                "components": {
-                  "custom_model_data": 2
+                "equipment": {
+                  "mainhand": {
+                    "items": "diamond_sword",
+                    "components": {
+                      "custom_model_data": 2
+                    }
+                  }
                 }
-              }
+              },
+              "entity": "attacker"
             },
             {
-              "condition": "match_tool",
+              "condition": "entity_properties",
               "predicate": {
-                "items": "diamond_sword",
-                "components": {
-                  "custom_model_data": 3
+                "equipment": {
+                  "mainhand": {
+                    "items": "diamond_sword",
+                    "components": {
+                      "custom_model_data": 3
+                    }
+                  }
                 }
-              }
+              },
+              "entity": "attacker"
             },
             {
-              "condition": "match_tool",
+              "condition": "entity_properties",
               "predicate": {
-                "items": "netherite_sword",
-                "components": {
-                  "custom_model_data": 2
+                "equipment": {
+                  "mainhand": {
+                    "items": "netherite_sword",
+                    "components": {
+                      "custom_model_data": 2
+                    }
+                  }
                 }
-              }
+              },
+              "entity": "attacker"
             },
             {
-              "condition": "match_tool",
+              "condition": "entity_properties",
               "predicate": {
-                "items": "netherite_sword",
-                "components": {
-                  "custom_model_data": 3
+                "equipment": {
+                  "mainhand": {
+                    "items": "netherite_sword",
+                    "components": {
+                      "custom_model_data": 3
+                    }
+                  }
                 }
-              }
+              },
+              "entity": "attacker"
             },
             {
-              "condition": "match_tool",
+              "condition": "entity_properties",
               "predicate": {
-                "items": "netherite_sword",
-                "components": {
-                  "custom_model_data": 4
+                "equipment": {
+                  "mainhand": {
+                    "items": "netherite_sword",
+                    "components": {
+                      "custom_model_data": 4
+                    }
+                  }
                 }
-              }
+              },
+              "entity": "attacker"
             },
             {
-              "condition": "match_tool",
+              "condition": "entity_properties",
               "predicate": {
-                "items": "netherite_sword",
-                "components": {
-                  "custom_model_data": 5
+                "equipment": {
+                  "mainhand": {
+                    "items": "netherite_sword",
+                    "components": {
+                      "custom_model_data": 5
+                    }
+                  }
                 }
-              }
+              },
+              "entity": "attacker"
             }
           ]
-
-          
         }
       ]
     }

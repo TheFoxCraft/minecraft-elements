@@ -59,7 +59,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_stone=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:raw_iron_block",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.10 with raw_iron_block[custom_name='{"color":"yellow","text":"Eisen [90 Level]","italic": false}',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.10 with raw_iron_block[custom_name='[{"translate": "block.minecraft.raw_iron_block","color": "yellow","italic": false},{"color":"yellow","text":" [90 Level]","italic": false}]',custom_model_data=2] 1
 
 
 
@@ -73,7 +73,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_stone=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:raw_copper_block",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.11 with raw_copper_block[custom_name='{"color":"yellow","text":"Kupfer [90 Level]","italic": false}',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.11 with raw_copper_block[custom_name='[{"translate": "block.minecraft.raw_copper_block","color": "yellow","italic": false},{"color":"yellow","text":" [90 Level]","italic": false}]',custom_model_data=2] 1
 
 
 
@@ -87,7 +87,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_stone=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:raw_gold_block",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.12 with raw_gold_block[custom_name='{"color":"yellow","text":"Gold [90 Level]","italic": false}',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.12 with raw_gold_block[custom_name='[{"translate": "block.minecraft.raw_gold_block","color": "yellow","italic": false},{"color":"yellow","text":" [90 Level]","italic": false}]',custom_model_data=2] 1
 
 
 
@@ -101,7 +101,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_stone=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:redstone_block",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.13 with redstone_block[custom_name='{"color":"yellow","text":"Redstone [45 Level]","italic": false}',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.13 with redstone_block[custom_name='[{"translate": "block.minecraft.redstone_block","color": "yellow","italic": false},{"color":"yellow","text":" [45 Level]","italic": false}]',custom_model_data=2] 1
 
 
 
@@ -115,7 +115,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_stone=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:diamond",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.14 with diamond[custom_name='{"color":"yellow","text":"Diamant [100 Level]","italic": false}',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.14 with diamond[custom_name='[{"translate": "item.minecraft.diamond","color": "yellow","italic": false},{"color":"yellow","text":" [100 Level]","italic": false}]',custom_model_data=2] 1
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=6]

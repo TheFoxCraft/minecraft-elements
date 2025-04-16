@@ -1,0 +1,1 @@
+$data remove storage elements_handelsmarkt_offers Offers[{ID:$(Item_ID)}]

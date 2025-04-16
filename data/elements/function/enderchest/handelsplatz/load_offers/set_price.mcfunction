@@ -1,0 +1,1 @@
+$summon text_display ~ ~ ~ {Tags:["handelsmarkt_offers_load_data"],text:'[{"text":"Preis: ","color":"blue","italic": false},{"text":"$(Price) Token","color":"gold","italic": false}]',alignment:center}

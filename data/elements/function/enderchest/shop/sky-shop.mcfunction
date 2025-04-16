@@ -92,7 +92,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":3}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.10 with enchanted_book[custom_name='{"color":"yellow","text":"Schärfe [200 Level]","italic": false}',custom_model_data=3] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.10 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.sharpness","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=3] 1
 
 
 
@@ -106,7 +106,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":4}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.11 with enchanted_book[custom_name='{"color":"yellow","text":"Schutz [200 Level]","italic": false}',custom_model_data=4] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.11 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.protection","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=4] 1
 
 
 
@@ -120,7 +120,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":5}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.12 with enchanted_book[custom_name='{"color":"yellow","text":"Reparatur [200 Level]","italic": false}',custom_model_data=5] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.12 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.mending","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=5] 1
 
 
 
@@ -134,7 +134,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":6}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.13 with enchanted_book[custom_name='{"color":"yellow","text":"Haltbarkeit [200 Level]","italic": false}',custom_model_data=6] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.13 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.unbreaking","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=6] 1
 
 
 
@@ -148,7 +148,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":7}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.14 with enchanted_book[custom_name='{"color":"yellow","text":"Behutsamkeit [200 Level]","italic": false}',custom_model_data=7] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.14 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.silk_touch","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=7] 1
 
 
 
@@ -162,7 +162,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":8}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.15 with enchanted_book[custom_name='{"color":"yellow","text":"Federfall [200 Level]","italic": false}',custom_model_data=8] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.15 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.feather_falling","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=8] 1
 
 
 
@@ -176,7 +176,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":9}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.16 with enchanted_book[custom_name='{"color":"yellow","text":"Swift Sneak [200 Level]","italic": false}',custom_model_data=9] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.16 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.swift_sneak","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=9] 1
 
 
 
@@ -190,7 +190,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":10}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.17 with enchanted_book[custom_name='{"color":"yellow","text":"Wasserläufer [200 Level]","italic": false}',custom_model_data=10] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.17 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.depth_strider","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=10] 1
 
 
 
@@ -204,7 +204,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":11}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.19 with enchanted_book[custom_name='{"color":"yellow","text":"Wasseraffinität [200 Level]","italic": false}',custom_model_data=11] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.19 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.aqua_affinity","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=11] 1
 
 
 
@@ -218,7 +218,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":12}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.20 with enchanted_book[custom_name='{"color":"yellow","text":"Köder [200 Level]","italic": false}',custom_model_data=12] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.20 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.lure","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=12] 1
 
 
 
@@ -232,7 +232,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":13}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.21 with enchanted_book[custom_name='{"color":"yellow","text":"Schwungkraft [200 Level]","italic": false}',custom_model_data=13] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.21 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.sweeping_edge","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=13] 1
 
 
 
@@ -246,7 +246,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":14}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.22 with enchanted_book[custom_name='{"color":"yellow","text":"Stärke [200 Level]","italic": false}',custom_model_data=14] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.22 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.power","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=14] 1
 
 
 
@@ -260,7 +260,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":15}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.23 with enchanted_book[custom_name='{"color":"yellow","text":"Unendlichkeit [2.000 Level]","italic": false}',custom_model_data=15] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.23 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.infinity","color": "yellow","italic": false},{"color":"yellow","text":" [2.000 Level]","italic": false}]',custom_model_data=15] 1
 
 
 
@@ -274,7 +274,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":16}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.24 with enchanted_book[custom_name='{"color":"yellow","text":"Glück des Meeres [200 Level]","italic": false}',custom_model_data=16] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.24 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.luck_of_the_sea","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=16] 1
 
 
 
@@ -288,4 +288,4 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":17}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.25 with enchanted_book[custom_name='{"color":"yellow","text":"Treue [200 Level]","italic": false}',custom_model_data=17] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.25 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.loyalty","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=17] 1

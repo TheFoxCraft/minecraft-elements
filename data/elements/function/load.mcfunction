@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.5.0.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.6.0.2","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -201,8 +201,20 @@ scoreboard objectives add elements_enderchest_level_autocompact dummy
 scoreboard objectives add elements_enderchest_level_tp dummy
 scoreboard objectives add elements_enderchest_level_handelsplatz dummy
 scoreboard objectives add elements_enderchest_handelsplatz_interface dummy
+scoreboard objectives add elements_enderchest_handelsplatz_new_offer_price_buttons_load dummy
+scoreboard objectives add elements_enderchest_handelsplatz_new_offer_price dummy
+scoreboard objectives add elements_enderchest_handelsplatz_new_offer_price_fine dummy
 scoreboard objectives add elements_enderchest_handelsplatz_page dummy
+scoreboard objectives add elements_enderchest_handelsplatz_page_calc dummy
 scoreboard objectives add elements_enderchest_handelsplatz_page_count dummy
+scoreboard objectives add elements_enderchest_handelsplatz_offer_count dummy
+scoreboard objectives add elements_enderchest_handelsplatz_offer_count_page dummy
+scoreboard objectives add elements_enderchest_handelsplatz_offer_number dummy
+scoreboard objectives add elements_enderchest_handelsplatz_offer_id dummy
+scoreboard objectives add elements_enderchest_handelsplatz_reload_offers dummy
+scoreboard objectives add elements_enderchest_handelsplatz_buy dummy
+scoreboard objectives add elements_enderchest_handelsplatz_buy_price dummy
+scoreboard objectives add elements_enderchest_handelsplatz_tokens_to_give dummy
 scoreboard objectives add elements_enderchest_stats_load dummy
 scoreboard objectives add elements_stats_mininglevel dummy
 scoreboard objectives add elements_stats_forestinglevel dummy

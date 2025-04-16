@@ -161,7 +161,7 @@ execute as @s[scores={elements_techniker_random_type=1}] run function elements:v
 execute as @s[scores={elements_techniker_random_type=2}] store result score @s elements_techniker_random_message run random value 1..40
 execute as @s[scores={elements_techniker_random_type=2}] run function elements:villager/techniker_sprueche/lustige_sprueche
 # Random Fakten
-execute as @s[scores={elements_techniker_random_type=3}] store result score @s elements_techniker_random_message run random value 1..40
+execute as @s[scores={elements_techniker_random_type=3}] store result score @s elements_techniker_random_message run random value 1..41
 execute as @s[scores={elements_techniker_random_type=3}] run function elements:villager/techniker_sprueche/random_fakten
 
 

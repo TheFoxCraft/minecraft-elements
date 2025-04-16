@@ -1,0 +1,1 @@
+$summon text_display ~ ~ ~ {Tags:["handelsmarkt_offers_load_data"],text:'[{"text":"Eingestellt von: ","color":"blue","italic": false},{"text":"$(Player_Name)","color":"gray","italic": false}]',alignment:center}
