@@ -7,7 +7,15 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lily_pad",
-          "weight": 17
+          "weight": 17,
+          "functions": [
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "is_fish":true
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -23,17 +31,88 @@
             }
           ],
           "name": "minecraft:leather_boots",
-          "weight": 10
+          "weight": 10,
+          "conditions": [
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "any_of",
+                "terms": [
+                  {
+                    "condition": "match_tool",
+                    "predicate": {
+                      "items": "fishing_rod",
+                      "components": {
+                        "custom_model_data": 1
+                      }
+                    }
+                  },
+                  {
+                    "condition": "match_tool",
+                    "predicate": {
+                      "items": "fishing_rod",
+                      "components": {
+                        "custom_model_data": 2
+                      }
+                    }
+                  },
+                  {
+                    "condition": "match_tool",
+                    "predicate": {
+                      "items": "fishing_rod",
+                      "components": {
+                        "custom_model_data": 3
+                      }
+                    }
+                  },
+                  {
+                    "condition": "match_tool",
+                    "predicate": {
+                      "items": "fishing_rod",
+                      "components": {
+                        "custom_model_data": 4
+                      }
+                    }
+                  },
+                  {
+                    "condition": "match_tool",
+                    "predicate": {
+                      "items": "fishing_rod",
+                      "components": {
+                        "custom_model_data": 5
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:leather",
-          "weight": 10
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "is_fish":true
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:bone",
-          "weight": 10
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "is_fish":true
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -48,6 +127,12 @@
               "components": {
                 "minecraft:max_stack_size": 64
               }
+            },
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "is_fish": true
+              }
             }
           ],
           "name": "minecraft:potion",
@@ -57,7 +142,15 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:string",
-          "weight": 5
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "is_fish":true
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -73,7 +166,62 @@
             }
           ],
           "name": "minecraft:fishing_rod",
-          "weight": 2
+          "weight": 2,
+          "conditions": [
+            {
+              "condition": "inverted",
+              "term": {
+                "condition": "any_of",
+                "terms": [
+                  {
+                    "condition": "match_tool",
+                    "predicate": {
+                      "items": "fishing_rod",
+                      "components": {
+                        "custom_model_data": 1
+                      }
+                    }
+                  },
+                  {
+                    "condition": "match_tool",
+                    "predicate": {
+                      "items": "fishing_rod",
+                      "components": {
+                        "custom_model_data": 2
+                      }
+                    }
+                  },
+                  {
+                    "condition": "match_tool",
+                    "predicate": {
+                      "items": "fishing_rod",
+                      "components": {
+                        "custom_model_data": 3
+                      }
+                    }
+                  },
+                  {
+                    "condition": "match_tool",
+                    "predicate": {
+                      "items": "fishing_rod",
+                      "components": {
+                        "custom_model_data": 4
+                      }
+                    }
+                  },
+                  {
+                    "condition": "match_tool",
+                    "predicate": {
+                      "items": "fishing_rod",
+                      "components": {
+                        "custom_model_data": 5
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -85,13 +233,27 @@
               "components": {
                 "minecraft:max_stack_size": 64
               }
+            },
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "is_fish":true
+              }
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:stick",
-          "weight": 5
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "is_fish":true
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -100,6 +262,12 @@
               "add": false,
               "count": 10.0,
               "function": "minecraft:set_count"
+            },
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "is_fish":true
+              }
             }
           ],
           "name": "minecraft:ink_sac"
@@ -107,12 +275,28 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:tripwire_hook",
-          "weight": 10
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "is_fish":true
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:rotten_flesh",
-          "weight": 10
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "is_fish":true
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -133,28 +317,6 @@
         }
       ],
       "rolls": 1.0
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "item",
-          "weight": 1,
-          "name": "minecraft:structure_void",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_components",
-              "components": {
-                "minecraft:custom_model_data": 1
-              }
-            }
-          ]
-        }
-      ]
     }
   ],
   "random_sequence": "minecraft:gameplay/fishing/junk"

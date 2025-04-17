@@ -45,6 +45,7 @@ execute as @s run scoreboard players set .server elements_abgabe_other_levelbaum
 execute as @s run scoreboard players set .server elements_abgabe_other_community-hub-main_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_angel-teich_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_recycler_progress 0
+execute as @s run scoreboard players set .server elements_recycler_stats_fish 0
 execute as @s run scoreboard players set .server elements_recycler_stats_1 0
 execute as @s run scoreboard players set .server elements_recycler_stats_2 0
 execute as @s run scoreboard players set .server elements_recycler_stats_2_spawn 0

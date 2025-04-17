@@ -7,6 +7,10 @@ execute if score .server elements_recycler_update matches 1 run function element
 execute as @e[type=minecraft:interaction,tag=recycler_abgabe] at @s on target run tag @s add recycler_abgabe
 
 # stage 1
+execute as @a[tag=recycler_abgabe,scores={elements_inv_fishing_token=64..},nbt={SelectedItem:{id:"minecraft:pufferfish",components:{"minecraft:custom_model_data":1}}}] run function elements:spawn/recycler/abgabe_fishing_token
+
+
+# stage 1
 execute as @a[tag=recycler_abgabe,scores={elements_inv_compressed_cobblestone=64..},nbt={SelectedItem:{id:"minecraft:cobbled_deepslate",components:{"minecraft:custom_model_data":1}}}] run function elements:spawn/recycler/abgabe_stage_1
 
 # stage 2

@@ -1,0 +1,1 @@
+stopsound @a * elements:other.rick

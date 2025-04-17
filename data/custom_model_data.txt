@@ -49,6 +49,8 @@
     name_tag: Handelsplatz Enderchest Neues Angebot
     oak_hanging_sign: Handelsplatz Enderchest Info
     player_head: Handelsplatz Enderchest Page next
+    puffer_fish: Fishing Token (Compressed)
+    white_dye: Custom Bonemeal
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)

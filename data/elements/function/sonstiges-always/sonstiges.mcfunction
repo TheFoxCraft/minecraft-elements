@@ -41,6 +41,7 @@ execute as @a store result score @s elements_inv_basalt run clear @s minecraft:b
 execute as @a store result score @s elements_inv_stone run clear @s minecraft:stone 0
 execute as @a store result score @s elements_inv_oaklog run clear @s minecraft:oak_log 0
 execute as @a store result score @s elements_inv_bonemeal run clear @s minecraft:bone_meal 0
+execute as @a store result score @s elements_inv_fake_bonemeal run clear @s white_dye[custom_model_data=1] 0
 execute as @a store result score @s elements_inv_sprucelog run clear @s minecraft:spruce_log 0
 execute as @a store result score @s elements_inv_dark_oaklog run clear @s minecraft:dark_oak_log 0
 execute as @a store result score @s elements_inv_cobblestone run clear @s minecraft:cobblestone 0
@@ -59,6 +60,7 @@ execute as @a store result score @s elements_inv_ancient_debris run clear @s min
 execute as @a store result score @s elements_inv_infinity_book run clear @s enchanted_book[stored_enchantments={infinity:1}] 0
 execute as @a store result score @s elements_inv_fish run clear @s #fishes 0
 execute as @a store result score @s elements_inv_stone_stage_1 run clear @s #elements:stage_1_stone 0
+execute as @a store result score @s elements_inv_fishing_token run clear @s pufferfish[custom_model_data=1] 0
 
 execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_model_data":1}}}] at @s run function elements:custom-items/shop/sky/sauger/show_size
 
@@ -204,9 +206,9 @@ execute as @a unless entity @s[nbt={SelectedItem:{id:"minecraft:bone_meal"}}] ru
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:bone_meal",Slot:-106b}]}] run attribute @s block_interaction_range modifier add minecraft:elements_no_bonemeal_offhand -1 add_multiplied_base
 execute as @a unless entity @s[nbt={Inventory:[{id:"minecraft:bone_meal",Slot:-106b}]}] run attribute @s block_interaction_range modifier remove minecraft:elements_no_bonemeal_offhand
 
-execute as @a[scores={elements_inv_bonemeal=3..},predicate=!elements:is_in_hub] run give @s bone 1
-execute as @a[scores={elements_inv_bonemeal=3..},predicate=!elements:is_in_hub] run clear @s bone_meal 3
-execute as @a[scores={elements_inv_bonemeal=1..2},predicate=!elements:is_in_hub] run clear @s bone_meal 1
+
+execute as @a[scores={elements_inv_bonemeal=1..},predicate=!elements:is_in_hub] run function elements:sonstiges/savely_give_loot {id:"elements:items/other/bonemeal"}
+execute as @a[scores={elements_inv_bonemeal=1..},predicate=!elements:is_in_hub] run clear @s bone_meal 1
 
 
 ## handelsmarkt
@@ -218,6 +220,15 @@ execute as @a[scores={elements_enderchest_handelsplatz_reload_offers=1}] if scor
 execute as @a[scores={elements_enderchest_handelsplatz_reload_offers=1}] run scoreboard players set @s elements_enderchest_handelsplatz_reload_offers 0
 # give sold tokens
 # managed in function timer 5s
+
+
+# no armor drops with element sword
+
+#execute as @e[type=zombie,nbt={Health:0.0f}] run function elements:sonstiges/no_armor_drops_with_element_sword
+#execute as @e[type=skeleton,nbt={Health:0.0f}] run function elements:sonstiges/no_armor_drops_with_element_sword
+
+
+
 
 #dasdatapack
 execute as @a run scoreboard players operation @s dd_rank_cam = @s elements_rank_cam

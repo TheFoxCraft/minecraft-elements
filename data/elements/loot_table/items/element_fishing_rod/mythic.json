@@ -24,7 +24,7 @@
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
                     {
-                      "id": "luck",
+                      "id": "element_fishing_rod_mythic",
                       "type": "luck",
                       "amount": 100,
                       "operation": "add_value",

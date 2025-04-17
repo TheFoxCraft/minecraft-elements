@@ -12,7 +12,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "quality": 2,
+          "quality": 1,
           "value": "minecraft:gameplay/fishing/treasure",
           "weight": 15
         },
@@ -24,6 +24,28 @@
         }
       ],
       "rolls": 1.0
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:structure_void",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:custom_model_data": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "random_sequence": "minecraft:gameplay/fishing"

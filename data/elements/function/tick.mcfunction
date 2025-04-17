@@ -63,11 +63,6 @@ function elements:spawn/community-hub
 function elements:stages/refresh-vaults
 function elements:sonstiges-always/special-items
 
-#element shards
-execute as @a[scores={elements_element_shards_music_timer_common=1..}] run function elements:sonstiges/element_shards/lucky_drops/music_common/provider
-execute as @a[scores={elements_element_shards_music_timer_rare=1..}] run function elements:sonstiges/element_shards/lucky_drops/music_rare/provider
-execute as @a[scores={elements_element_shards_music_timer_epic=1..}] run function elements:sonstiges/element_shards/lucky_drops/music_epic/provider
-execute as @a[scores={elements_element_shards_music_timer_legendary=1..}] run function elements:sonstiges/element_shards/lucky_drops/music_legendary/provider
 
 
 #muss noch gemacht werden

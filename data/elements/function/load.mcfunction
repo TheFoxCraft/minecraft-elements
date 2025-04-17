@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.6.0.2","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.7.0.3","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -170,6 +170,7 @@ scoreboard objectives add elements_inv_cobblestone dummy
 scoreboard objectives add elements_inv_basalt dummy
 scoreboard objectives add elements_inv_oaklog dummy
 scoreboard objectives add elements_inv_bonemeal dummy
+scoreboard objectives add elements_inv_fake_bonemeal dummy
 scoreboard objectives add elements_bonemeal_success dummy
 scoreboard objectives add elements_inv_stone_stage_1 dummy
 scoreboard objectives add elements_enderchest_level dummy
@@ -245,10 +246,7 @@ scoreboard objectives add elements_sonstiges_actionbar_pause dummy
 scoreboard objectives add elements_element_shards_count dummy
 scoreboard objectives add elements_element_shards_block_count dummy
 scoreboard objectives add elements_element_shards_value dummy
-scoreboard objectives add elements_element_shards_music_timer_common dummy
-scoreboard objectives add elements_element_shards_music_timer_rare dummy
-scoreboard objectives add elements_element_shards_music_timer_epic dummy
-scoreboard objectives add elements_element_shards_music_timer_legendary dummy
+
 
 
 
@@ -308,6 +306,7 @@ scoreboard objectives add elements_inv_diamond dummy
 scoreboard objectives add elements_inv_emerald dummy
 scoreboard objectives add elements_inv_ancient_debris dummy
 scoreboard objectives add elements_inv_infinity_book dummy
+scoreboard objectives add elements_inv_fishing_token dummy
 
 
 scoreboard objectives add elements_update_sequence_status dummy
@@ -658,6 +657,7 @@ scoreboard objectives add elements_mana_regeneration-per-sec dummy
 scoreboard objectives add elements_mana_item_messstab_cooldown dummy
 scoreboard objectives add elements_mana_item_magische-schale_cooldown dummy
 scoreboard objectives add elements_recycler_update dummy
+scoreboard objectives add elements_recycler_stats_fish dummy
 scoreboard objectives add elements_recycler_stats_1 dummy
 scoreboard objectives add elements_recycler_stats_2 dummy
 scoreboard objectives add elements_recycler_stats_2_spawn dummy

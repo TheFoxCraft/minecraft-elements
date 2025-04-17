@@ -11,7 +11,7 @@ $execute as @a[scores={elements_miningxp_fishing_level=100},nbt={UUID:$(UUID)}] 
 $scoreboard players set @a[nbt={UUID:$(UUID)}] elements_sonstiges_actionbar_pause 20
 
 $execute as @a[nbt={UUID:$(UUID)}] store result score @s elements_miningxp_fishing_loot run random value 1..100
-$execute as @a[nbt={UUID:$(UUID)}] if score @s elements_miningxp_fishing_level >= @s elements_miningxp_fishing_loot at @s run loot spawn ~ ~ ~ fish elements:fishing_treasure_no-trigger ~ ~ ~
+$execute as @a[nbt={UUID:$(UUID)}] if score @s elements_miningxp_fishing_level >= @s elements_miningxp_fishing_loot at @s run loot spawn ~ ~ ~ fish gameplay/fishing/treasure ~ ~ ~ mainhand
 
 
 $execute as @a[nbt={UUID:$(UUID)}] run xp add @s 3 levels

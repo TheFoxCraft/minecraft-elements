@@ -24,7 +24,7 @@
                   "minecraft:attribute_modifiers": {
                     "modifiers": [
                       {
-                        "id": "luck",
+                        "id": "element_fishing_rod_epic",
                         "type": "luck",
                         "amount": 50,
                         "operation": "add_value",
