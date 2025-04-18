@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "main": {
+      "trigger": "",
+      "conditions": {
+        "location": [
+          {
+            "condition": "block_state_property",
+            "block": "sweet_berry_bush",
+            "properties": {
+              "age": "1"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "elements:test/stage_sweet_berry"
+  }
+}

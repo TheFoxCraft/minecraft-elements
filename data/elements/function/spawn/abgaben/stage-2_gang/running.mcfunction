@@ -30,7 +30,7 @@ execute if score .server elements_abgabe_stage_2_gang_progress >= .server elemen
 execute if score .server elements_abgabe_stage_2_gang_progress >= .server elements_abgabe_stage_2_gang_goal if score .server elements_abgabe_stage_2_gang matches 1 in elements:hub run title @a subtitle ["",{"text": "Ein neuer Gang hat sich geöffnet"}]
 execute if score .server elements_abgabe_stage_2_gang_progress >= .server elements_abgabe_stage_2_gang_goal if score .server elements_abgabe_stage_2_gang matches 1 in elements:hub run kill @e[tag=abgabe_stage_wood_level]
 execute if score .server elements_abgabe_stage_2_gang_progress >= .server elements_abgabe_stage_2_gang_goal if score .server elements_abgabe_stage_2_gang matches 1 in elements:hub if block 28 100 0 reinforced_deepslate run setblock 28 100 0 air
-execute if score .server elements_abgabe_stage_2_gang_progress >= .server elements_abgabe_stage_2_gang_goal if score .server elements_abgabe_stage_2_gang matches 1 in elements:hub run place template elements:hub/stage_extend/gang1-osten 29 99 -6
+execute if score .server elements_abgabe_stage_2_gang_progress >= .server elements_abgabe_stage_2_gang_goal if score .server elements_abgabe_stage_2_gang matches 1 in elements:hub run place template elements:hub/stage_extend/gang 29 99 -6
 execute if score .server elements_abgabe_stage_2_gang_progress >= .server elements_abgabe_stage_2_gang_goal if score .server elements_abgabe_stage_2_gang matches 1 in elements:hub run scoreboard players set .server elements_abgabe_stage_2 3
 execute if score .server elements_abgabe_stage_2_gang_progress >= .server elements_abgabe_stage_2_gang_goal if score .server elements_abgabe_stage_2_gang matches 1 in elements:hub run scoreboard players set .server elements_abgabe_stage_2_gang 2
 

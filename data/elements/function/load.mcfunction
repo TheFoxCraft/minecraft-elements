@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.7.0.3","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.8.1.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -216,6 +216,12 @@ scoreboard objectives add elements_enderchest_handelsplatz_reload_offers dummy
 scoreboard objectives add elements_enderchest_handelsplatz_buy dummy
 scoreboard objectives add elements_enderchest_handelsplatz_buy_price dummy
 scoreboard objectives add elements_enderchest_handelsplatz_tokens_to_give dummy
+scoreboard objectives add elements_enderchest_handelsplatz_stats_tokens_spend dummy
+scoreboard objectives add elements_enderchest_handelsplatz_stats_tokens_spend_for_fine dummy
+scoreboard objectives add elements_enderchest_handelsplatz_stats_tokens_earned dummy
+scoreboard objectives add elements_enderchest_handelsplatz_stats_offers_buyed dummy
+scoreboard objectives add elements_enderchest_handelsplatz_stats_offers_created dummy
+scoreboard objectives add elements_enderchest_handelsplatz_stats_offers_sold dummy
 scoreboard objectives add elements_enderchest_stats_load dummy
 scoreboard objectives add elements_stats_mininglevel dummy
 scoreboard objectives add elements_stats_forestinglevel dummy
@@ -399,6 +405,22 @@ scoreboard objectives add elements_uniqueitem_fragment_der_himmelswarze dummy
 scoreboard objectives add elements_uniqueitem_wanderlachs dummy
 #other
 scoreboard objectives add elements_uniqueitem_other_datenspeicher dummy
+scoreboard objectives add elements_uniqueitem_other_rolex dummy
+#miningxp
+scoreboard objectives add elements_uniqueitem_miningxp_digda_splitter dummy
+scoreboard objectives add elements_uniqueitem_miningxp_nasser_klumpen dummy
+scoreboard objectives add elements_uniqueitem_miningxp_honiggolem_elixir dummy
+scoreboard objectives add elements_uniqueitem_miningxp_sparks_papageienfeder dummy
+#bosse
+scoreboard objectives add elements_uniqueitem_bosse_taubenkacke dummy
+scoreboard objectives add elements_uniqueitem_bosse_tomorrowland_karte dummy
+scoreboard objectives add elements_uniqueitem_bosse_amboesse dummy
+#shops
+scoreboard objectives add elements_uniqueitem_shop_hasenpfote dummy
+scoreboard objectives add elements_uniqueitem_shop_allium_ghg dummy
+scoreboard objectives add elements_uniqueitem_shop_jos_stoff dummy
+scoreboard objectives add elements_uniqueitem_shop_mosh_pit dummy
+
 
 
 
@@ -419,6 +441,11 @@ scoreboard objectives add elements_enderchest_settings_rotation_sky dummy
 scoreboard objectives add elements_enderchest_settings_rotation_ocean dummy
 scoreboard objectives add elements_enderchest_settings_rotation_hub dummy
 scoreboard objectives add elements_enderchest_settings_interface dummy
+scoreboard objectives add elements_enderchest_settings_return_after_close dummy
+scoreboard objectives add elements_enderchest_settings_return_after_close_rot_x dummy
+scoreboard objectives add elements_enderchest_settings_return_after_close_rot_x_old dummy
+scoreboard objectives add elements_enderchest_settings_return_after_close_rot_y dummy
+scoreboard objectives add elements_enderchest_settings_return_after_close_rot_y_old dummy
 scoreboard objectives add elements_settings_credits dummy
 scoreboard objectives add elements_setup dummy
 scoreboard objectives add elements_setup_timer dummy
@@ -481,6 +508,14 @@ scoreboard objectives add elements_abgabe_stage_3 dummy
 scoreboard objectives add elements_abgabe_stage_3_progress dummy
 scoreboard objectives add elements_abgabe_stage_3_goal dummy
 scoreboard objectives add elements_abgabe_stage_3_abgabe-mode dummy
+scoreboard objectives add elements_abgabe_stage_4_gang dummy
+scoreboard objectives add elements_abgabe_stage_4_gang_progress dummy
+scoreboard objectives add elements_abgabe_stage_4_gang_goal dummy
+scoreboard objectives add elements_abgabe_stage_4_gang_abgabe-mode dummy
+scoreboard objectives add elements_abgabe_stage_4 dummy
+scoreboard objectives add elements_abgabe_stage_4_progress dummy
+scoreboard objectives add elements_abgabe_stage_4_goal dummy
+scoreboard objectives add elements_abgabe_stage_4_abgabe-mode dummy
 scoreboard objectives add elements_abgabe_other_levelbaum dummy
 scoreboard objectives add elements_abgabe_other_levelbaum_progress dummy
 scoreboard objectives add elements_abgabe_other_levelbaum_goal dummy

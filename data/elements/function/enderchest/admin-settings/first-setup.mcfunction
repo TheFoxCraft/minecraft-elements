@@ -41,6 +41,8 @@ execute as @s run scoreboard players set .server elements_abgabe_shop_leer_progr
 execute as @s run scoreboard players set .server elements_abgabe_stage_2_gang_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_stage_2_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_stage_3_progress 0
+execute as @s run scoreboard players set .server elements_abgabe_stage_4_gang_progress 0
+execute as @s run scoreboard players set .server elements_abgabe_stage_4_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_levelbaum_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_community-hub-main_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_angel-teich_progress 0
@@ -90,9 +92,22 @@ execute as @s run scoreboard players set .server elements_uniqueitem_ork_schatz 
 execute as @s run scoreboard players set .server elements_uniqueitem_planetenkern 0
 execute as @s run scoreboard players set .server elements_uniqueitem_wanderlachs 0
 execute as @s run scoreboard players set .server elements_uniqueitem_fragment_der_himmelswarze 0
+execute as @s run scoreboard players set .server elements_uniqueitem_other_rolex 0
+execute as @s run scoreboard players set .server elements_uniqueitem_miningxp_digda_splitter 0
+execute as @s run scoreboard players set .server elements_uniqueitem_miningxp_sparks_papageienfeder 0
+execute as @s run scoreboard players set .server elements_uniqueitem_miningxp_nasser_klumpen 0
+execute as @s run scoreboard players set .server elements_uniqueitem_miningxp_honiggolem_elixir 0
+execute as @s run scoreboard players set .server elements_uniqueitem_bosse_taubenkacke 0
+execute as @s run scoreboard players set .server elements_uniqueitem_bosse_tomorrowland_karte 0
+execute as @s run scoreboard players set .server elements_uniqueitem_bosse_amboesse 0
+execute as @s run scoreboard players set .server elements_uniqueitem_shop_hasenpfote 0
+execute as @s run scoreboard players set .server elements_uniqueitem_shop_allium_ghg 0
+execute as @s run scoreboard players set .server elements_uniqueitem_shop_jos_stoff 0
+execute as @s run scoreboard players set .server elements_uniqueitem_shop_mosh_pit 0
+
 
 #add with every update
-execute as @s run scoreboard players set .server elements_update_sequence_status 6
+execute as @s run scoreboard players set .server elements_update_sequence_status 8
 
 execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
 

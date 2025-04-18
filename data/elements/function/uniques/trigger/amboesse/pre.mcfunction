@@ -1,0 +1,1 @@
+$execute as @a[nbt={UUID:$(UUID)}] run function elements:uniques/trigger/amboesse/amboesse

@@ -1,0 +1,8 @@
+execute store result score @s elements_enderchest_settings_return_after_close_rot_x run data get entity @s Rotation[0]
+execute store result score @s elements_enderchest_settings_return_after_close_rot_y run data get entity @s Rotation[1]
+
+
+execute unless score @s elements_enderchest_settings_return_after_close_rot_x = @s elements_enderchest_settings_return_after_close_rot_x_old unless score @s elements_enderchest_interface_number matches 1 run function elements:sonstiges/enderchest_return_after_close/main
+
+scoreboard players operation @s elements_enderchest_settings_return_after_close_rot_x_old = @s elements_enderchest_settings_return_after_close_rot_x
+scoreboard players operation @s elements_enderchest_settings_return_after_close_rot_y_old = @s elements_enderchest_settings_return_after_close_rot_y

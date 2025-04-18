@@ -163,6 +163,28 @@
       "rolls": 1,
       "entries": [
         {
+          "type": "item",
+          "name": "map",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_model_data": 100
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "empty",
+          "weight": 499
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
           "type": "loot_table",
           "weight": 5,
           "value": "elements:items/customs/photon/rare",
@@ -224,8 +246,55 @@
           ]
         },
         {
+          "type": "loot_table",
+          "weight": 5,
+          "value": "elements:items/customs/hype-o-meter",
+          "functions": [
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "vault_loot_needs_owner":1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:rib_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "vault_loot_needs_owner":1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:shaper_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "vault_loot_needs_owner":1
+              }
+            }
+          ]
+        },
+        {
           "type": "empty",
-          "weight": 80
+          "weight": 65
         }
       ]
     },

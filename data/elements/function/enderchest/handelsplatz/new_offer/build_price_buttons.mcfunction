@@ -7,6 +7,9 @@ item replace entity @e[limit=1,tag=handelsmark_new_offer_price_buttons_load,type
 summon text_display ~ ~ ~ {Tags:["handelsmark_new_offer_price_buttons_load"],text:'[{"text":"Klicke um den Preis um ","color":"gray","italic": false},{"translate": "elements.main.tokens.name","color": "gray","italic": false,"with": ["10"]},{"text": " zu verringern.","color": "gray","italic": false}]',alignment:center}
 data modify entity @e[tag=handelsmark_new_offer_price_buttons_load,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=handelsmark_new_offer_price_buttons_load,limit=1] text
 kill @e[type=text_display,tag=handelsmark_new_offer_price_buttons_load]
+summon text_display ~ ~ ~ {Tags:["handelsmark_new_offer_price_buttons_load"],text:'[{"text":"Shift-Klicke um den Preis um ","color":"dark_gray","italic": false},{"translate": "elements.main.tokens.name","color": "dark_gray","italic": false,"with": ["100"]},{"text": " zu verringern.","color": "dark_gray","italic": false}]',alignment:center}
+data modify entity @e[tag=handelsmark_new_offer_price_buttons_load,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=handelsmark_new_offer_price_buttons_load,limit=1] text
+kill @e[type=text_display,tag=handelsmark_new_offer_price_buttons_load]
 summon text_display ~ ~ ~ {Tags:["handelsmark_new_offer_price_buttons_load"],text:'" "',alignment:center}
 data modify entity @e[tag=handelsmark_new_offer_price_buttons_load,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=handelsmark_new_offer_price_buttons_load,limit=1] text
 kill @e[type=text_display,tag=handelsmark_new_offer_price_buttons_load]
@@ -27,6 +30,9 @@ execute as @s at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["handelsmar
 item replace entity @e[limit=1,tag=handelsmark_new_offer_price_buttons_load,type=armor_stand] weapon.mainhand with copper_ingot[custom_name='{"bold":true,"color":"gold","text":"Preis erhöhen","italic": false}',custom_model_data=21] 1
 
 summon text_display ~ ~ ~ {Tags:["handelsmark_new_offer_price_buttons_load"],text:'[{"text":"Klicke um den Preis um ","color":"gray","italic": false},{"translate": "elements.main.tokens.name","color": "gray","italic": false,"with": ["10"]},{"text": " zu erhöhen.","color": "gray","italic": false}]',alignment:center}
+data modify entity @e[tag=handelsmark_new_offer_price_buttons_load,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=handelsmark_new_offer_price_buttons_load,limit=1] text
+kill @e[type=text_display,tag=handelsmark_new_offer_price_buttons_load]
+summon text_display ~ ~ ~ {Tags:["handelsmark_new_offer_price_buttons_load"],text:'[{"text":"Shift-Klicke um den Preis um ","color":"dark_gray","italic": false},{"translate": "elements.main.tokens.name","color": "dark_gray","italic": false,"with": ["100"]},{"text": " zu erhöhen.","color": "dark_gray","italic": false}]',alignment:center}
 data modify entity @e[tag=handelsmark_new_offer_price_buttons_load,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=handelsmark_new_offer_price_buttons_load,limit=1] text
 kill @e[type=text_display,tag=handelsmark_new_offer_price_buttons_load]
 summon text_display ~ ~ ~ {Tags:["handelsmark_new_offer_price_buttons_load"],text:'" "',alignment:center}

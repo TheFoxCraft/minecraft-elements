@@ -83,13 +83,13 @@ execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderI
 execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_helmet",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_helmet/mythic
 execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_helmet",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
 #chestplate
-execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_chestplate",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_helmet/mythic
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_chestplate",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_chestplate/mythic
 execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_chestplate",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
 #leggings
-execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_leggings",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_helmet/mythic
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_leggings",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_leggings/mythic
 execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_leggings",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
 #boots
-execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_boots",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_helmet/mythic
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_boots",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_boots/mythic
 execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_boots",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
 
 

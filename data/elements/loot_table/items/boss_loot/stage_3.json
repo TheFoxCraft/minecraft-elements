@@ -78,6 +78,28 @@
       "rolls": 1,
       "entries": [
         {
+          "type": "item",
+          "name": "anvil",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_model_data": 100
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "empty",
+          "weight": 499
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
           "type": "loot_table",
           "weight": 5,
           "value": "elements:items/element_helmet/legendary",
@@ -143,8 +165,59 @@
           ]
         },
         {
+          "type": "item",
+          "weight": 20,
+          "name": "ender_chest",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "vault_loot_needs_owner":1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:coast_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "vault_loot_needs_owner":1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:coast_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "vault_loot_needs_owner":1
+              }
+            }
+          ]
+        },
+        {
           "type": "empty",
-          "weight": 80
+          "weight": 50
         }
       ]
     },

@@ -1,0 +1,23 @@
+{
+    "criteria": {
+      "using-item": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:golden_apple",
+            "components": {
+              "minecraft:custom_model_data": 5
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "using-item"
+      ]
+    ],
+    "rewards": {
+      "function": "elements:custom-items/shop/ocean/bossfrucht/stage_4"
+    }
+  }

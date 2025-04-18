@@ -15,7 +15,10 @@ function elements:enderchest/handelsplatz/buy/give_tokens_pre with storage eleme
 execute store result storage elements_handelsmarkt_offers Buy.Item_ID int 1 run data get entity @n[type=armor_stand,tag=handelsmarkt_buy] HandItems[0].components."minecraft:custom_data".ID
 function elements:enderchest/handelsplatz/buy/remove_from_database with storage elements_handelsmarkt_offers Buy
 
-
+scoreboard players operation @s elements_enderchest_handelsplatz_stats_tokens_spend += @s elements_enderchest_handelsplatz_buy_price
+scoreboard players operation .server elements_enderchest_handelsplatz_stats_tokens_spend += @s elements_enderchest_handelsplatz_buy_price
+scoreboard players add @s elements_enderchest_handelsplatz_stats_offers_buyed 1
+scoreboard players add .server elements_enderchest_handelsplatz_stats_offers_buyed 1
 scoreboard players operation @s elements_tokens_count -= @s elements_enderchest_handelsplatz_buy_price
 tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Gekauft! ("},{"score": {"name": "@s","objective": "elements_enderchest_handelsplatz_buy_price"}},{"text": " Token)"}]
 # repair item

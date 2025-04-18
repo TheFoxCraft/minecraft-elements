@@ -142,6 +142,38 @@ execute as @a[scores={elements_update_sequence_status=6}] if score .server eleme
 # ..
 execute as @a[scores={elements_update_sequence_status=6}] if score .server elements_update_sequence_status matches 7.. run scoreboard players set @s elements_update_sequence_status 7
 
+#1.8.0.0
+
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_abgabe_stage_4_gang_progress 0
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_abgabe_stage_4_progress 0
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_uniqueitem_other_rolex 0
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_uniqueitem_miningxp_digda_splitter 0
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_uniqueitem_miningxp_sparks_papageienfeder 0
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_uniqueitem_miningxp_nasser_klumpen 0
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_uniqueitem_miningxp_honiggolem_elixir 0
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_uniqueitem_bosse_taubenkacke 0
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_uniqueitem_bosse_tomorrowland_karte 0
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_uniqueitem_bosse_amboesse 0
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_uniqueitem_shop_hasenpfote 0
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_uniqueitem_shop_allium_ghg 0
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_uniqueitem_shop_jos_stoff 0
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_uniqueitem_shop_mosh_pit 0
+
+#execute if score .server elements_update_sequence_status matches 7 run say (Hier dann neue default-values setzen)
+execute if score .server elements_update_sequence_status matches 7 run scoreboard players set .server elements_update_sequence_status 8
+
+
+execute as @a[scores={elements_update_sequence_status=7}] if score .server elements_update_sequence_status matches 8.. run title @s title ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
+execute as @a[scores={elements_update_sequence_status=7}] if score .server elements_update_sequence_status matches 8.. run title @s subtitle ["",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.8.0.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
+execute as @a[scores={elements_update_sequence_status=7}] if score .server elements_update_sequence_status matches 8.. run tellraw @s ["","\n","\n","\n","\n","\n",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.8.0.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"\n","\n",{"text": "Seit du das letzte mal online warst gab es ein Update!\n Das ist neu:","color": "green"},"\n"]
+execute as @a[scores={elements_update_sequence_status=7}] if score .server elements_update_sequence_status matches 8.. run tellraw @s ["",{"text": "Changelog im Discord"}]
+
+# ..
+#execute as @a[scores={elements_update_sequence_status=7}] if score .server elements_update_sequence_status matches 8.. run say (Hier dann neue default-values setzen)
+
+# ..
+execute as @a[scores={elements_update_sequence_status=7}] if score .server elements_update_sequence_status matches 8.. run scoreboard players set @s elements_update_sequence_status 8
+
 
 
 #change status in startup settings, update load

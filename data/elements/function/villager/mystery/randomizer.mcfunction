@@ -14,6 +14,7 @@ execute if score @s elements_mystery_lootbox_random matches 1121..1140 run loot 
 execute if score @s elements_mystery_lootbox_random matches 1141..1150 run loot replace entity @n[tag=elements_mystery_loot] weapon.mainhand loot elements:items/mystery/zerberster
 # Trash (rest)
 execute if score @s elements_mystery_lootbox_random matches 1151..9999 run loot replace entity @n[tag=elements_mystery_loot] weapon.mainhand loot elements:items/mystery/trash
+execute if score @s elements_mystery_lootbox_random matches 9999 if score .server elements_uniqueitem_other_rolex matches 0 run function elements:uniques/trigger/rolex
 
 #Excalibur / HAUPT-GEWINN
 execute if score @s elements_mystery_lootbox_random matches 10000 run loot replace entity @n[tag=elements_mystery_loot] weapon.mainhand loot elements:items/mystery/excalibur

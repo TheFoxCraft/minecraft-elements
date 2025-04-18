@@ -90,6 +90,8 @@ kill @e[type=item,nbt={Item:{id:"minecraft:armor_stand",count:1,components:{"min
 execute as @s[scores={elements_enderchest_interface_number=7,elements_enderchest_settings_interface=1}] run item replace entity @s enderchest.13 with armor_stand[custom_name='{"color":"gold","text":"Dimension-Teleport Rotation","italic": false}',lore=['{"text": "Klicke zum Öffnen des Untermenüs","color": "gray","italic": false}'],custom_model_data=2] 1
 
 
+
+
 # Interface 1 - Dimension-Teleport Rotation
 execute as @s[scores={elements_enderchest_interface_number=7,elements_enderchest_settings_interface=2},nbt={Inventory:[{id:"minecraft:nether_star",components:{"minecraft:custom_model_data":5}}]}] run scoreboard players set @s elements_enderchest_interface_clicked 2
 execute as @s[scores={elements_enderchest_interface_number=7,elements_enderchest_settings_interface=2},nbt={Inventory:[{id:"minecraft:nether_star",components:{"minecraft:custom_model_data":5}}]}] run clear @s nether_star[custom_model_data=5]
@@ -160,6 +162,16 @@ execute as @s[scores={elements_enderchest_interface_clicked=1..2}] run scoreboar
 kill @e[type=item,nbt={Item:{id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":5}}}]
 execute as @s[scores={elements_enderchest_interface_number=7,elements_enderchest_settings_interface=2}] store result storage elements_rotation_dimension nether int 1 run scoreboard players get @s elements_enderchest_settings_rotation_nether
 execute as @s[scores={elements_enderchest_interface_number=7,elements_enderchest_settings_interface=2}] run function elements:enderchest/settings/dimension_rotation/nether_set with storage elements_rotation_dimension
+
+
+execute as @s[scores={elements_enderchest_level_settings=1,elements_enderchest_interface_number=7,elements_enderchest_settings_interface=1}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:oak_fence_gate[custom_model_data=2]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add @s elements_enderchest_settings_return_after_close 1
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+kill @e[type=item,nbt={Item:{id:"minecraft:oak_fence_gate",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @s[scores={elements_enderchest_level_settings=1,elements_enderchest_interface_number=7,elements_enderchest_settings_interface=1,elements_enderchest_settings_return_after_close=1}] run item replace entity @s enderchest.14 with oak_fence_gate[custom_name='{"color":"gold","italic":false,"text":"Automatisches Hauptmenü"}',lore=['{"color":"green","italic":false,"text":"Aus:"}','{"color":"dark_gray","italic":false,"text":"   Die Enderchest lässt das aktuelle Menü offen,"}','{"color":"dark_gray","italic":false,"text":"   wenn du die Chest schließt"}','{"color":"gray","italic":false,"text":"An:"}','{"color":"dark_gray","italic":false,"text":"   Die Enderchest kehrt beim verlassen immer"}','{"color":"dark_gray","italic":false,"text":"   ins Hauptmenü zurück."}','{"color":"dark_gray","italic":false,"text":"    Info: Dies wird darüber erkannt, wenn sich deine"}','{"color":"dark_gray","italic":false,"text":"    Ausrichtung ändert. Schnelles wiederöffnen ohne"}','{"color":"dark_gray","italic":false,"text":"    Bewegen funktioniert nicht."}'],custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_level_settings=1,elements_enderchest_interface_number=7,elements_enderchest_settings_interface=1,elements_enderchest_settings_return_after_close=2}] run item replace entity @s enderchest.14 with oak_fence_gate[custom_name='{"color":"gold","italic":false,"text":"Automatisches Hauptmenü"}',lore=['{"color":"gray","italic":false,"text":"Aus:"}','{"color":"dark_gray","italic":false,"text":"   Die Enderchest lässt das aktuelle Menü offen,"}','{"color":"dark_gray","italic":false,"text":"   wenn du die Chest schließt"}','{"color":"green","italic":false,"text":"An:"}','{"color":"dark_gray","italic":false,"text":"   Die Enderchest kehrt beim verlassen immer"}','{"color":"dark_gray","italic":false,"text":"   ins Hauptmenü zurück."}','{"color":"dark_gray","italic":false,"text":"    Info: Dies wird darüber erkannt, wenn sich deine"}','{"color":"dark_gray","italic":false,"text":"    Ausrichtung ändert. Schnelles wiederöffnen ohne"}','{"color":"dark_gray","italic":false,"text":"    Bewegen funktioniert nicht."}'],custom_model_data=2] 1
+execute as @s unless score @s elements_enderchest_settings_return_after_close matches 1..2 run scoreboard players set @s elements_enderchest_settings_return_after_close 1
 
 
 

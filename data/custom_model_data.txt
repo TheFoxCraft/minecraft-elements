@@ -51,6 +51,16 @@
     player_head: Handelsplatz Enderchest Page next
     puffer_fish: Fishing Token (Compressed)
     white_dye: Custom Bonemeal
+    clock: Hype-O-Meter
+    feather: Sparks papageienfeder Unique Item
+    vine: Nasser Klumpen Unique Item
+    honey_bottle: Honiggolem Elixir Unique Item
+    diorit: Taubenkacke Unique Item
+    map: Tomorrowland Karte Unique Item
+    allium: Allium GHG Unique Item
+    rabbit_foot: Hasenpfote Unique Item
+    redstone: Jo´s Stoff Unique Item
+    spawner: Mosh-Pit Unique Item
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -82,6 +92,9 @@
     dark_oak_hanging_sign: Enderchest Settings Credits
     player_head: Handelsplatz Enderchest Page previous
     salmon: Unique Wanderlachs
+    clock: Rolex Unique Item
+    pointed_dripstone: Digda Splitter Unique Item
+    oak_fence_gate: Settings Enderchest
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -126,6 +139,7 @@
     light_blue_stained_glass_pane: Enderchest Settings Dimension Rotation
     red_stained_glass_pane: Enderchest Settings Dimension Rotation
     crafting_table: Unique | Ork Schatz
+    golden_apple: Bossfrucht Stage 4
 6:
     potion: Leveltrank | Stone Shop Buying
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Hook Tipp
@@ -161,6 +175,7 @@
     spruce_log: Admin Settings Tipps Stage 2 Mainmenu
     weeping_vines: Admin Settings Tipps Stage 3 Mainmenu
     fishing_rod: Admin Settings Tipps Fishing Rod Mainmenu
+    anvil: Ambösse Unique Item
 13:
     clock: Admin-Config | Double-Level Timer Action
     potion: Magisches Wasser | Ocean Shop

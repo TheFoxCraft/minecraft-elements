@@ -1,0 +1,2 @@
+scoreboard players set @s elements_enderchest_interface_number 1
+function elements:enderchest/enderchest-clear

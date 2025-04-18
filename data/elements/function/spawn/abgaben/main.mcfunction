@@ -50,6 +50,12 @@ execute if score .server elements_abgabe_other_recycler matches 1 run function e
 #stage 3 final room
 execute if score .server elements_abgabe_stage_3 matches 3 run function elements:spawn/abgaben/stage-3_room/spawning
 execute if score .server elements_abgabe_stage_3 matches 1 run function elements:spawn/abgaben/stage-3_room/running
+#stage 4 gang
+execute if score .server elements_abgabe_stage_4_gang matches 3 run function elements:spawn/abgaben/stage-4_gang/spawning
+execute if score .server elements_abgabe_stage_4_gang matches 1 run function elements:spawn/abgaben/stage-4_gang/running
+#stage 4 final room
+execute if score .server elements_abgabe_stage_4 matches 3 run function elements:spawn/abgaben/stage-4_room/spawning
+execute if score .server elements_abgabe_stage_4 matches 1 run function elements:spawn/abgaben/stage-4_room/running
 
 
 

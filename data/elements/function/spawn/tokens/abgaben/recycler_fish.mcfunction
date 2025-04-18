@@ -1,0 +1,2 @@
+tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.chat.tokens.get_for_abgabe.message_1"},{"translate": "elements.main.tokens.name","color": "gold","with": ["10"]},{"translate": "elements.chat.tokens.get_for_abgabe.message_2"}]
+scoreboard players add @s elements_tokens_count 10

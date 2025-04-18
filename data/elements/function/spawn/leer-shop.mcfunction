@@ -51,6 +51,7 @@ execute if score .server elements_spawn_shop_leer_timer_min matches 0 if score .
 {rewardExp:0b,maxUses:30,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:ochre_froglight",count:16}},\
 {rewardExp:0b,maxUses:30,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:verdant_froglight",count:16}},\
 {rewardExp:0b,maxUses:30,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:pearlescent_froglight",count:16}},\
+{rewardExp:0b,maxUses:30,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:end_rod",count:16}},\
 {rewardExp:0b,maxUses:30,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:light",count:16}},\
 {rewardExp:0b,maxUses:30,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:obsidian",count:8}},\
 {rewardExp:0b,maxUses:30,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:crying_obsidian",count:8}}]}}
@@ -95,6 +96,10 @@ execute if score .server elements_spawn_shop_leer_timer_min matches 0 if score .
 {rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:5},sell:{id:"minecraft:fox_spawn_egg",count:1}},\
 {rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:48},sell:{id:"minecraft:fox_spawn_egg",count:1,components:{"minecraft:item_name":'"Schnee-Fuchs Spawn Egg"',"minecraft:entity_data":{id:"minecraft:fox",Type:"snow"}}}},\
 {rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:salmon_spawn_egg",count:1}},\
+{rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:cod_spawn_egg",count:1}},\
+{rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:tropical_fish_spawn_egg",count:1}},\
+{rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:pufferfish_spawn_egg",count:1}},\
+{rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:dolphin_spawn_egg",count:1}},\
 {rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:10},sell:{id:"minecraft:axolotl_spawn_egg",count:1}},\
 {rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:5},sell:{id:"minecraft:frog_spawn_egg",count:1}},\
 {rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:32},sell:{id:"minecraft:mooshroom_spawn_egg",count:1}},\

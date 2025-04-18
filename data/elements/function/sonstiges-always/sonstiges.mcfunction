@@ -73,6 +73,10 @@ scoreboard players operation .server elements_stats_serverlevel += @a elements_m
 
 # set values from server to all players
 scoreboard players operation @a elements_stage = .server elements_stage
+scoreboard players operation @a elements_uniqueitem_bosse_taubenkacke = .server elements_uniqueitem_bosse_taubenkacke
+scoreboard players operation @a elements_uniqueitem_bosse_tomorrowland_karte = .server elements_uniqueitem_bosse_tomorrowland_karte
+scoreboard players operation @a elements_uniqueitem_bosse_amboesse = .server elements_uniqueitem_bosse_amboesse
+
 
 
 execute if score .server elements_stage matches 1.. as @a run scoreboard players add @s elements_stats_playtime_ticks 1
@@ -227,7 +231,7 @@ execute as @a[scores={elements_enderchest_handelsplatz_reload_offers=1}] run sco
 #execute as @e[type=zombie,nbt={Health:0.0f}] run function elements:sonstiges/no_armor_drops_with_element_sword
 #execute as @e[type=skeleton,nbt={Health:0.0f}] run function elements:sonstiges/no_armor_drops_with_element_sword
 
-
+execute as @a[scores={elements_enderchest_settings_return_after_close=2}] run function elements:sonstiges/enderchest_return_after_close/check_change
 
 
 #dasdatapack

@@ -18,6 +18,6 @@
       ]
     ],
     "rewards": {
-      "function": "elements:custom-items/lebensfrucht"
+      "function": "elements:custom-items/customs/lebensfrucht"
     }
   }

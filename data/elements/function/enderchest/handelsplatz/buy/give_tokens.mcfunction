@@ -1,1 +1,5 @@
 $scoreboard players operation $(Seller) elements_enderchest_handelsplatz_tokens_to_give += @s elements_enderchest_handelsplatz_buy_price
+scoreboard players add .server elements_enderchest_handelsplatz_stats_offers_sold 1
+$scoreboard players add $(seller) elements_enderchest_handelsplatz_stats_offers_sold 1
+scoreboard players operation .server elements_enderchest_handelsplatz_stats_tokens_earned += @s elements_enderchest_handelsplatz_buy_price
+$scoreboard players operation $(seller) elements_enderchest_handelsplatz_stats_tokens_earned += @s elements_enderchest_handelsplatz_buy_price

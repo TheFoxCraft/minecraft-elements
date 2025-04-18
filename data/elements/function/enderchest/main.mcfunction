@@ -57,27 +57,27 @@ execute as @s[scores={elements_enderchest_level_tp=2,elements_enderchest_interfa
 #mode switch management
 
 execute as @s[scores={elements_enderchest_level_tp=2,elements_enderchest_interface_number=1,elements_enderchest_settings_tp-mode=2..3}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:ender_pearl[custom_model_data=1]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=1}] in elements:stone run tp @s 0 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=1}] run function elements:enderchest/settings/dimension_rotation/stone_tp with storage elements_rotation_dimension
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=1}] at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=1}] run xp add @s 0 points
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=2}] in elements:sky run tp @s 0 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=2}] run function elements:enderchest/settings/dimension_rotation/sky_tp with storage elements_rotation_dimension
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=2}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=2}] at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=2}] run xp add @s 0 points
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=2}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=3}] in elements:nether run tp @s 0 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=3}] run function elements:enderchest/settings/dimension_rotation/nether_tp with storage elements_rotation_dimension
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=3}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=3}] at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=3}] run xp add @s 0 points
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=3}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=4}] in elements:ocean run tp @s 0 61 0
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=4}] run function elements:enderchest/settings/dimension_rotation/ocean_tp with storage elements_rotation_dimension
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=4}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=4}] at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=4}] run xp add @s 0 points
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=4}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=5}] in elements:hub run tp @s 0 101 0
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=5}] run function elements:enderchest/settings/dimension_rotation/hub_tp with storage elements_rotation_dimension
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=5}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=5}] at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_settings_dimension=5}] run xp add @s 0 points
