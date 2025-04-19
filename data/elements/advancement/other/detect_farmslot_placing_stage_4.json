@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "location": [
+            {
+                "condition": "minecraft:block_state_property",
+                "block": "sweet_berry_bush"
+            }
+          ]
+          
+        }
+      }
+    },
+    "rewards": {
+      "function": "elements:farm_slots/stage_4/get_block_placing"
+    }
+  }
+  

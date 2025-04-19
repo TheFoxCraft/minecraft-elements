@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.8.1.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.8.1.1","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -777,6 +777,15 @@ scoreboard objectives add elements_farm-slots_stage-3_slots dummy
 scoreboard objectives add elements_farm-slots_stage-3_max-slots dummy
 scoreboard objectives add elements_farm-slots_stage-3_correct_UUID dummy
 scoreboard objectives add elements_farm-slots_stage-3_broken_slots dummy
+
+scoreboard objectives add elements_farm-slots_stage-4_placed dummy
+scoreboard objectives add elements_farm-slots_stage-4_broken minecraft.mined:minecraft.sweet_berry_bush
+scoreboard objectives add elements_farm-slots_stage-4_slots dummy
+scoreboard objectives add elements_farm-slots_stage-4_max-slots dummy
+scoreboard objectives add elements_farm-slots_stage-4_correct_UUID dummy
+scoreboard objectives add elements_farm-slots_stage-4_broken_slots dummy
+scoreboard objectives add elements_farm-slots_stage-4_age dummy
+scoreboard objectives add elements_farm-slots_stage-4_age_old dummy
 
 
 scoreboard objectives setdisplay list elements_mainlevel

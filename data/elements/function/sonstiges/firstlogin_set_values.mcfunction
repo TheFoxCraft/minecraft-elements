@@ -166,6 +166,12 @@ scoreboard players set @s elements_enderchest_settings_rotation_nether 0
 scoreboard players set @s elements_enderchest_settings_rotation_ocean 0
 scoreboard players set @s elements_enderchest_settings_rotation_hub 0
 scoreboard players set @s elements_enderchest_settings_interface 1
+scoreboard players set @s elements_enderchest_handelsplatz_stats_offers_buyed 0
+scoreboard players set @s elements_enderchest_handelsplatz_stats_offers_created 0
+scoreboard players set @s elements_enderchest_handelsplatz_stats_offers_sold 0
+scoreboard players set @s elements_enderchest_handelsplatz_stats_tokens_spend 0
+scoreboard players set @s elements_enderchest_handelsplatz_stats_tokens_earned 0
+scoreboard players set @s elements_enderchest_handelsplatz_stats_tokens_spend_for_fine 0
 
 scoreboard players operation @s elements_update_sequence_status = .server elements_update_sequence_status
 

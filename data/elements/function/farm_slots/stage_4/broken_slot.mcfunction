@@ -1,0 +1,1 @@
+$scoreboard players add @a[nbt={UUID:$(Owner)}] elements_farm-slots_stage-4_broken_slots 1

@@ -50,4 +50,6 @@ execute as @e[type=armor_stand,tag=spawner_steinmetz] at @s if score .server ele
 
 execute as @e[type=armor_stand,tag=spawner_foerster] at @s if score .server elements_stage matches 2.. run function elements:villager/spawning/stage_2
 
-execute as @e[type=armor_stand,tag=spawner_stage-3_main] at @s if score .server elements_stage matches 2.. run function elements:villager/spawning/stage_3
+execute as @e[type=armor_stand,tag=spawner_stage-3_main] at @s if score .server elements_stage matches 3.. run function elements:villager/spawning/stage_3
+
+execute as @e[type=armor_stand,tag=spawner_stage-4_main] at @s if score .server elements_stage matches 4.. run function elements:villager/spawning/stage_4

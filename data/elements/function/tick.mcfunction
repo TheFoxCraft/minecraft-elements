@@ -24,6 +24,7 @@ execute if score .server elements_function_timer_1s matches 20.. run scoreboard 
 # Farmslots
 function elements:farm_slots/stage_2/main
 function elements:farm_slots/stage_3/main
+function elements:farm_slots/stage_4/main
 
 
 

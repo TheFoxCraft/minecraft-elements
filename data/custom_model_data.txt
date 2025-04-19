@@ -61,6 +61,7 @@
     rabbit_foot: Hasenpfote Unique Item
     redstone: Jo´s Stoff Unique Item
     spawner: Mosh-Pit Unique Item
+    red_glazed_terracotta: Compressed Sweet Berries
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)

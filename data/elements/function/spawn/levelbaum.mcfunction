@@ -39,6 +39,8 @@ execute as @a[tag=spawn_levelbaum_level_player] if score .server elements_stage 
 execute as @a[tag=spawn_levelbaum_level_player] if score .server elements_stage matches 2 run xp add @s 500 levels
 execute as @a[tag=spawn_levelbaum_level_player] if score .server elements_stage matches 3 run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Der Allay hat eine große Ladung Level gedroppt! "},{"text": "+1.000 Level","color": "green"}]
 execute as @a[tag=spawn_levelbaum_level_player] if score .server elements_stage matches 3 run xp add @s 1000 levels
+execute as @a[tag=spawn_levelbaum_level_player] if score .server elements_stage matches 4 run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Der Allay hat eine große Ladung Level gedroppt! "},{"text": "+2.000 Level","color": "green"}]
+execute as @a[tag=spawn_levelbaum_level_player] if score .server elements_stage matches 4 run xp add @s 2000 levels
 execute as @a[tag=spawn_levelbaum_level_player] at @s run kill @e[tag=spawn_levelbaum_level,sort=nearest,limit=2]
 execute as @e[type=minecraft:interaction] at @s if entity @a[tag=spawn_levelbaum_level_player] run data remove entity @s interaction
 execute as @e[type=minecraft:interaction] at @s if entity @a[tag=spawn_levelbaum_level_player] run data remove entity @s attack

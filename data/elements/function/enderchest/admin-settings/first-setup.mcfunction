@@ -83,6 +83,12 @@ execute as @s run scoreboard players set .server elements_double-xp-event_timer_
 execute as @s run scoreboard players set .server elements_double-xp-event_timer_max_min 0
 execute as @s run scoreboard players set .server elements_double-xp-event_timer_max_sec 0
 execute as @s run scoreboard players set .server elements_admin_config_interface 1
+execute as @s run scoreboard players set .server elements_enderchest_handelsplatz_stats_offers_buyed 0
+execute as @s run scoreboard players set .server elements_enderchest_handelsplatz_stats_offers_created 0
+execute as @s run scoreboard players set .server elements_enderchest_handelsplatz_stats_offers_sold 0
+execute as @s run scoreboard players set .server elements_enderchest_handelsplatz_stats_tokens_spend 0
+execute as @s run scoreboard players set .server elements_enderchest_handelsplatz_stats_tokens_earned 0
+execute as @s run scoreboard players set .server elements_enderchest_handelsplatz_stats_tokens_spend_for_fine 0
 #uniques
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_bruchstueck_der_eismauer 0
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_auf_log 0
