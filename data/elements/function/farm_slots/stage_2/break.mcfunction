@@ -13,8 +13,6 @@ execute store success score @s elements_farm-slots_stage-2_correct_UUID run data
 
 $execute if score @s elements_farm-slots_stage-2_correct_UUID matches 1 run tellraw @a[nbt={UUID:$(UUID)}] ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Du kannst diesen Farmslot nicht abbauen, da er dir nicht gehört!","color": "red"}]
 execute if score @s elements_farm-slots_stage-2_correct_UUID matches 1 run setblock ~ ~ ~ spruce_sapling
-
-
 $execute if score @s elements_farm-slots_stage-2_correct_UUID matches 0 run tellraw @a[nbt={UUID:$(UUID)}] ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Farmslot abgebaut!"}]
 execute if score @s elements_farm-slots_stage-2_correct_UUID matches 0 run loot spawn ~ ~ ~ loot elements:items/farm_slots/stage_2
 $execute if score @s elements_farm-slots_stage-2_correct_UUID matches 0 run scoreboard players remove @a[nbt={UUID:$(UUID)}] elements_farm-slots_stage-2_slots 1
@@ -23,4 +21,5 @@ $execute if score @s elements_farm-slots_stage-2_correct_UUID matches 0 as @a[nb
 
 $scoreboard players set @a[nbt={UUID:$(UUID)}] elements_farm-slots_stage-2_broken 0
 
+$execute if entity @a[nbt={UUID:$(UUID)}] if score @s elements_farm-slots_stage-2_correct_UUID matches 0 run tag @s remove elements_farm-slot_stage-2
 $execute if entity @a[nbt={UUID:$(UUID)}] if score @s elements_farm-slots_stage-2_correct_UUID matches 0 run kill @s

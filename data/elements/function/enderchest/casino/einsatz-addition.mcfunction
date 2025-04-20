@@ -8,3 +8,5 @@ execute as @s[scores={elements_casino_game=2}] run scoreboard players add @s ele
 execute as @s[scores={elements_casino_game=2}] run scoreboard players add .server elements_casino_stats_game_luckywheel 1
 execute as @s[scores={elements_casino_game=2}] run scoreboard players set @s elements_casino_game_luckywheel_load 1
 
+
+execute as @s[scores={elements_casino_game=3}] run function elements:enderchest/casino/double-or-nothing/load

@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.8.1.1","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.8.3.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -327,6 +327,8 @@ scoreboard objectives add elements_casino_stats_lvlgewonnen dummy
 scoreboard objectives add elements_casino_stats_lvlverloren dummy
 scoreboard objectives add elements_casino_stats_lvlumsatz dummy
 scoreboard objectives add elements_casino_stats_game_horse dummy
+scoreboard objectives add elements_casino_stats_game_luckywheel dummy
+scoreboard objectives add elements_casino_stats_game_double-or-nothing dummy
 scoreboard objectives add elements_casino_game dummy
 scoreboard objectives add elements_casino_game_einsatz dummy
 scoreboard objectives add elements_casino_config_einsatz dummy
@@ -351,7 +353,9 @@ scoreboard objectives add elements_casino_game_luckywheel_speed dummy
 scoreboard objectives add elements_casino_game_luckywheel_random dummy
 scoreboard objectives add elements_casino_game_luckywheel_win_timer dummy
 scoreboard objectives add elements_casino_game_luckywheel_win dummy
-scoreboard objectives add elements_casino_stats_game_luckywheel dummy
+scoreboard objectives add elements_casino_game_double-or-nothing_stage dummy
+scoreboard objectives add elements_casino_game_double-or-nothing_balance dummy
+scoreboard objectives add elements_casino_game_double-or-nothing_calc dummy
 scoreboard objectives add elements_aa_secret_01 dummy
 scoreboard objectives add elements_aa_secret_02 dummy
 scoreboard objectives add elements_aa_secret_03 dummy

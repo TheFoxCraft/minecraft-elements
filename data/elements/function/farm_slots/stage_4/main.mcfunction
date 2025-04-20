@@ -69,5 +69,8 @@ execute as @e[type=marker,tag=elements_farm-slot_stage-4] run scoreboard players
 execute as @a[nbt={SelectedItem:{id:"minecraft:sweet_berries",components:{"minecraft:custom_model_data":1}}}] run title @s actionbar ["",{"text": "Farmslots: ","color": "green"},{"score": {"name": "@s","objective": "elements_farm-slots_stage-4_slots"},"color": "green"},{"text": "/","color": "green"},{"score": {"name": "@s","objective": "elements_farm-slots_stage-4_max-slots"},"color": "green"}]
 execute as @a[nbt={SelectedItem:{id:"minecraft:sweet_berries",components:{"minecraft:custom_model_data":1}}}] run scoreboard players set @s elements_sonstiges_actionbar_hold 1
 
+
+scoreboard players set @a elements_farm-slots_stage-4_broken 0
+
 #show broken slots
 execute as @a[scores={z_just-ignore=500}] run function elements:farm_slots/stage_4/show_broken_slots_pre

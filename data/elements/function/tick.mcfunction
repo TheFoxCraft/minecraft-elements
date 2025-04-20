@@ -22,9 +22,9 @@ execute if score .server elements_function_timer_1s matches 20.. run scoreboard 
 #-------------------------------------ALWAYS-------------------------------------ALWAYS-----------------------------------ALWAYS----------------------------------#
 
 # Farmslots
-function elements:farm_slots/stage_2/main
-function elements:farm_slots/stage_3/main
-function elements:farm_slots/stage_4/main
+function elements:farm_slots/stage_2/calc_main
+function elements:farm_slots/stage_3/calc_main
+#function elements:farm_slots/stage_4/main
 
 
 
@@ -66,7 +66,7 @@ function elements:sonstiges-always/special-items
 
 
 
-#muss noch gemacht werden
+
 
 
 function elements:miningxp/miningxp
@@ -97,8 +97,6 @@ execute as @a[scores={elements_enderchest_interface_number=2}] run function elem
 execute as @a[scores={elements_enderchest_interface_number=3}] run function elements:enderchest/upgradeschmiede
 execute as @a[scores={elements_enderchest_interface_number=4}] run function elements:enderchest/enderchest
 execute as @a[scores={elements_enderchest_interface_number=5}] run function elements:enderchest/casino
-execute as @a[scores={elements_enderchest_interface_number=5}] run function elements:enderchest/casino/horse/horse
-execute as @a[scores={elements_enderchest_interface_number=5}] run function elements:enderchest/casino/luckywheel/luckywheel
 execute as @a[scores={elements_enderchest_interface_number=6}] run function elements:enderchest/collections/menu
 execute as @a[scores={elements_enderchest_interface_number=7}] run function elements:enderchest/settings
 execute as @a[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/select_shop
@@ -106,7 +104,7 @@ execute as @a[scores={elements_enderchest_interface_number=10}] run function ele
 
 
 execute as @a[scores={elements_death=1..}] run function elements:sonstiges/death
-function elements:sonstiges/spawn-management
+#function elements:sonstiges/spawn-management
 execute as @a[scores={elements_choose_dimension=1..4}] run function elements:spawn/choose_dimension
 execute as @a[scores={z_just-ignore=1001..1006}] run function elements:spawn/choose_dimension
 execute if score .server elements_abgabe_shop_leer matches 2 run function elements:spawn/leer-shop
@@ -120,7 +118,7 @@ execute if score .server elements_stage_3_boss_status matches 1 run function ele
 execute as @a[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:{"minecraft:custom_model_data":1}}},gamemode=!adventure] run function elements:custom-items/rettungs-plattform/rettungs-plattform-always
 execute as @e[type=item,nbt={Item:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if block ~ ~ ~ lava if score .server elements_stage_1_portal_enable matches 0 run function elements:stages/stage-1/portal-enable
 execute as @e[type=item,nbt={Item:{id:"minecraft:dark_oak_sapling",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:spruce_log"},OnGround:1b},distance=..0.3] if entity @e[type=item,nbt={Item:{id:"minecraft:charcoal"},OnGround:1b},distance=..0.3,] if score .server elements_stage_2_portal_enable matches 0 run function elements:stages/stage-2/portal-enable
-execute if score .server elements_stage_3_portal_enable matches 0 run function elements:stages/stage-3/portal-enable/main
+execute if score .server elements_stage_3_portal_enable matches 0 if score .server elements_stage matches 3.. run function elements:stages/stage-3/portal-enable/main
 
 execute as @a[tag=elements_boss_spectator] at @s run function elements:bosse/spectator
 execute as @a[tag=!elements_boss_spectator] run scoreboard players reset @s leave
@@ -147,3 +145,4 @@ function elements:custom-items/cooldown
 #save
 #playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 #playsound ui.button.click master @s ~ ~ ~ 1
+#playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 100 0.9

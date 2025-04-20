@@ -96,6 +96,7 @@
     clock: Rolex Unique Item
     pointed_dripstone: Digda Splitter Unique Item
     oak_fence_gate: Settings Enderchest
+    amethyst_block: Casino Double or Nothing
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -202,6 +203,7 @@
 100:
     stick: Admin Wand (für Abgaben)
 
+copper_ingot: 100-113, 20-24
 
 #Color Orange: ff8800
 {"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}

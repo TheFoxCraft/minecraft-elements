@@ -24,4 +24,5 @@ $execute if score @s elements_farm-slots_stage-3_correct_UUID matches 0 as @a[nb
 
 $scoreboard players set @a[nbt={UUID:$(UUID)}] elements_farm-slots_stage-3_broken 0
 
+execute if score @s elements_farm-slots_stage-3_correct_UUID matches 0 run tag @s remove elements_farm-slot_stage-3
 execute if score @s elements_farm-slots_stage-3_correct_UUID matches 0 run kill @s

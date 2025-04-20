@@ -254,7 +254,7 @@
         {
           "type": "loot_table",
           "value":"elements:items/other/element_shard",
-          "weight": 10,
+          "weight": 12,
           "conditions": [
             {
               "condition": "any_of",

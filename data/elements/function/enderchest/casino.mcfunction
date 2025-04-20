@@ -34,6 +34,15 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard p
 kill @e[type=item,nbt={Item:{id:"minecraft:music_disc_stal",count:1,components:{"minecraft:custom_model_data":1}}}]
 execute as @s[scores={elements_enderchest_level_casino=1,elements_enderchest_interface_number=5,elements_casino_interface=1,elements_casino_game=0}] run item replace entity @s enderchest.7 with music_disc_stal[custom_name='{"color":"gold","text":"Glücksrad","italic": false}',lore=['{"color":"gray","text":"Das Glücksrad ist Oval, der Hauptgewinn dreht sich ","italic": false}','{"color":"gray","text":"an den äußeren Slots im Kreis, klicke, um das","italic": false}','{"color":"gray","text":"Glücksrad langsam zu stoppen.","italic": false}','{"color":"gray","text":"Bleibt der Hauptgewinn in der Mitte stehen, gewinnst du.","italic": false}','{"color":"gray","text":"Gewinn: 10x Einsatz","italic": false}'],hide_additional_tooltip={},custom_model_data=1,jukebox_playable={song:"minecraft:pigstep",show_in_tooltip:false}] 1
 
+execute as @s[scores={elements_enderchest_level_casino=1,elements_enderchest_interface_number=5,elements_casino_interface=1}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:amethyst_block[custom_model_data=2]
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1..}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game 3
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+kill @e[type=item,nbt={Item:{id:"minecraft:amethyst_block",count:1,components:{"minecraft:custom_model_data":2}}}]
+execute as @s[scores={elements_enderchest_level_casino=1,elements_enderchest_interface_number=5,elements_casino_interface=1,elements_casino_game=0}] run item replace entity @s enderchest.5 with amethyst_block[custom_name='{"color":"gold","text":"Double or Nothing","italic": false}',lore=['{"color":"gray","text":"Verdopple deinen Einsatz mehrmals","italic": false}','{"color":"gray","text":"oder verliere alles!","italic": false}','""','{"color":"gray","text":"Info: Wähle einen Einsatz, mit diesem","italic": false}','{"color":"gray","text":"kannst du dann so oft Spielen wie du willst.","italic": false}','{"color":"gray","text":"Gewinn: Abhängig vor Dir","italic": false}'],hide_additional_tooltip={},custom_model_data=2] 1
+
+
 
 
 # 1= jedes mal neu
@@ -49,9 +58,19 @@ execute as @s[scores={elements_casino_game=1..,elements_mainlevel=0}] run scoreb
 #execute as @s[scores={elements_casino_interface_load=1..}] run function elements:enderchest/casino/interface-load
 
 
+#games
+function elements:enderchest/casino/horse/horse
+function elements:enderchest/casino/luckywheel/luckywheel
+execute if score @s elements_casino_interface matches 9 run function elements:enderchest/casino/double-or-nothing/main
 
 
-
+#interfaces:
+# 1: main
+# 2: Price Select
+# 3,4,6: Pferderennen
+# 5: ??
+# 7-8: Luckywheel
+# 9: Double or Nothing
 
 ## einsatz festlegen
 
@@ -77,81 +96,81 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard p
 
 execute as @s[scores={elements_casino_interface=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:diamond[custom_model_data=10]
 execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_einsatz 1
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add @s elements_casino_stats_lvlinvestiert 1
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 1
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run xp add @s -1 levels
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add @s elements_casino_stats_lvlinvestiert 1
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add .server elements_casino_stats_lvlinvestiert 1
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run xp add @s -1 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/casino/einsatz-addition
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 
 execute as @s[scores={elements_casino_interface=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:diamond[custom_model_data=11]
 execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_einsatz 5
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add @s elements_casino_stats_lvlinvestiert 5
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 5
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run xp add @s -5 levels
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add @s elements_casino_stats_lvlinvestiert 5
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add .server elements_casino_stats_lvlinvestiert 5
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run xp add @s -5 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/casino/einsatz-addition
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 
 execute as @s[scores={elements_casino_interface=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:diamond[custom_model_data=12]
 execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_einsatz 10
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add @s elements_casino_stats_lvlinvestiert 10
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 10
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run xp add @s -10 levels
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add @s elements_casino_stats_lvlinvestiert 10
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add .server elements_casino_stats_lvlinvestiert 10
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run xp add @s -10 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/casino/einsatz-addition
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 
 execute as @s[scores={elements_casino_interface=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:diamond[custom_model_data=13]
 execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_einsatz 50
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add @s elements_casino_stats_lvlinvestiert 50
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 50
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run xp add @s -50 levels
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add @s elements_casino_stats_lvlinvestiert 50
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add .server elements_casino_stats_lvlinvestiert 50
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run xp add @s -50 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/casino/einsatz-addition
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 
 execute as @s[scores={elements_casino_interface=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:diamond[custom_model_data=14]
 execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_einsatz 100
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add @s elements_casino_stats_lvlinvestiert 100
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 100
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run xp add @s -100 levels
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add @s elements_casino_stats_lvlinvestiert 100
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add .server elements_casino_stats_lvlinvestiert 100
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run xp add @s -100 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/casino/einsatz-addition
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 
 execute as @s[scores={elements_casino_interface=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:diamond[custom_model_data=15]
 execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_einsatz 500
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add @s elements_casino_stats_lvlinvestiert 500
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 500
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run xp add @s -500 levels
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add @s elements_casino_stats_lvlinvestiert 500
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add .server elements_casino_stats_lvlinvestiert 500
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run xp add @s -500 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/casino/einsatz-addition
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 
 execute as @s[scores={elements_casino_interface=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:diamond[custom_model_data=16]
 execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_einsatz 1000
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add @s elements_casino_stats_lvlinvestiert 1000
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 1000
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run xp add @s -1000 levels
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add @s elements_casino_stats_lvlinvestiert 1000
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add .server elements_casino_stats_lvlinvestiert 1000
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run xp add @s -1000 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/casino/einsatz-addition
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 
 execute as @s[scores={elements_casino_interface=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:diamond[custom_model_data=17]
 execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_einsatz 5000
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add @s elements_casino_stats_lvlinvestiert 5000
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 5000
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run xp add @s -5000 levels
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add @s elements_casino_stats_lvlinvestiert 5000
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add .server elements_casino_stats_lvlinvestiert 5000
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run xp add @s -5000 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/casino/einsatz-addition
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 
 execute as @s[scores={elements_casino_interface=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:diamond[custom_model_data=18]
 execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game_einsatz 10000
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add @s elements_casino_stats_lvlinvestiert 10000
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_casino_stats_lvlinvestiert 10000
-execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] run xp add @s -10000 levels
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add @s elements_casino_stats_lvlinvestiert 10000
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run scoreboard players add .server elements_casino_stats_lvlinvestiert 10000
+execute as @s[scores={elements_casino_interface=2,elements_enderchest_interface_clicked=1}] unless score @s elements_casino_game matches 3 run xp add @s -10000 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/casino/einsatz-addition
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
