@@ -53,6 +53,8 @@ execute as @s run scoreboard players set .server elements_recycler_stats_2 0
 execute as @s run scoreboard players set .server elements_recycler_stats_2_spawn 0
 execute as @s run scoreboard players set .server elements_recycler_stats_3 0
 execute as @s run scoreboard players set .server elements_recycler_stats_3_spawn 0
+execute as @s run scoreboard players set .server elements_recycler_stats_4 0
+execute as @s run scoreboard players set .server elements_recycler_stats_4_spawn 0
 execute as @s run scoreboard players set .server elements_abgabe_general_abgabe-mode 2
 execute as @s run scoreboard players set .server elements_spawn_shop_leer_timer_tick 0
 execute as @s run scoreboard players set .server elements_spawn_shop_leer_timer-2_tick 0
@@ -90,6 +92,7 @@ execute as @s run scoreboard players set .server elements_enderchest_handelsplat
 execute as @s run scoreboard players set .server elements_enderchest_handelsplatz_stats_tokens_earned 0
 execute as @s run scoreboard players set .server elements_enderchest_handelsplatz_stats_tokens_spend_for_fine 0
 #uniques
+execute as @s run scoreboard players set .server elements_uniqueitem_collections_rute_der_zuechtigung 0
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_bruchstueck_der_eismauer 0
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_auf_log 0
 execute as @s run scoreboard players set .server elements_uniqueitem_collections_bug_abuser 0
@@ -113,7 +116,7 @@ execute as @s run scoreboard players set .server elements_uniqueitem_shop_mosh_p
 
 
 #add with every update
-execute as @s run scoreboard players set .server elements_update_sequence_status 8
+execute as @s run scoreboard players set .server elements_update_sequence_status 9
 
 execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
 

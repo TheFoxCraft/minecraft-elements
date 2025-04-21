@@ -7,7 +7,7 @@ execute as @s[scores={elements_casino_interface=3}] run item replace entity @s e
 clear @s minecraft:oak_hanging_sign[custom_model_data=3]
 kill @e[type=item,nbt={Item:{id:"minecraft:oak_hanging_sign",count:1,components:{"minecraft:custom_model_data":3}}}]
 
-execute as @s[scores={elements_casino_game_horse_load=1}] store result score @s elements_casino_game_horse_names run random value 1..25
+execute as @s[scores={elements_casino_game_horse_load=1}] store result score @s elements_casino_game_horse_names run random value 1..26
 
 
 execute as @s[scores={elements_casino_game_horse_load=1}] run scoreboard players set @s elements_casino_game_horse_pos_1 12
@@ -201,28 +201,4 @@ execute as @s[scores={elements_casino_interface=6}] run item replace entity @s e
 
 # Names
 
-# Holly, Polly, Trolly
-# Tick, Trick, Track
-# Fix, und, Foxi
-# Einstein, Newton, Tesla
-# Gudrun, Bernhard, Franz
-# Asterix, Obelix, Idefix
-# Tom, Jerry, Spike
-# Maja, Willi, Flip
-# Spongebob, Patrick, Thaddäus
-# Harry, Ron, Hermine
-# Alvin, Simon, Theodore
-# Simba, Timon, Pumbaa
-# Nemo, Dory, Marlin
-# Peppa, George, Schorsch
-# Wickie, Halvar, Snorre
-# Kleiner Donner, Schneller Blitz, Großer Grauer
-# Pettersson, Findus, Gustavsson
-# Schere, Stein, Papier
-# Bach, Beethoven, Mozart
-# Steve Jobs, Bill Gates, Elon Musk
-# Merkel, Söder, Scholz
-# Thejocraft, BastiGHG, Sparkofphoenix
-# Faister, Nooreax, LetsHugo
-# Castcrafter, TheFabo, VeniCraft
-# Trymacs, Rumathra, Rewinside
+# in horse-load (add random value)

@@ -36,6 +36,7 @@ scoreboard players set @s elements_casino_game_horse_timer 0
 scoreboard players set @s elements_casino_game 0
 scoreboard players set @s elements_casino_config_einsatz 1
 scoreboard players set @s elements_casino_stats_game_luckywheel 0
+scoreboard players set @s elements_casino_stats_game_double-or-nothing 0
 scoreboard players set @s elements_casino_interface 1
 scoreboard players set @s elements_collections_stone_collect 0
 scoreboard players set @s elements_collections_stats_stone_total 0
@@ -43,6 +44,9 @@ scoreboard players set @s elements_collections_wood_collect 0
 scoreboard players set @s elements_collections_stats_wood_total 0
 scoreboard players set @s elements_collections_crimson_vines_collect 0
 scoreboard players set @s elements_collections_stats_crimson_vines_total 0
+scoreboard players set @s elements_collections_sweet_berries_collect 0
+scoreboard players set @s elements_collections_stats_sweet_berries_total 0
+scoreboard players set @s elements_collections_fish_collect 0
 #uniques
 scoreboard players set @s elements_uniqueitem_collections_bruchstueck_der_eismauer 0
 scoreboard players set @s elements_uniqueitem_collections_auf_log 0
@@ -172,6 +176,9 @@ scoreboard players set @s elements_enderchest_handelsplatz_stats_offers_sold 0
 scoreboard players set @s elements_enderchest_handelsplatz_stats_tokens_spend 0
 scoreboard players set @s elements_enderchest_handelsplatz_stats_tokens_earned 0
 scoreboard players set @s elements_enderchest_handelsplatz_stats_tokens_spend_for_fine 0
+scoreboard players set @s elements_villager_stage-4_farm-slots_level 0
+scoreboard players set @s elements_villager_stage-4_mana_level 0
+scoreboard players set @s elements_mana_item_schrumpfstab_stufe 1
 
 scoreboard players operation @s elements_update_sequence_status = .server elements_update_sequence_status
 

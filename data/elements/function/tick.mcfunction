@@ -24,7 +24,7 @@ execute if score .server elements_function_timer_1s matches 20.. run scoreboard 
 # Farmslots
 function elements:farm_slots/stage_2/calc_main
 function elements:farm_slots/stage_3/calc_main
-#function elements:farm_slots/stage_4/main
+function elements:farm_slots/stage_4/calc_main
 
 
 
@@ -43,6 +43,9 @@ execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-2_mana,dis
 execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-2_farm-slots,distance=..10] run function elements:villager/stage-2_farm-slots
 execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-3_mana,distance=..10] run function elements:villager/stage-3_mana
 execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-3_farm-slots,distance=..10] run function elements:villager/stage-3_farm-slots
+execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-4_mana,distance=..10] run function elements:villager/stage-4_mana
+execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-4_farm-slots,distance=..10] run function elements:villager/stage-4_farm-slots
+
 
 function elements:sonstiges-always/autocompactor
 function elements:spawn/abgaben/main

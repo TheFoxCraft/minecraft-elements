@@ -7,6 +7,10 @@ scoreboard players operation @s elements_casino_stats_lvlgewonnen += @s elements
 scoreboard players operation @s elements_casino_stats_lvlumsatz += @s elements_casino_game_double-or-nothing_balance
 scoreboard players operation .server elements_casino_stats_lvlgewonnen += @s elements_casino_game_double-or-nothing_balance
 scoreboard players operation .server elements_casino_stats_lvlumsatz += @s elements_casino_game_double-or-nothing_balance
+scoreboard players operation @s elements_casino_stats_lvlgewonnen -= @s elements_casino_game_einsatz
+scoreboard players operation @s elements_casino_stats_lvlumsatz -= @s elements_casino_game_einsatz
+scoreboard players operation .server elements_casino_stats_lvlgewonnen -= @s elements_casino_game_einsatz
+scoreboard players operation .server elements_casino_stats_lvlumsatz -= @s elements_casino_game_einsatz
 
 scoreboard players operation @s elements_casino_game_double-or-nothing_balance = @s elements_casino_game_einsatz
 scoreboard players set @s elements_casino_game_double-or-nothing_stage 1

@@ -13,6 +13,8 @@ $scoreboard players set @a[nbt={UUID:$(UUID)}] elements_sonstiges_actionbar_paus
 $execute as @a[nbt={UUID:$(UUID)}] store result score @s elements_miningxp_fishing_loot run random value 1..100
 $execute as @a[nbt={UUID:$(UUID)}] if score @s elements_miningxp_fishing_level >= @s elements_miningxp_fishing_loot at @s run loot spawn ~ ~ ~ fish gameplay/fishing/treasure ~ ~ ~ mainhand
 
+$execute as @a[nbt={UUID:$(UUID)}] if entity @s[nbt={Inventory:[{id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":10}}]}] run loot spawn ~ ~ ~ fish gameplay/fishing/treasure ~ ~ ~ mainhand
+
 
 $execute as @a[nbt={UUID:$(UUID)}] run xp add @s 3 levels
 $execute as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] run xp add @s 2 levels

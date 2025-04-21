@@ -6,18 +6,17 @@ execute if score .server elements_recycler_update matches 1 run function element
 #abgabe
 execute as @e[type=minecraft:interaction,tag=recycler_abgabe] at @s on target run tag @s add recycler_abgabe
 
-# stage 1
+# fish
 execute as @a[tag=recycler_abgabe,scores={elements_inv_fishing_token=64..},nbt={SelectedItem:{id:"minecraft:pufferfish",components:{"minecraft:custom_model_data":1}}}] run function elements:spawn/recycler/abgabe_fishing_token
-
-
 # stage 1
 execute as @a[tag=recycler_abgabe,scores={elements_inv_compressed_cobblestone=64..},nbt={SelectedItem:{id:"minecraft:cobbled_deepslate",components:{"minecraft:custom_model_data":1}}}] run function elements:spawn/recycler/abgabe_stage_1
-
 # stage 2
 execute as @a[tag=recycler_abgabe,scores={elements_inv_compressed_wood=64..},nbt={SelectedItem:{id:"minecraft:oak_wood",components:{"minecraft:custom_model_data":1}}}] run function elements:spawn/recycler/abgabe_stage_2
-
 # stage 3
 execute as @a[tag=recycler_abgabe,scores={elements_inv_compressed_crimson_vines=64..},nbt={SelectedItem:{id:"minecraft:nether_wart_block",components:{"minecraft:custom_model_data":1}}}] run function elements:spawn/recycler/abgabe_stage_3
+# stage 4
+execute as @a[tag=recycler_abgabe,scores={elements_inv_compressed_sweet_berries=64..},nbt={SelectedItem:{id:"minecraft:red_glazed_terracotta",components:{"minecraft:custom_model_data":1}}}] run function elements:spawn/recycler/abgabe_stage_4
+
 
 #other
 execute as @e[type=minecraft:interaction] at @s if entity @a[tag=recycler_abgabe] run data remove entity @s interaction
@@ -35,3 +34,5 @@ tag @a remove recycler_abgabe
 execute if score .server elements_stage matches 2.. if score .server elements_recycler_stats_2_spawn matches 0 if score .server elements_abgabe_other_recycler matches 2 run function elements:spawn/recycler/spawning_stage_2
 #stage 3
 execute if score .server elements_stage matches 3.. if score .server elements_recycler_stats_3_spawn matches 0 if score .server elements_abgabe_other_recycler matches 2 run function elements:spawn/recycler/spawning_stage_3
+#stage 3
+execute if score .server elements_stage matches 4.. if score .server elements_recycler_stats_4_spawn matches 0 if score .server elements_abgabe_other_recycler matches 2 run function elements:spawn/recycler/spawning_stage_4

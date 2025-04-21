@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.8.3.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.9.0.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -100,6 +100,18 @@ execute in elements:stage-3_bossroom run gamerule doPatrolSpawning false
 execute in elements:stage-3_bossroom run gamerule disableRaids true
 execute in elements:stage-3_bossroom run gamerule sendCommandFeedback false
 
+execute in elements:stage-4_bossroom run gamerule keepInventory true
+execute in elements:stage-4_bossroom run gamerule lavaSourceConversion true
+execute in elements:stage-4_bossroom run gamerule spawnRadius 0
+execute in elements:stage-4_bossroom run gamerule universalAnger true
+execute in elements:stage-4_bossroom run gamerule doFireTick false
+execute in elements:stage-4_bossroom run difficulty hard
+execute in elements:stage-4_bossroom run forceload add 0 0 -1 -1
+execute in elements:stage-4_bossroom run gamerule doTraderSpawning false
+execute in elements:stage-4_bossroom run gamerule doPatrolSpawning false
+execute in elements:stage-4_bossroom run gamerule disableRaids true
+execute in elements:stage-4_bossroom run gamerule sendCommandFeedback false
+
 
 team add elements_ocean {"text": "[OCEAN] ","color": "dark_blue"}
 team add elements_stone {"text": "[STONE] ","color": "gray"}
@@ -183,7 +195,9 @@ scoreboard objectives add elements_clementius_clicked dummy
 scoreboard objectives add elements_inv_compressed_cobblestone dummy
 scoreboard objectives add elements_inv_compressed_wood dummy
 scoreboard objectives add elements_inv_compressed_crimson_vines dummy
+scoreboard objectives add elements_inv_compressed_sweet_berries dummy
 scoreboard objectives add elements_inv_crimson_vines dummy
+scoreboard objectives add elements_inv_sweet_berries dummy
 scoreboard objectives add elements_enderchest_interface_number dummy
 scoreboard objectives add elements_autocompactor dummy
 scoreboard objectives add elements_inv_stone dummy
@@ -375,6 +389,8 @@ scoreboard objectives add elements_aa_secret_15 dummy
 #collections
 scoreboard objectives add elements_enderchest_level_collections dummy
 scoreboard objectives add elements_collections_interface dummy
+# fish
+scoreboard objectives add elements_collections_fish_collect dummy
 # stage 1
 scoreboard objectives add elements_collections_stone_collect dummy
 scoreboard objectives add elements_collections_stats_stone_total dummy
@@ -389,6 +405,9 @@ scoreboard objectives add elements_collections_crimson_vines_collect dummy
 scoreboard objectives add elements_collections_stats_crimson_vines_total dummy
 scoreboard objectives add elements_collections_calc_crimson_vines minecraft.mined:weeping_vines
 scoreboard objectives add elements_collections_calc_crimson_vines_plant minecraft.mined:weeping_vines_plant
+# stage 4
+scoreboard objectives add elements_collections_sweet_berries_collect dummy
+scoreboard objectives add elements_collections_stats_sweet_berries_total dummy
 
 scoreboard objectives add elements_custom-items_fishing_rod_crafting_sticks_cooldown dummy
 
@@ -399,6 +418,7 @@ scoreboard objectives add elements_used_inv_slots dummy
 
 ## UNIQUES
 #collections
+scoreboard objectives add elements_uniqueitem_collections_rute_der_zuechtigung dummy
 scoreboard objectives add elements_uniqueitem_collections_bruchstueck_der_eismauer dummy
 scoreboard objectives add elements_uniqueitem_collections_auf_log dummy
 scoreboard objectives add elements_uniqueitem_collections_bug_abuser dummy
@@ -687,6 +707,10 @@ scoreboard objectives add elements_villager_stage-3_mana_clicked dummy
 scoreboard objectives add elements_villager_stage-3_mana_level dummy
 scoreboard objectives add elements_villager_stage-3_farm-slots_clicked dummy
 scoreboard objectives add elements_villager_stage-3_farm-slots_level dummy
+scoreboard objectives add elements_villager_stage-4_mana_clicked dummy
+scoreboard objectives add elements_villager_stage-4_mana_level dummy
+scoreboard objectives add elements_villager_stage-4_farm-slots_clicked dummy
+scoreboard objectives add elements_villager_stage-4_farm-slots_level dummy
 scoreboard objectives add elements_stage-2_mana_activate_timer_tick dummy
 scoreboard objectives add elements_stage-2_mana_activate_timer_sec dummy
 scoreboard objectives add elements_mana_mana-count dummy
@@ -695,6 +719,7 @@ scoreboard objectives add elements_mana_regeneration_timer dummy
 scoreboard objectives add elements_mana_regeneration-per-sec dummy
 scoreboard objectives add elements_mana_item_messstab_cooldown dummy
 scoreboard objectives add elements_mana_item_magische-schale_cooldown dummy
+scoreboard objectives add elements_mana_item_schrumpfstab_stufe dummy
 scoreboard objectives add elements_recycler_update dummy
 scoreboard objectives add elements_recycler_stats_fish dummy
 scoreboard objectives add elements_recycler_stats_1 dummy
@@ -702,6 +727,8 @@ scoreboard objectives add elements_recycler_stats_2 dummy
 scoreboard objectives add elements_recycler_stats_2_spawn dummy
 scoreboard objectives add elements_recycler_stats_3 dummy
 scoreboard objectives add elements_recycler_stats_3_spawn dummy
+scoreboard objectives add elements_recycler_stats_4 dummy
+scoreboard objectives add elements_recycler_stats_4_spawn dummy
 scoreboard objectives add elements_function_timer_1m dummy
 scoreboard objectives add elements_function_timer_10s dummy
 scoreboard objectives add elements_function_timer_5s dummy

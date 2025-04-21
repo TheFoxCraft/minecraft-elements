@@ -97,6 +97,7 @@
     pointed_dripstone: Digda Splitter Unique Item
     oak_fence_gate: Settings Enderchest
     amethyst_block: Casino Double or Nothing
+    sweet_berries: Autocompact Trigger GUI
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -117,6 +118,7 @@
     flow_banner_pattern: Endechest Admin Settings Tipps Stage 3 #3
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod String Solution
     paper: Illegale Lizenz Stage 3
+    stick: Schrumpfstab
 4:
     netherite_pickaxe: Element Pickaxe | Legendary
     netherite_axe: Element Axe | Legendary
@@ -160,9 +162,12 @@
     clock: Admin-Config | Double-Level Timer Action
     lectern: Admin-Config | Double-Level Timer Action
     potion: Water-Breathing-Potion | Ocean Shop Buying
+    fishing_rod: Unique: Rute der Züchtigung
     spruce_log: Collections Interface
     stone: Admin Settings Tipps Stage 1 Mainmenu
     weeping_vines: Collections Interface
+    sweet_berries: Collections Interface
+    cod: Collections Interface
 11:
     clock: Admin-Config | Double-Level Timer Action
     potion: Manatrank | Sky Shop
@@ -171,6 +176,8 @@
     oak_hanging_sign: Collections Interface
     spruce_log: Collections Interface
     weeping_vines: Collections Interface
+    sweet_berries: Collections Interface
+    cod: Collections Interface
 12:
     clock: Admin-Config | Double-Level Timer Action
     potion: Manatrank | Sky Shop Buying

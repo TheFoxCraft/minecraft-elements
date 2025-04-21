@@ -98,6 +98,11 @@ $execute as @a[scores={elements_casino_game_horse_load=1,elements_casino_game_ho
 $execute as @a[scores={elements_casino_game_horse_load=1,elements_casino_game_horse_names=25}] run data modify storage elements_casino_horse_$(ID) Name2 set value Rumathra
 $execute as @a[scores={elements_casino_game_horse_load=1,elements_casino_game_horse_names=25}] run data modify storage elements_casino_horse_$(ID) Name3 set value Rewinside
 
+$execute as @a[scores={elements_casino_game_horse_load=1,elements_casino_game_horse_names=26}] run data modify storage elements_casino_horse_$(ID) Name1 set value "Tung Tung Tung Sahur"
+$execute as @a[scores={elements_casino_game_horse_load=1,elements_casino_game_horse_names=26}] run data modify storage elements_casino_horse_$(ID) Name2 set value "Bombardino Crocodilo"
+$execute as @a[scores={elements_casino_game_horse_load=1,elements_casino_game_horse_names=26}] run data modify storage elements_casino_horse_$(ID) Name3 set value "Brr Brr Patapim"
+
+
 $execute as @a[scores={elements_casino_game_horse_load=1}] store result storage elements_casino_horse_$(ID) Einsatz int 1 run scoreboard players get @s elements_casino_game_einsatz
 $execute as @a[scores={elements_casino_game_horse_load=1}] store result storage elements_casino_horse_$(ID) Guess int 1 run scoreboard players get @s elements_casino_game_horse_horse
 execute as @a[scores={elements_casino_game_horse_load=1}] run scoreboard players set @s elements_casino_game_show_price 3
@@ -146,3 +151,4 @@ $execute as @a[scores={elements_casino_interface=4,elements_casino_game_horse_mo
 #23 Faister, Nooreax, LetsHugo
 #24 Castcrafter, TheFabo, VeniCraft
 #25 Trymacs, Rumathra, Rewinside
+#26 Tung tung thung sahur, Bombardino crocodilo, brr brr patapim

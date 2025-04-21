@@ -1,4 +1,4 @@
-execute as @e[tag=follow] at @s run rotate @s facing entity @p
+execute as @e[tag=follow] at @s run rotate @s facing entity @p feet
 scoreboard players enable @a z_just-ignore
 tellraw @a[scores={z_just-ignore=1}] {"text": "Ich hab doch gesagt IGNORIEREN!","color": "red"}
 title @a[scores={z_just-ignore=1}] title {"text": "Ich hab doch gesagt IGNORIEREN","color": "red"} 
@@ -61,6 +61,8 @@ execute as @a store result score @s elements_inv_infinity_book run clear @s ench
 execute as @a store result score @s elements_inv_fish run clear @s #fishes 0
 execute as @a store result score @s elements_inv_stone_stage_1 run clear @s #elements:stage_1_stone 0
 execute as @a store result score @s elements_inv_fishing_token run clear @s pufferfish[custom_model_data=1] 0
+execute as @a store result score @s elements_inv_compressed_sweet_berries run clear @s red_glazed_terracotta[custom_model_data=1] 0
+execute as @a store result score @s elements_inv_sweet_berries run clear @s sweet_berries 0
 
 execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_model_data":1}}}] at @s run function elements:custom-items/shop/sky/sauger/show_size
 

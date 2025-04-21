@@ -1,0 +1,19 @@
+{
+  "type": "elements:stage-4_bossroom",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:the_void",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "block": "minecraft:air",
+          "height": 1
+        }
+        
+      ],
+      "structure_overrides": []
+    }
+  }
+}

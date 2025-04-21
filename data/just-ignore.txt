@@ -7,9 +7,14 @@ Stage-2_Mana: 400-499
 Customs: 500-599
     500: Get Broken Farm-Slots Stage 2
     501: Get Broken Farm-Slots Stage 3
+    502: Get Broken Farm-Slots Stage 4
 
 Stage-2_Farm-Slots: 600-699
 
 Stage-3_Farm-Slots: 700-799
 
 Stage-3_Mana: 800-899
+
+Stage-4_Farm-Slots: 900-999
+
+Stage-4_Mana: 1000-1099
