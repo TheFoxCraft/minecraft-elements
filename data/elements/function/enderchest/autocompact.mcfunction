@@ -33,8 +33,16 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playso
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_autocompactor 4
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
+execute as @s[scores={elements_enderchest_level_autocompact=1..,elements_enderchest_interface_number=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:composter[custom_model_data=2]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add @s elements_autorecycler 1
+execute as @s[scores={elements_enderchest_interface_clicked=1}] unless score @s elements_autorecycler matches 1..2 run scoreboard players set @s elements_autorecycler 1
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
 
+execute as @s[scores={elements_enderchest_interface_number=2}] unless score .server elements_abgabe_other_recycler matches 2 run item replace entity @s enderchest.4 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
+execute as @s[scores={elements_enderchest_level_autocompact=1..,elements_enderchest_interface_number=2}] if score .server elements_abgabe_other_recycler matches 2 unless score @s elements_autorecycler matches 1 run item replace entity @s enderchest.4 with composter[custom_name='{"color":"red","text":"Auto-Recycler","italic": false}',lore=['{"color":"green","text":"Klicke zum Aktivieren","italic": false}','""','{"text": "Recycelt autmatisch die Unten ausgewählte Ressource.","color": "gray","italic": false}','{"text": "Gibt allerdings keine Token","color": "gray","italic": false}'],custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_level_autocompact=1..,elements_enderchest_interface_number=2}] if score .server elements_abgabe_other_recycler matches 2 if score @s elements_autorecycler matches 1 run item replace entity @s enderchest.4 with composter[custom_name='{"color":"green","text":"Auto-Recycler","italic": false}',lore=['{"color":"red","text":"Klicke zum Deaktivieren","italic": false}','""','{"text": "Recycelt autmatisch die Unten ausgewählte Ressource.","color": "gray","italic": false}','{"text": "Gibt allerdings keine Token","color": "gray","italic": false}'],custom_model_data=2,enchantment_glint_override=true] 1
 
 
 kill @e[type=item,nbt={Item:{id:"minecraft:stone",count:1,components:{"minecraft:custom_model_data":1}}}]
@@ -64,7 +72,6 @@ execute as @s[scores={elements_enderchest_interface_number=2}] run item replace 
 execute as @s[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.1 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 execute as @s[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.2 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 execute as @s[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.3 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
-execute as @s[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.4 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 execute as @s[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.5 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 execute as @s[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.6 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1
 execute as @s[scores={elements_enderchest_interface_number=2}] run item replace entity @s enderchest.7 with black_stained_glass_pane[custom_name='{"translate":"elements.main.other.space"}',custom_model_data=1,hide_tooltip={}] 1

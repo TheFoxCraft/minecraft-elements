@@ -1,3 +1,3 @@
-execute store result score @s elements_tokens_random run random value 1..3
+execute store result score @s elements_tokens_random run random value 1..2
 execute if score @s elements_tokens_random matches 1 run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.chat.tokens.get_for_abgabe.message_1"},{"translate": "elements.main.tokens.name","color": "gold","with": ["20"]},{"translate": "elements.chat.tokens.get_for_abgabe.message_2"}]
 execute if score @s elements_tokens_random matches 1 run scoreboard players add @s elements_tokens_count 20

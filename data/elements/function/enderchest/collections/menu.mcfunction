@@ -70,14 +70,6 @@ execute as @s[scores={elements_enderchest_interface_number=6,elements_collection
 execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] run item replace entity @s enderchest.16 with air
 execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] run item replace entity @s enderchest.17 with air
 
-#fish
-execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] store success score @s elements_enderchest_interface_clicked run clear @s cod[custom_model_data=10]
-execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_collections_interface 5
-execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
-execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] if score .server elements_stage matches 3.. run item replace entity @s enderchest.9 with cod[custom_name='{"color":"gold","italic":false,"text":"Angeln"}',custom_model_data=10,hide_additional_tooltip={},food={nutrition:0,saturation:0}] 1
-
 
 #stage 1
 execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] store success score @s elements_enderchest_interface_clicked run clear @s cobblestone[custom_model_data=10]
@@ -103,13 +95,21 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] run function ele
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] if score .server elements_stage matches 3.. run item replace entity @s enderchest.12 with weeping_vines[custom_name='{"color":"gold","italic":false,"text":"Crimson Vines"}',custom_model_data=10] 1
 
+#fish
+execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] store success score @s elements_enderchest_interface_clicked run clear @s cod[custom_model_data=10]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_collections_interface 5
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] if score .server elements_stage matches 3.. run item replace entity @s enderchest.9 with cod[custom_name='{"color":"gold","italic":false,"text":"Angeln"}',custom_model_data=10,hide_additional_tooltip={},food={nutrition:0,saturation:0}] 1
+
 #stage 4
-#execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] store success score @s elements_enderchest_interface_clicked run clear @s sweet_berries[custom_model_data=10]
-#execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-#execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_collections_interface 6
-#execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
-#execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-#execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] if score .server elements_stage matches 4.. run item replace entity @s enderchest.13 with sweet_berries[custom_name='{"color":"gold","italic":false,"text":"Sweet Berries"}',custom_model_data=10] 1
+execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] store success score @s elements_enderchest_interface_clicked run clear @s sweet_berries[custom_model_data=10]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_collections_interface 6
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] if score .server elements_stage matches 4.. run item replace entity @s enderchest.13 with sweet_berries[custom_name='{"color":"gold","italic":false,"text":"Sweet Berries"}',custom_model_data=10,hide_additional_tooltip={},food={nutrition:0,saturation:0}] 1
 
 
 
@@ -119,4 +119,4 @@ execute as @s[scores={elements_collections_interface=2}] run function elements:e
 execute as @s[scores={elements_collections_interface=3}] run function elements:enderchest/collections/wood
 execute as @s[scores={elements_collections_interface=4}] run function elements:enderchest/collections/crimson_vines
 execute as @s[scores={elements_collections_interface=5}] run function elements:enderchest/collections/fish
-#execute as @s[scores={elements_collections_interface=6}] run function elements:enderchest/collections/sweet_berries
+execute as @s[scores={elements_collections_interface=6}] run function elements:enderchest/collections/sweet_berries

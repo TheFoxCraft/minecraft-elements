@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.9.0.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.9.4.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -200,6 +200,7 @@ scoreboard objectives add elements_inv_crimson_vines dummy
 scoreboard objectives add elements_inv_sweet_berries dummy
 scoreboard objectives add elements_enderchest_interface_number dummy
 scoreboard objectives add elements_autocompactor dummy
+scoreboard objectives add elements_autorecycler dummy
 scoreboard objectives add elements_inv_stone dummy
 scoreboard objectives add elements_enderchest_interface_clear dummy
 scoreboard objectives add elements_inv_sprucelog dummy
@@ -289,6 +290,7 @@ scoreboard objectives add elements_miningxp_mining_mine-get_basalt minecraft.min
 scoreboard objectives add elements_miningxp_foresting_mine-get_spruce minecraft.mined:minecraft.spruce_log
 scoreboard objectives add elements_miningxp_farming_mine-get_crimson_vines minecraft.mined:minecraft.weeping_vines
 scoreboard objectives add elements_miningxp_farming_mine-get_crimson_vines_plant minecraft.mined:minecraft.weeping_vines_plant
+scoreboard objectives add elements_miningxp_farming_mine-get_sweet_berries dummy
 
 
 scoreboard objectives add elements_miningxp_mining_xp dummy
@@ -628,6 +630,8 @@ scoreboard objectives add elements_custom-items_shop_boss-frucht_current_stage d
 scoreboard objectives add elements_custom-items_shop_leveltrank_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-1 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-2 dummy
+scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-3 dummy
+scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-4 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_enable dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_timer_h dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_timer_min dummy
@@ -817,6 +821,7 @@ scoreboard objectives add elements_farm-slots_stage-4_correct_UUID dummy
 scoreboard objectives add elements_farm-slots_stage-4_broken_slots dummy
 scoreboard objectives add elements_farm-slots_stage-4_age dummy
 scoreboard objectives add elements_farm-slots_stage-4_age_old dummy
+scoreboard objectives add elements_farm-slots_stage-4_harvest dummy
 
 
 scoreboard objectives setdisplay list elements_mainlevel
@@ -832,7 +837,7 @@ scoreboard objectives add elements_level_wood_spruce_placed minecraft.used:minec
 scoreboard objectives add elements_level_crimson_vines minecraft.mined:minecraft.weeping_vines
 scoreboard objectives add elements_level_crimson_vines_plant minecraft.mined:minecraft.weeping_vines_plant
 
-
+scoreboard objectives add elements_level_sweet_berries dummy
 
 ##set values at start
 

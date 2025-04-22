@@ -1,5 +1,23 @@
 #functions
 
+execute as @a unless score @s elements_farm-slots_stage-4_slots matches 0.. run scoreboard players set @s elements_farm-slots_stage-4_slots 0
+
+execute as @a[nbt={Inventory:[{id:"minecraft:rabbit_stew",components:{"minecraft:custom_model_data":1}}],foodLevel:0}] run function elements:custom-items/mana-items/magische-schale
+
+#autorecycler
+
+# fish
+#execute as @a[scores={elements_inv_fishing_token=64..,elements_autocompactor=1,elements_autorecycler=1}] run function elements:spawn/recycler/autorecycler_fishing_token
+# stage 1
+execute as @a[scores={elements_inv_compressed_cobblestone=64..,elements_autocompactor=1,elements_autorecycler=1}] run function elements:spawn/recycler/autorecycler_stage_1
+# stage 2
+execute as @a[scores={elements_inv_compressed_wood=64..,elements_autocompactor=2,elements_autorecycler=1}] run function elements:spawn/recycler/autorecycler_stage_2
+# stage 3
+execute as @a[scores={elements_inv_compressed_crimson_vines=64..,elements_autocompactor=3,elements_autorecycler=1}] run function elements:spawn/recycler/autorecycler_stage_3
+# stage 4
+execute as @a[scores={elements_inv_compressed_sweet_berries=64..,elements_autocompactor=4,elements_autorecycler=1}] run function elements:spawn/recycler/autorecycler_stage_4
+
+
 
 #abgaben dynamic goals
 
@@ -58,5 +76,5 @@ scoreboard players operation .server elements_abgabe_stage_3_goal *= .server ele
 scoreboard players set .server elements_abgabe_stage_4_gang_goal 2000
 scoreboard players operation .server elements_abgabe_stage_4_gang_goal *= .server elements_playercount
 
-scoreboard players set .server elements_abgabe_stage_4_goal 400
+scoreboard players set .server elements_abgabe_stage_4_goal 200
 scoreboard players operation .server elements_abgabe_stage_4_goal *= .server elements_playercount

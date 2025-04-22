@@ -1,7 +1,7 @@
 {
     "criteria": {
       "main": {
-        "trigger": "minecraft:any_block_use",
+        "trigger": "minecraft:default_block_use",
         "conditions": {
           "location": [{
             "condition": "block_state_property",
@@ -17,6 +17,6 @@
       }
     },
     "rewards": {
-        "function": "elements:test/stage_sweet_berryy"
+        "function": "elements:farm_slots/stage_4/harvest"
     }
   }

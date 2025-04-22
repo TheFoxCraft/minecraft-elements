@@ -170,12 +170,6 @@ execute as @a[scores={elements_custom_doubleclick_cooldown=1..}] run scoreboard 
 execute as @a[scores={elements_sonstiges_actionbar_pause=1..}] run scoreboard players remove @s elements_sonstiges_actionbar_pause 1
 
 
-#guardian spawning fishing
-execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] at @s if score .server elements_stage matches ..1 run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_1",Tags:["elements_guardian"],PersistenceRequired:1b}
-execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] at @s if score .server elements_stage matches 2 run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_2",Tags:["elements_guardian"],PersistenceRequired:1b}
-execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] at @s if score .server elements_stage matches 3.. run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_3",Tags:["elements_guardian"],PersistenceRequired:1b}
-execute as @e[type=item,nbt={Item:{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}}] run kill @s
-
 
 #sauger workaround
 execute as @a[scores={elements_custom-items_shop_sauger_click=1..}] run function elements:custom-items/shop/sky/sauger/trigger

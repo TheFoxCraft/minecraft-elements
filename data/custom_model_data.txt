@@ -62,6 +62,7 @@
     redstone: Jo´s Stoff Unique Item
     spawner: Mosh-Pit Unique Item
     red_glazed_terracotta: Compressed Sweet Berries
+    composter: Auto-Recycler
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -131,6 +132,7 @@
     bordure_indented_banner_pattern: Enderchest Admin Settings Tipps Stage 1 Finale Lösung
     flow_banner_pattern: Endechest Admin Settings Tipps Stage 3 Finale Lösung
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Sticks Tipp
+    paper: Illegale Lizenz Stage 4
 5:
     netherite_pickaxe: Element Pickaxe | Mythic
     netherite_axe: Element Axe | Mythic

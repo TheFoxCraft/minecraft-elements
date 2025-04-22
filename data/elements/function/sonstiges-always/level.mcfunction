@@ -37,5 +37,13 @@ execute as @a[scores={elements_level_crimson_vines_plant=1..}] run scoreboard pl
 #main
 execute as @a[scores={elements_level_crimson_vines=1..}] run function elements:sonstiges-always/level/stage_3
 #levetrank
-execute as @a[scores={elements_custom-items_shop_leveltrank_counter_stage-2=10..}] run xp add @s 2 levels
-execute as @a[scores={elements_custom-items_shop_leveltrank_counter_stage-2=10..}] run scoreboard players remove @s elements_custom-items_shop_leveltrank_counter_stage-2 10
+execute as @a[scores={elements_custom-items_shop_leveltrank_counter_stage-3=10..}] run xp add @s 2 levels
+execute as @a[scores={elements_custom-items_shop_leveltrank_counter_stage-3=10..}] run scoreboard players remove @s elements_custom-items_shop_leveltrank_counter_stage-3 10
+
+# STAGE 4
+
+#main
+execute as @a[scores={elements_level_sweet_berries=1..}] run function elements:sonstiges-always/level/stage_4
+#levetrank
+execute as @a[scores={elements_custom-items_shop_leveltrank_counter_stage-4=10..}] run xp add @s 10 levels
+execute as @a[scores={elements_custom-items_shop_leveltrank_counter_stage-4=10..}] run scoreboard players remove @s elements_custom-items_shop_leveltrank_counter_stage-4 10

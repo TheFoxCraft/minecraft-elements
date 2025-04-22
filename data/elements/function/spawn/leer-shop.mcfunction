@@ -108,8 +108,8 @@ execute if score .server elements_spawn_shop_leer_timer_min matches 0 if score .
 {rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:10},sell:{id:"minecraft:parrot_spawn_egg",count:1}},\
 {rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:3},sell:{id:"minecraft:rabbit_spawn_egg",count:1}},\
 {rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:15},sell:{id:"minecraft:polar_bear_spawn_egg",count:1}},\
-{rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:32},sell:{id:"minecraft:sniffer_spawn_egg",count:1}},\
-{rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:20},sell:{id:"minecraft:turtle_spawn_egg",count:1}},\
+{rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:32},sell:{id:"minecraft:sniffer_egg",count:1}},\
+{rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:20},sell:{id:"minecraft:turtle_egg",count:1}},\
 {rewardExp:0b,maxUses:4,buy:{id:"minecraft:emerald",count:32},sell:{id:"minecraft:allay_spawn_egg",count:1}}]}}
 
 execute if score .server elements_spawn_shop_leer_timer_min matches 0 run scoreboard players add .server elements_spawn_shop_leer_number 1

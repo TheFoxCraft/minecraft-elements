@@ -5,13 +5,25 @@ execute as @e[type=fishing_bobber,tag=!elements_has_fishing_bobber] at @s if blo
 
 execute as @e[type=marker,tag=elements_fishing_bobber] at @s run tp @s @n[type=fishing_bobber]
 
-execute as @e[type=marker,tag=elements_fishing_bobber] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:structure_void",components:{"minecraft:custom_model_data":1}}},distance=..0.2,sort=nearest,limit=1] run function elements:miningxp/get_fishing/get_fishing_id with entity @s data
-execute as @e[type=marker,tag=elements_fishing_bobber] at @s as @e[type=item,nbt={Item:{id:"minecraft:structure_void",components:{"minecraft:custom_model_data":1}}},distance=..0.2,sort=nearest,limit=1] run kill @s
+execute as @e[type=marker,tag=elements_fishing_bobber] at @s if entity @e[distance=..0.2,type=item,nbt={Item:{id:"minecraft:structure_void",components:{"minecraft:custom_model_data":1}}}] run function elements:miningxp/get_fishing/get_fishing_id with entity @s data
+execute as @e[type=marker,tag=elements_fishing_bobber] at @s as @e[distance=..0.2,type=item,nbt={Item:{id:"minecraft:structure_void",components:{"minecraft:custom_model_data":1}}}] run kill @s
+
+execute as @e[type=marker,tag=elements_fishing_bobber] at @s if entity @e[distance=..0.2,type=item,nbt={Item:{id:"minecraft:structure_void",components:{"minecraft:custom_model_data":2}}}] run function elements:miningxp/get_fishing/guardian with entity @s data
+execute as @e[type=marker,tag=elements_fishing_bobber] at @s as @e[distance=..0.2,type=item,nbt={Item:{id:"minecraft:structure_void",components:{"minecraft:custom_model_data":2}}}] run kill @s
 
 execute as @e[type=marker,tag=elements_fishing_bobber] at @s unless entity @e[type=fishing_bobber,distance=..0.5] run kill @s
 
 execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",components:{"minecraft:custom_model_data":1}}]}] run function elements:miningxp/get_fishing/get_fishing_id with entity @s
 execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",components:{"minecraft:custom_model_data":1}}]}] run clear @s minecraft:structure_void[custom_model_data=1] 1
+
+
+#guardian spawning fishing
+execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}]}] at @s if score .server elements_stage matches ..1 run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_1",Tags:["elements_guardian"],PersistenceRequired:1b,CustomName:'{"selector": "@s"}'}
+execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}]}] at @s if score .server elements_stage matches 2 run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_2",Tags:["elements_guardian"],PersistenceRequired:1b,CustomName:'{"selector": "@s"}'}
+execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}]}] at @s if score .server elements_stage matches 3 run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_3",Tags:["elements_guardian"],PersistenceRequired:1b,CustomName:'{"selector": "@s"}'}
+execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}]}] at @s if score .server elements_stage matches 4.. run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_4",Tags:["elements_guardian"],PersistenceRequired:1b,CustomName:'{"selector": "@s"}'}
+execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}]}] run clear @s structure_void[custom_model_data=2] 1
+#das ist backup für wenns nicht instant getriggert wird
 
 
 #debug

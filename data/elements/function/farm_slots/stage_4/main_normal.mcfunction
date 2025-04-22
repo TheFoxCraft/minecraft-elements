@@ -13,6 +13,7 @@ execute as @s[tag=elements_farm-slot_stage-4] at @s unless block ~ ~ ~ sweet_ber
 execute as @s[tag=elements_farm-slot_stage-4] at @s unless block ~ ~ ~ sweet_berry_bush run fill ~ ~ ~ ~ ~ ~ air destroy
 
 execute as @s[tag=elements_farm-slot_stage-4] at @s if entity @a[distance=..10] run function elements:farm_slots/stage_4/highlight_normal_block
+execute as @s[tag=elements_farm-slot_stage-4,scores={elements_farm-slots_stage-4_age=3}] at @s if entity @a[distance=..10] run function elements:farm_slots/stage_4/highlight_grown_block
 
 #growing
 execute as @s[tag=elements_farm-slot_stage-4] at @s if block ~ ~ ~ sweet_berry_bush[age=0] run scoreboard players set @s elements_farm-slots_stage-4_age 0
@@ -21,8 +22,9 @@ execute as @s[tag=elements_farm-slot_stage-4] at @s if block ~ ~ ~ sweet_berry_b
 execute as @s[tag=elements_farm-slot_stage-4] at @s if block ~ ~ ~ sweet_berry_bush[age=3] run scoreboard players set @s elements_farm-slots_stage-4_age 3
 
 #calc farming
-execute as @s[tag=elements_farm-slot_stage-4] if score @s elements_farm-slots_stage-4_age matches 1 if score @s elements_farm-slots_stage-4_age_old matches 3 run say Basst
+execute as @s[tag=elements_farm-slot_stage-4] if score @s elements_farm-slots_stage-4_age matches 1 if score @s elements_farm-slots_stage-4_age_old matches 3 at @s as @p[scores={elements_farm-slots_stage-4_harvest=1..}] run function elements:farm_slots/stage_4/successful_harvest
 execute as @s[tag=elements_farm-slot_stage-4] if score @s elements_farm-slots_stage-4_age matches 1 if score @s elements_farm-slots_stage-4_age_old matches 2 at @s run playsound minecraft:block.note_block.didgeridoo master @a[distance=..7] ~ ~ ~ 100 0
+execute as @s[tag=elements_farm-slot_stage-4] if score @s elements_farm-slots_stage-4_age matches 1 if score @s elements_farm-slots_stage-4_age_old matches 2 at @s run scoreboard players remove @p[scores={elements_farm-slots_stage-4_harvest=1..}] elements_farm-slots_stage-4_harvest 1
 execute as @s[tag=elements_farm-slot_stage-4] if score @s elements_farm-slots_stage-4_age matches 1 if score @s elements_farm-slots_stage-4_age_old matches 2 at @s run kill @n[type=item,nbt={Age:0s,Item:{id:"minecraft:sweet_berries"}}]
 
 
