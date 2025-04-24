@@ -57,6 +57,22 @@ execute if score .server elements_spawn_shop_leer_timer_min matches 0 if score .
 {rewardExp:0b,maxUses:30,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:crying_obsidian",count:8}}]}}
 execute if score .server elements_spawn_shop_leer_timer_min matches 0 if score .server elements_spawn_shop_leer_number matches 2 in elements:hub run summon villager 15.5 100.00 -9.5 {NoAI:1b,Invulnerable:1b,CanPickUpLoot:0b,Tags:["leer_shop_all","leer_shop_archaeologe","follow"],CustomName:'{"color":"gold","text":"Archäologe"}',VillagerData:{level:99,profession:"minecraft:toolsmith",type:"minecraft:savanna"},Offers:{Recipes:[\
 {rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:experience_bottle",count:32}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:red_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:green_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:blue_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:yellow_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:orange_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:purple_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:magenta_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:light_blue_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:lime_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:pink_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:cyan_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:light_gray_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:gray_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:brown_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:black_dye",count:16}},\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:white_dye",count:16}},\
 {rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:angler_pottery_sherd",count:1}},\
 {rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:archer_pottery_sherd",count:1}},\
 {rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:arms_up_pottery_sherd",count:1}},\

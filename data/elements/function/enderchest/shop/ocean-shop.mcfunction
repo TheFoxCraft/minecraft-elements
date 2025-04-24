@@ -121,7 +121,7 @@ execute as @s[scores={elements_enderchest_interface_number=9}] run item modify e
 
 
 
-execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:sweet_berries[custom_model_data=2]
+execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:carrot[custom_model_data=2]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
@@ -130,7 +130,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:sweet_berries",count:1,components:{"minecraft:custom_model_data":2}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:carrot",count:1,components:{"minecraft:custom_model_data":2}}}]
 execute as @s[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.15 loot elements:items/shops/ocean/foraging_frucht
 execute as @s[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.15 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Foragingfrucht [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 2 }]
 

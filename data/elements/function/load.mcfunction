@@ -159,6 +159,9 @@ bossbar set elements:stage-2_boss name {"text": "Plasma-Blaze","color": "white"}
 bossbar add elements:stage-3_boss "%null%"
 bossbar set elements:stage-3_boss color red
 bossbar set elements:stage-3_boss name {"text": "Böser Hoglin","color": "white"}
+bossbar add elements:stage-4_boss "%null%"
+bossbar set elements:stage-4_boss color red
+bossbar set elements:stage-4_boss name {"text": "Flinker Fuchs","color": "white"}
 
 scoreboard objectives add elements_random dummy
 scoreboard objectives add Dimension-Switch trigger
@@ -229,6 +232,7 @@ scoreboard objectives add elements_enderchest_handelsplatz_offer_number dummy
 scoreboard objectives add elements_enderchest_handelsplatz_offer_id dummy
 scoreboard objectives add elements_enderchest_handelsplatz_reload_offers dummy
 scoreboard objectives add elements_enderchest_handelsplatz_buy dummy
+scoreboard objectives add elements_enderchest_handelsplatz_buy_locked dummy
 scoreboard objectives add elements_enderchest_handelsplatz_buy_price dummy
 scoreboard objectives add elements_enderchest_handelsplatz_tokens_to_give dummy
 scoreboard objectives add elements_enderchest_handelsplatz_stats_tokens_spend dummy
@@ -279,6 +283,8 @@ scoreboard objectives add elements_stats_stage_2_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_2_boss_killed dummy
 scoreboard objectives add elements_stats_stage_3_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_3_boss_killed dummy
+scoreboard objectives add elements_stats_stage_4_boss_spawned dummy
+scoreboard objectives add elements_stats_stage_4_boss_killed dummy
 scoreboard objectives add elements_stats_stage_0_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_0_boss_killed dummy
 
@@ -424,11 +430,13 @@ scoreboard objectives add elements_uniqueitem_collections_rute_der_zuechtigung d
 scoreboard objectives add elements_uniqueitem_collections_bruchstueck_der_eismauer dummy
 scoreboard objectives add elements_uniqueitem_collections_auf_log dummy
 scoreboard objectives add elements_uniqueitem_collections_bug_abuser dummy
+scoreboard objectives add elements_uniqueitem_collections_elements_biscuit dummy
 #collection_farming
 scoreboard objectives add elements_uniqueitem_planetenkern dummy
 scoreboard objectives add elements_uniqueitem_ork_schatz dummy
 scoreboard objectives add elements_uniqueitem_fragment_der_himmelswarze dummy
 scoreboard objectives add elements_uniqueitem_wanderlachs dummy
+scoreboard objectives add elements_uniqueitem_dornenherz_der_wildnis dummy
 #other
 scoreboard objectives add elements_uniqueitem_other_datenspeicher dummy
 scoreboard objectives add elements_uniqueitem_other_rolex dummy
@@ -698,6 +706,13 @@ scoreboard objectives add elements_stage_3_boss_melee_timer dummy
 scoreboard objectives add elements_stage_3_boss_spawn-player dummy
 scoreboard objectives add elements_stage_3_boss_players_in_arena dummy
 scoreboard objectives add elements_stage_3_boss_spectator_in_arena dummy
+scoreboard objectives add elements_stage_4_portal_enable dummy
+scoreboard objectives add elements_stage_4_boss_status dummy
+scoreboard objectives add elements_stage_4_boss_loot_count dummy
+scoreboard objectives add elements_stage_4_boss_melee_timer dummy
+scoreboard objectives add elements_stage_4_boss_spawn-player dummy
+scoreboard objectives add elements_stage_4_boss_players_in_arena dummy
+scoreboard objectives add elements_stage_4_boss_spectator_in_arena dummy
 
 scoreboard objectives add elements_stage_3_portal_enable_fungus_timer dummy
 
