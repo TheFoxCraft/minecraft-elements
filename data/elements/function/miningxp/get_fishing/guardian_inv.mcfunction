@@ -1,0 +1,5 @@
+$execute at @s if score .server elements_stage matches ..1 run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_1",Tags:["elements_guardian"],PersistenceRequired:1b,CustomName:'{"selector": "$(name)"}',CustomNameVisible:true}
+$execute at @s if score .server elements_stage matches 2 run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_2",Tags:["elements_guardian"],PersistenceRequired:1b,CustomName:'{"selector": "$(name)"}',CustomNameVisible:true}
+$execute at @s if score .server elements_stage matches 3 run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_3",Tags:["elements_guardian"],PersistenceRequired:1b,CustomName:'{"selector": "$(name)"}',CustomNameVisible:true}
+$execute at @s if score .server elements_stage matches 4.. run summon guardian ~ ~ ~ {DeathLootTable:"elements:items/fishing/guardians/stage_4",Tags:["elements_guardian"],PersistenceRequired:1b,CustomName:'{"selector": "$(name)"}',CustomNameVisible:true}
+clear @s minecraft:structure_void[custom_model_data=1] 1

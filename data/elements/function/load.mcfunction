@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.9.4.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.9.6.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -473,6 +473,7 @@ scoreboard objectives add elements_enderchest_settings_return_after_close_rot_x_
 scoreboard objectives add elements_enderchest_settings_return_after_close_rot_y dummy
 scoreboard objectives add elements_enderchest_settings_return_after_close_rot_y_old dummy
 scoreboard objectives add elements_settings_credits dummy
+scoreboard objectives add elements_settings_luckydrops_sound dummy
 scoreboard objectives add elements_setup dummy
 scoreboard objectives add elements_setup_timer dummy
 scoreboard objectives add elements_setup_temp dummy
@@ -608,7 +609,8 @@ scoreboard objectives add elements_custom-items_shop_foraging-frucht_timer_sec d
 scoreboard objectives add elements_custom-items_shop_foraging-frucht_timer_tick dummy
 scoreboard objectives add elements_custom-items_shop_foraging-frucht_enable dummy
 scoreboard objectives add elements_custom-items_shop_foraging-frucht_cooldown dummy
-scoreboard objectives add elements_custom-items_shop_farming-frucht_counter dummy
+scoreboard objectives add elements_custom-items_shop_farming-frucht_counter_sweet_berries dummy
+scoreboard objectives add elements_custom-items_shop_farming-frucht_counter_crimson_vines dummy
 scoreboard objectives add elements_custom-items_shop_farming-frucht_timer_h dummy
 scoreboard objectives add elements_custom-items_shop_farming-frucht_timer_min dummy
 scoreboard objectives add elements_custom-items_shop_farming-frucht_timer_sec dummy
@@ -724,6 +726,7 @@ scoreboard objectives add elements_mana_regeneration-per-sec dummy
 scoreboard objectives add elements_mana_item_messstab_cooldown dummy
 scoreboard objectives add elements_mana_item_magische-schale_cooldown dummy
 scoreboard objectives add elements_mana_item_schrumpfstab_stufe dummy
+scoreboard objectives add elements_mana_item_schrumpfstab_hit_others_timer dummy
 scoreboard objectives add elements_recycler_update dummy
 scoreboard objectives add elements_recycler_stats_fish dummy
 scoreboard objectives add elements_recycler_stats_1 dummy

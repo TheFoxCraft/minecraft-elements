@@ -9,9 +9,6 @@ execute as @a[scores={elements_miningxp_farming_mine-get_crimson_vines=1..}] run
 execute as @a[scores={elements_miningxp_farming_mine-get_sweet_berries=1..}] run function elements:miningxp/farmingxp/sweet_berries
 
 
-execute as @a[scores={elements_custom-items_shop_farming-frucht_counter=3..}] run scoreboard players add @s elements_miningxp_farming_xp 2
-execute as @a[scores={elements_custom-items_shop_farming-frucht_counter=3..}] run scoreboard players remove @s elements_custom-items_shop_foraging-frucht_counter 3
-
 
 
 execute as @a if score @s elements_miningxp_farming_xp >= @s elements_miningxp_farming_nextlevel run function elements:miningxp/farmingxp/levelup

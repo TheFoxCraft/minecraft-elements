@@ -23,9 +23,7 @@ execute as @s[tag=elements_farm-slot_stage-4] at @s if block ~ ~ ~ sweet_berry_b
 
 #calc farming
 execute as @s[tag=elements_farm-slot_stage-4] if score @s elements_farm-slots_stage-4_age matches 1 if score @s elements_farm-slots_stage-4_age_old matches 3 at @s as @p[scores={elements_farm-slots_stage-4_harvest=1..}] run function elements:farm_slots/stage_4/successful_harvest
-execute as @s[tag=elements_farm-slot_stage-4] if score @s elements_farm-slots_stage-4_age matches 1 if score @s elements_farm-slots_stage-4_age_old matches 2 at @s run playsound minecraft:block.note_block.didgeridoo master @a[distance=..7] ~ ~ ~ 100 0
-execute as @s[tag=elements_farm-slot_stage-4] if score @s elements_farm-slots_stage-4_age matches 1 if score @s elements_farm-slots_stage-4_age_old matches 2 at @s run scoreboard players remove @p[scores={elements_farm-slots_stage-4_harvest=1..}] elements_farm-slots_stage-4_harvest 1
-execute as @s[tag=elements_farm-slot_stage-4] if score @s elements_farm-slots_stage-4_age matches 1 if score @s elements_farm-slots_stage-4_age_old matches 2 at @s run kill @n[type=item,nbt={Age:0s,Item:{id:"minecraft:sweet_berries"}}]
+execute as @s[tag=elements_farm-slot_stage-4] if score @s elements_farm-slots_stage-4_age matches 1 if score @s elements_farm-slots_stage-4_age_old matches 2 at @s run function elements:farm_slots/stage_4/wrong_harvest
 
 
 #old age

@@ -19,7 +19,10 @@
                   "minecraft:damage_resistant": {
                     "types": "#minecraft:is_fire"
                   },
-                  "minecraft:custom_model_data": 2
+                  "minecraft:custom_model_data": 2,
+                  "enchantments": {
+                    "infinity": 1
+                  }
                 }
               },
               {

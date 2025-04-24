@@ -96,7 +96,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:efficiency":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:efficiency":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -110,7 +110,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:sharpness":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:sharpness":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -124,7 +124,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:protection":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:protection":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -138,7 +138,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:mending":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:mending":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -152,7 +152,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:unbreaking":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:unbreaking":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -166,7 +166,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:silk_touch":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:silk_touch":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -180,7 +180,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:feather_falling":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:feather_falling":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -194,7 +194,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:swift_sneak":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:swift_sneak":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -208,7 +208,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:depth_strider":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:depth_strider":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -222,7 +222,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:aqua_affinity":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:aqua_affinity":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -236,7 +236,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:lure":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:lure":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -250,7 +250,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:sweeping_edge":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:sweeping_edge":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -264,7 +264,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:power":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:power":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -278,7 +278,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..1999,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=2000..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=2000..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=2000..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:infinity":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=2000..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:infinity":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=2000..,elements_enderchest_shop_sky=1}] run xp add @s -2000 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -292,7 +292,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:luck_of_the_sea":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:luck_of_the_sea":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -306,7 +306,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:loyalty":1}}] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:loyalty":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0

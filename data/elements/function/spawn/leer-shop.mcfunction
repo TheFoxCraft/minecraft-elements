@@ -56,6 +56,7 @@ execute if score .server elements_spawn_shop_leer_timer_min matches 0 if score .
 {rewardExp:0b,maxUses:30,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:obsidian",count:8}},\
 {rewardExp:0b,maxUses:30,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:crying_obsidian",count:8}}]}}
 execute if score .server elements_spawn_shop_leer_timer_min matches 0 if score .server elements_spawn_shop_leer_number matches 2 in elements:hub run summon villager 15.5 100.00 -9.5 {NoAI:1b,Invulnerable:1b,CanPickUpLoot:0b,Tags:["leer_shop_all","leer_shop_archaeologe","follow"],CustomName:'{"color":"gold","text":"Archäologe"}',VillagerData:{level:99,profession:"minecraft:toolsmith",type:"minecraft:savanna"},Offers:{Recipes:[\
+{rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:experience_bottle",count:32}},\
 {rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:angler_pottery_sherd",count:1}},\
 {rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:archer_pottery_sherd",count:1}},\
 {rewardExp:0b,maxUses:8,buy:{id:"minecraft:emerald",count:1},sell:{id:"minecraft:arms_up_pottery_sherd",count:1}},\

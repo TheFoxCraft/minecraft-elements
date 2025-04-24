@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "main": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "player": {},
+          "entity": {
+            "type": "minecraft:player"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "elements:sonstiges/utility/schrumpfstab_glowing"
+    }
+  }

@@ -63,6 +63,7 @@
     spawner: Mosh-Pit Unique Item
     red_glazed_terracotta: Compressed Sweet Berries
     composter: Auto-Recycler
+    arrow: Element Bow Arrow
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -120,6 +121,7 @@
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod String Solution
     paper: Illegale Lizenz Stage 3
     stick: Schrumpfstab
+    amethyst_block: Luckydrops Sound Settings
 4:
     netherite_pickaxe: Element Pickaxe | Legendary
     netherite_axe: Element Axe | Legendary

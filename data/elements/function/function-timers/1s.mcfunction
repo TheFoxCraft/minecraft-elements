@@ -3,6 +3,9 @@ function elements:sonstiges-always/double-xp-event
 function elements:sonstiges-always/sonstiges_1s
 function elements:stages/portals
 
+execute as @a[scores={elements_mana_item_schrumpfstab_hit_others_timer=1}] run attribute @s scale modifier remove schrumpfstab_scale
+execute as @a[scores={elements_mana_item_schrumpfstab_hit_others_timer=1..}] run scoreboard players remove @s elements_mana_item_schrumpfstab_hit_others_timer 1
+
 
 #leaderboards-spawning
 execute as @e[tag=spawner_leaderboard_id-0] at @s run function elements:spawn/leaderboards/0_server-stats/spawning

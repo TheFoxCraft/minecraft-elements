@@ -8,9 +8,10 @@ execute as @s[scores={elements_mystery_clicked=1}] store result score @s element
 execute as @s[scores={elements_mystery_clicked=1,elements_element_shards_count=64..}] run tellraw @s ["","\n",{"translate":"elements.villager.mystery.name.chat","color":"yellow"},{"text": "Ich sehe du hast eine Menge "},{"text": "Element Shards","color": "light_purple"},{"text": " dabei! Wenn du willst kann ich sie dir zu Blöcken verarbeiten, dann sparst du dir etwas Inventar-Platz!"},"\n","\n",{"text":"Ja gerne!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger z_just-ignore set 303"}}]
 execute as @s[scores={elements_mystery_clicked=1,elements_element_shards_count=64..}] run scoreboard players set @s elements_mystery_clicked 0
 
-execute as @s[scores={z_just-ignore=303}] at @s if entity @e[type=villager,tag=mystery,distance=..10] run function elements:sonstiges/savely_give_loot {id:"elements:items/other/element_shard_block"}
-execute as @s[scores={z_just-ignore=303}] at @s if entity @e[type=villager,tag=mystery,distance=..10] run clear @s amethyst_shard[custom_model_data=1] 64
-execute as @s[scores={z_just-ignore=303}] at @s unless entity @e[type=villager,tag=mystery,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
+execute as @s[scores={z_just-ignore=303}] store result score @s elements_element_shards_count run clear @s amethyst_shard[custom_model_data=1] 0
+execute as @s[scores={z_just-ignore=303,elements_element_shards_count=64..}] at @s if entity @e[type=villager,tag=mystery,distance=..10] run function elements:sonstiges/savely_give_loot {id:"elements:items/other/element_shard_block"}
+execute as @s[scores={z_just-ignore=303,elements_element_shards_count=64..}] at @s if entity @e[type=villager,tag=mystery,distance=..10] run clear @s amethyst_shard[custom_model_data=1] 64
+execute as @s[scores={z_just-ignore=303,elements_element_shards_count=64..}] at @s unless entity @e[type=villager,tag=mystery,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
 execute as @s[scores={z_just-ignore=303}] run scoreboard players set @s z_just-ignore 0
 
 

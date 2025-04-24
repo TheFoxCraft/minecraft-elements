@@ -222,10 +222,10 @@ execute as @a[scores={elements_enderchest_handelsplatz_reload_offers=1}] run sco
 # managed in function timer 5s
 
 
-# no armor drops with element sword
-
-#execute as @e[type=zombie,nbt={Health:0.0f}] run function elements:sonstiges/no_armor_drops_with_element_sword
-#execute as @e[type=skeleton,nbt={Health:0.0f}] run function elements:sonstiges/no_armor_drops_with_element_sword
+# element bow
+execute as @a[nbt={SelectedItem:{id:"minecraft:bow"}},predicate=elements:sneaking,tag=!has_element_arrow] run function elements:sonstiges/element_bow
+kill @e[type=item,nbt={Item:{id:"minecraft:arrow",components:{"minecraft:custom_model_data":1}}}]
+execute as @a[tag=has_element_arrow] run function elements:sonstiges/element_bow/reset
 
 execute as @a[scores={elements_enderchest_settings_return_after_close=2}] run function elements:sonstiges/enderchest_return_after_close/check_change
 

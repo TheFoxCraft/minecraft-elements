@@ -215,9 +215,22 @@
           ]
         },
         {
+          "type": "minecraft:item",
+          "name": "horn_coral",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "set_custom_data",
+              "tag": {
+                "is_fish":true
+              }
+            }
+          ]
+        },
+        {
           "type": "minecraft:loot_table",
-          "value": "minecraft:gameplay/fishing/coral",
-          "weight": 25
+          "value": "minecraft:gameplay/fishing/shoes",
+          "weight": 5
         },
         {
           "type": "loot_table",
@@ -249,7 +262,45 @@
               "mode": "append"
             }
           ],
-          "weight": 400
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "enchanted_book",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_enchantments",
+              "enchantments": {
+                "lure": 1
+              }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "max_stack_size": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "enchanted_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_enchantments",
+              "enchantments": {
+                "luck_of_the_sea": 1
+              }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "max_stack_size": 64
+              }
+            }
+          ]
         },
         {
           "type": "loot_table",

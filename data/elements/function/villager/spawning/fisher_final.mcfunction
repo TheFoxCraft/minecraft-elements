@@ -18,16 +18,16 @@ Offers:{Recipes:[\
 {rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:saddle",count:2,components:{custom_data:{is_fish:true},max_stack_size:64}},sell:$(fishing_token)},\
 {rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:nautilus_shell",count:2,components:{custom_data:{is_fish:true}}},sell:$(fishing_token)},\
 {rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:heart_of_the_sea",count:1,components:{custom_data:{is_fish:true}}},sell:$(fishing_token)},\
-{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:sea_pickle",count:4,components:{custom_data:{is_fish:true}}},sell:$(fishing_token)},\
-{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:tube_coral",count:4,components:{custom_data:{is_fish:true}}},sell:$(fishing_token)},\
-{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:brain_coral",count:4,components:{custom_data:{is_fish:true}}},sell:$(fishing_token)},\
-{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:fire_coral",count:4,components:{custom_data:{is_fish:true}}},sell:$(fishing_token)},\
 {rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:horn_coral",count:4,components:{custom_data:{is_fish:true}}},sell:$(fishing_token)},\
-{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:bubble_coral",count:4,components:{custom_data:{is_fish:true}}},sell:$(fishing_token)},\
-{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:tube_coral_fan",count:4,components:{custom_data:{is_fish:true}}},sell:$(fishing_token)},\
-{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:brain_coral_fan",count:4,components:{custom_data:{is_fish:true}}},sell:$(fishing_token)},\
-{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:fire_coral_fan",count:4,components:{custom_data:{is_fish:true}}},sell:$(fishing_token)},\
-{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:horn_coral_fan",count:4,components:{custom_data:{is_fish:true}}},sell:$(fishing_token)},\
-{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:bubble_coral_fan",count:4,components:{custom_data:{is_fish:true}}},sell:$(fishing_token)},\
+{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:horn_coral",count:1,components:{custom_data:{is_fish:true}}},sell:{id:"sea_pickle"}},\
+{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:horn_coral",count:1,components:{custom_data:{is_fish:true}}},sell:{id:"tube_coral"}},\
+{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:horn_coral",count:1,components:{custom_data:{is_fish:true}}},sell:{id:"brain_coral"}},\
+{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:horn_coral",count:1,components:{custom_data:{is_fish:true}}},sell:{id:"fire_coral"}},\
+{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:horn_coral",count:1,components:{custom_data:{is_fish:true}}},sell:{id:"bubble_coral"}},\
+{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:horn_coral",count:1,components:{custom_data:{is_fish:true}}},sell:{id:"tube_coral_fan"}},\
+{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:horn_coral",count:1,components:{custom_data:{is_fish:true}}},sell:{id:"brain_coral_fan"}},\
+{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:horn_coral",count:1,components:{custom_data:{is_fish:true}}},sell:{id:"fire_coral_fan"}},\
+{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:horn_coral",count:1,components:{custom_data:{is_fish:true}}},sell:{id:"horn_coral_fan"}},\
+{rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:horn_coral",count:1,components:{custom_data:{is_fish:true}}},sell:{id:"bubble_coral_fan"}},\
 ]}}
 

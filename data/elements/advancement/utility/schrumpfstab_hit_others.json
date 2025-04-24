@@ -1,0 +1,26 @@
+{
+    "criteria": {
+      "main": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "blocked": false,
+            "source_entity": {
+              "type": "minecraft:player",
+              "equipment": {
+                "mainhand": {
+                  "items": "minecraft:stick",
+                  "components": {
+                    "minecraft:custom_model_data": 3
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "elements:sonstiges/utility/schrumpfstab_hit_others"
+    }
+  }

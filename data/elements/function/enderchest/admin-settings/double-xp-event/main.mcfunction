@@ -9,8 +9,8 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard p
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players operation .server elements_double-xp-event_timer_actual_h = .server elements_double-xp-event_timer_max_h
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players operation .server elements_double-xp-event_timer_actual_min = .server elements_double-xp-event_timer_max_min
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set .server elements_double-xp-event_timer_actual_sec 0
-execute as @s[scores={elements_enderchest_interface_clicked=1}] run title @s title [{"text":"DOPPELTE LEVEL EVENT","color":"gold"},{"text":" GESTARTET","color":"green"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1}] as @s at @s run playsound minecraft:block.beacon.activate master @s
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run title @a title [{"text":"DOPPELTE LEVEL EVENT","color":"gold"},{"text":" GESTARTET","color":"green"}]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] as @a at @s run playsound minecraft:block.beacon.activate master @s
 
 execute as @s[scores={elements_enderchest_interface_clicked=1}] if score .server elements_double-xp-event_timer_max_min matches 2.. if score .server elements_double-xp-event_timer_max_h matches 2.. run tellraw @s ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Ein Doppelte Level Event wurde für ","color": "white"},{"score": {"name": ".server","objective": "elements_double-xp-event_timer_max_h"}},{"text": " Stunden und ","color": "white"},{"score": {"name": ".server","objective": "elements_double-xp-event_timer_max_min"}},{"text": " Minuten gestartet!","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] if score .server elements_double-xp-event_timer_max_min matches 2.. if score .server elements_double-xp-event_timer_max_h matches 1 run tellraw @s ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Ein Doppelte Level Event wurde für ","color": "white"},{"score": {"name": ".server","objective": "elements_double-xp-event_timer_max_h"}},{"text": " Stunde und ","color": "white"},{"score": {"name": ".server","objective": "elements_double-xp-event_timer_max_min"}},{"text": " Minuten gestartet!","color": "white"}]
@@ -116,9 +116,9 @@ function elements:enderchest/admin-settings/double-xp-event/show_times with stor
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 store success score @s elements_enderchest_interface_clicked run clear @s minecraft:lime_dye[custom_model_data=10]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
-execute as @s[scores={elements_enderchest_interface_clicked=1}] as @s at @s run playsound minecraft:block.beacon.deactivate master @s
+execute as @s[scores={elements_enderchest_interface_clicked=1}] as @a at @s run playsound minecraft:block.beacon.deactivate master @s
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set .server elements_double-xp-event_active 0
-execute as @s[scores={elements_enderchest_interface_clicked=1}] run tellraw @s ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Das aktuelle Doppelte Level Event wurde von einem Admin abgebrochen!","color": "white"}]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run tellraw @a ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Das aktuelle Doppelte Level Event wurde von einem Admin abgebrochen!","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:lime_dye",count:1,components:{"minecraft:custom_model_data":10}}}]
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 run item replace entity @s enderchest.9 with lime_dye[custom_name='[{"color":"gold","text":"Status: ","italic": false},{"text": "Aktiv","color": "green"}]',lore=['{"text": "Klicke um das Event vorzeitig abzubrechen!","color": "gray","italic": false}','{"text": "Achtung, keine Bestätigung erforderlich!","color": "red"}'],custom_model_data=10] 1
@@ -127,8 +127,8 @@ execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number
 
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 store success score @s elements_enderchest_interface_clicked run clear @s minecraft:clock[custom_model_data=10]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1}] run tellraw @s ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Das Doppelte Level Event wurde um 2 Stunden verlängert!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1}] as @s at @s run playsound entity.player.levelup master @s
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run tellraw @a ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Das Doppelte Level Event wurde um 2 Stunden verlängert!","color": "white"}]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] as @a at @s run playsound entity.player.levelup master @s
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_max_h 2
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_actual_h 2
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -137,8 +137,8 @@ execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number
 
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 store success score @s elements_enderchest_interface_clicked run clear @s minecraft:clock[custom_model_data=11]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1}] run tellraw @s ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Das Doppelte Level Event wurde um 1 Stunde verlängert!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1}] as @s at @s run playsound entity.player.levelup master @s
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run tellraw @a ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Das Doppelte Level Event wurde um 1 Stunde verlängert!","color": "white"}]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] as @a at @s run playsound entity.player.levelup master @s
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_max_h 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_actual_h 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -148,8 +148,8 @@ execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number
 
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 store success score @s elements_enderchest_interface_clicked run clear @s minecraft:clock[custom_model_data=12]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1}] run tellraw @s ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Das Doppelte Level Event wurde um 30 Minuten verlängert!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1}] as @s at @s run playsound entity.player.levelup master @s
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run tellraw @a ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Das Doppelte Level Event wurde um 30 Minuten verlängert!","color": "white"}]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] as @a at @s run playsound entity.player.levelup master @s
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_max_min 30
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_actual_min 30
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
@@ -158,8 +158,8 @@ execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number
 
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 store success score @s elements_enderchest_interface_clicked run clear @s minecraft:clock[custom_model_data=13]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1}] run tellraw @s ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Das Doppelte Level Event wurde um 10 Minuten verlängert!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1}] as @s at @s run playsound entity.player.levelup master @s
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run tellraw @a ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Das Doppelte Level Event wurde um 10 Minuten verlängert!","color": "white"}]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] as @a at @s run playsound entity.player.levelup master @s
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_max_min 10
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_actual_min 10
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0

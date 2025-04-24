@@ -16,25 +16,25 @@ $execute as @a[nbt={UUID:$(UUID)}] if score @s elements_miningxp_fishing_level >
 $execute as @a[nbt={UUID:$(UUID)}] if entity @s[nbt={Inventory:[{id:"minecraft:fishing_rod",components:{"minecraft:custom_model_data":10}}]}] run loot spawn ~ ~ ~ fish gameplay/fishing/treasure ~ ~ ~ mainhand
 
 
-$execute if score .server elements_stage matches 1 as @a[nbt={UUID:$(UUID)}] run xp add @s 1 levels
+$execute if score .server elements_stage matches 1 as @a[nbt={UUID:$(UUID)}] run xp add @s 2 levels
 $execute if score .server elements_stage matches 1 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] run xp add @s 1 levels
-$execute if score .server elements_stage matches 1 as @a[nbt={UUID:$(UUID)}] if score .server elements_double-xp-event_active matches 1 run xp add @s 1 levels
+$execute if score .server elements_stage matches 1 as @a[nbt={UUID:$(UUID)}] if score .server elements_double-xp-event_active matches 1 run xp add @s 2 levels
 $execute if score .server elements_stage matches 1 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] if score .server elements_double-xp-event_active matches 1 run xp add @s 1 levels
 
-$execute if score .server elements_stage matches 2 as @a[nbt={UUID:$(UUID)}] run xp add @s 3 levels
-$execute if score .server elements_stage matches 2 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] run xp add @s 2 levels
-$execute if score .server elements_stage matches 2 as @a[nbt={UUID:$(UUID)}] if score .server elements_double-xp-event_active matches 1 run xp add @s 3 levels
-$execute if score .server elements_stage matches 2 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] if score .server elements_double-xp-event_active matches 1 run xp add @s 2 levels
+$execute if score .server elements_stage matches 2 as @a[nbt={UUID:$(UUID)}] run xp add @s 6 levels
+$execute if score .server elements_stage matches 2 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] run xp add @s 4 levels
+$execute if score .server elements_stage matches 2 as @a[nbt={UUID:$(UUID)}] if score .server elements_double-xp-event_active matches 1 run xp add @s 6 levels
+$execute if score .server elements_stage matches 2 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] if score .server elements_double-xp-event_active matches 1 run xp add @s 4 levels
 
-$execute if score .server elements_stage matches 3 as @a[nbt={UUID:$(UUID)}] run xp add @s 6 levels
-$execute if score .server elements_stage matches 3 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] run xp add @s 4 levels
-$execute if score .server elements_stage matches 3 as @a[nbt={UUID:$(UUID)}] if score .server elements_double-xp-event_active matches 1 run xp add @s 6 levels
-$execute if score .server elements_stage matches 3 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] if score .server elements_double-xp-event_active matches 1 run xp add @s 4 levels
+$execute if score .server elements_stage matches 3 as @a[nbt={UUID:$(UUID)}] run xp add @s 12 levels
+$execute if score .server elements_stage matches 3 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] run xp add @s 8 levels
+$execute if score .server elements_stage matches 3 as @a[nbt={UUID:$(UUID)}] if score .server elements_double-xp-event_active matches 1 run xp add @s 12 levels
+$execute if score .server elements_stage matches 3 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] if score .server elements_double-xp-event_active matches 1 run xp add @s 8 levels
 
-$execute if score .server elements_stage matches 4 as @a[nbt={UUID:$(UUID)}] run xp add @s 12 levels
-$execute if score .server elements_stage matches 4 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] run xp add @s 8 levels
-$execute if score .server elements_stage matches 4 as @a[nbt={UUID:$(UUID)}] if score .server elements_double-xp-event_active matches 1 run xp add @s 12 levels
-$execute if score .server elements_stage matches 4 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] if score .server elements_double-xp-event_active matches 1 run xp add @s 8 levels
+$execute if score .server elements_stage matches 4 as @a[nbt={UUID:$(UUID)}] run xp add @s 24 levels
+$execute if score .server elements_stage matches 4 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] run xp add @s 16 levels
+$execute if score .server elements_stage matches 4 as @a[nbt={UUID:$(UUID)}] if score .server elements_double-xp-event_active matches 1 run xp add @s 24 levels
+$execute if score .server elements_stage matches 4 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] if score .server elements_double-xp-event_active matches 1 run xp add @s 16 levels
 
 
 $execute as @a[nbt={UUID:$(UUID)}] run scoreboard players add @s elements_stats_fish_caught 1
