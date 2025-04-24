@@ -10,14 +10,14 @@ execute in elements:stage-2_bossroom unless entity @a[gamemode=!spectator,distan
 execute in elements:stage-2_bossroom unless entity @a[gamemode=!spectator,distance=0..] run scoreboard players set .server elements_stage_2_boss_status 0
 
 
-execute if score .server elements_stage_2_boss_melee_timer matches 1.. run scoreboard players remove .server elements_stage_2_boss_melee_timer 1
-
-execute if score .server elements_stage_2_boss_melee_timer matches 0 as @e[tag=stage-2_boss] at @s run particle dust{color:16058119,scale:1} ~ ~2 ~ 4 4 4 0 200 normal
-execute if score .server elements_stage_2_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-2_boss,distance=..10] run damage @s 20 elements:boss_stage_2
-execute if score .server elements_stage_2_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-2_boss,distance=..10] run playsound minecraft:enchant.thorns.hit master @s
-execute if score .server elements_stage_2_boss_melee_timer matches 0 store result score .server elements_stage_2_boss_melee_timer run random value 50..150
-#tp attack
-execute if score .server elements_stage_2_boss_melee_timer matches 135 as @e[tag=stage-2_boss] at @s run spreadplayers ~ ~ 0 10 under 119 false @a[gamemode=!spectator,distance=0..]
+#execute if score .server elements_stage_2_boss_melee_timer matches 1.. run scoreboard players remove .server elements_stage_2_boss_melee_timer 1
+#
+#execute if score .server elements_stage_2_boss_melee_timer matches 0 as @e[tag=stage-2_boss] at @s run particle dust{color:16058119,scale:1} ~ ~2 ~ 4 4 4 0 200 normal
+#execute if score .server elements_stage_2_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-2_boss,distance=..10] run damage @s 20 elements:boss_stage_2
+#execute if score .server elements_stage_2_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-2_boss,distance=..10] run playsound minecraft:enchant.thorns.hit master @s
+#execute if score .server elements_stage_2_boss_melee_timer matches 0 store result score .server elements_stage_2_boss_melee_timer run random value 50..150
+##tp attack
+#execute if score .server elements_stage_2_boss_melee_timer matches 135 as @e[tag=stage-2_boss] at @s run spreadplayers ~ ~ 0 10 under 119 false @a[gamemode=!spectator,distance=0..]
 
 
 
