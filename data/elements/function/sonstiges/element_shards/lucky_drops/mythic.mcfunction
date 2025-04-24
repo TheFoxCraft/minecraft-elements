@@ -1,0 +1,9 @@
+$execute store result score @s elements_random run random value 1..$(rate)
+$execute unless score @s elements_random matches 1..$(chance) run return fail
+title @s times 20 150 20
+title @s title ["",{"text": "ccc","color": "light_purple","obfuscated": true},{"text": " Lucky Drop ","color": "light_purple"},{"text": "ccc","color": "light_purple","obfuscated": true}]
+title @s subtitle ["",{"translate": "elements.main.rarities.mythic","color": "light_purple"}," - ",{"text": "100.000 Level","color": "green"}]
+xp add @s 100000 levels
+tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"Lucky Drop! ",{"translate": "elements.main.rarities.mythic","color": "light_purple"}," - ",{"text": "100.000 Level","color": "green"}]
+execute if score @s elements_settings_luckydrops_sound matches ..5 at @s run playsound ui.toast.challenge_complete
+tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"selector": "@s"},{"text": " hat einen "},{"text": "MYTHISCHEN LUCKYDROP","color": "light_purple","bold": true},{"text": " gezogen!"}]

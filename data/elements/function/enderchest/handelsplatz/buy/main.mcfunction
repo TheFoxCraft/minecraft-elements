@@ -30,7 +30,7 @@ data remove entity @n[type=armor_stand,tag=handelsmarkt_buy] HandItems[0].compon
 data remove entity @n[type=armor_stand,tag=handelsmarkt_buy] HandItems[0].components."minecraft:custom_data"
 item replace entity @s player.cursor from entity @n[type=armor_stand,tag=handelsmarkt_buy] weapon.mainhand
 
-
+scoreboard players set @s elements_enderchest_handelsplatz_buy_locked 1
 
 scoreboard players set @a elements_enderchest_handelsplatz_reload_offers 1
 execute at @s run kill @n[type=armor_stand,tag=handelsmarkt_buy]

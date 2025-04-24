@@ -64,6 +64,8 @@
     red_glazed_terracotta: Compressed Sweet Berries
     composter: Auto-Recycler
     arrow: Element Bow Arrow
+    dead_bush: Dornenherz der Wildnis Unique Item
+    carrot: Foraging Frucht
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -100,6 +102,7 @@
     oak_fence_gate: Settings Enderchest
     amethyst_block: Casino Double or Nothing
     sweet_berries: Autocompact Trigger GUI
+    
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -188,7 +191,7 @@
     spruce_log: Admin Settings Tipps Stage 2 Mainmenu
     weeping_vines: Admin Settings Tipps Stage 3 Mainmenu
     fishing_rod: Admin Settings Tipps Fishing Rod Mainmenu
-    anvil: Ambösse Unique Item
+    anvil: Ambossos Unique Item
 13:
     clock: Admin-Config | Double-Level Timer Action
     potion: Magisches Wasser | Ocean Shop

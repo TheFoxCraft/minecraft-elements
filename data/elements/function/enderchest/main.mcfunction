@@ -216,6 +216,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard p
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_handelsplatz_interface 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_handelsplatz_page 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_handelsplatz_buy_locked 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/handelsplatz/load
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:barrel",count:1,components:{"minecraft:custom_model_data":1}}}]
