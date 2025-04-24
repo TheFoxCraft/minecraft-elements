@@ -32,6 +32,19 @@ execute as @s[scores={elements_enderchest_interface_number=10,elements_enderches
 execute as @s[scores={elements_enderchest_interface_number=10,elements_enderchest_handelsplatz_interface=0}] run item replace entity @s enderchest.4 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
 execute as @s[scores={elements_enderchest_interface_number=10,elements_enderchest_handelsplatz_interface=0}] run item replace entity @s enderchest.7 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
 
+#lock buying
+execute as @s[scores={elements_enderchest_interface_number=10,elements_enderchest_handelsplatz_interface=0}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:copper_ingot[custom_data~{is_handelsmarkt_ui_buy_lock:true}]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add @s elements_enderchest_handelsplatz_buy_locked 1
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+kill @e[type=item,nbt={Item:{id:"minecraft:copper_ingot",count:1,components:{"minecraft:custom_data":{is_handelsmarkt_ui:true}}}}]
+execute as @s[scores={elements_enderchest_interface_number=10,elements_enderchest_handelsplatz_interface=0,elements_enderchest_handelsplatz_buy_locked=1}] run item replace entity @s enderchest.2 with copper_ingot[custom_name='{"color":"green","italic":false,"text":"Kaufen gesperrt"}',lore=['{"color":"gray","italic":false,"text":"Du kannst so nichts versehentlich kaufen"}','""','{"color":"gray","italic":false,"text":"Klicke zum entsperren"}'],custom_model_data=26,custom_data={is_handelsmarkt_ui_buy_lock:true}] 1
+execute as @s[scores={elements_enderchest_interface_number=10,elements_enderchest_handelsplatz_interface=0,elements_enderchest_handelsplatz_buy_locked=0}] run item replace entity @s enderchest.2 with copper_ingot[custom_name='{"color":"red","italic":false,"text":"Kaufen entsperrt"}',lore=['{"color":"gray","italic":false,"text":"Du kannst jetzt ein Item kaufen"}','""','{"color":"gray","italic":false,"text":"Klicke zum sperren"}'],custom_model_data=25,custom_data={is_handelsmarkt_ui_buy_lock:true}] 1
+execute as @s[scores={elements_enderchest_handelsplatz_buy_locked=2..}] run scoreboard players set @s elements_enderchest_handelsplatz_buy_locked 0
+
+
+
+
 # pages
 execute as @s[scores={elements_enderchest_interface_number=10,elements_enderchest_handelsplatz_interface=0}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:player_head[custom_model_data=1]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] if score @s elements_enderchest_handelsplatz_page >= .server elements_enderchest_handelsplatz_page_count at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
@@ -56,7 +69,8 @@ execute as @s[scores={elements_enderchest_interface_number=10,elements_enderches
 
 #buy
 execute store success score @s elements_enderchest_handelsplatz_buy run clear @s *[custom_data~{handelsmarkt_item:true}] 0
-execute as @s[scores={elements_enderchest_handelsplatz_buy=1}] run function elements:enderchest/handelsplatz/buy/main
+execute as @s[scores={elements_enderchest_handelsplatz_buy=1,elements_enderchest_handelsplatz_buy_locked=0}] run function elements:enderchest/handelsplatz/buy/main
+execute as @s[scores={elements_enderchest_handelsplatz_buy=1,elements_enderchest_handelsplatz_buy_locked=1}] run function elements:enderchest/handelsplatz/load
 clear @s *[custom_data~{handelsmarkt_item:true}]
 
 

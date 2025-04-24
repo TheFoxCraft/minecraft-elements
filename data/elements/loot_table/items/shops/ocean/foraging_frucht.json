@@ -7,7 +7,7 @@
           {
             "type": "item",
             "weight": 1,
-            "name": "minecraft:sweet_berries",
+            "name": "minecraft:carrot",
             "functions": [
               {
                 "function": "set_count",

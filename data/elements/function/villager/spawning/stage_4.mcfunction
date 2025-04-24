@@ -10,7 +10,7 @@ data modify storage elements_get_item_data boss_spawning_stage_4 set from entity
 function elements:villager/spawning/stage_4_final with storage elements_get_item_data
 
 data modify entity @n[tag=stage-4_main] Offers.Recipes.[1].buy.count set value 64
-#data modify entity @n[tag=stage-4_main] Offers.Recipes.[2].buy.count set value 32
+data modify entity @n[tag=stage-4_main] Offers.Recipes.[2].buy.count set value 64
 
 kill @e[tag=spawning_stage-4_main,type=armor_stand]
 kill @s

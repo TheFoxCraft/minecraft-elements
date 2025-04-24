@@ -205,7 +205,8 @@ execute as @a[scores={elements_update_sequence_status=8}] if score .server eleme
 
 #1.9.6.0
 
-
+execute if score .server elements_update_sequence_status matches 9 run scoreboard players set .server elements_uniqueitem_dornenherz_der_wildnis 0
+execute if score .server elements_update_sequence_status matches 9 run scoreboard players set .server elements_uniqueitem_collections_elements_biscuit 0
 #execute if score .server elements_update_sequence_status matches 9 run say (Hier dann neue default-values setzen)
 execute if score .server elements_update_sequence_status matches 9 run scoreboard players set .server elements_update_sequence_status 10
 
