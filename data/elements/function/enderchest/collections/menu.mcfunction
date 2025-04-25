@@ -101,7 +101,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playso
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_collections_interface 5
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] if score .server elements_stage matches 3.. run item replace entity @s enderchest.9 with cod[custom_name='{"color":"gold","italic":false,"text":"Angeln"}',custom_model_data=10,hide_additional_tooltip={},food={nutrition:0,saturation:0}] 1
+execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] if score .server elements_stage matches 2.. run item replace entity @s enderchest.9 with cod[custom_name='{"color":"gold","italic":false,"text":"Angeln"}',custom_model_data=10,hide_additional_tooltip={},food={nutrition:0,saturation:0}] 1
 
 #stage 4
 execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] store success score @s elements_enderchest_interface_clicked run clear @s sweet_berries[custom_model_data=10]

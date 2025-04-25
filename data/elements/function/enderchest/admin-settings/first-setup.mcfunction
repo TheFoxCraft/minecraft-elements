@@ -57,6 +57,7 @@ execute as @s run scoreboard players set .server elements_recycler_stats_4 0
 execute as @s run scoreboard players set .server elements_recycler_stats_4_spawn 0
 execute as @s run scoreboard players set .server elements_abgabe_general_abgabe-mode 2
 execute as @s run scoreboard players set .server elements_spawn_shop_leer_timer_tick 0
+execute as @s run scoreboard players set .server elements_spawn_shop_leer_timer_min 0
 execute as @s run scoreboard players set .server elements_spawn_shop_leer_timer-2_tick 0
 execute as @s run scoreboard players set .server elements_spawn_shop_leer_number 1
 execute as @s run scoreboard players set .server elements_spawn_levelbaum_task 0
@@ -76,6 +77,9 @@ execute as @s run scoreboard players set .server elements_stage_2_boss_melee_tim
 execute as @s run scoreboard players set .server elements_stage_3_portal_enable 0
 execute as @s run scoreboard players set .server elements_stage_3_boss_status 0
 execute as @s run scoreboard players set .server elements_stage_3_boss_melee_timer 0
+execute as @s run scoreboard players set .server elements_stage_4_portal_enable 0
+execute as @s run scoreboard players set .server elements_stage_4_boss_status 0
+execute as @s run scoreboard players set .server elements_stage_4_boss_melee_timer 0
 execute as @s run scoreboard players set .server elements_custom-items_shop_boss-frucht_remain 0
 execute as @s run scoreboard players set .server elements_double-xp-event_active 0
 execute as @s run scoreboard players set .server elements_double-xp-event_timer_actual_h 0
@@ -116,7 +120,7 @@ execute as @s run scoreboard players set .server elements_uniqueitem_shop_mosh_p
 
 
 #add with every update
-execute as @s run scoreboard players set .server elements_update_sequence_status 9
+execute as @s run scoreboard players set .server elements_update_sequence_status 11
 
 execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
 

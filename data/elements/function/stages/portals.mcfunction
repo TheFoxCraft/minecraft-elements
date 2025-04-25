@@ -6,3 +6,6 @@ execute as @a[predicate=elements:is_in_hub] at @s if entity @e[distance=..20,typ
 
 # Stage 3
 execute as @a[predicate=elements:is_in_hub] at @s if entity @e[distance=..20,type=text_display,nbt={Tags:["stage-3_portal_status"]}] run function elements:stages/portals/stage_3
+
+# Stage 4
+execute as @a[predicate=elements:is_in_hub] at @s if entity @e[distance=..20,type=text_display,nbt={Tags:["stage-4_portal_status"]}] run function elements:stages/portals/stage_4

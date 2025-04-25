@@ -117,7 +117,8 @@ execute if score .server elements_stage_3_portal_enable matches 1 run function e
 execute if score .server elements_stage_4_portal_enable matches 1 run function elements:stages/stage-4/portal
 execute if score .server elements_stage_1_boss_status matches 1 run function elements:bosse/stage-1/main
 execute if score .server elements_stage_2_boss_status matches 1 run function elements:bosse/stage-2/main
-#execute if score .server elements_stage_3_boss_status matches 1 run function elements:bosse/stage-3/main
+execute if score .server elements_stage_3_boss_status matches 1 run function elements:bosse/stage-3/main
+execute if score .server elements_stage_4_boss_status matches 1 run function elements:bosse/stage-4/main
 
 execute as @a[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:{"minecraft:custom_model_data":1}}},gamemode=!adventure] run function elements:custom-items/rettungs-plattform/rettungs-plattform-always
 execute as @e[type=item,nbt={Item:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if block ~ ~ ~ lava if score .server elements_stage_1_portal_enable matches 0 run function elements:stages/stage-1/portal-enable

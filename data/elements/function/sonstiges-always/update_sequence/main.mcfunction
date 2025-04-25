@@ -203,7 +203,7 @@ execute as @a[scores={elements_update_sequence_status=8}] if score .server eleme
 execute as @a[scores={elements_update_sequence_status=8}] if score .server elements_update_sequence_status matches 9.. run scoreboard players set @s elements_update_sequence_status 9
 
 
-#1.9.6.0
+#1.10.0.0
 
 execute if score .server elements_update_sequence_status matches 9 run scoreboard players set .server elements_uniqueitem_dornenherz_der_wildnis 0
 execute if score .server elements_update_sequence_status matches 9 run scoreboard players set .server elements_uniqueitem_collections_elements_biscuit 0
@@ -212,18 +212,41 @@ execute if score .server elements_update_sequence_status matches 9 run scoreboar
 
 
 execute as @a[scores={elements_update_sequence_status=9}] if score .server elements_update_sequence_status matches 10.. run title @s title ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
-execute as @a[scores={elements_update_sequence_status=9}] if score .server elements_update_sequence_status matches 10.. run title @s subtitle ["",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.9.6.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
-execute as @a[scores={elements_update_sequence_status=9}] if score .server elements_update_sequence_status matches 10.. run tellraw @s ["","\n","\n","\n","\n","\n",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.9.6.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"\n","\n",{"text": "Seit du das letzte mal online warst gab es ein Update!\n Das ist neu:","color": "green"},"\n"]
+execute as @a[scores={elements_update_sequence_status=9}] if score .server elements_update_sequence_status matches 10.. run title @s subtitle ["",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.10.0.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
+execute as @a[scores={elements_update_sequence_status=9}] if score .server elements_update_sequence_status matches 10.. run tellraw @s ["","\n","\n","\n","\n","\n",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.10.0.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"\n","\n",{"text": "Seit du das letzte mal online warst gab es ein Update!\n Das ist neu:","color": "green"},"\n"]
 execute as @a[scores={elements_update_sequence_status=9}] if score .server elements_update_sequence_status matches 10.. run tellraw @s ["",{"text": "Changelog im Discord"}]
 
 # ..
 #execute as @a[scores={elements_update_sequence_status=9}] if score .server elements_update_sequence_status matches 10.. run say (Hier dann neue default-values setzen)
 execute as @a[scores={elements_update_sequence_status=9}] if score .server elements_update_sequence_status matches 10.. run function elements:miningxp/fishingxp/set_goals
+execute as @a[scores={elements_update_sequence_status=9}] if score .server elements_update_sequence_status matches 10.. run scoreboard players set @s elements_settings_luckydrops_sound 1
 
 
 # ..
 execute as @a[scores={elements_update_sequence_status=9}] if score .server elements_update_sequence_status matches 10.. run scoreboard players set @s elements_update_sequence_status 10
 
+
+#1.10.0.0
+
+execute if score .server elements_update_sequence_status matches 10 run scoreboard players set .server elements_stage_4_portal_enable 0
+execute if score .server elements_update_sequence_status matches 10 run scoreboard players set .server elements_stage_4_boss_status 0
+execute if score .server elements_update_sequence_status matches 10 in elements:stage-4_bossroom run place template elements:boss_room/stage_4 -29 96 -27
+#execute if score .server elements_update_sequence_status matches 10 run say (Hier dann neue default-values setzen)
+execute if score .server elements_update_sequence_status matches 10 run scoreboard players set .server elements_update_sequence_status 11
+
+
+execute as @a[scores={elements_update_sequence_status=10}] if score .server elements_update_sequence_status matches 11.. run title @s title ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
+execute as @a[scores={elements_update_sequence_status=10}] if score .server elements_update_sequence_status matches 11.. run title @s subtitle ["",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.10.0.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
+execute as @a[scores={elements_update_sequence_status=10}] if score .server elements_update_sequence_status matches 11.. run tellraw @s ["","\n","\n","\n","\n","\n",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.10.0.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"\n","\n",{"text": "Seit du das letzte mal online warst gab es ein Update!\n Das ist neu:","color": "green"},"\n"]
+execute as @a[scores={elements_update_sequence_status=10}] if score .server elements_update_sequence_status matches 11.. run tellraw @s ["",{"text": "Changelog im Discord"}]
+
+# ..
+#execute as @a[scores={elements_update_sequence_status=10}] if score .server elements_update_sequence_status matches 11.. run say (Hier dann neue default-values setzen)
+
+
+
+# ..
+execute as @a[scores={elements_update_sequence_status=10}] if score .server elements_update_sequence_status matches 11.. run scoreboard players set @s elements_update_sequence_status 11
 
 
 
