@@ -73,11 +73,6 @@ execute as @a if score .server elements_stats_servermaxlevel < @s elements_mainl
 scoreboard players set .server elements_stats_serverlevel 0
 scoreboard players operation .server elements_stats_serverlevel += @a elements_mainlevel
 
-# set values from server to all players
-scoreboard players operation @a elements_stage = .server elements_stage
-scoreboard players operation @a elements_uniqueitem_bosse_taubenkacke = .server elements_uniqueitem_bosse_taubenkacke
-scoreboard players operation @a elements_uniqueitem_bosse_tomorrowland_karte = .server elements_uniqueitem_bosse_tomorrowland_karte
-scoreboard players operation @a elements_uniqueitem_bosse_amboesse = .server elements_uniqueitem_bosse_amboesse
 
 
 

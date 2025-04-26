@@ -18,7 +18,7 @@ tag @a remove stage-4_portal
 
 
 execute in elements:stage-4_bossroom positioned 0.5 100.00 0.5 if score .server elements_stage_4_boss_status matches 0 unless entity @e[tag=stage-4_boss_activate,type=interaction,distance=..1] run summon interaction 0.5 100.00 0.5 {width:1.01f,height:1.01f,response:1b,Tags:["stage-4_boss_activate"]}
-execute in elements:stage-4_bossroom positioned 0.5 102.50 0.5 if score .server elements_stage_4_boss_status matches 0 unless entity @e[tag=stage-4_boss_altar_name,type=text_display,distance=..1] run summon text_display 0.5 101.50 0.5 {billboard:"center",default_background:1b,alignment:"center",Tags:["stage-4_boss_altar_name"],text:'[{"text": "Altar","color": "gold"}]'}
+execute in elements:stage-4_bossroom positioned 0.5 101.50 0.5 if score .server elements_stage_4_boss_status matches 0 unless entity @e[tag=stage-4_boss_altar_name,type=text_display,distance=..1] run summon text_display 0.5 101.50 0.5 {billboard:"center",default_background:1b,alignment:"center",Tags:["stage-4_boss_altar_name"],text:'[{"text": "Altar","color": "gold"}]'}
 execute in elements:stage-4_bossroom unless block 0 100 1 minecraft:ender_chest if score .server elements_stage_4_boss_status matches 0 run setblock 0 100 1 ender_chest[facing=east]
 execute in elements:stage-4_bossroom unless block 0 100 0 minecraft:reinforced_deepslate if score .server elements_stage_4_boss_status matches 0 run setblock 0 100 0 reinforced_deepslate
 execute in elements:stage-4_bossroom unless block 0 100 -1 minecraft:chest if block 0 100 -1 air if score .server elements_stage_4_boss_status matches 0 run setblock 0 100 -1 chest[facing=east]

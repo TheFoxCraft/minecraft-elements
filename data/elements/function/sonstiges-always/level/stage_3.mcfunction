@@ -36,3 +36,7 @@ execute if score .server elements_uniqueitem_fragment_der_himmelswarze matches 0
 
 scoreboard players remove @s elements_level_crimson_vines 1
 function elements:sonstiges/element_shards/trigger
+
+#levetrank
+execute as @s[scores={elements_custom-items_shop_leveltrank_counter_stage-3=10..}] run xp add @s 2 levels
+execute as @s[scores={elements_custom-items_shop_leveltrank_counter_stage-3=10..}] run scoreboard players remove @s elements_custom-items_shop_leveltrank_counter_stage-3 10

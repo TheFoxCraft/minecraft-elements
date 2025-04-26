@@ -4,6 +4,7 @@ function elements:sonstiges-always/sonstiges_1s
 function elements:stages/portals
 
 execute as @a[scores={elements_mana_item_schrumpfstab_hit_others_timer=1}] run attribute @s scale modifier remove schrumpfstab_scale
+execute as @a[scores={elements_mana_item_schrumpfstab_hit_others_timer=1}] run scoreboard players set @s elements_mana_item_schrumpfstab_stufe 1
 execute as @a[scores={elements_mana_item_schrumpfstab_hit_others_timer=1..}] run scoreboard players remove @s elements_mana_item_schrumpfstab_hit_others_timer 1
 
 
@@ -21,3 +22,10 @@ execute as @e[tag=spawner_leaderboard_id-9] at @s run function elements:spawn/le
 
 
 execute as @a[nbt={SelectedItem:{id:"minecraft:bone"}}] run item modify entity @s weapon.mainhand {function:"set_components",components:{food:{nutrition:0,saturation:0,can_always_eat:true},consumable:{consume_seconds:99999}}}
+
+schedule function elements:function-timers/async_1s_player 10
+
+function elements:spawn/abgaben/spawning
+
+schedule function elements:function-timers/1s 20
+

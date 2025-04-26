@@ -1,2 +1,0 @@
-execute as @a[scores={elements_mana_item_messstab_cooldown=1..}] run scoreboard players remove @s elements_mana_item_messstab_cooldown 1
-execute as @a[scores={elements_mana_item_magische-schale_cooldown=1..}] run scoreboard players remove @s elements_mana_item_magische-schale_cooldown 1
