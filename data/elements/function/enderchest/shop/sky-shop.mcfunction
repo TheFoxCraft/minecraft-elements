@@ -236,12 +236,12 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:lure":1}},max_stack_size=64] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:thorns":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":12}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.20 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.lure","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=12] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.20 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.thorns","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=12] 1
 
 
 
@@ -292,12 +292,12 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:luck_of_the_sea":1}},max_stack_size=64] 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run give @s enchanted_book[stored_enchantments={levels:{"minecraft:bane_of_arthropods":1}},max_stack_size=64] 1
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_sky=1}] run xp add @s -200 levels
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_sky=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",count:1,components:{"minecraft:custom_model_data":16}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.24 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.luck_of_the_sea","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=16] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.24 with enchanted_book[custom_name='[{"translate": "enchantment.minecraft.bane_of_arthropods","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=16] 1
 
 
 
