@@ -4,20 +4,13 @@
 #-------------------------------------ALWAYS-------------------------------------ALWAYS-----------------------------------ALWAYS----------------------------------#
 
 
-
-
-function elements:miningxp/miningxp
-function elements:miningxp/forestingxp
-function elements:miningxp/farmingxp
-function elements:miningxp/fishingxp
 function elements:miningxp/get_fishing/get_fishing
+
 
 
 #players
 execute as @a[gamemode=!spectator] run function elements:main/players/always
 execute as @a[tag=elements_boss_spectator] at @s run function elements:bosse/spectator
-execute as @a[tag=!elements_boss_spectator] run scoreboard players reset @s leave
-
 
 # 1s etc managed in main 1s functions
 
@@ -51,10 +44,6 @@ function elements:stages/refresh-vaults
 
 
 
-
-
-
-
 # Farmslots
 function elements:farm_slots/stage_2/calc_main
 function elements:farm_slots/stage_3/calc_main
@@ -67,37 +56,15 @@ function elements:sonstiges-always/sonstiges
 
 
 
-execute as @a at @s if entity @e[type=minecraft:interaction,tag=techniker,distance=..10] run function elements:villager/techniker
-execute as @a at @s if entity @e[type=minecraft:interaction,tag=clementius,distance=..10] run function elements:villager/clementius
-
-execute as @a at @s if entity @e[type=minecraft:interaction,tag=titus,distance=..10] run function elements:villager/titus
-execute as @a at @s if entity @e[type=minecraft:interaction,tag=mystery,distance=..10] run function elements:villager/mystery
-execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-2_mana,distance=..30] run function elements:villager/stage-2_mana
-execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-2_farm-slots,distance=..10] run function elements:villager/stage-2_farm-slots
-execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-3_mana,distance=..10] run function elements:villager/stage-3_mana
-execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-3_farm-slots,distance=..10] run function elements:villager/stage-3_farm-slots
-execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-4_mana,distance=..10] run function elements:villager/stage-4_mana
-execute as @a at @s if entity @e[type=minecraft:interaction,tag=stage-4_farm-slots,distance=..10] run function elements:villager/stage-4_farm-slots
-
-
-
-
-
-
 
 
 
 function elements:custom-items/element_fishing_rod/crafting_main
-#function elements:sonstiges-always/update_sequence/main
 
 
 
-
-
-
-
+#Dringend verbessern
 function elements:sonstiges/spawn-management
-
 execute if score .server elements_abgabe_shop_leer matches 2 run function elements:spawn/leer-shop
 execute if score .server elements_stage_1_portal_enable matches 1 run function elements:stages/stage-1/portal
 execute if score .server elements_stage_2_portal_enable matches 1 run function elements:stages/stage-2/portal
@@ -107,16 +74,6 @@ execute if score .server elements_stage_1_boss_status matches 1 run function ele
 execute if score .server elements_stage_2_boss_status matches 1 run function elements:bosse/stage-2/main
 execute if score .server elements_stage_3_boss_status matches 1 run function elements:bosse/stage-3/main
 execute if score .server elements_stage_4_boss_status matches 1 run function elements:bosse/stage-4/main
-
-
-
-execute as @a[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:{"minecraft:custom_model_data":1}}},gamemode=!adventure] run function elements:custom-items/rettungs-plattform/rettungs-plattform-always
-
-
-
-
-
-
 
 
 

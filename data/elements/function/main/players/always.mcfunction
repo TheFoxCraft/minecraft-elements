@@ -1,30 +1,23 @@
 
-#früchte
-execute if score @s elements_custom-items_shop_mining-frucht_enable matches 1 run function elements:custom-items/mining-frucht/timer
-execute if score @s elements_custom-items_shop_foraging-frucht_enable matches 1 run function elements:custom-items/foraging-frucht/timer
-execute if score @s elements_custom-items_shop_farming-frucht_enable matches 1 run function elements:custom-items/farming-frucht/timer
-execute if score @s elements_custom-items_shop_fishing-frucht_enable matches 1 run function elements:custom-items/fishing-frucht/timer
-execute if score @s elements_custom-items_shop_luck-potion_enable matches 1 run function elements:custom-items/shop/ocean/luck-potion/timer
-execute if score @s elements_custom-items_shop_leveltrank_enable matches 1 run function elements:custom-items/shop/stone/leveltrank/timer
-execute if score @s elements_custom-items_shop_hastetrank_enable matches 1 run function elements:custom-items/shop/stone/hastetrank/timer
-execute if score @s elements_custom-items_shop_water-breathing_enable matches 1 run function elements:custom-items/shop/ocean/water-breathing/timer
-execute if score @s elements_custom-items_shop_hot-lava_damage_queue matches 1 run function elements:custom-items/shop/nether/hot_lava/main
 
 
-
-
+function elements:miningxp/miningxp
+function elements:miningxp/forestingxp
+function elements:miningxp/farmingxp
+function elements:miningxp/fishingxp
 
 
 function elements:sonstiges-always/level
 
 execute as @s[nbt={SelectedItem:{id:"minecraft:gray_dye"}},predicate=!elements:is_in_hub] run function elements:custom-items/gravitystone/mainhand
 execute as @s[nbt={Inventory:[{id:"minecraft:gray_dye",Slot:-106b}]},predicate=!elements:is_in_hub] run function elements:custom-items/gravitystone/offhand
+execute as @s[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:{"minecraft:custom_model_data":1}}},gamemode=!adventure] run function elements:custom-items/rettungs-plattform/rettungs-plattform-always
 
 
 execute if score @s elements_autocompactor matches 1.. run function elements:sonstiges-always/autocompactor
 
 
-#enderchest
+
 #enderchest
 execute as @s[scores={elements_rank_admin=1}] run function elements:enderchest/admin-settings/main
 execute as @s[scores={elements_enderchest_interface_number=1}] run function elements:enderchest/main
@@ -38,6 +31,7 @@ execute as @s[scores={elements_enderchest_interface_number=9}] run function elem
 execute as @s[scores={elements_enderchest_interface_number=10}] run function elements:enderchest/handelsplatz/main
 
 
+execute if score @s elements_custom-items_shop_hot-lava_damage_queue matches 1 run function elements:custom-items/shop/nether/hot_lava/main
 
 
 function elements:sonstiges-always/firstlogin
@@ -50,4 +44,16 @@ execute as @s[scores={elements_death=1..}] run function elements:sonstiges/death
 
 # item click cooldown
 execute as @s[scores={elements_custom-items_item-click_cooldown=1..}] run scoreboard players remove @s elements_custom-items_item-click_cooldown 1
+
+
+execute at @s if entity @e[type=minecraft:interaction,tag=techniker,distance=..10] run function elements:villager/techniker
+execute at @s if entity @e[type=minecraft:interaction,tag=clementius,distance=..10] run function elements:villager/clementius
+execute at @s if entity @e[type=minecraft:interaction,tag=titus,distance=..10] run function elements:villager/titus
+execute at @s if entity @e[type=minecraft:interaction,tag=mystery,distance=..10] run function elements:villager/mystery
+execute at @s if entity @e[type=minecraft:interaction,tag=stage-2_mana,distance=..30] run function elements:villager/stage-2_mana
+execute at @s if entity @e[type=minecraft:interaction,tag=stage-2_farm-slots,distance=..10] run function elements:villager/stage-2_farm-slots
+execute at @s if entity @e[type=minecraft:interaction,tag=stage-3_mana,distance=..10] run function elements:villager/stage-3_mana
+execute at @s if entity @e[type=minecraft:interaction,tag=stage-3_farm-slots,distance=..10] run function elements:villager/stage-3_farm-slots
+execute at @s if entity @e[type=minecraft:interaction,tag=stage-4_mana,distance=..10] run function elements:villager/stage-4_mana
+execute at @s if entity @e[type=minecraft:interaction,tag=stage-4_farm-slots,distance=..10] run function elements:villager/stage-4_farm-slots
 
