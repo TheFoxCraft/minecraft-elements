@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.9.6.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.10.1.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -597,9 +597,8 @@ scoreboard objectives add elements_enderchest_stats_addition dummy
 scoreboard objectives add elements_custom-items_item-click_cooldown dummy
 
 
-scoreboard objectives add elements_custom-items_shop_rettungs-plattform_cooldown dummy
+
 scoreboard objectives add elements_custom-items_shop_rettungs-plattform_damage dummy
-scoreboard objectives add elements_custom-items_shop_rettungs-plattform_cooldown_show dummy
 scoreboard objectives add elements_custom-items_shop_rettungs-plattform_block-count dummy
 scoreboard objectives add elements_custom-items_shop_rettungs-plattform_block-need dummy
 scoreboard objectives add elements_custom-items_shop_rettungs-plattform_block-need_count dummy
@@ -609,14 +608,12 @@ scoreboard objectives add elements_custom-items_shop_mining-frucht_timer_min dum
 scoreboard objectives add elements_custom-items_shop_mining-frucht_timer_sec dummy
 scoreboard objectives add elements_custom-items_shop_mining-frucht_timer_tick dummy
 scoreboard objectives add elements_custom-items_shop_mining-frucht_enable dummy
-scoreboard objectives add elements_custom-items_shop_mining-frucht_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_foraging-frucht_counter dummy
 scoreboard objectives add elements_custom-items_shop_foraging-frucht_timer_h dummy
 scoreboard objectives add elements_custom-items_shop_foraging-frucht_timer_min dummy
 scoreboard objectives add elements_custom-items_shop_foraging-frucht_timer_sec dummy
 scoreboard objectives add elements_custom-items_shop_foraging-frucht_timer_tick dummy
 scoreboard objectives add elements_custom-items_shop_foraging-frucht_enable dummy
-scoreboard objectives add elements_custom-items_shop_foraging-frucht_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_farming-frucht_counter_sweet_berries dummy
 scoreboard objectives add elements_custom-items_shop_farming-frucht_counter_crimson_vines dummy
 scoreboard objectives add elements_custom-items_shop_farming-frucht_timer_h dummy
@@ -624,20 +621,14 @@ scoreboard objectives add elements_custom-items_shop_farming-frucht_timer_min du
 scoreboard objectives add elements_custom-items_shop_farming-frucht_timer_sec dummy
 scoreboard objectives add elements_custom-items_shop_farming-frucht_timer_tick dummy
 scoreboard objectives add elements_custom-items_shop_farming-frucht_enable dummy
-scoreboard objectives add elements_custom-items_shop_farming-frucht_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_fishing-frucht_counter dummy
 scoreboard objectives add elements_custom-items_shop_fishing-frucht_timer_h dummy
 scoreboard objectives add elements_custom-items_shop_fishing-frucht_timer_min dummy
 scoreboard objectives add elements_custom-items_shop_fishing-frucht_timer_sec dummy
 scoreboard objectives add elements_custom-items_shop_fishing-frucht_timer_tick dummy
 scoreboard objectives add elements_custom-items_shop_fishing-frucht_enable dummy
-scoreboard objectives add elements_custom-items_shop_fishing-frucht_cooldown dummy
-scoreboard objectives add elements_custom-items_shop_small-heal-potion_cooldown dummy
-scoreboard objectives add elements_custom-items_shop_big-heal-potion_cooldown dummy
-scoreboard objectives add elements_custom-items_shop_boss-frucht_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_boss-frucht_remain dummy
 scoreboard objectives add elements_custom-items_shop_boss-frucht_current_stage dummy
-scoreboard objectives add elements_custom-items_shop_leveltrank_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-1 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-2 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-3 dummy
@@ -647,13 +638,11 @@ scoreboard objectives add elements_custom-items_shop_leveltrank_timer_h dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_timer_min dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_timer_sec dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_timer_tick dummy
-scoreboard objectives add elements_custom-items_shop_hastetrank_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_hastetrank_enable dummy
 scoreboard objectives add elements_custom-items_shop_hastetrank_timer_h dummy
 scoreboard objectives add elements_custom-items_shop_hastetrank_timer_min dummy
 scoreboard objectives add elements_custom-items_shop_hastetrank_timer_sec dummy
 scoreboard objectives add elements_custom-items_shop_hastetrank_timer_tick dummy
-scoreboard objectives add elements_custom-items_shop_water-breathing_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_water-breathing_enable dummy
 scoreboard objectives add elements_custom-items_shop_water-breathing_timer_h dummy
 scoreboard objectives add elements_custom-items_shop_water-breathing_timer_min dummy
@@ -664,24 +653,18 @@ scoreboard objectives add elements_custom-items_shop_luck-potion_timer_h dummy
 scoreboard objectives add elements_custom-items_shop_luck-potion_timer_min dummy
 scoreboard objectives add elements_custom-items_shop_luck-potion_timer_sec dummy
 scoreboard objectives add elements_custom-items_shop_luck-potion_timer_tick dummy
-scoreboard objectives add elements_custom-items_shop_hot-lava_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_hot-lava_damage_queue dummy
 scoreboard objectives add elements_custom-items_shop_hot-lava_damage dummy
 scoreboard objectives add elements_custom-items_shop_sauger_damage dummy
 scoreboard objectives add elements_custom-items_shop_sauger_click minecraft.used:minecraft.warped_fungus_on_a_stick
-scoreboard objectives add elements_custom-items_shop_manatrank_cooldown dummy
-scoreboard objectives add elements_custom-items_shop_magisches-wasser_cooldown dummy
 scoreboard objectives add elements_custom-items_shop_magisches-wasser_damage dummy
 scoreboard objectives add elements_custom-items_shop_magisches-wasser_distance dummy
 scoreboard objectives add elements_custom-items_shop_magisches-wasser_is_block dummy
-scoreboard objectives add elements_custom-items_mystery_tp-schwert_cooldown dummy
-scoreboard objectives add elements_custom-items_mystery_barriere-stab_cooldown dummy
 scoreboard objectives add elements_custom-items_mystery_barriere-stab_particle_x dummy
 scoreboard objectives add elements_custom-items_mystery_barriere-stab_particle_y dummy
-scoreboard objectives add elements_custom-items_mystery_excalibur_cooldown dummy
 scoreboard objectives add elements_custom-items_mystery_excalibur_sword_despawn dummy
 scoreboard objectives add elements_custom-items_mystery_excalibur_sword_random dummy
-scoreboard objectives add elements_custom-items_mystery_zerberster_cooldown dummy
+
 
 
 
@@ -738,8 +721,6 @@ scoreboard objectives add elements_mana_mana-count dummy
 scoreboard objectives add elements_mana_mana-max dummy
 scoreboard objectives add elements_mana_regeneration_timer dummy
 scoreboard objectives add elements_mana_regeneration-per-sec dummy
-scoreboard objectives add elements_mana_item_messstab_cooldown dummy
-scoreboard objectives add elements_mana_item_magische-schale_cooldown dummy
 scoreboard objectives add elements_mana_item_schrumpfstab_stufe dummy
 scoreboard objectives add elements_mana_item_schrumpfstab_hit_others_timer dummy
 scoreboard objectives add elements_recycler_update dummy
@@ -762,7 +743,6 @@ scoreboard objectives add elements_admin_config_tipps_interface dummy
 scoreboard objectives add elements_maxhealth dummy
 scoreboard objectives add elements_maxhealth_old dummy
 scoreboard objectives add elements_maxhealth_update_queue dummy
-scoreboard objectives add elements_custom-items_lebensfrucht_cooldown dummy
 scoreboard objectives add elements_inv_small_heal_pot dummy
 scoreboard objectives add elements_inv_big_heal_pot dummy
 scoreboard objectives add elements_inv_manatrank dummy
@@ -771,13 +751,9 @@ scoreboard objectives add elements_custom_doubleclick_cooldown dummy
 scoreboard objectives add leave trigger
 scoreboard objectives add elements_stats_fish_caught dummy
 scoreboard objectives add elements_get-login minecraft.custom:minecraft.leave_game
-scoreboard objectives add elements_get-login_cooldown dummy
 
 
 
-scoreboard objectives add elements_custom-items_boss-keks_stage-1_cooldown dummy
-scoreboard objectives add elements_custom-items_boss-keks_stage-2_cooldown dummy
-scoreboard objectives add elements_custom-items_boss-keks_stage-3_cooldown dummy
 
 
 #double-xp Event
@@ -875,3 +851,20 @@ function dasdatapack:elements/check_for_install
 
 #set fixed values
 scoreboard players set .server elements_fixed-value_1 1
+
+
+
+
+scoreboard objectives add elements_debug_clear-items dummy
+
+
+
+
+
+
+#function timer
+function elements:function-timers/1s
+function elements:function-timers/3s
+function elements:function-timers/5s
+function elements:function-timers/10s
+function elements:function-timers/1m

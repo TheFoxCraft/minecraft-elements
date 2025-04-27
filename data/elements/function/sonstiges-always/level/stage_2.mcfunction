@@ -12,3 +12,8 @@ execute as @s[nbt={Inventory:[{id:"minecraft:oak_log",components:{"minecraft:cus
 execute if score .server elements_uniqueitem_ork_schatz matches 0 run function elements:uniques/trigger/ork_schatz/random
 scoreboard players set @s elements_level_wood_spruce 0
 function elements:sonstiges/element_shards/trigger
+
+
+#leveltrank
+execute as @s[scores={elements_custom-items_shop_leveltrank_counter_stage-2=10..}] run xp add @s 1 levels
+execute as @s[scores={elements_custom-items_shop_leveltrank_counter_stage-2=10..}] run scoreboard players remove @s elements_custom-items_shop_leveltrank_counter_stage-2 10

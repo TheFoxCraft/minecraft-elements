@@ -10,6 +10,11 @@ execute on attacker run scoreboard players set @s elements_sonstiges_actionbar_p
 
 attribute @s scale modifier add schrumpfstab_scale -0.95 add_multiplied_total
 scoreboard players set @s elements_mana_item_schrumpfstab_hit_others_timer 10
+scoreboard players set @s elements_mana_item_schrumpfstab_stufe 2
 
 execute on attacker at @s run title @p[tag=schrumpfstab_hit_others] actionbar ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"Du wurdest von ",{"selector": "@s"}," für kurze Zeit geschrumpft!"]
 scoreboard players set @s elements_sonstiges_actionbar_pause 40
+
+tag @s remove schrumpfstab_hit_others
+# normal ist opfer
+# on attacker ist angreifer

@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "main": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": {
+            "type": "minecraft:allay",
+            "nbt": "{Tags:[\"spawn_levelbaum_allay\"]}"
+
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "elements:spawn/levelbaum/trigger"
+    }
+  }

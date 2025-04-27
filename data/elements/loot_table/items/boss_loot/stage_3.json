@@ -12,12 +12,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -29,12 +23,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -46,12 +34,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -63,12 +45,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         }
@@ -107,12 +83,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -131,15 +101,7 @@
                   }
                 }
               ],
-              "weight": 5,
-              "functions": [
-                {
-                  "function": "set_custom_data",
-                  "tag": {
-                    "vault_loot_needs_owner":1
-                  }
-                }
-              ]
+              "weight": 5
             },
             {
               "type": "minecraft:empty",
@@ -155,12 +117,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -172,12 +128,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -189,12 +139,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -206,12 +150,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -232,12 +170,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -249,12 +181,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -266,12 +192,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -283,12 +203,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         }

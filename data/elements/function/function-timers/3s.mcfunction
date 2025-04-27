@@ -7,3 +7,12 @@ function elements:spawn/gruppenziel
 
 tag @a remove elements_is_currently_fishing
 tag @a[nbt={SelectedItem:{id:"minecraft:fishing_rod"}}] add elements_is_currently_fishing
+
+
+
+execute as @a[scores={elements_get-name_status=0}] run function elements:sonstiges/get_name/get_name with entity @s
+
+
+
+
+schedule function elements:function-timers/3s 60

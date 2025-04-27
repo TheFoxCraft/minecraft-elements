@@ -30,3 +30,7 @@ execute as @s[nbt={SelectedItem:{id:"minecraft:bow",components:{"minecraft:custo
 
 scoreboard players remove @s elements_level_sweet_berries 1
 function elements:sonstiges/element_shards/trigger
+
+#levetrank
+execute as @s[scores={elements_custom-items_shop_leveltrank_counter_stage-4=10..}] run xp add @s 10 levels
+execute as @s[scores={elements_custom-items_shop_leveltrank_counter_stage-4=10..}] run scoreboard players remove @s elements_custom-items_shop_leveltrank_counter_stage-4 10

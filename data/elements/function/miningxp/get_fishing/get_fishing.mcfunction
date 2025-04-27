@@ -18,9 +18,9 @@ execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",components:{"minecr
 
 
 #guardian spawning fishing
-execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}]}] run function elements:sonstiges/get_name/pull_name
-execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}]}] run function elements:miningxp/get_fishing/guardian_inv with storage elements_get-name
-execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",count:1,components:{"minecraft:custom_model_data":2}}]}] run clear @s structure_void[custom_model_data=2] 1
+execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",components:{"minecraft:custom_model_data":2}}]}] run function elements:sonstiges/get_name/pull_name
+execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",components:{"minecraft:custom_model_data":2}}]}] run function elements:miningxp/get_fishing/guardian_inv with storage elements_get-name
+execute as @a[nbt={Inventory:[{id:"minecraft:structure_void",components:{"minecraft:custom_model_data":2}}]}] run clear @s structure_void[custom_model_data=2] 1
 #das ist backup für wenns nicht instant getriggert wird
 
 

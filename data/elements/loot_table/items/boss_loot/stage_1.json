@@ -12,12 +12,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -29,12 +23,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -46,12 +34,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -63,12 +45,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         }
@@ -116,15 +92,7 @@
                   }
                 }
               ],
-              "weight": 5,
-              "functions": [
-                {
-                  "function": "set_custom_data",
-                  "tag": {
-                    "vault_loot_needs_owner":1
-                  }
-                }
-              ]
+              "weight": 5
             },
             {
               "type": "minecraft:empty",
@@ -135,28 +103,12 @@
         {
           "type": "loot_table",
           "weight": 10,
-          "value": "elements:items/customs/boss-keks/stage_1",
-          "functions": [
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
-            }
-          ]
+          "value": "elements:items/customs/boss-keks/stage_1"
         },
         {
           "type": "loot_table",
           "weight": 5,
-          "value": "elements:items/customs/gravity-stone/rare",
-          "functions": [
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
-            }
-          ]
+          "value": "elements:items/customs/gravity-stone/rare"
         },
         {
           "type": "item",
@@ -166,12 +118,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -183,12 +129,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -209,12 +149,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -226,12 +160,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         },
@@ -243,12 +171,6 @@
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_custom_data",
-              "tag": {
-                "vault_loot_needs_owner":1
-              }
             }
           ]
         }
