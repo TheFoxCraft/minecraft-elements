@@ -162,6 +162,7 @@ execute as @s[scores={elements_enderchest_level_enderchest=1,elements_enderchest
 execute as @s[scores={elements_enderchest_level_casino=1,elements_enderchest_interface_number=1}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:diamond[custom_model_data=1]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_number 5
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_interface 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:diamond",count:1,components:{"minecraft:custom_model_data":1}}}]
