@@ -27,7 +27,7 @@ scoreboard players set @s elements_death 0
 scoreboard players set @s elements_mana_item_schrumpfstab_stufe 1
 
 #unique item trigger
-execute if score .server elements_uniqueitem_other_datenspeicher matches 0 if score @s elements_mainlevel matches 1000000.. as @s run function elements:uniques/trigger/datenspeicher
+execute if score .server elements_uniqueitem_other_datenspeicher matches 0 if score @s elements_mainlevel matches 100000.. as @s run function elements:uniques/trigger/datenspeicher
 
 
 # cancel stats for ausgegeben 

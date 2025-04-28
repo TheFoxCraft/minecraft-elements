@@ -6,6 +6,10 @@
 
 function elements:miningxp/get_fishing/get_fishing
 
+# Farmslots
+function elements:farm_slots/stage_2/calc_main
+function elements:farm_slots/stage_3/calc_main
+function elements:farm_slots/stage_4/calc_main
 
 
 #players
@@ -44,10 +48,6 @@ function elements:stages/refresh-vaults
 
 
 
-# Farmslots
-function elements:farm_slots/stage_2/calc_main
-function elements:farm_slots/stage_3/calc_main
-function elements:farm_slots/stage_4/calc_main
 
 
 
@@ -76,7 +76,8 @@ execute if score .server elements_stage_3_boss_status matches 1 run function ele
 execute if score .server elements_stage_4_boss_status matches 1 run function elements:bosse/stage-4/main
 
 
-
+#enderchest
+function elements:enderchest/kill_items
 
 
 #save

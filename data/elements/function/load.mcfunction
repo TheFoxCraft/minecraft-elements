@@ -202,6 +202,7 @@ scoreboard objectives add elements_inv_compressed_sweet_berries dummy
 scoreboard objectives add elements_inv_crimson_vines dummy
 scoreboard objectives add elements_inv_sweet_berries dummy
 scoreboard objectives add elements_enderchest_interface_number dummy
+scoreboard objectives add elements_enderchest_interface_number_old dummy
 scoreboard objectives add elements_autocompactor dummy
 scoreboard objectives add elements_autorecycler dummy
 scoreboard objectives add elements_inv_stone dummy
