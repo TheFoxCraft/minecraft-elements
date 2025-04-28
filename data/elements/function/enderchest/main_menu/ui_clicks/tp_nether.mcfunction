@@ -3,4 +3,4 @@ function elements:enderchest/settings/dimension_rotation/nether_tp with storage 
 execute at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100
 xp add @s 0 points
-scoreboard players set @s elements_enderchest_interface_clicked 0
+function elements:enderchest/load

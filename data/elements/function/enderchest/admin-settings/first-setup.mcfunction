@@ -19,7 +19,7 @@ execute as @s run scoreboard players set .server elements_casino_stats_game_luck
 execute as @s run scoreboard players set .server elements_spawn_energiekern 0
 execute as @s run scoreboard players set .server elements_stats_servermaxlevel 0
 execute as @s run scoreboard players set .server elements_config_death_level 5
-execute as @s run scoreboard players set .server elements_config_death_level_datenspeicher 15
+execute as @s run scoreboard players set .server elements_config_death_level_datenspeicher 50
 execute as @s run scoreboard players set .server elements_stats_serverlevellost 0
 execute as @s run scoreboard players set .server elements_stats_serverdeath 0
 execute as @s run scoreboard players set .server elements_stats_playtime_h 0
