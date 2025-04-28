@@ -57,3 +57,8 @@ execute at @s if entity @e[type=minecraft:interaction,tag=stage-3_farm-slots,dis
 execute at @s if entity @e[type=minecraft:interaction,tag=stage-4_mana,distance=..10] run function elements:villager/stage-4_mana
 execute at @s if entity @e[type=minecraft:interaction,tag=stage-4_farm-slots,distance=..10] run function elements:villager/stage-4_farm-slots
 
+
+
+#load enderchest
+execute unless score @s elements_enderchest_interface_number = @s elements_enderchest_interface_number_old run function elements:enderchest/load
+scoreboard players operation @s elements_enderchest_interface_number_old = @s elements_enderchest_interface_number

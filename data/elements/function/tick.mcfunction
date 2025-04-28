@@ -76,7 +76,8 @@ execute if score .server elements_stage_3_boss_status matches 1 run function ele
 execute if score .server elements_stage_4_boss_status matches 1 run function elements:bosse/stage-4/main
 
 
-
+#enderchest
+function elements:enderchest/kill_items
 
 
 #save
