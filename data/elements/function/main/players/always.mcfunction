@@ -38,9 +38,7 @@ function elements:sonstiges-always/firstlogin
 function elements:spawn/recycler
 
 
-execute as @s[scores={elements_choose_dimension=1..4}] run function elements:spawn/choose_dimension
-execute as @s[scores={z_just-ignore=1001..1006}] run function elements:spawn/choose_dimension
-execute as @s[scores={elements_death=1..}] run function elements:sonstiges/death
+
 
 # item click cooldown
 execute as @s[scores={elements_custom-items_item-click_cooldown=1..}] run scoreboard players remove @s elements_custom-items_item-click_cooldown 1
@@ -57,7 +55,9 @@ execute at @s if entity @e[type=minecraft:interaction,tag=stage-3_farm-slots,dis
 execute at @s if entity @e[type=minecraft:interaction,tag=stage-4_mana,distance=..10] run function elements:villager/stage-4_mana
 execute at @s if entity @e[type=minecraft:interaction,tag=stage-4_farm-slots,distance=..10] run function elements:villager/stage-4_farm-slots
 
-
+execute as @s[scores={elements_choose_dimension=1..4}] run function elements:spawn/choose_dimension
+execute as @s[scores={z_just-ignore=1001..1006}] run function elements:spawn/choose_dimension
+execute as @s[scores={elements_death=1..}] run function elements:sonstiges/death
 
 #load enderchest
 execute unless score @s elements_enderchest_interface_number = @s elements_enderchest_interface_number_old run function elements:enderchest/load
