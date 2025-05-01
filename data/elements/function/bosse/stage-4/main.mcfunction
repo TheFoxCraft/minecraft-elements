@@ -18,6 +18,8 @@ execute if score .server elements_stage_4_boss_melee_timer matches 0 as @e[tag=s
 execute if score .server elements_stage_4_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-4_boss,distance=..10] run damage @s 45 elements:boss_stage_4
 execute if score .server elements_stage_4_boss_melee_timer matches 0 as @a at @s if entity @e[tag=stage-4_boss,distance=..10] run playsound entity.panda.sneeze master @s
 execute if score .server elements_stage_4_boss_melee_timer matches 0 store result score .server elements_stage_4_boss_melee_timer run random value 40..100
+execute if score .server elements_stage_4_boss_melee_timer matches 85 in elements:stage-4_bossroom run tellraw @a[distance=0..] ["",{"text": "Server: ","color": "yellow"},{"text": "Der Boss hat alle deinen Aktiven Effekte entfernt!","color": "white"}]
+execute if score .server elements_stage_4_boss_melee_timer matches 85 in elements:stage-4_bossroom run effect clear @a[distance=0..,gamemode=!spectator]
 
 
 execute if score .server elements_stage_4_boss_status matches 1 unless entity @e[tag=stage-4_boss] in elements:stage-4_bossroom run kill @e[tag=stage_4_boss_room_protection]

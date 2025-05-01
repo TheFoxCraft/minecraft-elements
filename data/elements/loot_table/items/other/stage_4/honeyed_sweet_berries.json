@@ -1,0 +1,57 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:copper_ingot",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_model_data": 27
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "bold": true,
+                                    "color": "gold",
+                                    "italic": false,
+                                    "translate": "elements.item.honeyed_sweet_berries.name"
+                                }
+                            ],
+                            "target": "item_name"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "translate": "elements.main.other.space"
+                                },
+                                {
+                                    "color": "gray",
+                                    "italic": false,
+                                    "translate": "elements.item.honeyed_sweet_berries.description"
+                                },
+                                {
+                                    "translate": "elements.main.other.space"
+                                },
+                                {
+                                    "translate": "elements.main.rarities.rare",
+                                    "color": "blue",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "append"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

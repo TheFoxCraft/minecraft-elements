@@ -699,6 +699,7 @@ scoreboard objectives add elements_stage_4_boss_players_in_arena dummy
 scoreboard objectives add elements_stage_4_boss_spectator_in_arena dummy
 
 scoreboard objectives add elements_stage_3_portal_enable_fungus_timer dummy
+scoreboard objectives add elements_stage_4_portal_enable_fox_timer dummy
 
 scoreboard objectives add elements_spawn_vaults_refresh dummy
 scoreboard objectives add elements_leaderboards_refresh-timer dummy
