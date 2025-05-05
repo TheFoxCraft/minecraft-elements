@@ -10,6 +10,7 @@ function elements:miningxp/get_fishing/get_fishing
 function elements:farm_slots/stage_2/calc_main
 function elements:farm_slots/stage_3/calc_main
 function elements:farm_slots/stage_4/calc_main
+function elements:farm_slots/stage_5/calc_main
 
 
 #players

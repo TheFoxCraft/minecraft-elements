@@ -86,6 +86,7 @@ execute as @s[scores={elements_techniker_level=10,elements_techniker_clicked=1}]
 execute as @s[scores={elements_techniker_level=10,elements_techniker_clicked=1}] run scoreboard players set @s elements_techniker_clicked 0
 execute as @s[scores={elements_techniker_level=10,z_just-ignore=16}] run tellraw @s ["","\n",{"translate":"elements.villager.techniker.name.chat","color":"yellow"},{"text":"Öffne deine Enderkiste. Dort kannst du eine Dimension auswählen. Klickst du eine an, wirst du dorthin teleportiert."}]
 execute as @s[scores={elements_techniker_level=10,z_just-ignore=16}] run scoreboard players set @s elements_enderchest_level_tp 1
+execute as @s[scores={elements_techniker_level=10,z_just-ignore=16}] run function elements:enderchest/load
 execute as @s[scores={elements_techniker_level=10,z_just-ignore=16}] run scoreboard players set @s elements_enderchest_settings_tp-mode 1
 execute as @s[scores={elements_techniker_level=10,z_just-ignore=16}] run scoreboard players set @s elements_techniker_level 11
 execute as @s[scores={z_just-ignore=16}] run scoreboard players set @s z_just-ignore 0
@@ -94,6 +95,7 @@ execute as @s[scores={elements_techniker_level=11,elements_techniker_clicked=1}]
 execute as @s[scores={elements_techniker_level=11,elements_techniker_clicked=1}] run scoreboard players set @s elements_techniker_clicked 0
 execute as @s[scores={elements_techniker_level=11,z_just-ignore=17}] run tellraw @s ["","\n",{"translate":"elements.villager.techniker.name.chat","color":"yellow"},{"text":"Besorge mir einige Materialien von Monstern. Ich benötige 16 verrottetes Fleisch, 16 Knochen und 16 Schwarzpulver. Vielleicht können dir die anderen Spieler helfen, wenn es in deiner Dimension schwierig ist, all diese Dinge zu sammeln. Und vergiss nicht deine Belohnungen bei den Collections abzuholen!"}]
 execute as @s[scores={elements_techniker_level=11,z_just-ignore=17}] run scoreboard players set @s elements_enderchest_level_collections 1
+execute as @s[scores={elements_techniker_level=11,z_just-ignore=17}] run function elements:enderchest/load
 execute as @s[scores={elements_techniker_level=11,z_just-ignore=17}] run scoreboard players set @s elements_techniker_level 12
 execute as @s[scores={z_just-ignore=17}] run scoreboard players set @s z_just-ignore 0
 
@@ -137,6 +139,7 @@ execute as @s[scores={z_just-ignore=21}] run scoreboard players set @s z_just-ig
 
 execute as @s[scores={elements_techniker_level=17,elements_techniker_clicked=1}] run tellraw @s ["","\n",{"translate":"elements.villager.techniker.name.chat","color":"yellow"},{"text":"Du solltest dich im Villager-Hub weiter umschauen. Dort gibt es bestimmt jemanden der mit dir reden möchte! Ich allerdings, kann nun nichts mehr für dich tun!"}]
 execute as @s[scores={elements_techniker_level=17,elements_techniker_clicked=1}] run scoreboard players set @s elements_enderchest_level_tp 2
+execute as @s[scores={elements_techniker_level=17,elements_techniker_clicked=1}] run function elements:enderchest/load
 execute as @s[scores={elements_techniker_level=17,elements_techniker_clicked=1}] run scoreboard players set @s elements_enderchest_settings_tp-mode 1
 execute as @s[scores={elements_techniker_level=17,elements_techniker_clicked=1}] run scoreboard players set @s elements_enderchest_settings_dimension 1
 execute as @s[scores={elements_techniker_level=17,elements_techniker_clicked=1}] run scoreboard players set @s elements_techniker_message_cooldown 1200

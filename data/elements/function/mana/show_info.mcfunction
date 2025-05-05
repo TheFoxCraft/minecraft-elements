@@ -1,2 +1,2 @@
 title @s[scores={elements_sonstiges_actionbar_pause=0}] actionbar ["",{"text": "Mana: ","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-count"},"color": "dark_purple"},{"text": "/","color": "dark_purple"},{"score": {"name": "@s","objective": "elements_mana_mana-max"},"color": "dark_purple"}]
-scoreboard players set @s elements_sonstiges_actionbar_hold 1
+scoreboard players set @s elements_sonstiges_actionbar_hold 20

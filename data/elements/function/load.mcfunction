@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.10.1.1","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.10.2.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -295,6 +295,7 @@ scoreboard objectives add elements_miningxp_mining_mine-get_stone minecraft.mine
 scoreboard objectives add elements_miningxp_mining_mine-get_cobblestone minecraft.mined:minecraft.cobblestone
 scoreboard objectives add elements_miningxp_mining_mine-get_basalt minecraft.mined:minecraft.basalt
 scoreboard objectives add elements_miningxp_foresting_mine-get_spruce minecraft.mined:minecraft.spruce_log
+scoreboard objectives add elements_miningxp_foresting_mine-get_melon minecraft.mined:minecraft.melon
 scoreboard objectives add elements_miningxp_farming_mine-get_crimson_vines minecraft.mined:minecraft.weeping_vines
 scoreboard objectives add elements_miningxp_farming_mine-get_crimson_vines_plant minecraft.mined:minecraft.weeping_vines_plant
 scoreboard objectives add elements_miningxp_farming_mine-get_sweet_berries dummy
@@ -634,6 +635,7 @@ scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-1 
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-2 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-3 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-4 dummy
+scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-5 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_enable dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_timer_h dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_timer_min dummy
@@ -665,7 +667,9 @@ scoreboard objectives add elements_custom-items_mystery_barriere-stab_particle_x
 scoreboard objectives add elements_custom-items_mystery_barriere-stab_particle_y dummy
 scoreboard objectives add elements_custom-items_mystery_excalibur_sword_despawn dummy
 scoreboard objectives add elements_custom-items_mystery_excalibur_sword_random dummy
-
+scoreboard objectives add elements_custom-items_zentrierer_rotation dummy
+scoreboard objectives add elements_custom-items_zentrierer_rotation_lock dummy
+scoreboard objectives add elements_custom-items_zentrierer_rotation_lock_mana_timer dummy
 
 
 
@@ -819,6 +823,12 @@ scoreboard objectives add elements_farm-slots_stage-4_age dummy
 scoreboard objectives add elements_farm-slots_stage-4_age_old dummy
 scoreboard objectives add elements_farm-slots_stage-4_harvest dummy
 
+scoreboard objectives add elements_farm-slots_stage-5_placed dummy
+scoreboard objectives add elements_farm-slots_stage-5_broken minecraft.mined:melon_stem
+scoreboard objectives add elements_farm-slots_stage-5_slots dummy
+scoreboard objectives add elements_farm-slots_stage-5_max-slots dummy
+scoreboard objectives add elements_farm-slots_stage-5_correct_UUID dummy
+scoreboard objectives add elements_farm-slots_stage-5_broken_slots dummy
 
 scoreboard objectives setdisplay list elements_mainlevel
 
@@ -834,6 +844,10 @@ scoreboard objectives add elements_level_crimson_vines minecraft.mined:minecraft
 scoreboard objectives add elements_level_crimson_vines_plant minecraft.mined:minecraft.weeping_vines_plant
 
 scoreboard objectives add elements_level_sweet_berries dummy
+
+scoreboard objectives add elements_level_melon minecraft.mined:minecraft.melon
+scoreboard objectives add elements_level_melon_placed minecraft.used:minecraft.melon
+
 
 ##set values at start
 
