@@ -44,6 +44,7 @@ execute as @s run scoreboard players set .server elements_abgabe_stage_2_progres
 execute as @s run scoreboard players set .server elements_abgabe_stage_3_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_stage_4_gang_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_stage_4_progress 0
+execute as @s run scoreboard players set .server elements_abgabe_stage_5_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_levelbaum_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_community-hub-main_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_angel-teich_progress 0

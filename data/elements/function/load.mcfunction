@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.10.2.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.11.0.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -553,6 +553,10 @@ scoreboard objectives add elements_abgabe_stage_4 dummy
 scoreboard objectives add elements_abgabe_stage_4_progress dummy
 scoreboard objectives add elements_abgabe_stage_4_goal dummy
 scoreboard objectives add elements_abgabe_stage_4_abgabe-mode dummy
+scoreboard objectives add elements_abgabe_stage_5 dummy
+scoreboard objectives add elements_abgabe_stage_5_progress dummy
+scoreboard objectives add elements_abgabe_stage_5_goal dummy
+scoreboard objectives add elements_abgabe_stage_5_abgabe-mode dummy
 scoreboard objectives add elements_abgabe_other_levelbaum dummy
 scoreboard objectives add elements_abgabe_other_levelbaum_progress dummy
 scoreboard objectives add elements_abgabe_other_levelbaum_goal dummy
@@ -721,6 +725,10 @@ scoreboard objectives add elements_villager_stage-4_mana_clicked dummy
 scoreboard objectives add elements_villager_stage-4_mana_level dummy
 scoreboard objectives add elements_villager_stage-4_farm-slots_clicked dummy
 scoreboard objectives add elements_villager_stage-4_farm-slots_level dummy
+scoreboard objectives add elements_villager_stage-5_mana_clicked dummy
+scoreboard objectives add elements_villager_stage-5_mana_level dummy
+scoreboard objectives add elements_villager_stage-5_farm-slots_clicked dummy
+scoreboard objectives add elements_villager_stage-5_farm-slots_level dummy
 scoreboard objectives add elements_stage-2_mana_activate_timer_tick dummy
 scoreboard objectives add elements_stage-2_mana_activate_timer_sec dummy
 scoreboard objectives add elements_mana_mana-count dummy
