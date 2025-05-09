@@ -199,8 +199,10 @@ scoreboard objectives add elements_inv_compressed_cobblestone dummy
 scoreboard objectives add elements_inv_compressed_wood dummy
 scoreboard objectives add elements_inv_compressed_crimson_vines dummy
 scoreboard objectives add elements_inv_compressed_sweet_berries dummy
+scoreboard objectives add elements_inv_compressed_melon dummy
 scoreboard objectives add elements_inv_crimson_vines dummy
 scoreboard objectives add elements_inv_sweet_berries dummy
+scoreboard objectives add elements_inv_melon dummy
 scoreboard objectives add elements_enderchest_interface_number dummy
 scoreboard objectives add elements_enderchest_interface_number_old dummy
 scoreboard objectives add elements_autocompactor dummy
@@ -418,6 +420,9 @@ scoreboard objectives add elements_collections_calc_crimson_vines_plant minecraf
 # stage 4
 scoreboard objectives add elements_collections_sweet_berries_collect dummy
 scoreboard objectives add elements_collections_stats_sweet_berries_total dummy
+# stage 4
+scoreboard objectives add elements_collections_melon_collect dummy
+scoreboard objectives add elements_collections_stats_melon_total minecraft.mined:melon
 
 scoreboard objectives add elements_custom-items_fishing_rod_crafting_sticks_cooldown dummy
 
@@ -746,6 +751,8 @@ scoreboard objectives add elements_recycler_stats_3 dummy
 scoreboard objectives add elements_recycler_stats_3_spawn dummy
 scoreboard objectives add elements_recycler_stats_4 dummy
 scoreboard objectives add elements_recycler_stats_4_spawn dummy
+scoreboard objectives add elements_recycler_stats_5 dummy
+scoreboard objectives add elements_recycler_stats_5_spawn dummy
 scoreboard objectives add elements_function_timer_1m dummy
 scoreboard objectives add elements_function_timer_10s dummy
 scoreboard objectives add elements_function_timer_5s dummy

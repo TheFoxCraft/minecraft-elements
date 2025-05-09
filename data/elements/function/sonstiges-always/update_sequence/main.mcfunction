@@ -253,9 +253,14 @@ execute as @a[scores={elements_update_sequence_status=10}] if score .server elem
 
 
 
-#execute if score .server elements_update_sequence_status matches 11 run say (Hier dann neue default-values setzen)
+
+execute if score .server elements_update_sequence_status matches 11 run scoreboard players set .server elements_config_death_level_datenspeicher 50
 execute if score .server elements_update_sequence_status matches 11 run scoreboard players set .server elements_abgabe_stage_5_progress 0
+execute if score .server elements_update_sequence_status matches 11 run scoreboard players set .server elements_recycler_stats_5 0
+execute if score .server elements_update_sequence_status matches 11 run scoreboard players set .server elements_recycler_stats_5_spawn 0
+#execute if score .server elements_update_sequence_status matches 11 run say (Hier dann neue default-values setzen)
 execute if score .server elements_update_sequence_status matches 11 run scoreboard players set .server elements_update_sequence_status 12
+
 
 
 execute as @a[scores={elements_update_sequence_status=11}] if score .server elements_update_sequence_status matches 12.. run title @s title ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
@@ -264,14 +269,16 @@ execute as @a[scores={elements_update_sequence_status=11}] if score .server elem
 execute as @a[scores={elements_update_sequence_status=11}] if score .server elements_update_sequence_status matches 12.. run tellraw @s ["",{"text": "Changelog im Discord"}]
 
 # ..
-#execute as @a[scores={elements_update_sequence_status=11}] if score .server elements_update_sequence_status matches 12.. run say (Hier dann neue default-values setzen)
+
 execute as @a[scores={elements_update_sequence_status=11}] if score .server elements_update_sequence_status matches 12.. run scoreboard players set @s elements_farm-slots_stage-5_max-slots 0
 execute as @a[scores={elements_update_sequence_status=11}] if score .server elements_update_sequence_status matches 12.. run scoreboard players set @s elements_farm-slots_stage-5_slots 0
 execute as @a[scores={elements_update_sequence_status=11}] if score .server elements_update_sequence_status matches 12.. run scoreboard players set @s elements_villager_stage-5_farm-slots_level 0
 execute as @a[scores={elements_update_sequence_status=11}] if score .server elements_update_sequence_status matches 12.. run scoreboard players set @s elements_villager_stage-5_mana_level 0
+execute as @a[scores={elements_update_sequence_status=11}] if score .server elements_update_sequence_status matches 12.. run scoreboard players set @s elements_collections_melon_collect 0
+execute as @a[scores={elements_update_sequence_status=11}] if score .server elements_update_sequence_status matches 12.. run scoreboard players set @s elements_collections_stats_melon_total 0
 execute as @a[scores={elements_update_sequence_status=11}] if score .server elements_update_sequence_status matches 12.. if score @s elements_villager_stage-3_mana_level matches 3 run scoreboard players set @s elements_villager_stage-3_mana_level 4
 
-
+#execute as @a[scores={elements_update_sequence_status=11}] if score .server elements_update_sequence_status matches 12.. run say (Hier dann neue default-values setzen)
 # ..
 execute as @a[scores={elements_update_sequence_status=11}] if score .server elements_update_sequence_status matches 12.. run scoreboard players set @s elements_update_sequence_status 12
 

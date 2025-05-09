@@ -1,0 +1,80 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:diamond_hoe",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:unbreakable": {},
+                  "minecraft:damage_resistant": {
+                    "types": "#is_fire"
+                  },
+                  "minecraft:custom_model_data": 3,
+                  "minecraft:tool": {
+                    "rules": [
+                      {
+                        "blocks": "melon",
+                        "speed": 10
+
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "bold": true,
+                    "color": "dark_purple",
+                    "italic": false,
+                    "translate": "elements.item.element_hoe.name"
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "translate": "elements.main.other.space"
+                  },
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "translate": "elements.item.element_hoe.description"
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "translate":"elements.item.element_tools.epic.drop"
+                    }
+                  ],
+                  {
+                    "translate": "elements.main.other.space"
+                  },
+                  {
+                    "bold": true,
+                    "color": "dark_purple",
+                    "italic": false,
+                    "translate": "elements.main.rarities.epic"
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

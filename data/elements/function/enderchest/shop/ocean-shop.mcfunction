@@ -225,6 +225,16 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 4 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_4
 execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 4 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 4 [1.200 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]
 
+#stage 5
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..1499,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 5 at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..1499,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 5 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 5 at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 5 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 5 run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/bossfrucht/stage_5"}
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 5 run xp add @s -1500 levels
+execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 5 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_5
+execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 5 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 5 [1.500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]
+
 
 #footer
 execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0

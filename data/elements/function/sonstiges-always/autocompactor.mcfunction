@@ -13,3 +13,6 @@ execute as @s[scores={elements_autocompactor=3,elements_inv_crimson_vines=64..}]
 
 execute as @s[scores={elements_autocompactor=4,elements_inv_sweet_berries=64..}] run function elements:sonstiges/savely_give_loot {id:"elements:items/compressed/sweet_berries"}
 execute as @s[scores={elements_autocompactor=4,elements_inv_sweet_berries=64..}] run clear @s sweet_berries 64
+
+execute as @s[scores={elements_autocompactor=5,elements_inv_melon=64..}] run function elements:sonstiges/savely_give_loot {id:"elements:items/compressed/melon"}
+execute as @s[scores={elements_autocompactor=5,elements_inv_melon=64..}] run clear @s melon 64

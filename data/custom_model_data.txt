@@ -12,7 +12,7 @@
     experience_bottle: Admin-Config | Öffne Double-Xp-Event Interface
     cookie: Bosskeks Stage 1
     potion: Kleiner Heiltrank | Nether Shop
-    golden_apple: Bossfrucht Stage 1 | Ocean Shop Buying
+    golden_apple: Bossfrucht | Ocean Shop Buying
     magma_block: Heiße Lava | Nether Shop
     gray_dye: Gravity-Stone | Rare
     oak_wood: Compressed Wood
@@ -102,7 +102,8 @@
     oak_fence_gate: Settings Enderchest
     amethyst_block: Casino Double or Nothing
     sweet_berries: Autocompact Trigger GUI
-    
+    glistering_melon_slice: Boss Spawning Stage 5
+    melon_slice: Autocompact
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)
@@ -129,7 +130,7 @@
     netherite_pickaxe: Element Pickaxe | Legendary
     netherite_axe: Element Axe | Legendary
     potion: Großer Heiltrank | Nether Shop Buying
-    golden_apple: Bossfrucht Stage 2 | Ocean Shop Buying
+    golden_apple: Bossfrucht Stage 3 | Ocean Shop
     ghast_tear: Photon | Mythic
     fishing_rod: Element Fishing Rod | Legendary
     gray_dye: Gravity-Stone | Mythic
@@ -154,6 +155,7 @@
 6:
     potion: Leveltrank | Stone Shop Buying
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Hook Tipp
+    golden_apple: Bossfrucht Stage 5
 7:
     potion: Hastetrank | Stone Shop
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Hook Solution
@@ -175,6 +177,7 @@
     weeping_vines: Collections Interface
     sweet_berries: Collections Interface
     cod: Collections Interface
+    melon_slice: Collections Interface
 11:
     clock: Admin-Config | Double-Level Timer Action
     potion: Manatrank | Sky Shop
@@ -185,6 +188,7 @@
     weeping_vines: Collections Interface
     sweet_berries: Collections Interface
     cod: Collections Interface
+    melon_slice: Collections Interface
 12:
     clock: Admin-Config | Double-Level Timer Action
     potion: Manatrank | Sky Shop Buying

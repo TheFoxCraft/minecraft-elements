@@ -57,6 +57,8 @@ execute as @s run scoreboard players set .server elements_recycler_stats_3 0
 execute as @s run scoreboard players set .server elements_recycler_stats_3_spawn 0
 execute as @s run scoreboard players set .server elements_recycler_stats_4 0
 execute as @s run scoreboard players set .server elements_recycler_stats_4_spawn 0
+execute as @s run scoreboard players set .server elements_recycler_stats_5 0
+execute as @s run scoreboard players set .server elements_recycler_stats_5_spawn 0
 execute as @s run scoreboard players set .server elements_abgabe_general_abgabe-mode 2
 execute as @s run scoreboard players set .server elements_spawn_shop_leer_timer_tick 0
 execute as @s run scoreboard players set .server elements_spawn_shop_leer_timer_min 0
