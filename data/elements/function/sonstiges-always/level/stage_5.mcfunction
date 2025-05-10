@@ -17,7 +17,7 @@ execute as @s[nbt={SelectedItem:{id:"minecraft:netherite_hoe",components:{"minec
 #execute as @s[nbt={Inventory:[{id:"minecraft:crimson_fungus",components:{"minecraft:custom_model_data":2}}]}] at @n[type=item,nbt={Item:{id:"minecraft:melon"}}] run loot spawn ~ ~ ~ loot elements:items/other/stage_4/melon
 
 
-#execute if score .server elements_uniqueitem_fragment_der_himmelswarze matches 0 run function elements:uniques/trigger/fragment_der_himmelswarze/random
+execute if score .server elements_uniqueitem_melonengolemschale matches 0 run function elements:uniques/trigger/melonengolemschale/random
 
 scoreboard players remove @s elements_level_melon 1
 function elements:sonstiges/element_shards/trigger
@@ -25,3 +25,10 @@ function elements:sonstiges/element_shards/trigger
 #levetrank
 execute as @s[scores={elements_custom-items_shop_leveltrank_counter_stage-5=10..}] run xp add @s 10 levels
 execute as @s[scores={elements_custom-items_shop_leveltrank_counter_stage-5=10..}] run scoreboard players remove @s elements_custom-items_shop_leveltrank_counter_stage-5 10
+
+
+#unique
+execute as @s[nbt={Inventory:[{id:"minecraft:feather",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players add @s elements_level_unique_addition 1
+
+execute if score @s elements_level_unique_addition matches 10.. run xp add @s 13 levels
+execute if score @s elements_level_unique_addition matches 10.. run scoreboard players remove @s elements_level_unique_addition 10

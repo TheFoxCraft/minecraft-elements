@@ -66,6 +66,7 @@
     arrow: Element Bow Arrow
     dead_bush: Dornenherz der Wildnis Unique Item
     carrot: Foraging Frucht
+    glistering_melon_slice: Unique 1/100k Stage 5
 2:
     diamond_pickaxe: Element Pickaxe | Rare
     netherite_pickaxe: Element Pickaxe | Rare (Upgraded)
@@ -196,6 +197,7 @@
     weeping_vines: Admin Settings Tipps Stage 3 Mainmenu
     fishing_rod: Admin Settings Tipps Fishing Rod Mainmenu
     anvil: Ambossos Unique Item
+    bow: runans bow Unique
 13:
     clock: Admin-Config | Double-Level Timer Action
     potion: Magisches Wasser | Ocean Shop

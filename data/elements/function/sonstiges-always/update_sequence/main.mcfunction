@@ -258,6 +258,7 @@ execute if score .server elements_update_sequence_status matches 11 run scoreboa
 execute if score .server elements_update_sequence_status matches 11 run scoreboard players set .server elements_abgabe_stage_5_progress 0
 execute if score .server elements_update_sequence_status matches 11 run scoreboard players set .server elements_recycler_stats_5 0
 execute if score .server elements_update_sequence_status matches 11 run scoreboard players set .server elements_recycler_stats_5_spawn 0
+execute if score .server elements_update_sequence_status matches 11 run scoreboard players set .server elements_uniqueitem_melonengolemschale 0
 #execute if score .server elements_update_sequence_status matches 11 run say (Hier dann neue default-values setzen)
 execute if score .server elements_update_sequence_status matches 11 run scoreboard players set .server elements_update_sequence_status 12
 

@@ -3,7 +3,7 @@ execute unless score @s elements_homedimension = @s elements_dimension run retur
 scoreboard players remove @s elements_miningxp_foresting_mine-get_melon 1
 
 scoreboard players add @s elements_miningxp_foresting_xp 3
-execute as @s[nbt={Inventory:[{id:"minecraft:crafting_table",components:{"minecraft:custom_model_data":5}}]}] run scoreboard players add @s elements_miningxp_foresting_xp 1
+execute as @s[nbt={Inventory:[{id:"minecraft:glistering_melon_slice",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players add @s elements_miningxp_foresting_xp 2
 execute as @s[scores={elements_custom-items_shop_foraging-frucht_enable=1}] run scoreboard players add @s elements_custom-items_shop_foraging-frucht_counter 1
 execute store result score @s elements_miningxp_foresting_loot run random value 1..20
 execute at @s if score @s elements_miningxp_foresting_level >= @s elements_miningxp_foresting_loot at @n[type=item,nbt={Item:{id:"minecraft:melon",count:1}}] run summon item ~ ~ ~ {Item:{id:"minecraft:melon",count:1}}

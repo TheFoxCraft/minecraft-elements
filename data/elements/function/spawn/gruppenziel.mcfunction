@@ -30,3 +30,7 @@ execute if score .server elements_stage matches 3 if score .server elements_abga
 # stage 4 final room
 execute if score .server elements_stage matches 3 if score .server elements_abgabe_stage_4 matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_goal = .server elements_abgabe_stage_4_goal
 execute if score .server elements_stage matches 3 if score .server elements_abgabe_stage_4 matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_progress = .server elements_abgabe_stage_4_progress
+
+# stage 5 final room
+execute if score .server elements_stage matches 4 if score .server elements_abgabe_stage_5 matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_goal = .server elements_abgabe_stage_5_goal
+execute if score .server elements_stage matches 4 if score .server elements_abgabe_stage_5 matches 1 run scoreboard players operation .server elements_abgabe_gruppenziel_progress = .server elements_abgabe_stage_5_progress

@@ -444,6 +444,7 @@ scoreboard objectives add elements_uniqueitem_ork_schatz dummy
 scoreboard objectives add elements_uniqueitem_fragment_der_himmelswarze dummy
 scoreboard objectives add elements_uniqueitem_wanderlachs dummy
 scoreboard objectives add elements_uniqueitem_dornenherz_der_wildnis dummy
+scoreboard objectives add elements_uniqueitem_melonengolemschale dummy
 #other
 scoreboard objectives add elements_uniqueitem_other_datenspeicher dummy
 scoreboard objectives add elements_uniqueitem_other_rolex dummy
@@ -456,6 +457,7 @@ scoreboard objectives add elements_uniqueitem_miningxp_sparks_papageienfeder dum
 scoreboard objectives add elements_uniqueitem_bosse_taubenkacke dummy
 scoreboard objectives add elements_uniqueitem_bosse_tomorrowland_karte dummy
 scoreboard objectives add elements_uniqueitem_bosse_amboesse dummy
+scoreboard objectives add elements_uniqueitem_bosse_runans_bow dummy
 #shops
 scoreboard objectives add elements_uniqueitem_shop_hasenpfote dummy
 scoreboard objectives add elements_uniqueitem_shop_allium_ghg dummy
@@ -863,6 +865,7 @@ scoreboard objectives add elements_level_sweet_berries dummy
 scoreboard objectives add elements_level_melon minecraft.mined:minecraft.melon
 scoreboard objectives add elements_level_melon_placed minecraft.used:minecraft.melon
 
+scoreboard objectives add elements_level_unique_addition dummy
 
 ##set values at start
 

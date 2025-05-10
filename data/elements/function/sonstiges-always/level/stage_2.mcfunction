@@ -17,3 +17,10 @@ function elements:sonstiges/element_shards/trigger
 #leveltrank
 execute as @s[scores={elements_custom-items_shop_leveltrank_counter_stage-2=10..}] run xp add @s 1 levels
 execute as @s[scores={elements_custom-items_shop_leveltrank_counter_stage-2=10..}] run scoreboard players remove @s elements_custom-items_shop_leveltrank_counter_stage-2 10
+
+
+#unique
+execute as @s[nbt={Inventory:[{id:"minecraft:feather",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players add @s elements_level_unique_addition 1
+
+execute if score @s elements_level_unique_addition matches 10.. run xp add @s 1 levels
+execute if score @s elements_level_unique_addition matches 10.. run scoreboard players remove @s elements_level_unique_addition 10
