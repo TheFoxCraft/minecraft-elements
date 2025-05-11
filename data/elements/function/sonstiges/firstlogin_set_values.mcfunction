@@ -46,6 +46,8 @@ scoreboard players set @s elements_collections_crimson_vines_collect 0
 scoreboard players set @s elements_collections_stats_crimson_vines_total 0
 scoreboard players set @s elements_collections_sweet_berries_collect 0
 scoreboard players set @s elements_collections_stats_sweet_berries_total 0
+scoreboard players set @s elements_collections_melon_collect 0
+scoreboard players set @s elements_collections_stats_melon_total 0
 scoreboard players set @s elements_collections_fish_collect 0
 #uniques
 scoreboard players set @s elements_uniqueitem_collections_bruchstueck_der_eismauer 0
@@ -137,6 +139,10 @@ scoreboard players set @s elements_farm-slots_stage-2_slots 0
 scoreboard players set @s elements_farm-slots_stage-2_max-slots 0
 scoreboard players set @s elements_farm-slots_stage-3_slots 0
 scoreboard players set @s elements_farm-slots_stage-3_max-slots 0
+scoreboard players set @s elements_farm-slots_stage-4_slots 0
+scoreboard players set @s elements_farm-slots_stage-4_max-slots 0
+scoreboard players set @s elements_farm-slots_stage-5_slots 0
+scoreboard players set @s elements_farm-slots_stage-5_max-slots 0
 scoreboard players set @s elements_techniker_message_cooldown 0
 scoreboard players set @s elements_get-name_progress 0
 scoreboard players set @s elements_get-name_status 0
@@ -149,6 +155,10 @@ scoreboard players set @s elements_villager_stage-2_mana_level 0
 scoreboard players set @s elements_villager_stage-2_farm-slots_level 0
 scoreboard players set @s elements_villager_stage-3_mana_level 0
 scoreboard players set @s elements_villager_stage-3_farm-slots_level 0
+scoreboard players set @s elements_villager_stage-4_mana_level 0
+scoreboard players set @s elements_villager_stage-4_farm-slots_level 0
+scoreboard players set @s elements_villager_stage-5_mana_level 0
+scoreboard players set @s elements_villager_stage-5_farm-slots_level 0
 scoreboard players set @s elements_stage-2_mana_activate_timer_sec 0
 scoreboard players set @s elements_stage-2_mana_activate_timer_tick 0
 scoreboard players set @s elements_mana_regeneration-per-sec 1

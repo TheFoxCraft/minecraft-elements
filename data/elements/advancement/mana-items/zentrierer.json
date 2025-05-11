@@ -1,0 +1,23 @@
+{
+    "criteria": {
+      "using-item": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:copper_ingot",
+            "components": {
+              "minecraft:custom_model_data": 28
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "using-item"
+      ]
+    ],
+    "rewards": {
+      "function": "elements:custom-items/mana-items/zentrierer/trigger"
+    }
+  }

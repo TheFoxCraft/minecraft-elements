@@ -44,6 +44,7 @@ execute as @s run scoreboard players set .server elements_abgabe_stage_2_progres
 execute as @s run scoreboard players set .server elements_abgabe_stage_3_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_stage_4_gang_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_stage_4_progress 0
+execute as @s run scoreboard players set .server elements_abgabe_stage_5_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_levelbaum_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_community-hub-main_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_angel-teich_progress 0
@@ -56,6 +57,8 @@ execute as @s run scoreboard players set .server elements_recycler_stats_3 0
 execute as @s run scoreboard players set .server elements_recycler_stats_3_spawn 0
 execute as @s run scoreboard players set .server elements_recycler_stats_4 0
 execute as @s run scoreboard players set .server elements_recycler_stats_4_spawn 0
+execute as @s run scoreboard players set .server elements_recycler_stats_5 0
+execute as @s run scoreboard players set .server elements_recycler_stats_5_spawn 0
 execute as @s run scoreboard players set .server elements_abgabe_general_abgabe-mode 2
 execute as @s run scoreboard players set .server elements_spawn_shop_leer_timer_tick 0
 execute as @s run scoreboard players set .server elements_spawn_shop_leer_timer_min 0
@@ -121,7 +124,7 @@ execute as @s run scoreboard players set .server elements_uniqueitem_shop_mosh_p
 
 
 #add with every update
-execute as @s run scoreboard players set .server elements_update_sequence_status 11
+execute as @s run scoreboard players set .server elements_update_sequence_status 12
 
 execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
 

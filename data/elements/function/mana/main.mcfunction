@@ -23,3 +23,6 @@ execute as @s[nbt={Inventory:[{id:"minecraft:iron_sword",Slot:-106b,components:{
 
 execute as @s[nbt={SelectedItem:{id:"minecraft:stick",components:{"minecraft:custom_model_data":3}}}] run function elements:mana/show_info
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",Slot:-106b,components:{"minecraft:custom_model_data":3}}]}] run function elements:mana/show_info
+
+execute as @s[nbt={SelectedItem:{id:"minecraft:copper_ingot",components:{"minecraft:custom_model_data":28}}}] run function elements:mana/show_info
+execute as @s[nbt={Inventory:[{id:"minecraft:copper_ingot",Slot:-106b,components:{"minecraft:custom_model_data":28}}]}] run function elements:mana/show_info

@@ -53,6 +53,15 @@ execute as @e[type=armor_stand,tag=spawner_stage-4_farm-slots] at @s run summon 
 execute as @e[type=armor_stand,tag=spawner_stage-4_farm-slots] at @s run summon villager ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:["stage-4_farm-slots","follow"],VillagerData:{level:99,profession:"minecraft:librarian",type:"minecraft:taiga"},Offers:{}}
 execute as @e[type=armor_stand,tag=spawner_stage-4_farm-slots] at @s run kill @s
 
+execute as @e[type=armor_stand,tag=spawner_stage-5_mana] at @s run summon interaction ~ ~ ~ {width:0.8f,height:2f,response:1b,Tags:["stage-5_mana"]}
+execute as @e[type=armor_stand,tag=spawner_stage-5_mana] at @s run summon text_display ~ ~2 ~ {billboard:"center",Tags:["stage-5_mana"],text:'{"translate":"elements.villager.stage_5.mana.name","color":"gold"}',alignment:"center"}
+execute as @e[type=armor_stand,tag=spawner_stage-5_mana] at @s run summon villager ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:["stage-5_mana","follow"],VillagerData:{level:99,profession:"minecraft:cleric",type:"minecraft:savanna"},Offers:{}}
+execute as @e[type=armor_stand,tag=spawner_stage-5_mana] at @s run kill @s
+
+execute as @e[type=armor_stand,tag=spawner_stage-5_farm-slots] at @s run summon interaction ~ ~ ~ {width:0.8f,height:2f,response:1b,Tags:["stage-5_farm-slots"]}
+execute as @e[type=armor_stand,tag=spawner_stage-5_farm-slots] at @s run summon text_display ~ ~2 ~ {billboard:"center",Tags:["stage-5_farm-slots"],text:'{"translate":"elements.villager.stage_5.farmslots.name","color":"gold"}',alignment:"center"}
+execute as @e[type=armor_stand,tag=spawner_stage-5_farm-slots] at @s run summon villager ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:["stage-5_farm-slots","follow"],VillagerData:{level:99,profession:"minecraft:librarian",type:"minecraft:taiga"},Offers:{}}
+execute as @e[type=armor_stand,tag=spawner_stage-5_farm-slots] at @s run kill @s
 
 execute as @e[type=armor_stand,tag=spawner_fisher] at @s if score .server elements_stage matches 2.. run function elements:villager/spawning/fisher
 
@@ -63,3 +72,5 @@ execute as @e[type=armor_stand,tag=spawner_foerster] at @s if score .server elem
 execute as @e[type=armor_stand,tag=spawner_stage-3_main] at @s if score .server elements_stage matches 3.. run function elements:villager/spawning/stage_3
 
 execute as @e[type=armor_stand,tag=spawner_stage-4_main] at @s if score .server elements_stage matches 4.. run function elements:villager/spawning/stage_4
+
+execute as @e[type=armor_stand,tag=spawner_stage-5_main] at @s if score .server elements_stage matches 5.. run function elements:villager/spawning/stage_5

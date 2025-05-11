@@ -79,6 +79,8 @@ scoreboard players operation .server elements_abgabe_stage_4_gang_goal *= .serve
 scoreboard players set .server elements_abgabe_stage_4_goal 200
 scoreboard players operation .server elements_abgabe_stage_4_goal *= .server elements_playercount
 
+scoreboard players set .server elements_abgabe_stage_5_goal 200
+scoreboard players operation .server elements_abgabe_stage_5_goal *= .server elements_playercount
 
 
 

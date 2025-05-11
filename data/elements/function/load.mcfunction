@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.10.1.1","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.11.0.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -199,8 +199,10 @@ scoreboard objectives add elements_inv_compressed_cobblestone dummy
 scoreboard objectives add elements_inv_compressed_wood dummy
 scoreboard objectives add elements_inv_compressed_crimson_vines dummy
 scoreboard objectives add elements_inv_compressed_sweet_berries dummy
+scoreboard objectives add elements_inv_compressed_melon dummy
 scoreboard objectives add elements_inv_crimson_vines dummy
 scoreboard objectives add elements_inv_sweet_berries dummy
+scoreboard objectives add elements_inv_melon dummy
 scoreboard objectives add elements_enderchest_interface_number dummy
 scoreboard objectives add elements_enderchest_interface_number_old dummy
 scoreboard objectives add elements_autocompactor dummy
@@ -295,6 +297,7 @@ scoreboard objectives add elements_miningxp_mining_mine-get_stone minecraft.mine
 scoreboard objectives add elements_miningxp_mining_mine-get_cobblestone minecraft.mined:minecraft.cobblestone
 scoreboard objectives add elements_miningxp_mining_mine-get_basalt minecraft.mined:minecraft.basalt
 scoreboard objectives add elements_miningxp_foresting_mine-get_spruce minecraft.mined:minecraft.spruce_log
+scoreboard objectives add elements_miningxp_foresting_mine-get_melon minecraft.mined:minecraft.melon
 scoreboard objectives add elements_miningxp_farming_mine-get_crimson_vines minecraft.mined:minecraft.weeping_vines
 scoreboard objectives add elements_miningxp_farming_mine-get_crimson_vines_plant minecraft.mined:minecraft.weeping_vines_plant
 scoreboard objectives add elements_miningxp_farming_mine-get_sweet_berries dummy
@@ -417,6 +420,9 @@ scoreboard objectives add elements_collections_calc_crimson_vines_plant minecraf
 # stage 4
 scoreboard objectives add elements_collections_sweet_berries_collect dummy
 scoreboard objectives add elements_collections_stats_sweet_berries_total dummy
+# stage 4
+scoreboard objectives add elements_collections_melon_collect dummy
+scoreboard objectives add elements_collections_stats_melon_total minecraft.mined:melon
 
 scoreboard objectives add elements_custom-items_fishing_rod_crafting_sticks_cooldown dummy
 
@@ -438,6 +444,7 @@ scoreboard objectives add elements_uniqueitem_ork_schatz dummy
 scoreboard objectives add elements_uniqueitem_fragment_der_himmelswarze dummy
 scoreboard objectives add elements_uniqueitem_wanderlachs dummy
 scoreboard objectives add elements_uniqueitem_dornenherz_der_wildnis dummy
+scoreboard objectives add elements_uniqueitem_melonengolemschale dummy
 #other
 scoreboard objectives add elements_uniqueitem_other_datenspeicher dummy
 scoreboard objectives add elements_uniqueitem_other_rolex dummy
@@ -450,6 +457,7 @@ scoreboard objectives add elements_uniqueitem_miningxp_sparks_papageienfeder dum
 scoreboard objectives add elements_uniqueitem_bosse_taubenkacke dummy
 scoreboard objectives add elements_uniqueitem_bosse_tomorrowland_karte dummy
 scoreboard objectives add elements_uniqueitem_bosse_amboesse dummy
+scoreboard objectives add elements_uniqueitem_bosse_runans_bow dummy
 #shops
 scoreboard objectives add elements_uniqueitem_shop_hasenpfote dummy
 scoreboard objectives add elements_uniqueitem_shop_allium_ghg dummy
@@ -552,6 +560,10 @@ scoreboard objectives add elements_abgabe_stage_4 dummy
 scoreboard objectives add elements_abgabe_stage_4_progress dummy
 scoreboard objectives add elements_abgabe_stage_4_goal dummy
 scoreboard objectives add elements_abgabe_stage_4_abgabe-mode dummy
+scoreboard objectives add elements_abgabe_stage_5 dummy
+scoreboard objectives add elements_abgabe_stage_5_progress dummy
+scoreboard objectives add elements_abgabe_stage_5_goal dummy
+scoreboard objectives add elements_abgabe_stage_5_abgabe-mode dummy
 scoreboard objectives add elements_abgabe_other_levelbaum dummy
 scoreboard objectives add elements_abgabe_other_levelbaum_progress dummy
 scoreboard objectives add elements_abgabe_other_levelbaum_goal dummy
@@ -634,6 +646,7 @@ scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-1 
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-2 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-3 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-4 dummy
+scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-5 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_enable dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_timer_h dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_timer_min dummy
@@ -665,7 +678,9 @@ scoreboard objectives add elements_custom-items_mystery_barriere-stab_particle_x
 scoreboard objectives add elements_custom-items_mystery_barriere-stab_particle_y dummy
 scoreboard objectives add elements_custom-items_mystery_excalibur_sword_despawn dummy
 scoreboard objectives add elements_custom-items_mystery_excalibur_sword_random dummy
-
+scoreboard objectives add elements_custom-items_zentrierer_rotation dummy
+scoreboard objectives add elements_custom-items_zentrierer_rotation_lock dummy
+scoreboard objectives add elements_custom-items_zentrierer_rotation_lock_mana_timer dummy
 
 
 
@@ -699,6 +714,7 @@ scoreboard objectives add elements_stage_4_boss_players_in_arena dummy
 scoreboard objectives add elements_stage_4_boss_spectator_in_arena dummy
 
 scoreboard objectives add elements_stage_3_portal_enable_fungus_timer dummy
+scoreboard objectives add elements_stage_4_portal_enable_fox_timer dummy
 
 scoreboard objectives add elements_spawn_vaults_refresh dummy
 scoreboard objectives add elements_leaderboards_refresh-timer dummy
@@ -716,6 +732,10 @@ scoreboard objectives add elements_villager_stage-4_mana_clicked dummy
 scoreboard objectives add elements_villager_stage-4_mana_level dummy
 scoreboard objectives add elements_villager_stage-4_farm-slots_clicked dummy
 scoreboard objectives add elements_villager_stage-4_farm-slots_level dummy
+scoreboard objectives add elements_villager_stage-5_mana_clicked dummy
+scoreboard objectives add elements_villager_stage-5_mana_level dummy
+scoreboard objectives add elements_villager_stage-5_farm-slots_clicked dummy
+scoreboard objectives add elements_villager_stage-5_farm-slots_level dummy
 scoreboard objectives add elements_stage-2_mana_activate_timer_tick dummy
 scoreboard objectives add elements_stage-2_mana_activate_timer_sec dummy
 scoreboard objectives add elements_mana_mana-count dummy
@@ -733,6 +753,8 @@ scoreboard objectives add elements_recycler_stats_3 dummy
 scoreboard objectives add elements_recycler_stats_3_spawn dummy
 scoreboard objectives add elements_recycler_stats_4 dummy
 scoreboard objectives add elements_recycler_stats_4_spawn dummy
+scoreboard objectives add elements_recycler_stats_5 dummy
+scoreboard objectives add elements_recycler_stats_5_spawn dummy
 scoreboard objectives add elements_function_timer_1m dummy
 scoreboard objectives add elements_function_timer_10s dummy
 scoreboard objectives add elements_function_timer_5s dummy
@@ -818,6 +840,12 @@ scoreboard objectives add elements_farm-slots_stage-4_age dummy
 scoreboard objectives add elements_farm-slots_stage-4_age_old dummy
 scoreboard objectives add elements_farm-slots_stage-4_harvest dummy
 
+scoreboard objectives add elements_farm-slots_stage-5_placed dummy
+scoreboard objectives add elements_farm-slots_stage-5_broken minecraft.mined:melon_stem
+scoreboard objectives add elements_farm-slots_stage-5_slots dummy
+scoreboard objectives add elements_farm-slots_stage-5_max-slots dummy
+scoreboard objectives add elements_farm-slots_stage-5_correct_UUID dummy
+scoreboard objectives add elements_farm-slots_stage-5_broken_slots dummy
 
 scoreboard objectives setdisplay list elements_mainlevel
 
@@ -833,6 +861,11 @@ scoreboard objectives add elements_level_crimson_vines minecraft.mined:minecraft
 scoreboard objectives add elements_level_crimson_vines_plant minecraft.mined:minecraft.weeping_vines_plant
 
 scoreboard objectives add elements_level_sweet_berries dummy
+
+scoreboard objectives add elements_level_melon minecraft.mined:minecraft.melon
+scoreboard objectives add elements_level_melon_placed minecraft.used:minecraft.melon
+
+scoreboard objectives add elements_level_unique_addition dummy
 
 ##set values at start
 

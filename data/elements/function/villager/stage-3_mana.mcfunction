@@ -34,14 +34,15 @@ execute as @s[scores={z_just-ignore=806}] run scoreboard players set @s z_just-i
 
 execute as @s[scores={elements_villager_stage-3_mana_level=2,elements_villager_stage-3_mana_clicked=1}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_3.mana.name.chat","color":"yellow"},{"text":"So jetzt noch ein Permanentes Herz von dir!"},"\n","\n",{"text":"Nimm","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger z_just-ignore set 807"}}]
 execute as @s[scores={elements_villager_stage-3_mana_level=2,elements_villager_stage-3_mana_clicked=1}] run scoreboard players set @s elements_villager_stage-3_mana_clicked 0
-execute as @s[scores={elements_villager_stage-3_mana_level=2,z_just-ignore=807,elements_maxhealth=3..}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_3.mana.name.chat","color":"yellow"},{"text":"Perfekt! Ab jetzt hast du eine Regeneration 2 Mana pro Sekunde und kannst deine Mana-Items schneller verwenden!"}]
-execute as @s[scores={elements_villager_stage-3_mana_level=2,z_just-ignore=807,elements_maxhealth=3..}] run scoreboard players remove @s elements_maxhealth 2
-execute as @s[scores={elements_villager_stage-3_mana_level=2,z_just-ignore=807,elements_maxhealth=3..}] run scoreboard players set @s elements_mana_regeneration-per-sec 2
-execute as @s[scores={elements_villager_stage-3_mana_level=2,z_just-ignore=807,elements_maxhealth=3..}] run scoreboard players set @s elements_villager_stage-3_mana_level 3
 execute as @s[scores={elements_villager_stage-3_mana_level=2,z_just-ignore=807,elements_maxhealth=..2}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_3.mana.name.chat","color":"yellow"},{"text":"Du hast zu Wenig Maximale Leben!"}]
+execute as @s[scores={elements_villager_stage-3_mana_level=2,z_just-ignore=807,elements_maxhealth=3..}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_3.mana.name.chat","color":"yellow"},{"text":"Perfekt! Ab jetzt hast du eine Regeneration 2 Mana pro Sekunde und kannst deine Mana-Items schneller verwenden!"}]
+execute as @s[scores={elements_villager_stage-3_mana_level=2,z_just-ignore=807,elements_maxhealth=3..}] run scoreboard players set @s elements_villager_stage-3_mana_level 3
 execute as @s[scores={z_just-ignore=807}] run scoreboard players set @s z_just-ignore 0
 
+execute as @s[scores={elements_villager_stage-3_mana_level=3}] run scoreboard players set @s elements_mana_regeneration-per-sec 2
+execute as @s[scores={elements_villager_stage-3_mana_level=3}] run scoreboard players remove @s elements_maxhealth 2
+execute as @s[scores={elements_villager_stage-3_mana_level=3}] run scoreboard players set @s elements_villager_stage-3_mana_level 4
 
-execute as @s[scores={elements_villager_stage-3_mana_level=3,elements_villager_stage-3_mana_clicked=1}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_3.mana.name.chat","color":"yellow"},{"text":"Mehr kann ich leider nicht für dich tun!"}]
-execute as @s[scores={elements_villager_stage-3_mana_level=3,elements_villager_stage-3_mana_clicked=1}] run scoreboard players set @s elements_villager_stage-3_mana_clicked 0
+execute as @s[scores={elements_villager_stage-3_mana_level=4,elements_villager_stage-3_mana_clicked=1}] run tellraw @s ["","\n",{"translate":"elements.villager.stage_3.mana.name.chat","color":"yellow"},{"text":"Mehr kann ich leider nicht für dich tun!"}]
+execute as @s[scores={elements_villager_stage-3_mana_level=4,elements_villager_stage-3_mana_clicked=1}] run scoreboard players set @s elements_villager_stage-3_mana_clicked 0
 

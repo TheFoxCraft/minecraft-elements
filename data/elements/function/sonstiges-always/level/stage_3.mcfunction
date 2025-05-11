@@ -40,3 +40,10 @@ function elements:sonstiges/element_shards/trigger
 #levetrank
 execute as @s[scores={elements_custom-items_shop_leveltrank_counter_stage-3=10..}] run xp add @s 2 levels
 execute as @s[scores={elements_custom-items_shop_leveltrank_counter_stage-3=10..}] run scoreboard players remove @s elements_custom-items_shop_leveltrank_counter_stage-3 10
+
+
+#unique
+execute as @s[nbt={Inventory:[{id:"minecraft:honey_bottle",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players add @s elements_level_unique_addition 1
+
+execute if score @s elements_level_unique_addition matches 10.. run xp add @s 2 levels
+execute if score @s elements_level_unique_addition matches 10.. run scoreboard players remove @s elements_level_unique_addition 10

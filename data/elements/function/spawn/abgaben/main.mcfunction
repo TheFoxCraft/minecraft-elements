@@ -38,7 +38,8 @@ execute if score .server elements_abgabe_stage_3 matches 1 run function elements
 execute if score .server elements_abgabe_stage_4_gang matches 1 run function elements:spawn/abgaben/stage-4_gang/running
 #stage 4 final room
 execute if score .server elements_abgabe_stage_4 matches 1 run function elements:spawn/abgaben/stage-4_room/running
-
+#stage 5 final room
+execute if score .server elements_abgabe_stage_5 matches 1 run function elements:spawn/abgaben/stage-5_room/running
 #SPAWNING MANAGED in function timer 1s
 
 #end

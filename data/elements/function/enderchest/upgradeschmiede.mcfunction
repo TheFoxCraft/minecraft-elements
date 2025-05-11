@@ -91,6 +91,25 @@ execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderI
 execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:bow",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_bow/mythic
 execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:bow",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
 
+#element hoe
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:iron_hoe",components:{"minecraft:custom_model_data":1}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_hoe/rare
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:iron_hoe",components:{"minecraft:custom_model_data":1}}]}] run xp add @s -10000 levels
+
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:diamond_hoe",components:{"minecraft:custom_model_data":2}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_hoe/epic
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:diamond_hoe",components:{"minecraft:custom_model_data":2}}]}] run xp add @s -50000 levels
+
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:diamond_hoe",components:{"minecraft:custom_model_data":3}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_hoe/legendary
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:diamond_hoe",components:{"minecraft:custom_model_data":3}}]}] run xp add @s -250000 levels
+
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":2}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_hoe/epic
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":2}}]}] run xp add @s -50000 levels
+
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":3}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_hoe/legendary
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":3}}]}] run xp add @s -250000 levels
+
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":4}}]}] run loot replace entity @s enderchest.14 loot elements:items/element_hoe/mythic
+execute as @s[scores={elements_enderchest_upgradeschmiede_upgrade=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":4}}]}] run xp add @s -750000 levels
+
 
 #element armor
 #helmet
@@ -207,6 +226,21 @@ execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{
 execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:bow",components:{"minecraft:custom_model_data":3}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 3
 execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:bow",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
 execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:bow",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 4
+
+#element hoe
+execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:iron_hoe",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:iron_hoe",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 1
+execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:diamond_hoe",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:diamond_hoe",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 2
+execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:diamond_hoe",components:{"minecraft:custom_model_data":3}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:diamond_hoe",components:{"minecraft:custom_model_data":3}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 3
+execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 2
+execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":3}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":3}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 3
+execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_upgrade 1
+execute as @s[scores={elements_enderchest_interface_number=3},nbt={EnderItems:[{Slot:12b,id:"minecraft:netherite_hoe",components:{"minecraft:custom_model_data":4}}]}] run scoreboard players set @s elements_enderchest_upgradeschmiede_level 4
+
 
 #element armor
 #helmet

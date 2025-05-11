@@ -29,5 +29,5 @@ execute if score @s elements_custom-items_shop_water-breathing_enable matches 1 
 
 #herzenmanagement
 execute unless score @s elements_maxhealth = @s elements_maxhealth_old store result storage elements_get_data maxhealth int 1 run scoreboard players get @s elements_maxhealth
-function elements:sonstiges/set_max-health with storage elements_get_data
+execute unless score @s elements_maxhealth = @s elements_maxhealth_old store result storage elements_get_data maxhealth int 1 run function elements:sonstiges/set_max-health with storage elements_get_data
 scoreboard players operation @s elements_maxhealth_old = @s elements_maxhealth

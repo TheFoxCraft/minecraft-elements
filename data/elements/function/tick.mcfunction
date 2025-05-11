@@ -10,6 +10,7 @@ function elements:miningxp/get_fishing/get_fishing
 function elements:farm_slots/stage_2/calc_main
 function elements:farm_slots/stage_3/calc_main
 function elements:farm_slots/stage_4/calc_main
+function elements:farm_slots/stage_5/calc_main
 
 
 #players
@@ -36,6 +37,7 @@ function elements:spawn/abgaben/main
 execute if score .server elements_stage_1_portal_enable matches 0 if score .server elements_stage matches 1.. as @e[type=item,nbt={Item:{id:"minecraft:blue_ice",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if block ~ ~ ~ lava if score .server elements_stage_1_portal_enable matches 0 run function elements:stages/stage-1/portal-enable
 execute if score .server elements_stage_2_portal_enable matches 0 if score .server elements_stage matches 2.. as @e[type=item,nbt={Item:{id:"minecraft:dark_oak_sapling",components:{"minecraft:custom_model_data":1}},OnGround:1b}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:spruce_log"},OnGround:1b},distance=..0.3] if entity @e[type=item,nbt={Item:{id:"minecraft:charcoal"},OnGround:1b},distance=..0.3,] if score .server elements_stage_2_portal_enable matches 0 run function elements:stages/stage-2/portal-enable
 execute if score .server elements_stage_3_portal_enable matches 0 if score .server elements_stage matches 3.. run function elements:stages/stage-3/portal-enable/main
+execute if score .server elements_stage_4_portal_enable matches 0 if score .server elements_stage matches 4.. run function elements:stages/stage-4/portal-enable/main
 
 
 #maybe geht da noch mehr
