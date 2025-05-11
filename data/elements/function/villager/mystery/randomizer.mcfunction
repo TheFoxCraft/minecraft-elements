@@ -13,16 +13,16 @@ execute if score @s elements_mystery_lootbox_random matches 1121..1140 run loot 
 #Zerberster
 execute if score @s elements_mystery_lootbox_random matches 1141..1150 run loot replace entity @n[tag=elements_mystery_loot] weapon.mainhand loot elements:items/mystery/zerberster
 # Trash (rest)
-execute if score @s elements_mystery_lootbox_random matches 1151..9999 run loot replace entity @n[tag=elements_mystery_loot] weapon.mainhand loot elements:items/mystery/trash
-execute if score @s elements_mystery_lootbox_random matches 9999 if score .server elements_uniqueitem_other_rolex matches 0 run function elements:uniques/trigger/rolex
+execute if score @s elements_mystery_lootbox_random matches 1151..9998 run loot replace entity @n[tag=elements_mystery_loot] weapon.mainhand loot elements:items/mystery/trash
+execute if score @s elements_mystery_lootbox_random matches 9998 if score .server elements_uniqueitem_other_rolex matches 0 run function elements:uniques/trigger/rolex
 
 #Excalibur / HAUPT-GEWINN
-execute if score @s elements_mystery_lootbox_random matches 10000 run loot replace entity @n[tag=elements_mystery_loot] weapon.mainhand loot elements:items/mystery/excalibur
-execute if score @s elements_mystery_lootbox_random matches 10000 run tellraw @a ["",{"text": "Server: \n","color": "yellow"},{"selector": "@s","color": "gold","bold": true},{"text": " hat den Jackpot bei den Lootboxen gewonnen und erhält dafür Excalibur und ","color": "gold","bold": true},{"score": {"name": ".server","objective": "elements_mystery_lootbox_jackpot"},"color": "green","bold": true},{"text": " Level","color": "green","bold": true},{"text": " aus dem Pot!","color": "gold","bold": true}]
-execute if score @s elements_mystery_lootbox_random matches 10000 store result storage elements_mystery jackpot int 1 run scoreboard players get .server elements_mystery_lootbox_jackpot
-execute if score @s elements_mystery_lootbox_random matches 10000 run function elements:villager/mystery/give_jackpot with storage elements_mystery
-execute if score @s elements_mystery_lootbox_random matches 10000 run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
-execute if score @s elements_mystery_lootbox_random matches 10000 as @a at @s run playsound ui.toast.challenge_complete master @s ~ ~ ~ 100 1
+execute if score @s elements_mystery_lootbox_random matches 9999..10000 run loot replace entity @n[tag=elements_mystery_loot] weapon.mainhand loot elements:items/mystery/excalibur
+execute if score @s elements_mystery_lootbox_random matches 9999..10000 run tellraw @a ["",{"text": "Server: \n","color": "yellow"},{"selector": "@s","color": "gold","bold": true},{"text": " hat den Jackpot bei den Lootboxen gewonnen und erhält dafür Excalibur und ","color": "gold","bold": true},{"score": {"name": ".server","objective": "elements_mystery_lootbox_jackpot"},"color": "green","bold": true},{"text": " Level","color": "green","bold": true},{"text": " aus dem Pot!","color": "gold","bold": true}]
+execute if score @s elements_mystery_lootbox_random matches 9999..10000 store result storage elements_mystery jackpot int 1 run scoreboard players get .server elements_mystery_lootbox_jackpot
+execute if score @s elements_mystery_lootbox_random matches 9999..10000 run function elements:villager/mystery/give_jackpot with storage elements_mystery
+execute if score @s elements_mystery_lootbox_random matches 9999..10000 run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
+execute if score @s elements_mystery_lootbox_random matches 9999..10000 as @a at @s run playsound ui.toast.challenge_complete master @s ~ ~ ~ 100 1
 
 
 
