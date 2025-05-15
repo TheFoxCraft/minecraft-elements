@@ -19,4 +19,5 @@ execute as @s[scores={elements_miningxp_foresting_level=100}] run title @s actio
 scoreboard players set @s elements_sonstiges_actionbar_pause 20
 
 
-
+execute as @s[scores={elements_custom-items_shop_foraging-frucht_counter=3..}] run scoreboard players add @s elements_miningxp_foresting_xp 3
+execute as @s[scores={elements_custom-items_shop_foraging-frucht_counter=3..}] run scoreboard players remove @s elements_custom-items_shop_foraging-frucht_counter 3

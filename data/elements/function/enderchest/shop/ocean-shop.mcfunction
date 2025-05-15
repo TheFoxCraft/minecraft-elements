@@ -33,151 +33,82 @@ execute as @s[scores={elements_enderchest_interface_number=9}] run item replace 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=14]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/magisches_wasser"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/magisches_wasser",price:500,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":14}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.4 loot elements:items/shops/ocean/magisches_wasser
-execute as @s[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.4 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Magisches Wasser [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 14 }]
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/magisches_wasser",price:500,price_multiplier:5,name:"Magisches Wasser",name_type:"text",is_loot:1,cumoda:14,slot:4}
 
 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=10]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/water-breathing"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/water-breathing",price:500,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":10}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.10 loot elements:items/shops/ocean/water-breathing
-execute as @s[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.10 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Water Breathing Potion [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 10 }]
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/water-breathing",price:500,price_multiplier:5,name:"Water Breathing Potion",name_type:"text",is_loot:1,cumoda:10,slot:10}
 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=16]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/luck-potion"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/luck-potion",price:500,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":16}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.11 loot elements:items/shops/ocean/luck-potion
-execute as @s[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.11 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Luck Potion [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 16 }]
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/luck-potion",price:500,price_multiplier:5,name:"Luck Potion",name_type:"text",is_loot:1,cumoda:16,slot:11}
 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:shulker_shell[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run give @s shulker_shell 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"shulker_shell",price:500,price_multiplier:5,is_loot:0}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:shulker_shell",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.12 with shulker_shell[custom_name='[{"translate": "item.minecraft.shulker_shell","color": "yellow","italic": false},{"color":"yellow","text":" [500 Level]","italic": false}]',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"shulker_shell",price:500,price_multiplier:5,name:"item.minecraft.shulker_shell",name_type:"translate",is_loot:0,cumoda:2,slot:12}
 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:emerald[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49,elements_enderchest_shop_ocean=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_ocean=1}] run give @s emerald 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_ocean=1}] run xp add @s -50 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"emerald",price:50,price_multiplier:5,is_loot:0}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:emerald",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.13 with emerald[custom_name='[{"translate": "item.minecraft.emerald","color": "yellow","italic": false},{"color":"yellow","text":" [50 Level]","italic": false}]',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"emerald",price:50,price_multiplier:5,name:"item.minecraft.emerald",name_type:"translate",is_loot:0,cumoda:2,slot:13}
 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:chorus_fruit[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/mining_frucht"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/mining_frucht",price:500,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:chorus_fruit",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.14 loot elements:items/shops/ocean/mining_frucht
-execute as @s[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.14 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Miningfrucht [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 2 }]
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/mining_frucht",price:500,price_multiplier:5,name:"Miningfrucht",name_type:"text",is_loot:1,cumoda:2,slot:14}
 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:carrot[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/foraging_frucht"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/foraging_frucht",price:500,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:carrot",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.15 loot elements:items/shops/ocean/foraging_frucht
-execute as @s[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.15 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Foragingfrucht [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 2 }]
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/foraging_frucht",price:500,price_multiplier:5,name:"Foragingfrucht",name_type:"text",is_loot:1,cumoda:2,slot:15}
 
 #no unique
 execute as @s[scores={elements_enderchest_interface_number=9}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:glow_berries[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/farming_frucht"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] if score .server elements_uniqueitem_shop_allium_ghg matches 0 run function elements:uniques/trigger/allium_ghg/random
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run xp add @s -500 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] if score .server elements_uniqueitem_shop_allium_ghg matches 0 run function elements:uniques/trigger/allium_ghg/random
+execute as @s[scores={elements_enderchest_interface_clicked=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/farming_frucht",price:500,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:glow_berries",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run loot replace entity @s enderchest.16 loot elements:items/shops/ocean/farming_frucht
-execute as @s[scores={elements_enderchest_interface_number=9}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run item modify entity @s enderchest.16 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Farmingfrucht [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 2 }]
+execute as @s[scores={elements_enderchest_interface_number=9}] unless entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/farming_frucht",price:500,price_multiplier:5,name:"Farmingfrucht",name_type:"text",is_loot:1,cumoda:2,slot:16}
 # unique
 execute as @s[scores={elements_enderchest_interface_number=9}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:glow_berries[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..399,elements_enderchest_shop_ocean=1}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..399,elements_enderchest_shop_ocean=1}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=400..,elements_enderchest_shop_ocean=1}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=400..,elements_enderchest_shop_ocean=1}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=400..,elements_enderchest_shop_ocean=1}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/farming_frucht"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=400..,elements_enderchest_shop_ocean=1}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] if score .server elements_uniqueitem_shop_allium_ghg matches 0 run function elements:uniques/trigger/allium_ghg/random
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=400..,elements_enderchest_shop_ocean=1}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run xp add @s -400 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/farming_frucht",price:400,price_multiplier:5,is_loot:1}
+execute as @s[scores={elements_enderchest_interface_clicked=1}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] if score .server elements_uniqueitem_shop_allium_ghg matches 0 run function elements:uniques/trigger/allium_ghg/random
 execute as @s[scores={elements_enderchest_interface_clicked=1}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:glow_berries",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run loot replace entity @s enderchest.16 loot elements:items/shops/ocean/farming_frucht
-execute as @s[scores={elements_enderchest_interface_number=9}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run item modify entity @s enderchest.16 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Farmingfrucht [400 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 2 }]
+execute as @s[scores={elements_enderchest_interface_number=9}] if entity @s[nbt={Inventory:[{id:"minecraft:allium",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/farming_frucht",price:400,price_multiplier:5,name:"Farmingfrucht",name_type:"text",is_loot:1,cumoda:2,slot:16}
 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:pumpkin_pie[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/fishing_frucht"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] run xp add @s -500 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/fishing_frucht",price:500,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:pumpkin_pie",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.17 loot elements:items/shops/ocean/fishing_frucht
-execute as @s[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.17 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Fishingfrucht [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 2 }]
-
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/fishing_frucht",price:500,price_multiplier:5,name:"Fishingfrucht",name_type:"text",is_loot:1,cumoda:2,slot:17}
 
 
 # BOSS-FRÜCHTE
@@ -185,59 +116,24 @@ execute as @s[scores={elements_enderchest_interface_number=9}] run item modify e
 #header
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:golden_apple[custom_model_data=1]
 
+
 #stage 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 1 at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 1 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 1 at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 1 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 1 run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/bossfrucht/stage_1"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 1 run xp add @s -50 levels
-execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 1 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_1
-execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 1 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 1 [50 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]
-
+execute as @s[scores={elements_enderchest_interface_clicked=1}] if score .server elements_stage matches 1 run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/bossfrucht/stage_1",price:50,price_multiplier:5,is_loot:1}
+execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 1 run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/bossfrucht/stage_1",price:50,price_multiplier:5,name:"Bossfrucht Stage 1",name_type:"text",is_loot:1,cumoda:1,slot:9}
 #stage 2
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 2 at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 2 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 2 at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 2 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 2 run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/bossfrucht/stage_2"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 2 run xp add @s -500 levels
-execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 2 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_2
-execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 2 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 2 [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]
-
+execute as @s[scores={elements_enderchest_interface_clicked=1}] if score .server elements_stage matches 2 run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/bossfrucht/stage_2",price:500,price_multiplier:5,is_loot:1}
+execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 2 run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/bossfrucht/stage_2",price:500,price_multiplier:5,name:"Bossfrucht Stage 2",name_type:"text",is_loot:1,cumoda:1,slot:9}
 #stage 3
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..999,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 3 at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..999,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 3 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 3 at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 3 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 3 run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/bossfrucht/stage_3"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 3 run xp add @s -1000 levels
-execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 3 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_3
-execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 3 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 3 [1.000 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]
-
+execute as @s[scores={elements_enderchest_interface_clicked=1}] if score .server elements_stage matches 3 run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/bossfrucht/stage_3",price:1000,price_multiplier:5,is_loot:1}
+execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 3 run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/bossfrucht/stage_3",price:1000,price_multiplier:5,name:"Bossfrucht Stage 3",name_type:"text",is_loot:1,cumoda:1,slot:9}
 #stage 4
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..1199,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 4 at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..1199,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 4 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1200..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 4 at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1200..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 4 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1200..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 4 run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/bossfrucht/stage_4"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1200..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 4 run xp add @s -1200 levels
-execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 4 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_4
-execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 4 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 4 [1.200 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]
-
+execute as @s[scores={elements_enderchest_interface_clicked=1}] if score .server elements_stage matches 4 run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/bossfrucht/stage_4",price:1200,price_multiplier:5,is_loot:1}
+execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 4 run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/bossfrucht/stage_4",price:1200,price_multiplier:5,name:"Bossfrucht Stage 4",name_type:"text",is_loot:1,cumoda:1,slot:9}
 #stage 5
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..1499,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 5 at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..1499,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 5 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 5 at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 5 run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 5 run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/ocean/bossfrucht/stage_5"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1500..,elements_enderchest_shop_ocean=1}] if score .server elements_stage matches 5 run xp add @s -1500 levels
-execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 5 run loot replace entity @s enderchest.9 loot elements:items/shops/ocean/bossfrucht/stage_5
-execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 5 run item modify entity @s enderchest.9 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Bossfrucht Stage 5 [1.500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 1 }]
-
+execute as @s[scores={elements_enderchest_interface_clicked=1}] if score .server elements_stage matches 5 run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/bossfrucht/stage_5",price:1500,price_multiplier:5,is_loot:1}
+execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 5 run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/bossfrucht/stage_5",price:1500,price_multiplier:5,name:"Bossfrucht Stage 5",name_type:"text",is_loot:1,cumoda:1,slot:9}
 
 #footer
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_ocean=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:golden_apple",components:{"minecraft:custom_model_data":1}}}]
 

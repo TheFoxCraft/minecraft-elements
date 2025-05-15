@@ -8,6 +8,8 @@ execute as @s[scores={elements_get-login=1..}] run function elements:sonstiges/o
 execute as @s[scores={elements_get-login=1..}] run scoreboard players set @s elements_get-login 0
 
 execute as @s[nbt={SelectedItem:{id:"minecraft:bone"}}] run item modify entity @s weapon.mainhand {function:"set_components",components:{food:{nutrition:0,saturation:0,can_always_eat:true},consumable:{consume_seconds:99999}}}
+execute as @s[nbt={SelectedItem:{id:"minecraft:melon"}}] run item modify entity @s weapon.mainhand {function:"set_components","components":{"attribute_modifiers": {"show_in_tooltip": false,"modifiers": [{"amount": -1,"id": "stage_5_melon","operation": "add_multiplied_base","type": "block_interaction_range","slot": "any"}]}}}
+
 
 execute as @s[tag=!elements_boss_spectator] run scoreboard players reset @s leave
 

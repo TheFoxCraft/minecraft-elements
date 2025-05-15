@@ -26,7 +26,26 @@
                   }
                 }
               ],
-              "name": "minecraft:melon"
+              "name": "minecraft:melon",
+              "functions": [
+                {
+                  "function": "set_components",
+                  "components": {
+                    "attribute_modifiers": {
+                      "show_in_tooltip": false,
+                      "modifiers": [
+                        {
+                          "amount": -1,
+                          "id": "stage_5_melon",
+                          "operation": "add_multiplied_base",
+                          "type": "block_interaction_range",
+                          "slot": "any"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",

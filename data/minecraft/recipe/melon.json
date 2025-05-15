@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:melon_slice",
+    "minecraft:melon_slice",
+    "minecraft:melon_slice",
+    "minecraft:melon_slice",
+    "minecraft:melon_slice",
+    "minecraft:melon_slice",
+    "minecraft:melon_slice",
+    "minecraft:melon_slice",
+    "minecraft:melon_slice"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:melon",
+    "components": {
+      "attribute_modifiers": {
+        "show_in_tooltip": false,
+        "modifiers": [
+          {
+            "amount": -1,
+            "id": "stage_5_melon",
+            "operation": "add_multiplied_base",
+            "type": "block_interaction_range",
+            "slot": "any"
+            
+          }
+        ]
+      }
+    }
+  }
+}
