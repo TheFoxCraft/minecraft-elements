@@ -8,6 +8,7 @@ execute as @s in elements:stage-1_bossroom run place template elements:boss_room
 execute as @s in elements:stage-2_bossroom run place template elements:boss_room/stage_2 -20 98 -20
 execute as @s in elements:stage-3_bossroom run place template elements:boss_room/stage_3 -41 95 -32
 execute as @s in elements:stage-4_bossroom run place template elements:boss_room/stage_4 -29 96 -27
+execute as @s in elements:stage-5_bossroom run place template elements:boss_room/stage_5 -50 82 -49
 execute as @s run scoreboard players set .server elements_stage 0
 execute as @s run scoreboard players set .server elements_stats_lootbox 0
 execute as @s run scoreboard players set .server elements_casino_stats_lvlinvestiert 0
@@ -84,6 +85,9 @@ execute as @s run scoreboard players set .server elements_stage_3_boss_melee_tim
 execute as @s run scoreboard players set .server elements_stage_4_portal_enable 0
 execute as @s run scoreboard players set .server elements_stage_4_boss_status 0
 execute as @s run scoreboard players set .server elements_stage_4_boss_melee_timer 0
+execute as @s run scoreboard players set .server elements_stage_5_portal_enable 0
+execute as @s run scoreboard players set .server elements_stage_5_boss_status 0
+execute as @s run scoreboard players set .server elements_stage_5_boss_melee_timer 0
 execute as @s run scoreboard players set .server elements_custom-items_shop_boss-frucht_remain 0
 execute as @s run scoreboard players set .server elements_double-xp-event_active 0
 execute as @s run scoreboard players set .server elements_double-xp-event_timer_actual_h 0
@@ -124,7 +128,7 @@ execute as @s run scoreboard players set .server elements_uniqueitem_shop_mosh_p
 
 
 #add with every update
-execute as @s run scoreboard players set .server elements_update_sequence_status 12
+execute as @s run scoreboard players set .server elements_update_sequence_status 13
 
 execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
 

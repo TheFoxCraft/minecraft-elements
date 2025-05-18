@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.11.1.1","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.11.2.0","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -112,6 +112,18 @@ execute in elements:stage-4_bossroom run gamerule doPatrolSpawning false
 execute in elements:stage-4_bossroom run gamerule disableRaids true
 execute in elements:stage-4_bossroom run gamerule sendCommandFeedback false
 
+execute in elements:stage-5_bossroom run gamerule keepInventory true
+execute in elements:stage-5_bossroom run gamerule lavaSourceConversion true
+execute in elements:stage-5_bossroom run gamerule spawnRadius 0
+execute in elements:stage-5_bossroom run gamerule universalAnger true
+execute in elements:stage-5_bossroom run gamerule doFireTick false
+execute in elements:stage-5_bossroom run difficulty hard
+execute in elements:stage-5_bossroom run forceload add 0 0 -1 -1
+execute in elements:stage-5_bossroom run gamerule doTraderSpawning false
+execute in elements:stage-5_bossroom run gamerule doPatrolSpawning false
+execute in elements:stage-5_bossroom run gamerule disableRaids true
+execute in elements:stage-5_bossroom run gamerule sendCommandFeedback false
+
 
 team add elements_ocean {"text": "[OCEAN] ","color": "dark_blue"}
 team add elements_stone {"text": "[STONE] ","color": "gray"}
@@ -162,6 +174,9 @@ bossbar set elements:stage-3_boss name {"text": "Böser Hoglin","color": "white"
 bossbar add elements:stage-4_boss "%null%"
 bossbar set elements:stage-4_boss color red
 bossbar set elements:stage-4_boss name {"text": "Flinker Fuchs","color": "white"}
+bossbar add elements:stage-5_boss "%null%"
+bossbar set elements:stage-5_boss color red
+bossbar set elements:stage-5_boss name {"text": "Großer Slime","color": "white"}
 
 scoreboard objectives add elements_random dummy
 scoreboard objectives add Dimension-Switch trigger
@@ -288,6 +303,8 @@ scoreboard objectives add elements_stats_stage_3_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_3_boss_killed dummy
 scoreboard objectives add elements_stats_stage_4_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_4_boss_killed dummy
+scoreboard objectives add elements_stats_stage_5_boss_spawned dummy
+scoreboard objectives add elements_stats_stage_5_boss_killed dummy
 scoreboard objectives add elements_stats_stage_0_boss_spawned dummy
 scoreboard objectives add elements_stats_stage_0_boss_killed dummy
 
@@ -713,9 +730,17 @@ scoreboard objectives add elements_stage_4_boss_melee_timer dummy
 scoreboard objectives add elements_stage_4_boss_spawn-player dummy
 scoreboard objectives add elements_stage_4_boss_players_in_arena dummy
 scoreboard objectives add elements_stage_4_boss_spectator_in_arena dummy
+scoreboard objectives add elements_stage_5_portal_enable dummy
+scoreboard objectives add elements_stage_5_boss_status dummy
+scoreboard objectives add elements_stage_5_boss_loot_count dummy
+scoreboard objectives add elements_stage_5_boss_melee_timer dummy
+scoreboard objectives add elements_stage_5_boss_spawn-player dummy
+scoreboard objectives add elements_stage_5_boss_players_in_arena dummy
+scoreboard objectives add elements_stage_5_boss_spectator_in_arena dummy
 
 scoreboard objectives add elements_stage_3_portal_enable_fungus_timer dummy
 scoreboard objectives add elements_stage_4_portal_enable_fox_timer dummy
+scoreboard objectives add elements_stage_5_portal_enable_melon_timer dummy
 
 scoreboard objectives add elements_spawn_vaults_refresh dummy
 scoreboard objectives add elements_leaderboards_refresh-timer dummy

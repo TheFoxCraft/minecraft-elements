@@ -83,7 +83,7 @@ execute as @s[scores={elements_enderchest_interface_number=9}] store success sco
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"nether/small_heal_pot",price:100,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"nether/small_heal_pot",price:100,price_multiplier:5,name:"Kleiner Heiltrank",name_type:"text",is_loot:1,cumoda:2,slot:14}
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"nether/small_heal_pot",price:100,price_multiplier:5,name:"10x Kleiner Heiltrank",name_type:"text",is_loot:1,cumoda:2,slot:14}
 
 
 # no unique
@@ -92,14 +92,14 @@ execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel
 execute as @s[scores={elements_enderchest_interface_clicked=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"nether/big_heal_pot",price:500,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":4}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"nether/big_heal_pot",price:500,price_multiplier:5,name:"Großer Heiltrank",name_type:"text",is_loot:1,cumoda:4,slot:15}
+execute as @s[scores={elements_enderchest_interface_number=9}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"nether/big_heal_pot",price:500,price_multiplier:5,name:"10x Großer Heiltrank",name_type:"text",is_loot:1,cumoda:4,slot:15}
 
 # unique
 execute as @s[scores={elements_enderchest_interface_number=9}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] store success score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=4]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"nether/big_heal_pot",price:400,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":4}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"nether/big_heal_pot",price:400,price_multiplier:5,name:"Großer Heiltrank",name_type:"text",is_loot:1,cumoda:4,slot:15}
+execute as @s[scores={elements_enderchest_interface_number=9}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"nether/big_heal_pot",price:400,price_multiplier:5,name:"10x Großer Heiltrank",name_type:"text",is_loot:1,cumoda:4,slot:15}
 
 
 
