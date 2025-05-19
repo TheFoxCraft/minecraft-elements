@@ -1,0 +1,1 @@
+$loot replace entity @s enderchest.$(slot) loot elements:items/shops/$(type)

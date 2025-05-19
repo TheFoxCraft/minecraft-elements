@@ -1,6 +1,6 @@
 $summon villager ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:["stage-5_main","follow"],CustomName:'{"color":"gold","translate":"elements.villager.stage_5.main.name"}',HandItems:[{id:"minecraft:melon",count:1},{}],VillagerData:{level:99,profession:"minecraft:fletcher",type:"minecraft:jungle"},Offers:{Recipes:[\
 {rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:melon",count:64},sell:$(compressed_melon)},\
 {rewardExp:0b,maxUses:2147483647,buy:$(compressed_melon),sell:$(element_hoe_common)},\
-{rewardExp:0b,maxUses:2147483647,buy:$(compressed_melon),sell:$(boss_spawning_stage_5)}\
+{rewardExp:0b,maxUses:2147483647,buy:$(compressed_melon),sell:$(boss_spawning_stage_5)},\
+{rewardExp:0b,maxUses:2147483647,buy:$(compressed_melon),sell:{id:"minecraft:written_book",count:1,components:{"minecraft:written_book_content":{title:"Des Farmers Flüstern",author:"Melonenfarmer",generation:0,resolved:true,pages:['{"text":"Im Tal, wo Morgentau noch glüht,\\n\\nein alter Melonenbauer müht.\\n\\nEr hegt sein Feld mit stolzem Blick,\\n\\ndoch birgt sein Hof ein Zauberglück.\\n"}','{"text":"Wenn Schatten schleichen, stumm und sacht,\\n\\nund Spinnen träumen in der Nacht,\\n\\nvermischt sich Süßes, Fleisch und Blick\\n\\nin tiefer Flut – ein dunkles Stück.\\n"}','{"text":"Wer funkelnd Frucht mit Weisheit paart,\\n\\nund beide Gaben still bewahrt,\\n\\ndem öffnet sich – doch nie mit Hast –\\n\\ndes Gärtners Tor zur alten Last."}']}}}}\
 ]}}
-

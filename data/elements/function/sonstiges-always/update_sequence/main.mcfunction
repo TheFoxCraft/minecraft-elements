@@ -284,4 +284,34 @@ execute as @a[scores={elements_update_sequence_status=11}] if score .server elem
 execute as @a[scores={elements_update_sequence_status=11}] if score .server elements_update_sequence_status matches 12.. run scoreboard players set @s elements_update_sequence_status 12
 
 
+
+
+#1.11.0.0
+
+execute if score .server elements_update_sequence_status matches 12 run scoreboard players set .server elements_stage_5_portal_enable 0
+execute if score .server elements_update_sequence_status matches 12 run scoreboard players set .server elements_stage_5_boss_status 0
+execute if score .server elements_update_sequence_status matches 12 run scoreboard players set .server elements_stage_5_boss_melee_timer 0
+execute if score .server elements_update_sequence_status matches 12 in elements:stage-5_bossroom run place template elements:boss_room/stage_5 -50 82 -49
+#execute if score .server elements_update_sequence_status matches 12 run say (Hier dann neue default-values setzen)
+execute if score .server elements_update_sequence_status matches 12 run scoreboard players set .server elements_update_sequence_status 13
+
+
+
+execute as @a[scores={elements_update_sequence_status=12}] if score .server elements_update_sequence_status matches 13.. run title @s title ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
+execute as @a[scores={elements_update_sequence_status=12}] if score .server elements_update_sequence_status matches 13.. run title @s subtitle ["",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.11.2.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
+execute as @a[scores={elements_update_sequence_status=12}] if score .server elements_update_sequence_status matches 13.. run tellraw @s ["","\n","\n","\n","\n","\n",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.11.2.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"\n","\n",{"text": "Seit du das letzte mal online warst gab es ein Update!","color": "green"},"\n"]
+execute as @a[scores={elements_update_sequence_status=12}] if score .server elements_update_sequence_status matches 13.. run tellraw @s ["",{"text": "Changelog im Discord"}]
+
+# ..
+
+
+#execute as @a[scores={elements_update_sequence_status=12}] if score .server elements_update_sequence_status matches 13.. run say (Hier dann neue default-values setzen)
+# ..
+execute as @a[scores={elements_update_sequence_status=12}] if score .server elements_update_sequence_status matches 13.. run scoreboard players set @s elements_update_sequence_status 13
+
+
+
 #change status in startup settings, update load
+
+
+

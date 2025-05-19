@@ -1,0 +1,213 @@
+{
+  "type": "vault",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:dirt",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:slime_ball",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "slime_ball",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_model_data": 100
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "UNIQUE (Nur noch nicht gecodet)"
+                }
+              ],
+              "mode": "append"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "empty",
+          "weight": 499
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "weight": 5,
+          "value": "elements:items/element_leggings/legendary",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "loot_table",
+              "value": "elements:items/customs/lebensfrucht",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "elements_stage": 5
+                  }
+                }
+              ],
+              "weight": 5
+            },
+            {
+              "type": "minecraft:empty",
+              "weight": 5
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 10,
+          "value": "elements:items/customs/boss-keks/stage_5",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 5,
+          "value": "elements:items/element_mace/legendary"
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "emerald",
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "Immer Langsam hier, ich bin am Coden!"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_name",
+              "name": "Custom Item Incoming"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:sentry_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:dune_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 60
+        }
+      ]
+    },
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:dirt",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:slime_ball",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

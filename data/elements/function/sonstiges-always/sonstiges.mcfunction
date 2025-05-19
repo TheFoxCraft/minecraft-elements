@@ -231,3 +231,4 @@ execute as @a[scores={elements_enderchest_settings_return_after_close=2}] run fu
 execute as @a run scoreboard players operation @s dd_rank_cam = @s elements_rank_cam
 
 
+clear @a bundle

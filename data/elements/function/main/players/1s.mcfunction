@@ -8,6 +8,8 @@ execute as @s[scores={elements_get-login=1..}] run function elements:sonstiges/o
 execute as @s[scores={elements_get-login=1..}] run scoreboard players set @s elements_get-login 0
 
 execute as @s[nbt={SelectedItem:{id:"minecraft:bone"}}] run item modify entity @s weapon.mainhand {function:"set_components",components:{food:{nutrition:0,saturation:0,can_always_eat:true},consumable:{consume_seconds:99999}}}
+execute as @s[nbt={SelectedItem:{id:"minecraft:melon"}}] run item modify entity @s weapon.mainhand {function:"set_components","components":{"attribute_modifiers": {"show_in_tooltip": false,"modifiers": [{"amount": -1,"id": "stage_5_melon","operation": "add_multiplied_base","type": "block_interaction_range","slot": "any"}]}}}
+
 
 execute as @s[tag=!elements_boss_spectator] run scoreboard players reset @s leave
 
@@ -31,3 +33,11 @@ execute if score @s elements_custom-items_shop_water-breathing_enable matches 1 
 execute unless score @s elements_maxhealth = @s elements_maxhealth_old store result storage elements_get_data maxhealth int 1 run scoreboard players get @s elements_maxhealth
 execute unless score @s elements_maxhealth = @s elements_maxhealth_old store result storage elements_get_data maxhealth int 1 run function elements:sonstiges/set_max-health with storage elements_get_data
 scoreboard players operation @s elements_maxhealth_old = @s elements_maxhealth
+
+
+scoreboard players enable @s z_fix_Enderchest
+execute as @a[scores={z_fix_Enderchest=1..}] run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"Enderchest neu Berechnet!"]
+execute as @a[scores={z_fix_Enderchest=1..}] run function elements:sonstiges/enderchest_return_after_close/main
+execute as @a[scores={z_fix_Enderchest=1..}] run scoreboard players set @s elements_enderchest_interface_number 1
+execute as @a[scores={z_fix_Enderchest=1..}] run scoreboard players set @s elements_enderchest_interface_number_old -1
+execute as @a[scores={z_fix_Enderchest=1..}] run scoreboard players set @s z_fix_Enderchest 0

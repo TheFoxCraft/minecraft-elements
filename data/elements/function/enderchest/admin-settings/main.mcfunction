@@ -105,6 +105,3 @@ execute if score .server elements_setup_temp matches 1 if score .server elements
 execute if score .server elements_setup_temp matches 1 run scoreboard players set .server elements_setup_temp 0
 
 
-## Start Story
-
-execute if score .server elements_setup matches 2 run function elements:enderchest/admin-settings/start_story

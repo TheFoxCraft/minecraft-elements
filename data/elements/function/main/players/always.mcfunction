@@ -14,6 +14,9 @@ execute as @s[nbt={Inventory:[{id:"minecraft:gray_dye",Slot:-106b}]},predicate=!
 execute as @s[nbt={SelectedItem:{id:"minecraft:stone_pressure_plate",components:{"minecraft:custom_model_data":1}}},gamemode=!adventure] run function elements:custom-items/rettungs-plattform/rettungs-plattform-always
 clear @s melon_seeds
 
+
+
+
 execute if score @s elements_autocompactor matches 1.. run function elements:sonstiges-always/autocompactor
 
 
@@ -66,3 +69,5 @@ execute as @s[scores={elements_death=1..}] run function elements:sonstiges/death
 #load enderchest
 execute unless score @s elements_enderchest_interface_number = @s elements_enderchest_interface_number_old run function elements:enderchest/load
 scoreboard players operation @s elements_enderchest_interface_number_old = @s elements_enderchest_interface_number
+
+

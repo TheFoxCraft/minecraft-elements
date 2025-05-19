@@ -7,7 +7,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:sweet_berries",
+          "name": "minecraft:copper_ingot",
           "functions": [
             {
               "function": "set_count",
@@ -16,7 +16,7 @@
             {
               "function": "set_components",
               "components": {
-                "minecraft:custom_model_data": 1,
+                "minecraft:custom_model_data": 29,
                 "minecraft:enchantment_glint_override": true,
                 "minecraft:damage_resistant": {
                   "types": "#minecraft:is_fire"

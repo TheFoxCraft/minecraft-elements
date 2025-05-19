@@ -1,0 +1,93 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:mace",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:unbreakable": {},
+                  "minecraft:damage_resistant": {
+                    "types": "#minecraft:is_fire"
+                  },
+                  "minecraft:custom_model_data": 4,
+                  "attribute_modifiers": {
+                    "modifiers": [
+                        {
+                          "id": "element_mace_legendary_buff",
+                          "amount": -1,
+                          "operation": "add_multiplied_base",
+                          "type": "entity_interaction_range",
+                          "slot": "hand"
+                        }
+                    ],
+                    "show_in_tooltip": false
+                  }
+                }
+
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "bold": true,
+                    "color": "gold",
+                    "italic": false,
+                    "translate": "elements.item.element_mace.name"
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "translate": "elements.main.other.space"
+                  },
+                  [
+                    {
+                      "color": "gray",
+                      "italic": false,
+                      "translate": "elements.item.element_mace.description"
+                    },
+                    {
+                      "color": "green",
+                      "italic": false,
+                      "translate": "elements.item.element_mace.legendary.ability"
+                    }
+                  ],
+                  {
+                    "translate": "elements.main.other.space"
+                  },
+                  {
+                    "bold": true,
+                    "color": "gray",
+                    "italic": false,
+                    "translate": "elements.item.element_mace.legendary.buff"
+                  },
+                   {
+                    "translate": "elements.main.other.space"
+                  },
+                  {
+                    "bold": true,
+                    "color": "gold",
+                    "italic": false,
+                    "translate": "elements.main.rarities.legendary"
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -29,160 +29,93 @@ execute as @s[scores={elements_enderchest_interface_number=9}] run item replace 
 execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.25 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
 
 
+# new system
+
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:magma_block[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_nether=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..499,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_nether=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_nether=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/nether/hot_lava"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_nether=1}] run xp add @s -500 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"nether/hot_lava",price:500,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:magma_block",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.4 loot elements:items/shops/nether/hot_lava
-execute as @s[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.4 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Heiße Lava [500 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data",    "value": 2  }]
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"nether/hot_lava",price:500,price_multiplier:5,name:"Heiße Lava",name_type:"text",is_loot:1,cumoda:2,slot:4}
+
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:glowstone_dust[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_nether=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..199,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_nether=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_nether=1}] run give @s glowstone_dust 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=200..,elements_enderchest_shop_nether=1}] run xp add @s -200 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"glowstone_dust",price:200,price_multiplier:5,is_loot:0}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:glowstone_dust",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.9 with glowstone_dust[custom_name='[{"translate": "item.minecraft.glowstone_dust","color": "yellow","italic": false},{"color":"yellow","text":" [200 Level]","italic": false}]',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"glowstone_dust",price:200,price_multiplier:5,name:"item.minecraft.glowstone_dust",name_type:"translate",is_loot:0,cumoda:2,slot:9}
 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:quartz[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..4,elements_enderchest_shop_nether=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..4,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=5..,elements_enderchest_shop_nether=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=5..,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=5..,elements_enderchest_shop_nether=1}] run give @s quartz 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=5..,elements_enderchest_shop_nether=1}] run xp add @s -5 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"quartz",price:5,price_multiplier:5,is_loot:0}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:quartz",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.10 with quartz[custom_name='[{"translate": "item.minecraft.quartz","color": "yellow","italic": false},{"color":"yellow","text":" [5 Level]","italic": false}]',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"quartz",price:5,price_multiplier:5,name:"item.minecraft.quartz",name_type:"translate",is_loot:0,cumoda:2,slot:10}
 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:blaze_rod[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49,elements_enderchest_shop_nether=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] run give @s blaze_rod 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] run xp add @s -50 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"blaze_rod",price:50,price_multiplier:5,is_loot:0}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:blaze_rod",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.11 with blaze_rod[custom_name='[{"translate": "item.minecraft.blaze_rod","color": "yellow","italic": false},{"color":"yellow","text":" [50 Level]","italic": false}]',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"blaze_rod",price:50,price_multiplier:5,name:"item.minecraft.blaze_rod",name_type:"translate",is_loot:0,cumoda:2,slot:11}
 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:ender_pearl[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49,elements_enderchest_shop_nether=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] run give @s ender_pearl 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] run xp add @s -50 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"ender_pearl",price:50,price_multiplier:5,is_loot:0}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:ender_pearl",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.12 with ender_pearl[custom_name='[{"translate": "item.minecraft.ender_pearl","color": "yellow","italic": false},{"color":"yellow","text":" [50 Level]","italic": false}]',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"ender_pearl",price:50,price_multiplier:5,name:"item.minecraft.ender_pearl",name_type:"translate",is_loot:0,cumoda:2,slot:12}
 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:wither_skeleton_skull[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..999,elements_enderchest_shop_nether=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..999,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..,elements_enderchest_shop_nether=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..,elements_enderchest_shop_nether=1}] run give @s wither_skeleton_skull 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=1000..,elements_enderchest_shop_nether=1}] run xp add @s -1000 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"wither_skeleton_skull",price:1000,price_multiplier:5,is_loot:0}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:wither_skeleton_skull",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.13 with wither_skeleton_skull[custom_name='[{"translate": "block.minecraft.wither_skeleton_skull","color": "yellow","italic": false},{"color":"yellow","text":" [1.000 Level]","italic": false}]',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"wither_skeleton_skull",price:1000,price_multiplier:5,name:"block.minecraft.wither_skeleton_skull",name_type:"translate",is_loot:0,cumoda:2,slot:13}
 
 
 
-execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..9,elements_enderchest_shop_nether=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..9,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=10..,elements_enderchest_shop_nether=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=10..,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=10..,elements_enderchest_shop_nether=1}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/nether/small_heal_pot"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=10..,elements_enderchest_shop_nether=1}] run xp add @s -10 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_number=9}] store success score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=2]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"nether/small_heal_pot",price:100,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run loot replace entity @s enderchest.14 loot elements:items/shops/nether/small_heal_pot
-execute as @s[scores={elements_enderchest_interface_number=9}] run item modify entity @s enderchest.14 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Kleiner Heiltrank [10 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data",    "value": 2  }]
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"nether/small_heal_pot",price:100,price_multiplier:5,name:"10x Kleiner Heiltrank",name_type:"text",is_loot:1,cumoda:2,slot:14}
 
 
-#no unique
-execute as @s[scores={elements_enderchest_interface_number=9}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=4]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49,elements_enderchest_shop_nether=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..49,elements_enderchest_shop_nether=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/nether/big_heal_pot"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] if score .server elements_uniqueitem_shop_mosh_pit matches 0 run function elements:uniques/trigger/mosh_pit/random
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=50..,elements_enderchest_shop_nether=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run xp add @s -50 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+# no unique
+execute as @s[scores={elements_enderchest_interface_number=9}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] store success score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=4]
+execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=500..,elements_enderchest_shop_nether=1}] if score .server elements_uniqueitem_shop_mosh_pit matches 0 run function elements:uniques/trigger/mosh_pit/random
+execute as @s[scores={elements_enderchest_interface_clicked=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"nether/big_heal_pot",price:500,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":4}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run loot replace entity @s enderchest.15 loot elements:items/shops/nether/big_heal_pot
-execute as @s[scores={elements_enderchest_interface_number=9}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run item modify entity @s enderchest.15 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Großer Heiltrank [50 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 4 }]
-#unique
-execute as @s[scores={elements_enderchest_interface_number=9}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=4]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..39,elements_enderchest_shop_nether=1}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..39,elements_enderchest_shop_nether=1}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=40..,elements_enderchest_shop_nether=1}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=40..,elements_enderchest_shop_nether=1}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=40..,elements_enderchest_shop_nether=1}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run function elements:sonstiges/savely_give_loot {id:"elements:items/shops/nether/big_heal_pot"}
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=40..,elements_enderchest_shop_nether=1}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] if score .server elements_uniqueitem_shop_mosh_pit matches 0 run function elements:uniques/trigger/mosh_pit/random
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=40..,elements_enderchest_shop_nether=1}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run xp add @s -40 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_number=9}] unless entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"nether/big_heal_pot",price:500,price_multiplier:5,name:"10x Großer Heiltrank",name_type:"text",is_loot:1,cumoda:4,slot:15}
+
+# unique
+execute as @s[scores={elements_enderchest_interface_number=9}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] store success score @s elements_enderchest_interface_clicked run clear @s minecraft:potion[custom_model_data=4]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"nether/big_heal_pot",price:400,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_model_data":4}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run loot replace entity @s enderchest.15 loot elements:items/shops/nether/big_heal_pot
-execute as @s[scores={elements_enderchest_interface_number=9}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run item modify entity @s enderchest.15 [{ "function": "minecraft:set_name", "entity": "this", "name": {"text": "Großer Heiltrank [40 Level]","color": "yellow","italic": false}},{"function": "minecraft:set_custom_model_data", "value": 4 }]
+execute as @s[scores={elements_enderchest_interface_number=9}] if entity @s[nbt={Inventory:[{id:"minecraft:spawner",components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"nether/big_heal_pot",price:400,price_multiplier:5,name:"10x Großer Heiltrank",name_type:"text",is_loot:1,cumoda:4,slot:15}
 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:ancient_debris[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..249,elements_enderchest_shop_nether=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..249,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=250..,elements_enderchest_shop_nether=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=250..,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=250..,elements_enderchest_shop_nether=1}] run give @s ancient_debris 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=250..,elements_enderchest_shop_nether=1}] run xp add @s -250 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"ancient_debris",price:250,price_multiplier:5,is_loot:0}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:ancient_debris",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.16 with ancient_debris[custom_name='[{"translate": "block.minecraft.ancient_debris","color": "yellow","italic": false},{"color":"yellow","text":" [250 Level]","italic": false}]',custom_model_data=2] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"ancient_debris",price:250,price_multiplier:5,name:"block.minecraft.ancient_debris",name_type:"translate",is_loot:0,cumoda:2,slot:16}
 
 
 
 execute as @s[scores={elements_enderchest_interface_number=9}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:netherite_upgrade_smithing_template[custom_model_data=2]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..1999,elements_enderchest_shop_nether=1}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=..1999,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Du hast zu wenig Level","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=2000..,elements_enderchest_shop_nether=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=2000..,elements_enderchest_shop_nether=1}] run tellraw @s [{"text": "Shop: ","color": "yellow"},{"text": "Gekauft!","color": "white"}]
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=2000..,elements_enderchest_shop_nether=1}] run give @s netherite_upgrade_smithing_template 1
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_mainlevel=2000..,elements_enderchest_shop_nether=1}] run xp add @s -2000 levels
-execute as @s[scores={elements_enderchest_interface_clicked=1,elements_enderchest_shop_nether=0}] at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/shop/buying/trigger {shop:"nether",type:"netherite_upgrade_smithing_template",price:2000,price_multiplier:5,is_loot:0}
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 kill @e[type=item,nbt={Item:{id:"minecraft:netherite_upgrade_smithing_template",count:1,components:{"minecraft:custom_model_data":2}}}]
-execute as @s[scores={elements_enderchest_interface_number=9}] run item replace entity @s enderchest.17 with netherite_upgrade_smithing_template[custom_name='[{"translate": "item.minecraft.netherite_upgrade_smithing_template","color": "yellow","italic": false},{"color":"yellow","text":" [2.000 Level]","italic": false}]',custom_model_data=2,hide_additional_tooltip={}] 1
+execute as @s[scores={elements_enderchest_interface_number=9}] run function elements:enderchest/shop/build_item_preview/main {shop:"nether",type:"netherite_upgrade_smithing_template",price:2000,price_multiplier:5,name:"item.minecraft.netherite_upgrade_smithing_template",name_type:"translate",is_loot:0,cumoda:2,slot:17}
 
 
 
