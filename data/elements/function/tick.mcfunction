@@ -91,3 +91,8 @@ function elements:enderchest/kill_items
 #playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
 #playsound ui.button.click master @s ~ ~ ~ 1
 #playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 100 0.9
+
+
+## Start Story
+
+execute if score .server elements_setup matches 2 run function elements:enderchest/admin-settings/start_story

@@ -178,6 +178,7 @@ bossbar add elements:stage-5_boss "%null%"
 bossbar set elements:stage-5_boss color red
 bossbar set elements:stage-5_boss name {"text": "Großer Slime","color": "white"}
 
+scoreboard objectives add z_fix_Enderchest trigger
 scoreboard objectives add elements_random dummy
 scoreboard objectives add Dimension-Switch trigger
 scoreboard objectives add elements_override_by_dd dummy
