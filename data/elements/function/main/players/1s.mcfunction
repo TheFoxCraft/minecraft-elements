@@ -41,3 +41,10 @@ execute as @a[scores={z_fix_Enderchest=1..}] run function elements:sonstiges/end
 execute as @a[scores={z_fix_Enderchest=1..}] run scoreboard players set @s elements_enderchest_interface_number 1
 execute as @a[scores={z_fix_Enderchest=1..}] run scoreboard players set @s elements_enderchest_interface_number_old -1
 execute as @a[scores={z_fix_Enderchest=1..}] run scoreboard players set @s z_fix_Enderchest 0
+
+
+#kaktus koenig abfall
+#trigger
+execute if score .server elements_uniqueitem_other_kaktus_koenig_abfall matches 0 if score @s elements_mainlevel matches 1000000.. run function elements:uniques/trigger/kaktus_koenig_abfall
+# function
+execute if entity @s[nbt={Inventory:[{id:"minecraft:green_dye",components:{"minecraft:custom_model_data":1}}]}] if predicate elements:50_50 run xp add @s 1 levels

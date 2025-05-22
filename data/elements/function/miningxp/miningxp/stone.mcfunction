@@ -25,4 +25,6 @@ scoreboard players set @s elements_sonstiges_actionbar_pause 20
 
 
 
+execute as @s[scores={elements_custom-items_shop_mining-frucht_counter=3..}] run scoreboard players add @s elements_miningxp_mining_xp 1
+execute as @s[scores={elements_custom-items_shop_mining-frucht_counter=3..}] run scoreboard players remove @s elements_custom-items_shop_mining-frucht_counter 3
 

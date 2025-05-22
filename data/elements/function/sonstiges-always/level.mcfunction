@@ -39,3 +39,7 @@ execute as @s[scores={elements_level_sweet_berries=1..}] run function elements:s
 
 # STAGE 5
 execute as @s[scores={elements_level_melon=1..}] run function elements:sonstiges-always/level/stage_5
+
+
+# STAGE 6
+execute as @s[scores={elements_level_cocoa=1..}] run function elements:sonstiges-always/level/stage_6

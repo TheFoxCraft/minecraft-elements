@@ -1,0 +1,26 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "location": [
+            {
+                "condition": "minecraft:block_state_property",
+                "block": "cocoa"
+            },
+            {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                    "items": "cocoa_beans"
+                }
+            }
+          ]
+          
+        }
+      }
+    },
+    "rewards": {
+      "function": "elements:farm_slots/stage_6/get_block_placing"
+    }
+  }
+  

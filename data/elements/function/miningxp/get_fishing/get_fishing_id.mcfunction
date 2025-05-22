@@ -41,6 +41,11 @@ $execute if score .server elements_stage matches 5 as @a[nbt={UUID:$(UUID)},pred
 $execute if score .server elements_stage matches 5 as @a[nbt={UUID:$(UUID)}] if score .server elements_double-xp-event_active matches 1 run xp add @s 36 levels
 $execute if score .server elements_stage matches 5 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] if score .server elements_double-xp-event_active matches 1 run xp add @s 24 levels
 
+$execute if score .server elements_stage matches 6 as @a[nbt={UUID:$(UUID)}] run xp add @s 60 levels
+$execute if score .server elements_stage matches 6 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] run xp add @s 40 levels
+$execute if score .server elements_stage matches 6 as @a[nbt={UUID:$(UUID)}] if score .server elements_double-xp-event_active matches 1 run xp add @s 60 levels
+$execute if score .server elements_stage matches 6 as @a[nbt={UUID:$(UUID)},predicate=elements:is_in_hub] if score .server elements_double-xp-event_active matches 1 run xp add @s 40 levels
+
 
 $execute as @a[nbt={UUID:$(UUID)}] run scoreboard players add @s elements_stats_fish_caught 1
 $execute as @a[nbt={UUID:$(UUID)}] run scoreboard players add .server elements_stats_fish_caught 1

@@ -3,9 +3,7 @@ execute as @s[scores={elements_miningxp_mining_mine-get_stone=1..}] run function
 execute as @s[scores={elements_miningxp_mining_mine-get_cobblestone=1..}] run function elements:miningxp/miningxp/cobblestone
 execute as @s[scores={elements_miningxp_mining_mine-get_basalt=1..}] run function elements:miningxp/miningxp/basalt
 
-
-execute as @s[scores={elements_custom-items_shop_mining-frucht_counter=3..}] run scoreboard players add @s elements_miningxp_mining_xp 1
-execute as @s[scores={elements_custom-items_shop_mining-frucht_counter=3..}] run scoreboard players remove @s elements_custom-items_shop_mining-frucht_counter 3
+execute as @s[scores={elements_miningxp_mining_mine-get_cocoa=1..}] run function elements:miningxp/miningxp/cocoa
 
 
 

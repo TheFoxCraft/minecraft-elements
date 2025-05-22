@@ -225,6 +225,7 @@
     stick: Admin Wand (für Abgaben)
 
 copper_ingot: 100-113, 20-31
+popped_chorus_fruit: 1
 
 #Color Orange: ff8800
 {"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"}

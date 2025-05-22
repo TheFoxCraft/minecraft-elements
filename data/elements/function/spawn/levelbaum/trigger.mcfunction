@@ -9,4 +9,6 @@ execute if score .server elements_stage matches 4 run tellraw @s ["",{"translate
 execute if score .server elements_stage matches 4 run xp add @s 2000 levels
 execute if score .server elements_stage matches 5 run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Der Allay hat eine große Ladung Level gedroppt! "},{"text": "+5.000 Level","color": "green"}]
 execute if score .server elements_stage matches 5 run xp add @s 5000 levels
+execute if score .server elements_stage matches 6 run tellraw @s ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"text": "Der Allay hat eine große Ladung Level gedroppt! "},{"text": "+15.000 Level","color": "green"}]
+execute if score .server elements_stage matches 6 run xp add @s 15000 levels
 execute at @s run kill @n[tag=spawn_levelbaum_allay]

@@ -132,6 +132,9 @@ execute as @s[scores={elements_enderchest_interface_number=9}] if score .server 
 #stage 5
 execute as @s[scores={elements_enderchest_interface_clicked=1}] if score .server elements_stage matches 5 run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/bossfrucht/stage_5",price:1500,price_multiplier:5,is_loot:1}
 execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 5 run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/bossfrucht/stage_5",price:1500,price_multiplier:5,name:"Bossfrucht Stage 5",name_type:"text",is_loot:1,cumoda:1,slot:9}
+#stage 6
+execute as @s[scores={elements_enderchest_interface_clicked=1}] if score .server elements_stage matches 6 run function elements:enderchest/shop/buying/trigger {shop:"ocean",type:"ocean/bossfrucht/stage_6",price:1500,price_multiplier:5,is_loot:1}
+execute as @s[scores={elements_enderchest_interface_number=9}] if score .server elements_stage matches 6 run function elements:enderchest/shop/build_item_preview/main {shop:"ocean",type:"ocean/bossfrucht/stage_6",price:1500,price_multiplier:5,name:"Bossfrucht Stage 6",name_type:"text",is_loot:1,cumoda:1,slot:9}
 
 #footer
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0

@@ -18,3 +18,5 @@ execute as @s[scores={elements_miningxp_mining_level=..99}] run title @s actionb
 execute as @s[scores={elements_miningxp_mining_level=100}] run title @s actionbar ["",{"text":"⛏ Mining: ","color":"blue"},{"score":{"name":"@s","objective":"elements_miningxp_mining_xp"},"color":"blue"},{"text":" XP","color":"blue"}]
 scoreboard players set @s elements_sonstiges_actionbar_pause 20
 
+execute as @s[scores={elements_custom-items_shop_mining-frucht_counter=3..}] run scoreboard players add @s elements_miningxp_mining_xp 1
+execute as @s[scores={elements_custom-items_shop_mining-frucht_counter=3..}] run scoreboard players remove @s elements_custom-items_shop_mining-frucht_counter 3

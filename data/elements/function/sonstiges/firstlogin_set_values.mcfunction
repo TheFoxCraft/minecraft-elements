@@ -143,6 +143,8 @@ scoreboard players set @s elements_farm-slots_stage-4_slots 0
 scoreboard players set @s elements_farm-slots_stage-4_max-slots 0
 scoreboard players set @s elements_farm-slots_stage-5_slots 0
 scoreboard players set @s elements_farm-slots_stage-5_max-slots 0
+scoreboard players set @s elements_farm-slots_stage-6_slots 0
+scoreboard players set @s elements_farm-slots_stage-6_max-slots 0
 scoreboard players set @s elements_techniker_message_cooldown 0
 scoreboard players set @s elements_get-name_progress 0
 scoreboard players set @s elements_get-name_status 0

@@ -128,7 +128,7 @@ execute as @s run scoreboard players set .server elements_uniqueitem_shop_mosh_p
 
 
 #add with every update
-execute as @s run scoreboard players set .server elements_update_sequence_status 13
+execute as @s run scoreboard players set .server elements_update_sequence_status 14
 
 execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
 

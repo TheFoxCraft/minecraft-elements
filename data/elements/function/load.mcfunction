@@ -314,6 +314,7 @@ scoreboard objectives add elements_stats_stage_0_boss_killed dummy
 scoreboard objectives add elements_miningxp_mining_mine-get_stone minecraft.mined:minecraft.stone
 scoreboard objectives add elements_miningxp_mining_mine-get_cobblestone minecraft.mined:minecraft.cobblestone
 scoreboard objectives add elements_miningxp_mining_mine-get_basalt minecraft.mined:minecraft.basalt
+scoreboard objectives add elements_miningxp_mining_mine-get_cocoa dummy
 scoreboard objectives add elements_miningxp_foresting_mine-get_spruce minecraft.mined:minecraft.spruce_log
 scoreboard objectives add elements_miningxp_foresting_mine-get_melon minecraft.mined:minecraft.melon
 scoreboard objectives add elements_miningxp_farming_mine-get_crimson_vines minecraft.mined:minecraft.weeping_vines
@@ -438,9 +439,14 @@ scoreboard objectives add elements_collections_calc_crimson_vines_plant minecraf
 # stage 4
 scoreboard objectives add elements_collections_sweet_berries_collect dummy
 scoreboard objectives add elements_collections_stats_sweet_berries_total dummy
-# stage 4
+# stage 5
 scoreboard objectives add elements_collections_melon_collect dummy
 scoreboard objectives add elements_collections_stats_melon_total minecraft.mined:melon
+# stage 6
+scoreboard objectives add elements_collections_cocoa_collect dummy
+scoreboard objectives add elements_collections_stats_cocoa_total minecraft.mined:melon
+
+
 
 scoreboard objectives add elements_custom-items_fishing_rod_crafting_sticks_cooldown dummy
 
@@ -456,7 +462,8 @@ scoreboard objectives add elements_uniqueitem_collections_bruchstueck_der_eismau
 scoreboard objectives add elements_uniqueitem_collections_auf_log dummy
 scoreboard objectives add elements_uniqueitem_collections_bug_abuser dummy
 scoreboard objectives add elements_uniqueitem_collections_elements_biscuit dummy
-#collection_farming
+scoreboard objectives add elements_uniqueitem_collections_geroestete_melon_seeds dummy
+#collection_farming (1/10.000)
 scoreboard objectives add elements_uniqueitem_planetenkern dummy
 scoreboard objectives add elements_uniqueitem_ork_schatz dummy
 scoreboard objectives add elements_uniqueitem_fragment_der_himmelswarze dummy
@@ -466,6 +473,7 @@ scoreboard objectives add elements_uniqueitem_melonengolemschale dummy
 #other
 scoreboard objectives add elements_uniqueitem_other_datenspeicher dummy
 scoreboard objectives add elements_uniqueitem_other_rolex dummy
+scoreboard objectives add elements_uniqueitem_other_kaktus_koenig_abfall dummy
 #miningxp
 scoreboard objectives add elements_uniqueitem_miningxp_digda_splitter dummy
 scoreboard objectives add elements_uniqueitem_miningxp_nasser_klumpen dummy
@@ -476,6 +484,7 @@ scoreboard objectives add elements_uniqueitem_bosse_taubenkacke dummy
 scoreboard objectives add elements_uniqueitem_bosse_tomorrowland_karte dummy
 scoreboard objectives add elements_uniqueitem_bosse_amboesse dummy
 scoreboard objectives add elements_uniqueitem_bosse_runans_bow dummy
+scoreboard objectives add elements_uniqueitem_bosse_schleimiger_popel dummy
 #shops
 scoreboard objectives add elements_uniqueitem_shop_hasenpfote dummy
 scoreboard objectives add elements_uniqueitem_shop_allium_ghg dummy
@@ -666,6 +675,7 @@ scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-2 
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-3 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-4 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-5 dummy
+scoreboard objectives add elements_custom-items_shop_leveltrank_counter_stage-6 dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_enable dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_timer_h dummy
 scoreboard objectives add elements_custom-items_shop_leveltrank_timer_min dummy
@@ -874,6 +884,16 @@ scoreboard objectives add elements_farm-slots_stage-5_max-slots dummy
 scoreboard objectives add elements_farm-slots_stage-5_correct_UUID dummy
 scoreboard objectives add elements_farm-slots_stage-5_broken_slots dummy
 
+scoreboard objectives add elements_farm-slots_stage-6_placed dummy
+scoreboard objectives add elements_farm-slots_stage-6_broken minecraft.mined:cocoa
+scoreboard objectives add elements_farm-slots_stage-6_slots dummy
+scoreboard objectives add elements_farm-slots_stage-6_max-slots dummy
+scoreboard objectives add elements_farm-slots_stage-6_correct_UUID dummy
+scoreboard objectives add elements_farm-slots_stage-6_broken_slots dummy
+scoreboard objectives add elements_farm-slots_stage-6_rotation dummy
+scoreboard objectives add elements_farm-slots_stage-6_age dummy
+scoreboard objectives add elements_farm-slots_stage-6_age_old dummy
+
 scoreboard objectives setdisplay list elements_mainlevel
 
 
@@ -891,6 +911,8 @@ scoreboard objectives add elements_level_sweet_berries dummy
 
 scoreboard objectives add elements_level_melon minecraft.mined:minecraft.melon
 scoreboard objectives add elements_level_melon_placed minecraft.used:minecraft.melon
+
+scoreboard objectives add elements_level_cocoa dummy
 
 scoreboard objectives add elements_level_unique_addition dummy
 

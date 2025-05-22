@@ -1,0 +1,4 @@
+execute if score @s elements_farm-slots_stage-6_rotation matches 1 if block ~ ~ ~-1 minecraft:jungle_log run setblock ~ ~ ~ minecraft:cocoa[facing=north]
+execute if score @s elements_farm-slots_stage-6_rotation matches 2 if block ~1 ~ ~ minecraft:jungle_log run setblock ~ ~ ~ minecraft:cocoa[facing=east]
+execute if score @s elements_farm-slots_stage-6_rotation matches 3 if block ~ ~ ~1 minecraft:jungle_log run setblock ~ ~ ~ minecraft:cocoa[facing=south]
+execute if score @s elements_farm-slots_stage-6_rotation matches 4 if block ~-1 ~ ~ minecraft:jungle_log run setblock ~ ~ ~ minecraft:cocoa[facing=west]
