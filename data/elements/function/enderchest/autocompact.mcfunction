@@ -38,6 +38,12 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playso
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_autocompactor 5
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
 
+execute as @s[scores={elements_enderchest_level_autocompact=6..,elements_enderchest_interface_number=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:cocoa_beans[custom_model_data=12]
+execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_autocompactor 6
+execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
+
+
 execute as @s[scores={elements_enderchest_level_autocompact=1..,elements_enderchest_interface_number=2}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:composter[custom_model_data=2]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add @s elements_autorecycler 1
@@ -57,6 +63,7 @@ kill @e[type=item,nbt={Item:{id:"minecraft:spruce_log",count:1,components:{"mine
 kill @e[type=item,nbt={Item:{id:"minecraft:weeping_vines",count:1,components:{"minecraft:custom_model_data":1}}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:sweet_berries",count:1,components:{"minecraft:custom_model_data":2}}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:melon_slice",count:1,components:{"minecraft:custom_model_data":2}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:cocoa_beans",count:1,components:{"minecraft:custom_model_data":12}}}]
 
 
 execute as @s[scores={elements_enderchest_level_autocompact=1..,elements_enderchest_interface_number=2}] unless score @s elements_autocompactor matches 1 run item replace entity @s enderchest.9 with stone[custom_name='{"color":"red","text":"Stone Auto-Compactor","italic": false}',lore=['{"color":"green","text":"Klicke zum Aktivieren","italic": false}'],custom_model_data=1] 1
@@ -74,6 +81,8 @@ execute as @s[scores={elements_enderchest_level_autocompact=4..,elements_enderch
 execute as @s[scores={elements_enderchest_level_autocompact=5..,elements_enderchest_interface_number=2}] unless score @s elements_autocompactor matches 5 run item replace entity @s enderchest.13 with melon_slice[custom_name='{"color":"red","text":"Melonen Auto-Compactor","italic": false}',lore=['{"color":"green","text":"Klicke zum Aktivieren","italic": false}'],custom_model_data=2] 1
 execute as @s[scores={elements_enderchest_level_autocompact=5..,elements_enderchest_interface_number=2}] if score @s elements_autocompactor matches 5 run item replace entity @s enderchest.13 with red_dye[custom_name='{"color":"green","text":"Melonen Auto-Compactor","italic": false}',lore=['{"color":"red","text":"Klicke zum Deaktivieren","italic": false}'],custom_model_data=1] 1
 
+execute as @s[scores={elements_enderchest_level_autocompact=6..,elements_enderchest_interface_number=2}] unless score @s elements_autocompactor matches 6 run item replace entity @s enderchest.14 with cocoa_beans[custom_name='{"color":"red","text":"Kakau Auto-Compactor","italic": false}',lore=['{"color":"green","text":"Klicke zum Aktivieren","italic": false}'],custom_model_data=12] 1
+execute as @s[scores={elements_enderchest_level_autocompact=6..,elements_enderchest_interface_number=2}] if score @s elements_autocompactor matches 6 run item replace entity @s enderchest.14 with red_dye[custom_name='{"color":"green","text":"Kakau Auto-Compactor","italic": false}',lore=['{"color":"red","text":"Klicke zum Deaktivieren","italic": false}'],custom_model_data=1] 1
 
 
 clear @s minecraft:black_stained_glass_pane[custom_model_data=1]

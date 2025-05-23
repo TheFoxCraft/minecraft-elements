@@ -216,9 +216,11 @@ scoreboard objectives add elements_inv_compressed_wood dummy
 scoreboard objectives add elements_inv_compressed_crimson_vines dummy
 scoreboard objectives add elements_inv_compressed_sweet_berries dummy
 scoreboard objectives add elements_inv_compressed_melon dummy
+scoreboard objectives add elements_inv_compressed_cocoa dummy
 scoreboard objectives add elements_inv_crimson_vines dummy
 scoreboard objectives add elements_inv_sweet_berries dummy
 scoreboard objectives add elements_inv_melon dummy
+scoreboard objectives add elements_inv_cocoa dummy
 scoreboard objectives add elements_enderchest_interface_number dummy
 scoreboard objectives add elements_enderchest_interface_number_old dummy
 scoreboard objectives add elements_autocompactor dummy
@@ -591,6 +593,10 @@ scoreboard objectives add elements_abgabe_stage_5 dummy
 scoreboard objectives add elements_abgabe_stage_5_progress dummy
 scoreboard objectives add elements_abgabe_stage_5_goal dummy
 scoreboard objectives add elements_abgabe_stage_5_abgabe-mode dummy
+scoreboard objectives add elements_abgabe_stage_6 dummy
+scoreboard objectives add elements_abgabe_stage_6_progress dummy
+scoreboard objectives add elements_abgabe_stage_6_goal dummy
+scoreboard objectives add elements_abgabe_stage_6_abgabe-mode dummy
 scoreboard objectives add elements_abgabe_other_levelbaum dummy
 scoreboard objectives add elements_abgabe_other_levelbaum_progress dummy
 scoreboard objectives add elements_abgabe_other_levelbaum_goal dummy
@@ -773,6 +779,8 @@ scoreboard objectives add elements_villager_stage-5_mana_clicked dummy
 scoreboard objectives add elements_villager_stage-5_mana_level dummy
 scoreboard objectives add elements_villager_stage-5_farm-slots_clicked dummy
 scoreboard objectives add elements_villager_stage-5_farm-slots_level dummy
+scoreboard objectives add elements_villager_stage-6_farm-slots_clicked dummy
+scoreboard objectives add elements_villager_stage-6_farm-slots_level dummy
 scoreboard objectives add elements_stage-2_mana_activate_timer_tick dummy
 scoreboard objectives add elements_stage-2_mana_activate_timer_sec dummy
 scoreboard objectives add elements_mana_mana-count dummy
@@ -792,6 +800,8 @@ scoreboard objectives add elements_recycler_stats_4 dummy
 scoreboard objectives add elements_recycler_stats_4_spawn dummy
 scoreboard objectives add elements_recycler_stats_5 dummy
 scoreboard objectives add elements_recycler_stats_5_spawn dummy
+scoreboard objectives add elements_recycler_stats_6 dummy
+scoreboard objectives add elements_recycler_stats_6_spawn dummy
 scoreboard objectives add elements_function_timer_1m dummy
 scoreboard objectives add elements_function_timer_10s dummy
 scoreboard objectives add elements_function_timer_5s dummy

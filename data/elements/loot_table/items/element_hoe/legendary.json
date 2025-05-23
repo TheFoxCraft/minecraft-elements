@@ -1,80 +1,88 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:netherite_hoe",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_components",
-                "components": {
-                  "minecraft:unbreakable": {},
-                  "minecraft:damage_resistant": {
-                    "types": "#minecraft:is_fire"
-                  },
-                  "minecraft:custom_model_data": 4,
-                  "minecraft:tool": {
-                    "rules": [
-                      {
-                        "blocks": "melon",
-                        "speed": 25
-
-                      }
-                    ]
-                  }
-                }
-              },
-              {
-                "function": "set_name",
-                "name": [
-                  {
-                    "bold": true,
-                    "color": "gold",
-                    "italic": false,
-                    "translate": "elements.item.element_hoe.name"
-                  }
-                ]
-              },
-              {
-                "function": "set_lore",
-                "lore": [
-                  {
-                    "translate": "elements.main.other.space"
-                  },
-                  [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:netherite_hoe",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:damage_resistant": {
+                  "types": "#minecraft:is_fire"
+                },
+                "minecraft:custom_model_data": 4,
+                "minecraft:tool": {
+                  "rules": [
                     {
-                      "color": "gray",
-                      "italic": false,
-                      "translate":"elements.item.element_hoe.description"
+                      "blocks": "melon",
+                      "speed": 25
                     },
                     {
-                      "color": "green",
-                      "italic": false,
-                      "translate":"elements.item.element_tools.legendary.drop"
+                      "blocks": "#minecraft:incorrect_for_netherite_tool",
+                      "correct_for_drops": false
+                    },
+                    {
+                      "blocks": "#minecraft:mineable/hoe",
+                      "correct_for_drops": true,
+                      "speed": 9.0
                     }
-                  ],
+                  ]
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "gold",
+                  "italic": false,
+                  "translate": "elements.item.element_hoe.name"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "translate": "elements.main.other.space"
+                },
+                [
                   {
-                    "translate": "elements.main.other.space"
+                    "color": "gray",
+                    "italic": false,
+                    "translate": "elements.item.element_hoe.description"
                   },
                   {
-                    "bold": true,
-                    "color": "gold",
+                    "color": "green",
                     "italic": false,
-                    "translate": "elements.main.rarities.legendary"
+                    "translate": "elements.item.element_tools.legendary.drop"
                   }
                 ],
-                "mode": "append"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+                {
+                  "translate": "elements.main.other.space"
+                },
+                {
+                  "bold": true,
+                  "color": "gold",
+                  "italic": false,
+                  "translate": "elements.main.rarities.legendary"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -36,3 +36,5 @@ execute if score .server elements_abgabe_stage_4_gang matches 3 run function ele
 execute if score .server elements_abgabe_stage_4 matches 3 run function elements:spawn/abgaben/stage-4_room/spawning
 #stage 5 final room
 execute if score .server elements_abgabe_stage_5 matches 3 run function elements:spawn/abgaben/stage-5_room/spawning
+#stage 6 final room
+execute if score .server elements_abgabe_stage_6 matches 3 run function elements:spawn/abgaben/stage-6_room/spawning

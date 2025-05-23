@@ -316,6 +316,9 @@ execute as @a[scores={elements_update_sequence_status=12}] if score .server elem
 execute if score .server elements_update_sequence_status matches 13 run scoreboard players set .server elements_uniqueitem_bosse_schleimiger_popel 0
 execute if score .server elements_update_sequence_status matches 13 run scoreboard players set .server elements_uniqueitem_other_kaktus_koenig_abfall 0
 execute if score .server elements_update_sequence_status matches 13 run scoreboard players set .server elements_uniqueitem_collections_geroestete_melon_seeds 0
+execute if score .server elements_update_sequence_status matches 13 run scoreboard players set .server elements_recycler_stats_6 0
+execute if score .server elements_update_sequence_status matches 13 run scoreboard players set .server elements_recycler_stats_6_spawn 0
+execute if score .server elements_update_sequence_status matches 13 run scoreboard players set .server elements_abgabe_stage_6_progress 0
 #execute if score .server elements_update_sequence_status matches 13 run say (Hier dann neue default-values setzen)
 execute if score .server elements_update_sequence_status matches 13 run scoreboard players set .server elements_update_sequence_status 14
 
@@ -332,6 +335,9 @@ execute as @a[scores={elements_update_sequence_status=13}] if score .server elem
 #execute as @a[scores={elements_update_sequence_status=13}] if score .server elements_update_sequence_status matches 14.. run say (Hier dann neue default-values setzen)
 execute as @a[scores={elements_update_sequence_status=13}] if score .server elements_update_sequence_status matches 14.. run scoreboard players set @s elements_farm-slots_stage-6_slots 0
 execute as @a[scores={elements_update_sequence_status=13}] if score .server elements_update_sequence_status matches 14.. run scoreboard players set @s elements_farm-slots_stage-6_max-slots 0
+execute as @a[scores={elements_update_sequence_status=13}] if score .server elements_update_sequence_status matches 14.. run scoreboard players set @s elements_collections_cocoa_collect 0
+execute as @a[scores={elements_update_sequence_status=13}] if score .server elements_update_sequence_status matches 14.. run scoreboard players set @s elements_collections_stats_cocoa_total 0
+execute as @a[scores={elements_update_sequence_status=13}] if score .server elements_update_sequence_status matches 14.. run scoreboard players set @s elements_villager_stage-6_farm-slots_level 0
 # ..
 execute as @a[scores={elements_update_sequence_status=13}] if score .server elements_update_sequence_status matches 14.. run scoreboard players set @s elements_update_sequence_status 14
 

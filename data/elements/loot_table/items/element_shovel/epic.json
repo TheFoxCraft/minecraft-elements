@@ -1,71 +1,88 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:diamond_shovel",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_components",
-                "components": {
-                  "minecraft:unbreakable": {},
-                  "minecraft:damage_resistant": {
-                    "types": "#minecraft:is_fire"
-                  },
-                  "minecraft:custom_model_data": 3
-                }
-              },
-              {
-                "function": "set_name",
-                "name": [
-                  {
-                    "bold": true,
-                    "color": "dark_purple",
-                    "italic": false,
-                    "translate": "elements.item.element_shovel.name"
-                  }
-                ]
-              },
-              {
-                "function": "set_lore",
-                "lore": [
-                  {
-                    "translate": "elements.main.other.space"
-                  },
-                  [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:diamond_shovel",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:damage_resistant": {
+                  "types": "#minecraft:is_fire"
+                },
+                "minecraft:custom_model_data": 3,
+                "minecraft:tool": {
+                  "rules": [
                     {
-                      "color": "gray",
-                      "italic": false,
-                      "translate": "elements.item.element_shovel.description"
+                      "blocks": "cocoa",
+                      "speed": 5
                     },
                     {
-                      "color": "green",
-                      "italic": false,
-                      "translate":"elements.item.element_tools.epic.drop"
+                      "blocks": "#minecraft:incorrect_for_diamond_tool",
+                      "correct_for_drops": false
+                    },
+                    {
+                      "blocks": "#minecraft:mineable/shovel",
+                      "correct_for_drops": true,
+                      "speed": 8.0
                     }
-                  ],
+                  ]
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "dark_purple",
+                  "italic": false,
+                  "translate": "elements.item.element_shovel.name"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "translate": "elements.main.other.space"
+                },
+                [
                   {
-                    "translate": "elements.main.other.space"
+                    "color": "gray",
+                    "italic": false,
+                    "translate": "elements.item.element_shovel.description"
                   },
                   {
-                    "bold": true,
-                    "color": "dark_purple",
+                    "color": "green",
                     "italic": false,
-                    "translate": "elements.main.rarities.epic"
+                    "translate": "elements.item.element_tools.epic.drop"
                   }
                 ],
-                "mode": "append"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+                {
+                  "translate": "elements.main.other.space"
+                },
+                {
+                  "bold": true,
+                  "color": "dark_purple",
+                  "italic": false,
+                  "translate": "elements.main.rarities.epic"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

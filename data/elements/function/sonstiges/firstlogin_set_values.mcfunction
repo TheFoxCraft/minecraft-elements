@@ -48,6 +48,8 @@ scoreboard players set @s elements_collections_sweet_berries_collect 0
 scoreboard players set @s elements_collections_stats_sweet_berries_total 0
 scoreboard players set @s elements_collections_melon_collect 0
 scoreboard players set @s elements_collections_stats_melon_total 0
+scoreboard players set @s elements_collections_cocoa_collect 0
+scoreboard players set @s elements_collections_stats_cocoa_total 0
 scoreboard players set @s elements_collections_fish_collect 0
 #uniques
 scoreboard players set @s elements_uniqueitem_collections_bruchstueck_der_eismauer 0

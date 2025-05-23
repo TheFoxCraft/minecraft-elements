@@ -19,7 +19,20 @@
                   "minecraft:damage_resistant": {
                     "types": "#minecraft:is_fire"
                   },
-                  "minecraft:custom_model_data": 5
+                  "minecraft:custom_model_data": 5,
+                "minecraft:tool": {
+                  "rules": [
+                    {
+                      "blocks": "#minecraft:incorrect_for_netherite_tool",
+                      "correct_for_drops": false
+                    },
+                    {
+                      "blocks": "#minecraft:mineable/axe",
+                      "correct_for_drops": true,
+                      "speed": 20.0
+                    }
+                  ]
+                }
                 }
               },
               {

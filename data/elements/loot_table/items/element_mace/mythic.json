@@ -1,86 +1,104 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:mace",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_components",
-                "components": {
-                  "minecraft:unbreakable": {},
-                  "minecraft:damage_resistant": {
-                    "types": "#minecraft:is_fire"
-                  },
-                  "minecraft:custom_model_data": 5
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:mace",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:damage_resistant": {
+                  "types": "#minecraft:is_fire"
+                },
+                "minecraft:custom_model_data": 5,
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "amount": 7.0,
+                      "id": "minecraft:base_attack_damage",
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_speed",
+                      "amount": -3.4000000953674316,
+                      "id": "minecraft:base_attack_speed",
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ]
                 }
-              },
-              {
-                "function": "set_name",
-                "name": [
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "light_purple",
+                  "italic": false,
+                  "translate": "elements.item.element_mace.name"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "translate": "elements.main.other.space"
+                },
+                [
+                  {
+                    "color": "gray",
+                    "italic": false,
+                    "translate": "elements.item.element_mace.description"
+                  },
+                  {
+                    "color": "green",
+                    "italic": false,
+                    "translate": "elements.item.element_mace.mythic.ability"
+                  }
+                ],
+                {
+                  "translate": "elements.main.other.space"
+                },
+                [
                   {
                     "bold": true,
                     "color": "light_purple",
                     "italic": false,
-                    "translate": "elements.item.element_mace.name"
+                    "obfuscated": true,
+                    "text": "cc"
+                  },
+                  {
+                    "bold": true,
+                    "italic": false,
+                    "obfuscated": false,
+                    "translate": "elements.main.rarities.mythic"
+                  },
+                  {
+                    "bold": true,
+                    "italic": false,
+                    "obfuscated": true,
+                    "text": "cc"
                   }
                 ]
-              },
-              {
-                "function": "set_lore",
-                "lore": [
-                  {
-                    "translate": "elements.main.other.space"
-                  },
-                  [
-                    {
-                      "color": "gray",
-                      "italic": false,
-                      "translate": "elements.item.element_mace.description"
-                    },
-                    {
-                      "color": "green",
-                      "italic": false,
-                      "translate": "elements.item.element_mace.mythic.ability"
-                    }
-                  ],
-                  {
-                    "translate": "elements.main.other.space"
-                  },
-                  [
-                    {
-                      "bold": true,
-                      "color": "light_purple",
-                      "italic": false,
-                      "obfuscated": true,
-                      "text": "cc"
-                    },
-                    {
-                      "bold": true,
-                      "italic": false,
-                      "obfuscated": false,
-                      "translate": "elements.main.rarities.mythic"
-                    },
-                    {
-                      "bold": true,
-                      "italic": false,
-                      "obfuscated": true,
-                      "text": "cc"
-                    }
-                  ]
-                ],
-                "mode": "append"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,80 +1,88 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "item",
-            "weight": 1,
-            "name": "minecraft:diamond_hoe",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_components",
-                "components": {
-                  "minecraft:unbreakable": {},
-                  "minecraft:damage_resistant": {
-                    "types": "#is_fire"
-                  },
-                  "minecraft:custom_model_data": 2,
-                  "minecraft:tool": {
-                    "rules": [
-                      {
-                        "blocks": "melon",
-                        "speed": 5
-
-                      }
-                    ]
-                  }
-                }
-              },
-              {
-                "function": "set_name",
-                "name": [
-                  {
-                    "bold": true,
-                    "color": "blue",
-                    "italic": false,
-                    "translate": "elements.item.element_hoe.name"
-                  }
-                ]
-              },
-              {
-                "function": "set_lore",
-                "lore": [
-                  {
-                    "translate": "elements.main.other.space"
-                  },
-                  [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:diamond_hoe",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "minecraft:custom_model_data": 2,
+                "minecraft:tool": {
+                  "rules": [
                     {
-                      "color": "gray",
-                      "italic": false,
-                      "translate":"elements.item.element_hoe.description"
+                      "blocks": "melon",
+                      "speed": 5
                     },
                     {
-                      "color": "green",
-                      "italic": false,
-                      "translate":"elements.item.element_tools.rare.drop"
+                      "blocks": "#minecraft:incorrect_for_diamond_tool",
+                      "correct_for_drops": false
+                    },
+                    {
+                      "blocks": "#minecraft:mineable/hoe",
+                      "correct_for_drops": true,
+                      "speed": 8.0
                     }
-                  ],
+                  ]
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "blue",
+                  "italic": false,
+                  "translate": "elements.item.element_hoe.name"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "translate": "elements.main.other.space"
+                },
+                [
                   {
-                    "translate": "elements.main.other.space"
+                    "color": "gray",
+                    "italic": false,
+                    "translate": "elements.item.element_hoe.description"
                   },
                   {
-                    "bold": true,
-                    "color": "blue",
+                    "color": "green",
                     "italic": false,
-                    "translate": "elements.main.rarities.rare"
+                    "translate": "elements.item.element_tools.rare.drop"
                   }
                 ],
-                "mode": "append"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+                {
+                  "translate": "elements.main.other.space"
+                },
+                {
+                  "bold": true,
+                  "color": "blue",
+                  "italic": false,
+                  "translate": "elements.main.rarities.rare"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

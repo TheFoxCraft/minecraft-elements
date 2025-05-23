@@ -16,6 +16,10 @@ execute as @a[scores={elements_inv_compressed_wood=64..,elements_autocompactor=2
 execute as @a[scores={elements_inv_compressed_crimson_vines=64..,elements_autocompactor=3,elements_autorecycler=1}] run function elements:spawn/recycler/autorecycler_stage_3
 # stage 4
 execute as @a[scores={elements_inv_compressed_sweet_berries=64..,elements_autocompactor=4,elements_autorecycler=1}] run function elements:spawn/recycler/autorecycler_stage_4
+# stage 5
+execute as @a[scores={elements_inv_compressed_melon=64..,elements_autocompactor=5,elements_autorecycler=1}] run function elements:spawn/recycler/autorecycler_stage_5
+# stage 6
+execute as @a[scores={elements_inv_compressed_cocoa=64..,elements_autocompactor=6,elements_autorecycler=1}] run function elements:spawn/recycler/autorecycler_stage_6
 
 
 
@@ -81,6 +85,9 @@ scoreboard players operation .server elements_abgabe_stage_4_goal *= .server ele
 
 scoreboard players set .server elements_abgabe_stage_5_goal 200
 scoreboard players operation .server elements_abgabe_stage_5_goal *= .server elements_playercount
+
+scoreboard players set .server elements_abgabe_stage_6_goal 150
+scoreboard players operation .server elements_abgabe_stage_6_goal *= .server elements_playercount
 
 
 

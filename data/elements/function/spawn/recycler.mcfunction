@@ -18,6 +18,8 @@ execute as @s[tag=recycler_abgabe,scores={elements_inv_compressed_crimson_vines=
 execute as @s[tag=recycler_abgabe,scores={elements_inv_compressed_sweet_berries=64..},nbt={SelectedItem:{id:"minecraft:red_glazed_terracotta",components:{"minecraft:custom_model_data":1}}}] run function elements:spawn/recycler/abgabe_stage_4
 # stage 5
 execute as @s[tag=recycler_abgabe,scores={elements_inv_compressed_melon=64..},nbt={SelectedItem:{id:"minecraft:green_wool",components:{"minecraft:custom_model_data":1}}}] run function elements:spawn/recycler/abgabe_stage_5
+# stage 6
+execute as @s[tag=recycler_abgabe,scores={elements_inv_compressed_cocoa=64..},nbt={SelectedItem:{id:"minecraft:cocoa_beans",components:{"minecraft:custom_model_data":1}}}] run function elements:spawn/recycler/abgabe_stage_6
 
 
 #other
@@ -40,3 +42,5 @@ execute if score .server elements_stage matches 3.. if score .server elements_re
 execute if score .server elements_stage matches 4.. if score .server elements_recycler_stats_4_spawn matches 0 if score .server elements_abgabe_other_recycler matches 2 run function elements:spawn/recycler/spawning_stage_4
 #stage 5
 execute if score .server elements_stage matches 5.. if score .server elements_recycler_stats_5_spawn matches 0 if score .server elements_abgabe_other_recycler matches 2 run function elements:spawn/recycler/spawning_stage_5
+#stage 6
+execute if score .server elements_stage matches 6.. if score .server elements_recycler_stats_6_spawn matches 0 if score .server elements_abgabe_other_recycler matches 2 run function elements:spawn/recycler/spawning_stage_6

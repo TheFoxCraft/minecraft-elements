@@ -65,6 +65,9 @@ execute as @a store result score @s elements_inv_compressed_sweet_berries run cl
 execute as @a store result score @s elements_inv_sweet_berries run clear @s sweet_berries 0
 execute as @a store result score @s elements_inv_compressed_melon run clear @s green_wool[custom_model_data=1] 0
 execute as @a store result score @s elements_inv_melon run clear @s melon 0
+execute as @a store result score @s elements_inv_compressed_cocoa run clear @s cocoa_beans[custom_model_data=1] 0
+execute as @a store result score @s elements_inv_cocoa run clear @s popped_chorus_fruit[custom_model_data=1] 0
+
 
 execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_model_data":1}}}] at @s run function elements:custom-items/shop/sky/sauger/show_size
 

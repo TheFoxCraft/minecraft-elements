@@ -1,0 +1,3 @@
+execute in elements:hub run summon block_display -5.5 104.6 -59.5 {Tags:["recycler_sign_6_block","elements_recycler"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.7f,0.7f,0.7f]},block_state:{Name:"minecraft:brown_terracotta"}}
+execute in elements:hub run summon text_display -4.5 104.5 -59.5 {Tags:["recycler_sign_6_count","elements_recycler"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[1.5f,0.3f,0.5f],scale:[1.8f,1.8f,1.8f]},alignment:"left",text:'[{"score":{"name":".server","objective":"elements_recycler_stats_6"}}]'}
+scoreboard players set .server elements_recycler_stats_6_spawn 1
