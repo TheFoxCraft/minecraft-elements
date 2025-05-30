@@ -163,6 +163,8 @@ scoreboard players set @s elements_villager_stage-4_mana_level 0
 scoreboard players set @s elements_villager_stage-4_farm-slots_level 0
 scoreboard players set @s elements_villager_stage-5_mana_level 0
 scoreboard players set @s elements_villager_stage-5_farm-slots_level 0
+scoreboard players set @s elements_villager_stage-6_mana_level 0
+scoreboard players set @s elements_villager_stage-6_farm-slots_level 0
 scoreboard players set @s elements_stage-2_mana_activate_timer_sec 0
 scoreboard players set @s elements_stage-2_mana_activate_timer_tick 0
 scoreboard players set @s elements_mana_regeneration-per-sec 1

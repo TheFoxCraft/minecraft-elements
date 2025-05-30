@@ -105,6 +105,7 @@
     sweet_berries: Autocompact Trigger GUI
     glistering_melon_slice: Boss Spawning Stage 5
     melon_slice: Autocompact
+    feather: Stage 6 Boss Key
 3:
     diamond_pickaxe: Element Pickaxe | Epic
     netherite_pickaxe: Element Pickaxe | Epic (Upgraded)

@@ -63,6 +63,11 @@ execute as @e[type=armor_stand,tag=spawner_stage-5_farm-slots] at @s run summon 
 execute as @e[type=armor_stand,tag=spawner_stage-5_farm-slots] at @s run summon villager ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:["stage-5_farm-slots","follow"],VillagerData:{level:99,profession:"minecraft:librarian",type:"minecraft:taiga"},Offers:{}}
 execute as @e[type=armor_stand,tag=spawner_stage-5_farm-slots] at @s run kill @s
 
+execute as @e[type=armor_stand,tag=spawner_stage-6_mana] at @s run summon interaction ~ ~ ~ {width:0.8f,height:2f,response:1b,Tags:["stage-6_mana"]}
+execute as @e[type=armor_stand,tag=spawner_stage-6_mana] at @s run summon text_display ~ ~2 ~ {billboard:"center",Tags:["stage-6_mana"],text:'{"translate":"elements.villager.stage_6.mana.name","color":"gold"}',alignment:"center"}
+execute as @e[type=armor_stand,tag=spawner_stage-6_mana] at @s run summon villager ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:["stage-6_mana","follow"],VillagerData:{level:99,profession:"minecraft:cleric",type:"minecraft:savanna"},Offers:{}}
+execute as @e[type=armor_stand,tag=spawner_stage-6_mana] at @s run kill @s
+
 execute as @e[type=armor_stand,tag=spawner_stage-6_farm-slots] at @s run summon interaction ~ ~ ~ {width:0.8f,height:2f,response:1b,Tags:["stage-6_farm-slots"]}
 execute as @e[type=armor_stand,tag=spawner_stage-6_farm-slots] at @s run summon text_display ~ ~2 ~ {billboard:"center",Tags:["stage-6_farm-slots"],text:'{"translate":"elements.villager.stage_6.farmslots.name","color":"gold"}',alignment:"center"}
 execute as @e[type=armor_stand,tag=spawner_stage-6_farm-slots] at @s run summon villager ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:["stage-6_farm-slots","follow"],VillagerData:{level:99,profession:"minecraft:librarian",type:"minecraft:taiga"},Offers:{}}

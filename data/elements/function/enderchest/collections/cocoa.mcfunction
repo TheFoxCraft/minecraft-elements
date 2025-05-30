@@ -12,7 +12,7 @@ kill @e[type=item,nbt={Item:{id:"minecraft:oak_hanging_sign",count:1,components:
 kill @e[type=item,nbt={Item:{id:"minecraft:cocoa_beans",count:1,components:{"minecraft:custom_model_data":11}}}]
 
 
-execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=8}] run item replace entity @s enderchest.3 with minecraft:cocoa_beans[custom_name='{"color":"gold","italic":false,"text":"Farme Kakau"}',lore=['{"color":"gray","italic":false,"text":"Und erreiche Meilensteine."}'],custom_model_data=11,hide_additional_tooltip={},food={nutrition:0,saturation:0}] 1
+execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=8}] run item replace entity @s enderchest.3 with minecraft:cocoa_beans[custom_name='{"color":"gold","italic":false,"text":"Farme Kakao"}',lore=['{"color":"gray","italic":false,"text":"Und erreiche Meilensteine."}'],custom_model_data=11,hide_additional_tooltip={},food={nutrition:0,saturation:0}] 1
 
 execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=8}] run item replace entity @s enderchest.5 with oak_hanging_sign[custom_name='{"color":"gold","italic":false,"text":"Status"}',lore=['{"color":"gray","italic":false,"text":"Klicke, um deine aktuelle Zahl"}','{"color":"gray","italic":false,"text":"anzeigen zu lassen!"}'],custom_model_data=11] 1
 

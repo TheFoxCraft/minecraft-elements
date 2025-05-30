@@ -22,3 +22,6 @@ Stage-4_Mana: 1000-1099
 Stage-5_Farm-Slots: 1100-1199
 
 Stage-5_Mana: 1200-1299
+
+
+Stage-6_Mana: 1400-1499

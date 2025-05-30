@@ -1,0 +1,72 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:popped_chorus_fruit",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:custom_model_data": 3,
+                 
+                  "enchantment_glint_override": true,
+                  "food": {
+                    "nutrition": 0,
+                    "saturation": 0,
+                    "can_always_eat": false
+                  },
+                  "consumable": {
+                    "consume_seconds": 999999
+                  }
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "color": "blue",
+                    "italic": false,
+                    "bold": true,
+                    "translate": "elements.item.boss_spawning.stage_6.name"
+                  }
+                ],
+                "target": "item_name"
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "translate": "elements.main.other.space"
+                  },
+                  {
+                    "color": "gray",
+                    "italic": false,
+                    "translate": "elements.item.boss_spawning.stage_6.description"
+                  },
+                  {
+                    "italic": false,
+                    "translate": "elements.main.other.space"
+                  },
+                  {
+                    "bold": true,
+                    "color": "blue",
+                    "italic": false,
+                    "translate": "elements.main.rarities.rare"
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

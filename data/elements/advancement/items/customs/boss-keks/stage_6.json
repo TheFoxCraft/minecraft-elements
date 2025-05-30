@@ -1,0 +1,23 @@
+{
+    "criteria": {
+      "using-item": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:cookie",
+            "components": {
+              "minecraft:custom_model_data": 6
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "using-item"
+      ]
+    ],
+    "rewards": {
+      "function": "elements:custom-items/boss-keks/stage_6"
+    }
+  }

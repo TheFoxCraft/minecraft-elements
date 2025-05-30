@@ -127,7 +127,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playso
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_collections_interface 8
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] if score .server elements_stage matches 6.. run item replace entity @s enderchest.15 with cocoa_beans[custom_name='{"color":"gold","italic":false,"text":"Kakau"}',custom_model_data=10,hide_additional_tooltip={},food={nutrition:0,saturation:0}] 1
+execute as @s[scores={elements_enderchest_interface_number=6,elements_collections_interface=1}] if score .server elements_stage matches 6.. run item replace entity @s enderchest.15 with cocoa_beans[custom_name='{"color":"gold","italic":false,"text":"Kakao"}',custom_model_data=10,hide_additional_tooltip={},food={nutrition:0,saturation:0}] 1
 
 
 

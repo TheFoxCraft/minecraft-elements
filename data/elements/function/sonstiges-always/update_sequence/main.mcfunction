@@ -286,7 +286,7 @@ execute as @a[scores={elements_update_sequence_status=11}] if score .server elem
 
 
 
-#1.11.0.0
+#1.11.2.0
 
 execute if score .server elements_update_sequence_status matches 12 run scoreboard players set .server elements_stage_5_portal_enable 0
 execute if score .server elements_update_sequence_status matches 12 run scoreboard players set .server elements_stage_5_boss_status 0
@@ -340,6 +340,35 @@ execute as @a[scores={elements_update_sequence_status=13}] if score .server elem
 execute as @a[scores={elements_update_sequence_status=13}] if score .server elements_update_sequence_status matches 14.. run scoreboard players set @s elements_villager_stage-6_farm-slots_level 0
 # ..
 execute as @a[scores={elements_update_sequence_status=13}] if score .server elements_update_sequence_status matches 14.. run scoreboard players set @s elements_update_sequence_status 14
+
+
+
+
+#1.12.1.0
+
+execute if score .server elements_update_sequence_status matches 14 run scoreboard players set .server elements_stage_6_portal_enable 0
+execute if score .server elements_update_sequence_status matches 14 run scoreboard players set .server elements_stage_6_boss_status 0
+execute if score .server elements_update_sequence_status matches 14 run scoreboard players set .server elements_stage_6_boss_melee_timer 0
+execute if score .server elements_update_sequence_status matches 14 in elements:stage-6_bossroom run place template elements:boss_room/stage_6 -20 97 -21
+#execute if score .server elements_update_sequence_status matches 14 run say (Hier dann neue default-values setzen)
+execute if score .server elements_update_sequence_status matches 14 run scoreboard players set .server elements_update_sequence_status 15
+
+
+
+execute as @a[scores={elements_update_sequence_status=14}] if score .server elements_update_sequence_status matches 15.. run title @s title ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
+execute as @a[scores={elements_update_sequence_status=14}] if score .server elements_update_sequence_status matches 15.. run title @s subtitle ["",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.12.1.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
+execute as @a[scores={elements_update_sequence_status=14}] if score .server elements_update_sequence_status matches 15.. run tellraw @s ["","\n","\n","\n","\n","\n",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.12.1.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"\n","\n",{"text": "Seit du das letzte mal online warst gab es ein Update!","color": "green"},"\n"]
+execute as @a[scores={elements_update_sequence_status=14}] if score .server elements_update_sequence_status matches 15.. run tellraw @s ["",{"text": "Changelog im Discord"}]
+
+# ..
+
+
+execute as @a[scores={elements_update_sequence_status=14}] if score .server elements_update_sequence_status matches 15.. run scoreboard players set @s elements_villager_stage-6_mana_level 0
+#execute as @a[scores={elements_update_sequence_status=14}] if score .server elements_update_sequence_status matches 15.. run say (Hier dann neue default-values setzen)
+# ..
+execute as @a[scores={elements_update_sequence_status=14}] if score .server elements_update_sequence_status matches 15.. run scoreboard players set @s elements_update_sequence_status 15
+
+
 
 
 #change status in startup settings, update load

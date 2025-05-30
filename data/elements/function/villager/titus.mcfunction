@@ -271,7 +271,7 @@ execute as @s[scores={elements_titus_level=20,elements_titus_clicked=1}] if scor
 execute as @s[scores={elements_titus_level=20,elements_titus_clicked=1}] if score .server elements_stage matches 6.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
 execute as @s[scores={elements_titus_level=20,elements_titus_clicked=1}] if score .server elements_stage matches 6.. run scoreboard players set @s elements_titus_clicked 0
 
-execute as @s[scores={elements_titus_level=20,z_just-ignore=134}] if score .server elements_stage matches 6.. at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"100 Komprimierter Kakau und 10.000 Level!"},"\n","\n",{"text":"Ok, ich besorge das mal!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger z_just-ignore set 135"}}]
+execute as @s[scores={elements_titus_level=20,z_just-ignore=134}] if score .server elements_stage matches 6.. at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"100 Komprimierter Kakao und 10.000 Level!"},"\n","\n",{"text":"Ok, ich besorge das mal!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger z_just-ignore set 135"}}]
 execute as @s[scores={elements_titus_level=20,z_just-ignore=134}] if score .server elements_stage matches 6.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
 execute as @s[scores={z_just-ignore=134}] run scoreboard players set @s z_just-ignore 0
 
@@ -280,12 +280,12 @@ execute as @s[scores={elements_titus_level=20,z_just-ignore=135}] if score .serv
 execute as @s[scores={elements_titus_level=20,z_just-ignore=135}] if score .server elements_stage matches 6.. at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
 execute as @s[scores={z_just-ignore=135}] run scoreboard players set @s z_just-ignore 0
 
-execute as @s[scores={elements_titus_level=21,elements_titus_clicked=1}] run tellraw @s ["",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Hast du schon alles? Gut, fangen wir mit den 100 Komprimierten Kakau an."},"\n","\n",{"text":"Bitteschön!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger z_just-ignore set 136"}}]
+execute as @s[scores={elements_titus_level=21,elements_titus_clicked=1}] run tellraw @s ["",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Hast du schon alles? Gut, fangen wir mit den 100 Komprimierten Kakao an."},"\n","\n",{"text":"Bitteschön!","italic":true,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger z_just-ignore set 136"}}]
 execute as @s[scores={elements_titus_level=21,elements_titus_clicked=1}] run scoreboard players set @s elements_titus_clicked 0
 execute as @s[scores={elements_titus_level=21,z_just-ignore=136,elements_inv_compressed_cocoa=100..}] at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Vielen Dank."}]
 execute as @s[scores={elements_titus_level=21,z_just-ignore=136,elements_inv_compressed_cocoa=100..}] at @s if entity @e[type=villager,tag=titus,distance=..10] run clear @s cocoa_beans[custom_model_data=1] 100
 execute as @s[scores={elements_titus_level=21,z_just-ignore=136,elements_inv_compressed_cocoa=100..}] at @s if entity @e[type=villager,tag=titus,distance=..10] run scoreboard players set @s elements_titus_level 22
-execute as @s[scores={elements_titus_level=21,z_just-ignore=136,elements_inv_compressed_cocoa=..99}] at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Du hast nicht genügend Komprimierter Kakau!"}]
+execute as @s[scores={elements_titus_level=21,z_just-ignore=136,elements_inv_compressed_cocoa=..99}] at @s if entity @e[type=villager,tag=titus,distance=..10] run tellraw @s ["","\n",{"translate":"elements.villager.titus.name.chat","color":"yellow"},{"text":"Du hast nicht genügend Komprimierter Kakao!"}]
 execute as @s[scores={elements_titus_level=21,z_just-ignore=136}] at @s unless entity @e[type=villager,tag=titus,distance=..10] run tellraw @s {"text": "Du bist zu weit weg!","color": "red"}
 execute as @s[scores={z_just-ignore=136}] run scoreboard players set @s z_just-ignore 0
 
