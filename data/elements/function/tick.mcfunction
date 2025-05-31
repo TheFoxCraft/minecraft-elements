@@ -42,6 +42,7 @@ execute if score .server elements_stage_2_portal_enable matches 0 if score .serv
 execute if score .server elements_stage_3_portal_enable matches 0 if score .server elements_stage matches 3.. run function elements:stages/stage-3/portal-enable/main
 execute if score .server elements_stage_4_portal_enable matches 0 if score .server elements_stage matches 4.. run function elements:stages/stage-4/portal-enable/main
 execute if score .server elements_stage_5_portal_enable matches 0 if score .server elements_stage matches 5.. run function elements:stages/stage-5/portal-enable/main
+execute if score .server elements_stage_6_portal_enable matches 0 if score .server elements_stage matches 6.. run function elements:stages/stage-6/portal-enable/main
 
 
 #maybe geht da noch mehr

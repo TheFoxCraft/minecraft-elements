@@ -56,7 +56,7 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "UNIQUE (Nur noch nicht gecodet)"
+                  "text": "UNIQUE"
                 }
               ],
               "mode": "append"
@@ -123,26 +123,7 @@
           "weight": 5,
           "value": "elements:items/element_mace/legendary"
         },
-        {
-          "type": "item",
-          "weight": 5,
-          "name": "emerald",
-          "functions": [
-            {
-              "function": "set_lore",
-              "lore": [
-                {
-                  "text": "Immer Langsam hier, ich bin am Coden!"
-                }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "set_name",
-              "name": "Custom Item Incoming"
-            }
-          ]
-        },
+        
         {
           "type": "item",
           "weight": 5,
@@ -224,7 +205,7 @@
         },
         {
           "type": "empty",
-          "weight": 45
+          "weight": 50
         }
       ]
     },

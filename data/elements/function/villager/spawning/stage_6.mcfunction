@@ -12,7 +12,8 @@ function elements:villager/spawning/stage_6_final with storage elements_get_item
 
 data modify entity @n[tag=stage-6_main] Offers.Recipes.[0].buy.count set value 64
 data modify entity @n[tag=stage-6_main] Offers.Recipes.[1].buy.count set value 32
-data modify entity @n[tag=stage-6_main] Offers.Recipes.[2].buy.count set value 64
+data modify entity @n[tag=stage-6_main] Offers.Recipes.[2].buy.count set value 48
+data modify entity @n[tag=stage-6_main] Offers.Recipes.[3].buy.count set value 64
 
 
 kill @e[tag=spawning_stage-6_main,type=armor_stand]

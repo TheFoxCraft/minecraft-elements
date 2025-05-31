@@ -1,5 +1,5 @@
 tellraw @a ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},{"translate": "elements.main.other.reload.message",\
-"with":[{"text":"V-1.12.0.1","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
+"with":[{"text":"V-1.12.1.1","color": "gold"}]},{"translate": "elements.main.other.reload.credits","color": "gray","hoverEvent": {"action": "show_text","contents": {"translate":"elements.main.other.reload.credits.hover"}}}]
 gamerule sendCommandFeedback false
 
 execute in elements:hub run gamerule keepInventory true
@@ -490,6 +490,7 @@ scoreboard objectives add elements_uniqueitem_fragment_der_himmelswarze dummy
 scoreboard objectives add elements_uniqueitem_wanderlachs dummy
 scoreboard objectives add elements_uniqueitem_dornenherz_der_wildnis dummy
 scoreboard objectives add elements_uniqueitem_melonengolemschale dummy
+scoreboard objectives add elements_uniqueitem_kakao_pulver dummy
 #other
 scoreboard objectives add elements_uniqueitem_other_datenspeicher dummy
 scoreboard objectives add elements_uniqueitem_other_rolex dummy
@@ -505,6 +506,7 @@ scoreboard objectives add elements_uniqueitem_bosse_tomorrowland_karte dummy
 scoreboard objectives add elements_uniqueitem_bosse_amboesse dummy
 scoreboard objectives add elements_uniqueitem_bosse_runans_bow dummy
 scoreboard objectives add elements_uniqueitem_bosse_schleimiger_popel dummy
+scoreboard objectives add elements_uniqueitem_bosse_dragon_egg dummy
 #shops
 scoreboard objectives add elements_uniqueitem_shop_hasenpfote dummy
 scoreboard objectives add elements_uniqueitem_shop_allium_ghg dummy
@@ -784,6 +786,7 @@ scoreboard objectives add elements_stage_6_boss_spectator_in_arena dummy
 scoreboard objectives add elements_stage_3_portal_enable_fungus_timer dummy
 scoreboard objectives add elements_stage_4_portal_enable_fox_timer dummy
 scoreboard objectives add elements_stage_5_portal_enable_melon_timer dummy
+scoreboard objectives add elements_stage_6_portal_enable_chocolate_timer dummy
 
 scoreboard objectives add elements_spawn_vaults_refresh dummy
 scoreboard objectives add elements_leaderboards_refresh-timer dummy

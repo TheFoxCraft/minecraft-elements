@@ -2,7 +2,7 @@ execute unless score @s elements_homedimension = @s elements_dimension run retur
 scoreboard players remove @s elements_miningxp_mining_mine-get_cocoa 1
 
 scoreboard players add @s elements_miningxp_mining_xp 5
-#execute as @s[nbt={Inventory:[{id:"minecraft:fire_charge",components:{"minecraft:custom_model_data":2}}]}] run scoreboard players add @s elements_miningxp_mining_xp 1
+execute as @s[nbt={Inventory:[{id:"minecraft:cocoa_beans",components:{"minecraft:custom_model_data":10}}]}] run scoreboard players add @s elements_miningxp_mining_xp 3
 execute as @s[scores={elements_custom-items_shop_mining-frucht_enable=1}] run scoreboard players add @s elements_custom-items_shop_mining-frucht_counter 1
 execute store result score @s elements_miningxp_mining_loot run random value 1..20
 execute at @s if score @s elements_miningxp_mining_level >= @s elements_miningxp_mining_loot at @n[type=item,nbt={Item:{id:"minecraft:popped_chorus_fruit",components:{"minecraft:custom_model_data":1}}}] run loot spawn ~ ~ ~ loot elements:items/other/stage_6/cocoa_beans

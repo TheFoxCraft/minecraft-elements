@@ -7,6 +7,7 @@ execute in elements:hub positioned 57 100 9 if data block ~ ~ ~ server_data.rewa
 execute in elements:hub positioned 57 100 -9 if data block ~ ~ ~ server_data.rewarded_players as @e[type=item,distance=..2,nbt={Item:{components:{"minecraft:custom_model_data":100},id:"minecraft:anvil"}}] run function elements:uniques/trigger/amboesse/get_data
 execute in elements:hub positioned -45 100 -9 if data block ~ ~ ~ server_data.rewarded_players as @e[type=item,distance=..2,nbt={Item:{components:{"minecraft:custom_model_data":100},id:"minecraft:bow"}}] run function elements:uniques/trigger/runans_bow/get_data
 execute in elements:hub positioned -45 100 9 if data block ~ ~ ~ server_data.rewarded_players as @e[type=item,distance=..2,nbt={Item:{components:{"minecraft:custom_model_data":100},id:"minecraft:slime_ball"}}] run function elements:uniques/trigger/schleimiger_popel/get_data
+execute in elements:hub positioned -83 100 6 if data block ~ ~ ~ server_data.rewarded_players as @e[type=item,distance=..2,nbt={Item:{components:{"minecraft:custom_model_data":100},id:"minecraft:dragon_egg"}}] run function elements:uniques/trigger/dragon_egg/get_data
 
 #update rewarted players
 

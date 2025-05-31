@@ -38,7 +38,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "feather",
+          "name": "dragon_egg",
           "functions": [
             {
               "function": "set_components",
@@ -50,7 +50,7 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "UNIQUE (Nur noch nicht gecodet)"
+                  "text": "UNIQUE"
                 }
               ],
               "mode": "append"
@@ -102,6 +102,26 @@
           ]
         },
         {
+          "type": "item",
+          "weight": 5,
+          "name": "emerald",
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "Immer Langsam hier, ich bin am Coden!"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_name",
+              "name": "Custom Item Incoming"
+            }
+          ]
+        },
+        {
           "type": "loot_table",
           "weight": 10,
           "value": "elements:items/customs/boss-keks/stage_6",
@@ -136,7 +156,7 @@
         },
         {
           "type": "empty",
-          "weight": 70
+          "weight": 65
         }
       ]
     },

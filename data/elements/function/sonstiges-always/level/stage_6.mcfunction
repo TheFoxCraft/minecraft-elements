@@ -33,10 +33,10 @@ execute as @s[nbt={SelectedItem:{id:"minecraft:netherite_shovel",components:{"mi
 
 
 
-#execute as @s[nbt={Inventory:[{id:"minecraft:crimson_fungus",components:{"minecraft:custom_model_data":2}}]}] at @n[type=item,nbt={Item:{id:"minecraft:cocoa"}}] run loot spawn ~ ~ ~ loot elements:items/other/stage_4/cocoa
+#execute as @s[nbt={Inventory:[{id:"minecraft:cocoa_beans",components:{"minecraft:custom_model_data":10}}]}] at @n[type=item,nbt={Item:{id:"minecraft:popped_chorus_fruit",components:{"minecraft:custom_model_data":1}}}] run loot spawn ~ ~ ~ loot elements:items/other/stage_6/cocoa_beans
 
 
-#execute if score .server elements_uniqueitem_cocoaengolemschale matches 0 run function elements:uniques/trigger/cocoaengolemschale/random
+execute if score .server elements_uniqueitem_kakao_pulver matches 0 run function elements:uniques/trigger/kakao_pulver/random
 
 scoreboard players remove @s elements_level_cocoa 1
 function elements:sonstiges/element_shards/trigger

@@ -349,6 +349,8 @@ execute as @a[scores={elements_update_sequence_status=13}] if score .server elem
 execute if score .server elements_update_sequence_status matches 14 run scoreboard players set .server elements_stage_6_portal_enable 0
 execute if score .server elements_update_sequence_status matches 14 run scoreboard players set .server elements_stage_6_boss_status 0
 execute if score .server elements_update_sequence_status matches 14 run scoreboard players set .server elements_stage_6_boss_melee_timer 0
+execute if score .server elements_update_sequence_status matches 14 run scoreboard players set .server elements_uniqueitem_kakao_pulver 0
+execute if score .server elements_update_sequence_status matches 14 run scoreboard players set .server elements_uniqueitem_bosse_dragon_egg 0
 execute if score .server elements_update_sequence_status matches 14 in elements:stage-6_bossroom run place template elements:boss_room/stage_6 -20 97 -21
 #execute if score .server elements_update_sequence_status matches 14 run say (Hier dann neue default-values setzen)
 execute if score .server elements_update_sequence_status matches 14 run scoreboard players set .server elements_update_sequence_status 15

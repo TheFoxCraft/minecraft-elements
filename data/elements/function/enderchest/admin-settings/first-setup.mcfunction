@@ -117,6 +117,7 @@ execute as @s run scoreboard players set .server elements_uniqueitem_other_daten
 execute as @s run scoreboard players set .server elements_uniqueitem_ork_schatz 0
 execute as @s run scoreboard players set .server elements_uniqueitem_planetenkern 0
 execute as @s run scoreboard players set .server elements_uniqueitem_wanderlachs 0
+execute as @s run scoreboard players set .server elements_uniqueitem_kakao_pulver 0
 execute as @s run scoreboard players set .server elements_uniqueitem_fragment_der_himmelswarze 0
 execute as @s run scoreboard players set .server elements_uniqueitem_other_rolex 0
 execute as @s run scoreboard players set .server elements_uniqueitem_miningxp_digda_splitter 0
