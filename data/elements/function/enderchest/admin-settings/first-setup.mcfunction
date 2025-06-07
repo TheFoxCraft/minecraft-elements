@@ -10,6 +10,7 @@ execute as @s in elements:stage-3_bossroom run place template elements:boss_room
 execute as @s in elements:stage-4_bossroom run place template elements:boss_room/stage_4 -29 96 -27
 execute as @s in elements:stage-5_bossroom run place template elements:boss_room/stage_5 -50 82 -49
 execute as @s in elements:stage-6_bossroom run place template elements:boss_room/stage_6 -20 97 -21
+execute as @s in elements:final_bossroom run place template elements:boss_room/final-boss -43 95 -32
 execute as @s run scoreboard players set .server elements_stage 0
 execute as @s run scoreboard players set .server elements_stats_lootbox 0
 execute as @s run scoreboard players set .server elements_casino_stats_lvlinvestiert 0

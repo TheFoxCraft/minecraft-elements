@@ -1,0 +1,2 @@
+tellraw @a[distance=0..] ["",{"text": "[Warden] Server: ","color": "yellow"},{"text": "Der Warden hat alle deinen Aktiven Effekte entfernt!","color": "white"}]
+effect clear @a[distance=0..,gamemode=!spectator]

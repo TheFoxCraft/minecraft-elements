@@ -814,6 +814,9 @@ scoreboard objectives add elements_final-boss_portal_enable dummy
 scoreboard objectives add elements_final-boss_boss_status dummy
 scoreboard objectives add elements_final-boss_boss_loot_count dummy
 scoreboard objectives add elements_final-boss_boss_melee_timer dummy
+scoreboard objectives add elements_final-boss_boss_attack_timer dummy
+
+
 scoreboard objectives add elements_final-boss_boss_spawn-player dummy
 scoreboard objectives add elements_final-boss_boss_players_in_arena dummy
 scoreboard objectives add elements_final-boss_boss_spectator_in_arena dummy
