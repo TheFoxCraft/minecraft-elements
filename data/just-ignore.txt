@@ -25,3 +25,5 @@ Stage-5_Mana: 1200-1299
 
 
 Stage-6_Mana: 1400-1499
+
+Final Boss Intro: 1500-1599

@@ -63,6 +63,7 @@ execute at @s if entity @e[type=minecraft:interaction,tag=stage-5_mana,distance=
 execute at @s if entity @e[type=minecraft:interaction,tag=stage-5_farm-slots,distance=..10] run function elements:villager/stage-5_farm-slots
 execute at @s if entity @e[type=minecraft:interaction,tag=stage-6_mana,distance=..10] run function elements:villager/stage-6_mana
 execute at @s if entity @e[type=minecraft:interaction,tag=stage-6_farm-slots,distance=..10] run function elements:villager/stage-6_farm-slots
+execute at @s if entity @e[type=minecraft:interaction,tag=final-boss_intro,distance=..10] run function elements:villager/final-boss_intro
 
 execute as @s[scores={elements_choose_dimension=1..4}] run function elements:spawn/choose_dimension
 execute as @s[scores={z_just-ignore=1001..1006}] run function elements:spawn/choose_dimension

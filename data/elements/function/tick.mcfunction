@@ -27,7 +27,7 @@ function elements:miningxp/get_fishing/get_fishing
 
 execute unless score .server elements_spawn_levelbaum_enable matches 1 run function elements:spawn/levelbaum/task
 execute if score .server elements_spawn_levelbaum_enable matches 1 run function elements:spawn/levelbaum/enabled
-
+execute if score .server elements_abgabe_final-boss_room matches 2 run function elements:spawn/final-boss
 
 #leaderboards refresh timer
 scoreboard players add .server elements_leaderboards_refresh-timer 1
@@ -79,12 +79,14 @@ execute if score .server elements_stage_3_portal_enable matches 1 run function e
 execute if score .server elements_stage_4_portal_enable matches 1 run function elements:stages/stage-4/portal
 execute if score .server elements_stage_5_portal_enable matches 1 run function elements:stages/stage-5/portal
 execute if score .server elements_stage_6_portal_enable matches 1 run function elements:stages/stage-6/portal
+execute if score .server elements_final-boss_portal_enable matches 1 run function elements:stages/final-boss/portal
 execute if score .server elements_stage_1_boss_status matches 1 run function elements:bosse/stage-1/main
 execute if score .server elements_stage_2_boss_status matches 1 run function elements:bosse/stage-2/main
 execute if score .server elements_stage_3_boss_status matches 1 run function elements:bosse/stage-3/main
 execute if score .server elements_stage_4_boss_status matches 1 run function elements:bosse/stage-4/main
 execute if score .server elements_stage_5_boss_status matches 1 run function elements:bosse/stage-5/main
 execute if score .server elements_stage_6_boss_status matches 1 run function elements:bosse/stage-6/main
+execute if score .server elements_final-boss_boss_status matches 1 run function elements:bosse/final-boss/main
 
 
 #enderchest

@@ -38,7 +38,7 @@ execute if score .server elements_abgabe_stage_6_progress >= .server elements_ab
 execute if score .server elements_abgabe_stage_6_progress >= .server elements_abgabe_stage_6_goal if score .server elements_abgabe_stage_6 matches 1 in elements:hub run summon minecraft:armor_stand -92.5 100.00 10.5 {Tags:["spawner_stage-6_main"],Invisible:1b}
 execute if score .server elements_abgabe_stage_6_progress >= .server elements_abgabe_stage_6_goal if score .server elements_abgabe_stage_6 matches 1 in elements:hub run summon minecraft:armor_stand -102.5 104.00 0.5 {Tags:["spawner_stage-6_mana"],Invisible:1b}
 execute if score .server elements_abgabe_stage_6_progress >= .server elements_abgabe_stage_6_goal if score .server elements_abgabe_stage_6 matches 1 in elements:hub run summon minecraft:armor_stand -99.5 104.00 3.5 {Tags:["spawner_stage-6_farm-slots"],Invisible:1b}
-#execute if score .server elements_abgabe_stage_6_progress >= .server elements_abgabe_stage_6_goal if score .server elements_abgabe_stage_6 matches 1 in elements:hub run say nächster score (final gang)
+execute if score .server elements_abgabe_stage_6_progress >= .server elements_abgabe_stage_6_goal if score .server elements_abgabe_stage_6 matches 1 in elements:hub run scoreboard players set .server elements_abgabe_final-boss_gang 3
 execute if score .server elements_abgabe_stage_6_progress >= .server elements_abgabe_stage_6_goal if score .server elements_abgabe_stage_6 matches 1 in elements:hub run scoreboard players set .server elements_abgabe_stage_6 2
 
 #pre: Stage 5 room

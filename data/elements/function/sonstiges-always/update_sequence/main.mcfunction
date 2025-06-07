@@ -371,6 +371,32 @@ execute as @a[scores={elements_update_sequence_status=14}] if score .server elem
 execute as @a[scores={elements_update_sequence_status=14}] if score .server elements_update_sequence_status matches 15.. run scoreboard players set @s elements_update_sequence_status 15
 
 
+#1.13.0.0
+execute if score .server elements_update_sequence_status matches 15 run scoreboard players set .server elements_final-boss_portal_enable 0
+execute if score .server elements_update_sequence_status matches 15 run scoreboard players set .server elements_final-boss_boss_status 0
+execute if score .server elements_update_sequence_status matches 15 run scoreboard players set .server elements_final-boss_boss_melee_timer 0
+execute if score .server elements_update_sequence_status matches 15 run scoreboard players set .server elements_abgabe_final-boss_gang_progress 0
+execute if score .server elements_update_sequence_status matches 15 run scoreboard players set .server elements_abgabe_final-boss_room_progress 0
+execute if score .server elements_update_sequence_status matches 15 run scoreboard players set .server elements_projectFinished 0
+execute if score .server elements_update_sequence_status matches 15 run scoreboard players set .server elements_uniqueitem_bosse_riesen_warden_fetzen 0
+#execute if score .server elements_update_sequence_status matches 15 run say (Hier dann neue default-values setzen)
+execute if score .server elements_update_sequence_status matches 15 run scoreboard players set .server elements_update_sequence_status 16
+
+
+
+execute as @a[scores={elements_update_sequence_status=15}] if score .server elements_update_sequence_status matches 16.. run title @s title ["",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
+execute as @a[scores={elements_update_sequence_status=15}] if score .server elements_update_sequence_status matches 16.. run title @s subtitle ["",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.13.0.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"}]
+execute as @a[scores={elements_update_sequence_status=15}] if score .server elements_update_sequence_status matches 16.. run tellraw @s ["","\n","\n","\n","\n","\n",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.13.0.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"\n","\n",{"text": "Seit du das letzte mal online warst gab es ein Update!","color": "green"},"\n"]
+execute as @a[scores={elements_update_sequence_status=15}] if score .server elements_update_sequence_status matches 16.. run tellraw @s ["",{"text": "Changelog im Discord"}]
+
+# ..
+
+
+execute as @a[scores={elements_update_sequence_status=15}] if score .server elements_update_sequence_status matches 16.. run scoreboard players set @s elements_villager_final-boss_intro_level 0
+#execute as @a[scores={elements_update_sequence_status=15}] if score .server elements_update_sequence_status matches 16.. run say (Hier dann neue default-values setzen)
+# ..
+execute as @a[scores={elements_update_sequence_status=15}] if score .server elements_update_sequence_status matches 16.. run scoreboard players set @s elements_update_sequence_status 16
+
 
 
 #change status in startup settings, update load

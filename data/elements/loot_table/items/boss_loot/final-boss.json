@@ -1,0 +1,176 @@
+{
+  "type": "vault",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:sculk",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:sculk_sensor",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "sculk_catalyst"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "echo_shard",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_model_data": 100
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "UNIQUE"
+                }
+              ],
+              "mode": "append"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "empty",
+          "weight": 499
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "loot_table",
+              "value": "elements:items/customs/lebensfrucht",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "elements_stage": 6
+                  }
+                }
+              ],
+              "weight": 5
+            },
+            {
+              "type": "minecraft:empty",
+              "weight": 5
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 10,
+          "value": "elements:items/customs/boss-keks/final-boss",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:tide_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:flow_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:eye_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 70
+        }
+      ]
+    },
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:sculk",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:sculk_sensor",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "sculk_catalyst"
+        }
+      ]
+    }
+  ]
+}

@@ -48,6 +48,8 @@ execute as @s run scoreboard players set .server elements_abgabe_stage_4_gang_pr
 execute as @s run scoreboard players set .server elements_abgabe_stage_4_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_stage_5_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_stage_6_progress 0
+execute as @s run scoreboard players set .server elements_abgabe_final-boss_gang_progress 0
+execute as @s run scoreboard players set .server elements_abgabe_final-boss_room_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_levelbaum_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_community-hub-main_progress 0
 execute as @s run scoreboard players set .server elements_abgabe_other_angel-teich_progress 0
@@ -93,6 +95,9 @@ execute as @s run scoreboard players set .server elements_stage_5_boss_melee_tim
 execute as @s run scoreboard players set .server elements_stage_6_portal_enable 0
 execute as @s run scoreboard players set .server elements_stage_6_boss_status 0
 execute as @s run scoreboard players set .server elements_stage_6_boss_melee_timer 0
+execute as @s run scoreboard players set .server elements_final-boss_portal_enable 0
+execute as @s run scoreboard players set .server elements_final-boss_boss_status 0
+execute as @s run scoreboard players set .server elements_final-boss_boss_melee_timer 0
 execute as @s run scoreboard players set .server elements_custom-items_shop_boss-frucht_remain 0
 execute as @s run scoreboard players set .server elements_double-xp-event_active 0
 execute as @s run scoreboard players set .server elements_double-xp-event_timer_actual_h 0
@@ -131,6 +136,9 @@ execute as @s run scoreboard players set .server elements_uniqueitem_shop_hasenp
 execute as @s run scoreboard players set .server elements_uniqueitem_shop_allium_ghg 0
 execute as @s run scoreboard players set .server elements_uniqueitem_shop_jos_stoff 0
 execute as @s run scoreboard players set .server elements_uniqueitem_shop_mosh_pit 0
+execute as @s run scoreboard players set .server elements_uniqueitem_bosse_riesen_warden_fetzen 0
+execute as @s run scoreboard players set .server elements_projectFinished 0
+
 
 
 #add with every update

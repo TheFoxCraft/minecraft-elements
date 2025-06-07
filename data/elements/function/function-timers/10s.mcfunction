@@ -89,6 +89,11 @@ scoreboard players operation .server elements_abgabe_stage_5_goal *= .server ele
 scoreboard players set .server elements_abgabe_stage_6_goal 150
 scoreboard players operation .server elements_abgabe_stage_6_goal *= .server elements_playercount
 
+scoreboard players set .server elements_abgabe_final-boss_gang_goal 20000
+scoreboard players operation .server elements_abgabe_final-boss_gang_goal *= .server elements_playercount
+
+scoreboard players set .server elements_abgabe_final-boss_room_goal 100
+scoreboard players operation .server elements_abgabe_final-boss_room_goal *= .server elements_playercount
 
 
 schedule function elements:function-timers/10s 200

@@ -9,6 +9,9 @@ execute in elements:hub positioned -45 100 -9 if data block ~ ~ ~ server_data.re
 execute in elements:hub positioned -45 100 9 if data block ~ ~ ~ server_data.rewarded_players as @e[type=item,distance=..2,nbt={Item:{components:{"minecraft:custom_model_data":100},id:"minecraft:slime_ball"}}] run function elements:uniques/trigger/schleimiger_popel/get_data
 execute in elements:hub positioned -83 100 6 if data block ~ ~ ~ server_data.rewarded_players as @e[type=item,distance=..2,nbt={Item:{components:{"minecraft:custom_model_data":100},id:"minecraft:dragon_egg"}}] run function elements:uniques/trigger/dragon_egg/get_data
 
+execute in elements:hub positioned -18 49 67 if data block ~ ~ ~ server_data.rewarded_players as @e[type=item,distance=..2,nbt={Item:{components:{"minecraft:custom_model_data":100},id:"minecraft:echo_shard"}}] run function elements:uniques/trigger/riesen_warden_fetzen/get_data
+execute in elements:hub positioned 18 49 67 if data block ~ ~ ~ server_data.rewarded_players as @e[type=item,distance=..2,nbt={Item:{components:{"minecraft:custom_model_data":100},id:"minecraft:echo_shard"}}] run function elements:uniques/trigger/riesen_warden_fetzen/get_data
+
 #update rewarted players
 
 scoreboard players add .server elements_spawn_vaults_refresh 1
@@ -19,6 +22,9 @@ execute if score .server elements_spawn_vaults_refresh matches 10.. if score .se
 execute if score .server elements_spawn_vaults_refresh matches 10.. if score .server elements_stage_4_portal_enable matches 1 in elements:hub unless data block -45 100 -9 server_data.total_ejections_needed run data remove block -45 100 -9 server_data.rewarded_players
 execute if score .server elements_spawn_vaults_refresh matches 10.. if score .server elements_stage_5_portal_enable matches 1 in elements:hub unless data block -45 100 -9 server_data.total_ejections_needed run data remove block -45 100 9 server_data.rewarded_players
 execute if score .server elements_spawn_vaults_refresh matches 10.. if score .server elements_stage_6_portal_enable matches 1 in elements:hub unless data block -83 100 6 server_data.total_ejections_needed run data remove block -83 100 6 server_data.rewarded_players
+
+execute if score .server elements_spawn_vaults_refresh matches 10.. if score .server elements_final-boss_portal_enable matches 1 in elements:hub unless data block -18 49 67 server_data.total_ejections_needed run data remove block -18 49 67 server_data.rewarded_players
+execute if score .server elements_spawn_vaults_refresh matches 10.. if score .server elements_final-boss_portal_enable matches 1 in elements:hub unless data block 18 49 67 server_data.total_ejections_needed run data remove block 18 49 67 server_data.rewarded_players
 
 
 execute if score .server elements_spawn_vaults_refresh matches 10.. run scoreboard players set .server elements_spawn_vaults_refresh 0

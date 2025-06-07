@@ -1,0 +1,1 @@
+$execute as @a[nbt={UUID:$(UUID)}] run function elements:uniques/trigger/riesen_warden_fetzen/riesen_warden_fetzen

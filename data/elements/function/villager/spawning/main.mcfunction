@@ -73,6 +73,11 @@ execute as @e[type=armor_stand,tag=spawner_stage-6_farm-slots] at @s run summon 
 execute as @e[type=armor_stand,tag=spawner_stage-6_farm-slots] at @s run summon villager ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:["stage-6_farm-slots","follow"],VillagerData:{level:99,profession:"minecraft:librarian",type:"minecraft:taiga"},Offers:{}}
 execute as @e[type=armor_stand,tag=spawner_stage-6_farm-slots] at @s run kill @s
 
+execute as @e[type=armor_stand,tag=spawner_final-boss_intro] at @s run summon interaction ~ ~ ~ {width:0.8f,height:2f,response:1b,Tags:["final-boss_intro"]}
+execute as @e[type=armor_stand,tag=spawner_final-boss_intro] at @s run summon text_display ~ ~2 ~ {billboard:"center",Tags:["final-boss_intro"],text:'{"translate":"elements.villager.final-boss.intro.name","color":"gold"}',alignment:"center"}
+execute as @e[type=armor_stand,tag=spawner_final-boss_intro] at @s run summon villager ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:["final-boss_intro","follow"],VillagerData:{level:99,profession:"minecraft:toolsmith",type:"minecraft:taiga"},Offers:{}}
+execute as @e[type=armor_stand,tag=spawner_final-boss_intro] at @s run kill @s
+
 
 execute as @e[type=armor_stand,tag=spawner_fisher] at @s if score .server elements_stage matches 2.. run function elements:villager/spawning/fisher
 
