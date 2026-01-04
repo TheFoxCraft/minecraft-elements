@@ -379,7 +379,7 @@ execute if score .server elements_update_sequence_status matches 15 run scoreboa
 execute if score .server elements_update_sequence_status matches 15 run scoreboard players set .server elements_abgabe_final-boss_room_progress 0
 execute if score .server elements_update_sequence_status matches 15 run scoreboard players set .server elements_projectFinished 0
 execute if score .server elements_update_sequence_status matches 15 run scoreboard players set .server elements_uniqueitem_bosse_riesen_warden_fetzen 0
-execute if score .server elements_update_sequence_status matches 15 run place template elements:boss_room/final-boss -43 95 -32
+execute if score .server elements_update_sequence_status matches 15 in elements:final_bossroom run place template elements:boss_room/final-boss -43 95 -32
 #execute if score .server elements_update_sequence_status matches 15 run say (Hier dann neue default-values setzen)
 execute if score .server elements_update_sequence_status matches 15 run scoreboard players set .server elements_update_sequence_status 16
 
