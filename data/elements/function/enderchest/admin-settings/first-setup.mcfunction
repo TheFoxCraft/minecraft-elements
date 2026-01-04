@@ -143,7 +143,7 @@ execute as @s run scoreboard players set .server elements_projectFinished 0
 
 
 #add with every update
-execute as @s run scoreboard players set .server elements_update_sequence_status 15
+execute as @s run scoreboard players set .server elements_update_sequence_status 16
 
 execute as @s run scoreboard players set .server elements_mystery_lootbox_jackpot 10000
 

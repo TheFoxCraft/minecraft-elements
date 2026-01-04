@@ -121,7 +121,7 @@ execute in elements:stage-5_bossroom run gamerule spawnRadius 0
 execute in elements:stage-5_bossroom run gamerule universalAnger true
 execute in elements:stage-5_bossroom run gamerule doFireTick false
 execute in elements:stage-5_bossroom run difficulty hard
-execute in elements:stage-5_bossroom run forceload add -3 -3 3 3
+execute in elements:stage-5_bossroom run forceload add -55 -55 55 55
 execute in elements:stage-5_bossroom run gamerule doTraderSpawning false
 execute in elements:stage-5_bossroom run gamerule doPatrolSpawning false
 execute in elements:stage-5_bossroom run gamerule disableRaids true
@@ -145,7 +145,7 @@ execute in elements:final_bossroom run gamerule spawnRadius 0
 execute in elements:final_bossroom run gamerule universalAnger true
 execute in elements:final_bossroom run gamerule doFireTick false
 execute in elements:final_bossroom run difficulty hard
-execute in elements:final_bossroom run forceload add -3 -2 5 3
+execute in elements:final_bossroom run forceload add -45 -30 85 55
 execute in elements:final_bossroom run gamerule doTraderSpawning false
 execute in elements:final_bossroom run gamerule doPatrolSpawning false
 execute in elements:final_bossroom run gamerule disableRaids true
@@ -1007,6 +1007,7 @@ execute unless score .server elements_stats_serverdeath matches 1.. run scoreboa
 execute unless score .server elements_stats_playtime_h matches 1.. run scoreboard players set .server elements_stats_playtime_h 0
 execute unless score .server elements_stats_playtime_sec matches 1.. run scoreboard players set .server elements_stats_playtime_sec 0
 execute unless score .server elements_stats_playtime_min matches 1.. run scoreboard players set .server elements_stats_playtime_min 0
+execute unless score .server elements_update_sequence_status matches 0.. run scoreboard players set .server elements_update_sequence_status 16
 
 
 #check for dasdatapack
