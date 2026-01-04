@@ -121,7 +121,7 @@ execute in elements:stage-5_bossroom run gamerule spawnRadius 0
 execute in elements:stage-5_bossroom run gamerule universalAnger true
 execute in elements:stage-5_bossroom run gamerule doFireTick false
 execute in elements:stage-5_bossroom run difficulty hard
-execute in elements:stage-5_bossroom run forceload add 0 0 -1 -1
+execute in elements:stage-5_bossroom run forceload add 1 1 -2 -2
 execute in elements:stage-5_bossroom run gamerule doTraderSpawning false
 execute in elements:stage-5_bossroom run gamerule doPatrolSpawning false
 execute in elements:stage-5_bossroom run gamerule disableRaids true
@@ -145,7 +145,7 @@ execute in elements:final_bossroom run gamerule spawnRadius 0
 execute in elements:final_bossroom run gamerule universalAnger true
 execute in elements:final_bossroom run gamerule doFireTick false
 execute in elements:final_bossroom run difficulty hard
-execute in elements:final_bossroom run forceload add 0 0 -1 -1
+execute in elements:final_bossroom run forceload add 1 1 -2 -2
 execute in elements:final_bossroom run gamerule doTraderSpawning false
 execute in elements:final_bossroom run gamerule doPatrolSpawning false
 execute in elements:final_bossroom run gamerule disableRaids true
