@@ -1,0 +1,170 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "minecraft:item/copper_ingot"
+    },
+    "overrides": [
+      {
+        "predicate": {
+          "custom_model_data": 1
+        },
+        "model": "item/copper_ingot"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 20
+        },
+        "model": "item/handelsmarkt/price_minus"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 21
+        },
+        "model": "item/handelsmarkt/price_plus"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 22
+        },
+        "model": "item/handelsmarkt/new_offer_done"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 23
+        },
+        "model": "item/casino/double-or-nothing_double"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 24
+        },
+        "model": "item/casino/double-or-nothing_auszahlen"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 25
+        },
+        "model": "item/general/lock_open"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 26
+        },
+        "model": "item/general/lock_closed"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 27
+        },
+        "model": "item/other/honeyed_sweet_berries"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 28
+        },
+        "model": "item/breeze_rod"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 29
+        },
+        "model": "item/sweet_berries"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 30
+        },
+        "model": "block/slime_block"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 31
+        },
+        "model": "item/other/rotten_melon"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 100
+        },
+        "model": "item/casino/double-or-nothing_1"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 101
+        },
+        "model": "item/casino/double-or-nothing_1_out"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 102
+        },
+        "model": "item/casino/double-or-nothing_2"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 103
+        },
+        "model": "item/casino/double-or-nothing_2_out"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 104
+        },
+        "model": "item/casino/double-or-nothing_3"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 105
+        },
+        "model": "item/casino/double-or-nothing_3_out"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 106
+        },
+        "model": "item/casino/double-or-nothing_4"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 107
+        },
+        "model": "item/casino/double-or-nothing_4_out"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 108
+        },
+        "model": "item/casino/double-or-nothing_5"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 109
+        },
+        "model": "item/casino/double-or-nothing_5_out"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 110
+        },
+        "model": "item/casino/double-or-nothing_6"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 111
+        },
+        "model": "item/casino/double-or-nothing_6_out"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 112
+        },
+        "model": "item/casino/double-or-nothing_7"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 113
+        },
+        "model": "item/casino/double-or-nothing_7_out"
+      }
+    ]
+  }

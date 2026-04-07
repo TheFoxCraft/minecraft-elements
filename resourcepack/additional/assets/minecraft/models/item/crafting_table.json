@@ -1,0 +1,17 @@
+{
+  "parent": "minecraft:block/crafting_table",
+  "overrides": [
+    {
+      "predicate": {
+          "custom_model_data": 1
+      },
+      "model": "item/enderchest_interface/shop"
+  },
+  {
+    "predicate": {
+        "custom_model_data": 5
+    },
+    "model": "minecraft:block/crafting_table"
+}
+  ]
+}

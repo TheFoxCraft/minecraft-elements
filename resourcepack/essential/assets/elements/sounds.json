@@ -1,0 +1,34 @@
+{
+    "luckydrop.common": {
+        "sounds": [
+            {
+                "name": "elements:lucky_drops/common"
+
+            }
+        ]
+    },
+    "luckydrop.rare": {
+        "sounds": [
+            {
+                "name": "elements:lucky_drops/rare"
+
+            }
+        ]
+    },
+    "luckydrop.epic": {
+        "sounds": [
+            {
+                "name": "elements:lucky_drops/epic"
+
+            }
+        ]
+    },
+    "luckydrop.legendary": {
+        "sounds": [
+            {
+                "name": "elements:lucky_drops/legendary"
+
+            }
+        ]
+    }
+}

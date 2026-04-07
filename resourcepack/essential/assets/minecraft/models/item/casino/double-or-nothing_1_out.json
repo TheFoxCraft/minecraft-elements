@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/casino/double-or-nothing_1_out"
+    }
+}

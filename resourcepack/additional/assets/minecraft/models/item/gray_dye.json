@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:item/handheld",
+    "textures": {
+      "layer0": "minecraft:item/gray_dye"
+    },
+    "overrides": [
+      {
+        "predicate": {
+          "custom_model_data": 1
+        },
+        "model": "item/gravity_stone/rare"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 2
+        },
+        "model": "item/gravity_stone/epic"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 3
+        },
+        "model": "item/gravity_stone/legendary"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 4
+        },
+        "model": "item/gravity_stone/mythic"
+      }
+    ]
+  }

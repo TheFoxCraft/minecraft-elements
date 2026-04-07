@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": 42,
+    "description": [
+      { "text": "Additional Ressources ", "color": "gold" },
+      {
+        "text": "for Minecraft Elements",
+        "color": "dark_aqua"
+      }
+    ]
+  }
+}
+

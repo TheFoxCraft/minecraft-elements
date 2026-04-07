@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "minecraft:item/cocoa_beans"
+    },
+    "overrides": [
+      {
+        "predicate": {
+          "custom_model_data": 1
+        },
+        "model": "block/brown_terracotta"
+      },
+       {
+        "predicate": {
+          "custom_model_data": 10
+        },
+        "model": "minecraft:item/cocoa_beans"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 11
+        },
+        "model": "minecraft:item/cocoa_beans"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 12
+        },
+        "model": "minecraft:item/cocoa_beans"
+      }
+    ]
+}

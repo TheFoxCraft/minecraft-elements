@@ -1,0 +1,26 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "minecraft:item/popped_chorus_fruit"
+    },
+    "overrides": [
+      {
+        "predicate": {
+          "custom_model_data": 1
+        },
+        "model": "item/cocoa_beans"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 2
+        },
+        "model": "item/melon_seeds"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 3
+        },
+        "model": "item/dark_oak_trapdoor"
+      }
+    ]
+}

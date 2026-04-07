@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/magenta_glazed_terracotta",
+  "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "item/enderchest_interface/back"
+        }
+    ]
+}
