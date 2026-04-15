@@ -1,4 +1,97 @@
-Minecraft Elements – Custom License
+# Minecraft Elements – Custom License - English (German version below)
+=================================
+
+Copyright (c) 2026 Tim Fischer (TheFoxCraft)
+
+This Minecraft datapack (“Minecraft Elements - Community Edition (Fanmade)”), including all contained files, functions, structures, mechanics, and assets, is subject to the following license terms.
+
+This project is conceptually based on “Minecraft Elements” by SparkofPhoenix.
+
+
+## 1. Permitted Use
+-------------------
+You are allowed to:
+
+* use and play this datapack privately or on public Minecraft servers
+* view and learn from the code
+* modify the datapack for personal use
+* publish content (gameplay, reviews, Let’s Plays, streams, etc.) on platforms such as YouTube or Twitch
+* submit pull requests to the official repository
+
+
+## 2. Attribution for Public Use
+--------------------------------
+For any public usage (e.g. servers, videos, streams, posts, presentations), it must be clearly and visibly stated that:
+
+* the datapack was created by Tim Fischer (TheFoxCraft)
+* the project is called “Minecraft Elements”
+* it is conceptually based on “Minecraft Elements” by SparkofPhoenix
+* a link to the official repository or official project page is provided
+
+For videos and streams, this information must be included at least in the description or in another easily accessible location.
+
+
+## 3. Prohibited Use
+--------------------
+It is strictly prohibited to:
+
+* use the datapack commercially
+  (e.g. selling, paywalls, paid mods, or monetizing a server specifically because of this datapack)
+* publish it under a different name or branding
+* present it as your own project or fork
+* upload or distribute modified versions publicly (including heavily modified versions)
+* publish near-identical copies or derivatives as your own work
+
+
+## 4. Redistribution
+--------------------
+Redistribution of the datapack itself is not allowed.
+
+Instead, only the official project link (e.g. GitHub repository / Modrinth page) may be shared.
+
+
+## 5. Use of Code and Concepts
+------------------------------
+The use of small, general code snippets or abstract concepts in other projects is allowed, provided that:
+
+* they are not a significant or recognizable part of the project
+* no complete mechanic or system is copied
+* in case of doubt, permission must be obtained from the author
+
+Full or near-complete reproduction of systems, mechanics, or design concepts is not permitted.
+
+
+## 6. Contributions (Pull Requests)
+-----------------------------------
+By submitting a pull request, you agree that:
+
+* your contribution becomes part of this project
+* your contribution is published under this license
+* you acquire no ownership, control, or co-authorship rights over the overall project
+
+
+## 7. No Warranty
+-----------------
+This datapack is provided without any warranty.
+
+The author is not responsible for any damage, data loss, or server issues resulting from its use.
+
+
+## 8. License Violations
+------------------------
+Any violation of this license automatically terminates all usage rights.
+
+
+## 9. Special Permissions
+-------------------------
+Deviating usage (e.g. commercial servers, special partnerships, or redistribution exceptions) is only allowed with explicit written permission from the author.
+
+For questions, contact via Discord; the link is available at https://thefoxcraft.de
+
+
+
+
+Minecraft Elements – Custom License - German (English Version above)
 =================================
 
 Copyright (c) 2026 Tim Fischer (TheFoxCraft)
