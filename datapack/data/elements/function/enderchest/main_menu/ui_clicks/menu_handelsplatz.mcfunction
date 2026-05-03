@@ -1,3 +1,4 @@
+item replace entity @s player.cursor from entity @s enderchest.16
 execute at @s run playsound ui.button.click master @s ~ ~ ~ 1
 scoreboard players set @s elements_enderchest_interface_number 10
 scoreboard players set @s elements_enderchest_interface_number_old 10

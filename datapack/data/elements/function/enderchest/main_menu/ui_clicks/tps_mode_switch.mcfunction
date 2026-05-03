@@ -1,3 +1,4 @@
+item replace entity @s player.cursor from entity @s enderchest.22
 execute as @s[scores={elements_enderchest_settings_dimension=1}] run function elements:enderchest/settings/dimension_rotation/stone_tp with storage elements_rotation_dimension
 execute as @s[scores={elements_enderchest_settings_dimension=2}] run function elements:enderchest/settings/dimension_rotation/sky_tp with storage elements_rotation_dimension
 execute as @s[scores={elements_enderchest_settings_dimension=3}] run function elements:enderchest/settings/dimension_rotation/nether_tp with storage elements_rotation_dimension
