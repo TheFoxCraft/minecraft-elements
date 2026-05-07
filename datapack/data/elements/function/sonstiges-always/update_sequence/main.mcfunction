@@ -390,6 +390,10 @@ execute as @a[scores={elements_update_sequence_status=15}] if score .server elem
 execute as @a[scores={elements_update_sequence_status=15}] if score .server elements_update_sequence_status matches 16.. run tellraw @s ["","\n","\n","\n","\n","\n",{"translate":"elements.main.other.[","color": "gray"},{"translate":"elements.main.other.elements","color": "light_purple"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "UPDATE","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"- ",{"translate":"elements.main.other.[","color": "gray"},{"text": "v1.13.0.0","color": "green"},{"translate":"elements.main.other.]","color": "gray"},"\n","\n",{"text": "Seit du das letzte mal online warst gab es ein Update!","color": "green"},"\n"]
 execute as @a[scores={elements_update_sequence_status=15}] if score .server elements_update_sequence_status matches 16.. run tellraw @s ["",{"text": "Changelog im Discord"}]
 
+# 1.14.0
+
+# no relevant changes in scoreboard structure, skipping update-sequence
+
 # ..
 
 
