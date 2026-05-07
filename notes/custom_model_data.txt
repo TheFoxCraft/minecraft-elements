@@ -35,7 +35,11 @@
     guster_banner_pattern: Enderchest Admin Settings Tipps Stage 1 #1
     bordure_indented_banner_pattern: Enderchest Admin Settings Tipps Stage 2 #1
     flow_banner_pattern: Endechest Admin Settings Tipps Stage 3 #1
+    flower_banner_pattern: Enderchest Admin Settings Tipps Stage 4 #1
+    skull_banner_pattern: Enderchest Admin Settings Tipps Stage 5 #1
+    mojang_banner_pattern: Enderchest Admin Settings Tipps Stage 6 #1
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Introduction
+    piglin_banner_pattern: Enderchest Admin Settings Tipps levelbaum #1
     nether_wart_block: Compressed Crimson Vines Stage 3
     warped_fungus: Stage 3 Boss Spawning
     weeping_vines: Enderchest Autocompact Stage 3
@@ -94,7 +98,11 @@
     guster_banner_pattern: Enderchest Admin Settings Tipps Stage 1 #2
     bordure_indented_banner_pattern: Enderchest Admin Settings Tipps Stage 2 #2
     flow_banner_pattern: Endechest Admin Settings Tipps Stage 3 #2
+    flower_banner_pattern: Enderchest Admin Settings Tipps Stage 4 #2
+    skull_banner_pattern: Enderchest Admin Settings Tipps Stage 5 #2
+    mojang_banner_pattern: Enderchest Admin Settings Tipps Stage 6 #2
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod String Tipp
+    piglin_banner_pattern: Enderchest Admin Settings Tipps levelbaum #2
     dark_oak_hanging_sign: Enderchest Settings Credits
     player_head: Handelsplatz Enderchest Page previous
     salmon: Unique Wanderlachs
@@ -124,7 +132,11 @@
     guster_banner_pattern: Enderchest Admin Settings Tipps Stage 1 #3
     bordure_indented_banner_pattern: Enderchest Admin Settings Tipps Stage 2 #3
     flow_banner_pattern: Endechest Admin Settings Tipps Stage 3 #3
+    flower_banner_pattern: Enderchest Admin Settings Tipps Stage 4 #3
+    skull_banner_pattern: Enderchest Admin Settings Tipps Stage 5 #3
+    mojang_banner_pattern: Enderchest Admin Settings Tipps Stage 6 #3
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod String Solution
+    piglin_banner_pattern: Enderchest Admin Settings Tipps levelbaum Finale Lösung
     paper: Illegale Lizenz Stage 3
     stick: Schrumpfstab
     amethyst_block: Luckydrops Sound Settings
@@ -139,6 +151,9 @@
     guster_banner_pattern: Enderchest Admin Settings Tipps Stage 1 Finale Lösung
     bordure_indented_banner_pattern: Enderchest Admin Settings Tipps Stage 1 Finale Lösung
     flow_banner_pattern: Endechest Admin Settings Tipps Stage 3 Finale Lösung
+    flower_banner_pattern: Enderchest Admin Settings Tipps Stage 4 #4
+    skull_banner_pattern: Enderchest Admin Settings Tipps Stage 5 #4
+    mojang_banner_pattern: Enderchest Admin Settings Tipps Stage 6 #4
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Sticks Tipp
     paper: Illegale Lizenz Stage 4
 5:
@@ -146,6 +161,9 @@
     netherite_axe: Element Axe | Mythic
     potion: Leveltrank | Stone Shop
     fishing_rod: Element Fishing Rod | Mythic
+    flower_banner_pattern: Enderchest Admin Settings Tipps Stage 4 #5
+    skull_banner_pattern: Enderchest Admin Settings Tipps Stage 5 #5
+    mojang_banner_pattern: Enderchest Admin Settings Tipps Stage 6 #5
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Sticks Solution
     nether_star: Enderchest Settings Dimension Rotation HUB
     blue_stained_glass_pane: Enderchest Settings Dimension Rotation
@@ -156,13 +174,20 @@
     golden_apple: Bossfrucht Stage 4
 6:
     potion: Leveltrank | Stone Shop Buying
+    flower_banner_pattern: Enderchest Admin Settings Tipps Stage 4 #6
+    skull_banner_pattern: Enderchest Admin Settings Tipps Stage 5 #6
+    mojang_banner_pattern: Enderchest Admin Settings Tipps Stage 6 #6
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Hook Tipp
     golden_apple: Bossfrucht Stage 5
 7:
     potion: Hastetrank | Stone Shop
+    flower_banner_pattern: Enderchest Admin Settings Tipps Stage 4 Finale Lösung
+    skull_banner_pattern: Enderchest Admin Settings Tipps Stage 5 #7
+    mojang_banner_pattern: Enderchest Admin Settings Tipps Stage 6 Finale Lösung
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Hook Solution
 8:
     potion: Hastetrank | Stone Shop Buying
+    skull_banner_pattern: Enderchest Admin Settings Tipps Stage 5 Finale Lösung
     globe_banner_pattern: Endechest Admin Settings Tipps Fishing-Rod Crafing Tipp
 9:
     potion: Water-Breathing-Potion | Ocean Shop
@@ -196,7 +221,11 @@
     potion: Manatrank | Sky Shop Buying
     spruce_log: Admin Settings Tipps Stage 2 Mainmenu
     weeping_vines: Admin Settings Tipps Stage 3 Mainmenu
+    sweet_berries: Admin Settings Tipps Stage 4 Mainmenu
+    melon_slice: Admin Settings Tipps Stage 5 Mainmenu
+    cocoa_bean: Admin Settings Tipps Stage 6 Mainmenu
     fishing_rod: Admin Settings Tipps Fishing Rod Mainmenu
+    experience_bottle: Admin Settings Tipps Levelbaum Mainmenu
     anvil: Ambossos Unique Item
     bow: runans bow Unique
     slime_ball: Stage 5 Boss Unique
