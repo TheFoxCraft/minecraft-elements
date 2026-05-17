@@ -23,8 +23,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] if score .server
 
 
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:gray_dye",count:1,components:{"minecraft:custom_model_data":10}}}]
-execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 run item replace entity @s enderchest.9 with gray_dye[custom_name='[{"color":"gold","text":"Status: ","italic": false},{"text": "Inaktiv","color": "gray"}]',lore=['{"text": "Klicke um ein Event für die Festgelegte Zeit zu starten!","color": "gray","italic": false}'],custom_model_data=10] 1
+execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 run item replace entity @s enderchest.9 with gray_dye[custom_data={elements:enderchest_item},custom_name='[{"color":"gold","text":"Status: ","italic": false},{"text": "Inaktiv","color": "gray"}]',lore=['{"text": "Klicke um ein Event für die Festgelegte Zeit zu starten!","color": "gray","italic": false}'],custom_model_data=10] 1
 
 
 
@@ -32,8 +31,7 @@ execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_max_h 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:clock",count:1,components:{"minecraft:custom_model_data":10}}}]
-execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_h matches ..98 run item replace entity @s enderchest.2 with clock[custom_name='[{"color":"gold","text":"Stunden +1","italic": false}]',lore=['{"text": "Klicke die Dauer um 1 Stunde zu erhöhen","color": "gray","italic": false}'],custom_model_data=10] 1
+execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_h matches ..98 run item replace entity @s enderchest.2 with clock[custom_data={elements:enderchest_item},custom_name='[{"color":"gold","text":"Stunden +1","italic": false}]',lore=['{"text": "Klicke die Dauer um 1 Stunde zu erhöhen","color": "gray","italic": false}'],custom_model_data=10] 1
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_h matches 99.. run item replace entity @s enderchest.2 with air
 
 
@@ -41,8 +39,7 @@ execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players remove .server elements_double-xp-event_timer_max_h 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:clock",count:1,components:{"minecraft:custom_model_data":11}}}]
-execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_h matches 1.. run item replace entity @s enderchest.20 with clock[custom_name='[{"color":"gold","text":"Stunden -1","italic": false}]',lore=['{"text": "Klicke die Dauer um 1 Stunde zu verringern","color": "gray","italic": false}'],custom_model_data=11] 1
+execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_h matches 1.. run item replace entity @s enderchest.20 with clock[custom_data={elements:enderchest_item},custom_name='[{"color":"gold","text":"Stunden -1","italic": false}]',lore=['{"text": "Klicke die Dauer um 1 Stunde zu verringern","color": "gray","italic": false}'],custom_model_data=11] 1
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_h matches ..0 run item replace entity @s enderchest.20 with air
 
 
@@ -50,8 +47,7 @@ execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_max_min 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:clock",count:1,components:{"minecraft:custom_model_data":12}}}]
-execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_min matches ..58 run item replace entity @s enderchest.5 with clock[custom_name='[{"color":"gold","text":"Minuten +1","italic": false}]',lore=['{"text": "Klicke die Dauer um 1 Minute zu erhöhen","color": "gray","italic": false}'],custom_model_data=12] 1
+execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_min matches ..58 run item replace entity @s enderchest.5 with clock[custom_data={elements:enderchest_item},custom_name='[{"color":"gold","text":"Minuten +1","italic": false}]',lore=['{"text": "Klicke die Dauer um 1 Minute zu erhöhen","color": "gray","italic": false}'],custom_model_data=12] 1
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_min matches 59.. run item replace entity @s enderchest.5 with air
 
 
@@ -59,8 +55,7 @@ execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players remove .server elements_double-xp-event_timer_max_min 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:clock",count:1,components:{"minecraft:custom_model_data":13}}}]
-execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_min matches 1.. run item replace entity @s enderchest.23 with clock[custom_name='[{"color":"gold","text":"Minuten -1","italic": false}]',lore=['{"text": "Klicke die Dauer um 1 Minute zu verringern","color": "gray","italic": false}'],custom_model_data=13] 1
+execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_min matches 1.. run item replace entity @s enderchest.23 with clock[custom_data={elements:enderchest_item},custom_name='[{"color":"gold","text":"Minuten -1","italic": false}]',lore=['{"text": "Klicke die Dauer um 1 Minute zu verringern","color": "gray","italic": false}'],custom_model_data=13] 1
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_min matches ..0 run item replace entity @s enderchest.23 with air
 
 
@@ -68,8 +63,7 @@ execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_max_min 10
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:clock",count:1,components:{"minecraft:custom_model_data":14}}}]
-execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_min matches ..58 run item replace entity @s enderchest.4 with clock[custom_name='[{"color":"gold","text":"Minuten +10","italic": false}]',lore=['{"text": "Klicke die Dauer um 10 Minuten zu erhöhen","color": "gray","italic": false}'],custom_model_data=14] 1
+execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_min matches ..58 run item replace entity @s enderchest.4 with clock[custom_data={elements:enderchest_item},custom_name='[{"color":"gold","text":"Minuten +10","italic": false}]',lore=['{"text": "Klicke die Dauer um 10 Minuten zu erhöhen","color": "gray","italic": false}'],custom_model_data=14] 1
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_min matches 59.. run item replace entity @s enderchest.4 with air
 
 
@@ -77,8 +71,7 @@ execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players remove .server elements_double-xp-event_timer_max_min 10
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:clock",count:1,components:{"minecraft:custom_model_data":15}}}]
-execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_min matches 1.. run item replace entity @s enderchest.22 with clock[custom_name='[{"color":"gold","text":"Minuten -10","italic": false}]',lore=['{"text": "Klicke die Dauer um 10 Minuten zu verringern","color": "gray","italic": false}'],custom_model_data=15] 1
+execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_min matches 1.. run item replace entity @s enderchest.22 with clock[custom_data={elements:enderchest_item},custom_name='[{"color":"gold","text":"Minuten -10","italic": false}]',lore=['{"text": "Klicke die Dauer um 10 Minuten zu verringern","color": "gray","italic": false}'],custom_model_data=15] 1
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 0 if score .server elements_double-xp-event_timer_max_min matches ..0 run item replace entity @s enderchest.22 with air
 
 
@@ -86,7 +79,6 @@ execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run tellraw @s [{"text":"Die Eventzeit beträgt: ","color":"gold"},{"score":{"name":".server","objective":"elements_double-xp-event_timer_max_h"}},{"translate":"elements.main.other.:","color":"white"},{"score":{"name":".server","objective":"elements_double-xp-event_timer_max_min"}},{"text":" Stunden","color":"gold"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:lectern",count:1,components:{"minecraft:custom_model_data":10}}}]
 #item in #showtimes definiert
 
 
@@ -120,8 +112,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] as @a at @s run 
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set .server elements_double-xp-event_active 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run tellraw @a ["",{"translate":"elements.main.other.server","color": "yellow"},{"text": "Das aktuelle Doppelte Level Event wurde von einem Admin abgebrochen!","color": "white"}]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:lime_dye",count:1,components:{"minecraft:custom_model_data":10}}}]
-execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 run item replace entity @s enderchest.9 with lime_dye[custom_name='[{"color":"gold","text":"Status: ","italic": false},{"text": "Aktiv","color": "green"}]',lore=['{"text": "Klicke um das Event vorzeitig abzubrechen!","color": "gray","italic": false}','{"text": "Achtung, keine Bestätigung erforderlich!","color": "red"}'],custom_model_data=10] 1
+execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 run item replace entity @s enderchest.9 with lime_dye[custom_data={elements:enderchest_item},custom_name='[{"color":"gold","text":"Status: ","italic": false},{"text": "Aktiv","color": "green"}]',lore=['{"text": "Klicke um das Event vorzeitig abzubrechen!","color": "gray","italic": false}','{"text": "Achtung, keine Bestätigung erforderlich!","color": "red"}'],custom_model_data=10] 1
 
 
 
@@ -132,8 +123,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] as @a at @s run 
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_max_h 2
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_actual_h 2
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:clock",count:1,components:{"minecraft:custom_model_data":10}}}]
-execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 run item replace entity @s enderchest.11 with clock[custom_name='[{"color":"gold","text":"Dauer +2 Stunden","italic": false}]',lore=['{"text": "Klicke die Dauer des Events um 2 Stunden zu verlängern","color": "gray","italic": false}'],custom_model_data=10] 1
+execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 run item replace entity @s enderchest.11 with clock[custom_data={elements:enderchest_item},custom_name='[{"color":"gold","text":"Dauer +2 Stunden","italic": false}]',lore=['{"text": "Klicke die Dauer des Events um 2 Stunden zu verlängern","color": "gray","italic": false}'],custom_model_data=10] 1
 
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 store success score @s elements_enderchest_interface_clicked run clear @s minecraft:clock[custom_model_data=11]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
@@ -142,8 +132,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] as @a at @s run 
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_max_h 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_actual_h 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:clock",count:1,components:{"minecraft:custom_model_data":11}}}]
-execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 run item replace entity @s enderchest.12 with clock[custom_name='[{"color":"gold","text":"Dauer +1 Stunde","italic": false}]',lore=['{"text": "Klicke die Dauer des Events um 1 Stunde zu verlängern","color": "gray","italic": false}'],custom_model_data=11] 1
+execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 run item replace entity @s enderchest.12 with clock[custom_data={elements:enderchest_item},custom_name='[{"color":"gold","text":"Dauer +1 Stunde","italic": false}]',lore=['{"text": "Klicke die Dauer des Events um 1 Stunde zu verlängern","color": "gray","italic": false}'],custom_model_data=11] 1
 
 
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 store success score @s elements_enderchest_interface_clicked run clear @s minecraft:clock[custom_model_data=12]
@@ -153,8 +142,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] as @a at @s run 
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_max_min 30
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_actual_min 30
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:clock",count:1,components:{"minecraft:custom_model_data":12}}}]
-execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 run item replace entity @s enderchest.13 with clock[custom_name='[{"color":"gold","text":"Dauer +30 Minuten","italic": false}]',lore=['{"text": "Klicke die Dauer des Events um 30 Minuten zu verlängern","color": "gray","italic": false}'],custom_model_data=12] 1
+execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 run item replace entity @s enderchest.13 with clock[custom_data={elements:enderchest_item},custom_name='[{"color":"gold","text":"Dauer +30 Minuten","italic": false}]',lore=['{"text": "Klicke die Dauer des Events um 30 Minuten zu verlängern","color": "gray","italic": false}'],custom_model_data=12] 1
 
 execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 store success score @s elements_enderchest_interface_clicked run clear @s minecraft:clock[custom_model_data=13]
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
@@ -163,5 +151,4 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] as @a at @s run 
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_max_min 10
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players add .server elements_double-xp-event_timer_actual_min 10
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-kill @e[type=item,nbt={Item:{id:"minecraft:clock",count:1,components:{"minecraft:custom_model_data":13}}}]
-execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 run item replace entity @s enderchest.14 with clock[custom_name='[{"color":"gold","text":"Dauer +10 Minuten","italic": false}]',lore=['{"text": "Klicke die Dauer des Events um 10 Minuten zu verlängern","color": "gray","italic": false}'],custom_model_data=13] 1
+execute as @s[scores={elements_rank_admin=1,elements_enderchest_interface_number=8,elements_admin_config_interface=2}] if score .server elements_double-xp-event_active matches 1 run item replace entity @s enderchest.14 with clock[custom_data={elements:enderchest_item},custom_name='[{"color":"gold","text":"Dauer +10 Minuten","italic": false}]',lore=['{"text": "Klicke die Dauer des Events um 10 Minuten zu verlängern","color": "gray","italic": false}'],custom_model_data=13] 1

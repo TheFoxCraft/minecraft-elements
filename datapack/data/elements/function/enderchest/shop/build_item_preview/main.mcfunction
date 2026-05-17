@@ -1,7 +1,7 @@
 scoreboard players set @s elements_enderchest_shop_calculation 1
 $execute if score @s elements_enderchest_shop_calculation matches $(is_loot) run function elements:enderchest/shop/build_item_preview/loot_item {slot:$(slot),type:"$(type)"}
 $execute unless score @s elements_enderchest_shop_calculation matches $(is_loot) run function elements:enderchest/shop/build_item_preview/normal_item {slot:$(slot),type:"$(type)"}
-$execute if score @s elements_enderchest_shop_$(shop) matches 1 run item modify entity @s enderchest.$(slot) [{ "function": "minecraft:set_name", "entity": "this", "name": [{"$(name_type)": "$(name)","color": "yellow","italic": false},{"text": " [$(price) Level]","color": "yellow","italic": false}]},{"function": "minecraft:set_custom_model_data","value": $(cumoda)}]
+$execute if score @s elements_enderchest_shop_$(shop) matches 1 run item modify entity @s enderchest.$(slot) [{ "function": "minecraft:set_name", "entity": "this", "name": [{"$(name_type)": "$(name)","color": "yellow","italic": false},{"text": " [$(price) Level]","color": "yellow","italic": false}]},{"function": "minecraft:set_custom_model_data","value": $(cumoda)},{"function": "minecraft:set_custom_data","tag": {"elements":"enderchest_item"}}]
 $execute if score @s elements_enderchest_shop_$(shop) matches 1 run return fail
 
 $scoreboard players set @s elements_enderchest_shop_calculation $(price)
