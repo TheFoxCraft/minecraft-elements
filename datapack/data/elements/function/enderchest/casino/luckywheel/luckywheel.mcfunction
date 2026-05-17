@@ -7,7 +7,7 @@ execute as @s[scores={elements_casino_game_luckywheel_load=1}] run scoreboard pl
 execute as @s[scores={elements_casino_game_luckywheel_load=1}] run scoreboard players set @s elements_casino_game_luckywheel_wheel 5
 execute as @s[scores={elements_casino_game_luckywheel_load=1}] run scoreboard players set @s elements_casino_game_luckywheel_spin 0
 execute as @s[scores={elements_casino_game_luckywheel_load=1}] run scoreboard players set @s elements_casino_game_luckywheel_win_timer 0
-execute as @s[scores={elements_casino_game_luckywheel_load=1}] run item replace entity @s enderchest.13 with purple_stained_glass_pane[item_name='{"color":"green","text":"Click to Stop","italic": false}',custom_model_data=1] 1
+execute as @s[scores={elements_casino_game_luckywheel_load=1}] run item replace entity @s enderchest.13 with purple_stained_glass_pane[custom_data={elements:enderchest_item},item_name='{"color":"green","text":"Click to Stop","italic": false}',custom_model_data=1] 1
 execute as @s[scores={elements_casino_game_luckywheel_load=1}] store result storage elements_getid ID int 1 run scoreboard players get @s elements_playerid
 execute as @s[scores={elements_casino_game_luckywheel_load=1}] run function elements:enderchest/casino/luckywheel/setdata with storage elements_getid
 
@@ -16,38 +16,36 @@ execute as @s[scores={elements_casino_game_luckywheel_load=1}] run scoreboard pl
 
 
 #game
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.0 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.1 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.2 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.3 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.4 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.5 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.6 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.7 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.8 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.9 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.17 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.18 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.19 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.20 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.21 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.22 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.23 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.24 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.25 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.26 with white_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.10 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.11 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.12 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.14 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.15 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.16 with blue_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.0 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.1 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.2 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.3 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.4 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.5 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.6 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.7 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.8 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.9 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.17 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.18 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.19 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.20 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.21 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.22 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.23 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.24 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.25 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.26 with white_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.10 with blue_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.11 with blue_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.12 with blue_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.14 with blue_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.15 with blue_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7}] run item replace entity @s enderchest.16 with blue_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
 
 
 clear @s minecraft:white_stained_glass_pane[custom_model_data=1]
-kill @e[type=item,nbt={Item:{id:"minecraft:white_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":1}}}]
 clear @s minecraft:blue_stained_glass_pane[custom_model_data=1]
-kill @e[type=item,nbt={Item:{id:"minecraft:blue_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":1}}}]
 
 #start
 
@@ -58,40 +56,38 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard p
 
 
 #wheel
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=1}] run item replace entity @s enderchest.0 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=2}] run item replace entity @s enderchest.1 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=3}] run item replace entity @s enderchest.2 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=4}] run item replace entity @s enderchest.3 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=5}] run item replace entity @s enderchest.4 with lime_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=6}] run item replace entity @s enderchest.5 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=7}] run item replace entity @s enderchest.6 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=8}] run item replace entity @s enderchest.7 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=9}] run item replace entity @s enderchest.8 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=10}] run item replace entity @s enderchest.17 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=11}] run item replace entity @s enderchest.26 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=12}] run item replace entity @s enderchest.25 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=13}] run item replace entity @s enderchest.24 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=14}] run item replace entity @s enderchest.23 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=15}] run item replace entity @s enderchest.22 with lime_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=16}] run item replace entity @s enderchest.21 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=17}] run item replace entity @s enderchest.20 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=18}] run item replace entity @s enderchest.19 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=19}] run item replace entity @s enderchest.18 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=20}] run item replace entity @s enderchest.9 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=5,elements_casino_game_luckywheel_speed=1..}] run item replace entity @s enderchest.13 with lime_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=15,elements_casino_game_luckywheel_speed=1..}] run item replace entity @s enderchest.13 with lime_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=1..4,elements_casino_game_luckywheel_speed=1..}] run item replace entity @s enderchest.13 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=6..14,elements_casino_game_luckywheel_speed=1..}] run item replace entity @s enderchest.13 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=16..20,elements_casino_game_luckywheel_speed=1..}] run item replace entity @s enderchest.13 with red_stained_glass_pane[hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=1}] run item replace entity @s enderchest.0 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=2}] run item replace entity @s enderchest.1 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=3}] run item replace entity @s enderchest.2 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=4}] run item replace entity @s enderchest.3 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=5}] run item replace entity @s enderchest.4 with lime_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=6}] run item replace entity @s enderchest.5 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=7}] run item replace entity @s enderchest.6 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=8}] run item replace entity @s enderchest.7 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=9}] run item replace entity @s enderchest.8 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=10}] run item replace entity @s enderchest.17 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=11}] run item replace entity @s enderchest.26 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=12}] run item replace entity @s enderchest.25 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=13}] run item replace entity @s enderchest.24 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=14}] run item replace entity @s enderchest.23 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=15}] run item replace entity @s enderchest.22 with lime_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=16}] run item replace entity @s enderchest.21 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=17}] run item replace entity @s enderchest.20 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=18}] run item replace entity @s enderchest.19 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=19}] run item replace entity @s enderchest.18 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=20}] run item replace entity @s enderchest.9 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=5,elements_casino_game_luckywheel_speed=1..}] run item replace entity @s enderchest.13 with lime_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=15,elements_casino_game_luckywheel_speed=1..}] run item replace entity @s enderchest.13 with lime_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=1..4,elements_casino_game_luckywheel_speed=1..}] run item replace entity @s enderchest.13 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=6..14,elements_casino_game_luckywheel_speed=1..}] run item replace entity @s enderchest.13 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_wheel=16..20,elements_casino_game_luckywheel_speed=1..}] run item replace entity @s enderchest.13 with red_stained_glass_pane[custom_data={elements:enderchest_item},hide_tooltip={},custom_model_data=1] 1
 
-execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_speed=0}] run item replace entity @s enderchest.13 with purple_stained_glass_pane[item_name='{"color":"green","text":"Click to Stop","italic": false}',custom_model_data=1] 1
+execute as @s[scores={elements_casino_interface=7,elements_casino_game_luckywheel_speed=0}] run item replace entity @s enderchest.13 with purple_stained_glass_pane[custom_data={elements:enderchest_item},item_name='{"color":"green","text":"Click to Stop","italic": false}',custom_model_data=1] 1
 
 
 clear @s minecraft:red_stained_glass_pane[custom_model_data=1]
-kill @e[type=item,nbt={Item:{id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":1}}}]
 clear @s minecraft:lime_stained_glass_pane[custom_model_data=1]
-kill @e[type=item,nbt={Item:{id:"minecraft:lime_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:purple_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":1}}}]
+
 
 
 #wheel-spin
@@ -155,4 +151,4 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] run function ele
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_casino_game 0
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-execute as @s[scores={elements_casino_interface=8}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","translate":"elements.enderchest.zurueck","italic": false}',custom_model_data=10] 1
+execute as @s[scores={elements_casino_interface=8}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_data={elements:enderchest_item},custom_name='{"color":"red","translate":"elements.enderchest.zurueck","italic": false}',custom_model_data=10] 1

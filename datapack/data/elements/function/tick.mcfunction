@@ -3,7 +3,8 @@
 
 #-------------------------------------ALWAYS-------------------------------------ALWAYS-----------------------------------ALWAYS----------------------------------#
 
-
+# Item deletion fix
+execute as @a run function elements:enderchest/fix_item_deletion
 
 
 # Farmslots

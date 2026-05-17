@@ -1,6 +1,6 @@
 execute as @s run scoreboard players set @s elements_enderchest_stats_load 1
 execute as @s at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["stats"],Invulnerable:1b,Silent:1b}
-item replace entity @e[limit=1,tag=stats,type=armor_stand] weapon.mainhand with oak_hanging_sign[custom_name='{"bold":true,"color":"gold","text":"Handelsplatz","italic": false}',custom_model_data=1] 1
+item replace entity @e[limit=1,tag=stats,type=armor_stand] weapon.mainhand with oak_hanging_sign[custom_data={elements:enderchest_item},custom_name='{"bold":true,"color":"gold","text":"Handelsplatz","italic": false}',custom_model_data=1] 1
 summon text_display ~ ~ ~ {text:'[{"text":"Du kannst hier eigene Items verkaufen,","color":"gray","italic": false}]',Tags:["stats"],alignment:center}
 data modify entity @e[tag=stats,type=armor_stand,limit=1] HandItems[0].components.minecraft:lore append from entity @e[type=text_display,tag=stats,limit=1] text
 kill @e[type=text_display,tag=stats]

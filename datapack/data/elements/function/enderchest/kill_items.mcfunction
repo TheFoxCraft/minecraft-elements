@@ -1,16 +1,3 @@
-# Main Menu
-kill @e[type=item,nbt={Item:{id:"minecraft:gray_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":2}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:light_blue_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":2}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":2}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:blue_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":2}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:nether_star",count:1,components:{"minecraft:custom_model_data":1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:lectern",count:1,components:{"minecraft:custom_model_data":1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:piston",count:1,components:{"minecraft:custom_model_data":1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:anvil",count:1,components:{"minecraft:custom_model_data":1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:ender_chest",count:1,components:{"minecraft:custom_model_data":1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:diamond",count:1,components:{"minecraft:custom_model_data":1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:diamond_pickaxe",count:1,components:{"minecraft:custom_model_data":5}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:compass",count:1,components:{"minecraft:custom_model_data":1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:recovery_compass",count:1,components:{"minecraft:custom_model_data":2}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:crafting_table",count:1,components:{"minecraft:custom_model_data":1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:barrel",count:1,components:{"minecraft:custom_model_data":1}}}]
+# This file is used to kill the items that are used for the enderchest ui
+# only did load.mcfunction and the collections so far have items with the custom_data tag "elements:enderchest_item"
+kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{elements:enderchest_item}}}}]

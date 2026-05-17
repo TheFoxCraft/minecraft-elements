@@ -3,9 +3,8 @@
 execute as @s[scores={elements_casino_game_horse_load=1}] run scoreboard players set @s elements_casino_interface 3
 execute as @s[scores={elements_casino_game_horse_load=1}] run function elements:enderchest/enderchest-clear
 
-execute as @s[scores={elements_casino_interface=3}] run item replace entity @s enderchest.4 with oak_hanging_sign[custom_name='{"color":"gold","text":"Setze deinen Einsatz auf ein Pferd:","italic": false}',custom_model_data=3] 1
+execute as @s[scores={elements_casino_interface=3}] run item replace entity @s enderchest.4 with oak_hanging_sign[custom_data={elements:enderchest_item},custom_name='{"color":"gold","text":"Setze deinen Einsatz auf ein Pferd:","italic": false}',custom_model_data=3] 1
 clear @s minecraft:oak_hanging_sign[custom_model_data=3]
-kill @e[type=item,nbt={Item:{id:"minecraft:oak_hanging_sign",count:1,components:{"minecraft:custom_model_data":3}}}]
 
 execute as @s[scores={elements_casino_game_horse_load=1}] store result score @s elements_casino_game_horse_names run random value 1..26
 
@@ -36,9 +35,9 @@ execute as @s[scores={elements_casino_game_horse_load=4}] run function elements:
 execute as @s[scores={elements_casino_game_horse_load=5}] run function elements:enderchest/casino/horse/horse-set2 with storage elements_getid
 execute as @s[scores={elements_casino_game_horse_load=4}] run scoreboard players set @s elements_casino_interface 4
 execute as @s[scores={elements_casino_game_horse_load=5}] run function elements:enderchest/enderchest-clear
-execute as @s[scores={elements_casino_game_horse_load=5}] run item replace entity @s enderchest.0 with iron_horse_armor[custom_model_data=1]
-execute as @s[scores={elements_casino_game_horse_load=5}] run item replace entity @s enderchest.9 with golden_horse_armor[custom_model_data=1]
-execute as @s[scores={elements_casino_game_horse_load=5}] run item replace entity @s enderchest.18 with diamond_horse_armor[custom_model_data=1]
+execute as @s[scores={elements_casino_game_horse_load=5}] run item replace entity @s enderchest.0 with iron_horse_armor[custom_data={elements:enderchest_item},custom_model_data=1]
+execute as @s[scores={elements_casino_game_horse_load=5}] run item replace entity @s enderchest.9 with golden_horse_armor[custom_data={elements:enderchest_item},custom_model_data=1]
+execute as @s[scores={elements_casino_game_horse_load=5}] run item replace entity @s enderchest.18 with diamond_horse_armor[custom_data={elements:enderchest_item},custom_model_data=1]
 execute as @s[scores={elements_casino_game_horse_load=5}] run scoreboard players set @s elements_casino_game_horse_load 0
 execute as @s[scores={elements_casino_game_horse_load=4}] run scoreboard players add @s elements_casino_game_horse_load 1
 
@@ -47,9 +46,7 @@ execute as @s[scores={elements_casino_game_horse_load=4}] run scoreboard players
 #menu
 
 
-kill @e[type=item,nbt={Item:{id:"minecraft:iron_horse_armor",count:1,components:{"minecraft:custom_model_data":1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:golden_horse_armor",count:1,components:{"minecraft:custom_model_data":1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:diamond_horse_armor",count:1,components:{"minecraft:custom_model_data":1}}}]
+
 
 execute as @s[scores={elements_casino_interface=3}] run scoreboard players set @s elements_casino_game_horse_pos_1 0
 execute as @s[scores={elements_casino_interface=3}] run scoreboard players set @s elements_casino_game_horse_pos_2 9
@@ -164,8 +161,7 @@ execute as @s[scores={elements_casino_interface=6}] unless entity @s[nbt={EnderI
 execute as @s[scores={elements_casino_interface=6}] unless entity @s[nbt={EnderItems:[{id:"minecraft:totem_of_undying",Slot:13b,components:{"minecraft:custom_model_data":1}}]}] run function elements:enderchest/casino/horse/horse-winner2 with storage elements_getid
 
 clear @s minecraft:totem_of_undying[custom_model_data=1]
-kill @e[type=item,nbt={Item:{id:"minecraft:totem_of_undying",count:1,components:{"minecraft:custom_model_data":1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:magenta_glazed_terracotta",count:1,components:{"minecraft:custom_model_data":10}}}]
+
 
 
 execute as @s[scores={elements_casino_interface=6}] store result score @s elements_enderchest_interface_clicked run clear @s minecraft:magenta_glazed_terracotta[custom_model_data=10]
@@ -193,7 +189,7 @@ execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard p
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run function elements:enderchest/enderchest-clear
 execute as @s[scores={elements_enderchest_interface_clicked=1}] at @s run playsound ui.button.click master @s ~ ~ ~ 1
 execute as @s[scores={elements_enderchest_interface_clicked=1}] run scoreboard players set @s elements_enderchest_interface_clicked 0
-execute as @s[scores={elements_casino_interface=6}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_name='{"color":"red","translate":"elements.enderchest.zurueck","italic": false}',custom_model_data=10] 1
+execute as @s[scores={elements_casino_interface=6}] run item replace entity @s enderchest.26 with magenta_glazed_terracotta[custom_data={elements:enderchest_item},custom_name='{"color":"red","translate":"elements.enderchest.zurueck","italic": false}',custom_model_data=10] 1
 
 
 
