@@ -58,7 +58,7 @@ execute as @a store result score @s elements_inv_diamond run clear @s minecraft:
 execute as @a store result score @s elements_inv_emerald run clear @s minecraft:emerald 0
 execute as @a store result score @s elements_inv_ancient_debris run clear @s minecraft:ancient_debris 0
 execute as @a store result score @s elements_inv_infinity_book run clear @s enchanted_book[stored_enchantments={infinity:1}] 0
-execute as @a store result score @s elements_inv_fish run clear @s #fishes 0
+execute as @a store result score @s elements_inv_fish run clear @s #fishes[!max_stack_size=1] 0
 execute as @a store result score @s elements_inv_stone_stage_1 run clear @s #elements:stage_1_stone 0
 execute as @a store result score @s elements_inv_fishing_token run clear @s pufferfish[custom_model_data=1] 0
 execute as @a store result score @s elements_inv_compressed_sweet_berries run clear @s red_glazed_terracotta[custom_model_data=1] 0
