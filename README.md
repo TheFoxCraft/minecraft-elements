@@ -1,3 +1,5 @@
+# minecraft-elements HAS MOVED TO [CODEBERG](https://codeberg.org/tim-fischer/minecraft-elements)
+
 # Minecraft Elements - Community Edition (Fanmade)
 
 Minecraft Elements ist ein Projekt, das ursprünglich von SparkofPhoenix erstellt wurde..
